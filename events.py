@@ -1,4 +1,5 @@
 import sys
+from PyQt6 import QtWidgets, QtCore, QtGui
 
 class Events:
     @staticmethod
@@ -11,7 +12,7 @@ class Events:
                 :rtype: bool
                 Cierra la ventana de la aplicación mostrando un mensaje de aviso
 
-                '''
+        '''
         mbox = QtWidgets.QMessageBox()
         mbox.setIcon(QtWidgets.QMessageBox.Icon.Question)
         mbox.setWindowIcon(QtGui.QIcon('./img/logo.ico'))
