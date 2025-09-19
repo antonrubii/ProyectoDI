@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>EmpresaTeis</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/logo.ico</normaloff>../img/logo.ico</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <property name="sizePolicy">
     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -56,7 +60,7 @@
        </attribute>
        <layout class="QGridLayout" name="gridLayout">
         <item row="4" column="2">
-         <widget class="QRadioButton" name="rbtFacpapel_2">
+         <widget class="QRadioButton" name="rbtFacpaper">
           <property name="minimumSize">
            <size>
             <width>90</width>
@@ -69,7 +73,7 @@
          </widget>
         </item>
         <item row="3" column="6" colspan="3" alignment="Qt::AlignRight">
-         <widget class="QComboBox" name="cmbProvcli_2">
+         <widget class="QComboBox" name="cmbProvcli">
           <property name="minimumSize">
            <size>
             <width>220</width>
@@ -118,7 +122,7 @@
          </widget>
         </item>
         <item row="1" column="8">
-         <widget class="QLineEdit" name="lblNomecli_5">
+         <widget class="QLineEdit" name="txtNamecli">
           <property name="minimumSize">
            <size>
             <width>200</width>
@@ -141,7 +145,7 @@
          </widget>
         </item>
         <item row="5" column="3" colspan="2">
-         <widget class="QPushButton" name="btnSavecli_2">
+         <widget class="QPushButton" name="btnSavecli">
           <property name="minimumSize">
            <size>
             <width>100</width>
@@ -160,7 +164,7 @@
          </widget>
         </item>
         <item row="2" column="1" colspan="2">
-         <widget class="QLineEdit" name="txtEmailcli_2">
+         <widget class="QLineEdit" name="txtEmailcli">
           <property name="minimumSize">
            <size>
             <width>250</width>
@@ -189,7 +193,7 @@
          </widget>
         </item>
         <item row="5" column="5" colspan="2">
-         <widget class="QPushButton" name="btnModifcli_2">
+         <widget class="QPushButton" name="btnModifcli">
           <property name="minimumSize">
            <size>
             <width>100</width>
@@ -208,7 +212,7 @@
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QLineEdit" name="txtDnicli_2">
+         <widget class="QLineEdit" name="txtDnicli">
           <property name="minimumSize">
            <size>
             <width>90</width>
@@ -224,7 +228,7 @@
          </widget>
         </item>
         <item row="3" column="1" colspan="2">
-         <widget class="QLineEdit" name="txtDircli_2">
+         <widget class="QLineEdit" name="txtDircli">
           <property name="minimumSize">
            <size>
             <width>300</width>
@@ -273,7 +277,7 @@
          </widget>
         </item>
         <item row="5" column="7" colspan="2">
-         <widget class="QPushButton" name="btnDelcli_2">
+         <widget class="QPushButton" name="btnDelcli">
           <property name="minimumSize">
            <size>
             <width>100</width>
@@ -292,7 +296,7 @@
          </widget>
         </item>
         <item row="1" column="1" colspan="2">
-         <widget class="QLineEdit" name="txtApelcli_2">
+         <widget class="QLineEdit" name="txtApelcli">
           <property name="minimumSize">
            <size>
             <width>300</width>
@@ -322,7 +326,7 @@
          </widget>
         </item>
         <item row="4" column="1">
-         <widget class="QRadioButton" name="rbtFacemail_2">
+         <widget class="QRadioButton" name="rbtFacmail">
           <property name="minimumSize">
            <size>
             <width>90</width>
@@ -338,7 +342,7 @@
          </widget>
         </item>
         <item row="7" column="0" colspan="15">
-         <widget class="QTableWidget" name="tableCustomerlist_2">
+         <widget class="QTableWidget" name="tableCustomerlist">
           <property name="minimumSize">
            <size>
             <width>900</width>
@@ -419,7 +423,7 @@
          </widget>
         </item>
         <item row="2" column="8">
-         <widget class="QLineEdit" name="lblNomecli_6">
+         <widget class="QLineEdit" name="lblNomecli">
           <property name="minimumSize">
            <size>
             <width>150</width>
@@ -435,7 +439,7 @@
          </widget>
         </item>
         <item row="0" column="9">
-         <widget class="QLineEdit" name="txtAltacli_2">
+         <widget class="QLineEdit" name="txtAltacli">
           <property name="minimumSize">
            <size>
             <width>90</width>
@@ -499,7 +503,7 @@
          </widget>
         </item>
         <item row="3" column="10">
-         <widget class="QComboBox" name="cmbMunicli_2">
+         <widget class="QComboBox" name="cmbMunicli">
           <property name="minimumSize">
            <size>
             <width>220</width>
@@ -549,6 +553,7 @@
     <property name="title">
      <string>Reports</string>
     </property>
+    <addaction name="actionCustomer_Report"/>
    </widget>
    <widget class="QMenu" name="menuAbout">
     <property name="title">
@@ -566,26 +571,31 @@
     <string>Exit</string>
    </property>
   </action>
+  <action name="actionCustomer_Report">
+   <property name="text">
+    <string>Customer Report</string>
+   </property>
+  </action>
  </widget>
  <tabstops>
   <tabstop>panMain_2</tabstop>
-  <tabstop>txtDnicli_2</tabstop>
-  <tabstop>txtAltacli_2</tabstop>
+  <tabstop>txtDnicli</tabstop>
+  <tabstop>txtAltacli</tabstop>
   <tabstop>btnFechaltacli_2</tabstop>
-  <tabstop>txtApelcli_2</tabstop>
-  <tabstop>lblNomecli_5</tabstop>
-  <tabstop>txtEmailcli_2</tabstop>
-  <tabstop>lblNomecli_6</tabstop>
-  <tabstop>txtDircli_2</tabstop>
-  <tabstop>cmbProvcli_2</tabstop>
-  <tabstop>cmbMunicli_2</tabstop>
-  <tabstop>rbtFacemail_2</tabstop>
-  <tabstop>rbtFacpapel_2</tabstop>
+  <tabstop>txtApelcli</tabstop>
+  <tabstop>txtNamecli</tabstop>
+  <tabstop>txtEmailcli</tabstop>
+  <tabstop>lblNomecli</tabstop>
+  <tabstop>txtDircli</tabstop>
+  <tabstop>cmbProvcli</tabstop>
+  <tabstop>cmbMunicli</tabstop>
+  <tabstop>rbtFacmail</tabstop>
+  <tabstop>rbtFacpaper</tabstop>
   <tabstop>chkHistoricocli_2</tabstop>
-  <tabstop>btnSavecli_2</tabstop>
-  <tabstop>btnModifcli_2</tabstop>
-  <tabstop>btnDelcli_2</tabstop>
-  <tabstop>tableCustomerlist_2</tabstop>
+  <tabstop>btnSavecli</tabstop>
+  <tabstop>btnModifcli</tabstop>
+  <tabstop>btnDelcli</tabstop>
+  <tabstop>tableCustomerlist</tabstop>
  </tabstops>
  <resources/>
  <connections/>
