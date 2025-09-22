@@ -1,6 +1,4 @@
 import globals
-from PyQt6 import QtCore, QtGui, QtWidgets
-
 
 class Customers:
     @staticmethod
@@ -18,15 +16,15 @@ class Customers:
                 if dni[0] in dig_ext:
                     dni = dni.replace(dni[0], reemp_dig_ext[dni[0]])
                 if len(dni) == len([n for n in dni if n in numeros]) and tabla[int(dni) % 23] == dig_control:
-                    var.ui.txtDnicli.setStyleSheet('background-color: rgb(255, 255, 220);')
+                    globals.ui.txtDnicli.setStyleSheet('background-color: rgb(255, 255, 220);')
                 else:
-                    var.ui.txtDnicli.setStyleSheet('background-color:#FFC0CB;')
-                    var.ui.txtDnicli.setText(None)
-                    var.ui.txtDnicli.setFocus()
+                    globals.ui.txtDnicli.setStyleSheet('background-color:#FFC0CB;')
+                    globals.ui.txtDnicli.setText(None)
+                    globals.ui.txtDnicli.setFocus()
             else:
-                var.ui.txtDnicli.setStyleSheet('background-color:#FFC0CB;')
-                var.ui.txtDnicli.setText(None)
-                var.ui.txtDnicli.setFocus()
+                globals.ui.txtDnicli.setStyleSheet('background-color:#FFC0CB;')
+                globals.ui.txtDnicli.setText(None)
+                globals.ui.txtDnicli.setFocus()
         except Exception as error:
             print("error en validar dni ", error)
 

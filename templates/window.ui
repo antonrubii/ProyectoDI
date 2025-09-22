@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../img/logo.ico</normaloff>../img/logo.ico</iconset>
+    <normaloff>../../../.designer/img/logo.ico</normaloff>../../../.designer/img/logo.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="sizePolicy">
@@ -89,21 +89,21 @@
          </widget>
         </item>
         <item row="1" column="0">
-         <widget class="QLabel" name="lblApelcli_2">
+         <widget class="QLabel" name="lblApelcli">
           <property name="text">
            <string>Surname:</string>
           </property>
          </widget>
         </item>
         <item row="0" column="0">
-         <widget class="QLabel" name="lblDnicli_2">
+         <widget class="QLabel" name="lblDnicli">
           <property name="text">
            <string>DNI/CIF:</string>
           </property>
          </widget>
         </item>
         <item row="0" column="8" alignment="Qt::AlignRight">
-         <widget class="QLabel" name="lblAltacli_2">
+         <widget class="QLabel" name="lblAltacli">
           <property name="minimumSize">
            <size>
             <width>60</width>
@@ -134,13 +134,6 @@
             <width>200</width>
             <height>25</height>
            </size>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="6">
-         <widget class="QLabel" name="label_2">
-          <property name="text">
-           <string>Mobile: </string>
           </property>
          </widget>
         </item>
@@ -180,7 +173,7 @@
          </widget>
         </item>
         <item row="4" column="14">
-         <widget class="QCheckBox" name="chkHistoricocli_2">
+         <widget class="QCheckBox" name="chkHistoricocli">
           <property name="minimumSize">
            <size>
             <width>90</width>
@@ -244,7 +237,7 @@
          </widget>
         </item>
         <item row="3" column="0">
-         <widget class="QLabel" name="lblDircli_2">
+         <widget class="QLabel" name="lblDircli">
           <property name="text">
            <string>Address:</string>
           </property>
@@ -254,14 +247,14 @@
          </widget>
         </item>
         <item row="2" column="0">
-         <widget class="QLabel" name="lblMailcli_2">
+         <widget class="QLabel" name="lblMailcli">
           <property name="text">
            <string>Email: </string>
           </property>
          </widget>
         </item>
         <item row="3" column="4" colspan="2" alignment="Qt::AlignRight">
-         <widget class="QLabel" name="lblPRovcli_2">
+         <widget class="QLabel" name="lblPRovcli">
           <property name="minimumSize">
            <size>
             <width>80</width>
@@ -312,14 +305,14 @@
          </widget>
         </item>
         <item row="1" column="6">
-         <widget class="QLabel" name="lblNomecli_4">
+         <widget class="QLabel" name="lblNomecli">
           <property name="text">
            <string>Name:</string>
           </property>
          </widget>
         </item>
         <item row="4" column="0">
-         <widget class="QLabel" name="lblTipofaccli_2">
+         <widget class="QLabel" name="lblTipofaccli">
           <property name="text">
            <string>Invoice Type: </string>
           </property>
@@ -388,7 +381,7 @@
          </widget>
         </item>
         <item row="6" column="4" colspan="3">
-         <widget class="QLabel" name="lblListcli_2">
+         <widget class="QLabel" name="lblListcli">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
             <horstretch>150</horstretch>
@@ -423,7 +416,7 @@
          </widget>
         </item>
         <item row="2" column="8">
-         <widget class="QLineEdit" name="lblNomecli">
+         <widget class="QLineEdit" name="txtMobilcli">
           <property name="minimumSize">
            <size>
             <width>150</width>
@@ -458,7 +451,7 @@
          </widget>
         </item>
         <item row="0" column="10">
-         <widget class="QPushButton" name="btnFechaltacli_2">
+         <widget class="QPushButton" name="btnFechaltacli">
           <property name="minimumSize">
            <size>
             <width>30</width>
@@ -476,12 +469,18 @@
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../../.designer/img/calendario.png</normaloff>../../../.designer/img/calendario.png</iconset>
+            <normaloff>../img/calendario.png</normaloff>../img/calendario.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
           </property>
          </widget>
         </item>
         <item row="3" column="9">
-         <widget class="QLabel" name="lblMunicli_2">
+         <widget class="QLabel" name="lblMunicli">
           <property name="minimumSize">
            <size>
             <width>80</width>
@@ -515,6 +514,13 @@
             <width>25</width>
             <height>16777215</height>
            </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QLabel" name="lblMovilcli">
+          <property name="text">
+           <string>Mobile: </string>
           </property>
          </widget>
         </item>
@@ -581,17 +587,17 @@
   <tabstop>panMain_2</tabstop>
   <tabstop>txtDnicli</tabstop>
   <tabstop>txtAltacli</tabstop>
-  <tabstop>btnFechaltacli_2</tabstop>
+  <tabstop>btnFechaltacli</tabstop>
   <tabstop>txtApelcli</tabstop>
   <tabstop>txtNamecli</tabstop>
   <tabstop>txtEmailcli</tabstop>
-  <tabstop>lblNomecli</tabstop>
+  <tabstop>txtMobilcli</tabstop>
   <tabstop>txtDircli</tabstop>
   <tabstop>cmbProvcli</tabstop>
   <tabstop>cmbMunicli</tabstop>
   <tabstop>rbtFacmail</tabstop>
   <tabstop>rbtFacpaper</tabstop>
-  <tabstop>chkHistoricocli_2</tabstop>
+  <tabstop>chkHistoricocli</tabstop>
   <tabstop>btnSavecli</tabstop>
   <tabstop>btnModifcli</tabstop>
   <tabstop>btnDelcli</tabstop>
