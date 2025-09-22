@@ -5,6 +5,7 @@ from venAux import *
 
 
 
+
 class Main(QtWidgets.QMainWindow):
     def __init__(self):
         super(Main, self).__init__()

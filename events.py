@@ -1,6 +1,8 @@
 import sys
+import time
 import globals
 from venAux import *
+from window import *
 
 class Events:
     @staticmethod
@@ -30,3 +32,14 @@ class Events:
 
         except Exception as e:
             print("error en calendario", e)
+
+    def loadData(qDate):
+        try:
+            data = ('{:02d}/{:02d}/{:4d}'.format(qDate.day(), qDate.month(), qDate.year()))
+            if globals.ui.panPrincipal.currentIndex() == 0:
+                globals.ui.txtAltacli.setText(data)
+            time.sleep(0.3)
+            globals.vencal.hide()
+
+        except Exception as e:
+            print("error en cargar Data", e)
