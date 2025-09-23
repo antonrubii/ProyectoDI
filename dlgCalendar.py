@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file '.\templates\dlgCalendar.ui'
+# Form implementation generated from reading ui file 'C:\Users\jcarl\PycharmProjects\perezgonzalez2526/templates/dlgCalendar.ui'
 #
 # Created by: PyQt6 UI code generator 6.9.1
 #
@@ -16,7 +16,7 @@ class Ui_dlgCalendar(object):
         dlgCalendar.setMinimumSize(QtCore.QSize(400, 300))
         dlgCalendar.setMaximumSize(QtCore.QSize(400, 300))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(".\\templates\\../img/calendario.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("C:\\Users\\jcarl\\PycharmProjects\\perezgonzalez2526/templates\\../img/calendario.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         dlgCalendar.setWindowIcon(icon)
         dlgCalendar.setModal(True)
         self.Calendar = QtWidgets.QCalendarWidget(parent=dlgCalendar)
@@ -24,6 +24,7 @@ class Ui_dlgCalendar(object):
         self.Calendar.setMinimumSize(QtCore.QSize(400, 300))
         self.Calendar.setMaximumSize(QtCore.QSize(400, 300))
         self.Calendar.setSelectedDate(QtCore.QDate(2025, 9, 18))
+        self.Calendar.setGridVisible(True)
         self.Calendar.setVerticalHeaderFormat(QtWidgets.QCalendarWidget.VerticalHeaderFormat.NoVerticalHeader)
         self.Calendar.setObjectName("Calendar")
 

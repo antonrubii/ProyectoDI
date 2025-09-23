@@ -60,6 +60,9 @@
      <day>18</day>
     </date>
    </property>
+   <property name="gridVisible">
+    <bool>true</bool>
+   </property>
    <property name="verticalHeaderFormat">
     <enum>QCalendarWidget::NoVerticalHeader</enum>
    </property>
