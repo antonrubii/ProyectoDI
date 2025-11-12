@@ -1,0 +1,69 @@
+/* ----- VENTANA PRINCIPAL ----- */
+QMainWindow {
+    background-color: #ffe6e0;  /* Fondo salmón muy claro */
+}
+
+/* ==========================================================
+   🔹 BOTONES NORMALES (Guardar / Modificar / Eliminar)
+   ==========================================================*/
+#btnSavecli, #btnModifcli, #btnDelcli {
+    background-color: #ffccbb;   /* Salmón claro */
+    border: 1px solid #ff9966;   /* Borde salmón medio */
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #662b00;              /* Texto marrón oscuro */
+    font-weight: bold;
+}
+
+#btnSavecli:hover, #btnModifcli:hover, #btnDelcli:hover {
+    background-color: #ffb38a;   /* Salmón más intenso al pasar el ratón */
+}
+
+/* ==========================================================
+   🔸 BOTONES DE ICONO (Transparente)
+   ==========================================================*/
+#btnCleancli, #btnFechaltacli, #btnBuscacli {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    color: transparent;  /* oculta texto si hubiera */
+}
+
+#btnCleancli:hover, #btnFechaltacli:hover, #btnBuscacli:hover {
+    background-color: rgba(255, 200, 180, 0.25);
+    border-radius: 4px;
+}
+
+/* ----- LINE EDIT ----- */
+QLineEdit {
+    background-color: #ffe0d1;   /* Fondo salmón suave */
+    border: 1px solid #ff9966;
+    padding: 3px;
+    color: #000;
+}
+
+/* ----- COMBOBOX ----- */
+QComboBox {
+    background-color: #ffe0d1;
+    border: 1px solid #ff9966;
+    padding: 3px;
+    color: #000;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #ffe0d1;
+    selection-background-color: #ff9966;
+}
+
+/* ----- TABLAS ----- */
+QTableWidget {
+    background-color: #ffe6d9;
+    gridline-color: #ffb38a;
+    color: #000;
+}
+
+QHeaderView::section {
+    background-color: #ffb38a;
+    padding: 4px;
+    border: 1px solid #ff9966;
+}

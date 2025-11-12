@@ -6,16 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1440</width>
-    <height>947</height>
+    <width>1100</width>
+    <height>941</height>
    </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1100</width>
+    <height>941</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>EmpresaTeis</string>
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../../../.designer/img/logo.ico</normaloff>../../../.designer/img/logo.ico</iconset>
+    <normaloff>../img/logo.ico</normaloff>../img/logo.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="sizePolicy">
@@ -59,8 +65,45 @@
         <string>Customers</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout">
-        <item row="4" column="2">
-         <widget class="QRadioButton" name="rbtFacpaper">
+        <item row="4" column="0">
+         <widget class="QLabel" name="lblApelcli">
+          <property name="text">
+           <string>Surname:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="7">
+         <widget class="QLabel" name="lblNomecli">
+          <property name="text">
+           <string>    Name:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1" colspan="3">
+         <widget class="QLineEdit" name="txtApelcli">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>250</width>
+            <height>25</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="lblTipofaccli">
+          <property name="text">
+           <string>Invoice Type: </string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QRadioButton" name="rbtFacmail">
           <property name="minimumSize">
            <size>
             <width>90</width>
@@ -68,76 +111,14 @@
            </size>
           </property>
           <property name="text">
-           <string>paper billing</string>
+           <string>e-invoice</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
           </property>
          </widget>
         </item>
-        <item row="3" column="6" colspan="3" alignment="Qt::AlignRight">
-         <widget class="QComboBox" name="cmbProvcli">
-          <property name="minimumSize">
-           <size>
-            <width>220</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>180</width>
-            <height>25</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="QLabel" name="lblApelcli">
-          <property name="text">
-           <string>Surname:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="QLabel" name="lblDnicli">
-          <property name="text">
-           <string>DNI/CIF:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="8" alignment="Qt::AlignRight">
-         <widget class="QLabel" name="lblAltacli">
-          <property name="minimumSize">
-           <size>
-            <width>60</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>60</width>
-            <height>16777215</height>
-           </size>
-          </property>
-          <property name="text">
-           <string>Start Date:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="8">
-         <widget class="QLineEdit" name="txtNamecli">
-          <property name="minimumSize">
-           <size>
-            <width>200</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>200</width>
-            <height>25</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="3" colspan="2">
+        <item row="8" column="4" colspan="2">
          <widget class="QPushButton" name="btnSavecli">
           <property name="minimumSize">
            <size>
@@ -156,7 +137,7 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="1" colspan="2">
+        <item row="5" column="1" colspan="3">
          <widget class="QLineEdit" name="txtEmailcli">
           <property name="minimumSize">
            <size>
@@ -172,8 +153,31 @@
           </property>
          </widget>
         </item>
-        <item row="4" column="14">
-         <widget class="QCheckBox" name="chkHistoricocli">
+        <item row="0" column="0">
+         <widget class="QLabel" name="lblDnicli">
+          <property name="text">
+           <string>DNI/CIF:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="7" colspan="3" alignment="Qt::AlignRight">
+         <widget class="QComboBox" name="cmbProvcli">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>25</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="3">
+         <widget class="QRadioButton" name="rbtFacpaper">
           <property name="minimumSize">
            <size>
             <width>90</width>
@@ -181,11 +185,43 @@
            </size>
           </property>
           <property name="text">
-           <string>Hystorical</string>
+           <string>paper billing</string>
           </property>
          </widget>
         </item>
-        <item row="5" column="5" colspan="2">
+        <item row="4" column="9">
+         <widget class="QLineEdit" name="txtNamecli">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>25</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1" colspan="3">
+         <widget class="QLineEdit" name="txtDircli">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>300</width>
+            <height>25</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="6" colspan="2">
          <widget class="QPushButton" name="btnModifcli">
           <property name="minimumSize">
            <size>
@@ -220,23 +256,7 @@
           </property>
          </widget>
         </item>
-        <item row="3" column="1" colspan="2">
-         <widget class="QLineEdit" name="txtDircli">
-          <property name="minimumSize">
-           <size>
-            <width>300</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>300</width>
-            <height>25</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="0">
+        <item row="6" column="0">
          <widget class="QLabel" name="lblDircli">
           <property name="text">
            <string>Address:</string>
@@ -246,14 +266,27 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="0">
+        <item row="7" column="15">
+         <widget class="QCheckBox" name="chkHistoricocli">
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Hystorical</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
          <widget class="QLabel" name="lblMailcli">
           <property name="text">
            <string>Email: </string>
           </property>
          </widget>
         </item>
-        <item row="3" column="4" colspan="2" alignment="Qt::AlignRight">
+        <item row="6" column="5" colspan="2" alignment="Qt::AlignRight">
          <widget class="QLabel" name="lblPRovcli">
           <property name="minimumSize">
            <size>
@@ -269,7 +302,7 @@
           </property>
          </widget>
         </item>
-        <item row="5" column="7" colspan="2">
+        <item row="8" column="8" colspan="2">
          <widget class="QPushButton" name="btnDelcli">
           <property name="minimumSize">
            <size>
@@ -288,53 +321,7 @@
           </property>
          </widget>
         </item>
-        <item row="1" column="1" colspan="2">
-         <widget class="QLineEdit" name="txtApelcli">
-          <property name="minimumSize">
-           <size>
-            <width>300</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>250</width>
-            <height>25</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="6">
-         <widget class="QLabel" name="lblNomecli">
-          <property name="text">
-           <string>Name:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="0">
-         <widget class="QLabel" name="lblTipofaccli">
-          <property name="text">
-           <string>Invoice Type: </string>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="1">
-         <widget class="QRadioButton" name="rbtFacmail">
-          <property name="minimumSize">
-           <size>
-            <width>90</width>
-            <height>20</height>
-           </size>
-          </property>
-          <property name="text">
-           <string>e-invoice</string>
-          </property>
-          <property name="checked">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="7" column="0" colspan="15">
+        <item row="10" column="0" colspan="16">
          <widget class="QTableWidget" name="tableCustomerlist">
           <property name="minimumSize">
            <size>
@@ -348,6 +335,12 @@
             <height>520</height>
            </size>
           </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
           <column>
            <property name="text">
             <string>Surname</string>
@@ -355,7 +348,7 @@
           </column>
           <column>
            <property name="text">
-            <string>Name</string>
+            <string>Estado</string>
            </property>
           </column>
           <column>
@@ -378,9 +371,30 @@
             <string>Invoice Type</string>
            </property>
           </column>
+          <column>
+           <property name="text">
+            <string>Estado</string>
+           </property>
+          </column>
          </widget>
         </item>
-        <item row="6" column="4" colspan="3">
+        <item row="6" column="11">
+         <widget class="QComboBox" name="cmbMunicli">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>25</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="5" colspan="3">
          <widget class="QLabel" name="lblListcli">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -415,8 +429,8 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="8">
-         <widget class="QLineEdit" name="txtMobilcli">
+        <item row="5" column="9">
+         <widget class="QLineEdit" name="txtMobilecli">
           <property name="minimumSize">
            <size>
             <width>150</width>
@@ -447,6 +461,100 @@
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="10">
+         <widget class="QLabel" name="lblMunicli">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>City:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="7">
+         <widget class="QLabel" name="lblMovilcli">
+          <property name="text">
+           <string>   Mobile: </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7">
+         <widget class="QLabel" name="lblAltacli">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Start Date:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="15">
+         <widget class="QPushButton" name="btnCleancli">
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../img/reload.png</normaloff>../img/reload.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="btnBuscacli">
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../img/lupa.png</normaloff>../img/lupa.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>26</width>
+            <height>26</height>
+           </size>
+          </property>
+          <property name="autoRepeatDelay">
+           <number>302</number>
           </property>
          </widget>
         </item>
@@ -479,48 +587,16 @@
           </property>
          </widget>
         </item>
-        <item row="3" column="9">
-         <widget class="QLabel" name="lblMunicli">
+        <item row="0" column="3">
+         <widget class="QLabel" name="lblWarning">
           <property name="minimumSize">
            <size>
-            <width>80</width>
+            <width>120</width>
             <height>20</height>
            </size>
           </property>
-          <property name="maximumSize">
-           <size>
-            <width>20</width>
-            <height>16777215</height>
-           </size>
-          </property>
           <property name="text">
-           <string>City:</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="10">
-         <widget class="QComboBox" name="cmbMunicli">
-          <property name="minimumSize">
-           <size>
-            <width>220</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>16777215</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="4">
-         <widget class="QLabel" name="lblMovilcli">
-          <property name="text">
-           <string>Mobile: </string>
+           <string>TextLabel</string>
           </property>
          </widget>
         </item>
@@ -528,8 +604,31 @@
       </widget>
       <widget class="QWidget" name="tab_3">
        <attribute name="title">
-        <string>Tab 2</string>
+        <string>Sales</string>
        </attribute>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>90</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cmbIVA">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>80</y>
+          <width>69</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
       </widget>
      </widget>
     </item>
@@ -540,7 +639,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1440</width>
+     <width>1100</width>
      <height>21</height>
     </rect>
    </property>
@@ -548,12 +647,23 @@
     <property name="title">
      <string>File</string>
     </property>
+    <widget class="QMenu" name="menuExport_Data">
+     <property name="title">
+      <string>Export Data(.xls)</string>
+     </property>
+     <addaction name="actionCustomers"/>
+    </widget>
+    <addaction name="menuExport_Data"/>
+    <addaction name="separator"/>
     <addaction name="actionExit"/>
+    <addaction name="separator"/>
    </widget>
    <widget class="QMenu" name="menuTools">
     <property name="title">
      <string>Tools</string>
     </property>
+    <addaction name="actionBackup"/>
+    <addaction name="actionRestore_Backup"/>
    </widget>
    <widget class="QMenu" name="menuReports">
     <property name="title">
@@ -565,6 +675,7 @@
     <property name="title">
      <string>About</string>
     </property>
+    <addaction name="actionAbout"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuTools"/>
@@ -572,9 +683,30 @@
    <addaction name="menuAbout"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionExit"/>
+   <addaction name="actionBackup"/>
+   <addaction name="actionRestore_Backup"/>
+  </widget>
   <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>../img/exit.jpg</normaloff>../img/exit.jpg</iconset>
+   </property>
    <property name="text">
     <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+E</string>
    </property>
   </action>
   <action name="actionCustomer_Report">
@@ -582,16 +714,49 @@
     <string>Customer Report</string>
    </property>
   </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionBackup">
+   <property name="icon">
+    <iconset>
+     <normalon>../img/restore_backup.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Backup</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionRestore_Backup">
+   <property name="icon">
+    <iconset>
+     <normalon>../img/backup.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Restore Backup</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionCustomers">
+   <property name="text">
+    <string>Customers</string>
+   </property>
+  </action>
  </widget>
  <tabstops>
-  <tabstop>panPrincipal</tabstop>
   <tabstop>txtDnicli</tabstop>
-  <tabstop>txtAltacli</tabstop>
-  <tabstop>btnFechaltacli</tabstop>
   <tabstop>txtApelcli</tabstop>
   <tabstop>txtNamecli</tabstop>
   <tabstop>txtEmailcli</tabstop>
-  <tabstop>txtMobilcli</tabstop>
+  <tabstop>txtMobilecli</tabstop>
   <tabstop>txtDircli</tabstop>
   <tabstop>cmbProvcli</tabstop>
   <tabstop>cmbMunicli</tabstop>
