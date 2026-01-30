@@ -6,12 +6,11 @@ import sys
 import zipfile
 import shutil
 import globals
-import time
 from PyQt6 import QtWidgets, QtCore, QtGui
 from venAux import *
 from window import *
-import globals
-import conexion
+import datetime
+import os
 
 
 class Events:
@@ -55,23 +54,21 @@ class Events:
     def loadProv(self):
         try:
             globals.ui.cmbProvcli.clear()
-            list =conexion.Conexion.listProv(self)
-            #listado = conexionserver.ConexionServer.listaProv(self)
-            globals.ui.cmbProvcli.addItems(list)
+            lista = conexion.Conexion.listProv()
+            globals.ui.cmbProvcli.addItems(lista)
         except Exception as e:
             print("error en cargar las provincias", e)
 
     def loadMunicli(self):
         try:
             province = globals.ui.cmbProvcli.currentText()
-            list = conexion.Conexion.listMuniProv(province)
-            # listado = conexionserver.ConexionServer.listMuniProv(province)
+            lista = conexion.Conexion.listMuniProv(province)
             globals.ui.cmbMunicli.clear()
-            globals.ui.cmbMunicli.addItems(list)
+            globals.ui.cmbMunicli.addItems(lista)
         except Exception as e:
             print("error en cargar los municipios", e)
 
-    def resizeTabCustomer (self):
+    def resizeTabCustomer(self):
         try:
             header = globals.ui.tableCustomerlist.horizontalHeader()
             for i in range(header.count()):
@@ -79,8 +76,41 @@ class Events:
                     header.setSectionResizeMode(i, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)
                 else:
                     header.setSectionResizeMode(i, QtWidgets.QHeaderView.ResizeMode.Stretch)
+
                 header_items = globals.ui.tableCustomerlist.horizontalHeaderItem(i)
-                #negrita en la cabecera
+                font = header_items.font()
+                font.setBold(True)
+                header_items.setFont(font)
+        except Exception as e:
+            print("error en resize la tabla", e)
+
+    def resizetableSales(self):
+        try:
+            header = globals.ui.tableSales.horizontalHeader()
+            for i in range(header.count()):
+                if i == 1:
+                    header.setSectionResizeMode(i, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)
+                else:
+                    header.setSectionResizeMode(i, QtWidgets.QHeaderView.ResizeMode.Stretch)
+
+                header_items = globals.ui.tableSales.horizontalHeaderItem(i)
+                font = header_items.font()
+                font.setBold(True)
+                header_items.setFont(font)
+
+            globals.ui.tableSales.setRowCount(1)
+        except Exception as e:
+            print("error en resize la tabla", e)
+
+    def resizeTabProducts(self):
+        try:
+            header = globals.ui.tableProducts.horizontalHeader()
+            for i in range(header.count()):
+
+
+                header.setSectionResizeMode(i, QtWidgets.QHeaderView.ResizeMode.Stretch)
+
+                header_items = globals.ui.tableProducts.horizontalHeaderItem(i)
                 font = header_items.font()
                 font.setBold(True)
                 header_items.setFont(font)
@@ -101,75 +131,73 @@ class Events:
 
     def saveBackup(self):
         try:
-            data = datetime.datatime.now().strftime("%Y_/%m_/%d_%H:%M:%S")
+            data = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
             filename = str(data) + '_backup.zip'
-            directory , file = globals.dlg.getSaveFileName(None,"Save Backup File",filename, 'zip')
-            globals
-            if var.dlgOpen.accept and file :
 
-                filezip =zipfile.ZipFile(file, 'w', zipfile.ZIP_DEFLATED)
-                filezip.write('./data.bbdd.sqlite',os.path.basename('bbdd.sqlite')), zipfile.ZIP_DEFLATED
+            # Usamos QtWidgets directamente para no depender de globals.dlg
+            file, _ = QtWidgets.QFileDialog.getSaveFileName(None, "Guardar Copia de Seguridad", filename,
+                                                            'Zip Files (*.zip)')
+
+            if file:
+                filezip = zipfile.ZipFile(file, 'w', zipfile.ZIP_DEFLATED)
+                # Asegúrate de que esta ruta a tu bbdd sea correcta
+                filezip.write('./data/bbdd.sqlite', 'bbdd.sqlite')
                 filezip.close()
-                shutil.move(filezip, directory)
+
                 mbox = QtWidgets.QMessageBox()
                 mbox.setIcon(QtWidgets.QMessageBox.Icon.Information)
-                mbox.setWindowIcon(QtGui.QIcon('./img/logo.ico'))
-                mbox.setWindowTitle('Save Backup')
-                mbox.setText('Save Backup Done')
+                mbox.setWindowTitle('Copia de Seguridad')
+                mbox.setText('Copia de seguridad realizada con éxito')
                 mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Ok)
                 mbox.exec()
         except Exception as e:
             print("error in save backup", e)
 
-
     def restoreBackup(self):
         try:
-            filename = va.dljOpen.getOpenFileName(None,"Restore Backup File", '','*.zip;;All Files (*)')
-            file = filename[0]
-            if file :
+            # Usamos QtWidgets directamente para evitar el error de atributo
+            file, _ = QtWidgets.QFileDialog.getOpenFileName(None, "Restaurar Copia de Seguridad", '',
+                                                            'Zip Files (*.zip)')
+
+            if file:
                 with zipfile.ZipFile(file, 'r') as bbdd:
-                    bbdd.extractall(path='./data',pwd =None)
-                    shutil.move ('bbdd.sqlite' , './data')
-                    bbdd.close()
-                    mbox = QtWidgets.QMessageBox()
-                    mbox.setIcon(QtWidgets.QMessageBox.Icon.Information)
-                    mbox.setWindowIcon(QtGui.QIcon('./img/logo.ico'))
-                    mbox.setWindowTitle('Restore Backup')
-                    mbox.setText('Restore Backup Done')
-                    mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Ok)
-                    mbox.exec()
-                    conexion.Conexion.db_conexion(self)
-                    events.loadProv(self)
-                    cutomers.Customers.loadTableCli(self)
+                    bbdd.extractall(path='./data')
+
+                mbox = QtWidgets.QMessageBox()
+                mbox.setIcon(QtWidgets.QMessageBox.Icon.Information)
+                mbox.setWindowTitle('Restaurar Copia')
+                mbox.setText('Copia de seguridad restaurada con éxito')
+                mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Ok)
+                mbox.exec()
+
+                # Recargamos todo para que se vean los cambios
+                conexion.Conexion.db_connect("./data/bbdd.sqlite")
+                self.loadProv()
+                customers.Customers.loadTablecli(True)
         except Exception as e:
             print("error in restore backup", e)
 
     def exportXlsCustomers(self):
         try:
-            data = datetime.datatime.now().strftime("%Y_/%m_/%d_%H:%M:%S")
+            data = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
             filename = str(data) + '_customers.csv'
-            directory, file = globals.dlg.getSaveFileName(None, "Save Backup File", filename, '.csv')
-            globals.dlgOpen.centrar()
-            var = False
+            directory, file = globals.dlg.getSaveFileName(None, "Save Customers File", filename, '.csv')
 
-            if file :
-                records = conexion.Conexion.listCustomers(var)
-                with open (file , 'w',newline='',encoding='utf-8') as csvfile:
-                    writer= csv.writer(csvfile)
-                    writer.writerows("DNI_NIE","Fecha Alta","Surname","Name","eMail","Mobile","Adress","Province",
-                                     "City","InvoiceType","Active",)
+            if file:
+                records = conexion.Conexion.listCustomers(False)
+
+                with open(file, 'w', newline='', encoding='utf-8') as csvfile:
+                    writer = csv.writer(csvfile)
+                    writer.writerow(
+                        ["DNI_NIE", "Fecha Alta", "Surname", "Name", "eMail", "Mobile",
+                         "Adress", "Province", "City", "InvoiceType", "Active"]
+                    )
 
                     for record in records:
                         writer.writerow(record)
+
                 shutil.move(file, directory)
-                mbox = QtWidgets.QMessageBox()
-                mbox.setIcon(QtWidgets.QMessageBox.Icon.Information)
-                mbox.setWindowIcon(QtGui.QIcon('./img/logo.ico'))
-                mbox.setWindowTitle('Export Customers')
-                mbox.setText('Export Customers Done')
-                mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Ok)
-                mbox.exec()
-            else :
+
                 mbox = QtWidgets.QMessageBox()
                 mbox.setIcon(QtWidgets.QMessageBox.Icon.Information)
                 mbox.setWindowIcon(QtGui.QIcon('./img/logo.ico'))
@@ -177,5 +205,18 @@ class Events:
                 mbox.setText('Export Customers Error')
                 mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Ok)
                 mbox.exec()
+
+
         except Exception as e:
             print("error in export customers", e)
+
+    def loadStatubar(self):
+        try:
+            data = datetime.datetime.now().strftime("%d/%m/%Y")
+            self.labelstatus = QtWidgets.QLabel(self)
+            self.labelstatus.setText("Status")
+            self.labelstatus.setStyleSheet("color : white; font-weight: bold;font-size: 10px;")
+            globals.ui.statusbar.addPermanentWidget(self.labelstatus,1)
+
+        except Exception as e:
+            print("error in status bar", e)

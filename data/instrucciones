@@ -1,0 +1,67 @@
+class InstruccionesExamen:
+    """
+    Esta clase explica todos los pasos que tendrás que hacer en el examen:
+    crear la tabla en DB Browser, leer el enunciado, crear la lógica,
+    crear la ventana y conectarlo al menú principal del proyecto.
+
+    PASO 1: Crear la tabla en DB Browser (LO PRIMERO)
+    -------------------------------------------------
+    - Abrir DB Browser for SQLite.
+    - Abrir el archivo .db del proyecto.
+    - Ir a "Ejecutar SQL".
+    - Crear la tabla que pida el enunciado.
+    Ejemplo:
+        CREATE TABLE ventas (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            nombre TEXT,
+            articulo TEXT,
+            precio REAL
+        );
+    - La tabla debe existir ANTES de programar nada.
+    - Si la tabla no existe, el programa dará errores.
+
+    PASO 2: Leer el enunciado del profesor
+    --------------------------------------
+    - Identificar:
+        * Nombre de la ventana (Ventas / Alquileres / Clientes / Matriculas…)
+        * Qué campos necesita (nombre, fecha, matrícula, producto…)
+        * Qué botones hacen falta (Guardar, Validar, Buscar…)
+    - A partir del enunciado decides la tabla y los widgets de la ventana.
+
+    PASO 3: Crear un archivo nuevo de lógica
+    ----------------------------------------
+    - Copiar el archivo 'customers.py'.
+    - Pegar y renombrar a 'ventas.py' o el nombre que pida el profe.
+    - Cambiar:
+        * nombre de la tabla en todas las consultas SQL
+        * los campos (coincidir con los definidos en DB Browser)
+        * nombres de funciones si quieres (insertar_venta, validar_matricula…)
+    - Esta clase se encarga de:
+        * insertar datos
+        * listar datos (si lo pide el profe)
+        * buscar o validar (si lo pide el enunciado)
+
+    PASO 4: Crear una ventana nueva (la interfaz)
+    ----------------------------------------------
+    - Copiar el archivo 'customer_window.py'.
+    - Pegar y renombrar a 'ventas_window.py' o el nombre adecuado.
+    - Cambiar:
+        * Título de la ventana.
+        * Labels (por ejemplo: "Matrícula:", "Fecha:", "Propietario:").
+        * Entradas QLineEdit.
+        * Radio Buttons, ComboBox, etc. si los pide el profe.
+        * Botón Guardar conectado a tu clase de lógica.
+    - La ventana debe llamar a las funciones del archivo de lógica
+      cuando el usuario pulse los botones.
+
+    PASO 5: Conectar la ventana con el menú principal
+    --------------------------------------------------
+    - Abrir 'main_window.py'.
+    - Buscar los botones o menús que abren ventanas.
+    - Copiar una línea existente (por ejemplo abrir clientes).
+    - Adaptarla para abrir tu nueva ventana.
+    Ejemplo:
+        self.btnVentas.clicked.connect(self.abrir_ventas)
+
+    - Crear la función correspondiente:
+        def abrir_ventas(self):

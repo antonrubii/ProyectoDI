@@ -6,7 +6,7 @@ QMainWindow {
 /* ==========================================================
    🔹 BOTONES NORMALES (Guardar / Modificar / Eliminar)
    ==========================================================*/
-#btnSavecli, #btnModifcli, #btnDelcli {
+#btnSavecli, #btnModifcli, #btnDelcli ,#btnSavePro , #btnModifPro , #btnDelPro{
     background-color: #ffccbb;   /* Salmón claro */
     border: 1px solid #ff9966;   /* Borde salmón medio */
     padding: 4px 8px;
@@ -22,7 +22,7 @@ QMainWindow {
 /* ==========================================================
    🔸 BOTONES DE ICONO (Transparente)
    ==========================================================*/
-#btnCleancli, #btnFechaltacli, #btnBuscacli {
+#btnCleancli, #btnFechaltacli, #btnBuscacli  {
     background-color: transparent;
     border: none;
     padding: 0px;
