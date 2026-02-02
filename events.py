@@ -59,12 +59,13 @@ class Events:
         except Exception as e:
             print("error en cargar las provincias", e)
 
-    def loadMunicli(self):
+    def loadMunicli(self=None):
         try:
             province = globals.ui.cmbProvcli.currentText()
-            lista = conexion.Conexion.listMuniProv(province)
-            globals.ui.cmbMunicli.clear()
-            globals.ui.cmbMunicli.addItems(lista)
+            if province:  # Solo si hay algo seleccionado
+                lista = conexion.Conexion.listMuniProv(province)
+                globals.ui.cmbMunicli.clear()
+                globals.ui.cmbMunicli.addItems(lista)
         except Exception as e:
             print("error en cargar los municipios", e)
 

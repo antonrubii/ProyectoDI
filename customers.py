@@ -166,41 +166,43 @@ class Customers:
             print("error en loadTablecli ", error)
 
     @staticmethod
-    def selectCustomer(self = None):
-        """
-        Modulo para seleccionar Customer
-        :param self: None
-        :type self: None
-        """
+    def selectCustomer(self=None):
         try:
             row = globals.ui.tableCustomerlist.selectedItems()
-            data = [dato.text() for dato in row]
-            record = Conexion.dataOneCustomer(str(data[2]))
-            print(record)
-            boxes = [
-                globals.ui.txtDnicli, globals.ui.txtAltacli, globals.ui.txtApelcli,
-                globals.ui.txtNamecli, globals.ui.txtEmailcli, globals.ui.txtMobilecli,
-                globals.ui.txtDircli
-            ]
+            if not row: return
+            dni = row[2].text()
+            record = Conexion.dataOneCustomer(dni)
+            if record:
+                # Cargar textos
+                globals.ui.txtDnicli.setText(str(record[0]))
+                globals.ui.txtAltacli.setText(str(record[1]))
+                globals.ui.txtApelcli.setText(str(record[2]))
+                globals.ui.txtNamecli.setText(str(record[3]))
+                globals.ui.txtEmailcli.setText(str(record[4]))
+                globals.ui.txtMobilecli.setText(str(record[5]))
+                globals.ui.txtDircli.setText(str(record[6]))
 
-            for i in range(len(boxes)):
-                boxes[i].setText(record[i])
+                # CARGA PROVINCIA Y CIUDAD (Bloqueando señales)
+                globals.ui.cmbProvcli.blockSignals(True)
+                globals.ui.cmbMunicli.blockSignals(True)
 
-            globals.ui.cmbProvcli.setCurrentText(record[7])
-            globals.ui.cmbMunicli.setCurrentText(record[8])
+                globals.ui.cmbProvcli.setCurrentText(str(record[7]))
+                from events import Events
+                Events.loadMunicli()  # Cargamos los municipios de esa provincia
+                globals.ui.cmbMunicli.setCurrentText(str(record[8]))
 
-            if str(record[9]) == "paper":
-                globals.ui.rbtFacpaper.setChecked(True)
-            else:
-                globals.ui.rbtFacmail.setChecked(True)
-            globals.estado = str(record[10])
-            globals.ui.txtDnicli.setEnabled(False)
-            globals.ui.txtDnicli.setStyleSheet('background-color: rgb(255, 255, 200);')
+                globals.ui.cmbProvcli.blockSignals(False)
+                globals.ui.cmbMunicli.blockSignals(False)
 
-
+                # Resto de campos
+                if str(record[9]) == "paper":
+                    globals.ui.rbtFacpaper.setChecked(True)
+                else:
+                    globals.ui.rbtFacmail.setChecked(True)
+                globals.estado = str(record[10])
+                globals.ui.txtDnicli.setEnabled(False)
         except Exception as error:
             print("error en selectCustomer ", error)
-
     @staticmethod
     def delCliente(self = None):
         """
@@ -298,62 +300,54 @@ class Customers:
         except Exception as error:
             print("error en saveCli ", error)
 
-
     @staticmethod
-    def modifcli(self = None):
-        """
-        Modulo para modificar cliente
-        :param self: None
-        :type self: None
-        """
+    def modifcli(self=None):
         try:
-            print(globals.estado)
-            if globals.estado == str("False"):
+            # 1. Comprobar si el cliente está dado de baja para reactivarlo
+            if globals.estado == "False":
                 mbox = QtWidgets.QMessageBox()
-                mbox.setWindowTitle("Information")
-                mbox.setIcon(QtWidgets.QMessageBox.Icon.Warning)
-                mbox.setText("Client non activated .Do you want activate?")
-                mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Yes)
-                if mbox.exec():
-                    globals.estado = str("True")
-            mbox = QtWidgets.QMessageBox()
-            mbox.setWindowTitle("Modify Data")
-            mbox.setIcon(QtWidgets.QMessageBox.Icon.Information)
-            mbox.setText("Are you sure modify data?")
-            mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Yes | QtWidgets.QMessageBox.StandardButton.No )
-            mbox.setDefaultButton(QtWidgets.QMessageBox.StandardButton.No)
-            if mbox.exec():
-                dni = globals.ui.txtDnicli.text()
-                modifcli = [
-                    globals.ui.txtDnicli.text(), globals.ui.txtAltacli.text(), globals.ui.txtApelcli.text(),
-                    globals.ui.txtNamecli.text(), globals.ui.txtEmailcli.text(), globals.ui.txtMobilecli.text(),
-                    globals.ui.txtDircli.text(), globals.ui.cmbProvcli.currentText(),
-                    globals.ui.cmbMunicli.currentText(),globals.estado
-                ]
+                mbox.setWindowTitle("Aviso")
+                mbox.setText("Cliente inactivo. ¿Desea activarlo?")
+                mbox.setStandardButtons(
+                    QtWidgets.QMessageBox.StandardButton.Yes | QtWidgets.QMessageBox.StandardButton.No)
+                if mbox.exec() == QtWidgets.QMessageBox.StandardButton.Yes:
+                    globals.estado = "True"
 
+            # 2. Confirmación de modificación
+            mbox = QtWidgets.QMessageBox()
+            mbox.setWindowTitle("Modificar")
+            mbox.setText("¿Está seguro de que desea modificar los datos?")
+            mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Yes | QtWidgets.QMessageBox.StandardButton.No)
+
+            if mbox.exec() == QtWidgets.QMessageBox.StandardButton.Yes:
+                dni = globals.ui.txtDnicli.text()
+
+                # Determinamos el tipo de factura
                 if globals.ui.rbtFacpaper.isChecked():
                     fact = "paper"
-                elif globals.ui.rbtFacmail.isChecked():
+                else:
                     fact = "electronic"
-                    modifcli.append(fact)
-                if Conexion.modifcli(dni , modifcli):
-                    mbox = QtWidgets.QMessageBox()
-                    mbox.setWindowTitle("Information")
-                    mbox.setIcon(QtWidgets.QMessageBox.Icon.Information)
-                    mbox.setText("Cliente modified successfully")
-                    mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Yes)
-                    if mbox.exec():
-                        mbox.hide()
-                    else:
-                        mbox = QtWidgets.QMessageBox()
-                        mbox.setWindowTitle("Warning")
-                        mbox.setIcon(QtWidgets.QMessageBox.Icon.Warning)
-                        mbox.setText("Operation cancelled.")
-                        mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Yes)
-                        if  mbox.exec():
-                            mbox.hide()
-                        else:
-                            mbox.hide()
+
+                # Creamos la lista con TODOS los campos en el orden que espera la query de arriba
+                modifcli = [
+                    dni,
+                    globals.ui.txtAltacli.text(),
+                    globals.ui.txtApelcli.text(),
+                    globals.ui.txtNamecli.text(),
+                    globals.ui.txtEmailcli.text(),
+                    globals.ui.txtMobilecli.text(),
+                    globals.ui.txtDircli.text(),
+                    globals.ui.cmbProvcli.currentText(),
+                    globals.ui.cmbMunicli.currentText(),
+                    globals.estado,
+                    fact
+                ]
+
+                if Conexion.modifcli(dni, modifcli):
+                    QtWidgets.QMessageBox.information(None, "Éxito", "Datos actualizados correctamente")
+                    Customers.loadTablecli(True)  # Recargar tabla
+                else:
+                    QtWidgets.QMessageBox.critical(None, "Error", "No se pudo actualizar la base de datos")
 
         except Exception as error:
             print("error modify client", error)

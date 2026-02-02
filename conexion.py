@@ -1,21 +1,15 @@
-import sqlite3
 import globals
 from PyQt6 import QtSql
 
-
 class Conexion:
-
     @staticmethod
     def db_connect(filename):
         try:
             db = QtSql.QSqlDatabase.addDatabase("QSQLITE")
             db.setDatabaseName(filename)
             if not db.open():
-                print("Error en la conexión")
                 return False
-            else:
-                print("Conexión exitosa")
-                return True
+            return True
         except Exception as e:
             print("Ocurrió un error en la conexión:", e)
             return False
@@ -27,109 +21,65 @@ class Conexion:
             query.prepare("SELECT Name, \"Unit Price\" FROM Products WHERE Code = :code")
             query.bindValue(":code", code)
             if query.exec() and query.next():
-                return (query.value(0), query.value(1))
-            return ("", 0)
+                # Devuelve (Nombre, Precio)
+                return (str(query.value(0)), float(query.value(1)))
+            return None
         except Exception as e:
-            print("Error selectProduct", e)
-            return ("", 0)
+            print("Error selectProduct:", e)
+            return None
 
     @staticmethod
     def insertInvoice(dni, fecha):
         try:
             query = QtSql.QSqlQuery()
-            query.prepare("INSERT INTO invoices (dni, fecha) VALUES (:dni, :fecha)")
-            query.bindValue(":dni", dni)
-            query.bindValue(":fecha", fecha)
+            # En tu imagen: dninie y data
+            query.prepare("INSERT INTO invoices (dninie, data) VALUES (:dni, :fecha)")
+            query.bindValue(":dni", str(dni))
+            query.bindValue(":fecha", str(fecha))
             return query.exec()
         except Exception as e:
-            print("error insertInvoice", e)
+            print("Error insertInvoice:", e)
             return False
+
 
     @staticmethod
     def allInvoices():
         try:
             query = QtSql.QSqlQuery()
-            query.prepare("SELECT id, dni, fecha FROM invoices ORDER BY id DESC")
+            # En tu imagen: idfac, dninie, data
+            query.prepare("SELECT idfac, dninie, data FROM invoices ORDER BY idfac DESC")
             lista = []
-
             if query.exec():
                 while query.next():
-                    row = [query.value(i) for i in range(query.record().count())]
+                    row = [str(query.value(i)) for i in range(3)]
                     lista.append(row)
-
             return lista
-
         except Exception as e:
             print("error allInvoices", e)
             return []
 
     @staticmethod
-    def addPro(newcli):
+    def addPro(newpro):
         try:
             query = QtSql.QSqlQuery()
-            query.prepare("""
-                INSERT INTO Products (Code, Name, Family, Stock, "Unit Price")
-                VALUES (:code, :name, :family, :stock, :price)
-            """)
-
-            query.bindValue(":code", newcli[0])
-            query.bindValue(":name", newcli[1])
-            query.bindValue(":family", newcli[2])
-            query.bindValue(":stock", newcli[3])
-            query.bindValue(":price", newcli[4])
-
+            query.prepare("INSERT INTO Products (Code, Name, Family, Stock, \"Unit Price\") VALUES (:code, :name, :family, :stock, :price)")
+            query.bindValue(":code", newpro[0]); query.bindValue(":name", newpro[1])
+            query.bindValue(":family", newpro[2]); query.bindValue(":stock", newpro[3])
+            query.bindValue(":price", newpro[4])
             return query.exec()
-
         except Exception as e:
-            print("error en addPro:", e)
             return False
 
     @staticmethod
-    def dataOneProduct(code):
+    def modifPro(datosPro):
         try:
             query = QtSql.QSqlQuery()
-            query.prepare("SELECT * FROM Products WHERE Code = :code")
-            query.bindValue(":code", code)
-
-            if query.exec() and query.next():
-                record = query.record()
-                data = []
-                for i in range(record.count()):
-                    data.append(query.value(i))
-                return tuple(data)
-
-            return None
-
-        except Exception as e:
-            print("Error en dataOneProduct:", e)
-            return None
-
-    @staticmethod
-    def modifPro(modifcli):
-        try:
-            query = QtSql.QSqlQuery()
-
-            query.prepare("""
-                UPDATE Products 
-                SET Code = :code_new,
-                    Name = :name,
-                    Family = :family,
-                    Stock = :stock,
-                    "Unit Price" = :price
-                WHERE Code = :code_old
-            """)
-
-            query.bindValue(":code_old", modifcli[0])
-            query.bindValue(":code_new", modifcli[0])
-            query.bindValue(":name", modifcli[1])
-            query.bindValue(":family", modifcli[2])
-            query.bindValue(":stock", modifcli[3])
-            query.bindValue(":price", modifcli[4])
-
+            query.prepare("UPDATE Products SET Name = :name, Family = :family, Stock = :stock, \"Unit Price\" = :price WHERE Code = :code")
+            query.bindValue(":code", datosPro[0]); query.bindValue(":name", datosPro[1])
+            query.bindValue(":family", datosPro[2]); query.bindValue(":stock", datosPro[3])
+            query.bindValue(":price", datosPro[4])
             return query.exec()
-
         except Exception as e:
-            print("Error modifPro:", e)
             return False
 
     @staticmethod
@@ -151,45 +101,52 @@ class Conexion:
     def listProducts():
         try:
             records = []
-            query = QtSql.QSqlQuery()
-            query.prepare("SELECT * FROM products")  # sacar filtro
-            if query.exec():
-                while query.next():
-                    row = [query.value(i) for i in range(query.record().count())]
-                    records.append(row)
+            query = QtSql.QSqlQuery("SELECT Code, Name, Family, Stock, \"Unit Price\" FROM Products ORDER BY Name")
+            while query.next():
+                row = [query.value(i) for i in range(5)]
+                records.append(row)
             return records
         except Exception as e:
-            print("error selectProduct", e)
             return []
+
+    @staticmethod
+    def dataOneProduct(nombre):
+        try:
+            query = QtSql.QSqlQuery()
+            query.prepare("SELECT Code, Name, Family, Stock, \"Unit Price\" FROM Products WHERE Name = :name")
+            query.bindValue(":name", nombre)
+            if query.exec() and query.next():
+                return [query.value(i) for i in range(5)]
+            return None
+        except Exception as e:
+            return None
 
     @staticmethod
     def dataOneCustomer(dni):
         try:
             query = QtSql.QSqlQuery()
-            query.prepare("SELECT * FROM customers WHERE dni_nie = :dni OR mobile = :dni")
-            query.bindValue(":dni", dni)
+            query.prepare("SELECT * FROM customers WHERE mobile = :dato OR dni_nie = :dato")
+            query.bindValue(":dato", dni)
             if query.exec() and query.next():
                 return [query.value(i) for i in range(query.record().count())]
-            return []
+            return None
         except Exception as e:
-            print("error en dataOneCustomer", e)
-            return []
+            return None
 
     @staticmethod
     def listProv():
         records = []
-        query = QtSql.QSqlQuery("SELECT name FROM provinces ORDER BY name")
+        query = QtSql.QSqlQuery("SELECT provincia FROM provincias ORDER BY provincia")
         while query.next():
             records.append(query.value(0))
         return records
 
     @staticmethod
-    def listMuniProv(province):
+    def listMuniProv(provincia):
         records = []
         query = QtSql.QSqlQuery()
-        query.prepare(
-            "SELECT name FROM municipalities WHERE province_id = (SELECT id FROM provinces WHERE name = :prov)")
-        query.bindValue(":prov", province)
+        query.prepare("SELECT municipio FROM municipios WHERE idprov = (SELECT idprov FROM provincias WHERE provincia = :prov) ORDER BY municipio")
+        query.bindValue(":prov", provincia)
         if query.exec():
             while query.next():
                 records.append(query.value(0))
@@ -197,7 +154,6 @@ class Conexion:
 
     @staticmethod
     def deleteCli(dni):
-        """ Borrado lógico: pone historical a False """
         query = QtSql.QSqlQuery()
         query.prepare("UPDATE customers SET historical = 'False' WHERE dni_nie = :dni")
         query.bindValue(":dni", dni)
@@ -213,17 +169,21 @@ class Conexion:
 
     @staticmethod
     def insertVenta(venta):
-        query = QtSql.QSqlQuery()
-        query.prepare("INSERT INTO sales (idFactura, idProducto, amount, total) VALUES (:idfac, :idpro, :qty, :total)")
-        query.bindValue(":idfac", int(venta[0]))
-        query.bindValue(":idpro", int(venta[1]))
-        query.bindValue(":qty", float(venta[2]))
-        query.bindValue(":total", float(venta[3]))
-        return query.exec()
+        try:
+            query = QtSql.QSqlQuery()
+            # En tu imagen la tabla sales tiene: idv, idfac, idpro, amount
+            query.prepare("INSERT INTO sales (idfac, idpro, amount) VALUES (:idfac, :idpro, :qty)")
+            query.bindValue(":idfac", int(venta[0]))
+            query.bindValue(":idpro", int(venta[1]))
+            query.bindValue(":qty", int(venta[2]))
+            return query.exec()
+        except Exception as e:
+            print("Error insertVenta:", e)
+            return False
+
 
     @staticmethod
     def deleteVentasFactura(id_factura):
-        """ Borra las líneas de venta asociadas a una factura """
         query = QtSql.QSqlQuery()
         query.prepare("DELETE FROM sales WHERE idFactura = :id")
         query.bindValue(":id", id_factura)
@@ -233,18 +193,77 @@ class Conexion:
     @staticmethod
     def getVentas(id_factura):
         lista = []
+        try:
+            query = QtSql.QSqlQuery()
+            # Como tu tabla sales no tiene precio ni nombre, los traemos de Products con un JOIN
+            query.prepare("""
+                        SELECT s.idv, s.idpro, p.Name, p."Unit Price", s.amount, (s.amount * p."Unit Price") 
+                        FROM sales as s 
+                        INNER JOIN Products as p ON s.idpro = p.Code 
+                        WHERE s.idfac = :id
+                    """)
+            query.bindValue(":id", id_factura)
+            if query.exec():
+                while query.next():
+                    lista.append([query.value(i) for i in range(6)])
+            return lista
+        except Exception as e:
+            print("Error getVentas:", e)
+            return []
+
+    @staticmethod
+    def modifcli(dni, modifcli):
+        try:
+            query = QtSql.QSqlQuery()
+            query.prepare("""UPDATE customers SET adddata=:alta, surname=:apel, name=:nome, mail=:mail, 
+                          mobile=:movil, address=:dir, province=:prov, city=:muni, historical=:estado, invoicetype=:fact 
+                          WHERE dni_nie=:dni""")
+            query.bindValue(":dni", dni); query.bindValue(":alta", modifcli[1])
+            query.bindValue(":apel", modifcli[2]); query.bindValue(":nome", modifcli[3])
+            query.bindValue(":mail", modifcli[4]); query.bindValue(":movil", modifcli[5])
+            query.bindValue(":dir", modifcli[6]); query.bindValue(":prov", modifcli[7])
+            query.bindValue(":muni", modifcli[8]); query.bindValue(":estado", str(modifcli[9]))
+            query.bindValue(":fact", modifcli[10])
+            return query.exec()
+        except Exception: return False
+
+    @staticmethod
+    def addCli(newcli):
+        try:
+            query = QtSql.QSqlQuery()
+            query.prepare("""INSERT INTO customers (dni_nie, adddata, surname, name, mail, mobile, address, province, city, invoicetype, historical) 
+                          VALUES (:dni, :alta, :apel, :nome, :mail, :movil, :dir, :prov, :muni, :fact, :estado)""")
+            query.bindValue(":dni", newcli[0]); query.bindValue(":alta", newcli[1])
+            query.bindValue(":apel", newcli[2]); query.bindValue(":nome", newcli[3])
+            query.bindValue(":mail", newcli[4]); query.bindValue(":movil", newcli[5])
+            query.bindValue(":dir", newcli[6]); query.bindValue(":prov", newcli[7])
+            query.bindValue(":muni", newcli[8]); query.bindValue(":fact", newcli[9])
+            query.bindValue(":estado", "True")
+            return query.exec()
+        except Exception: return False
+
+    @staticmethod
+    def deletePro(codigo):
         query = QtSql.QSqlQuery()
-        query.prepare("SELECT s.id, s.idProducto, p.Name, p.\"Unit Price\", s.amount, s.total "
-                      "FROM sales as s INNER JOIN Products as p ON s.idProducto = p.Code "
-                      "WHERE s.idFactura = :id")
-        query.bindValue(":id", id_factura)
-        if query.exec():
-            while query.next():
-                lista.append([query.value(i) for i in range(query.record().count())])
-        return lista
+        query.prepare("DELETE FROM Products WHERE Code = :code")
+        query.bindValue(":code", codigo)
+        return query.exec()
 
+    @staticmethod
+    def deleteInvoice(id_factura):
+        try:
+            # 1. Borramos primero las ventas asociadas a esa factura
+            queryVentas = QtSql.QSqlQuery()
+            queryVentas.prepare("DELETE FROM sales WHERE idfac = :id")
+            queryVentas.bindValue(":id", id_factura)
+            queryVentas.exec()
 
+            # 2. Borramos la factura
+            queryFac = QtSql.QSqlQuery()
+            queryFac.prepare("DELETE FROM invoices WHERE idfac = :id")
+            queryFac.bindValue(":id", id_factura)
 
-
-
-
+            return queryFac.exec()
+        except Exception as e:
+            print("Error en deleteInvoice:", e)
+            return False
