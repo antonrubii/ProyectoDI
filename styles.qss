@@ -1,116 +1,78 @@
-/* --- VENTANA PRINCIPAL CON DEGRADADO --- */
+/* --- GENERAL --- */
 QMainWindow {
-    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E0EAFC, stop:1 #CFDEF3);
+    background-color: #F3F4F6;
 }
 
-/* --- ESTILO DE LAS PESTAÑAS (TABS) --- */
 QTabWidget::pane {
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin: 5px;
-}
-
-QTabBar::tab {
-    background: rgba(255, 255, 255, 0.4);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 8px 20px;
-    margin: 4px 2px;
-    border-radius: 10px;
-    color: #444;
-}
-
-QTabBar::tab:selected {
-    background-color: #007AFF;
-    color: white;
-    font-weight: bold;
-}
-
-/* --- SOLUCIÓN AL TEXTO CORTADO --- */
-/* Ajustamos el padding para que el texto no se desplace hacia abajo */
-QLineEdit, QComboBox {
+    border: 1px solid #E5E7EB;
     background-color: white;
-    border: 1px solid #C7C7CC;
-    border-radius: 6px;
-    padding: 0px 5px 0px 5px; /* Padding arriba/abajo en 0 para evitar cortes */
-    height: 28px;             /* Forzamos una altura un poco mayor */
-    font-size: 13px;
-    color: #1D1D1F;
+    border-radius: 8px;
 }
 
-QLineEdit:focus, QComboBox:focus {
-    border: 2px solid #007AFF;
+/* --- CADA PESTAÑA UN COLOR DIFERENTE --- */
+QTabBar::tab {
+    padding: 8px 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: #E5E7EB;
+    margin-right: 2px;
 }
 
-QComboBox::drop-down {
-    border: none;
-    width: 20px;
+/* Color azul para la pestaña activa */
+QTabBar::tab:selected {
+    background-color: white;
+    border-top: 3px solid #2563EB;
+    color: #2563EB;
 }
 
-/* --- BOTONES CON COLORES APPLE --- */
-/* Guardar (Verde) */
+/* --- INPUTS --- */
+QLineEdit, QComboBox {
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    padding: 0px 5px 0px 5px;
+    height: 26px;
+    background-color: #F9FAFB;
+}
+
+QLineEdit:hover {
+    border: 1px solid #9CA3AF;
+}
+
+/* --- BOTONES DE COLORES ESTÁNDAR --- */
 #btnSavecli, #btnSavePro, #btnSaveFac, #btnOk {
-    background-color: #34C759;
+    background-color: #2563EB; /* Azul */
     color: white;
-    border-radius: 8px;
-    padding: 5px;
-    font-weight: bold;
+    border-radius: 4px;
 }
 
-#btnSavecli:hover, #btnSavePro:hover, #btnSaveFac:hover, #btnOk:hover {
-    background-color: #2DB04D;
-}
-
-/* Modificar (Violeta) */
 #btnModifcli, #btnModifPro {
-    background-color: #5E5CE6;
+    background-color: #F59E0B; /* Ámbar/Naranja */
     color: white;
-    border-radius: 8px;
-    padding: 5px;
-    font-weight: bold;
+    border-radius: 4px;
 }
 
-#btnModifcli:hover, #btnModifPro:hover {
-    background-color: #4A48C6;
-}
-
-/* Eliminar (Rojo) */
 #btnDelcli, #btnDelPro {
-    background-color: #FF3B30;
+    background-color: #DC2626; /* Rojo */
     color: white;
-    border-radius: 8px;
-    padding: 5px;
-    font-weight: bold;
+    border-radius: 4px;
 }
 
-/* Limpiar (Gris suave) */
 #btnCleancli, #btnCleancli_4 {
-    background-color: rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 15px; /* Redondo */
+    background-color: #6B7280; /* Gris */
+    color: white;
+    border-radius: 4px;
 }
 
 /* --- TABLAS --- */
 QTableWidget {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    gridline-color: rgba(0, 0, 0, 0.05);
-    selection-background-color: #E8F2FF;
-    selection-color: #007AFF;
+    alternate-background-color: #F9FAFB;
+    selection-background-color: #DBEAFE;
+    selection-color: #1E40AF;
 }
 
 QHeaderView::section {
-    background-color: #F2F2F7;
-    color: #8E8E93;
-    padding: 6px;
-    border: none;
-    font-weight: bold;
-    font-size: 11px;
-}
-
-/* --- TÍTULOS --- */
-#lblListcli, #lblListcli_4 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #004080;
+    background-color: #F3F4F6;
+    border-bottom: 1px solid #D1D5DB;
+    padding: 5px;
+    color: #374151;
 }
