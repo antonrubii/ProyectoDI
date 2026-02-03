@@ -44,7 +44,14 @@ class Main(QtWidgets.QMainWindow):
         globals.ui.actionBackup.triggered.connect(Events.saveBackup)
         globals.ui.actionRestore_Backup.triggered.connect(Events.restoreBackup)
 
-        globals.ui.menuCustomer_Report.triggered.connect(self.report.reportCustomers)
+        # --- SECCIÓN REPORTS EN main.py ---
+        # 1. Informe de Clientes
+        # Como en tu UI 'menuCustomer_Report' es un QMenu, usamos aboutToShow para detectar el clic
+        globals.ui.menuCustomer_Report.aboutToShow.connect(self.report.reportCustomers)
+
+        # 2. Informe de Productos
+        # Según tu window.py, la acción se llama actionProducts_Report_2
+        globals.ui.actionProducts_Report_2.triggered.connect(self.report.reportProducts)
 
         globals.ui.txtPrice.editingFinished.connect(Products.checkPrice)
         globals.ui.txtDnifac.editingFinished.connect(self.invoice.buscaCli)
@@ -70,6 +77,7 @@ class Main(QtWidgets.QMainWindow):
         globals.ui.btnDelPro.clicked.connect( Products.delPro)
         globals.ui.btnSavePro.clicked.connect( Products.savePro)
         globals.ui.btnDelPro.clicked.connect( Products.delPro)
+        globals.ui.btnModifPro.clicked.connect(Products.modifPro)
         #globals.ui.btnSaveFac.clicked.connect( lambda:Invoice.SaveFac(globals.ui.txtDnifac))
 
         # functions of tables
@@ -88,7 +96,7 @@ class Main(QtWidgets.QMainWindow):
         globals.ui.btnCleancli_4.clicked.connect(self.invoice.cleanFac)
 
         # Eventos Facturación en main.py
-        globals.ui.btnSaveFac.clicked.connect(Invoice.saveInvoice)  # Conecta el botón de guardar factura
+       #globals.ui.btnSaveFac.clicked.connect(Invoice.saveInvoice)  # Conecta el botón de guardar factura
         globals.ui.tableFac.clicked.connect(Invoice.selectInvoice)  # Conecta el click en la tabla
 
 

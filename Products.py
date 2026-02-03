@@ -6,26 +6,42 @@ from events import *
 
 class Products :
     @staticmethod
-    def loadTablePro(varPro):
+    def loadTablePro(self=None):
         try:
+            # 1. Obtener los datos más recientes de la base de datos
             listTabProducts = Conexion.listProducts()
+
+            # 2. LIMPIEZA TOTAL: Si no haces esto, los datos viejos se quedan debajo
             globals.ui.tableProducts.setRowCount(0)
+
+            # 3. Rellenar fila a fila con los datos nuevos
             for index, record in enumerate(listTabProducts):
-                # record: [0:Code, 1:Name, 2:Family, 3:Stock, 4:Price]
+                # record según la query de conexion.py: [0:Code, 1:Name, 2:Family, 3:Stock, 4:Price]
                 globals.ui.tableProducts.insertRow(index)
+
+                # Nombre (Columna 0 de tu tabla UI)
                 globals.ui.tableProducts.setItem(index, 0, QtWidgets.QTableWidgetItem(str(record[1])))
+
+                # Stock (Columna 1 de tu tabla UI)
+                stock_valor = str(record[3])
+                stock_item = QtWidgets.QTableWidgetItem(stock_valor)
+                if stock_valor.isdigit() and int(stock_valor) <= 5:
+                    stock_item.setBackground(QtGui.QColor(255, 200, 200))  # Color rojo si hay poco
+                globals.ui.tableProducts.setItem(index, 1, stock_item)
+
+                # Familia (Columna 2 de tu tabla UI)
                 globals.ui.tableProducts.setItem(index, 2, QtWidgets.QTableWidgetItem(str(record[2])))
 
-                stock_item = QtWidgets.QTableWidgetItem(str(record[3]))
-                if str(record[3]).isdigit() and int(record[3]) <= 5:
-                    stock_item.setBackground(QtGui.QColor(255, 200, 200))
-                globals.ui.tableProducts.setItem(index, 1, stock_item)
+                # Precio (Columna 3 de tu tabla UI)
                 globals.ui.tableProducts.setItem(index, 3, QtWidgets.QTableWidgetItem(str(record[4]) + " €"))
-        except Exception as error:
-            print("error en loadTablePro ", error)
+
+                # Alineación estética
+                globals.ui.tableProducts.item(index, 1).setTextAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+                globals.ui.tableProducts.item(index, 3).setTextAlignment(
+                    QtCore.Qt.AlignmentFlag.AlignRight | QtCore.Qt.AlignmentFlag.AlignVCenter)
 
         except Exception as error:
-            print("Error en loadTablePro ", error)
+            print("Error en loadTablePro visual:", error)
 
     @staticmethod
     def selectProduct(self=None):
@@ -106,24 +122,30 @@ class Products :
     @staticmethod
     def modifPro():
         try:
-            # Creamos la lista con los datos actuales de los campos de la pestaña Products
-            modif_data = [
-                globals.ui.txtCode.text(),
-                globals.ui.txtName.text(),
-                globals.ui.cmbFamily.currentText(),
-                globals.ui.txtStock.text(),
-                globals.ui.txtPrice.text()
-            ]
+            # 1. Recogemos los datos de la interfaz
+            codigo = globals.ui.txtCode.text()
+            nombre = globals.ui.txtName.text()
+            familia = globals.ui.cmbFamily.currentText()
+            stock = globals.ui.txtStock.text()
+            precio = globals.ui.txtPrice.text()
 
-            if not modif_data[0]: return
+            # 2. Verificamos que haya un código (que se haya seleccionado algo)
+            if codigo == "":
+                QtWidgets.QMessageBox.warning(None, "Aviso", "Seleccione un producto de la tabla")
+                return
 
-            if Conexion.modifPro(modif_data):
-                QtWidgets.QMessageBox.information(None, "Éxito", "Producto modificado")
-                Products.loadTablePro(True)
+            datosPro = [codigo, nombre, familia, stock, precio]
+
+            # 3. Llamada a la base de datos
+            if Conexion.modifPro(datosPro):
+                QtWidgets.QMessageBox.information(None, "Éxito", "Producto modificado correctamente")
+                # 4. Refrescamos la tabla para que se vea el cambio
+                Products.loadTablePro()
             else:
-                QtWidgets.QMessageBox.critical(None, "Error", "Error al modificar")
+                QtWidgets.QMessageBox.warning(None, "Error", "No se pudo modificar el producto")
+
         except Exception as error:
-            print("error modify product", error)
+            print("Error en modifPro (Products.py):", error)
 
     @staticmethod
     def checkPrice():

@@ -170,10 +170,13 @@ class Customers:
         try:
             row = globals.ui.tableCustomerlist.selectedItems()
             if not row: return
+
+            # 1. Obtener DNI de la tabla de clientes
             dni = row[2].text()
             record = Conexion.dataOneCustomer(dni)
+
             if record:
-                # Cargar textos
+                # 2. Rellenar los campos de la pestaña CUSTOMERS (como ya hacía)
                 globals.ui.txtDnicli.setText(str(record[0]))
                 globals.ui.txtAltacli.setText(str(record[1]))
                 globals.ui.txtApelcli.setText(str(record[2]))
@@ -182,27 +185,34 @@ class Customers:
                 globals.ui.txtMobilecli.setText(str(record[5]))
                 globals.ui.txtDircli.setText(str(record[6]))
 
-                # CARGA PROVINCIA Y CIUDAD (Bloqueando señales)
+                # (Lógica de combos de provincia/ciudad que ya pusimos antes...)
                 globals.ui.cmbProvcli.blockSignals(True)
-                globals.ui.cmbMunicli.blockSignals(True)
-
                 globals.ui.cmbProvcli.setCurrentText(str(record[7]))
                 from events import Events
-                Events.loadMunicli()  # Cargamos los municipios de esa provincia
+                Events.loadMunicli()
                 globals.ui.cmbMunicli.setCurrentText(str(record[8]))
-
                 globals.ui.cmbProvcli.blockSignals(False)
-                globals.ui.cmbMunicli.blockSignals(False)
 
-                # Resto de campos
                 if str(record[9]) == "paper":
                     globals.ui.rbtFacpaper.setChecked(True)
                 else:
                     globals.ui.rbtFacmail.setChecked(True)
+
                 globals.estado = str(record[10])
                 globals.ui.txtDnicli.setEnabled(False)
+
+                # --- AQUÍ ESTÁ EL CAMBIO PARA INVOICING ---
+                # 3. Pasamos el DNI al campo de la pestaña de Facturación
+                globals.ui.txtDnifac.setText(str(record[0]))
+
+                # 4. Llamamos al metodo buscaCli de Invoice para que rellene los labels de la derecha
+                from invoice import Invoice
+                Invoice.buscaCli()
+                # ------------------------------------------
+
         except Exception as error:
-            print("error en selectCustomer ", error)
+            print("error en selectCustomer logic:", error)
+
     @staticmethod
     def delCliente(self = None):
         """

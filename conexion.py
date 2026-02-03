@@ -74,12 +74,30 @@ class Conexion:
     def modifPro(datosPro):
         try:
             query = QtSql.QSqlQuery()
-            query.prepare("UPDATE Products SET Name = :name, Family = :family, Stock = :stock, \"Unit Price\" = :price WHERE Code = :code")
-            query.bindValue(":code", datosPro[0]); query.bindValue(":name", datosPro[1])
-            query.bindValue(":family", datosPro[2]); query.bindValue(":stock", datosPro[3])
-            query.bindValue(":price", datosPro[4])
-            return query.exec()
+            # IMPORTANTE: Usamos comillas dobles para "Unit Price" por el espacio
+            query.prepare("""
+                    UPDATE Products 
+                    SET Name = :name, 
+                        Stock = :stock,
+                        Family = :family, 
+                        "Unit Price" = :price 
+                    WHERE Code = :code
+                """)
+
+            # Vinculamos los valores asegurando que el tipo de dato sea correcto
+            query.bindValue(":code", int(datosPro[0]))  # El código debe ser entero
+            query.bindValue(":name", str(datosPro[1]))
+            query.bindValue(":family", str(datosPro[2]))
+            query.bindValue(":stock", int(datosPro[3]))  # El stock debe ser entero
+            query.bindValue(":price", str(datosPro[4]))  # El precio se guarda como texto según tu BD
+
+            if query.exec():
+                return True
+            else:
+                print("Error SQL en modifPro:", query.lastError().text())
+                return False
         except Exception as e:
+            print("Error en modifPro (conexion.py):", e)
             return False
 
     @staticmethod
