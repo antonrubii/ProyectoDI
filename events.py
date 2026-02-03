@@ -71,6 +71,7 @@ class Events:
 
     def resizeTabCustomer(self):
         try:
+
             header = globals.ui.tableCustomerlist.horizontalHeader()
             for i in range(header.count()):
                 if i == 3:

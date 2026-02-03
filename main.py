@@ -99,6 +99,11 @@ class Main(QtWidgets.QMainWindow):
        #globals.ui.btnSaveFac.clicked.connect(Invoice.saveInvoice)  # Conecta el botón de guardar factura
         globals.ui.tableFac.clicked.connect(Invoice.selectInvoice)  # Conecta el click en la tabla
 
+        # Mejoramos el aspecto de la barra de estado
+        self.labelstatus = QtWidgets.QLabel("Listo")
+        globals.ui.statusbar.addPermanentWidget(self.labelstatus)
+        globals.ui.statusbar.setStyleSheet("background-color: white; border-top: 1px solid #D2D2D7;")
+
 
         #functions status bar
         Events.loadStatubar(self)
