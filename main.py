@@ -95,6 +95,8 @@ class Main(QtWidgets.QMainWindow):
         # Botón para limpiar (el de la flecha circular)
         globals.ui.btnCleancli_4.clicked.connect(self.invoice.cleanFac)
 
+        globals.ui.btnPrintFac.clicked.connect(Invoice.reportFactura)
+
         # Eventos Facturación en main.py
        #globals.ui.btnSaveFac.clicked.connect(Invoice.saveInvoice)  # Conecta el botón de guardar factura
         globals.ui.tableFac.clicked.connect(Invoice.selectInvoice)  # Conecta el click en la tabla

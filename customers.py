@@ -1,3 +1,4 @@
+import re
 
 import globals
 from PyQt6 import QtCore, QtWidgets, QtGui
@@ -54,19 +55,24 @@ class Customers:
         :type widget:
         """
         try:
+            # Intentamos desconectar, si no está conectado, capturamos el error
+            try:
+                widget.editingFinished.disconnect()
+            except Exception:
+                pass
+
             patron = r'^[\w\.-]+@[\w\.-]+\.\w+$'
-            widget.editingFinished.disconnect(Customers.checkMail)
             if re.match(patron, email):
-                widget.setStyleSheet('background-color: rgb(255, 255, 220);')
+                widget.setStyleSheet('background-color: white;')
             else:
                 widget.setStyleSheet('background-color: #FFC0CB;')
                 widget.setText("")
                 widget.setPlaceholderText("Invalid email")
-            #globals.ui.txtEmailcli.setFocus()
         except Exception as error:
             print(error)
         finally:
-            widget.editingFinished.connect(Customers.checkMail)
+            # Volvemos a conectar (asegúrate de que Main lo conecte de nuevo si es necesario)
+            pass
 
 
     @staticmethod
@@ -79,28 +85,25 @@ class Customers:
         :type widget:
         """
         try:
-            widget.editingFinished.disconnect(Customers.checkMobil)
+            try:
+                widget.editingFinished.disconnect()
+            except Exception:
+                pass
+
             patron = r'^[67]\d{8}$'
             if re.match(patron, numero):
-                widget.setStyleSheet('background-color: rgb(255, 255, 220);')
+                widget.setStyleSheet('background-color: white;')
             else:
                 widget.setStyleSheet('background-color: #FFC0CB;')
                 widget.setText("")
                 widget.setPlaceholderText("Invalid mobile number")
-        #globals.ui.txtMobilecli.setFocus()
         except Exception as error:
             print(error)
-        finally:
-            widget.editingFinished.connect(Customers.checkMobil)
 
     @staticmethod
-    def cleanCli(self = None):
-        """
-
-        :param self: None
-        :type self: None
-        """
+    def cleanCli(self=None):
         try:
+            # 1. Lista de campos a vaciar
             formcli = [
                 globals.ui.txtDnicli, globals.ui.txtEmailcli, globals.ui.txtMobilecli,
                 globals.ui.txtAltacli, globals.ui.txtApelcli, globals.ui.txtNamecli,
@@ -110,60 +113,68 @@ class Customers:
             for dato in formcli:
                 dato.setText("")
 
-            Events.loadProv(self=None)
+            # 2. DESBLOQUEAR EL DNI (Muy importante para tu problema)
             globals.ui.txtDnicli.setEnabled(True)
+            globals.ui.txtDnicli.setReadOnly(False)
+            # Quitamos el color de "bloqueado" o error
+            globals.ui.txtDnicli.setStyleSheet('background-color: rgb(255, 255, 255);')
+
+            # 3. Limpiar otros elementos
             globals.ui.cmbMunicli.clear()
             globals.ui.rbtFacmail.setChecked(True)
-            globals.ui.txtEmailcli.setStyleSheet('background-color: rgb(255, 255, 220);')
-            globals.ui.txtDnicli.setStyleSheet('background-color: rgb(255, 255, 220);')
-            globals.ui.txtMobilecli.setStyleSheet('background-color: rgb(255, 255, 220);')
             globals.ui.lblWarning.setText("")
-            globals.ui.lblWarning.setStyleSheet('background-color: rgb(255, 255, 200);')
+            globals.ui.lblWarning.setStyleSheet('background-color: transparent;')
+
+            # 4. SOLUCIÓN AL ERROR 'Events' is not defined:
+            # Importamos Events justo aquí dentro para evitar la importación circular
+            from events import Events
+            Events.loadProv(None)
 
         except Exception as error:
             print("error en cleanCli ", error)
 
+
     @staticmethod
     def loadTablecli(varcli):
-        """
-        Modulo para cargar la tabla clientes
-        :param varcli:
-        :type varcli:
-        """
-        try:
-            listTabCustomers = Conexion.listCustomers(varcli)
-            # print(listTabCustomers)
-            index = 0
-            for record in listTabCustomers:
-                globals.ui.tableCustomerlist.setRowCount(index + 1)
-                globals.ui.tableCustomerlist.setItem(index, 0, QtWidgets.QTableWidgetItem(str(record[2])))
-                globals.ui.tableCustomerlist.setItem(index, 1, QtWidgets.QTableWidgetItem(str(record[3])))
-                globals.ui.tableCustomerlist.setItem(index, 2, QtWidgets.QTableWidgetItem(str(record[5])))
-                globals.ui.tableCustomerlist.setItem(index, 3,
-                                                     QtWidgets.QTableWidgetItem("   " + str(record[7] + "   ")))
-                globals.ui.tableCustomerlist.setItem(index, 4, QtWidgets.QTableWidgetItem(str(record[8])))
-                globals.ui.tableCustomerlist.setItem(index, 5, QtWidgets.QTableWidgetItem(str(record[9])))
-                if record[10] == "True":
-                    globals.ui.tableCustomerlist.setItem(index, 6, QtWidgets.QTableWidgetItem(str("Alta")))
-                else:
-                    globals.ui.tableCustomerlist.setItem(index, 6, QtWidgets.QTableWidgetItem(str("Baja")))
-                globals.ui.tableCustomerlist.item(index, 0).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignLeft.AlignVCenter)
-                globals.ui.tableCustomerlist.item(index, 1).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignLeft.AlignVCenter)
-                globals.ui.tableCustomerlist.item(index, 2).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
-                globals.ui.tableCustomerlist.item(index, 3).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
-                globals.ui.tableCustomerlist.item(index, 4).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
-                globals.ui.tableCustomerlist.item(index, 5).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
-                globals.ui.tableCustomerlist.item(index, 6).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
-                index += 1
-        except Exception as error:
-            print("error en loadTablecli ", error)
+            """
+            Modulo para cargar la tabla clientes
+            :param varcli:
+            :type varcli:
+            """
+            try:
+                listTabCustomers = Conexion.listCustomers(varcli)
+                # print(listTabCustomers)
+                index = 0
+                for record in listTabCustomers:
+                    globals.ui.tableCustomerlist.setRowCount(index + 1)
+                    globals.ui.tableCustomerlist.setItem(index, 0, QtWidgets.QTableWidgetItem(str(record[2])))
+                    globals.ui.tableCustomerlist.setItem(index, 1, QtWidgets.QTableWidgetItem(str(record[3])))
+                    globals.ui.tableCustomerlist.setItem(index, 2, QtWidgets.QTableWidgetItem(str(record[5])))
+                    globals.ui.tableCustomerlist.setItem(index, 3,
+                                                         QtWidgets.QTableWidgetItem("   " + str(record[7] + "   ")))
+                    globals.ui.tableCustomerlist.setItem(index, 4, QtWidgets.QTableWidgetItem(str(record[8])))
+                    globals.ui.tableCustomerlist.setItem(index, 5, QtWidgets.QTableWidgetItem(str(record[9])))
+                    if record[10] == "True":
+                        globals.ui.tableCustomerlist.setItem(index, 6, QtWidgets.QTableWidgetItem(str("Alta")))
+                    else:
+                        globals.ui.tableCustomerlist.setItem(index, 6, QtWidgets.QTableWidgetItem(str("Baja")))
+                    globals.ui.tableCustomerlist.item(index, 0).setTextAlignment(
+                        QtCore.Qt.AlignmentFlag.AlignLeft.AlignVCenter)
+                    globals.ui.tableCustomerlist.item(index, 1).setTextAlignment(
+                        QtCore.Qt.AlignmentFlag.AlignLeft.AlignVCenter)
+                    globals.ui.tableCustomerlist.item(index, 2).setTextAlignment(
+                        QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
+                    globals.ui.tableCustomerlist.item(index, 3).setTextAlignment(
+                        QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
+                    globals.ui.tableCustomerlist.item(index, 4).setTextAlignment(
+                        QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
+                    globals.ui.tableCustomerlist.item(index, 5).setTextAlignment(
+                        QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
+                    globals.ui.tableCustomerlist.item(index, 6).setTextAlignment(
+                        QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
+                    index += 1
+            except Exception as error:
+                print("error en loadTablecli ", error)
 
     @staticmethod
     def selectCustomer(self=None):

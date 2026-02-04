@@ -8,40 +8,27 @@ class Products :
     @staticmethod
     def loadTablePro(self=None):
         try:
-            # 1. Obtener los datos más recientes de la base de datos
             listTabProducts = Conexion.listProducts()
-
-            # 2. LIMPIEZA TOTAL: Si no haces esto, los datos viejos se quedan debajo
             globals.ui.tableProducts.setRowCount(0)
-
-            # 3. Rellenar fila a fila con los datos nuevos
             for index, record in enumerate(listTabProducts):
-                # record según la query de conexion.py: [0:Code, 1:Name, 2:Family, 3:Stock, 4:Price]
                 globals.ui.tableProducts.insertRow(index)
 
-                # Nombre (Columna 0 de tu tabla UI)
+                # Nombre
                 globals.ui.tableProducts.setItem(index, 0, QtWidgets.QTableWidgetItem(str(record[1])))
 
-                # Stock (Columna 1 de tu tabla UI)
-                stock_valor = str(record[3])
-                stock_item = QtWidgets.QTableWidgetItem(stock_valor)
-                if stock_valor.isdigit() and int(stock_valor) <= 5:
-                    stock_item.setBackground(QtGui.QColor(255, 200, 200))  # Color rojo si hay poco
-                globals.ui.tableProducts.setItem(index, 1, stock_item)
+                # STOCK CON COLOR
+                stock = int(record[3])
+                item_stock = QtWidgets.QTableWidgetItem(str(stock))
 
-                # Familia (Columna 2 de tu tabla UI)
+                if stock <= 5:
+                    item_stock.setBackground(QtGui.QColor("#FF3B30"))  # Rojo Apple
+                    item_stock.setForeground(QtGui.QColor("white"))  # Texto blanco para que se lea bien
+
+                globals.ui.tableProducts.setItem(index, 1, item_stock)
                 globals.ui.tableProducts.setItem(index, 2, QtWidgets.QTableWidgetItem(str(record[2])))
-
-                # Precio (Columna 3 de tu tabla UI)
                 globals.ui.tableProducts.setItem(index, 3, QtWidgets.QTableWidgetItem(str(record[4]) + " €"))
-
-                # Alineación estética
-                globals.ui.tableProducts.item(index, 1).setTextAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-                globals.ui.tableProducts.item(index, 3).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignRight | QtCore.Qt.AlignmentFlag.AlignVCenter)
-
         except Exception as error:
-            print("Error en loadTablePro visual:", error)
+            print(error)
 
     @staticmethod
     def selectProduct(self=None):

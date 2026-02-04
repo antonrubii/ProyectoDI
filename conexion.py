@@ -207,27 +207,25 @@ class Conexion:
         query.bindValue(":id", id_factura)
         query.exec()
 
-
     @staticmethod
     def getVentas(id_factura):
         lista = []
-        try:
-            query = QtSql.QSqlQuery()
-            # Como tu tabla sales no tiene precio ni nombre, los traemos de Products con un JOIN
-            query.prepare("""
-                        SELECT s.idv, s.idpro, p.Name, p."Unit Price", s.amount, (s.amount * p."Unit Price") 
-                        FROM sales as s 
-                        INNER JOIN Products as p ON s.idpro = p.Code 
-                        WHERE s.idfac = :id
-                    """)
-            query.bindValue(":id", id_factura)
-            if query.exec():
-                while query.next():
-                    lista.append([query.value(i) for i in range(6)])
-            return lista
-        except Exception as e:
-            print("Error getVentas:", e)
-            return []
+        query = QtSql.QSqlQuery()
+        # El JOIN es vital para traer el Nombre y el Precio que no están en la tabla 'sales'
+        query.prepare("""
+                SELECT s.idv, s.idpro, p.Name, p."Unit Price", s.amount, (s.amount * p."Unit Price") 
+                FROM sales as s 
+                INNER JOIN Products as p ON s.idpro = p.Code 
+                WHERE s.idfac = :id
+            """)
+        query.bindValue(":id", id_factura)
+        if query.exec():
+            while query.next():
+                # Guardamos: [id_venta, id_prod, nombre, precio, cantidad, total_linea]
+                row = [query.value(0), query.value(1), query.value(2),
+                       float(query.value(3)), int(query.value(4)), float(query.value(5))]
+                lista.append(row)
+        return lista
 
     @staticmethod
     def modifcli(dni, modifcli):
@@ -285,3 +283,23 @@ class Conexion:
         except Exception as e:
             print("Error en deleteInvoice:", e)
             return False
+
+    @staticmethod
+    def deleteVenta(id_venta):
+        try:
+            query = QtSql.QSqlQuery()
+            query.prepare("DELETE FROM sales WHERE idv = :idv")
+            query.bindValue(":idv", int(id_venta))
+            return query.exec()
+        except Exception as e:
+            print("Error en deleteVenta SQL:", e)
+            return False
+
+    @staticmethod
+    def dataOneProduct_by_Code(codigo):
+        query = QtSql.QSqlQuery()
+        query.prepare("SELECT Code, Name, Family, Stock, \"Unit Price\" FROM Products WHERE Code = :code")
+        query.bindValue(":code", str(codigo))
+        if query.exec() and query.next():
+            return [query.value(i) for i in range(5)]
+        return None

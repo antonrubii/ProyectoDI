@@ -89,20 +89,18 @@ class Events:
     def resizetableSales(self):
         try:
             header = globals.ui.tableSales.horizontalHeader()
-            for i in range(header.count()):
-                if i == 1:
-                    header.setSectionResizeMode(i, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)
-                else:
-                    header.setSectionResizeMode(i, QtWidgets.QHeaderView.ResizeMode.Stretch)
-
-                header_items = globals.ui.tableSales.horizontalHeaderItem(i)
-                font = header_items.font()
-                font.setBold(True)
-                header_items.setFont(font)
+            # Ajustamos las 6 columnas
+            header.setSectionResizeMode(0, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)  # ID
+            header.setSectionResizeMode(1, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)  # Cant
+            header.setSectionResizeMode(2, QtWidgets.QHeaderView.ResizeMode.Stretch)  # Nombre
+            header.setSectionResizeMode(3, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)  # Precio
+            header.setSectionResizeMode(4, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)  # Total
+            header.setSectionResizeMode(5, QtWidgets.QHeaderView.ResizeMode.Fixed)  # Papelera
+            globals.ui.tableSales.setColumnWidth(5, 35)
 
             globals.ui.tableSales.setRowCount(1)
         except Exception as e:
-            print("error en resize la tabla", e)
+            print("error en resize table sales", e)
 
     def resizeTabProducts(self):
         try:

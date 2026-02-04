@@ -50,18 +50,17 @@ class Invoice():
         try:
             dni = globals.ui.txtDnifac.text().upper().strip()
             fecha = datetime.now().strftime("%d/%m/%Y")
-
             if dni == "":
-                QtWidgets.QMessageBox.warning(None, "Aviso", "Debe introducir un DNI")
+                QtWidgets.QMessageBox.warning(None, "Aviso", "Falta el DNI del cliente")
                 return
 
             if conexion.Conexion.insertInvoice(dni, fecha):
-                Invoice.loadTablefac()
-                QtWidgets.QMessageBox.information(None, "Éxito", "Factura guardada")
+                Invoice.loadTablefac()  # Recarga la tabla de la izquierda
+                QtWidgets.QMessageBox.information(None, "Éxito", "Factura registrada. Añade los productos abajo.")
             else:
-                QtWidgets.QMessageBox.critical(None, "Error", "No se pudo guardar la factura.")
+                QtWidgets.QMessageBox.critical(None, "Error", "No se pudo crear la factura")
         except Exception as e:
-            print("Error en saveInvoice:", e)
+            print("Error saveInvoice:", e)
 
     @staticmethod
     def loadTablefac():
@@ -182,18 +181,40 @@ class Invoice():
     def loadTablasales(records):
         try:
             globals.ui.tableSales.setRowCount(0)
+            # Asegúrate de que la tabla tenga 6 columnas en QtDesigner (la 6ª para la papelera)
+            if globals.ui.tableSales.columnCount() < 6:
+                globals.ui.tableSales.setColumnCount(6)
+
+            subtotal = 0.00
             for index, row in enumerate(records):
                 globals.ui.tableSales.insertRow(index)
-                # record JOIN: [idv, idpro, nombre, precio, cantidad, total]
-                globals.ui.tableSales.setItem(index, 0, QtWidgets.QTableWidgetItem(str(row[1])))  # ID
+
+                # Datos de las columnas
+                globals.ui.tableSales.setItem(index, 0, QtWidgets.QTableWidgetItem(str(row[1])))  # ID Producto
                 globals.ui.tableSales.setItem(index, 1, QtWidgets.QTableWidgetItem(str(row[4])))  # Cantidad
                 globals.ui.tableSales.setItem(index, 2, QtWidgets.QTableWidgetItem(str(row[2])))  # Nombre
                 globals.ui.tableSales.setItem(index, 3, QtWidgets.QTableWidgetItem(str(row[3])))  # Precio
                 globals.ui.tableSales.setItem(index, 4, QtWidgets.QTableWidgetItem(str(row[5])))  # Total
+
+                # --- BOTÓN PAPELERA ---
+                btn_del = QtWidgets.QPushButton()
+                btn_del.setIcon(QtGui.QIcon("./img/basura.png"))
+                btn_del.setFixedSize(24, 24)
+                btn_del.setStyleSheet("background-color: transparent; border: none;")
+
+                # El ID de la venta real es row[0] (idv)
+                id_venta = row[0]
+                btn_del.clicked.connect(lambda checked, idv=id_venta: Invoice.borrarLíneaVenta(idv))
+
+                globals.ui.tableSales.setCellWidget(index, 5, btn_del)
+                # -----------------------
+
             Invoice.calculateTotals()
+            # Añadir fila vacía para seguir escribiendo
             Invoice.activeSales(globals.ui.tableSales.rowCount())
+
         except Exception as e:
-            print("Error loadTablasales:", e)
+            print("Error loadTablasales con botones:", e)
 
     @staticmethod
     def calculateTotals():
@@ -217,23 +238,41 @@ class Invoice():
     def saveSales():
         try:
             id_fac = globals.ui.lblNumFac.text()
-            if not id_fac:
-                QtWidgets.QMessageBox.warning(None, "Error", "Selecciona una factura")
+            if id_fac == "":
+                QtWidgets.QMessageBox.warning(None, "Aviso", "Selecciona una factura primero")
                 return
 
             for i in range(globals.ui.tableSales.rowCount()):
                 item_id = globals.ui.tableSales.item(i, 0)
                 item_qty = globals.ui.tableSales.item(i, 1)
-                item_total = globals.ui.tableSales.item(i, 4)
 
                 if item_id and item_id.text() != "" and item_qty and item_qty.text() != "":
-                    venta = [id_fac, item_id.text(), item_qty.text(), item_total.text()]
+                    codigo = item_id.text()
+                    cantidad_pedida = int(item_qty.text())
+
+                    # 1. CONTROL DE STOCK (Aviso de "Solo quedan X")
+                    datos_pro = conexion.Conexion.dataOneProduct_by_Code(codigo)
+                    if datos_pro:
+                        stock_actual = int(datos_pro[3])  # El stock está en la posición 3
+                        if cantidad_pedida > stock_actual:
+                            QtWidgets.QMessageBox.warning(None, "Stock Insuficiente",
+                                                          f"No puedes añadir {cantidad_pedida} unidades de {datos_pro[1]}.\n"
+                                                          f"En el almacén solo quedan {stock_actual}.")
+                            return  # Detiene el proceso para que el usuario corrija
+
+                    # 2. SI HAY STOCK, GUARDAR
+                    venta = [id_fac, codigo, cantidad_pedida]
                     if conexion.Conexion.insertVenta(venta):
-                        conexion.Conexion.updateStock(item_id.text(), item_qty.text())
+                        conexion.Conexion.updateStock(codigo, cantidad_pedida)
 
             QtWidgets.QMessageBox.information(None, "Éxito", "Venta guardada correctamente")
+            # Actualizamos tabla de productos por si alguno se puso en rojo
             from Products import Products
             Products.loadTablePro()
+            # Refrescamos la tabla de ventas de esta factura
+            ventas = conexion.Conexion.getVentas(id_fac)
+            Invoice.loadTablasales(ventas)
+
         except Exception as e:
             print("Error saveSales:", e)
 
@@ -246,3 +285,25 @@ class Invoice():
                     Invoice.cleanFac()
         except Exception as e:
             print("Error borrarFactura:", e)
+
+    @staticmethod
+    def borrarLíneaVenta(id_venta):
+        try:
+            if conexion.Conexion.deleteVenta(id_venta):
+                # Recargamos las ventas de la factura actual para que desaparezca la fila
+                id_fac = globals.ui.lblNumFac.text()
+                ventas = conexion.Conexion.getVentas(id_fac)
+                Invoice.loadTablasales(ventas)
+        except Exception as e:
+            print("Error borrarLíneaVenta:", e)
+
+    @staticmethod
+    def reportFactura():
+        """Este métod se llama al pulsar el nuevo botón btnPrintFac"""
+        id_fac = globals.ui.lblNumFac.text()
+        if id_fac != "":
+            from reports import Reports
+            reporte = Reports()
+            reporte.ticket()  # Genera el PDF con los datos de la factura actual
+        else:
+            QtWidgets.QMessageBox.warning(None, "Aviso", "Selecciona una factura para imprimir")

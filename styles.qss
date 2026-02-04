@@ -1,78 +1,69 @@
-/* --- GENERAL --- */
+/* --- VENTANA PRINCIPAL --- */
 QMainWindow {
-    background-color: #F3F4F6;
+    background-color: #F5F5F7;
 }
 
-QTabWidget::pane {
-    border: 1px solid #E5E7EB;
-    background-color: white;
+/* --- BOTONES ESTILO APPLE --- */
+/* Botones Azules (Save y Modify) */
+#btnSavecli, #btnModifcli, #btnSavePro, #btnModifPro, #btnSaveFac, #btnOk {
+    background-color: #007AFF;
+    color: white;
     border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+    border: none;
+}
+#btnSavecli:hover, #btnModifcli:hover, #btnSavePro:hover, #btnModifPro:hover {
+    background-color: #0056b3;
 }
 
-/* --- CADA PESTAÑA UN COLOR DIFERENTE --- */
-QTabBar::tab {
-    padding: 8px 15px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    background: #E5E7EB;
-    margin-right: 2px;
-}
-
-/* Color azul para la pestaña activa */
-QTabBar::tab:selected {
-    background-color: white;
-    border-top: 3px solid #2563EB;
-    color: #2563EB;
-}
-
-/* --- INPUTS --- */
-QLineEdit, QComboBox {
-    border: 1px solid #D1D5DB;
-    border-radius: 4px;
-    padding: 0px 5px 0px 5px;
-    height: 26px;
-    background-color: #F9FAFB;
-}
-
-QLineEdit:hover {
-    border: 1px solid #9CA3AF;
-}
-
-/* --- BOTONES DE COLORES ESTÁNDAR --- */
-#btnSavecli, #btnSavePro, #btnSaveFac, #btnOk {
-    background-color: #2563EB; /* Azul */
-    color: white;
-    border-radius: 4px;
-}
-
-#btnModifcli, #btnModifPro {
-    background-color: #F59E0B; /* Ámbar/Naranja */
-    color: white;
-    border-radius: 4px;
-}
-
+/* Botones Rojos (Delete) */
 #btnDelcli, #btnDelPro {
-    background-color: #DC2626; /* Rojo */
+    background-color: #FF3B30;
     color: white;
-    border-radius: 4px;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+    border: none;
+}
+#btnDelcli:hover, #btnDelPro:hover {
+    background-color: #D70015;
 }
 
+/* Botones de Limpiar (Circulares y sutiles) */
 #btnCleancli, #btnCleancli_4 {
-    background-color: #6B7280; /* Gris */
-    color: white;
-    border-radius: 4px;
+    background-color: #E8E8ED;
+    border-radius: 15px;
+    padding: 4px;
 }
 
-/* --- TABLAS --- */
+/* --- ENTRADAS DE TEXTO --- */
+QLineEdit, QComboBox {
+    background-color: white;
+    border: 1px solid #D2D2D7;
+    border-radius: 6px;
+    padding: 2px 8px; /* Ajustado para que no se corte el texto */
+    height: 25px;
+    color: #1D1D1F;
+}
+QLineEdit:focus {
+    border: 2px solid #007AFF;
+}
+
+/* --- TABLAS MODERNAS --- */
 QTableWidget {
-    alternate-background-color: #F9FAFB;
-    selection-background-color: #DBEAFE;
-    selection-color: #1E40AF;
+    background-color: white;
+    border-radius: 10px;
+    gridline-color: #F5F5F7;
+    selection-background-color: #E8F2FF;
+    selection-color: #007AFF;
 }
-
 QHeaderView::section {
-    background-color: #F3F4F6;
-    border-bottom: 1px solid #D1D5DB;
-    padding: 5px;
-    color: #374151;
+    background-color: #F5F5F7;
+    padding: 8px;
+    border: none;
+    font-weight: bold;
+    color: #86868B;
+    text-transform: uppercase;
+    font-size: 10px;
 }

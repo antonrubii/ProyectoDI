@@ -133,27 +133,78 @@ class Reports():
 
     def ticket(self):
         try:
-            # Mantengo tu lógica de ticket actual pero asegurando que abra el archivo
+            # 1. Preparar el archivo
             data = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
             ticket_name = data + "_ticket.pdf"
             pdf_path = os.path.join(self.rootPath, ticket_name)
             globals.report = canvas.Canvas(pdf_path)
 
+            # 2. Obtener IDs
+            id_fac = globals.ui.lblNumFac.text()
             dni = globals.ui.txtDnifac.text()
-            titulo = "FACTURA SIMPLIFICADA" if dni == "00000000T" else "FACTURA"
-            records = Conexion.dataOneCustomer(dni)
 
-            self.topreport(titulo)
+            self.topreport("FACTURA")
+
+            # 3. Datos del Cliente
+            records = Conexion.dataOneCustomer(dni)
             if records:
                 globals.report.setFont("Helvetica-Bold", 10)
-                globals.report.drawString(220, 700, "DNI: " + str(records[0]))
-                globals.report.drawString(220, 685, "APELLIDOS: " + str(records[2]))
-                globals.report.drawString(220, 670, "NOMBRE: " + str(records[3]))
-                globals.report.drawString(220, 655, "DIRECCIÓN: " + str(records[6]))
-                globals.report.drawString(220, 640, "LOCALIDAD: " + str(records[8]) + "  PROVINCIA: " + str(records[7]))
+                y = 640
+                globals.report.drawString(55, y, "DATOS CLIENTE:")
+                globals.report.setFont("Helvetica", 9)
+                globals.report.drawString(55, y - 15, f"DNI: {records[0]}")
+                globals.report.drawString(55, y - 30, f"CLIENTE: {records[2]}, {records[3]}")
+                globals.report.drawString(300, y - 15, f"DIRECCIÓN: {records[6]}")
+                globals.report.drawString(300, y - 30, f"LOCALIDAD: {records[8]}")
 
-            self.footer(titulo)
+            # 4. Cabecera de Tabla
+            y_tabla = 570
+            globals.report.line(35, y_tabla, 525, y_tabla)
+            globals.report.setFont("Helvetica-Bold", 9)
+            globals.report.drawString(55, y_tabla - 15, "COD.")
+            globals.report.drawString(110, y_tabla - 15, "PRODUCTO")
+            globals.report.drawString(310, y_tabla - 15, "CANT.")
+            globals.report.drawString(380, y_tabla - 15, "PRECIO")
+            globals.report.drawString(470, y_tabla - 15, "TOTAL")
+            globals.report.line(35, y_tabla - 20, 525, y_tabla - 20)
+
+            # 5. Cargar VENTAS Reales de la BD
+            # Importante: id_fac debe ser el que aparece en el label
+            ventas = Conexion.getVentas(id_fac)
+            y = y_tabla - 35
+            suma_subtotal = 0.0
+
+            globals.report.setFont("Helvetica", 9)
+            for v in ventas:
+                # v = [idv, idpro, nombre, precio, cantidad, total_linea]
+                globals.report.drawString(55, y, str(v[1]))
+                globals.report.drawString(110, y, str(v[2]))
+                globals.report.drawCentredString(325, y, str(v[4]))
+                globals.report.drawRightString(420, y, f"{float(v[3]):.2f} €")
+                globals.report.drawRightString(515, y, f"{float(v[5]):.2f} €")
+                suma_subtotal += float(v[5])
+                y -= 20
+
+            # 6. Cuadro de Totales
+            y_final = y - 20
+            globals.report.line(350, y_final + 10, 525, y_final + 10)
+
+            iva = suma_subtotal * 0.21
+            total = suma_subtotal + iva
+
+            globals.report.setFont("Helvetica-Bold", 10)
+            globals.report.drawString(360, y_final, "SUBTOTAL:")
+            globals.report.drawRightString(515, y_final, f"{suma_subtotal:.2f} €")
+            globals.report.drawString(360, y_final - 15, "IVA (21%):")
+            globals.report.drawRightString(515, y_final - 15, f"{iva:.2f} €")
+
+            globals.report.setFont("Helvetica-Bold", 11)
+            globals.report.setFillColorRGB(0, 0.3, 0.8)  # Azul para el total
+            globals.report.drawString(360, y_final - 35, "TOTAL FACTURA:")
+            globals.report.drawRightString(515, y_final - 35, f"{total:.2f} €")
+
+            self.footer("FACTURA")
             globals.report.save()
             os.startfile(pdf_path)
         except Exception as error:
-            print("Error en ticket:", error)
+            print("Error ticket PDF:", error)
