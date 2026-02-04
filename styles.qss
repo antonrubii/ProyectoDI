@@ -1,69 +1,110 @@
-/* --- VENTANA PRINCIPAL --- */
+/* --- FONDO GENERAL (Degradado Apple Pro) --- */
 QMainWindow {
-    background-color: #F5F5F7;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #F5F5F7, stop:1 #E2E2E7);
 }
 
-/* --- BOTONES ESTILO APPLE --- */
-/* Botones Azules (Save y Modify) */
-#btnSavecli, #btnModifcli, #btnSavePro, #btnModifPro, #btnSaveFac, #btnOk {
+/* --- TARJETAS / PANELES --- */
+QTabWidget::pane {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- PESTAÑAS MÁS PEQUEÑAS --- */
+QTabBar::tab {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 6px 15px; /* Reducido */
+    margin: 2px;
+    border-radius: 8px;
+    color: #555;
+    font-size: 12px;
+}
+
+QTabBar::tab:selected {
     background-color: #007AFF;
     color: white;
-    border-radius: 8px;
-    padding: 6px 12px;
     font-weight: bold;
-    border: none;
 }
-#btnSavecli:hover, #btnModifcli:hover, #btnSavePro:hover, #btnModifPro:hover {
+
+/* --- BOTONES COMPACTOS (Azul y Rojo) --- */
+/* Botones Azules: Save, Modify, Ok, Print */
+#btnSavecli, #btnModifcli, #btnSavePro, #btnModifPro, #btnSaveFac, #btnOk, #btnCleancli_4, #btnPrintFac {
+    background-color: #007AFF;
+    color: white;
+    border-radius: 6px;
+    padding: 0px 10px;  /* Padding vertical a 0 */
+    font-weight: bold;
+    font-size: 12px;
+    height: 24px;       /* Altura fija pequeña */
+    min-width: 60px;
+}
+
+#btnSavecli:hover, #btnSavePro:hover, #btnOk:hover {
     background-color: #0056b3;
 }
 
-/* Botones Rojos (Delete) */
+/* Botones Rojos: Delete */
 #btnDelcli, #btnDelPro {
     background-color: #FF3B30;
     color: white;
-    border-radius: 8px;
-    padding: 6px 12px;
+    border-radius: 6px;
+    padding: 0px 10px;
     font-weight: bold;
-    border: none;
+    font-size: 12px;
+    height: 24px;       /* Altura fija pequeña */
+    min-width: 60px;
 }
+
 #btnDelcli:hover, #btnDelPro:hover {
     background-color: #D70015;
 }
 
-/* Botones de Limpiar (Circulares y sutiles) */
-#btnCleancli, #btnCleancli_4 {
+/* Botón Limpiar (Icono circular) */
+#btnCleancli {
     background-color: #E8E8ED;
-    border-radius: 15px;
-    padding: 4px;
+    border-radius: 12px; /* Pequeño y redondo */
+    width: 24px;
+    height: 24px;
 }
 
-/* --- ENTRADAS DE TEXTO --- */
+/* --- ENTRADAS DE TEXTO (Compactas y sin cortes) --- */
 QLineEdit, QComboBox {
     background-color: white;
     border: 1px solid #D2D2D7;
-    border-radius: 6px;
-    padding: 2px 8px; /* Ajustado para que no se corte el texto */
-    height: 25px;
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px; /* Crucial: 0 padding vertical para que no se corte */
+    height: 24px;             /* Altura reducida */
     color: #1D1D1F;
-}
-QLineEdit:focus {
-    border: 2px solid #007AFF;
+    font-size: 12px;
 }
 
-/* --- TABLAS MODERNAS --- */
+QLineEdit:focus {
+    border: 1.5px solid #007AFF;
+}
+
+/* --- TABLAS --- */
 QTableWidget {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 8px;
     gridline-color: #F5F5F7;
     selection-background-color: #E8F2FF;
     selection-color: #007AFF;
+    font-size: 11px;
 }
+
 QHeaderView::section {
-    background-color: #F5F5F7;
-    padding: 8px;
+    background-color: #F9F9FB;
+    padding: 4px;
     border: none;
     font-weight: bold;
     color: #86868B;
-    text-transform: uppercase;
-    font-size: 10px;
+    border-bottom: 1px solid #007AFF;
+}
+
+/* --- TÍTULOS --- */
+#lblListcli, #lblListcli_4 {
+    font-size: 16px;
+    color: #007AFF;
+    font-weight: bold;
 }
