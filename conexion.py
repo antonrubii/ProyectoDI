@@ -268,20 +268,19 @@ class Conexion:
     @staticmethod
     def deleteInvoice(id_factura):
         try:
-            # 1. Borramos primero las ventas asociadas a esa factura
-            queryVentas = QtSql.QSqlQuery()
-            queryVentas.prepare("DELETE FROM sales WHERE idfac = :id")
-            queryVentas.bindValue(":id", id_factura)
-            queryVentas.exec()
+            # 1. Borramos los productos de esa factura primero
+            query1 = QtSql.QSqlQuery()
+            query1.prepare("DELETE FROM sales WHERE idfac = :id")
+            query1.bindValue(":id", int(id_factura))
+            query1.exec()
 
-            # 2. Borramos la factura
-            queryFac = QtSql.QSqlQuery()
-            queryFac.prepare("DELETE FROM invoices WHERE idfac = :id")
-            queryFac.bindValue(":id", id_factura)
-
-            return queryFac.exec()
+            # 2. Borramos la cabecera de la factura
+            query2 = QtSql.QSqlQuery()
+            query2.prepare("DELETE FROM invoices WHERE idfac = :id")
+            query2.bindValue(":id", int(id_factura))
+            return query2.exec()
         except Exception as e:
-            print("Error en deleteInvoice:", e)
+            print("Error deleteInvoice:", e)
             return False
 
     @staticmethod
@@ -292,7 +291,7 @@ class Conexion:
             query.bindValue(":idv", int(id_venta))
             return query.exec()
         except Exception as e:
-            print("Error en deleteVenta SQL:", e)
+            print("Error deleteVenta:", e)
             return False
 
     @staticmethod

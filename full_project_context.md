@@ -1,12 +1,12 @@
 ﻿## 1. PROJECT METADATA ##
-Generation date: 02/03/2026 17:12:24
-Project directory: C:\Users\Usuario\PycharmProjects\rubinanrodriguezanton
-Current commit: 27ac174
+Generation date: 02/10/2026 11:14:13
+Project directory: C:\Users\a25antonrr\Desktop\ProyectoDI
+Current commit: 63b262a
 
 ## 2. FULL FILE STRUCTURE ##
 (Displaying the full directory tree, as Windows 'tree' lacks --fromfile)
 Listado de rutas de carpetas
-El n·mero de serie del volumen es FA95-9C4C
+El n·mero de serie del volumen es 96AB-C189
 C:.
 |   .gitignore
 |   antonrubinan2510.py
@@ -16,6 +16,7 @@ C:.
 |   dlgAbout.py
 |   dlgCalendar.py
 |   events.py
+|   full_project_context.py
 |   globals.py
 |   invoice.py
 |   main.py
@@ -33,15982 +34,1119 @@ C:.
 |   |   .gitignore
 |   |   misc.xml
 |   |   modules.xml
-|   |   rubinanrodriguezanton.iml
+|   |   ProyectoDI.iml
 |   |   vcs.xml
 |   |   workspace.xml
 |   |   
 |   \---inspectionProfiles
 |           profiles_settings.xml
+|           Project_Default.xml
 |           
-+---.venv
-|   |   .gitignore
-|   |   CACHEDIR.TAG
-|   |   pyvenv.cfg
-|   |   
-|   +---Lib
-|   |   \---site-packages
-|   |       |   distutils-precedence.pth
-|   |       |   imagesize.py
-|   |       |   pefile.py
-|   |       |   peutils.py
-|   |       |   pip-25.1.1.virtualenv
-|   |       |   sphinxcontrib_jsmath-1.0.1-py3.7-nspkg.pth
-|   |       |   _virtualenv.pth
-|   |       |   _virtualenv.py
-|   |       |   
-|   |       +---alabaster
-|   |       |   |   about.html
-|   |       |   |   donate.html
-|   |       |   |   layout.html
-|   |       |   |   navigation.html
-|   |       |   |   relations.html
-|   |       |   |   support.py
-|   |       |   |   theme.conf
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   +---static
-|   |       |   |       alabaster.css_t
-|   |       |   |       custom.css
-|   |       |   |       github-banner.svg
-|   |       |   |       
-|   |       |   \---__pycache__
-|   |       |           support.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---alabaster-1.0.0.dist-info
-|   |       |       entry_points.txt
-|   |       |       INSTALLER
-|   |       |       LICENSE.rst
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       WHEEL
-|   |       |       
-|   |       +---altgraph
-|   |       |   |   Dot.py
-|   |       |   |   Graph.py
-|   |       |   |   GraphAlgo.py
-|   |       |   |   GraphStat.py
-|   |       |   |   GraphUtil.py
-|   |       |   |   ObjectGraph.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   \---__pycache__
-|   |       |           Dot.cpython-313.pyc
-|   |       |           Graph.cpython-313.pyc
-|   |       |           GraphAlgo.cpython-313.pyc
-|   |       |           GraphStat.cpython-313.pyc
-|   |       |           GraphUtil.cpython-313.pyc
-|   |       |           ObjectGraph.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---altgraph-0.17.5.dist-info
-|   |       |       INSTALLER
-|   |       |       LICENSE
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       top_level.txt
-|   |       |       WHEEL
-|   |       |       zip-safe
-|   |       |       
-|   |       +---babel
-|   |       |   |   core.py
-|   |       |   |   dates.py
-|   |       |   |   global.dat
-|   |       |   |   languages.py
-|   |       |   |   lists.py
-|   |       |   |   localedata.py
-|   |       |   |   numbers.py
-|   |       |   |   plural.py
-|   |       |   |   py.typed
-|   |       |   |   support.py
-|   |       |   |   units.py
-|   |       |   |   util.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   +---locale-data
-|   |       |   |       aa.dat
-|   |       |   |       aa_DJ.dat
-|   |       |   |       aa_ER.dat
-|   |       |   |       aa_ET.dat
-|   |       |   |       ab.dat
-|   |       |   |       ab_GE.dat
-|   |       |   |       af.dat
-|   |       |   |       af_NA.dat
-|   |       |   |       af_ZA.dat
-|   |       |   |       agq.dat
-|   |       |   |       agq_CM.dat
-|   |       |   |       ak.dat
-|   |       |   |       ak_GH.dat
-|   |       |   |       am.dat
-|   |       |   |       am_ET.dat
-|   |       |   |       an.dat
-|   |       |   |       ann.dat
-|   |       |   |       ann_NG.dat
-|   |       |   |       an_ES.dat
-|   |       |   |       apc.dat
-|   |       |   |       apc_SY.dat
-|   |       |   |       ar.dat
-|   |       |   |       arn.dat
-|   |       |   |       arn_CL.dat
-|   |       |   |       ar_001.dat
-|   |       |   |       ar_AE.dat
-|   |       |   |       ar_BH.dat
-|   |       |   |       ar_DJ.dat
-|   |       |   |       ar_DZ.dat
-|   |       |   |       ar_EG.dat
-|   |       |   |       ar_EH.dat
-|   |       |   |       ar_ER.dat
-|   |       |   |       ar_IL.dat
-|   |       |   |       ar_IQ.dat
-|   |       |   |       ar_JO.dat
-|   |       |   |       ar_KM.dat
-|   |       |   |       ar_KW.dat
-|   |       |   |       ar_LB.dat
-|   |       |   |       ar_LY.dat
-|   |       |   |       ar_MA.dat
-|   |       |   |       ar_MR.dat
-|   |       |   |       ar_OM.dat
-|   |       |   |       ar_PS.dat
-|   |       |   |       ar_QA.dat
-|   |       |   |       ar_SA.dat
-|   |       |   |       ar_SD.dat
-|   |       |   |       ar_SO.dat
-|   |       |   |       ar_SS.dat
-|   |       |   |       ar_SY.dat
-|   |       |   |       ar_TD.dat
-|   |       |   |       ar_TN.dat
-|   |       |   |       ar_YE.dat
-|   |       |   |       as.dat
-|   |       |   |       asa.dat
-|   |       |   |       asa_TZ.dat
-|   |       |   |       ast.dat
-|   |       |   |       ast_ES.dat
-|   |       |   |       as_IN.dat
-|   |       |   |       az.dat
-|   |       |   |       az_Arab.dat
-|   |       |   |       az_Arab_IQ.dat
-|   |       |   |       az_Arab_IR.dat
-|   |       |   |       az_Arab_TR.dat
-|   |       |   |       az_Cyrl.dat
-|   |       |   |       az_Cyrl_AZ.dat
-|   |       |   |       az_Latn.dat
-|   |       |   |       az_Latn_AZ.dat
-|   |       |   |       ba.dat
-|   |       |   |       bal.dat
-|   |       |   |       bal_Arab.dat
-|   |       |   |       bal_Arab_PK.dat
-|   |       |   |       bal_Latn.dat
-|   |       |   |       bal_Latn_PK.dat
-|   |       |   |       bas.dat
-|   |       |   |       bas_CM.dat
-|   |       |   |       ba_RU.dat
-|   |       |   |       be.dat
-|   |       |   |       bem.dat
-|   |       |   |       bem_ZM.dat
-|   |       |   |       bew.dat
-|   |       |   |       bew_ID.dat
-|   |       |   |       bez.dat
-|   |       |   |       bez_TZ.dat
-|   |       |   |       be_BY.dat
-|   |       |   |       be_TARASK.dat
-|   |       |   |       bg.dat
-|   |       |   |       bgc.dat
-|   |       |   |       bgc_IN.dat
-|   |       |   |       bgn.dat
-|   |       |   |       bgn_AE.dat
-|   |       |   |       bgn_AF.dat
-|   |       |   |       bgn_IR.dat
-|   |       |   |       bgn_OM.dat
-|   |       |   |       bgn_PK.dat
-|   |       |   |       bg_BG.dat
-|   |       |   |       bho.dat
-|   |       |   |       bho_IN.dat
-|   |       |   |       blo.dat
-|   |       |   |       blo_BJ.dat
-|   |       |   |       blt.dat
-|   |       |   |       blt_VN.dat
-|   |       |   |       bm.dat
-|   |       |   |       bm_ML.dat
-|   |       |   |       bm_Nkoo.dat
-|   |       |   |       bm_Nkoo_ML.dat
-|   |       |   |       bn.dat
-|   |       |   |       bn_BD.dat
-|   |       |   |       bn_IN.dat
-|   |       |   |       bo.dat
-|   |       |   |       bo_CN.dat
-|   |       |   |       bo_IN.dat
-|   |       |   |       br.dat
-|   |       |   |       brx.dat
-|   |       |   |       brx_IN.dat
-|   |       |   |       br_FR.dat
-|   |       |   |       bs.dat
-|   |       |   |       bss.dat
-|   |       |   |       bss_CM.dat
-|   |       |   |       bs_Cyrl.dat
-|   |       |   |       bs_Cyrl_BA.dat
-|   |       |   |       bs_Latn.dat
-|   |       |   |       bs_Latn_BA.dat
-|   |       |   |       byn.dat
-|   |       |   |       byn_ER.dat
-|   |       |   |       ca.dat
-|   |       |   |       cad.dat
-|   |       |   |       cad_US.dat
-|   |       |   |       ca_AD.dat
-|   |       |   |       ca_ES.dat
-|   |       |   |       ca_ES_VALENCIA.dat
-|   |       |   |       ca_FR.dat
-|   |       |   |       ca_IT.dat
-|   |       |   |       cch.dat
-|   |       |   |       cch_NG.dat
-|   |       |   |       ccp.dat
-|   |       |   |       ccp_BD.dat
-|   |       |   |       ccp_IN.dat
-|   |       |   |       ce.dat
-|   |       |   |       ceb.dat
-|   |       |   |       ceb_PH.dat
-|   |       |   |       ce_RU.dat
-|   |       |   |       cgg.dat
-|   |       |   |       cgg_UG.dat
-|   |       |   |       cho.dat
-|   |       |   |       cho_US.dat
-|   |       |   |       chr.dat
-|   |       |   |       chr_US.dat
-|   |       |   |       cic.dat
-|   |       |   |       cic_US.dat
-|   |       |   |       ckb.dat
-|   |       |   |       ckb_IQ.dat
-|   |       |   |       ckb_IR.dat
-|   |       |   |       co.dat
-|   |       |   |       co_FR.dat
-|   |       |   |       cs.dat
-|   |       |   |       csw.dat
-|   |       |   |       csw_CA.dat
-|   |       |   |       cs_CZ.dat
-|   |       |   |       cu.dat
-|   |       |   |       cu_RU.dat
-|   |       |   |       cv.dat
-|   |       |   |       cv_RU.dat
-|   |       |   |       cy.dat
-|   |       |   |       cy_GB.dat
-|   |       |   |       da.dat
-|   |       |   |       dav.dat
-|   |       |   |       dav_KE.dat
-|   |       |   |       da_DK.dat
-|   |       |   |       da_GL.dat
-|   |       |   |       de.dat
-|   |       |   |       de_AT.dat
-|   |       |   |       de_BE.dat
-|   |       |   |       de_CH.dat
-|   |       |   |       de_DE.dat
-|   |       |   |       de_IT.dat
-|   |       |   |       de_LI.dat
-|   |       |   |       de_LU.dat
-|   |       |   |       dje.dat
-|   |       |   |       dje_NE.dat
-|   |       |   |       doi.dat
-|   |       |   |       doi_IN.dat
-|   |       |   |       dsb.dat
-|   |       |   |       dsb_DE.dat
-|   |       |   |       dua.dat
-|   |       |   |       dua_CM.dat
-|   |       |   |       dv.dat
-|   |       |   |       dv_MV.dat
-|   |       |   |       dyo.dat
-|   |       |   |       dyo_SN.dat
-|   |       |   |       dz.dat
-|   |       |   |       dz_BT.dat
-|   |       |   |       ebu.dat
-|   |       |   |       ebu_KE.dat
-|   |       |   |       ee.dat
-|   |       |   |       ee_GH.dat
-|   |       |   |       ee_TG.dat
-|   |       |   |       el.dat
-|   |       |   |       el_CY.dat
-|   |       |   |       el_GR.dat
-|   |       |   |       el_POLYTON.dat
-|   |       |   |       en.dat
-|   |       |   |       en_001.dat
-|   |       |   |       en_150.dat
-|   |       |   |       en_AE.dat
-|   |       |   |       en_AG.dat
-|   |       |   |       en_AI.dat
-|   |       |   |       en_AS.dat
-|   |       |   |       en_AT.dat
-|   |       |   |       en_AU.dat
-|   |       |   |       en_BB.dat
-|   |       |   |       en_BE.dat
-|   |       |   |       en_BI.dat
-|   |       |   |       en_BM.dat
-|   |       |   |       en_BS.dat
-|   |       |   |       en_BW.dat
-|   |       |   |       en_BZ.dat
-|   |       |   |       en_CA.dat
-|   |       |   |       en_CC.dat
-|   |       |   |       en_CH.dat
-|   |       |   |       en_CK.dat
-|   |       |   |       en_CM.dat
-|   |       |   |       en_CX.dat
-|   |       |   |       en_CY.dat
-|   |       |   |       en_DE.dat
-|   |       |   |       en_DG.dat
-|   |       |   |       en_DK.dat
-|   |       |   |       en_DM.dat
-|   |       |   |       en_Dsrt.dat
-|   |       |   |       en_Dsrt_US.dat
-|   |       |   |       en_ER.dat
-|   |       |   |       en_FI.dat
-|   |       |   |       en_FJ.dat
-|   |       |   |       en_FK.dat
-|   |       |   |       en_FM.dat
-|   |       |   |       en_GB.dat
-|   |       |   |       en_GD.dat
-|   |       |   |       en_GG.dat
-|   |       |   |       en_GH.dat
-|   |       |   |       en_GI.dat
-|   |       |   |       en_GM.dat
-|   |       |   |       en_GU.dat
-|   |       |   |       en_GY.dat
-|   |       |   |       en_HK.dat
-|   |       |   |       en_ID.dat
-|   |       |   |       en_IE.dat
-|   |       |   |       en_IL.dat
-|   |       |   |       en_IM.dat
-|   |       |   |       en_IN.dat
-|   |       |   |       en_IO.dat
-|   |       |   |       en_JE.dat
-|   |       |   |       en_JM.dat
-|   |       |   |       en_KE.dat
-|   |       |   |       en_KI.dat
-|   |       |   |       en_KN.dat
-|   |       |   |       en_KY.dat
-|   |       |   |       en_LC.dat
-|   |       |   |       en_LR.dat
-|   |       |   |       en_LS.dat
-|   |       |   |       en_MG.dat
-|   |       |   |       en_MH.dat
-|   |       |   |       en_MO.dat
-|   |       |   |       en_MP.dat
-|   |       |   |       en_MS.dat
-|   |       |   |       en_MT.dat
-|   |       |   |       en_MU.dat
-|   |       |   |       en_MV.dat
-|   |       |   |       en_MW.dat
-|   |       |   |       en_MY.dat
-|   |       |   |       en_NA.dat
-|   |       |   |       en_NF.dat
-|   |       |   |       en_NG.dat
-|   |       |   |       en_NL.dat
-|   |       |   |       en_NR.dat
-|   |       |   |       en_NU.dat
-|   |       |   |       en_NZ.dat
-|   |       |   |       en_PG.dat
-|   |       |   |       en_PH.dat
-|   |       |   |       en_PK.dat
-|   |       |   |       en_PN.dat
-|   |       |   |       en_PR.dat
-|   |       |   |       en_PW.dat
-|   |       |   |       en_RW.dat
-|   |       |   |       en_SB.dat
-|   |       |   |       en_SC.dat
-|   |       |   |       en_SD.dat
-|   |       |   |       en_SE.dat
-|   |       |   |       en_SG.dat
-|   |       |   |       en_SH.dat
-|   |       |   |       en_Shaw.dat
-|   |       |   |       en_Shaw_GB.dat
-|   |       |   |       en_SI.dat
-|   |       |   |       en_SL.dat
-|   |       |   |       en_SS.dat
-|   |       |   |       en_SX.dat
-|   |       |   |       en_SZ.dat
-|   |       |   |       en_TC.dat
-|   |       |   |       en_TK.dat
-|   |       |   |       en_TO.dat
-|   |       |   |       en_TT.dat
-|   |       |   |       en_TV.dat
-|   |       |   |       en_TZ.dat
-|   |       |   |       en_UG.dat
-|   |       |   |       en_UM.dat
-|   |       |   |       en_US.dat
-|   |       |   |       en_US_POSIX.dat
-|   |       |   |       en_VC.dat
-|   |       |   |       en_VG.dat
-|   |       |   |       en_VI.dat
-|   |       |   |       en_VU.dat
-|   |       |   |       en_WS.dat
-|   |       |   |       en_ZA.dat
-|   |       |   |       en_ZM.dat
-|   |       |   |       en_ZW.dat
-|   |       |   |       eo.dat
-|   |       |   |       eo_001.dat
-|   |       |   |       es.dat
-|   |       |   |       es_419.dat
-|   |       |   |       es_AR.dat
-|   |       |   |       es_BO.dat
-|   |       |   |       es_BR.dat
-|   |       |   |       es_BZ.dat
-|   |       |   |       es_CL.dat
-|   |       |   |       es_CO.dat
-|   |       |   |       es_CR.dat
-|   |       |   |       es_CU.dat
-|   |       |   |       es_DO.dat
-|   |       |   |       es_EA.dat
-|   |       |   |       es_EC.dat
-|   |       |   |       es_ES.dat
-|   |       |   |       es_GQ.dat
-|   |       |   |       es_GT.dat
-|   |       |   |       es_HN.dat
-|   |       |   |       es_IC.dat
-|   |       |   |       es_MX.dat
-|   |       |   |       es_NI.dat
-|   |       |   |       es_PA.dat
-|   |       |   |       es_PE.dat
-|   |       |   |       es_PH.dat
-|   |       |   |       es_PR.dat
-|   |       |   |       es_PY.dat
-|   |       |   |       es_SV.dat
-|   |       |   |       es_US.dat
-|   |       |   |       es_UY.dat
-|   |       |   |       es_VE.dat
-|   |       |   |       et.dat
-|   |       |   |       et_EE.dat
-|   |       |   |       eu.dat
-|   |       |   |       eu_ES.dat
-|   |       |   |       ewo.dat
-|   |       |   |       ewo_CM.dat
-|   |       |   |       fa.dat
-|   |       |   |       fa_AF.dat
-|   |       |   |       fa_IR.dat
-|   |       |   |       ff.dat
-|   |       |   |       ff_Adlm.dat
-|   |       |   |       ff_Adlm_BF.dat
-|   |       |   |       ff_Adlm_CM.dat
-|   |       |   |       ff_Adlm_GH.dat
-|   |       |   |       ff_Adlm_GM.dat
-|   |       |   |       ff_Adlm_GN.dat
-|   |       |   |       ff_Adlm_GW.dat
-|   |       |   |       ff_Adlm_LR.dat
-|   |       |   |       ff_Adlm_MR.dat
-|   |       |   |       ff_Adlm_NE.dat
-|   |       |   |       ff_Adlm_NG.dat
-|   |       |   |       ff_Adlm_SL.dat
-|   |       |   |       ff_Adlm_SN.dat
-|   |       |   |       ff_Latn.dat
-|   |       |   |       ff_Latn_BF.dat
-|   |       |   |       ff_Latn_CM.dat
-|   |       |   |       ff_Latn_GH.dat
-|   |       |   |       ff_Latn_GM.dat
-|   |       |   |       ff_Latn_GN.dat
-|   |       |   |       ff_Latn_GW.dat
-|   |       |   |       ff_Latn_LR.dat
-|   |       |   |       ff_Latn_MR.dat
-|   |       |   |       ff_Latn_NE.dat
-|   |       |   |       ff_Latn_NG.dat
-|   |       |   |       ff_Latn_SL.dat
-|   |       |   |       ff_Latn_SN.dat
-|   |       |   |       fi.dat
-|   |       |   |       fil.dat
-|   |       |   |       fil_PH.dat
-|   |       |   |       fi_FI.dat
-|   |       |   |       fo.dat
-|   |       |   |       fo_DK.dat
-|   |       |   |       fo_FO.dat
-|   |       |   |       fr.dat
-|   |       |   |       frr.dat
-|   |       |   |       frr_DE.dat
-|   |       |   |       fr_BE.dat
-|   |       |   |       fr_BF.dat
-|   |       |   |       fr_BI.dat
-|   |       |   |       fr_BJ.dat
-|   |       |   |       fr_BL.dat
-|   |       |   |       fr_CA.dat
-|   |       |   |       fr_CD.dat
-|   |       |   |       fr_CF.dat
-|   |       |   |       fr_CG.dat
-|   |       |   |       fr_CH.dat
-|   |       |   |       fr_CI.dat
-|   |       |   |       fr_CM.dat
-|   |       |   |       fr_DJ.dat
-|   |       |   |       fr_DZ.dat
-|   |       |   |       fr_FR.dat
-|   |       |   |       fr_GA.dat
-|   |       |   |       fr_GF.dat
-|   |       |   |       fr_GN.dat
-|   |       |   |       fr_GP.dat
-|   |       |   |       fr_GQ.dat
-|   |       |   |       fr_HT.dat
-|   |       |   |       fr_KM.dat
-|   |       |   |       fr_LU.dat
-|   |       |   |       fr_MA.dat
-|   |       |   |       fr_MC.dat
-|   |       |   |       fr_MF.dat
-|   |       |   |       fr_MG.dat
-|   |       |   |       fr_ML.dat
-|   |       |   |       fr_MQ.dat
-|   |       |   |       fr_MR.dat
-|   |       |   |       fr_MU.dat
-|   |       |   |       fr_NC.dat
-|   |       |   |       fr_NE.dat
-|   |       |   |       fr_PF.dat
-|   |       |   |       fr_PM.dat
-|   |       |   |       fr_RE.dat
-|   |       |   |       fr_RW.dat
-|   |       |   |       fr_SC.dat
-|   |       |   |       fr_SN.dat
-|   |       |   |       fr_SY.dat
-|   |       |   |       fr_TD.dat
-|   |       |   |       fr_TG.dat
-|   |       |   |       fr_TN.dat
-|   |       |   |       fr_VU.dat
-|   |       |   |       fr_WF.dat
-|   |       |   |       fr_YT.dat
-|   |       |   |       fur.dat
-|   |       |   |       fur_IT.dat
-|   |       |   |       fy.dat
-|   |       |   |       fy_NL.dat
-|   |       |   |       ga.dat
-|   |       |   |       gaa.dat
-|   |       |   |       gaa_GH.dat
-|   |       |   |       ga_GB.dat
-|   |       |   |       ga_IE.dat
-|   |       |   |       gd.dat
-|   |       |   |       gd_GB.dat
-|   |       |   |       gez.dat
-|   |       |   |       gez_ER.dat
-|   |       |   |       gez_ET.dat
-|   |       |   |       gl.dat
-|   |       |   |       gl_ES.dat
-|   |       |   |       gn.dat
-|   |       |   |       gn_PY.dat
-|   |       |   |       gsw.dat
-|   |       |   |       gsw_CH.dat
-|   |       |   |       gsw_FR.dat
-|   |       |   |       gsw_LI.dat
-|   |       |   |       gu.dat
-|   |       |   |       guz.dat
-|   |       |   |       guz_KE.dat
-|   |       |   |       gu_IN.dat
-|   |       |   |       gv.dat
-|   |       |   |       gv_IM.dat
-|   |       |   |       ha.dat
-|   |       |   |       haw.dat
-|   |       |   |       haw_US.dat
-|   |       |   |       ha_Arab.dat
-|   |       |   |       ha_Arab_NG.dat
-|   |       |   |       ha_Arab_SD.dat
-|   |       |   |       ha_GH.dat
-|   |       |   |       ha_NE.dat
-|   |       |   |       ha_NG.dat
-|   |       |   |       he.dat
-|   |       |   |       he_IL.dat
-|   |       |   |       hi.dat
-|   |       |   |       hi_IN.dat
-|   |       |   |       hi_Latn.dat
-|   |       |   |       hi_Latn_IN.dat
-|   |       |   |       hnj.dat
-|   |       |   |       hnj_Hmnp.dat
-|   |       |   |       hnj_Hmnp_US.dat
-|   |       |   |       hr.dat
-|   |       |   |       hr_BA.dat
-|   |       |   |       hr_HR.dat
-|   |       |   |       hsb.dat
-|   |       |   |       hsb_DE.dat
-|   |       |   |       hu.dat
-|   |       |   |       hu_HU.dat
-|   |       |   |       hy.dat
-|   |       |   |       hy_AM.dat
-|   |       |   |       ia.dat
-|   |       |   |       ia_001.dat
-|   |       |   |       id.dat
-|   |       |   |       id_ID.dat
-|   |       |   |       ie.dat
-|   |       |   |       ie_EE.dat
-|   |       |   |       ig.dat
-|   |       |   |       ig_NG.dat
-|   |       |   |       ii.dat
-|   |       |   |       ii_CN.dat
-|   |       |   |       io.dat
-|   |       |   |       io_001.dat
-|   |       |   |       is.dat
-|   |       |   |       is_IS.dat
-|   |       |   |       it.dat
-|   |       |   |       it_CH.dat
-|   |       |   |       it_IT.dat
-|   |       |   |       it_SM.dat
-|   |       |   |       it_VA.dat
-|   |       |   |       iu.dat
-|   |       |   |       iu_CA.dat
-|   |       |   |       iu_Latn.dat
-|   |       |   |       iu_Latn_CA.dat
-|   |       |   |       ja.dat
-|   |       |   |       ja_JP.dat
-|   |       |   |       jbo.dat
-|   |       |   |       jbo_001.dat
-|   |       |   |       jgo.dat
-|   |       |   |       jgo_CM.dat
-|   |       |   |       jmc.dat
-|   |       |   |       jmc_TZ.dat
-|   |       |   |       jv.dat
-|   |       |   |       jv_ID.dat
-|   |       |   |       ka.dat
-|   |       |   |       kaa.dat
-|   |       |   |       kaa_Cyrl.dat
-|   |       |   |       kaa_Cyrl_UZ.dat
-|   |       |   |       kaa_Latn.dat
-|   |       |   |       kaa_Latn_UZ.dat
-|   |       |   |       kab.dat
-|   |       |   |       kab_DZ.dat
-|   |       |   |       kaj.dat
-|   |       |   |       kaj_NG.dat
-|   |       |   |       kam.dat
-|   |       |   |       kam_KE.dat
-|   |       |   |       ka_GE.dat
-|   |       |   |       kcg.dat
-|   |       |   |       kcg_NG.dat
-|   |       |   |       kde.dat
-|   |       |   |       kde_TZ.dat
-|   |       |   |       kea.dat
-|   |       |   |       kea_CV.dat
-|   |       |   |       ken.dat
-|   |       |   |       ken_CM.dat
-|   |       |   |       kgp.dat
-|   |       |   |       kgp_BR.dat
-|   |       |   |       khq.dat
-|   |       |   |       khq_ML.dat
-|   |       |   |       ki.dat
-|   |       |   |       ki_KE.dat
-|   |       |   |       kk.dat
-|   |       |   |       kkj.dat
-|   |       |   |       kkj_CM.dat
-|   |       |   |       kk_Arab.dat
-|   |       |   |       kk_Arab_CN.dat
-|   |       |   |       kk_Cyrl.dat
-|   |       |   |       kk_Cyrl_KZ.dat
-|   |       |   |       kk_KZ.dat
-|   |       |   |       kl.dat
-|   |       |   |       kln.dat
-|   |       |   |       kln_KE.dat
-|   |       |   |       kl_GL.dat
-|   |       |   |       km.dat
-|   |       |   |       km_KH.dat
-|   |       |   |       kn.dat
-|   |       |   |       kn_IN.dat
-|   |       |   |       ko.dat
-|   |       |   |       kok.dat
-|   |       |   |       kok_Deva.dat
-|   |       |   |       kok_Deva_IN.dat
-|   |       |   |       kok_Latn.dat
-|   |       |   |       kok_Latn_IN.dat
-|   |       |   |       ko_CN.dat
-|   |       |   |       ko_KP.dat
-|   |       |   |       ko_KR.dat
-|   |       |   |       kpe.dat
-|   |       |   |       kpe_GN.dat
-|   |       |   |       kpe_LR.dat
-|   |       |   |       ks.dat
-|   |       |   |       ksb.dat
-|   |       |   |       ksb_TZ.dat
-|   |       |   |       ksf.dat
-|   |       |   |       ksf_CM.dat
-|   |       |   |       ksh.dat
-|   |       |   |       ksh_DE.dat
-|   |       |   |       ks_Arab.dat
-|   |       |   |       ks_Arab_IN.dat
-|   |       |   |       ks_Deva.dat
-|   |       |   |       ks_Deva_IN.dat
-|   |       |   |       ku.dat
-|   |       |   |       ku_TR.dat
-|   |       |   |       kw.dat
-|   |       |   |       kw_GB.dat
-|   |       |   |       kxv.dat
-|   |       |   |       kxv_Deva.dat
-|   |       |   |       kxv_Deva_IN.dat
-|   |       |   |       kxv_Latn.dat
-|   |       |   |       kxv_Latn_IN.dat
-|   |       |   |       kxv_Orya.dat
-|   |       |   |       kxv_Orya_IN.dat
-|   |       |   |       kxv_Telu.dat
-|   |       |   |       kxv_Telu_IN.dat
-|   |       |   |       ky.dat
-|   |       |   |       ky_KG.dat
-|   |       |   |       la.dat
-|   |       |   |       lag.dat
-|   |       |   |       lag_TZ.dat
-|   |       |   |       la_VA.dat
-|   |       |   |       lb.dat
-|   |       |   |       lb_LU.dat
-|   |       |   |       lg.dat
-|   |       |   |       lg_UG.dat
-|   |       |   |       LICENSE.unicode
-|   |       |   |       lij.dat
-|   |       |   |       lij_IT.dat
-|   |       |   |       lkt.dat
-|   |       |   |       lkt_US.dat
-|   |       |   |       lld.dat
-|   |       |   |       lld_IT.dat
-|   |       |   |       lmo.dat
-|   |       |   |       lmo_IT.dat
-|   |       |   |       ln.dat
-|   |       |   |       ln_AO.dat
-|   |       |   |       ln_CD.dat
-|   |       |   |       ln_CF.dat
-|   |       |   |       ln_CG.dat
-|   |       |   |       lo.dat
-|   |       |   |       lo_LA.dat
-|   |       |   |       lrc.dat
-|   |       |   |       lrc_IQ.dat
-|   |       |   |       lrc_IR.dat
-|   |       |   |       lt.dat
-|   |       |   |       ltg.dat
-|   |       |   |       ltg_LV.dat
-|   |       |   |       lt_LT.dat
-|   |       |   |       lu.dat
-|   |       |   |       luo.dat
-|   |       |   |       luo_KE.dat
-|   |       |   |       luy.dat
-|   |       |   |       luy_KE.dat
-|   |       |   |       lu_CD.dat
-|   |       |   |       lv.dat
-|   |       |   |       lv_LV.dat
-|   |       |   |       mai.dat
-|   |       |   |       mai_IN.dat
-|   |       |   |       mas.dat
-|   |       |   |       mas_KE.dat
-|   |       |   |       mas_TZ.dat
-|   |       |   |       mdf.dat
-|   |       |   |       mdf_RU.dat
-|   |       |   |       mer.dat
-|   |       |   |       mer_KE.dat
-|   |       |   |       mfe.dat
-|   |       |   |       mfe_MU.dat
-|   |       |   |       mg.dat
-|   |       |   |       mgh.dat
-|   |       |   |       mgh_MZ.dat
-|   |       |   |       mgo.dat
-|   |       |   |       mgo_CM.dat
-|   |       |   |       mg_MG.dat
-|   |       |   |       mhn.dat
-|   |       |   |       mhn_IT.dat
-|   |       |   |       mi.dat
-|   |       |   |       mic.dat
-|   |       |   |       mic_CA.dat
-|   |       |   |       mi_NZ.dat
-|   |       |   |       mk.dat
-|   |       |   |       mk_MK.dat
-|   |       |   |       ml.dat
-|   |       |   |       ml_IN.dat
-|   |       |   |       mn.dat
-|   |       |   |       mni.dat
-|   |       |   |       mni_Beng.dat
-|   |       |   |       mni_Beng_IN.dat
-|   |       |   |       mni_Mtei.dat
-|   |       |   |       mni_Mtei_IN.dat
-|   |       |   |       mn_MN.dat
-|   |       |   |       mn_Mong.dat
-|   |       |   |       mn_Mong_CN.dat
-|   |       |   |       mn_Mong_MN.dat
-|   |       |   |       moh.dat
-|   |       |   |       moh_CA.dat
-|   |       |   |       mr.dat
-|   |       |   |       mr_IN.dat
-|   |       |   |       ms.dat
-|   |       |   |       ms_Arab.dat
-|   |       |   |       ms_Arab_BN.dat
-|   |       |   |       ms_Arab_MY.dat
-|   |       |   |       ms_BN.dat
-|   |       |   |       ms_ID.dat
-|   |       |   |       ms_MY.dat
-|   |       |   |       ms_SG.dat
-|   |       |   |       mt.dat
-|   |       |   |       mt_MT.dat
-|   |       |   |       mua.dat
-|   |       |   |       mua_CM.dat
-|   |       |   |       mus.dat
-|   |       |   |       mus_US.dat
-|   |       |   |       my.dat
-|   |       |   |       myv.dat
-|   |       |   |       myv_RU.dat
-|   |       |   |       my_MM.dat
-|   |       |   |       mzn.dat
-|   |       |   |       mzn_IR.dat
-|   |       |   |       naq.dat
-|   |       |   |       naq_NA.dat
-|   |       |   |       nb.dat
-|   |       |   |       nb_NO.dat
-|   |       |   |       nb_SJ.dat
-|   |       |   |       nd.dat
-|   |       |   |       nds.dat
-|   |       |   |       nds_DE.dat
-|   |       |   |       nds_NL.dat
-|   |       |   |       nd_ZW.dat
-|   |       |   |       ne.dat
-|   |       |   |       ne_IN.dat
-|   |       |   |       ne_NP.dat
-|   |       |   |       nl.dat
-|   |       |   |       nl_AW.dat
-|   |       |   |       nl_BE.dat
-|   |       |   |       nl_BQ.dat
-|   |       |   |       nl_CW.dat
-|   |       |   |       nl_NL.dat
-|   |       |   |       nl_SR.dat
-|   |       |   |       nl_SX.dat
-|   |       |   |       nmg.dat
-|   |       |   |       nmg_CM.dat
-|   |       |   |       nn.dat
-|   |       |   |       nnh.dat
-|   |       |   |       nnh_CM.dat
-|   |       |   |       nn_NO.dat
-|   |       |   |       no.dat
-|   |       |   |       nqo.dat
-|   |       |   |       nqo_GN.dat
-|   |       |   |       nr.dat
-|   |       |   |       nr_ZA.dat
-|   |       |   |       nso.dat
-|   |       |   |       nso_ZA.dat
-|   |       |   |       nus.dat
-|   |       |   |       nus_SS.dat
-|   |       |   |       nv.dat
-|   |       |   |       nv_US.dat
-|   |       |   |       ny.dat
-|   |       |   |       nyn.dat
-|   |       |   |       nyn_UG.dat
-|   |       |   |       ny_MW.dat
-|   |       |   |       oc.dat
-|   |       |   |       oc_ES.dat
-|   |       |   |       oc_FR.dat
-|   |       |   |       om.dat
-|   |       |   |       om_ET.dat
-|   |       |   |       om_KE.dat
-|   |       |   |       or.dat
-|   |       |   |       or_IN.dat
-|   |       |   |       os.dat
-|   |       |   |       osa.dat
-|   |       |   |       osa_US.dat
-|   |       |   |       os_GE.dat
-|   |       |   |       os_RU.dat
-|   |       |   |       pa.dat
-|   |       |   |       pap.dat
-|   |       |   |       pap_AW.dat
-|   |       |   |       pap_CW.dat
-|   |       |   |       pa_Arab.dat
-|   |       |   |       pa_Arab_PK.dat
-|   |       |   |       pa_Guru.dat
-|   |       |   |       pa_Guru_IN.dat
-|   |       |   |       pcm.dat
-|   |       |   |       pcm_NG.dat
-|   |       |   |       pis.dat
-|   |       |   |       pis_SB.dat
-|   |       |   |       pl.dat
-|   |       |   |       pl_PL.dat
-|   |       |   |       prg.dat
-|   |       |   |       prg_PL.dat
-|   |       |   |       ps.dat
-|   |       |   |       ps_AF.dat
-|   |       |   |       ps_PK.dat
-|   |       |   |       pt.dat
-|   |       |   |       pt_AO.dat
-|   |       |   |       pt_BR.dat
-|   |       |   |       pt_CH.dat
-|   |       |   |       pt_CV.dat
-|   |       |   |       pt_GQ.dat
-|   |       |   |       pt_GW.dat
-|   |       |   |       pt_LU.dat
-|   |       |   |       pt_MO.dat
-|   |       |   |       pt_MZ.dat
-|   |       |   |       pt_PT.dat
-|   |       |   |       pt_ST.dat
-|   |       |   |       pt_TL.dat
-|   |       |   |       qu.dat
-|   |       |   |       quc.dat
-|   |       |   |       quc_GT.dat
-|   |       |   |       qu_BO.dat
-|   |       |   |       qu_EC.dat
-|   |       |   |       qu_PE.dat
-|   |       |   |       raj.dat
-|   |       |   |       raj_IN.dat
-|   |       |   |       rhg.dat
-|   |       |   |       rhg_Rohg.dat
-|   |       |   |       rhg_Rohg_BD.dat
-|   |       |   |       rhg_Rohg_MM.dat
-|   |       |   |       rif.dat
-|   |       |   |       rif_MA.dat
-|   |       |   |       rm.dat
-|   |       |   |       rm_CH.dat
-|   |       |   |       rn.dat
-|   |       |   |       rn_BI.dat
-|   |       |   |       ro.dat
-|   |       |   |       rof.dat
-|   |       |   |       rof_TZ.dat
-|   |       |   |       root.dat
-|   |       |   |       ro_MD.dat
-|   |       |   |       ro_RO.dat
-|   |       |   |       ru.dat
-|   |       |   |       ru_BY.dat
-|   |       |   |       ru_KG.dat
-|   |       |   |       ru_KZ.dat
-|   |       |   |       ru_MD.dat
-|   |       |   |       ru_RU.dat
-|   |       |   |       ru_UA.dat
-|   |       |   |       rw.dat
-|   |       |   |       rwk.dat
-|   |       |   |       rwk_TZ.dat
-|   |       |   |       rw_RW.dat
-|   |       |   |       sa.dat
-|   |       |   |       sah.dat
-|   |       |   |       sah_RU.dat
-|   |       |   |       saq.dat
-|   |       |   |       saq_KE.dat
-|   |       |   |       sat.dat
-|   |       |   |       sat_Deva.dat
-|   |       |   |       sat_Deva_IN.dat
-|   |       |   |       sat_Olck.dat
-|   |       |   |       sat_Olck_IN.dat
-|   |       |   |       sa_IN.dat
-|   |       |   |       sbp.dat
-|   |       |   |       sbp_TZ.dat
-|   |       |   |       sc.dat
-|   |       |   |       scn.dat
-|   |       |   |       scn_IT.dat
-|   |       |   |       sc_IT.dat
-|   |       |   |       sd.dat
-|   |       |   |       sdh.dat
-|   |       |   |       sdh_IQ.dat
-|   |       |   |       sdh_IR.dat
-|   |       |   |       sd_Arab.dat
-|   |       |   |       sd_Arab_PK.dat
-|   |       |   |       sd_Deva.dat
-|   |       |   |       sd_Deva_IN.dat
-|   |       |   |       se.dat
-|   |       |   |       seh.dat
-|   |       |   |       seh_MZ.dat
-|   |       |   |       ses.dat
-|   |       |   |       ses_ML.dat
-|   |       |   |       se_FI.dat
-|   |       |   |       se_NO.dat
-|   |       |   |       se_SE.dat
-|   |       |   |       sg.dat
-|   |       |   |       sg_CF.dat
-|   |       |   |       shi.dat
-|   |       |   |       shi_Latn.dat
-|   |       |   |       shi_Latn_MA.dat
-|   |       |   |       shi_Tfng.dat
-|   |       |   |       shi_Tfng_MA.dat
-|   |       |   |       shn.dat
-|   |       |   |       shn_MM.dat
-|   |       |   |       shn_TH.dat
-|   |       |   |       si.dat
-|   |       |   |       sid.dat
-|   |       |   |       sid_ET.dat
-|   |       |   |       si_LK.dat
-|   |       |   |       sk.dat
-|   |       |   |       skr.dat
-|   |       |   |       skr_PK.dat
-|   |       |   |       sk_SK.dat
-|   |       |   |       sl.dat
-|   |       |   |       sl_SI.dat
-|   |       |   |       sma.dat
-|   |       |   |       sma_NO.dat
-|   |       |   |       sma_SE.dat
-|   |       |   |       smj.dat
-|   |       |   |       smj_NO.dat
-|   |       |   |       smj_SE.dat
-|   |       |   |       smn.dat
-|   |       |   |       smn_FI.dat
-|   |       |   |       sms.dat
-|   |       |   |       sms_FI.dat
-|   |       |   |       sn.dat
-|   |       |   |       sn_ZW.dat
-|   |       |   |       so.dat
-|   |       |   |       so_DJ.dat
-|   |       |   |       so_ET.dat
-|   |       |   |       so_KE.dat
-|   |       |   |       so_SO.dat
-|   |       |   |       sq.dat
-|   |       |   |       sq_AL.dat
-|   |       |   |       sq_MK.dat
-|   |       |   |       sq_XK.dat
-|   |       |   |       sr.dat
-|   |       |   |       sr_Cyrl.dat
-|   |       |   |       sr_Cyrl_BA.dat
-|   |       |   |       sr_Cyrl_ME.dat
-|   |       |   |       sr_Cyrl_RS.dat
-|   |       |   |       sr_Cyrl_XK.dat
-|   |       |   |       sr_Latn.dat
-|   |       |   |       sr_Latn_BA.dat
-|   |       |   |       sr_Latn_ME.dat
-|   |       |   |       sr_Latn_RS.dat
-|   |       |   |       sr_Latn_XK.dat
-|   |       |   |       ss.dat
-|   |       |   |       ssy.dat
-|   |       |   |       ssy_ER.dat
-|   |       |   |       ss_SZ.dat
-|   |       |   |       ss_ZA.dat
-|   |       |   |       st.dat
-|   |       |   |       st_LS.dat
-|   |       |   |       st_ZA.dat
-|   |       |   |       su.dat
-|   |       |   |       su_Latn.dat
-|   |       |   |       su_Latn_ID.dat
-|   |       |   |       sv.dat
-|   |       |   |       sv_AX.dat
-|   |       |   |       sv_FI.dat
-|   |       |   |       sv_SE.dat
-|   |       |   |       sw.dat
-|   |       |   |       sw_CD.dat
-|   |       |   |       sw_KE.dat
-|   |       |   |       sw_TZ.dat
-|   |       |   |       sw_UG.dat
-|   |       |   |       syr.dat
-|   |       |   |       syr_IQ.dat
-|   |       |   |       syr_SY.dat
-|   |       |   |       szl.dat
-|   |       |   |       szl_PL.dat
-|   |       |   |       ta.dat
-|   |       |   |       ta_IN.dat
-|   |       |   |       ta_LK.dat
-|   |       |   |       ta_MY.dat
-|   |       |   |       ta_SG.dat
-|   |       |   |       te.dat
-|   |       |   |       teo.dat
-|   |       |   |       teo_KE.dat
-|   |       |   |       teo_UG.dat
-|   |       |   |       te_IN.dat
-|   |       |   |       tg.dat
-|   |       |   |       tg_TJ.dat
-|   |       |   |       th.dat
-|   |       |   |       th_TH.dat
-|   |       |   |       ti.dat
-|   |       |   |       tig.dat
-|   |       |   |       tig_ER.dat
-|   |       |   |       ti_ER.dat
-|   |       |   |       ti_ET.dat
-|   |       |   |       tk.dat
-|   |       |   |       tk_TM.dat
-|   |       |   |       tn.dat
-|   |       |   |       tn_BW.dat
-|   |       |   |       tn_ZA.dat
-|   |       |   |       to.dat
-|   |       |   |       tok.dat
-|   |       |   |       tok_001.dat
-|   |       |   |       to_TO.dat
-|   |       |   |       tpi.dat
-|   |       |   |       tpi_PG.dat
-|   |       |   |       tr.dat
-|   |       |   |       trv.dat
-|   |       |   |       trv_TW.dat
-|   |       |   |       trw.dat
-|   |       |   |       trw_PK.dat
-|   |       |   |       tr_CY.dat
-|   |       |   |       tr_TR.dat
-|   |       |   |       ts.dat
-|   |       |   |       ts_ZA.dat
-|   |       |   |       tt.dat
-|   |       |   |       tt_RU.dat
-|   |       |   |       twq.dat
-|   |       |   |       twq_NE.dat
-|   |       |   |       tyv.dat
-|   |       |   |       tyv_RU.dat
-|   |       |   |       tzm.dat
-|   |       |   |       tzm_MA.dat
-|   |       |   |       ug.dat
-|   |       |   |       ug_CN.dat
-|   |       |   |       uk.dat
-|   |       |   |       uk_UA.dat
-|   |       |   |       ur.dat
-|   |       |   |       ur_IN.dat
-|   |       |   |       ur_PK.dat
-|   |       |   |       uz.dat
-|   |       |   |       uz_Arab.dat
-|   |       |   |       uz_Arab_AF.dat
-|   |       |   |       uz_Cyrl.dat
-|   |       |   |       uz_Cyrl_UZ.dat
-|   |       |   |       uz_Latn.dat
-|   |       |   |       uz_Latn_UZ.dat
-|   |       |   |       vai.dat
-|   |       |   |       vai_Latn.dat
-|   |       |   |       vai_Latn_LR.dat
-|   |       |   |       vai_Vaii.dat
-|   |       |   |       vai_Vaii_LR.dat
-|   |       |   |       ve.dat
-|   |       |   |       vec.dat
-|   |       |   |       vec_IT.dat
-|   |       |   |       ve_ZA.dat
-|   |       |   |       vi.dat
-|   |       |   |       vi_VN.dat
-|   |       |   |       vmw.dat
-|   |       |   |       vmw_MZ.dat
-|   |       |   |       vo.dat
-|   |       |   |       vo_001.dat
-|   |       |   |       vun.dat
-|   |       |   |       vun_TZ.dat
-|   |       |   |       wa.dat
-|   |       |   |       wae.dat
-|   |       |   |       wae_CH.dat
-|   |       |   |       wal.dat
-|   |       |   |       wal_ET.dat
-|   |       |   |       wa_BE.dat
-|   |       |   |       wbp.dat
-|   |       |   |       wbp_AU.dat
-|   |       |   |       wo.dat
-|   |       |   |       wo_SN.dat
-|   |       |   |       xh.dat
-|   |       |   |       xh_ZA.dat
-|   |       |   |       xnr.dat
-|   |       |   |       xnr_IN.dat
-|   |       |   |       xog.dat
-|   |       |   |       xog_UG.dat
-|   |       |   |       yav.dat
-|   |       |   |       yav_CM.dat
-|   |       |   |       yi.dat
-|   |       |   |       yi_UA.dat
-|   |       |   |       yo.dat
-|   |       |   |       yo_BJ.dat
-|   |       |   |       yo_NG.dat
-|   |       |   |       yrl.dat
-|   |       |   |       yrl_BR.dat
-|   |       |   |       yrl_CO.dat
-|   |       |   |       yrl_VE.dat
-|   |       |   |       yue.dat
-|   |       |   |       yue_Hans.dat
-|   |       |   |       yue_Hans_CN.dat
-|   |       |   |       yue_Hant.dat
-|   |       |   |       yue_Hant_CN.dat
-|   |       |   |       yue_Hant_HK.dat
-|   |       |   |       za.dat
-|   |       |   |       za_CN.dat
-|   |       |   |       zgh.dat
-|   |       |   |       zgh_MA.dat
-|   |       |   |       zh.dat
-|   |       |   |       zh_Hans.dat
-|   |       |   |       zh_Hans_CN.dat
-|   |       |   |       zh_Hans_HK.dat
-|   |       |   |       zh_Hans_MO.dat
-|   |       |   |       zh_Hans_MY.dat
-|   |       |   |       zh_Hans_SG.dat
-|   |       |   |       zh_Hant.dat
-|   |       |   |       zh_Hant_HK.dat
-|   |       |   |       zh_Hant_MO.dat
-|   |       |   |       zh_Hant_MY.dat
-|   |       |   |       zh_Hant_TW.dat
-|   |       |   |       zh_Latn.dat
-|   |       |   |       zh_Latn_CN.dat
-|   |       |   |       zu.dat
-|   |       |   |       zu_ZA.dat
-|   |       |   |       
-|   |       |   +---localtime
-|   |       |   |   |   _fallback.py
-|   |       |   |   |   _helpers.py
-|   |       |   |   |   _unix.py
-|   |       |   |   |   _win32.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           _fallback.cpython-313.pyc
-|   |       |   |           _helpers.cpython-313.pyc
-|   |       |   |           _unix.cpython-313.pyc
-|   |       |   |           _win32.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---messages
-|   |       |   |   |   catalog.py
-|   |       |   |   |   checkers.py
-|   |       |   |   |   extract.py
-|   |       |   |   |   frontend.py
-|   |       |   |   |   jslexer.py
-|   |       |   |   |   mofile.py
-|   |       |   |   |   plurals.py
-|   |       |   |   |   pofile.py
-|   |       |   |   |   setuptools_frontend.py
-|   |       |   |   |   _compat.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           catalog.cpython-313.pyc
-|   |       |   |           checkers.cpython-313.pyc
-|   |       |   |           extract.cpython-313.pyc
-|   |       |   |           frontend.cpython-313.pyc
-|   |       |   |           jslexer.cpython-313.pyc
-|   |       |   |           mofile.cpython-313.pyc
-|   |       |   |           plurals.cpython-313.pyc
-|   |       |   |           pofile.cpython-313.pyc
-|   |       |   |           setuptools_frontend.cpython-313.pyc
-|   |       |   |           _compat.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           core.cpython-313.pyc
-|   |       |           dates.cpython-313.pyc
-|   |       |           languages.cpython-313.pyc
-|   |       |           lists.cpython-313.pyc
-|   |       |           localedata.cpython-313.pyc
-|   |       |           numbers.cpython-313.pyc
-|   |       |           plural.cpython-313.pyc
-|   |       |           support.cpython-313.pyc
-|   |       |           units.cpython-313.pyc
-|   |       |           util.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---babel-2.17.0.dist-info
-|   |       |       entry_points.txt
-|   |       |       INSTALLER
-|   |       |       LICENSE
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       top_level.txt
-|   |       |       WHEEL
-|   |       |       
-|   |       +---certifi
-|   |       |   |   cacert.pem
-|   |       |   |   core.py
-|   |       |   |   py.typed
-|   |       |   |   __init__.py
-|   |       |   |   __main__.py
-|   |       |   |   
-|   |       |   \---__pycache__
-|   |       |           core.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           __main__.cpython-313.pyc
-|   |       |           
-|   |       +---certifi-2025.11.12.dist-info
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   top_level.txt
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE
-|   |       |           
-|   |       +---chardet
-|   |       |   |   big5freq.py
-|   |       |   |   big5prober.py
-|   |       |   |   chardistribution.py
-|   |       |   |   charsetgroupprober.py
-|   |       |   |   charsetprober.py
-|   |       |   |   codingstatemachine.py
-|   |       |   |   codingstatemachinedict.py
-|   |       |   |   cp949prober.py
-|   |       |   |   enums.py
-|   |       |   |   escprober.py
-|   |       |   |   escsm.py
-|   |       |   |   eucjpprober.py
-|   |       |   |   euckrfreq.py
-|   |       |   |   euckrprober.py
-|   |       |   |   euctwfreq.py
-|   |       |   |   euctwprober.py
-|   |       |   |   gb2312freq.py
-|   |       |   |   gb2312prober.py
-|   |       |   |   hebrewprober.py
-|   |       |   |   jisfreq.py
-|   |       |   |   johabfreq.py
-|   |       |   |   johabprober.py
-|   |       |   |   jpcntx.py
-|   |       |   |   langbulgarianmodel.py
-|   |       |   |   langgreekmodel.py
-|   |       |   |   langhebrewmodel.py
-|   |       |   |   langhungarianmodel.py
-|   |       |   |   langrussianmodel.py
-|   |       |   |   langthaimodel.py
-|   |       |   |   langturkishmodel.py
-|   |       |   |   latin1prober.py
-|   |       |   |   macromanprober.py
-|   |       |   |   mbcharsetprober.py
-|   |       |   |   mbcsgroupprober.py
-|   |       |   |   mbcssm.py
-|   |       |   |   py.typed
-|   |       |   |   resultdict.py
-|   |       |   |   sbcharsetprober.py
-|   |       |   |   sbcsgroupprober.py
-|   |       |   |   sjisprober.py
-|   |       |   |   universaldetector.py
-|   |       |   |   utf1632prober.py
-|   |       |   |   utf8prober.py
-|   |       |   |   version.py
-|   |       |   |   __init__.py
-|   |       |   |   __main__.py
-|   |       |   |   
-|   |       |   +---cli
-|   |       |   |   |   chardetect.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           chardetect.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---metadata
-|   |       |   |   |   languages.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           languages.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           big5freq.cpython-313.pyc
-|   |       |           big5prober.cpython-313.pyc
-|   |       |           chardistribution.cpython-313.pyc
-|   |       |           charsetgroupprober.cpython-313.pyc
-|   |       |           charsetprober.cpython-313.pyc
-|   |       |           codingstatemachine.cpython-313.pyc
-|   |       |           codingstatemachinedict.cpython-313.pyc
-|   |       |           cp949prober.cpython-313.pyc
-|   |       |           enums.cpython-313.pyc
-|   |       |           escprober.cpython-313.pyc
-|   |       |           escsm.cpython-313.pyc
-|   |       |           eucjpprober.cpython-313.pyc
-|   |       |           euckrfreq.cpython-313.pyc
-|   |       |           euckrprober.cpython-313.pyc
-|   |       |           euctwfreq.cpython-313.pyc
-|   |       |           euctwprober.cpython-313.pyc
-|   |       |           gb2312freq.cpython-313.pyc
-|   |       |           gb2312prober.cpython-313.pyc
-|   |       |           hebrewprober.cpython-313.pyc
-|   |       |           jisfreq.cpython-313.pyc
-|   |       |           johabfreq.cpython-313.pyc
-|   |       |           johabprober.cpython-313.pyc
-|   |       |           jpcntx.cpython-313.pyc
-|   |       |           langbulgarianmodel.cpython-313.pyc
-|   |       |           langgreekmodel.cpython-313.pyc
-|   |       |           langhebrewmodel.cpython-313.pyc
-|   |       |           langhungarianmodel.cpython-313.pyc
-|   |       |           langrussianmodel.cpython-313.pyc
-|   |       |           langthaimodel.cpython-313.pyc
-|   |       |           langturkishmodel.cpython-313.pyc
-|   |       |           latin1prober.cpython-313.pyc
-|   |       |           macromanprober.cpython-313.pyc
-|   |       |           mbcharsetprober.cpython-313.pyc
-|   |       |           mbcsgroupprober.cpython-313.pyc
-|   |       |           mbcssm.cpython-313.pyc
-|   |       |           resultdict.cpython-313.pyc
-|   |       |           sbcharsetprober.cpython-313.pyc
-|   |       |           sbcsgroupprober.cpython-313.pyc
-|   |       |           sjisprober.cpython-313.pyc
-|   |       |           universaldetector.cpython-313.pyc
-|   |       |           utf1632prober.cpython-313.pyc
-|   |       |           utf8prober.cpython-313.pyc
-|   |       |           version.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           __main__.cpython-313.pyc
-|   |       |           
-|   |       +---chardet-5.2.0.dist-info
-|   |       |       entry_points.txt
-|   |       |       INSTALLER
-|   |       |       LICENSE
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       top_level.txt
-|   |       |       WHEEL
-|   |       |       
-|   |       +---charset_normalizer
-|   |       |   |   api.py
-|   |       |   |   cd.py
-|   |       |   |   constant.py
-|   |       |   |   legacy.py
-|   |       |   |   md.cp313-win_amd64.pyd
-|   |       |   |   md.py
-|   |       |   |   md__mypyc.cp313-win_amd64.pyd
-|   |       |   |   models.py
-|   |       |   |   py.typed
-|   |       |   |   utils.py
-|   |       |   |   version.py
-|   |       |   |   __init__.py
-|   |       |   |   __main__.py
-|   |       |   |   
-|   |       |   +---cli
-|   |       |   |   |   __init__.py
-|   |       |   |   |   __main__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           __main__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           api.cpython-313.pyc
-|   |       |           cd.cpython-313.pyc
-|   |       |           constant.cpython-313.pyc
-|   |       |           legacy.cpython-313.pyc
-|   |       |           md.cpython-313.pyc
-|   |       |           models.cpython-313.pyc
-|   |       |           utils.cpython-313.pyc
-|   |       |           version.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           __main__.cpython-313.pyc
-|   |       |           
-|   |       +---charset_normalizer-3.4.4.dist-info
-|   |       |   |   entry_points.txt
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   top_level.txt
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE
-|   |       |           
-|   |       +---colorama
-|   |       |   |   ansi.py
-|   |       |   |   ansitowin32.py
-|   |       |   |   initialise.py
-|   |       |   |   win32.py
-|   |       |   |   winterm.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   +---tests
-|   |       |   |   |   ansitowin32_test.py
-|   |       |   |   |   ansi_test.py
-|   |       |   |   |   initialise_test.py
-|   |       |   |   |   isatty_test.py
-|   |       |   |   |   utils.py
-|   |       |   |   |   winterm_test.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           ansitowin32_test.cpython-313.pyc
-|   |       |   |           ansi_test.cpython-313.pyc
-|   |       |   |           initialise_test.cpython-313.pyc
-|   |       |   |           isatty_test.cpython-313.pyc
-|   |       |   |           utils.cpython-313.pyc
-|   |       |   |           winterm_test.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           ansi.cpython-313.pyc
-|   |       |           ansitowin32.cpython-313.pyc
-|   |       |           initialise.cpython-313.pyc
-|   |       |           win32.cpython-313.pyc
-|   |       |           winterm.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---colorama-0.4.6.dist-info
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE.txt
-|   |       |           
-|   |       +---Crypto
-|   |       |   |   py.typed
-|   |       |   |   __init__.py
-|   |       |   |   __init__.pyi
-|   |       |   |   
-|   |       |   +---Cipher
-|   |       |   |   |   AES.py
-|   |       |   |   |   AES.pyi
-|   |       |   |   |   ARC2.py
-|   |       |   |   |   ARC2.pyi
-|   |       |   |   |   ARC4.py
-|   |       |   |   |   ARC4.pyi
-|   |       |   |   |   Blowfish.py
-|   |       |   |   |   Blowfish.pyi
-|   |       |   |   |   CAST.py
-|   |       |   |   |   CAST.pyi
-|   |       |   |   |   ChaCha20.py
-|   |       |   |   |   ChaCha20.pyi
-|   |       |   |   |   ChaCha20_Poly1305.py
-|   |       |   |   |   ChaCha20_Poly1305.pyi
-|   |       |   |   |   DES.py
-|   |       |   |   |   DES.pyi
-|   |       |   |   |   DES3.py
-|   |       |   |   |   DES3.pyi
-|   |       |   |   |   PKCS1_OAEP.py
-|   |       |   |   |   PKCS1_OAEP.pyi
-|   |       |   |   |   PKCS1_v1_5.py
-|   |       |   |   |   PKCS1_v1_5.pyi
-|   |       |   |   |   Salsa20.py
-|   |       |   |   |   Salsa20.pyi
-|   |       |   |   |   _ARC4.pyd
-|   |       |   |   |   _chacha20.pyd
-|   |       |   |   |   _EKSBlowfish.py
-|   |       |   |   |   _EKSBlowfish.pyi
-|   |       |   |   |   _mode_cbc.py
-|   |       |   |   |   _mode_cbc.pyi
-|   |       |   |   |   _mode_ccm.py
-|   |       |   |   |   _mode_ccm.pyi
-|   |       |   |   |   _mode_cfb.py
-|   |       |   |   |   _mode_cfb.pyi
-|   |       |   |   |   _mode_ctr.py
-|   |       |   |   |   _mode_ctr.pyi
-|   |       |   |   |   _mode_eax.py
-|   |       |   |   |   _mode_eax.pyi
-|   |       |   |   |   _mode_ecb.py
-|   |       |   |   |   _mode_ecb.pyi
-|   |       |   |   |   _mode_gcm.py
-|   |       |   |   |   _mode_gcm.pyi
-|   |       |   |   |   _mode_kw.py
-|   |       |   |   |   _mode_kwp.py
-|   |       |   |   |   _mode_ocb.py
-|   |       |   |   |   _mode_ocb.pyi
-|   |       |   |   |   _mode_ofb.py
-|   |       |   |   |   _mode_ofb.pyi
-|   |       |   |   |   _mode_openpgp.py
-|   |       |   |   |   _mode_openpgp.pyi
-|   |       |   |   |   _mode_siv.py
-|   |       |   |   |   _mode_siv.pyi
-|   |       |   |   |   _pkcs1_decode.pyd
-|   |       |   |   |   _pkcs1_oaep_decode.py
-|   |       |   |   |   _raw_aes.pyd
-|   |       |   |   |   _raw_aesni.pyd
-|   |       |   |   |   _raw_arc2.pyd
-|   |       |   |   |   _raw_blowfish.pyd
-|   |       |   |   |   _raw_cast.pyd
-|   |       |   |   |   _raw_cbc.pyd
-|   |       |   |   |   _raw_cfb.pyd
-|   |       |   |   |   _raw_ctr.pyd
-|   |       |   |   |   _raw_des.pyd
-|   |       |   |   |   _raw_des3.pyd
-|   |       |   |   |   _raw_ecb.pyd
-|   |       |   |   |   _raw_eksblowfish.pyd
-|   |       |   |   |   _raw_ocb.pyd
-|   |       |   |   |   _raw_ofb.pyd
-|   |       |   |   |   _Salsa20.pyd
-|   |       |   |   |   __init__.py
-|   |       |   |   |   __init__.pyi
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           AES.cpython-313.pyc
-|   |       |   |           ARC2.cpython-313.pyc
-|   |       |   |           ARC4.cpython-313.pyc
-|   |       |   |           Blowfish.cpython-313.pyc
-|   |       |   |           CAST.cpython-313.pyc
-|   |       |   |           ChaCha20.cpython-313.pyc
-|   |       |   |           ChaCha20_Poly1305.cpython-313.pyc
-|   |       |   |           DES.cpython-313.pyc
-|   |       |   |           DES3.cpython-313.pyc
-|   |       |   |           PKCS1_OAEP.cpython-313.pyc
-|   |       |   |           PKCS1_v1_5.cpython-313.pyc
-|   |       |   |           Salsa20.cpython-313.pyc
-|   |       |   |           _EKSBlowfish.cpython-313.pyc
-|   |       |   |           _mode_cbc.cpython-313.pyc
-|   |       |   |           _mode_ccm.cpython-313.pyc
-|   |       |   |           _mode_cfb.cpython-313.pyc
-|   |       |   |           _mode_ctr.cpython-313.pyc
-|   |       |   |           _mode_eax.cpython-313.pyc
-|   |       |   |           _mode_ecb.cpython-313.pyc
-|   |       |   |           _mode_gcm.cpython-313.pyc
-|   |       |   |           _mode_kw.cpython-313.pyc
-|   |       |   |           _mode_kwp.cpython-313.pyc
-|   |       |   |           _mode_ocb.cpython-313.pyc
-|   |       |   |           _mode_ofb.cpython-313.pyc
-|   |       |   |           _mode_openpgp.cpython-313.pyc
-|   |       |   |           _mode_siv.cpython-313.pyc
-|   |       |   |           _pkcs1_oaep_decode.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---Hash
-|   |       |   |   |   BLAKE2b.py
-|   |       |   |   |   BLAKE2b.pyi
-|   |       |   |   |   BLAKE2s.py
-|   |       |   |   |   BLAKE2s.pyi
-|   |       |   |   |   CMAC.py
-|   |       |   |   |   CMAC.pyi
-|   |       |   |   |   cSHAKE128.py
-|   |       |   |   |   cSHAKE128.pyi
-|   |       |   |   |   cSHAKE256.py
-|   |       |   |   |   cSHAKE256.pyi
-|   |       |   |   |   HMAC.py
-|   |       |   |   |   HMAC.pyi
-|   |       |   |   |   KangarooTwelve.py
-|   |       |   |   |   KangarooTwelve.pyi
-|   |       |   |   |   keccak.py
-|   |       |   |   |   keccak.pyi
-|   |       |   |   |   KMAC128.py
-|   |       |   |   |   KMAC128.pyi
-|   |       |   |   |   KMAC256.py
-|   |       |   |   |   KMAC256.pyi
-|   |       |   |   |   MD2.py
-|   |       |   |   |   MD2.pyi
-|   |       |   |   |   MD4.py
-|   |       |   |   |   MD4.pyi
-|   |       |   |   |   MD5.py
-|   |       |   |   |   MD5.pyi
-|   |       |   |   |   Poly1305.py
-|   |       |   |   |   Poly1305.pyi
-|   |       |   |   |   RIPEMD.py
-|   |       |   |   |   RIPEMD.pyi
-|   |       |   |   |   RIPEMD160.py
-|   |       |   |   |   RIPEMD160.pyi
-|   |       |   |   |   SHA.py
-|   |       |   |   |   SHA.pyi
-|   |       |   |   |   SHA1.py
-|   |       |   |   |   SHA1.pyi
-|   |       |   |   |   SHA224.py
-|   |       |   |   |   SHA224.pyi
-|   |       |   |   |   SHA256.py
-|   |       |   |   |   SHA256.pyi
-|   |       |   |   |   SHA384.py
-|   |       |   |   |   SHA384.pyi
-|   |       |   |   |   SHA3_224.py
-|   |       |   |   |   SHA3_224.pyi
-|   |       |   |   |   SHA3_256.py
-|   |       |   |   |   SHA3_256.pyi
-|   |       |   |   |   SHA3_384.py
-|   |       |   |   |   SHA3_384.pyi
-|   |       |   |   |   SHA3_512.py
-|   |       |   |   |   SHA3_512.pyi
-|   |       |   |   |   SHA512.py
-|   |       |   |   |   SHA512.pyi
-|   |       |   |   |   SHAKE128.py
-|   |       |   |   |   SHAKE128.pyi
-|   |       |   |   |   SHAKE256.py
-|   |       |   |   |   SHAKE256.pyi
-|   |       |   |   |   TupleHash128.py
-|   |       |   |   |   TupleHash128.pyi
-|   |       |   |   |   TupleHash256.py
-|   |       |   |   |   TupleHash256.pyi
-|   |       |   |   |   TurboSHAKE128.py
-|   |       |   |   |   TurboSHAKE128.pyi
-|   |       |   |   |   TurboSHAKE256.py
-|   |       |   |   |   TurboSHAKE256.pyi
-|   |       |   |   |   _BLAKE2b.pyd
-|   |       |   |   |   _BLAKE2s.pyd
-|   |       |   |   |   _ghash_clmul.pyd
-|   |       |   |   |   _ghash_portable.pyd
-|   |       |   |   |   _keccak.pyd
-|   |       |   |   |   _MD2.pyd
-|   |       |   |   |   _MD4.pyd
-|   |       |   |   |   _MD5.pyd
-|   |       |   |   |   _poly1305.pyd
-|   |       |   |   |   _RIPEMD160.pyd
-|   |       |   |   |   _SHA1.pyd
-|   |       |   |   |   _SHA224.pyd
-|   |       |   |   |   _SHA256.pyd
-|   |       |   |   |   _SHA384.pyd
-|   |       |   |   |   _SHA512.pyd
-|   |       |   |   |   __init__.py
-|   |       |   |   |   __init__.pyi
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           BLAKE2b.cpython-313.pyc
-|   |       |   |           BLAKE2s.cpython-313.pyc
-|   |       |   |           CMAC.cpython-313.pyc
-|   |       |   |           cSHAKE128.cpython-313.pyc
-|   |       |   |           cSHAKE256.cpython-313.pyc
-|   |       |   |           HMAC.cpython-313.pyc
-|   |       |   |           KangarooTwelve.cpython-313.pyc
-|   |       |   |           keccak.cpython-313.pyc
-|   |       |   |           KMAC128.cpython-313.pyc
-|   |       |   |           KMAC256.cpython-313.pyc
-|   |       |   |           MD2.cpython-313.pyc
-|   |       |   |           MD4.cpython-313.pyc
-|   |       |   |           MD5.cpython-313.pyc
-|   |       |   |           Poly1305.cpython-313.pyc
-|   |       |   |           RIPEMD.cpython-313.pyc
-|   |       |   |           RIPEMD160.cpython-313.pyc
-|   |       |   |           SHA.cpython-313.pyc
-|   |       |   |           SHA1.cpython-313.pyc
-|   |       |   |           SHA224.cpython-313.pyc
-|   |       |   |           SHA256.cpython-313.pyc
-|   |       |   |           SHA384.cpython-313.pyc
-|   |       |   |           SHA3_224.cpython-313.pyc
-|   |       |   |           SHA3_256.cpython-313.pyc
-|   |       |   |           SHA3_384.cpython-313.pyc
-|   |       |   |           SHA3_512.cpython-313.pyc
-|   |       |   |           SHA512.cpython-313.pyc
-|   |       |   |           SHAKE128.cpython-313.pyc
-|   |       |   |           SHAKE256.cpython-313.pyc
-|   |       |   |           TupleHash128.cpython-313.pyc
-|   |       |   |           TupleHash256.cpython-313.pyc
-|   |       |   |           TurboSHAKE128.cpython-313.pyc
-|   |       |   |           TurboSHAKE256.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---IO
-|   |       |   |   |   PEM.py
-|   |       |   |   |   PEM.pyi
-|   |       |   |   |   PKCS8.py
-|   |       |   |   |   PKCS8.pyi
-|   |       |   |   |   _PBES.py
-|   |       |   |   |   _PBES.pyi
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           PEM.cpython-313.pyc
-|   |       |   |           PKCS8.cpython-313.pyc
-|   |       |   |           _PBES.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---Math
-|   |       |   |   |   Numbers.py
-|   |       |   |   |   Numbers.pyi
-|   |       |   |   |   Primality.py
-|   |       |   |   |   Primality.pyi
-|   |       |   |   |   _IntegerBase.py
-|   |       |   |   |   _IntegerBase.pyi
-|   |       |   |   |   _IntegerCustom.py
-|   |       |   |   |   _IntegerCustom.pyi
-|   |       |   |   |   _IntegerGMP.py
-|   |       |   |   |   _IntegerGMP.pyi
-|   |       |   |   |   _IntegerNative.py
-|   |       |   |   |   _IntegerNative.pyi
-|   |       |   |   |   _modexp.pyd
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           Numbers.cpython-313.pyc
-|   |       |   |           Primality.cpython-313.pyc
-|   |       |   |           _IntegerBase.cpython-313.pyc
-|   |       |   |           _IntegerCustom.cpython-313.pyc
-|   |       |   |           _IntegerGMP.cpython-313.pyc
-|   |       |   |           _IntegerNative.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---Protocol
-|   |       |   |   |   DH.py
-|   |       |   |   |   DH.pyi
-|   |       |   |   |   HPKE.py
-|   |       |   |   |   KDF.py
-|   |       |   |   |   KDF.pyi
-|   |       |   |   |   SecretSharing.py
-|   |       |   |   |   SecretSharing.pyi
-|   |       |   |   |   _scrypt.pyd
-|   |       |   |   |   __init__.py
-|   |       |   |   |   __init__.pyi
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           DH.cpython-313.pyc
-|   |       |   |           HPKE.cpython-313.pyc
-|   |       |   |           KDF.cpython-313.pyc
-|   |       |   |           SecretSharing.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---PublicKey
-|   |       |   |   |   DSA.py
-|   |       |   |   |   DSA.pyi
-|   |       |   |   |   ECC.py
-|   |       |   |   |   ECC.pyi
-|   |       |   |   |   ElGamal.py
-|   |       |   |   |   ElGamal.pyi
-|   |       |   |   |   RSA.py
-|   |       |   |   |   RSA.pyi
-|   |       |   |   |   _curve.py
-|   |       |   |   |   _curve25519.pyd
-|   |       |   |   |   _curve448.pyd
-|   |       |   |   |   _ec_ws.pyd
-|   |       |   |   |   _ed25519.pyd
-|   |       |   |   |   _ed448.pyd
-|   |       |   |   |   _edwards.py
-|   |       |   |   |   _montgomery.py
-|   |       |   |   |   _nist_ecc.py
-|   |       |   |   |   _openssh.py
-|   |       |   |   |   _openssh.pyi
-|   |       |   |   |   _point.py
-|   |       |   |   |   _point.pyi
-|   |       |   |   |   __init__.py
-|   |       |   |   |   __init__.pyi
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           DSA.cpython-313.pyc
-|   |       |   |           ECC.cpython-313.pyc
-|   |       |   |           ElGamal.cpython-313.pyc
-|   |       |   |           RSA.cpython-313.pyc
-|   |       |   |           _curve.cpython-313.pyc
-|   |       |   |           _edwards.cpython-313.pyc
-|   |       |   |           _montgomery.cpython-313.pyc
-|   |       |   |           _nist_ecc.cpython-313.pyc
-|   |       |   |           _openssh.cpython-313.pyc
-|   |       |   |           _point.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---Random
-|   |       |   |   |   random.py
-|   |       |   |   |   random.pyi
-|   |       |   |   |   __init__.py
-|   |       |   |   |   __init__.pyi
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           random.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---SelfTest
-|   |       |   |   |   loader.py
-|   |       |   |   |   st_common.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   __main__.py
-|   |       |   |   |   
-|   |       |   |   +---Cipher
-|   |       |   |   |   |   common.py
-|   |       |   |   |   |   test_AES.py
-|   |       |   |   |   |   test_ARC2.py
-|   |       |   |   |   |   test_ARC4.py
-|   |       |   |   |   |   test_Blowfish.py
-|   |       |   |   |   |   test_CAST.py
-|   |       |   |   |   |   test_CBC.py
-|   |       |   |   |   |   test_CCM.py
-|   |       |   |   |   |   test_CFB.py
-|   |       |   |   |   |   test_ChaCha20.py
-|   |       |   |   |   |   test_ChaCha20_Poly1305.py
-|   |       |   |   |   |   test_CTR.py
-|   |       |   |   |   |   test_DES.py
-|   |       |   |   |   |   test_DES3.py
-|   |       |   |   |   |   test_EAX.py
-|   |       |   |   |   |   test_GCM.py
-|   |       |   |   |   |   test_KW.py
-|   |       |   |   |   |   test_OCB.py
-|   |       |   |   |   |   test_OFB.py
-|   |       |   |   |   |   test_OpenPGP.py
-|   |       |   |   |   |   test_pkcs1_15.py
-|   |       |   |   |   |   test_pkcs1_oaep.py
-|   |       |   |   |   |   test_Salsa20.py
-|   |       |   |   |   |   test_SIV.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           common.cpython-313.pyc
-|   |       |   |   |           test_AES.cpython-313.pyc
-|   |       |   |   |           test_ARC2.cpython-313.pyc
-|   |       |   |   |           test_ARC4.cpython-313.pyc
-|   |       |   |   |           test_Blowfish.cpython-313.pyc
-|   |       |   |   |           test_CAST.cpython-313.pyc
-|   |       |   |   |           test_CBC.cpython-313.pyc
-|   |       |   |   |           test_CCM.cpython-313.pyc
-|   |       |   |   |           test_CFB.cpython-313.pyc
-|   |       |   |   |           test_ChaCha20.cpython-313.pyc
-|   |       |   |   |           test_ChaCha20_Poly1305.cpython-313.pyc
-|   |       |   |   |           test_CTR.cpython-313.pyc
-|   |       |   |   |           test_DES.cpython-313.pyc
-|   |       |   |   |           test_DES3.cpython-313.pyc
-|   |       |   |   |           test_EAX.cpython-313.pyc
-|   |       |   |   |           test_GCM.cpython-313.pyc
-|   |       |   |   |           test_KW.cpython-313.pyc
-|   |       |   |   |           test_OCB.cpython-313.pyc
-|   |       |   |   |           test_OFB.cpython-313.pyc
-|   |       |   |   |           test_OpenPGP.cpython-313.pyc
-|   |       |   |   |           test_pkcs1_15.cpython-313.pyc
-|   |       |   |   |           test_pkcs1_oaep.cpython-313.pyc
-|   |       |   |   |           test_Salsa20.cpython-313.pyc
-|   |       |   |   |           test_SIV.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---Hash
-|   |       |   |   |   |   common.py
-|   |       |   |   |   |   test_BLAKE2.py
-|   |       |   |   |   |   test_CMAC.py
-|   |       |   |   |   |   test_cSHAKE.py
-|   |       |   |   |   |   test_HMAC.py
-|   |       |   |   |   |   test_KangarooTwelve.py
-|   |       |   |   |   |   test_keccak.py
-|   |       |   |   |   |   test_KMAC.py
-|   |       |   |   |   |   test_MD2.py
-|   |       |   |   |   |   test_MD4.py
-|   |       |   |   |   |   test_MD5.py
-|   |       |   |   |   |   test_Poly1305.py
-|   |       |   |   |   |   test_RIPEMD160.py
-|   |       |   |   |   |   test_SHA1.py
-|   |       |   |   |   |   test_SHA224.py
-|   |       |   |   |   |   test_SHA256.py
-|   |       |   |   |   |   test_SHA384.py
-|   |       |   |   |   |   test_SHA3_224.py
-|   |       |   |   |   |   test_SHA3_256.py
-|   |       |   |   |   |   test_SHA3_384.py
-|   |       |   |   |   |   test_SHA3_512.py
-|   |       |   |   |   |   test_SHA512.py
-|   |       |   |   |   |   test_SHAKE.py
-|   |       |   |   |   |   test_TupleHash.py
-|   |       |   |   |   |   test_TurboSHAKE.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           common.cpython-313.pyc
-|   |       |   |   |           test_BLAKE2.cpython-313.pyc
-|   |       |   |   |           test_CMAC.cpython-313.pyc
-|   |       |   |   |           test_cSHAKE.cpython-313.pyc
-|   |       |   |   |           test_HMAC.cpython-313.pyc
-|   |       |   |   |           test_KangarooTwelve.cpython-313.pyc
-|   |       |   |   |           test_keccak.cpython-313.pyc
-|   |       |   |   |           test_KMAC.cpython-313.pyc
-|   |       |   |   |           test_MD2.cpython-313.pyc
-|   |       |   |   |           test_MD4.cpython-313.pyc
-|   |       |   |   |           test_MD5.cpython-313.pyc
-|   |       |   |   |           test_Poly1305.cpython-313.pyc
-|   |       |   |   |           test_RIPEMD160.cpython-313.pyc
-|   |       |   |   |           test_SHA1.cpython-313.pyc
-|   |       |   |   |           test_SHA224.cpython-313.pyc
-|   |       |   |   |           test_SHA256.cpython-313.pyc
-|   |       |   |   |           test_SHA384.cpython-313.pyc
-|   |       |   |   |           test_SHA3_224.cpython-313.pyc
-|   |       |   |   |           test_SHA3_256.cpython-313.pyc
-|   |       |   |   |           test_SHA3_384.cpython-313.pyc
-|   |       |   |   |           test_SHA3_512.cpython-313.pyc
-|   |       |   |   |           test_SHA512.cpython-313.pyc
-|   |       |   |   |           test_SHAKE.cpython-313.pyc
-|   |       |   |   |           test_TupleHash.cpython-313.pyc
-|   |       |   |   |           test_TurboSHAKE.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---IO
-|   |       |   |   |   |   test_PBES.py
-|   |       |   |   |   |   test_PKCS8.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           test_PBES.cpython-313.pyc
-|   |       |   |   |           test_PKCS8.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---Math
-|   |       |   |   |   |   test_modexp.py
-|   |       |   |   |   |   test_modmult.py
-|   |       |   |   |   |   test_Numbers.py
-|   |       |   |   |   |   test_Primality.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           test_modexp.cpython-313.pyc
-|   |       |   |   |           test_modmult.cpython-313.pyc
-|   |       |   |   |           test_Numbers.cpython-313.pyc
-|   |       |   |   |           test_Primality.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---Protocol
-|   |       |   |   |   |   test_ecdh.py
-|   |       |   |   |   |   test_HPKE.py
-|   |       |   |   |   |   test_KDF.py
-|   |       |   |   |   |   test_rfc1751.py
-|   |       |   |   |   |   test_SecretSharing.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           test_ecdh.cpython-313.pyc
-|   |       |   |   |           test_HPKE.cpython-313.pyc
-|   |       |   |   |           test_KDF.cpython-313.pyc
-|   |       |   |   |           test_rfc1751.cpython-313.pyc
-|   |       |   |   |           test_SecretSharing.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---PublicKey
-|   |       |   |   |   |   test_DSA.py
-|   |       |   |   |   |   test_ECC_Curve25519.py
-|   |       |   |   |   |   test_ECC_Curve448.py
-|   |       |   |   |   |   test_ECC_Ed25519.py
-|   |       |   |   |   |   test_ECC_Ed448.py
-|   |       |   |   |   |   test_ECC_NIST.py
-|   |       |   |   |   |   test_ElGamal.py
-|   |       |   |   |   |   test_import_Curve25519.py
-|   |       |   |   |   |   test_import_Curve448.py
-|   |       |   |   |   |   test_import_DSA.py
-|   |       |   |   |   |   test_import_ECC.py
-|   |       |   |   |   |   test_import_RSA.py
-|   |       |   |   |   |   test_RSA.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           test_DSA.cpython-313.pyc
-|   |       |   |   |           test_ECC_Curve25519.cpython-313.pyc
-|   |       |   |   |           test_ECC_Curve448.cpython-313.pyc
-|   |       |   |   |           test_ECC_Ed25519.cpython-313.pyc
-|   |       |   |   |           test_ECC_Ed448.cpython-313.pyc
-|   |       |   |   |           test_ECC_NIST.cpython-313.pyc
-|   |       |   |   |           test_ElGamal.cpython-313.pyc
-|   |       |   |   |           test_import_Curve25519.cpython-313.pyc
-|   |       |   |   |           test_import_Curve448.cpython-313.pyc
-|   |       |   |   |           test_import_DSA.cpython-313.pyc
-|   |       |   |   |           test_import_ECC.cpython-313.pyc
-|   |       |   |   |           test_import_RSA.cpython-313.pyc
-|   |       |   |   |           test_RSA.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---Random
-|   |       |   |   |   |   test_random.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           test_random.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---Signature
-|   |       |   |   |   |   test_dss.py
-|   |       |   |   |   |   test_eddsa.py
-|   |       |   |   |   |   test_pkcs1_15.py
-|   |       |   |   |   |   test_pss.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           test_dss.cpython-313.pyc
-|   |       |   |   |           test_eddsa.cpython-313.pyc
-|   |       |   |   |           test_pkcs1_15.cpython-313.pyc
-|   |       |   |   |           test_pss.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---Util
-|   |       |   |   |   |   test_asn1.py
-|   |       |   |   |   |   test_Counter.py
-|   |       |   |   |   |   test_number.py
-|   |       |   |   |   |   test_Padding.py
-|   |       |   |   |   |   test_rfc1751.py
-|   |       |   |   |   |   test_strxor.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           test_asn1.cpython-313.pyc
-|   |       |   |   |           test_Counter.cpython-313.pyc
-|   |       |   |   |           test_number.cpython-313.pyc
-|   |       |   |   |           test_Padding.cpython-313.pyc
-|   |       |   |   |           test_rfc1751.cpython-313.pyc
-|   |       |   |   |           test_strxor.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           loader.cpython-313.pyc
-|   |       |   |           st_common.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           __main__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---Signature
-|   |       |   |   |   DSS.py
-|   |       |   |   |   DSS.pyi
-|   |       |   |   |   eddsa.py
-|   |       |   |   |   eddsa.pyi
-|   |       |   |   |   pkcs1_15.py
-|   |       |   |   |   pkcs1_15.pyi
-|   |       |   |   |   PKCS1_PSS.py
-|   |       |   |   |   PKCS1_PSS.pyi
-|   |       |   |   |   PKCS1_v1_5.py
-|   |       |   |   |   PKCS1_v1_5.pyi
-|   |       |   |   |   pss.py
-|   |       |   |   |   pss.pyi
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           DSS.cpython-313.pyc
-|   |       |   |           eddsa.cpython-313.pyc
-|   |       |   |           pkcs1_15.cpython-313.pyc
-|   |       |   |           PKCS1_PSS.cpython-313.pyc
-|   |       |   |           PKCS1_v1_5.cpython-313.pyc
-|   |       |   |           pss.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---Util
-|   |       |   |   |   asn1.py
-|   |       |   |   |   asn1.pyi
-|   |       |   |   |   Counter.py
-|   |       |   |   |   Counter.pyi
-|   |       |   |   |   number.py
-|   |       |   |   |   number.pyi
-|   |       |   |   |   Padding.py
-|   |       |   |   |   Padding.pyi
-|   |       |   |   |   py3compat.py
-|   |       |   |   |   py3compat.pyi
-|   |       |   |   |   RFC1751.py
-|   |       |   |   |   RFC1751.pyi
-|   |       |   |   |   strxor.py
-|   |       |   |   |   strxor.pyi
-|   |       |   |   |   _cpuid_c.pyd
-|   |       |   |   |   _cpu_features.py
-|   |       |   |   |   _cpu_features.pyi
-|   |       |   |   |   _file_system.py
-|   |       |   |   |   _file_system.pyi
-|   |       |   |   |   _raw_api.py
-|   |       |   |   |   _raw_api.pyi
-|   |       |   |   |   _strxor.pyd
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           asn1.cpython-313.pyc
-|   |       |   |           Counter.cpython-313.pyc
-|   |       |   |           number.cpython-313.pyc
-|   |       |   |           Padding.cpython-313.pyc
-|   |       |   |           py3compat.cpython-313.pyc
-|   |       |   |           RFC1751.cpython-313.pyc
-|   |       |   |           strxor.cpython-313.pyc
-|   |       |   |           _cpu_features.cpython-313.pyc
-|   |       |   |           _file_system.cpython-313.pyc
-|   |       |   |           _raw_api.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---docutils
-|   |       |   |   core.py
-|   |       |   |   docutils.conf
-|   |       |   |   examples.py
-|   |       |   |   frontend.py
-|   |       |   |   io.py
-|   |       |   |   nodes.py
-|   |       |   |   statemachine.py
-|   |       |   |   __init__.py
-|   |       |   |   __main__.py
-|   |       |   |   
-|   |       |   +---languages
-|   |       |   |   |   af.py
-|   |       |   |   |   ar.py
-|   |       |   |   |   ca.py
-|   |       |   |   |   cs.py
-|   |       |   |   |   da.py
-|   |       |   |   |   de.py
-|   |       |   |   |   en.py
-|   |       |   |   |   eo.py
-|   |       |   |   |   es.py
-|   |       |   |   |   fa.py
-|   |       |   |   |   fi.py
-|   |       |   |   |   fr.py
-|   |       |   |   |   gl.py
-|   |       |   |   |   he.py
-|   |       |   |   |   it.py
-|   |       |   |   |   ja.py
-|   |       |   |   |   ka.py
-|   |       |   |   |   ko.py
-|   |       |   |   |   lt.py
-|   |       |   |   |   lv.py
-|   |       |   |   |   nl.py
-|   |       |   |   |   pl.py
-|   |       |   |   |   pt_br.py
-|   |       |   |   |   ru.py
-|   |       |   |   |   sk.py
-|   |       |   |   |   sv.py
-|   |       |   |   |   uk.py
-|   |       |   |   |   zh_cn.py
-|   |       |   |   |   zh_tw.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           af.cpython-313.pyc
-|   |       |   |           ar.cpython-313.pyc
-|   |       |   |           ca.cpython-313.pyc
-|   |       |   |           cs.cpython-313.pyc
-|   |       |   |           da.cpython-313.pyc
-|   |       |   |           de.cpython-313.pyc
-|   |       |   |           en.cpython-313.pyc
-|   |       |   |           eo.cpython-313.pyc
-|   |       |   |           es.cpython-313.pyc
-|   |       |   |           fa.cpython-313.pyc
-|   |       |   |           fi.cpython-313.pyc
-|   |       |   |           fr.cpython-313.pyc
-|   |       |   |           gl.cpython-313.pyc
-|   |       |   |           he.cpython-313.pyc
-|   |       |   |           it.cpython-313.pyc
-|   |       |   |           ja.cpython-313.pyc
-|   |       |   |           ka.cpython-313.pyc
-|   |       |   |           ko.cpython-313.pyc
-|   |       |   |           lt.cpython-313.pyc
-|   |       |   |           lv.cpython-313.pyc
-|   |       |   |           nl.cpython-313.pyc
-|   |       |   |           pl.cpython-313.pyc
-|   |       |   |           pt_br.cpython-313.pyc
-|   |       |   |           ru.cpython-313.pyc
-|   |       |   |           sk.cpython-313.pyc
-|   |       |   |           sv.cpython-313.pyc
-|   |       |   |           uk.cpython-313.pyc
-|   |       |   |           zh_cn.cpython-313.pyc
-|   |       |   |           zh_tw.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---parsers
-|   |       |   |   |   commonmark_wrapper.py
-|   |       |   |   |   docutils_xml.py
-|   |       |   |   |   null.py
-|   |       |   |   |   recommonmark_wrapper.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---rst
-|   |       |   |   |   |   roles.py
-|   |       |   |   |   |   states.py
-|   |       |   |   |   |   tableparser.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---directives
-|   |       |   |   |   |   |   admonitions.py
-|   |       |   |   |   |   |   body.py
-|   |       |   |   |   |   |   html.py
-|   |       |   |   |   |   |   images.py
-|   |       |   |   |   |   |   misc.py
-|   |       |   |   |   |   |   parts.py
-|   |       |   |   |   |   |   references.py
-|   |       |   |   |   |   |   tables.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           admonitions.cpython-313.pyc
-|   |       |   |   |   |           body.cpython-313.pyc
-|   |       |   |   |   |           html.cpython-313.pyc
-|   |       |   |   |   |           images.cpython-313.pyc
-|   |       |   |   |   |           misc.cpython-313.pyc
-|   |       |   |   |   |           parts.cpython-313.pyc
-|   |       |   |   |   |           references.cpython-313.pyc
-|   |       |   |   |   |           tables.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   +---include
-|   |       |   |   |   |       html-roles.txt
-|   |       |   |   |   |       isoamsa.txt
-|   |       |   |   |   |       isoamsb.txt
-|   |       |   |   |   |       isoamsc.txt
-|   |       |   |   |   |       isoamsn.txt
-|   |       |   |   |   |       isoamso.txt
-|   |       |   |   |   |       isoamsr.txt
-|   |       |   |   |   |       isobox.txt
-|   |       |   |   |   |       isocyr1.txt
-|   |       |   |   |   |       isocyr2.txt
-|   |       |   |   |   |       isodia.txt
-|   |       |   |   |   |       isogrk1.txt
-|   |       |   |   |   |       isogrk2.txt
-|   |       |   |   |   |       isogrk3.txt
-|   |       |   |   |   |       isogrk4-wide.txt
-|   |       |   |   |   |       isogrk4.txt
-|   |       |   |   |   |       isolat1.txt
-|   |       |   |   |   |       isolat2.txt
-|   |       |   |   |   |       isomfrk-wide.txt
-|   |       |   |   |   |       isomfrk.txt
-|   |       |   |   |   |       isomopf-wide.txt
-|   |       |   |   |   |       isomopf.txt
-|   |       |   |   |   |       isomscr-wide.txt
-|   |       |   |   |   |       isomscr.txt
-|   |       |   |   |   |       isonum.txt
-|   |       |   |   |   |       isopub.txt
-|   |       |   |   |   |       isotech.txt
-|   |       |   |   |   |       mmlalias.txt
-|   |       |   |   |   |       mmlextra-wide.txt
-|   |       |   |   |   |       mmlextra.txt
-|   |       |   |   |   |       README.rst
-|   |       |   |   |   |       s5defs.txt
-|   |       |   |   |   |       xhtml1-lat1.txt
-|   |       |   |   |   |       xhtml1-special.txt
-|   |       |   |   |   |       xhtml1-symbol.txt
-|   |       |   |   |   |       
-|   |       |   |   |   +---languages
-|   |       |   |   |   |   |   af.py
-|   |       |   |   |   |   |   ar.py
-|   |       |   |   |   |   |   ca.py
-|   |       |   |   |   |   |   cs.py
-|   |       |   |   |   |   |   da.py
-|   |       |   |   |   |   |   de.py
-|   |       |   |   |   |   |   en.py
-|   |       |   |   |   |   |   eo.py
-|   |       |   |   |   |   |   es.py
-|   |       |   |   |   |   |   fa.py
-|   |       |   |   |   |   |   fi.py
-|   |       |   |   |   |   |   fr.py
-|   |       |   |   |   |   |   gl.py
-|   |       |   |   |   |   |   he.py
-|   |       |   |   |   |   |   it.py
-|   |       |   |   |   |   |   ja.py
-|   |       |   |   |   |   |   ka.py
-|   |       |   |   |   |   |   ko.py
-|   |       |   |   |   |   |   lt.py
-|   |       |   |   |   |   |   lv.py
-|   |       |   |   |   |   |   nl.py
-|   |       |   |   |   |   |   pl.py
-|   |       |   |   |   |   |   pt_br.py
-|   |       |   |   |   |   |   ru.py
-|   |       |   |   |   |   |   sk.py
-|   |       |   |   |   |   |   sv.py
-|   |       |   |   |   |   |   uk.py
-|   |       |   |   |   |   |   zh_cn.py
-|   |       |   |   |   |   |   zh_tw.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           af.cpython-313.pyc
-|   |       |   |   |   |           ar.cpython-313.pyc
-|   |       |   |   |   |           ca.cpython-313.pyc
-|   |       |   |   |   |           cs.cpython-313.pyc
-|   |       |   |   |   |           da.cpython-313.pyc
-|   |       |   |   |   |           de.cpython-313.pyc
-|   |       |   |   |   |           en.cpython-313.pyc
-|   |       |   |   |   |           eo.cpython-313.pyc
-|   |       |   |   |   |           es.cpython-313.pyc
-|   |       |   |   |   |           fa.cpython-313.pyc
-|   |       |   |   |   |           fi.cpython-313.pyc
-|   |       |   |   |   |           fr.cpython-313.pyc
-|   |       |   |   |   |           gl.cpython-313.pyc
-|   |       |   |   |   |           he.cpython-313.pyc
-|   |       |   |   |   |           it.cpython-313.pyc
-|   |       |   |   |   |           ja.cpython-313.pyc
-|   |       |   |   |   |           ka.cpython-313.pyc
-|   |       |   |   |   |           ko.cpython-313.pyc
-|   |       |   |   |   |           lt.cpython-313.pyc
-|   |       |   |   |   |           lv.cpython-313.pyc
-|   |       |   |   |   |           nl.cpython-313.pyc
-|   |       |   |   |   |           pl.cpython-313.pyc
-|   |       |   |   |   |           pt_br.cpython-313.pyc
-|   |       |   |   |   |           ru.cpython-313.pyc
-|   |       |   |   |   |           sk.cpython-313.pyc
-|   |       |   |   |   |           sv.cpython-313.pyc
-|   |       |   |   |   |           uk.cpython-313.pyc
-|   |       |   |   |   |           zh_cn.cpython-313.pyc
-|   |       |   |   |   |           zh_tw.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           roles.cpython-313.pyc
-|   |       |   |   |           states.cpython-313.pyc
-|   |       |   |   |           tableparser.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           commonmark_wrapper.cpython-313.pyc
-|   |       |   |           docutils_xml.cpython-313.pyc
-|   |       |   |           null.cpython-313.pyc
-|   |       |   |           recommonmark_wrapper.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---readers
-|   |       |   |   |   doctree.py
-|   |       |   |   |   pep.py
-|   |       |   |   |   standalone.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           doctree.cpython-313.pyc
-|   |       |   |           pep.cpython-313.pyc
-|   |       |   |           standalone.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---transforms
-|   |       |   |   |   components.py
-|   |       |   |   |   frontmatter.py
-|   |       |   |   |   misc.py
-|   |       |   |   |   parts.py
-|   |       |   |   |   peps.py
-|   |       |   |   |   references.py
-|   |       |   |   |   universal.py
-|   |       |   |   |   writer_aux.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           components.cpython-313.pyc
-|   |       |   |           frontmatter.cpython-313.pyc
-|   |       |   |           misc.cpython-313.pyc
-|   |       |   |           parts.cpython-313.pyc
-|   |       |   |           peps.cpython-313.pyc
-|   |       |   |           references.cpython-313.pyc
-|   |       |   |           universal.cpython-313.pyc
-|   |       |   |           writer_aux.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---utils
-|   |       |   |   |   code_analyzer.py
-|   |       |   |   |   punctuation_chars.py
-|   |       |   |   |   smartquotes.py
-|   |       |   |   |   urischemes.py
-|   |       |   |   |   _roman_numerals.py
-|   |       |   |   |   _typing.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---math
-|   |       |   |   |   |   latex2mathml.py
-|   |       |   |   |   |   math2html.py
-|   |       |   |   |   |   mathalphabet2unichar.py
-|   |       |   |   |   |   mathml_elements.py
-|   |       |   |   |   |   tex2mathml_extern.py
-|   |       |   |   |   |   tex2unichar.py
-|   |       |   |   |   |   unichar2tex.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           latex2mathml.cpython-313.pyc
-|   |       |   |   |           math2html.cpython-313.pyc
-|   |       |   |   |           mathalphabet2unichar.cpython-313.pyc
-|   |       |   |   |           mathml_elements.cpython-313.pyc
-|   |       |   |   |           tex2mathml_extern.cpython-313.pyc
-|   |       |   |   |           tex2unichar.cpython-313.pyc
-|   |       |   |   |           unichar2tex.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           code_analyzer.cpython-313.pyc
-|   |       |   |           punctuation_chars.cpython-313.pyc
-|   |       |   |           smartquotes.cpython-313.pyc
-|   |       |   |           urischemes.cpython-313.pyc
-|   |       |   |           _roman_numerals.cpython-313.pyc
-|   |       |   |           _typing.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---writers
-|   |       |   |   |   docutils_xml.py
-|   |       |   |   |   manpage.py
-|   |       |   |   |   null.py
-|   |       |   |   |   pseudoxml.py
-|   |       |   |   |   _html_base.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---html4css1
-|   |       |   |   |   |   html4css1.css
-|   |       |   |   |   |   template.txt
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---html5_polyglot
-|   |       |   |   |   |   italic-field-names.css
-|   |       |   |   |   |   math.css
-|   |       |   |   |   |   minimal.css
-|   |       |   |   |   |   plain.css
-|   |       |   |   |   |   responsive.css
-|   |       |   |   |   |   template.txt
-|   |       |   |   |   |   tuftig.css
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---latex2e
-|   |       |   |   |   |   default.tex
-|   |       |   |   |   |   docutils.sty
-|   |       |   |   |   |   titlepage.tex
-|   |       |   |   |   |   titlingpage.tex
-|   |       |   |   |   |   xelatex.tex
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---odf_odt
-|   |       |   |   |   |   prepstyles.py
-|   |       |   |   |   |   pygmentsformatter.py
-|   |       |   |   |   |   styles.odt
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           prepstyles.cpython-313.pyc
-|   |       |   |   |           pygmentsformatter.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---pep_html
-|   |       |   |   |   |   pep.css
-|   |       |   |   |   |   template.txt
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---s5_html
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---themes
-|   |       |   |   |   |   |   README.rst
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   +---big-black
-|   |       |   |   |   |   |       framing.css
-|   |       |   |   |   |   |       pretty.css
-|   |       |   |   |   |   |       __base__
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---big-white
-|   |       |   |   |   |   |       framing.css
-|   |       |   |   |   |   |       pretty.css
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---default
-|   |       |   |   |   |   |       framing.css
-|   |       |   |   |   |   |       opera.css
-|   |       |   |   |   |   |       outline.css
-|   |       |   |   |   |   |       pretty.css
-|   |       |   |   |   |   |       print.css
-|   |       |   |   |   |   |       s5-core.css
-|   |       |   |   |   |   |       slides.css
-|   |       |   |   |   |   |       slides.js
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---medium-black
-|   |       |   |   |   |   |       pretty.css
-|   |       |   |   |   |   |       __base__
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---medium-white
-|   |       |   |   |   |   |       framing.css
-|   |       |   |   |   |   |       pretty.css
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---small-black
-|   |       |   |   |   |   |       pretty.css
-|   |       |   |   |   |   |       __base__
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   \---small-white
-|   |       |   |   |   |           framing.css
-|   |       |   |   |   |           pretty.css
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---xetex
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           docutils_xml.cpython-313.pyc
-|   |       |   |           manpage.cpython-313.pyc
-|   |       |   |           null.cpython-313.pyc
-|   |       |   |           pseudoxml.cpython-313.pyc
-|   |       |   |           _html_base.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           core.cpython-313.pyc
-|   |       |           examples.cpython-313.pyc
-|   |       |           frontend.cpython-313.pyc
-|   |       |           io.cpython-313.pyc
-|   |       |           nodes.cpython-313.pyc
-|   |       |           statemachine.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           __main__.cpython-313.pyc
-|   |       |           
-|   |       +---docutils-0.22.3.dist-info
-|   |       |   |   entry_points.txt
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |       |   COPYING.rst
-|   |       |       |   
-|   |       |       \---licenses
-|   |       |               BSD-0-Clause.rst
-|   |       |               BSD-2-Clause.rst
-|   |       |               gpl-3-0.txt
-|   |       |               
-|   |       +---groundwork_sphinx_theme
-|   |       |   |   flask_theme_support.py
-|   |       |   |   theme.conf
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   +---static
-|   |       |   |       groundwork.css_t
-|   |       |   |       gw_logo.png
-|   |       |   |       small_groundwork.css
-|   |       |   |       
-|   |       |   +---templates
-|   |       |   |       contribute.html
-|   |       |   |       layout.html
-|   |       |   |       relations.html
-|   |       |   |       searchbox.html
-|   |       |   |       
-|   |       |   \---__pycache__
-|   |       |           flask_theme_support.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---groundwork_sphinx_theme-1.1.1.dist-info
-|   |       |       entry_points.txt
-|   |       |       INSTALLER
-|   |       |       LICENSE
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       top_level.txt
-|   |       |       WHEEL
-|   |       |       
-|   |       +---idna
-|   |       |   |   codec.py
-|   |       |   |   compat.py
-|   |       |   |   core.py
-|   |       |   |   idnadata.py
-|   |       |   |   intranges.py
-|   |       |   |   package_data.py
-|   |       |   |   py.typed
-|   |       |   |   uts46data.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   \---__pycache__
-|   |       |           codec.cpython-313.pyc
-|   |       |           compat.cpython-313.pyc
-|   |       |           core.cpython-313.pyc
-|   |       |           idnadata.cpython-313.pyc
-|   |       |           intranges.cpython-313.pyc
-|   |       |           package_data.cpython-313.pyc
-|   |       |           uts46data.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---idna-3.11.dist-info
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE.md
-|   |       |           
-|   |       +---imagesize
-|   |       |   |   imagesize.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   \---__pycache__
-|   |       |           imagesize.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---imagesize-1.4.1.dist-info
-|   |       |       INSTALLER
-|   |       |       LICENSE.rst
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       top_level.txt
-|   |       |       WHEEL
-|   |       |       
-|   |       +---jinja2
-|   |       |   |   async_utils.py
-|   |       |   |   bccache.py
-|   |       |   |   compiler.py
-|   |       |   |   constants.py
-|   |       |   |   debug.py
-|   |       |   |   defaults.py
-|   |       |   |   environment.py
-|   |       |   |   exceptions.py
-|   |       |   |   ext.py
-|   |       |   |   filters.py
-|   |       |   |   idtracking.py
-|   |       |   |   lexer.py
-|   |       |   |   loaders.py
-|   |       |   |   meta.py
-|   |       |   |   nativetypes.py
-|   |       |   |   nodes.py
-|   |       |   |   optimizer.py
-|   |       |   |   parser.py
-|   |       |   |   py.typed
-|   |       |   |   runtime.py
-|   |       |   |   sandbox.py
-|   |       |   |   tests.py
-|   |       |   |   utils.py
-|   |       |   |   visitor.py
-|   |       |   |   _identifier.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   \---__pycache__
-|   |       |           async_utils.cpython-313.pyc
-|   |       |           bccache.cpython-313.pyc
-|   |       |           compiler.cpython-313.pyc
-|   |       |           constants.cpython-313.pyc
-|   |       |           debug.cpython-313.pyc
-|   |       |           defaults.cpython-313.pyc
-|   |       |           environment.cpython-313.pyc
-|   |       |           exceptions.cpython-313.pyc
-|   |       |           ext.cpython-313.pyc
-|   |       |           filters.cpython-313.pyc
-|   |       |           idtracking.cpython-313.pyc
-|   |       |           lexer.cpython-313.pyc
-|   |       |           loaders.cpython-313.pyc
-|   |       |           meta.cpython-313.pyc
-|   |       |           nativetypes.cpython-313.pyc
-|   |       |           nodes.cpython-313.pyc
-|   |       |           optimizer.cpython-313.pyc
-|   |       |           parser.cpython-313.pyc
-|   |       |           runtime.cpython-313.pyc
-|   |       |           sandbox.cpython-313.pyc
-|   |       |           tests.cpython-313.pyc
-|   |       |           utils.cpython-313.pyc
-|   |       |           visitor.cpython-313.pyc
-|   |       |           _identifier.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---jinja2-3.1.6.dist-info
-|   |       |   |   entry_points.txt
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE.txt
-|   |       |           
-|   |       +---markupsafe
-|   |       |   |   py.typed
-|   |       |   |   _native.py
-|   |       |   |   _speedups.c
-|   |       |   |   _speedups.cp313-win_amd64.pyd
-|   |       |   |   _speedups.pyi
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   \---__pycache__
-|   |       |           _native.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---markupsafe-3.0.3.dist-info
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   top_level.txt
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE.txt
-|   |       |           
-|   |       +---ordlookup
-|   |       |   |   oleaut32.py
-|   |       |   |   ws2_32.py
-|   |       |   |   wsock32.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   \---__pycache__
-|   |       |           oleaut32.cpython-313.pyc
-|   |       |           ws2_32.cpython-313.pyc
-|   |       |           wsock32.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---packaging
-|   |       |   |   markers.py
-|   |       |   |   metadata.py
-|   |       |   |   py.typed
-|   |       |   |   requirements.py
-|   |       |   |   specifiers.py
-|   |       |   |   tags.py
-|   |       |   |   utils.py
-|   |       |   |   version.py
-|   |       |   |   _elffile.py
-|   |       |   |   _manylinux.py
-|   |       |   |   _musllinux.py
-|   |       |   |   _parser.py
-|   |       |   |   _structures.py
-|   |       |   |   _tokenizer.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   +---licenses
-|   |       |   |   |   _spdx.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           _spdx.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           markers.cpython-313.pyc
-|   |       |           metadata.cpython-313.pyc
-|   |       |           requirements.cpython-313.pyc
-|   |       |           specifiers.cpython-313.pyc
-|   |       |           tags.cpython-313.pyc
-|   |       |           utils.cpython-313.pyc
-|   |       |           version.cpython-313.pyc
-|   |       |           _elffile.cpython-313.pyc
-|   |       |           _manylinux.cpython-313.pyc
-|   |       |           _musllinux.cpython-313.pyc
-|   |       |           _parser.cpython-313.pyc
-|   |       |           _structures.cpython-313.pyc
-|   |       |           _tokenizer.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---packaging-25.0.dist-info
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE
-|   |       |           LICENSE.APACHE
-|   |       |           LICENSE.BSD
-|   |       |           
-|   |       +---pefile-2024.8.26.dist-info
-|   |       |       INSTALLER
-|   |       |       LICENSE
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       top_level.txt
-|   |       |       WHEEL
-|   |       |       
-|   |       +---PIL
-|   |       |   |   AvifImagePlugin.py
-|   |       |   |   BdfFontFile.py
-|   |       |   |   BlpImagePlugin.py
-|   |       |   |   BmpImagePlugin.py
-|   |       |   |   BufrStubImagePlugin.py
-|   |       |   |   ContainerIO.py
-|   |       |   |   CurImagePlugin.py
-|   |       |   |   DcxImagePlugin.py
-|   |       |   |   DdsImagePlugin.py
-|   |       |   |   EpsImagePlugin.py
-|   |       |   |   ExifTags.py
-|   |       |   |   features.py
-|   |       |   |   FitsImagePlugin.py
-|   |       |   |   FliImagePlugin.py
-|   |       |   |   FontFile.py
-|   |       |   |   FpxImagePlugin.py
-|   |       |   |   FtexImagePlugin.py
-|   |       |   |   GbrImagePlugin.py
-|   |       |   |   GdImageFile.py
-|   |       |   |   GifImagePlugin.py
-|   |       |   |   GimpGradientFile.py
-|   |       |   |   GimpPaletteFile.py
-|   |       |   |   GribStubImagePlugin.py
-|   |       |   |   Hdf5StubImagePlugin.py
-|   |       |   |   IcnsImagePlugin.py
-|   |       |   |   IcoImagePlugin.py
-|   |       |   |   Image.py
-|   |       |   |   ImageChops.py
-|   |       |   |   ImageCms.py
-|   |       |   |   ImageColor.py
-|   |       |   |   ImageDraw.py
-|   |       |   |   ImageDraw2.py
-|   |       |   |   ImageEnhance.py
-|   |       |   |   ImageFile.py
-|   |       |   |   ImageFilter.py
-|   |       |   |   ImageFont.py
-|   |       |   |   ImageGrab.py
-|   |       |   |   ImageMath.py
-|   |       |   |   ImageMode.py
-|   |       |   |   ImageMorph.py
-|   |       |   |   ImageOps.py
-|   |       |   |   ImagePalette.py
-|   |       |   |   ImagePath.py
-|   |       |   |   ImageQt.py
-|   |       |   |   ImageSequence.py
-|   |       |   |   ImageShow.py
-|   |       |   |   ImageStat.py
-|   |       |   |   ImageText.py
-|   |       |   |   ImageTk.py
-|   |       |   |   ImageTransform.py
-|   |       |   |   ImageWin.py
-|   |       |   |   ImImagePlugin.py
-|   |       |   |   ImtImagePlugin.py
-|   |       |   |   IptcImagePlugin.py
-|   |       |   |   Jpeg2KImagePlugin.py
-|   |       |   |   JpegImagePlugin.py
-|   |       |   |   JpegPresets.py
-|   |       |   |   McIdasImagePlugin.py
-|   |       |   |   MicImagePlugin.py
-|   |       |   |   MpegImagePlugin.py
-|   |       |   |   MpoImagePlugin.py
-|   |       |   |   MspImagePlugin.py
-|   |       |   |   PaletteFile.py
-|   |       |   |   PalmImagePlugin.py
-|   |       |   |   PcdImagePlugin.py
-|   |       |   |   PcfFontFile.py
-|   |       |   |   PcxImagePlugin.py
-|   |       |   |   PdfImagePlugin.py
-|   |       |   |   PdfParser.py
-|   |       |   |   PixarImagePlugin.py
-|   |       |   |   PngImagePlugin.py
-|   |       |   |   PpmImagePlugin.py
-|   |       |   |   PsdImagePlugin.py
-|   |       |   |   PSDraw.py
-|   |       |   |   py.typed
-|   |       |   |   QoiImagePlugin.py
-|   |       |   |   report.py
-|   |       |   |   SgiImagePlugin.py
-|   |       |   |   SpiderImagePlugin.py
-|   |       |   |   SunImagePlugin.py
-|   |       |   |   TarIO.py
-|   |       |   |   TgaImagePlugin.py
-|   |       |   |   TiffImagePlugin.py
-|   |       |   |   TiffTags.py
-|   |       |   |   WalImageFile.py
-|   |       |   |   WebPImagePlugin.py
-|   |       |   |   WmfImagePlugin.py
-|   |       |   |   XbmImagePlugin.py
-|   |       |   |   XpmImagePlugin.py
-|   |       |   |   XVThumbImagePlugin.py
-|   |       |   |   _avif.cp313-win_amd64.pyd
-|   |       |   |   _avif.pyi
-|   |       |   |   _binary.py
-|   |       |   |   _deprecate.py
-|   |       |   |   _imaging.cp313-win_amd64.pyd
-|   |       |   |   _imaging.pyi
-|   |       |   |   _imagingcms.cp313-win_amd64.pyd
-|   |       |   |   _imagingcms.pyi
-|   |       |   |   _imagingft.cp313-win_amd64.pyd
-|   |       |   |   _imagingft.pyi
-|   |       |   |   _imagingmath.cp313-win_amd64.pyd
-|   |       |   |   _imagingmath.pyi
-|   |       |   |   _imagingmorph.cp313-win_amd64.pyd
-|   |       |   |   _imagingmorph.pyi
-|   |       |   |   _imagingtk.cp313-win_amd64.pyd
-|   |       |   |   _imagingtk.pyi
-|   |       |   |   _tkinter_finder.py
-|   |       |   |   _typing.py
-|   |       |   |   _util.py
-|   |       |   |   _version.py
-|   |       |   |   _webp.cp313-win_amd64.pyd
-|   |       |   |   _webp.pyi
-|   |       |   |   __init__.py
-|   |       |   |   __main__.py
-|   |       |   |   
-|   |       |   \---__pycache__
-|   |       |           AvifImagePlugin.cpython-313.pyc
-|   |       |           BdfFontFile.cpython-313.pyc
-|   |       |           BlpImagePlugin.cpython-313.pyc
-|   |       |           BmpImagePlugin.cpython-313.pyc
-|   |       |           BufrStubImagePlugin.cpython-313.pyc
-|   |       |           ContainerIO.cpython-313.pyc
-|   |       |           CurImagePlugin.cpython-313.pyc
-|   |       |           DcxImagePlugin.cpython-313.pyc
-|   |       |           DdsImagePlugin.cpython-313.pyc
-|   |       |           EpsImagePlugin.cpython-313.pyc
-|   |       |           ExifTags.cpython-313.pyc
-|   |       |           features.cpython-313.pyc
-|   |       |           FitsImagePlugin.cpython-313.pyc
-|   |       |           FliImagePlugin.cpython-313.pyc
-|   |       |           FontFile.cpython-313.pyc
-|   |       |           FpxImagePlugin.cpython-313.pyc
-|   |       |           FtexImagePlugin.cpython-313.pyc
-|   |       |           GbrImagePlugin.cpython-313.pyc
-|   |       |           GdImageFile.cpython-313.pyc
-|   |       |           GifImagePlugin.cpython-313.pyc
-|   |       |           GimpGradientFile.cpython-313.pyc
-|   |       |           GimpPaletteFile.cpython-313.pyc
-|   |       |           GribStubImagePlugin.cpython-313.pyc
-|   |       |           Hdf5StubImagePlugin.cpython-313.pyc
-|   |       |           IcnsImagePlugin.cpython-313.pyc
-|   |       |           IcoImagePlugin.cpython-313.pyc
-|   |       |           Image.cpython-313.pyc
-|   |       |           ImageChops.cpython-313.pyc
-|   |       |           ImageCms.cpython-313.pyc
-|   |       |           ImageColor.cpython-313.pyc
-|   |       |           ImageDraw.cpython-313.pyc
-|   |       |           ImageDraw2.cpython-313.pyc
-|   |       |           ImageEnhance.cpython-313.pyc
-|   |       |           ImageFile.cpython-313.pyc
-|   |       |           ImageFilter.cpython-313.pyc
-|   |       |           ImageFont.cpython-313.pyc
-|   |       |           ImageGrab.cpython-313.pyc
-|   |       |           ImageMath.cpython-313.pyc
-|   |       |           ImageMode.cpython-313.pyc
-|   |       |           ImageMorph.cpython-313.pyc
-|   |       |           ImageOps.cpython-313.pyc
-|   |       |           ImagePalette.cpython-313.pyc
-|   |       |           ImagePath.cpython-313.pyc
-|   |       |           ImageQt.cpython-313.pyc
-|   |       |           ImageSequence.cpython-313.pyc
-|   |       |           ImageShow.cpython-313.pyc
-|   |       |           ImageStat.cpython-313.pyc
-|   |       |           ImageText.cpython-313.pyc
-|   |       |           ImageTk.cpython-313.pyc
-|   |       |           ImageTransform.cpython-313.pyc
-|   |       |           ImageWin.cpython-313.pyc
-|   |       |           ImImagePlugin.cpython-313.pyc
-|   |       |           ImtImagePlugin.cpython-313.pyc
-|   |       |           IptcImagePlugin.cpython-313.pyc
-|   |       |           Jpeg2KImagePlugin.cpython-313.pyc
-|   |       |           JpegImagePlugin.cpython-313.pyc
-|   |       |           JpegPresets.cpython-313.pyc
-|   |       |           McIdasImagePlugin.cpython-313.pyc
-|   |       |           MicImagePlugin.cpython-313.pyc
-|   |       |           MpegImagePlugin.cpython-313.pyc
-|   |       |           MpoImagePlugin.cpython-313.pyc
-|   |       |           MspImagePlugin.cpython-313.pyc
-|   |       |           PaletteFile.cpython-313.pyc
-|   |       |           PalmImagePlugin.cpython-313.pyc
-|   |       |           PcdImagePlugin.cpython-313.pyc
-|   |       |           PcfFontFile.cpython-313.pyc
-|   |       |           PcxImagePlugin.cpython-313.pyc
-|   |       |           PdfImagePlugin.cpython-313.pyc
-|   |       |           PdfParser.cpython-313.pyc
-|   |       |           PixarImagePlugin.cpython-313.pyc
-|   |       |           PngImagePlugin.cpython-313.pyc
-|   |       |           PpmImagePlugin.cpython-313.pyc
-|   |       |           PsdImagePlugin.cpython-313.pyc
-|   |       |           PSDraw.cpython-313.pyc
-|   |       |           QoiImagePlugin.cpython-313.pyc
-|   |       |           report.cpython-313.pyc
-|   |       |           SgiImagePlugin.cpython-313.pyc
-|   |       |           SpiderImagePlugin.cpython-313.pyc
-|   |       |           SunImagePlugin.cpython-313.pyc
-|   |       |           TarIO.cpython-313.pyc
-|   |       |           TgaImagePlugin.cpython-313.pyc
-|   |       |           TiffImagePlugin.cpython-313.pyc
-|   |       |           TiffTags.cpython-313.pyc
-|   |       |           WalImageFile.cpython-313.pyc
-|   |       |           WebPImagePlugin.cpython-313.pyc
-|   |       |           WmfImagePlugin.cpython-313.pyc
-|   |       |           XbmImagePlugin.cpython-313.pyc
-|   |       |           XpmImagePlugin.cpython-313.pyc
-|   |       |           XVThumbImagePlugin.cpython-313.pyc
-|   |       |           _binary.cpython-313.pyc
-|   |       |           _deprecate.cpython-313.pyc
-|   |       |           _tkinter_finder.cpython-313.pyc
-|   |       |           _typing.cpython-313.pyc
-|   |       |           _util.cpython-313.pyc
-|   |       |           _version.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           __main__.cpython-313.pyc
-|   |       |           
-|   |       +---pillow-12.0.0.dist-info
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   top_level.txt
-|   |       |   |   WHEEL
-|   |       |   |   zip-safe
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE
-|   |       |           
-|   |       +---pip
-|   |       |   |   py.typed
-|   |       |   |   __init__.py
-|   |       |   |   __main__.py
-|   |       |   |   __pip-runner__.py
-|   |       |   |   
-|   |       |   +---_internal
-|   |       |   |   |   build_env.py
-|   |       |   |   |   cache.py
-|   |       |   |   |   configuration.py
-|   |       |   |   |   exceptions.py
-|   |       |   |   |   main.py
-|   |       |   |   |   pyproject.py
-|   |       |   |   |   self_outdated_check.py
-|   |       |   |   |   wheel_builder.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---cli
-|   |       |   |   |   |   autocompletion.py
-|   |       |   |   |   |   base_command.py
-|   |       |   |   |   |   cmdoptions.py
-|   |       |   |   |   |   command_context.py
-|   |       |   |   |   |   index_command.py
-|   |       |   |   |   |   main.py
-|   |       |   |   |   |   main_parser.py
-|   |       |   |   |   |   parser.py
-|   |       |   |   |   |   progress_bars.py
-|   |       |   |   |   |   req_command.py
-|   |       |   |   |   |   spinners.py
-|   |       |   |   |   |   status_codes.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           autocompletion.cpython-313.pyc
-|   |       |   |   |           base_command.cpython-313.pyc
-|   |       |   |   |           cmdoptions.cpython-313.pyc
-|   |       |   |   |           command_context.cpython-313.pyc
-|   |       |   |   |           index_command.cpython-313.pyc
-|   |       |   |   |           main.cpython-313.pyc
-|   |       |   |   |           main_parser.cpython-313.pyc
-|   |       |   |   |           parser.cpython-313.pyc
-|   |       |   |   |           progress_bars.cpython-313.pyc
-|   |       |   |   |           req_command.cpython-313.pyc
-|   |       |   |   |           spinners.cpython-313.pyc
-|   |       |   |   |           status_codes.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---commands
-|   |       |   |   |   |   cache.py
-|   |       |   |   |   |   check.py
-|   |       |   |   |   |   completion.py
-|   |       |   |   |   |   configuration.py
-|   |       |   |   |   |   debug.py
-|   |       |   |   |   |   download.py
-|   |       |   |   |   |   freeze.py
-|   |       |   |   |   |   hash.py
-|   |       |   |   |   |   help.py
-|   |       |   |   |   |   index.py
-|   |       |   |   |   |   inspect.py
-|   |       |   |   |   |   install.py
-|   |       |   |   |   |   list.py
-|   |       |   |   |   |   lock.py
-|   |       |   |   |   |   search.py
-|   |       |   |   |   |   show.py
-|   |       |   |   |   |   uninstall.py
-|   |       |   |   |   |   wheel.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           install.cpython-313.pyc
-|   |       |   |   |           list.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---distributions
-|   |       |   |   |   |   base.py
-|   |       |   |   |   |   installed.py
-|   |       |   |   |   |   sdist.py
-|   |       |   |   |   |   wheel.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           base.cpython-313.pyc
-|   |       |   |   |           installed.cpython-313.pyc
-|   |       |   |   |           sdist.cpython-313.pyc
-|   |       |   |   |           wheel.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---index
-|   |       |   |   |   |   collector.py
-|   |       |   |   |   |   package_finder.py
-|   |       |   |   |   |   sources.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           collector.cpython-313.pyc
-|   |       |   |   |           package_finder.cpython-313.pyc
-|   |       |   |   |           sources.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---locations
-|   |       |   |   |   |   base.py
-|   |       |   |   |   |   _distutils.py
-|   |       |   |   |   |   _sysconfig.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           base.cpython-313.pyc
-|   |       |   |   |           _sysconfig.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---metadata
-|   |       |   |   |   |   base.py
-|   |       |   |   |   |   pkg_resources.py
-|   |       |   |   |   |   _json.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---importlib
-|   |       |   |   |   |   |   _compat.py
-|   |       |   |   |   |   |   _dists.py
-|   |       |   |   |   |   |   _envs.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           _compat.cpython-313.pyc
-|   |       |   |   |   |           _dists.cpython-313.pyc
-|   |       |   |   |   |           _envs.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           base.cpython-313.pyc
-|   |       |   |   |           _json.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---models
-|   |       |   |   |   |   candidate.py
-|   |       |   |   |   |   direct_url.py
-|   |       |   |   |   |   format_control.py
-|   |       |   |   |   |   index.py
-|   |       |   |   |   |   installation_report.py
-|   |       |   |   |   |   link.py
-|   |       |   |   |   |   pylock.py
-|   |       |   |   |   |   scheme.py
-|   |       |   |   |   |   search_scope.py
-|   |       |   |   |   |   selection_prefs.py
-|   |       |   |   |   |   target_python.py
-|   |       |   |   |   |   wheel.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           candidate.cpython-313.pyc
-|   |       |   |   |           direct_url.cpython-313.pyc
-|   |       |   |   |           format_control.cpython-313.pyc
-|   |       |   |   |           index.cpython-313.pyc
-|   |       |   |   |           installation_report.cpython-313.pyc
-|   |       |   |   |           link.cpython-313.pyc
-|   |       |   |   |           scheme.cpython-313.pyc
-|   |       |   |   |           search_scope.cpython-313.pyc
-|   |       |   |   |           selection_prefs.cpython-313.pyc
-|   |       |   |   |           target_python.cpython-313.pyc
-|   |       |   |   |           wheel.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---network
-|   |       |   |   |   |   auth.py
-|   |       |   |   |   |   cache.py
-|   |       |   |   |   |   download.py
-|   |       |   |   |   |   lazy_wheel.py
-|   |       |   |   |   |   session.py
-|   |       |   |   |   |   utils.py
-|   |       |   |   |   |   xmlrpc.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           auth.cpython-313.pyc
-|   |       |   |   |           cache.cpython-313.pyc
-|   |       |   |   |           download.cpython-313.pyc
-|   |       |   |   |           lazy_wheel.cpython-313.pyc
-|   |       |   |   |           session.cpython-313.pyc
-|   |       |   |   |           utils.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---operations
-|   |       |   |   |   |   check.py
-|   |       |   |   |   |   freeze.py
-|   |       |   |   |   |   prepare.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---build
-|   |       |   |   |   |   |   build_tracker.py
-|   |       |   |   |   |   |   metadata.py
-|   |       |   |   |   |   |   metadata_editable.py
-|   |       |   |   |   |   |   metadata_legacy.py
-|   |       |   |   |   |   |   wheel.py
-|   |       |   |   |   |   |   wheel_editable.py
-|   |       |   |   |   |   |   wheel_legacy.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           build_tracker.cpython-313.pyc
-|   |       |   |   |   |           metadata.cpython-313.pyc
-|   |       |   |   |   |           metadata_editable.cpython-313.pyc
-|   |       |   |   |   |           metadata_legacy.cpython-313.pyc
-|   |       |   |   |   |           wheel.cpython-313.pyc
-|   |       |   |   |   |           wheel_editable.cpython-313.pyc
-|   |       |   |   |   |           wheel_legacy.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   +---install
-|   |       |   |   |   |   |   editable_legacy.py
-|   |       |   |   |   |   |   wheel.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           editable_legacy.cpython-313.pyc
-|   |       |   |   |   |           wheel.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           check.cpython-313.pyc
-|   |       |   |   |           prepare.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---req
-|   |       |   |   |   |   constructors.py
-|   |       |   |   |   |   req_dependency_group.py
-|   |       |   |   |   |   req_file.py
-|   |       |   |   |   |   req_install.py
-|   |       |   |   |   |   req_set.py
-|   |       |   |   |   |   req_uninstall.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           constructors.cpython-313.pyc
-|   |       |   |   |           req_dependency_group.cpython-313.pyc
-|   |       |   |   |           req_file.cpython-313.pyc
-|   |       |   |   |           req_install.cpython-313.pyc
-|   |       |   |   |           req_set.cpython-313.pyc
-|   |       |   |   |           req_uninstall.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---resolution
-|   |       |   |   |   |   base.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---legacy
-|   |       |   |   |   |       resolver.py
-|   |       |   |   |   |       __init__.py
-|   |       |   |   |   |       
-|   |       |   |   |   +---resolvelib
-|   |       |   |   |   |   |   base.py
-|   |       |   |   |   |   |   candidates.py
-|   |       |   |   |   |   |   factory.py
-|   |       |   |   |   |   |   found_candidates.py
-|   |       |   |   |   |   |   provider.py
-|   |       |   |   |   |   |   reporter.py
-|   |       |   |   |   |   |   requirements.py
-|   |       |   |   |   |   |   resolver.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           base.cpython-313.pyc
-|   |       |   |   |   |           candidates.cpython-313.pyc
-|   |       |   |   |   |           factory.cpython-313.pyc
-|   |       |   |   |   |           found_candidates.cpython-313.pyc
-|   |       |   |   |   |           provider.cpython-313.pyc
-|   |       |   |   |   |           reporter.cpython-313.pyc
-|   |       |   |   |   |           requirements.cpython-313.pyc
-|   |       |   |   |   |           resolver.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           base.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---utils
-|   |       |   |   |   |   appdirs.py
-|   |       |   |   |   |   compat.py
-|   |       |   |   |   |   compatibility_tags.py
-|   |       |   |   |   |   datetime.py
-|   |       |   |   |   |   deprecation.py
-|   |       |   |   |   |   direct_url_helpers.py
-|   |       |   |   |   |   egg_link.py
-|   |       |   |   |   |   entrypoints.py
-|   |       |   |   |   |   filesystem.py
-|   |       |   |   |   |   filetypes.py
-|   |       |   |   |   |   glibc.py
-|   |       |   |   |   |   hashes.py
-|   |       |   |   |   |   logging.py
-|   |       |   |   |   |   misc.py
-|   |       |   |   |   |   packaging.py
-|   |       |   |   |   |   retry.py
-|   |       |   |   |   |   setuptools_build.py
-|   |       |   |   |   |   subprocess.py
-|   |       |   |   |   |   temp_dir.py
-|   |       |   |   |   |   unpacking.py
-|   |       |   |   |   |   urls.py
-|   |       |   |   |   |   virtualenv.py
-|   |       |   |   |   |   wheel.py
-|   |       |   |   |   |   _jaraco_text.py
-|   |       |   |   |   |   _log.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           appdirs.cpython-313.pyc
-|   |       |   |   |           compat.cpython-313.pyc
-|   |       |   |   |           compatibility_tags.cpython-313.pyc
-|   |       |   |   |           deprecation.cpython-313.pyc
-|   |       |   |   |           direct_url_helpers.cpython-313.pyc
-|   |       |   |   |           egg_link.cpython-313.pyc
-|   |       |   |   |           entrypoints.cpython-313.pyc
-|   |       |   |   |           filesystem.cpython-313.pyc
-|   |       |   |   |           filetypes.cpython-313.pyc
-|   |       |   |   |           glibc.cpython-313.pyc
-|   |       |   |   |           hashes.cpython-313.pyc
-|   |       |   |   |           logging.cpython-313.pyc
-|   |       |   |   |           misc.cpython-313.pyc
-|   |       |   |   |           packaging.cpython-313.pyc
-|   |       |   |   |           retry.cpython-313.pyc
-|   |       |   |   |           setuptools_build.cpython-313.pyc
-|   |       |   |   |           subprocess.cpython-313.pyc
-|   |       |   |   |           temp_dir.cpython-313.pyc
-|   |       |   |   |           unpacking.cpython-313.pyc
-|   |       |   |   |           urls.cpython-313.pyc
-|   |       |   |   |           virtualenv.cpython-313.pyc
-|   |       |   |   |           wheel.cpython-313.pyc
-|   |       |   |   |           _log.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---vcs
-|   |       |   |   |   |   bazaar.py
-|   |       |   |   |   |   git.py
-|   |       |   |   |   |   mercurial.py
-|   |       |   |   |   |   subversion.py
-|   |       |   |   |   |   versioncontrol.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           bazaar.cpython-313.pyc
-|   |       |   |   |           git.cpython-313.pyc
-|   |       |   |   |           mercurial.cpython-313.pyc
-|   |       |   |   |           subversion.cpython-313.pyc
-|   |       |   |   |           versioncontrol.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           build_env.cpython-313.pyc
-|   |       |   |           cache.cpython-313.pyc
-|   |       |   |           configuration.cpython-313.pyc
-|   |       |   |           exceptions.cpython-313.pyc
-|   |       |   |           pyproject.cpython-313.pyc
-|   |       |   |           self_outdated_check.cpython-313.pyc
-|   |       |   |           wheel_builder.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---_vendor
-|   |       |   |   |   typing_extensions.py
-|   |       |   |   |   vendor.txt
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---cachecontrol
-|   |       |   |   |   |   adapter.py
-|   |       |   |   |   |   cache.py
-|   |       |   |   |   |   controller.py
-|   |       |   |   |   |   filewrapper.py
-|   |       |   |   |   |   heuristics.py
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   serialize.py
-|   |       |   |   |   |   wrapper.py
-|   |       |   |   |   |   _cmd.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---caches
-|   |       |   |   |   |   |   file_cache.py
-|   |       |   |   |   |   |   redis_cache.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           file_cache.cpython-313.pyc
-|   |       |   |   |   |           redis_cache.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           adapter.cpython-313.pyc
-|   |       |   |   |           cache.cpython-313.pyc
-|   |       |   |   |           controller.cpython-313.pyc
-|   |       |   |   |           filewrapper.cpython-313.pyc
-|   |       |   |   |           serialize.cpython-313.pyc
-|   |       |   |   |           wrapper.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---certifi
-|   |       |   |   |   |   cacert.pem
-|   |       |   |   |   |   core.py
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   __main__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           core.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---dependency_groups
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   _implementation.py
-|   |       |   |   |   |   _lint_dependency_groups.py
-|   |       |   |   |   |   _pip_wrapper.py
-|   |       |   |   |   |   _toml_compat.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   __main__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           _implementation.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---distlib
-|   |       |   |   |   |   compat.py
-|   |       |   |   |   |   database.py
-|   |       |   |   |   |   index.py
-|   |       |   |   |   |   locators.py
-|   |       |   |   |   |   manifest.py
-|   |       |   |   |   |   markers.py
-|   |       |   |   |   |   metadata.py
-|   |       |   |   |   |   resources.py
-|   |       |   |   |   |   scripts.py
-|   |       |   |   |   |   t32.exe
-|   |       |   |   |   |   t64-arm.exe
-|   |       |   |   |   |   t64.exe
-|   |       |   |   |   |   util.py
-|   |       |   |   |   |   version.py
-|   |       |   |   |   |   w32.exe
-|   |       |   |   |   |   w64-arm.exe
-|   |       |   |   |   |   w64.exe
-|   |       |   |   |   |   wheel.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           compat.cpython-313.pyc
-|   |       |   |   |           resources.cpython-313.pyc
-|   |       |   |   |           scripts.cpython-313.pyc
-|   |       |   |   |           util.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---distro
-|   |       |   |   |       distro.py
-|   |       |   |   |       py.typed
-|   |       |   |   |       __init__.py
-|   |       |   |   |       __main__.py
-|   |       |   |   |       
-|   |       |   |   +---idna
-|   |       |   |   |   |   codec.py
-|   |       |   |   |   |   compat.py
-|   |       |   |   |   |   core.py
-|   |       |   |   |   |   idnadata.py
-|   |       |   |   |   |   intranges.py
-|   |       |   |   |   |   package_data.py
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   uts46data.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           core.cpython-313.pyc
-|   |       |   |   |           idnadata.cpython-313.pyc
-|   |       |   |   |           intranges.cpython-313.pyc
-|   |       |   |   |           package_data.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---msgpack
-|   |       |   |   |   |   exceptions.py
-|   |       |   |   |   |   ext.py
-|   |       |   |   |   |   fallback.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           exceptions.cpython-313.pyc
-|   |       |   |   |           ext.cpython-313.pyc
-|   |       |   |   |           fallback.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---packaging
-|   |       |   |   |   |   markers.py
-|   |       |   |   |   |   metadata.py
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   requirements.py
-|   |       |   |   |   |   specifiers.py
-|   |       |   |   |   |   tags.py
-|   |       |   |   |   |   utils.py
-|   |       |   |   |   |   version.py
-|   |       |   |   |   |   _elffile.py
-|   |       |   |   |   |   _manylinux.py
-|   |       |   |   |   |   _musllinux.py
-|   |       |   |   |   |   _parser.py
-|   |       |   |   |   |   _structures.py
-|   |       |   |   |   |   _tokenizer.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---licenses
-|   |       |   |   |   |       _spdx.py
-|   |       |   |   |   |       __init__.py
-|   |       |   |   |   |       
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           markers.cpython-313.pyc
-|   |       |   |   |           requirements.cpython-313.pyc
-|   |       |   |   |           specifiers.cpython-313.pyc
-|   |       |   |   |           tags.cpython-313.pyc
-|   |       |   |   |           utils.cpython-313.pyc
-|   |       |   |   |           version.cpython-313.pyc
-|   |       |   |   |           _elffile.cpython-313.pyc
-|   |       |   |   |           _manylinux.cpython-313.pyc
-|   |       |   |   |           _musllinux.cpython-313.pyc
-|   |       |   |   |           _parser.cpython-313.pyc
-|   |       |   |   |           _structures.cpython-313.pyc
-|   |       |   |   |           _tokenizer.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---pkg_resources
-|   |       |   |   |       __init__.py
-|   |       |   |   |       
-|   |       |   |   +---platformdirs
-|   |       |   |   |   |   android.py
-|   |       |   |   |   |   api.py
-|   |       |   |   |   |   macos.py
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   unix.py
-|   |       |   |   |   |   version.py
-|   |       |   |   |   |   windows.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   __main__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           api.cpython-313.pyc
-|   |       |   |   |           version.cpython-313.pyc
-|   |       |   |   |           windows.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---pygments
-|   |       |   |   |   |   console.py
-|   |       |   |   |   |   filter.py
-|   |       |   |   |   |   formatter.py
-|   |       |   |   |   |   lexer.py
-|   |       |   |   |   |   modeline.py
-|   |       |   |   |   |   plugin.py
-|   |       |   |   |   |   regexopt.py
-|   |       |   |   |   |   scanner.py
-|   |       |   |   |   |   sphinxext.py
-|   |       |   |   |   |   style.py
-|   |       |   |   |   |   token.py
-|   |       |   |   |   |   unistring.py
-|   |       |   |   |   |   util.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   __main__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---filters
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   +---formatters
-|   |       |   |   |   |       _mapping.py
-|   |       |   |   |   |       __init__.py
-|   |       |   |   |   |       
-|   |       |   |   |   +---lexers
-|   |       |   |   |   |   |   python.py
-|   |       |   |   |   |   |   _mapping.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           _mapping.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   +---styles
-|   |       |   |   |   |   |   _mapping.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           _mapping.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           filter.cpython-313.pyc
-|   |       |   |   |           lexer.cpython-313.pyc
-|   |       |   |   |           modeline.cpython-313.pyc
-|   |       |   |   |           plugin.cpython-313.pyc
-|   |       |   |   |           regexopt.cpython-313.pyc
-|   |       |   |   |           style.cpython-313.pyc
-|   |       |   |   |           token.cpython-313.pyc
-|   |       |   |   |           util.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---pyproject_hooks
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   _impl.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---_in_process
-|   |       |   |   |   |   |   _in_process.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           _impl.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---requests
-|   |       |   |   |   |   adapters.py
-|   |       |   |   |   |   api.py
-|   |       |   |   |   |   auth.py
-|   |       |   |   |   |   certs.py
-|   |       |   |   |   |   compat.py
-|   |       |   |   |   |   cookies.py
-|   |       |   |   |   |   exceptions.py
-|   |       |   |   |   |   help.py
-|   |       |   |   |   |   hooks.py
-|   |       |   |   |   |   models.py
-|   |       |   |   |   |   packages.py
-|   |       |   |   |   |   sessions.py
-|   |       |   |   |   |   status_codes.py
-|   |       |   |   |   |   structures.py
-|   |       |   |   |   |   utils.py
-|   |       |   |   |   |   _internal_utils.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   __version__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           adapters.cpython-313.pyc
-|   |       |   |   |           api.cpython-313.pyc
-|   |       |   |   |           auth.cpython-313.pyc
-|   |       |   |   |           certs.cpython-313.pyc
-|   |       |   |   |           compat.cpython-313.pyc
-|   |       |   |   |           cookies.cpython-313.pyc
-|   |       |   |   |           exceptions.cpython-313.pyc
-|   |       |   |   |           hooks.cpython-313.pyc
-|   |       |   |   |           models.cpython-313.pyc
-|   |       |   |   |           packages.cpython-313.pyc
-|   |       |   |   |           sessions.cpython-313.pyc
-|   |       |   |   |           status_codes.cpython-313.pyc
-|   |       |   |   |           structures.cpython-313.pyc
-|   |       |   |   |           utils.cpython-313.pyc
-|   |       |   |   |           _internal_utils.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           __version__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---resolvelib
-|   |       |   |   |   |   providers.py
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   reporters.py
-|   |       |   |   |   |   structs.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---resolvers
-|   |       |   |   |   |   |   abstract.py
-|   |       |   |   |   |   |   criterion.py
-|   |       |   |   |   |   |   exceptions.py
-|   |       |   |   |   |   |   resolution.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           abstract.cpython-313.pyc
-|   |       |   |   |   |           criterion.cpython-313.pyc
-|   |       |   |   |   |           exceptions.cpython-313.pyc
-|   |       |   |   |   |           resolution.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           providers.cpython-313.pyc
-|   |       |   |   |           reporters.cpython-313.pyc
-|   |       |   |   |           structs.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---rich
-|   |       |   |   |   |   abc.py
-|   |       |   |   |   |   align.py
-|   |       |   |   |   |   ansi.py
-|   |       |   |   |   |   bar.py
-|   |       |   |   |   |   box.py
-|   |       |   |   |   |   cells.py
-|   |       |   |   |   |   color.py
-|   |       |   |   |   |   color_triplet.py
-|   |       |   |   |   |   columns.py
-|   |       |   |   |   |   console.py
-|   |       |   |   |   |   constrain.py
-|   |       |   |   |   |   containers.py
-|   |       |   |   |   |   control.py
-|   |       |   |   |   |   default_styles.py
-|   |       |   |   |   |   diagnose.py
-|   |       |   |   |   |   emoji.py
-|   |       |   |   |   |   errors.py
-|   |       |   |   |   |   filesize.py
-|   |       |   |   |   |   file_proxy.py
-|   |       |   |   |   |   highlighter.py
-|   |       |   |   |   |   json.py
-|   |       |   |   |   |   jupyter.py
-|   |       |   |   |   |   layout.py
-|   |       |   |   |   |   live.py
-|   |       |   |   |   |   live_render.py
-|   |       |   |   |   |   logging.py
-|   |       |   |   |   |   markup.py
-|   |       |   |   |   |   measure.py
-|   |       |   |   |   |   padding.py
-|   |       |   |   |   |   pager.py
-|   |       |   |   |   |   palette.py
-|   |       |   |   |   |   panel.py
-|   |       |   |   |   |   pretty.py
-|   |       |   |   |   |   progress.py
-|   |       |   |   |   |   progress_bar.py
-|   |       |   |   |   |   prompt.py
-|   |       |   |   |   |   protocol.py
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   region.py
-|   |       |   |   |   |   repr.py
-|   |       |   |   |   |   rule.py
-|   |       |   |   |   |   scope.py
-|   |       |   |   |   |   screen.py
-|   |       |   |   |   |   segment.py
-|   |       |   |   |   |   spinner.py
-|   |       |   |   |   |   status.py
-|   |       |   |   |   |   style.py
-|   |       |   |   |   |   styled.py
-|   |       |   |   |   |   syntax.py
-|   |       |   |   |   |   table.py
-|   |       |   |   |   |   terminal_theme.py
-|   |       |   |   |   |   text.py
-|   |       |   |   |   |   theme.py
-|   |       |   |   |   |   themes.py
-|   |       |   |   |   |   traceback.py
-|   |       |   |   |   |   tree.py
-|   |       |   |   |   |   _cell_widths.py
-|   |       |   |   |   |   _emoji_codes.py
-|   |       |   |   |   |   _emoji_replace.py
-|   |       |   |   |   |   _export_format.py
-|   |       |   |   |   |   _extension.py
-|   |       |   |   |   |   _fileno.py
-|   |       |   |   |   |   _inspect.py
-|   |       |   |   |   |   _log_render.py
-|   |       |   |   |   |   _loop.py
-|   |       |   |   |   |   _null_file.py
-|   |       |   |   |   |   _palettes.py
-|   |       |   |   |   |   _pick.py
-|   |       |   |   |   |   _ratio.py
-|   |       |   |   |   |   _spinners.py
-|   |       |   |   |   |   _stack.py
-|   |       |   |   |   |   _timer.py
-|   |       |   |   |   |   _win32_console.py
-|   |       |   |   |   |   _windows.py
-|   |       |   |   |   |   _windows_renderer.py
-|   |       |   |   |   |   _wrap.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   __main__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           abc.cpython-313.pyc
-|   |       |   |   |           align.cpython-313.pyc
-|   |       |   |   |           ansi.cpython-313.pyc
-|   |       |   |   |           box.cpython-313.pyc
-|   |       |   |   |           cells.cpython-313.pyc
-|   |       |   |   |           color.cpython-313.pyc
-|   |       |   |   |           color_triplet.cpython-313.pyc
-|   |       |   |   |           columns.cpython-313.pyc
-|   |       |   |   |           console.cpython-313.pyc
-|   |       |   |   |           constrain.cpython-313.pyc
-|   |       |   |   |           containers.cpython-313.pyc
-|   |       |   |   |           control.cpython-313.pyc
-|   |       |   |   |           default_styles.cpython-313.pyc
-|   |       |   |   |           emoji.cpython-313.pyc
-|   |       |   |   |           errors.cpython-313.pyc
-|   |       |   |   |           filesize.cpython-313.pyc
-|   |       |   |   |           file_proxy.cpython-313.pyc
-|   |       |   |   |           highlighter.cpython-313.pyc
-|   |       |   |   |           jupyter.cpython-313.pyc
-|   |       |   |   |           live.cpython-313.pyc
-|   |       |   |   |           live_render.cpython-313.pyc
-|   |       |   |   |           logging.cpython-313.pyc
-|   |       |   |   |           markup.cpython-313.pyc
-|   |       |   |   |           measure.cpython-313.pyc
-|   |       |   |   |           padding.cpython-313.pyc
-|   |       |   |   |           pager.cpython-313.pyc
-|   |       |   |   |           palette.cpython-313.pyc
-|   |       |   |   |           panel.cpython-313.pyc
-|   |       |   |   |           pretty.cpython-313.pyc
-|   |       |   |   |           progress.cpython-313.pyc
-|   |       |   |   |           progress_bar.cpython-313.pyc
-|   |       |   |   |           protocol.cpython-313.pyc
-|   |       |   |   |           region.cpython-313.pyc
-|   |       |   |   |           repr.cpython-313.pyc
-|   |       |   |   |           scope.cpython-313.pyc
-|   |       |   |   |           screen.cpython-313.pyc
-|   |       |   |   |           segment.cpython-313.pyc
-|   |       |   |   |           spinner.cpython-313.pyc
-|   |       |   |   |           style.cpython-313.pyc
-|   |       |   |   |           styled.cpython-313.pyc
-|   |       |   |   |           syntax.cpython-313.pyc
-|   |       |   |   |           table.cpython-313.pyc
-|   |       |   |   |           terminal_theme.cpython-313.pyc
-|   |       |   |   |           text.cpython-313.pyc
-|   |       |   |   |           theme.cpython-313.pyc
-|   |       |   |   |           themes.cpython-313.pyc
-|   |       |   |   |           traceback.cpython-313.pyc
-|   |       |   |   |           _cell_widths.cpython-313.pyc
-|   |       |   |   |           _emoji_codes.cpython-313.pyc
-|   |       |   |   |           _emoji_replace.cpython-313.pyc
-|   |       |   |   |           _export_format.cpython-313.pyc
-|   |       |   |   |           _extension.cpython-313.pyc
-|   |       |   |   |           _fileno.cpython-313.pyc
-|   |       |   |   |           _log_render.cpython-313.pyc
-|   |       |   |   |           _loop.cpython-313.pyc
-|   |       |   |   |           _null_file.cpython-313.pyc
-|   |       |   |   |           _palettes.cpython-313.pyc
-|   |       |   |   |           _pick.cpython-313.pyc
-|   |       |   |   |           _ratio.cpython-313.pyc
-|   |       |   |   |           _spinners.cpython-313.pyc
-|   |       |   |   |           _win32_console.cpython-313.pyc
-|   |       |   |   |           _windows.cpython-313.pyc
-|   |       |   |   |           _windows_renderer.cpython-313.pyc
-|   |       |   |   |           _wrap.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---tomli
-|   |       |   |   |       py.typed
-|   |       |   |   |       _parser.py
-|   |       |   |   |       _re.py
-|   |       |   |   |       _types.py
-|   |       |   |   |       __init__.py
-|   |       |   |   |       
-|   |       |   |   +---tomli_w
-|   |       |   |   |       py.typed
-|   |       |   |   |       _writer.py
-|   |       |   |   |       __init__.py
-|   |       |   |   |       
-|   |       |   |   +---truststore
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   _api.py
-|   |       |   |   |   |   _macos.py
-|   |       |   |   |   |   _openssl.py
-|   |       |   |   |   |   _ssl_constants.py
-|   |       |   |   |   |   _windows.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           _api.cpython-313.pyc
-|   |       |   |   |           _ssl_constants.cpython-313.pyc
-|   |       |   |   |           _windows.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---urllib3
-|   |       |   |   |   |   connection.py
-|   |       |   |   |   |   connectionpool.py
-|   |       |   |   |   |   exceptions.py
-|   |       |   |   |   |   fields.py
-|   |       |   |   |   |   filepost.py
-|   |       |   |   |   |   poolmanager.py
-|   |       |   |   |   |   request.py
-|   |       |   |   |   |   response.py
-|   |       |   |   |   |   _collections.py
-|   |       |   |   |   |   _version.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---contrib
-|   |       |   |   |   |   |   appengine.py
-|   |       |   |   |   |   |   ntlmpool.py
-|   |       |   |   |   |   |   pyopenssl.py
-|   |       |   |   |   |   |   securetransport.py
-|   |       |   |   |   |   |   socks.py
-|   |       |   |   |   |   |   _appengine_environ.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   +---_securetransport
-|   |       |   |   |   |   |       bindings.py
-|   |       |   |   |   |   |       low_level.py
-|   |       |   |   |   |   |       __init__.py
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           socks.cpython-313.pyc
-|   |       |   |   |   |           _appengine_environ.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   +---packages
-|   |       |   |   |   |   |   six.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   +---backports
-|   |       |   |   |   |   |       makefile.py
-|   |       |   |   |   |   |       weakref_finalize.py
-|   |       |   |   |   |   |       __init__.py
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           six.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   +---util
-|   |       |   |   |   |   |   connection.py
-|   |       |   |   |   |   |   proxy.py
-|   |       |   |   |   |   |   queue.py
-|   |       |   |   |   |   |   request.py
-|   |       |   |   |   |   |   response.py
-|   |       |   |   |   |   |   retry.py
-|   |       |   |   |   |   |   ssltransport.py
-|   |       |   |   |   |   |   ssl_.py
-|   |       |   |   |   |   |   ssl_match_hostname.py
-|   |       |   |   |   |   |   timeout.py
-|   |       |   |   |   |   |   url.py
-|   |       |   |   |   |   |   wait.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           connection.cpython-313.pyc
-|   |       |   |   |   |           proxy.cpython-313.pyc
-|   |       |   |   |   |           queue.cpython-313.pyc
-|   |       |   |   |   |           request.cpython-313.pyc
-|   |       |   |   |   |           response.cpython-313.pyc
-|   |       |   |   |   |           retry.cpython-313.pyc
-|   |       |   |   |   |           ssltransport.cpython-313.pyc
-|   |       |   |   |   |           ssl_.cpython-313.pyc
-|   |       |   |   |   |           ssl_match_hostname.cpython-313.pyc
-|   |       |   |   |   |           timeout.cpython-313.pyc
-|   |       |   |   |   |           url.cpython-313.pyc
-|   |       |   |   |   |           wait.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           connection.cpython-313.pyc
-|   |       |   |   |           connectionpool.cpython-313.pyc
-|   |       |   |   |           exceptions.cpython-313.pyc
-|   |       |   |   |           fields.cpython-313.pyc
-|   |       |   |   |           filepost.cpython-313.pyc
-|   |       |   |   |           poolmanager.cpython-313.pyc
-|   |       |   |   |           request.cpython-313.pyc
-|   |       |   |   |           response.cpython-313.pyc
-|   |       |   |   |           _collections.cpython-313.pyc
-|   |       |   |   |           _version.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           typing_extensions.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           __init__.cpython-313.pyc
-|   |       |           __main__.cpython-313.pyc
-|   |       |           
-|   |       +---pip-25.1.1.dist-info
-|   |       |   |   entry_points.txt
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   top_level.txt
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           AUTHORS.txt
-|   |       |           LICENSE.txt
-|   |       |           
-|   |       +---pkg_resources
-|   |       |   |   api_tests.txt
-|   |       |   |   py.typed
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   +---tests
-|   |       |   |   |   test_find_distributions.py
-|   |       |   |   |   test_integration_zope_interface.py
-|   |       |   |   |   test_markers.py
-|   |       |   |   |   test_pkg_resources.py
-|   |       |   |   |   test_resources.py
-|   |       |   |   |   test_working_set.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---data
-|   |       |   |   |   +---my-test-package-source
-|   |       |   |   |   |   |   setup.cfg
-|   |       |   |   |   |   |   setup.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           setup.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   +---my-test-package-zip
-|   |       |   |   |   |       my-test-package.zip
-|   |       |   |   |   |       
-|   |       |   |   |   +---my-test-package_unpacked-egg
-|   |       |   |   |   |   \---my_test_package-1.0-py3.7.egg
-|   |       |   |   |   |       \---EGG-INFO
-|   |       |   |   |   |               dependency_links.txt
-|   |       |   |   |   |               PKG-INFO
-|   |       |   |   |   |               SOURCES.txt
-|   |       |   |   |   |               top_level.txt
-|   |       |   |   |   |               zip-safe
-|   |       |   |   |   |               
-|   |       |   |   |   \---my-test-package_zipped-egg
-|   |       |   |   |           my_test_package-1.0-py3.7.egg
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           test_find_distributions.cpython-313.pyc
-|   |       |   |           test_integration_zope_interface.cpython-313.pyc
-|   |       |   |           test_markers.cpython-313.pyc
-|   |       |   |           test_pkg_resources.cpython-313.pyc
-|   |       |   |           test_resources.cpython-313.pyc
-|   |       |   |           test_working_set.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---pycryptodome-3.23.0.dist-info
-|   |       |       AUTHORS.rst
-|   |       |       INSTALLER
-|   |       |       LICENSE.rst
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       top_level.txt
-|   |       |       WHEEL
-|   |       |       
-|   |       +---pygments
-|   |       |   |   cmdline.py
-|   |       |   |   console.py
-|   |       |   |   filter.py
-|   |       |   |   formatter.py
-|   |       |   |   lexer.py
-|   |       |   |   modeline.py
-|   |       |   |   plugin.py
-|   |       |   |   regexopt.py
-|   |       |   |   scanner.py
-|   |       |   |   sphinxext.py
-|   |       |   |   style.py
-|   |       |   |   token.py
-|   |       |   |   unistring.py
-|   |       |   |   util.py
-|   |       |   |   __init__.py
-|   |       |   |   __main__.py
-|   |       |   |   
-|   |       |   +---filters
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---formatters
-|   |       |   |   |   bbcode.py
-|   |       |   |   |   groff.py
-|   |       |   |   |   html.py
-|   |       |   |   |   img.py
-|   |       |   |   |   irc.py
-|   |       |   |   |   latex.py
-|   |       |   |   |   other.py
-|   |       |   |   |   pangomarkup.py
-|   |       |   |   |   rtf.py
-|   |       |   |   |   svg.py
-|   |       |   |   |   terminal.py
-|   |       |   |   |   terminal256.py
-|   |       |   |   |   _mapping.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           bbcode.cpython-313.pyc
-|   |       |   |           groff.cpython-313.pyc
-|   |       |   |           html.cpython-313.pyc
-|   |       |   |           img.cpython-313.pyc
-|   |       |   |           irc.cpython-313.pyc
-|   |       |   |           latex.cpython-313.pyc
-|   |       |   |           other.cpython-313.pyc
-|   |       |   |           pangomarkup.cpython-313.pyc
-|   |       |   |           rtf.cpython-313.pyc
-|   |       |   |           svg.cpython-313.pyc
-|   |       |   |           terminal.cpython-313.pyc
-|   |       |   |           terminal256.cpython-313.pyc
-|   |       |   |           _mapping.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---lexers
-|   |       |   |   |   actionscript.py
-|   |       |   |   |   ada.py
-|   |       |   |   |   agile.py
-|   |       |   |   |   algebra.py
-|   |       |   |   |   ambient.py
-|   |       |   |   |   amdgpu.py
-|   |       |   |   |   ampl.py
-|   |       |   |   |   apdlexer.py
-|   |       |   |   |   apl.py
-|   |       |   |   |   archetype.py
-|   |       |   |   |   arrow.py
-|   |       |   |   |   arturo.py
-|   |       |   |   |   asc.py
-|   |       |   |   |   asm.py
-|   |       |   |   |   asn1.py
-|   |       |   |   |   automation.py
-|   |       |   |   |   bare.py
-|   |       |   |   |   basic.py
-|   |       |   |   |   bdd.py
-|   |       |   |   |   berry.py
-|   |       |   |   |   bibtex.py
-|   |       |   |   |   blueprint.py
-|   |       |   |   |   boa.py
-|   |       |   |   |   bqn.py
-|   |       |   |   |   business.py
-|   |       |   |   |   capnproto.py
-|   |       |   |   |   carbon.py
-|   |       |   |   |   cddl.py
-|   |       |   |   |   chapel.py
-|   |       |   |   |   clean.py
-|   |       |   |   |   codeql.py
-|   |       |   |   |   comal.py
-|   |       |   |   |   compiled.py
-|   |       |   |   |   configs.py
-|   |       |   |   |   console.py
-|   |       |   |   |   cplint.py
-|   |       |   |   |   crystal.py
-|   |       |   |   |   csound.py
-|   |       |   |   |   css.py
-|   |       |   |   |   c_cpp.py
-|   |       |   |   |   c_like.py
-|   |       |   |   |   d.py
-|   |       |   |   |   dalvik.py
-|   |       |   |   |   data.py
-|   |       |   |   |   dax.py
-|   |       |   |   |   devicetree.py
-|   |       |   |   |   diff.py
-|   |       |   |   |   dns.py
-|   |       |   |   |   dotnet.py
-|   |       |   |   |   dsls.py
-|   |       |   |   |   dylan.py
-|   |       |   |   |   ecl.py
-|   |       |   |   |   eiffel.py
-|   |       |   |   |   elm.py
-|   |       |   |   |   elpi.py
-|   |       |   |   |   email.py
-|   |       |   |   |   erlang.py
-|   |       |   |   |   esoteric.py
-|   |       |   |   |   ezhil.py
-|   |       |   |   |   factor.py
-|   |       |   |   |   fantom.py
-|   |       |   |   |   felix.py
-|   |       |   |   |   fift.py
-|   |       |   |   |   floscript.py
-|   |       |   |   |   forth.py
-|   |       |   |   |   fortran.py
-|   |       |   |   |   foxpro.py
-|   |       |   |   |   freefem.py
-|   |       |   |   |   func.py
-|   |       |   |   |   functional.py
-|   |       |   |   |   futhark.py
-|   |       |   |   |   gcodelexer.py
-|   |       |   |   |   gdscript.py
-|   |       |   |   |   gleam.py
-|   |       |   |   |   go.py
-|   |       |   |   |   grammar_notation.py
-|   |       |   |   |   graph.py
-|   |       |   |   |   graphics.py
-|   |       |   |   |   graphql.py
-|   |       |   |   |   graphviz.py
-|   |       |   |   |   gsql.py
-|   |       |   |   |   hare.py
-|   |       |   |   |   haskell.py
-|   |       |   |   |   haxe.py
-|   |       |   |   |   hdl.py
-|   |       |   |   |   hexdump.py
-|   |       |   |   |   html.py
-|   |       |   |   |   idl.py
-|   |       |   |   |   igor.py
-|   |       |   |   |   inferno.py
-|   |       |   |   |   installers.py
-|   |       |   |   |   int_fiction.py
-|   |       |   |   |   iolang.py
-|   |       |   |   |   j.py
-|   |       |   |   |   javascript.py
-|   |       |   |   |   jmespath.py
-|   |       |   |   |   jslt.py
-|   |       |   |   |   json5.py
-|   |       |   |   |   jsonnet.py
-|   |       |   |   |   jsx.py
-|   |       |   |   |   julia.py
-|   |       |   |   |   jvm.py
-|   |       |   |   |   kuin.py
-|   |       |   |   |   kusto.py
-|   |       |   |   |   ldap.py
-|   |       |   |   |   lean.py
-|   |       |   |   |   lilypond.py
-|   |       |   |   |   lisp.py
-|   |       |   |   |   macaulay2.py
-|   |       |   |   |   make.py
-|   |       |   |   |   maple.py
-|   |       |   |   |   markup.py
-|   |       |   |   |   math.py
-|   |       |   |   |   matlab.py
-|   |       |   |   |   maxima.py
-|   |       |   |   |   meson.py
-|   |       |   |   |   mime.py
-|   |       |   |   |   minecraft.py
-|   |       |   |   |   mips.py
-|   |       |   |   |   ml.py
-|   |       |   |   |   modeling.py
-|   |       |   |   |   modula2.py
-|   |       |   |   |   mojo.py
-|   |       |   |   |   monte.py
-|   |       |   |   |   mosel.py
-|   |       |   |   |   ncl.py
-|   |       |   |   |   nimrod.py
-|   |       |   |   |   nit.py
-|   |       |   |   |   nix.py
-|   |       |   |   |   numbair.py
-|   |       |   |   |   oberon.py
-|   |       |   |   |   objective.py
-|   |       |   |   |   ooc.py
-|   |       |   |   |   openscad.py
-|   |       |   |   |   other.py
-|   |       |   |   |   parasail.py
-|   |       |   |   |   parsers.py
-|   |       |   |   |   pascal.py
-|   |       |   |   |   pawn.py
-|   |       |   |   |   pddl.py
-|   |       |   |   |   perl.py
-|   |       |   |   |   phix.py
-|   |       |   |   |   php.py
-|   |       |   |   |   pointless.py
-|   |       |   |   |   pony.py
-|   |       |   |   |   praat.py
-|   |       |   |   |   procfile.py
-|   |       |   |   |   prolog.py
-|   |       |   |   |   promql.py
-|   |       |   |   |   prql.py
-|   |       |   |   |   ptx.py
-|   |       |   |   |   python.py
-|   |       |   |   |   q.py
-|   |       |   |   |   qlik.py
-|   |       |   |   |   qvt.py
-|   |       |   |   |   r.py
-|   |       |   |   |   rdf.py
-|   |       |   |   |   rebol.py
-|   |       |   |   |   rego.py
-|   |       |   |   |   resource.py
-|   |       |   |   |   ride.py
-|   |       |   |   |   rita.py
-|   |       |   |   |   rnc.py
-|   |       |   |   |   roboconf.py
-|   |       |   |   |   robotframework.py
-|   |       |   |   |   ruby.py
-|   |       |   |   |   rust.py
-|   |       |   |   |   sas.py
-|   |       |   |   |   savi.py
-|   |       |   |   |   scdoc.py
-|   |       |   |   |   scripting.py
-|   |       |   |   |   sgf.py
-|   |       |   |   |   shell.py
-|   |       |   |   |   sieve.py
-|   |       |   |   |   slash.py
-|   |       |   |   |   smalltalk.py
-|   |       |   |   |   smithy.py
-|   |       |   |   |   smv.py
-|   |       |   |   |   snobol.py
-|   |       |   |   |   solidity.py
-|   |       |   |   |   soong.py
-|   |       |   |   |   sophia.py
-|   |       |   |   |   special.py
-|   |       |   |   |   spice.py
-|   |       |   |   |   sql.py
-|   |       |   |   |   srcinfo.py
-|   |       |   |   |   stata.py
-|   |       |   |   |   supercollider.py
-|   |       |   |   |   tablegen.py
-|   |       |   |   |   tact.py
-|   |       |   |   |   tal.py
-|   |       |   |   |   tcl.py
-|   |       |   |   |   teal.py
-|   |       |   |   |   templates.py
-|   |       |   |   |   teraterm.py
-|   |       |   |   |   testing.py
-|   |       |   |   |   text.py
-|   |       |   |   |   textedit.py
-|   |       |   |   |   textfmts.py
-|   |       |   |   |   theorem.py
-|   |       |   |   |   thingsdb.py
-|   |       |   |   |   tlb.py
-|   |       |   |   |   tls.py
-|   |       |   |   |   tnt.py
-|   |       |   |   |   trafficscript.py
-|   |       |   |   |   typoscript.py
-|   |       |   |   |   typst.py
-|   |       |   |   |   ul4.py
-|   |       |   |   |   unicon.py
-|   |       |   |   |   urbi.py
-|   |       |   |   |   usd.py
-|   |       |   |   |   varnish.py
-|   |       |   |   |   verification.py
-|   |       |   |   |   verifpal.py
-|   |       |   |   |   vip.py
-|   |       |   |   |   vyper.py
-|   |       |   |   |   web.py
-|   |       |   |   |   webassembly.py
-|   |       |   |   |   webidl.py
-|   |       |   |   |   webmisc.py
-|   |       |   |   |   wgsl.py
-|   |       |   |   |   whiley.py
-|   |       |   |   |   wowtoc.py
-|   |       |   |   |   wren.py
-|   |       |   |   |   x10.py
-|   |       |   |   |   xorg.py
-|   |       |   |   |   yang.py
-|   |       |   |   |   yara.py
-|   |       |   |   |   zig.py
-|   |       |   |   |   _ada_builtins.py
-|   |       |   |   |   _asy_builtins.py
-|   |       |   |   |   _cl_builtins.py
-|   |       |   |   |   _cocoa_builtins.py
-|   |       |   |   |   _csound_builtins.py
-|   |       |   |   |   _css_builtins.py
-|   |       |   |   |   _googlesql_builtins.py
-|   |       |   |   |   _julia_builtins.py
-|   |       |   |   |   _lasso_builtins.py
-|   |       |   |   |   _lilypond_builtins.py
-|   |       |   |   |   _luau_builtins.py
-|   |       |   |   |   _lua_builtins.py
-|   |       |   |   |   _mapping.py
-|   |       |   |   |   _mql_builtins.py
-|   |       |   |   |   _mysql_builtins.py
-|   |       |   |   |   _openedge_builtins.py
-|   |       |   |   |   _php_builtins.py
-|   |       |   |   |   _postgres_builtins.py
-|   |       |   |   |   _qlik_builtins.py
-|   |       |   |   |   _scheme_builtins.py
-|   |       |   |   |   _scilab_builtins.py
-|   |       |   |   |   _sourcemod_builtins.py
-|   |       |   |   |   _sql_builtins.py
-|   |       |   |   |   _stan_builtins.py
-|   |       |   |   |   _stata_builtins.py
-|   |       |   |   |   _tsql_builtins.py
-|   |       |   |   |   _usd_builtins.py
-|   |       |   |   |   _vbscript_builtins.py
-|   |       |   |   |   _vim_builtins.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           actionscript.cpython-313.pyc
-|   |       |   |           ada.cpython-313.pyc
-|   |       |   |           agile.cpython-313.pyc
-|   |       |   |           algebra.cpython-313.pyc
-|   |       |   |           ambient.cpython-313.pyc
-|   |       |   |           amdgpu.cpython-313.pyc
-|   |       |   |           ampl.cpython-313.pyc
-|   |       |   |           apdlexer.cpython-313.pyc
-|   |       |   |           apl.cpython-313.pyc
-|   |       |   |           archetype.cpython-313.pyc
-|   |       |   |           arrow.cpython-313.pyc
-|   |       |   |           arturo.cpython-313.pyc
-|   |       |   |           asc.cpython-313.pyc
-|   |       |   |           asm.cpython-313.pyc
-|   |       |   |           asn1.cpython-313.pyc
-|   |       |   |           automation.cpython-313.pyc
-|   |       |   |           bare.cpython-313.pyc
-|   |       |   |           basic.cpython-313.pyc
-|   |       |   |           bdd.cpython-313.pyc
-|   |       |   |           berry.cpython-313.pyc
-|   |       |   |           bibtex.cpython-313.pyc
-|   |       |   |           blueprint.cpython-313.pyc
-|   |       |   |           boa.cpython-313.pyc
-|   |       |   |           bqn.cpython-313.pyc
-|   |       |   |           business.cpython-313.pyc
-|   |       |   |           capnproto.cpython-313.pyc
-|   |       |   |           carbon.cpython-313.pyc
-|   |       |   |           cddl.cpython-313.pyc
-|   |       |   |           chapel.cpython-313.pyc
-|   |       |   |           clean.cpython-313.pyc
-|   |       |   |           codeql.cpython-313.pyc
-|   |       |   |           comal.cpython-313.pyc
-|   |       |   |           compiled.cpython-313.pyc
-|   |       |   |           configs.cpython-313.pyc
-|   |       |   |           console.cpython-313.pyc
-|   |       |   |           cplint.cpython-313.pyc
-|   |       |   |           crystal.cpython-313.pyc
-|   |       |   |           csound.cpython-313.pyc
-|   |       |   |           css.cpython-313.pyc
-|   |       |   |           c_cpp.cpython-313.pyc
-|   |       |   |           c_like.cpython-313.pyc
-|   |       |   |           d.cpython-313.pyc
-|   |       |   |           dalvik.cpython-313.pyc
-|   |       |   |           data.cpython-313.pyc
-|   |       |   |           dax.cpython-313.pyc
-|   |       |   |           devicetree.cpython-313.pyc
-|   |       |   |           diff.cpython-313.pyc
-|   |       |   |           dns.cpython-313.pyc
-|   |       |   |           dotnet.cpython-313.pyc
-|   |       |   |           dsls.cpython-313.pyc
-|   |       |   |           dylan.cpython-313.pyc
-|   |       |   |           ecl.cpython-313.pyc
-|   |       |   |           eiffel.cpython-313.pyc
-|   |       |   |           elm.cpython-313.pyc
-|   |       |   |           elpi.cpython-313.pyc
-|   |       |   |           email.cpython-313.pyc
-|   |       |   |           erlang.cpython-313.pyc
-|   |       |   |           esoteric.cpython-313.pyc
-|   |       |   |           ezhil.cpython-313.pyc
-|   |       |   |           factor.cpython-313.pyc
-|   |       |   |           fantom.cpython-313.pyc
-|   |       |   |           felix.cpython-313.pyc
-|   |       |   |           fift.cpython-313.pyc
-|   |       |   |           floscript.cpython-313.pyc
-|   |       |   |           forth.cpython-313.pyc
-|   |       |   |           fortran.cpython-313.pyc
-|   |       |   |           foxpro.cpython-313.pyc
-|   |       |   |           freefem.cpython-313.pyc
-|   |       |   |           func.cpython-313.pyc
-|   |       |   |           functional.cpython-313.pyc
-|   |       |   |           futhark.cpython-313.pyc
-|   |       |   |           gcodelexer.cpython-313.pyc
-|   |       |   |           gdscript.cpython-313.pyc
-|   |       |   |           gleam.cpython-313.pyc
-|   |       |   |           go.cpython-313.pyc
-|   |       |   |           grammar_notation.cpython-313.pyc
-|   |       |   |           graph.cpython-313.pyc
-|   |       |   |           graphics.cpython-313.pyc
-|   |       |   |           graphql.cpython-313.pyc
-|   |       |   |           graphviz.cpython-313.pyc
-|   |       |   |           gsql.cpython-313.pyc
-|   |       |   |           hare.cpython-313.pyc
-|   |       |   |           haskell.cpython-313.pyc
-|   |       |   |           haxe.cpython-313.pyc
-|   |       |   |           hdl.cpython-313.pyc
-|   |       |   |           hexdump.cpython-313.pyc
-|   |       |   |           html.cpython-313.pyc
-|   |       |   |           idl.cpython-313.pyc
-|   |       |   |           igor.cpython-313.pyc
-|   |       |   |           inferno.cpython-313.pyc
-|   |       |   |           installers.cpython-313.pyc
-|   |       |   |           int_fiction.cpython-313.pyc
-|   |       |   |           iolang.cpython-313.pyc
-|   |       |   |           j.cpython-313.pyc
-|   |       |   |           javascript.cpython-313.pyc
-|   |       |   |           jmespath.cpython-313.pyc
-|   |       |   |           jslt.cpython-313.pyc
-|   |       |   |           json5.cpython-313.pyc
-|   |       |   |           jsonnet.cpython-313.pyc
-|   |       |   |           jsx.cpython-313.pyc
-|   |       |   |           julia.cpython-313.pyc
-|   |       |   |           jvm.cpython-313.pyc
-|   |       |   |           kuin.cpython-313.pyc
-|   |       |   |           kusto.cpython-313.pyc
-|   |       |   |           ldap.cpython-313.pyc
-|   |       |   |           lean.cpython-313.pyc
-|   |       |   |           lilypond.cpython-313.pyc
-|   |       |   |           lisp.cpython-313.pyc
-|   |       |   |           macaulay2.cpython-313.pyc
-|   |       |   |           make.cpython-313.pyc
-|   |       |   |           maple.cpython-313.pyc
-|   |       |   |           markup.cpython-313.pyc
-|   |       |   |           math.cpython-313.pyc
-|   |       |   |           matlab.cpython-313.pyc
-|   |       |   |           maxima.cpython-313.pyc
-|   |       |   |           meson.cpython-313.pyc
-|   |       |   |           mime.cpython-313.pyc
-|   |       |   |           minecraft.cpython-313.pyc
-|   |       |   |           mips.cpython-313.pyc
-|   |       |   |           ml.cpython-313.pyc
-|   |       |   |           modeling.cpython-313.pyc
-|   |       |   |           modula2.cpython-313.pyc
-|   |       |   |           mojo.cpython-313.pyc
-|   |       |   |           monte.cpython-313.pyc
-|   |       |   |           mosel.cpython-313.pyc
-|   |       |   |           ncl.cpython-313.pyc
-|   |       |   |           nimrod.cpython-313.pyc
-|   |       |   |           nit.cpython-313.pyc
-|   |       |   |           nix.cpython-313.pyc
-|   |       |   |           numbair.cpython-313.pyc
-|   |       |   |           oberon.cpython-313.pyc
-|   |       |   |           objective.cpython-313.pyc
-|   |       |   |           ooc.cpython-313.pyc
-|   |       |   |           openscad.cpython-313.pyc
-|   |       |   |           other.cpython-313.pyc
-|   |       |   |           parasail.cpython-313.pyc
-|   |       |   |           parsers.cpython-313.pyc
-|   |       |   |           pascal.cpython-313.pyc
-|   |       |   |           pawn.cpython-313.pyc
-|   |       |   |           pddl.cpython-313.pyc
-|   |       |   |           perl.cpython-313.pyc
-|   |       |   |           phix.cpython-313.pyc
-|   |       |   |           php.cpython-313.pyc
-|   |       |   |           pointless.cpython-313.pyc
-|   |       |   |           pony.cpython-313.pyc
-|   |       |   |           praat.cpython-313.pyc
-|   |       |   |           procfile.cpython-313.pyc
-|   |       |   |           prolog.cpython-313.pyc
-|   |       |   |           promql.cpython-313.pyc
-|   |       |   |           prql.cpython-313.pyc
-|   |       |   |           ptx.cpython-313.pyc
-|   |       |   |           python.cpython-313.pyc
-|   |       |   |           q.cpython-313.pyc
-|   |       |   |           qlik.cpython-313.pyc
-|   |       |   |           qvt.cpython-313.pyc
-|   |       |   |           r.cpython-313.pyc
-|   |       |   |           rdf.cpython-313.pyc
-|   |       |   |           rebol.cpython-313.pyc
-|   |       |   |           rego.cpython-313.pyc
-|   |       |   |           resource.cpython-313.pyc
-|   |       |   |           ride.cpython-313.pyc
-|   |       |   |           rita.cpython-313.pyc
-|   |       |   |           rnc.cpython-313.pyc
-|   |       |   |           roboconf.cpython-313.pyc
-|   |       |   |           robotframework.cpython-313.pyc
-|   |       |   |           ruby.cpython-313.pyc
-|   |       |   |           rust.cpython-313.pyc
-|   |       |   |           sas.cpython-313.pyc
-|   |       |   |           savi.cpython-313.pyc
-|   |       |   |           scdoc.cpython-313.pyc
-|   |       |   |           scripting.cpython-313.pyc
-|   |       |   |           sgf.cpython-313.pyc
-|   |       |   |           shell.cpython-313.pyc
-|   |       |   |           sieve.cpython-313.pyc
-|   |       |   |           slash.cpython-313.pyc
-|   |       |   |           smalltalk.cpython-313.pyc
-|   |       |   |           smithy.cpython-313.pyc
-|   |       |   |           smv.cpython-313.pyc
-|   |       |   |           snobol.cpython-313.pyc
-|   |       |   |           solidity.cpython-313.pyc
-|   |       |   |           soong.cpython-313.pyc
-|   |       |   |           sophia.cpython-313.pyc
-|   |       |   |           special.cpython-313.pyc
-|   |       |   |           spice.cpython-313.pyc
-|   |       |   |           sql.cpython-313.pyc
-|   |       |   |           srcinfo.cpython-313.pyc
-|   |       |   |           stata.cpython-313.pyc
-|   |       |   |           supercollider.cpython-313.pyc
-|   |       |   |           tablegen.cpython-313.pyc
-|   |       |   |           tact.cpython-313.pyc
-|   |       |   |           tal.cpython-313.pyc
-|   |       |   |           tcl.cpython-313.pyc
-|   |       |   |           teal.cpython-313.pyc
-|   |       |   |           templates.cpython-313.pyc
-|   |       |   |           teraterm.cpython-313.pyc
-|   |       |   |           testing.cpython-313.pyc
-|   |       |   |           text.cpython-313.pyc
-|   |       |   |           textedit.cpython-313.pyc
-|   |       |   |           textfmts.cpython-313.pyc
-|   |       |   |           theorem.cpython-313.pyc
-|   |       |   |           thingsdb.cpython-313.pyc
-|   |       |   |           tlb.cpython-313.pyc
-|   |       |   |           tls.cpython-313.pyc
-|   |       |   |           tnt.cpython-313.pyc
-|   |       |   |           trafficscript.cpython-313.pyc
-|   |       |   |           typoscript.cpython-313.pyc
-|   |       |   |           typst.cpython-313.pyc
-|   |       |   |           ul4.cpython-313.pyc
-|   |       |   |           unicon.cpython-313.pyc
-|   |       |   |           urbi.cpython-313.pyc
-|   |       |   |           usd.cpython-313.pyc
-|   |       |   |           varnish.cpython-313.pyc
-|   |       |   |           verification.cpython-313.pyc
-|   |       |   |           verifpal.cpython-313.pyc
-|   |       |   |           vip.cpython-313.pyc
-|   |       |   |           vyper.cpython-313.pyc
-|   |       |   |           web.cpython-313.pyc
-|   |       |   |           webassembly.cpython-313.pyc
-|   |       |   |           webidl.cpython-313.pyc
-|   |       |   |           webmisc.cpython-313.pyc
-|   |       |   |           wgsl.cpython-313.pyc
-|   |       |   |           whiley.cpython-313.pyc
-|   |       |   |           wowtoc.cpython-313.pyc
-|   |       |   |           wren.cpython-313.pyc
-|   |       |   |           x10.cpython-313.pyc
-|   |       |   |           xorg.cpython-313.pyc
-|   |       |   |           yang.cpython-313.pyc
-|   |       |   |           yara.cpython-313.pyc
-|   |       |   |           zig.cpython-313.pyc
-|   |       |   |           _ada_builtins.cpython-313.pyc
-|   |       |   |           _asy_builtins.cpython-313.pyc
-|   |       |   |           _cl_builtins.cpython-313.pyc
-|   |       |   |           _cocoa_builtins.cpython-313.pyc
-|   |       |   |           _csound_builtins.cpython-313.pyc
-|   |       |   |           _css_builtins.cpython-313.pyc
-|   |       |   |           _googlesql_builtins.cpython-313.pyc
-|   |       |   |           _julia_builtins.cpython-313.pyc
-|   |       |   |           _lasso_builtins.cpython-313.pyc
-|   |       |   |           _lilypond_builtins.cpython-313.pyc
-|   |       |   |           _luau_builtins.cpython-313.pyc
-|   |       |   |           _lua_builtins.cpython-313.pyc
-|   |       |   |           _mapping.cpython-313.pyc
-|   |       |   |           _mql_builtins.cpython-313.pyc
-|   |       |   |           _mysql_builtins.cpython-313.pyc
-|   |       |   |           _openedge_builtins.cpython-313.pyc
-|   |       |   |           _php_builtins.cpython-313.pyc
-|   |       |   |           _postgres_builtins.cpython-313.pyc
-|   |       |   |           _qlik_builtins.cpython-313.pyc
-|   |       |   |           _scheme_builtins.cpython-313.pyc
-|   |       |   |           _scilab_builtins.cpython-313.pyc
-|   |       |   |           _sourcemod_builtins.cpython-313.pyc
-|   |       |   |           _sql_builtins.cpython-313.pyc
-|   |       |   |           _stan_builtins.cpython-313.pyc
-|   |       |   |           _stata_builtins.cpython-313.pyc
-|   |       |   |           _tsql_builtins.cpython-313.pyc
-|   |       |   |           _usd_builtins.cpython-313.pyc
-|   |       |   |           _vbscript_builtins.cpython-313.pyc
-|   |       |   |           _vim_builtins.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---styles
-|   |       |   |   |   abap.py
-|   |       |   |   |   algol.py
-|   |       |   |   |   algol_nu.py
-|   |       |   |   |   arduino.py
-|   |       |   |   |   autumn.py
-|   |       |   |   |   borland.py
-|   |       |   |   |   bw.py
-|   |       |   |   |   coffee.py
-|   |       |   |   |   colorful.py
-|   |       |   |   |   default.py
-|   |       |   |   |   dracula.py
-|   |       |   |   |   emacs.py
-|   |       |   |   |   friendly.py
-|   |       |   |   |   friendly_grayscale.py
-|   |       |   |   |   fruity.py
-|   |       |   |   |   gh_dark.py
-|   |       |   |   |   gruvbox.py
-|   |       |   |   |   igor.py
-|   |       |   |   |   inkpot.py
-|   |       |   |   |   lightbulb.py
-|   |       |   |   |   lilypond.py
-|   |       |   |   |   lovelace.py
-|   |       |   |   |   manni.py
-|   |       |   |   |   material.py
-|   |       |   |   |   monokai.py
-|   |       |   |   |   murphy.py
-|   |       |   |   |   native.py
-|   |       |   |   |   nord.py
-|   |       |   |   |   onedark.py
-|   |       |   |   |   paraiso_dark.py
-|   |       |   |   |   paraiso_light.py
-|   |       |   |   |   pastie.py
-|   |       |   |   |   perldoc.py
-|   |       |   |   |   rainbow_dash.py
-|   |       |   |   |   rrt.py
-|   |       |   |   |   sas.py
-|   |       |   |   |   solarized.py
-|   |       |   |   |   staroffice.py
-|   |       |   |   |   stata_dark.py
-|   |       |   |   |   stata_light.py
-|   |       |   |   |   tango.py
-|   |       |   |   |   trac.py
-|   |       |   |   |   vim.py
-|   |       |   |   |   vs.py
-|   |       |   |   |   xcode.py
-|   |       |   |   |   zenburn.py
-|   |       |   |   |   _mapping.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           abap.cpython-313.pyc
-|   |       |   |           algol.cpython-313.pyc
-|   |       |   |           algol_nu.cpython-313.pyc
-|   |       |   |           arduino.cpython-313.pyc
-|   |       |   |           autumn.cpython-313.pyc
-|   |       |   |           borland.cpython-313.pyc
-|   |       |   |           bw.cpython-313.pyc
-|   |       |   |           coffee.cpython-313.pyc
-|   |       |   |           colorful.cpython-313.pyc
-|   |       |   |           default.cpython-313.pyc
-|   |       |   |           dracula.cpython-313.pyc
-|   |       |   |           emacs.cpython-313.pyc
-|   |       |   |           friendly.cpython-313.pyc
-|   |       |   |           friendly_grayscale.cpython-313.pyc
-|   |       |   |           fruity.cpython-313.pyc
-|   |       |   |           gh_dark.cpython-313.pyc
-|   |       |   |           gruvbox.cpython-313.pyc
-|   |       |   |           igor.cpython-313.pyc
-|   |       |   |           inkpot.cpython-313.pyc
-|   |       |   |           lightbulb.cpython-313.pyc
-|   |       |   |           lilypond.cpython-313.pyc
-|   |       |   |           lovelace.cpython-313.pyc
-|   |       |   |           manni.cpython-313.pyc
-|   |       |   |           material.cpython-313.pyc
-|   |       |   |           monokai.cpython-313.pyc
-|   |       |   |           murphy.cpython-313.pyc
-|   |       |   |           native.cpython-313.pyc
-|   |       |   |           nord.cpython-313.pyc
-|   |       |   |           onedark.cpython-313.pyc
-|   |       |   |           paraiso_dark.cpython-313.pyc
-|   |       |   |           paraiso_light.cpython-313.pyc
-|   |       |   |           pastie.cpython-313.pyc
-|   |       |   |           perldoc.cpython-313.pyc
-|   |       |   |           rainbow_dash.cpython-313.pyc
-|   |       |   |           rrt.cpython-313.pyc
-|   |       |   |           sas.cpython-313.pyc
-|   |       |   |           solarized.cpython-313.pyc
-|   |       |   |           staroffice.cpython-313.pyc
-|   |       |   |           stata_dark.cpython-313.pyc
-|   |       |   |           stata_light.cpython-313.pyc
-|   |       |   |           tango.cpython-313.pyc
-|   |       |   |           trac.cpython-313.pyc
-|   |       |   |           vim.cpython-313.pyc
-|   |       |   |           vs.cpython-313.pyc
-|   |       |   |           xcode.cpython-313.pyc
-|   |       |   |           zenburn.cpython-313.pyc
-|   |       |   |           _mapping.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           cmdline.cpython-313.pyc
-|   |       |           console.cpython-313.pyc
-|   |       |           filter.cpython-313.pyc
-|   |       |           formatter.cpython-313.pyc
-|   |       |           lexer.cpython-313.pyc
-|   |       |           modeline.cpython-313.pyc
-|   |       |           plugin.cpython-313.pyc
-|   |       |           regexopt.cpython-313.pyc
-|   |       |           scanner.cpython-313.pyc
-|   |       |           sphinxext.cpython-313.pyc
-|   |       |           style.cpython-313.pyc
-|   |       |           token.cpython-313.pyc
-|   |       |           unistring.cpython-313.pyc
-|   |       |           util.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           __main__.cpython-313.pyc
-|   |       |           
-|   |       +---pygments-2.19.2.dist-info
-|   |       |   |   entry_points.txt
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           AUTHORS
-|   |       |           LICENSE
-|   |       |           
-|   |       +---PyInstaller
-|   |       |   |   compat.py
-|   |       |   |   config.py
-|   |       |   |   configure.py
-|   |       |   |   exceptions.py
-|   |       |   |   log.py
-|   |       |   |   _recursion_too_deep_message.py
-|   |       |   |   _shared_with_waf.py
-|   |       |   |   __init__.py
-|   |       |   |   __main__.py
-|   |       |   |   
-|   |       |   +---archive
-|   |       |   |   |   pyz_crypto.py
-|   |       |   |   |   readers.py
-|   |       |   |   |   writers.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           pyz_crypto.cpython-313.pyc
-|   |       |   |           readers.cpython-313.pyc
-|   |       |   |           writers.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---bootloader
-|   |       |   |   +---images
-|   |       |   |   |       icon-console.ico
-|   |       |   |   |       icon-windowed.ico
-|   |       |   |   |       
-|   |       |   |   \---Windows-64bit-intel
-|   |       |   |           run.exe
-|   |       |   |           runw.exe
-|   |       |   |           runw_d.exe
-|   |       |   |           run_d.exe
-|   |       |   |           
-|   |       |   +---building
-|   |       |   |   |   api.py
-|   |       |   |   |   build_main.py
-|   |       |   |   |   datastruct.py
-|   |       |   |   |   icon.py
-|   |       |   |   |   makespec.py
-|   |       |   |   |   osx.py
-|   |       |   |   |   splash.py
-|   |       |   |   |   splash_templates.py
-|   |       |   |   |   templates.py
-|   |       |   |   |   utils.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           api.cpython-313.pyc
-|   |       |   |           build_main.cpython-313.pyc
-|   |       |   |           datastruct.cpython-313.pyc
-|   |       |   |           icon.cpython-313.pyc
-|   |       |   |           makespec.cpython-313.pyc
-|   |       |   |           osx.cpython-313.pyc
-|   |       |   |           splash.cpython-313.pyc
-|   |       |   |           splash_templates.cpython-313.pyc
-|   |       |   |           templates.cpython-313.pyc
-|   |       |   |           utils.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---depend
-|   |       |   |   |   analysis.py
-|   |       |   |   |   bindepend.py
-|   |       |   |   |   bytecode.py
-|   |       |   |   |   dylib.py
-|   |       |   |   |   imphook.py
-|   |       |   |   |   imphookapi.py
-|   |       |   |   |   utils.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           analysis.cpython-313.pyc
-|   |       |   |           bindepend.cpython-313.pyc
-|   |       |   |           bytecode.cpython-313.pyc
-|   |       |   |           dylib.cpython-313.pyc
-|   |       |   |           imphook.cpython-313.pyc
-|   |       |   |           imphookapi.cpython-313.pyc
-|   |       |   |           utils.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---fake-modules
-|   |       |   |   |   pyi_splash.py
-|   |       |   |   |   
-|   |       |   |   +---_pyi_rth_utils
-|   |       |   |   |   |   qt.py
-|   |       |   |   |   |   tempfile.py
-|   |       |   |   |   |   _win32.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           qt.cpython-313.pyc
-|   |       |   |   |           tempfile.cpython-313.pyc
-|   |       |   |   |           _win32.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           pyi_splash.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---hooks
-|   |       |   |   |   hook-babel.py
-|   |       |   |   |   hook-difflib.py
-|   |       |   |   |   hook-distutils.command.check.py
-|   |       |   |   |   hook-distutils.py
-|   |       |   |   |   hook-distutils.util.py
-|   |       |   |   |   hook-django.contrib.sessions.py
-|   |       |   |   |   hook-django.core.cache.py
-|   |       |   |   |   hook-django.core.mail.py
-|   |       |   |   |   hook-django.core.management.py
-|   |       |   |   |   hook-django.db.backends.mysql.base.py
-|   |       |   |   |   hook-django.db.backends.oracle.base.py
-|   |       |   |   |   hook-django.db.backends.py
-|   |       |   |   |   hook-django.py
-|   |       |   |   |   hook-django.template.loaders.py
-|   |       |   |   |   hook-encodings.py
-|   |       |   |   |   hook-gevent.py
-|   |       |   |   |   hook-gi.py
-|   |       |   |   |   hook-gi.repository.Adw.py
-|   |       |   |   |   hook-gi.repository.AppIndicator3.py
-|   |       |   |   |   hook-gi.repository.Atk.py
-|   |       |   |   |   hook-gi.repository.AyatanaAppIndicator3.py
-|   |       |   |   |   hook-gi.repository.cairo.py
-|   |       |   |   |   hook-gi.repository.Champlain.py
-|   |       |   |   |   hook-gi.repository.Clutter.py
-|   |       |   |   |   hook-gi.repository.DBus.py
-|   |       |   |   |   hook-gi.repository.freetype2.py
-|   |       |   |   |   hook-gi.repository.Gdk.py
-|   |       |   |   |   hook-gi.repository.GdkPixbuf.py
-|   |       |   |   |   hook-gi.repository.Gio.py
-|   |       |   |   |   hook-gi.repository.GIRepository.py
-|   |       |   |   |   hook-gi.repository.GLib.py
-|   |       |   |   |   hook-gi.repository.GModule.py
-|   |       |   |   |   hook-gi.repository.GObject.py
-|   |       |   |   |   hook-gi.repository.Graphene.py
-|   |       |   |   |   hook-gi.repository.Gsk.py
-|   |       |   |   |   hook-gi.repository.Gst.py
-|   |       |   |   |   hook-gi.repository.GstAllocators.py
-|   |       |   |   |   hook-gi.repository.GstApp.py
-|   |       |   |   |   hook-gi.repository.GstAudio.py
-|   |       |   |   |   hook-gi.repository.GstBadAudio.py
-|   |       |   |   |   hook-gi.repository.GstBase.py
-|   |       |   |   |   hook-gi.repository.GstCheck.py
-|   |       |   |   |   hook-gi.repository.GstCodecs.py
-|   |       |   |   |   hook-gi.repository.GstController.py
-|   |       |   |   |   hook-gi.repository.GstGL.py
-|   |       |   |   |   hook-gi.repository.GstGLEGL.py
-|   |       |   |   |   hook-gi.repository.GstGLWayland.py
-|   |       |   |   |   hook-gi.repository.GstGLX11.py
-|   |       |   |   |   hook-gi.repository.GstInsertBin.py
-|   |       |   |   |   hook-gi.repository.GstMpegts.py
-|   |       |   |   |   hook-gi.repository.GstNet.py
-|   |       |   |   |   hook-gi.repository.GstPbutils.py
-|   |       |   |   |   hook-gi.repository.GstPlay.py
-|   |       |   |   |   hook-gi.repository.GstPlayer.py
-|   |       |   |   |   hook-gi.repository.GstRtp.py
-|   |       |   |   |   hook-gi.repository.GstRtsp.py
-|   |       |   |   |   hook-gi.repository.GstRtspServer.py
-|   |       |   |   |   hook-gi.repository.GstSdp.py
-|   |       |   |   |   hook-gi.repository.GstTag.py
-|   |       |   |   |   hook-gi.repository.GstTranscoder.py
-|   |       |   |   |   hook-gi.repository.GstVideo.py
-|   |       |   |   |   hook-gi.repository.GstVulkan.py
-|   |       |   |   |   hook-gi.repository.GstVulkanWayland.py
-|   |       |   |   |   hook-gi.repository.GstVulkanXCB.py
-|   |       |   |   |   hook-gi.repository.GstWebRTC.py
-|   |       |   |   |   hook-gi.repository.Gtk.py
-|   |       |   |   |   hook-gi.repository.GtkChamplain.py
-|   |       |   |   |   hook-gi.repository.GtkClutter.py
-|   |       |   |   |   hook-gi.repository.GtkosxApplication.py
-|   |       |   |   |   hook-gi.repository.GtkSource.py
-|   |       |   |   |   hook-gi.repository.HarfBuzz.py
-|   |       |   |   |   hook-gi.repository.OsmGpsMap.py
-|   |       |   |   |   hook-gi.repository.Pango.py
-|   |       |   |   |   hook-gi.repository.PangoCairo.py
-|   |       |   |   |   hook-gi.repository.Rsvg.py
-|   |       |   |   |   hook-gi.repository.xlib.py
-|   |       |   |   |   hook-heapq.py
-|   |       |   |   |   hook-idlelib.py
-|   |       |   |   |   hook-importlib_metadata.py
-|   |       |   |   |   hook-importlib_resources.py
-|   |       |   |   |   hook-keyring.py
-|   |       |   |   |   hook-kivy.py
-|   |       |   |   |   hook-lib2to3.py
-|   |       |   |   |   hook-matplotlib.backends.backend_qtagg.py
-|   |       |   |   |   hook-matplotlib.backends.backend_qtcairo.py
-|   |       |   |   |   hook-matplotlib.backends.py
-|   |       |   |   |   hook-matplotlib.backends.qt_compat.py
-|   |       |   |   |   hook-matplotlib.backend_bases.py
-|   |       |   |   |   hook-matplotlib.numerix.py
-|   |       |   |   |   hook-matplotlib.py
-|   |       |   |   |   hook-matplotlib.pyplot.py
-|   |       |   |   |   hook-multiprocessing.util.py
-|   |       |   |   |   hook-numpy.py
-|   |       |   |   |   hook-pandas.io.clipboard.py
-|   |       |   |   |   hook-pandas.io.formats.style.py
-|   |       |   |   |   hook-pandas.plotting.py
-|   |       |   |   |   hook-pandas.py
-|   |       |   |   |   hook-pickle.py
-|   |       |   |   |   hook-PIL.Image.py
-|   |       |   |   |   hook-PIL.ImageFilter.py
-|   |       |   |   |   hook-PIL.py
-|   |       |   |   |   hook-PIL.SpiderImagePlugin.py
-|   |       |   |   |   hook-pkg_resources.py
-|   |       |   |   |   hook-platform.py
-|   |       |   |   |   hook-pygments.py
-|   |       |   |   |   hook-PyQt5.py
-|   |       |   |   |   hook-PyQt5.QAxContainer.py
-|   |       |   |   |   hook-PyQt5.Qsci.py
-|   |       |   |   |   hook-PyQt5.Qt.py
-|   |       |   |   |   hook-PyQt5.Qt3DAnimation.py
-|   |       |   |   |   hook-PyQt5.Qt3DCore.py
-|   |       |   |   |   hook-PyQt5.Qt3DExtras.py
-|   |       |   |   |   hook-PyQt5.Qt3DInput.py
-|   |       |   |   |   hook-PyQt5.Qt3DLogic.py
-|   |       |   |   |   hook-PyQt5.Qt3DRender.py
-|   |       |   |   |   hook-PyQt5.QtBluetooth.py
-|   |       |   |   |   hook-PyQt5.QtChart.py
-|   |       |   |   |   hook-PyQt5.QtCore.py
-|   |       |   |   |   hook-PyQt5.QtDataVisualization.py
-|   |       |   |   |   hook-PyQt5.QtDBus.py
-|   |       |   |   |   hook-PyQt5.QtDesigner.py
-|   |       |   |   |   hook-PyQt5.QtGui.py
-|   |       |   |   |   hook-PyQt5.QtHelp.py
-|   |       |   |   |   hook-PyQt5.QtLocation.py
-|   |       |   |   |   hook-PyQt5.QtMacExtras.py
-|   |       |   |   |   hook-PyQt5.QtMultimedia.py
-|   |       |   |   |   hook-PyQt5.QtMultimediaWidgets.py
-|   |       |   |   |   hook-PyQt5.QtNetwork.py
-|   |       |   |   |   hook-PyQt5.QtNetworkAuth.py
-|   |       |   |   |   hook-PyQt5.QtNfc.py
-|   |       |   |   |   hook-PyQt5.QtOpenGL.py
-|   |       |   |   |   hook-PyQt5.QtPositioning.py
-|   |       |   |   |   hook-PyQt5.QtPrintSupport.py
-|   |       |   |   |   hook-PyQt5.QtPurchasing.py
-|   |       |   |   |   hook-PyQt5.QtQml.py
-|   |       |   |   |   hook-PyQt5.QtQuick.py
-|   |       |   |   |   hook-PyQt5.QtQuick3D.py
-|   |       |   |   |   hook-PyQt5.QtQuickWidgets.py
-|   |       |   |   |   hook-PyQt5.QtRemoteObjects.py
-|   |       |   |   |   hook-PyQt5.QtScript.py
-|   |       |   |   |   hook-PyQt5.QtSensors.py
-|   |       |   |   |   hook-PyQt5.QtSerialPort.py
-|   |       |   |   |   hook-PyQt5.QtSql.py
-|   |       |   |   |   hook-PyQt5.QtSvg.py
-|   |       |   |   |   hook-PyQt5.QtTest.py
-|   |       |   |   |   hook-PyQt5.QtTextToSpeech.py
-|   |       |   |   |   hook-PyQt5.QtWebChannel.py
-|   |       |   |   |   hook-PyQt5.QtWebEngine.py
-|   |       |   |   |   hook-PyQt5.QtWebEngineCore.py
-|   |       |   |   |   hook-PyQt5.QtWebEngineWidgets.py
-|   |       |   |   |   hook-PyQt5.QtWebKit.py
-|   |       |   |   |   hook-PyQt5.QtWebKitWidgets.py
-|   |       |   |   |   hook-PyQt5.QtWebSockets.py
-|   |       |   |   |   hook-PyQt5.QtWidgets.py
-|   |       |   |   |   hook-PyQt5.QtWinExtras.py
-|   |       |   |   |   hook-PyQt5.QtX11Extras.py
-|   |       |   |   |   hook-PyQt5.QtXml.py
-|   |       |   |   |   hook-PyQt5.QtXmlPatterns.py
-|   |       |   |   |   hook-PyQt5.uic.py
-|   |       |   |   |   hook-PyQt6.py
-|   |       |   |   |   hook-PyQt6.QAxContainer.py
-|   |       |   |   |   hook-PyQt6.Qsci.py
-|   |       |   |   |   hook-PyQt6.Qt3DAnimation.py
-|   |       |   |   |   hook-PyQt6.Qt3DCore.py
-|   |       |   |   |   hook-PyQt6.Qt3DExtras.py
-|   |       |   |   |   hook-PyQt6.Qt3DInput.py
-|   |       |   |   |   hook-PyQt6.Qt3DLogic.py
-|   |       |   |   |   hook-PyQt6.Qt3DRender.py
-|   |       |   |   |   hook-PyQt6.QtBluetooth.py
-|   |       |   |   |   hook-PyQt6.QtCharts.py
-|   |       |   |   |   hook-PyQt6.QtCore.py
-|   |       |   |   |   hook-PyQt6.QtDataVisualization.py
-|   |       |   |   |   hook-PyQt6.QtDBus.py
-|   |       |   |   |   hook-PyQt6.QtDesigner.py
-|   |       |   |   |   hook-PyQt6.QtGraphs.py
-|   |       |   |   |   hook-PyQt6.QtGraphsWidgets.py
-|   |       |   |   |   hook-PyQt6.QtGui.py
-|   |       |   |   |   hook-PyQt6.QtHelp.py
-|   |       |   |   |   hook-PyQt6.QtMultimedia.py
-|   |       |   |   |   hook-PyQt6.QtMultimediaWidgets.py
-|   |       |   |   |   hook-PyQt6.QtNetwork.py
-|   |       |   |   |   hook-PyQt6.QtNetworkAuth.py
-|   |       |   |   |   hook-PyQt6.QtNfc.py
-|   |       |   |   |   hook-PyQt6.QtOpenGL.py
-|   |       |   |   |   hook-PyQt6.QtOpenGLWidgets.py
-|   |       |   |   |   hook-PyQt6.QtPdf.py
-|   |       |   |   |   hook-PyQt6.QtPdfWidgets.py
-|   |       |   |   |   hook-PyQt6.QtPositioning.py
-|   |       |   |   |   hook-PyQt6.QtPrintSupport.py
-|   |       |   |   |   hook-PyQt6.QtQml.py
-|   |       |   |   |   hook-PyQt6.QtQuick.py
-|   |       |   |   |   hook-PyQt6.QtQuick3D.py
-|   |       |   |   |   hook-PyQt6.QtQuickWidgets.py
-|   |       |   |   |   hook-PyQt6.QtRemoteObjects.py
-|   |       |   |   |   hook-PyQt6.QtSensors.py
-|   |       |   |   |   hook-PyQt6.QtSerialPort.py
-|   |       |   |   |   hook-PyQt6.QtSpatialAudio.py
-|   |       |   |   |   hook-PyQt6.QtSql.py
-|   |       |   |   |   hook-PyQt6.QtStateMachine.py
-|   |       |   |   |   hook-PyQt6.QtSvg.py
-|   |       |   |   |   hook-PyQt6.QtSvgWidgets.py
-|   |       |   |   |   hook-PyQt6.QtTest.py
-|   |       |   |   |   hook-PyQt6.QtTextToSpeech.py
-|   |       |   |   |   hook-PyQt6.QtWebChannel.py
-|   |       |   |   |   hook-PyQt6.QtWebEngineCore.py
-|   |       |   |   |   hook-PyQt6.QtWebEngineQuick.py
-|   |       |   |   |   hook-PyQt6.QtWebEngineWidgets.py
-|   |       |   |   |   hook-PyQt6.QtWebSockets.py
-|   |       |   |   |   hook-PyQt6.QtWidgets.py
-|   |       |   |   |   hook-PyQt6.QtXml.py
-|   |       |   |   |   hook-PyQt6.uic.py
-|   |       |   |   |   hook-PySide2.py
-|   |       |   |   |   hook-PySide2.Qt3DAnimation.py
-|   |       |   |   |   hook-PySide2.Qt3DCore.py
-|   |       |   |   |   hook-PySide2.Qt3DExtras.py
-|   |       |   |   |   hook-PySide2.Qt3DInput.py
-|   |       |   |   |   hook-PySide2.Qt3DLogic.py
-|   |       |   |   |   hook-PySide2.Qt3DRender.py
-|   |       |   |   |   hook-PySide2.QtAxContainer.py
-|   |       |   |   |   hook-PySide2.QtCharts.py
-|   |       |   |   |   hook-PySide2.QtConcurrent.py
-|   |       |   |   |   hook-PySide2.QtCore.py
-|   |       |   |   |   hook-PySide2.QtDataVisualization.py
-|   |       |   |   |   hook-PySide2.QtGui.py
-|   |       |   |   |   hook-PySide2.QtHelp.py
-|   |       |   |   |   hook-PySide2.QtLocation.py
-|   |       |   |   |   hook-PySide2.QtMacExtras.py
-|   |       |   |   |   hook-PySide2.QtMultimedia.py
-|   |       |   |   |   hook-PySide2.QtMultimediaWidgets.py
-|   |       |   |   |   hook-PySide2.QtNetwork.py
-|   |       |   |   |   hook-PySide2.QtOpenGL.py
-|   |       |   |   |   hook-PySide2.QtOpenGLFunctions.py
-|   |       |   |   |   hook-PySide2.QtPositioning.py
-|   |       |   |   |   hook-PySide2.QtPrintSupport.py
-|   |       |   |   |   hook-PySide2.QtQml.py
-|   |       |   |   |   hook-PySide2.QtQuick.py
-|   |       |   |   |   hook-PySide2.QtQuickControls2.py
-|   |       |   |   |   hook-PySide2.QtQuickWidgets.py
-|   |       |   |   |   hook-PySide2.QtRemoteObjects.py
-|   |       |   |   |   hook-PySide2.QtScript.py
-|   |       |   |   |   hook-PySide2.QtScriptTools.py
-|   |       |   |   |   hook-PySide2.QtScxml.py
-|   |       |   |   |   hook-PySide2.QtSensors.py
-|   |       |   |   |   hook-PySide2.QtSerialPort.py
-|   |       |   |   |   hook-PySide2.QtSql.py
-|   |       |   |   |   hook-PySide2.QtSvg.py
-|   |       |   |   |   hook-PySide2.QtTest.py
-|   |       |   |   |   hook-PySide2.QtTextToSpeech.py
-|   |       |   |   |   hook-PySide2.QtUiTools.py
-|   |       |   |   |   hook-PySide2.QtWebChannel.py
-|   |       |   |   |   hook-PySide2.QtWebEngine.py
-|   |       |   |   |   hook-PySide2.QtWebEngineCore.py
-|   |       |   |   |   hook-PySide2.QtWebEngineWidgets.py
-|   |       |   |   |   hook-PySide2.QtWebKit.py
-|   |       |   |   |   hook-PySide2.QtWebKitWidgets.py
-|   |       |   |   |   hook-PySide2.QtWebSockets.py
-|   |       |   |   |   hook-PySide2.QtWidgets.py
-|   |       |   |   |   hook-PySide2.QtWinExtras.py
-|   |       |   |   |   hook-PySide2.QtX11Extras.py
-|   |       |   |   |   hook-PySide2.QtXml.py
-|   |       |   |   |   hook-PySide2.QtXmlPatterns.py
-|   |       |   |   |   hook-PySide2.Qwt5.py
-|   |       |   |   |   hook-PySide6.py
-|   |       |   |   |   hook-PySide6.Qt3DAnimation.py
-|   |       |   |   |   hook-PySide6.Qt3DCore.py
-|   |       |   |   |   hook-PySide6.Qt3DExtras.py
-|   |       |   |   |   hook-PySide6.Qt3DInput.py
-|   |       |   |   |   hook-PySide6.Qt3DLogic.py
-|   |       |   |   |   hook-PySide6.Qt3DRender.py
-|   |       |   |   |   hook-PySide6.QtAxContainer.py
-|   |       |   |   |   hook-PySide6.QtBluetooth.py
-|   |       |   |   |   hook-PySide6.QtCharts.py
-|   |       |   |   |   hook-PySide6.QtConcurrent.py
-|   |       |   |   |   hook-PySide6.QtCore.py
-|   |       |   |   |   hook-PySide6.QtDataVisualization.py
-|   |       |   |   |   hook-PySide6.QtDBus.py
-|   |       |   |   |   hook-PySide6.QtDesigner.py
-|   |       |   |   |   hook-PySide6.QtGraphs.py
-|   |       |   |   |   hook-PySide6.QtGraphsWidgets.py
-|   |       |   |   |   hook-PySide6.QtGui.py
-|   |       |   |   |   hook-PySide6.QtHelp.py
-|   |       |   |   |   hook-PySide6.QtHttpServer.py
-|   |       |   |   |   hook-PySide6.QtLocation.py
-|   |       |   |   |   hook-PySide6.QtMultimedia.py
-|   |       |   |   |   hook-PySide6.QtMultimediaWidgets.py
-|   |       |   |   |   hook-PySide6.QtNetwork.py
-|   |       |   |   |   hook-PySide6.QtNetworkAuth.py
-|   |       |   |   |   hook-PySide6.QtNfc.py
-|   |       |   |   |   hook-PySide6.QtOpenGL.py
-|   |       |   |   |   hook-PySide6.QtOpenGLWidgets.py
-|   |       |   |   |   hook-PySide6.QtPdf.py
-|   |       |   |   |   hook-PySide6.QtPdfWidgets.py
-|   |       |   |   |   hook-PySide6.QtPositioning.py
-|   |       |   |   |   hook-PySide6.QtPrintSupport.py
-|   |       |   |   |   hook-PySide6.QtQml.py
-|   |       |   |   |   hook-PySide6.QtQuick.py
-|   |       |   |   |   hook-PySide6.QtQuick3D.py
-|   |       |   |   |   hook-PySide6.QtQuickControls2.py
-|   |       |   |   |   hook-PySide6.QtQuickWidgets.py
-|   |       |   |   |   hook-PySide6.QtRemoteObjects.py
-|   |       |   |   |   hook-PySide6.QtScxml.py
-|   |       |   |   |   hook-PySide6.QtSensors.py
-|   |       |   |   |   hook-PySide6.QtSerialBus.py
-|   |       |   |   |   hook-PySide6.QtSerialPort.py
-|   |       |   |   |   hook-PySide6.QtSpatialAudio.py
-|   |       |   |   |   hook-PySide6.QtSql.py
-|   |       |   |   |   hook-PySide6.QtStateMachine.py
-|   |       |   |   |   hook-PySide6.QtSvg.py
-|   |       |   |   |   hook-PySide6.QtSvgWidgets.py
-|   |       |   |   |   hook-PySide6.QtTest.py
-|   |       |   |   |   hook-PySide6.QtTextToSpeech.py
-|   |       |   |   |   hook-PySide6.QtUiTools.py
-|   |       |   |   |   hook-PySide6.QtWebChannel.py
-|   |       |   |   |   hook-PySide6.QtWebEngineCore.py
-|   |       |   |   |   hook-PySide6.QtWebEngineQuick.py
-|   |       |   |   |   hook-PySide6.QtWebEngineWidgets.py
-|   |       |   |   |   hook-PySide6.QtWebSockets.py
-|   |       |   |   |   hook-PySide6.QtWidgets.py
-|   |       |   |   |   hook-PySide6.QtXml.py
-|   |       |   |   |   hook-pytz.py
-|   |       |   |   |   hook-pytzdata.py
-|   |       |   |   |   hook-qtawesome.py
-|   |       |   |   |   hook-qtpy.py
-|   |       |   |   |   hook-scapy.layers.all.py
-|   |       |   |   |   hook-scipy.io.matlab.py
-|   |       |   |   |   hook-scipy.linalg.py
-|   |       |   |   |   hook-scipy.py
-|   |       |   |   |   hook-scipy.sparse.csgraph.py
-|   |       |   |   |   hook-scipy.spatial.transform.rotation.py
-|   |       |   |   |   hook-scipy.spatial._ckdtree.py
-|   |       |   |   |   hook-scipy.special._ellip_harm_2.py
-|   |       |   |   |   hook-scipy.special._ufuncs.py
-|   |       |   |   |   hook-scipy.stats._stats.py
-|   |       |   |   |   hook-scrapy.py
-|   |       |   |   |   hook-setuptools.py
-|   |       |   |   |   hook-setuptools._vendor.importlib_metadata.py
-|   |       |   |   |   hook-setuptools._vendor.jaraco.text.py
-|   |       |   |   |   hook-shelve.py
-|   |       |   |   |   hook-shiboken6.py
-|   |       |   |   |   hook-sphinx.py
-|   |       |   |   |   hook-sqlalchemy.py
-|   |       |   |   |   hook-sqlite3.py
-|   |       |   |   |   hook-sysconfig.py
-|   |       |   |   |   hook-wcwidth.py
-|   |       |   |   |   hook-win32ctypes.core.py
-|   |       |   |   |   hook-xml.dom.domreg.py
-|   |       |   |   |   hook-xml.etree.cElementTree.py
-|   |       |   |   |   hook-xml.py
-|   |       |   |   |   hook-zope.interface.py
-|   |       |   |   |   hook-_ctypes.py
-|   |       |   |   |   hook-_osx_support.py
-|   |       |   |   |   hook-_pyi_rth_utils.py
-|   |       |   |   |   hook-_tkinter.py
-|   |       |   |   |   rthooks.dat
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---pre_find_module_path
-|   |       |   |   |   |   hook-distutils.py
-|   |       |   |   |   |   hook-pyi_splash.py
-|   |       |   |   |   |   hook-PyQt5.uic.port_v2.py
-|   |       |   |   |   |   hook-tkinter.py
-|   |       |   |   |   |   hook-_pyi_rth_utils.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           hook-distutils.cpython-313.pyc
-|   |       |   |   |           hook-pyi_splash.cpython-313.pyc
-|   |       |   |   |           hook-PyQt5.uic.port_v2.cpython-313.pyc
-|   |       |   |   |           hook-tkinter.cpython-313.pyc
-|   |       |   |   |           hook-_pyi_rth_utils.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---pre_safe_import_module
-|   |       |   |   |   |   hook-autocommand.py
-|   |       |   |   |   |   hook-backports.py
-|   |       |   |   |   |   hook-backports.tarfile.py
-|   |       |   |   |   |   hook-distutils.py
-|   |       |   |   |   |   hook-gi.overrides.py
-|   |       |   |   |   |   hook-gi.py
-|   |       |   |   |   |   hook-gi.repository.Adw.py
-|   |       |   |   |   |   hook-gi.repository.AppIndicator3.py
-|   |       |   |   |   |   hook-gi.repository.Atk.py
-|   |       |   |   |   |   hook-gi.repository.AyatanaAppIndicator3.py
-|   |       |   |   |   |   hook-gi.repository.cairo.py
-|   |       |   |   |   |   hook-gi.repository.Champlain.py
-|   |       |   |   |   |   hook-gi.repository.Clutter.py
-|   |       |   |   |   |   hook-gi.repository.DBus.py
-|   |       |   |   |   |   hook-gi.repository.freetype2.py
-|   |       |   |   |   |   hook-gi.repository.Gdk.py
-|   |       |   |   |   |   hook-gi.repository.GdkPixbuf.py
-|   |       |   |   |   |   hook-gi.repository.Gio.py
-|   |       |   |   |   |   hook-gi.repository.GIRepository.py
-|   |       |   |   |   |   hook-gi.repository.GLib.py
-|   |       |   |   |   |   hook-gi.repository.GModule.py
-|   |       |   |   |   |   hook-gi.repository.GObject.py
-|   |       |   |   |   |   hook-gi.repository.Graphene.py
-|   |       |   |   |   |   hook-gi.repository.Gsk.py
-|   |       |   |   |   |   hook-gi.repository.Gst.py
-|   |       |   |   |   |   hook-gi.repository.GstAllocators.py
-|   |       |   |   |   |   hook-gi.repository.GstApp.py
-|   |       |   |   |   |   hook-gi.repository.GstAudio.py
-|   |       |   |   |   |   hook-gi.repository.GstBadAudio.py
-|   |       |   |   |   |   hook-gi.repository.GstBase.py
-|   |       |   |   |   |   hook-gi.repository.GstCheck.py
-|   |       |   |   |   |   hook-gi.repository.GstCodecs.py
-|   |       |   |   |   |   hook-gi.repository.GstController.py
-|   |       |   |   |   |   hook-gi.repository.GstGL.py
-|   |       |   |   |   |   hook-gi.repository.GstGLEGL.py
-|   |       |   |   |   |   hook-gi.repository.GstGLWayland.py
-|   |       |   |   |   |   hook-gi.repository.GstGLX11.py
-|   |       |   |   |   |   hook-gi.repository.GstInsertBin.py
-|   |       |   |   |   |   hook-gi.repository.GstMpegts.py
-|   |       |   |   |   |   hook-gi.repository.GstNet.py
-|   |       |   |   |   |   hook-gi.repository.GstPbutils.py
-|   |       |   |   |   |   hook-gi.repository.GstPlay.py
-|   |       |   |   |   |   hook-gi.repository.GstPlayer.py
-|   |       |   |   |   |   hook-gi.repository.GstRtp.py
-|   |       |   |   |   |   hook-gi.repository.GstRtsp.py
-|   |       |   |   |   |   hook-gi.repository.GstRtspServer.py
-|   |       |   |   |   |   hook-gi.repository.GstSdp.py
-|   |       |   |   |   |   hook-gi.repository.GstTag.py
-|   |       |   |   |   |   hook-gi.repository.GstTranscoder.py
-|   |       |   |   |   |   hook-gi.repository.GstVideo.py
-|   |       |   |   |   |   hook-gi.repository.GstVulkan.py
-|   |       |   |   |   |   hook-gi.repository.GstVulkanWayland.py
-|   |       |   |   |   |   hook-gi.repository.GstVulkanXCB.py
-|   |       |   |   |   |   hook-gi.repository.GstWebRTC.py
-|   |       |   |   |   |   hook-gi.repository.Gtk.py
-|   |       |   |   |   |   hook-gi.repository.GtkChamplain.py
-|   |       |   |   |   |   hook-gi.repository.GtkClutter.py
-|   |       |   |   |   |   hook-gi.repository.GtkosxApplication.py
-|   |       |   |   |   |   hook-gi.repository.GtkSource.py
-|   |       |   |   |   |   hook-gi.repository.HarfBuzz.py
-|   |       |   |   |   |   hook-gi.repository.OsmGpsMap.py
-|   |       |   |   |   |   hook-gi.repository.Pango.py
-|   |       |   |   |   |   hook-gi.repository.PangoCairo.py
-|   |       |   |   |   |   hook-gi.repository.Rsvg.py
-|   |       |   |   |   |   hook-gi.repository.xlib.py
-|   |       |   |   |   |   hook-importlib_metadata.py
-|   |       |   |   |   |   hook-importlib_resources.py
-|   |       |   |   |   |   hook-inflect.py
-|   |       |   |   |   |   hook-jaraco.context.py
-|   |       |   |   |   |   hook-jaraco.functools.py
-|   |       |   |   |   |   hook-jaraco.py
-|   |       |   |   |   |   hook-jaraco.text.py
-|   |       |   |   |   |   hook-more_itertools.py
-|   |       |   |   |   |   hook-ordered_set.py
-|   |       |   |   |   |   hook-packaging.py
-|   |       |   |   |   |   hook-platformdirs.py
-|   |       |   |   |   |   hook-setuptools.extern.six.moves.py
-|   |       |   |   |   |   hook-six.moves.py
-|   |       |   |   |   |   hook-tomli.py
-|   |       |   |   |   |   hook-typeguard.py
-|   |       |   |   |   |   hook-typing_extensions.py
-|   |       |   |   |   |   hook-urllib3.packages.six.moves.py
-|   |       |   |   |   |   hook-wheel.py
-|   |       |   |   |   |   hook-zipp.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           hook-autocommand.cpython-313.pyc
-|   |       |   |   |           hook-backports.cpython-313.pyc
-|   |       |   |   |           hook-backports.tarfile.cpython-313.pyc
-|   |       |   |   |           hook-distutils.cpython-313.pyc
-|   |       |   |   |           hook-gi.cpython-313.pyc
-|   |       |   |   |           hook-gi.overrides.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.Adw.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.AppIndicator3.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.Atk.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.AyatanaAppIndicator3.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.cairo.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.Champlain.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.Clutter.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.DBus.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.freetype2.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.Gdk.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GdkPixbuf.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.Gio.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GIRepository.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GLib.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GModule.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GObject.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.Graphene.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.Gsk.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.Gst.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstAllocators.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstApp.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstAudio.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstBadAudio.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstBase.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstCheck.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstCodecs.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstController.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstGL.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstGLEGL.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstGLWayland.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstGLX11.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstInsertBin.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstMpegts.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstNet.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstPbutils.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstPlay.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstPlayer.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstRtp.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstRtsp.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstRtspServer.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstSdp.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstTag.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstTranscoder.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstVideo.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstVulkan.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstVulkanWayland.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstVulkanXCB.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GstWebRTC.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.Gtk.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GtkChamplain.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GtkClutter.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GtkosxApplication.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.GtkSource.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.HarfBuzz.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.OsmGpsMap.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.Pango.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.PangoCairo.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.Rsvg.cpython-313.pyc
-|   |       |   |   |           hook-gi.repository.xlib.cpython-313.pyc
-|   |       |   |   |           hook-importlib_metadata.cpython-313.pyc
-|   |       |   |   |           hook-importlib_resources.cpython-313.pyc
-|   |       |   |   |           hook-inflect.cpython-313.pyc
-|   |       |   |   |           hook-jaraco.context.cpython-313.pyc
-|   |       |   |   |           hook-jaraco.cpython-313.pyc
-|   |       |   |   |           hook-jaraco.functools.cpython-313.pyc
-|   |       |   |   |           hook-jaraco.text.cpython-313.pyc
-|   |       |   |   |           hook-more_itertools.cpython-313.pyc
-|   |       |   |   |           hook-ordered_set.cpython-313.pyc
-|   |       |   |   |           hook-packaging.cpython-313.pyc
-|   |       |   |   |           hook-platformdirs.cpython-313.pyc
-|   |       |   |   |           hook-setuptools.extern.six.moves.cpython-313.pyc
-|   |       |   |   |           hook-six.moves.cpython-313.pyc
-|   |       |   |   |           hook-tomli.cpython-313.pyc
-|   |       |   |   |           hook-typeguard.cpython-313.pyc
-|   |       |   |   |           hook-typing_extensions.cpython-313.pyc
-|   |       |   |   |           hook-urllib3.packages.six.moves.cpython-313.pyc
-|   |       |   |   |           hook-wheel.cpython-313.pyc
-|   |       |   |   |           hook-zipp.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---rthooks
-|   |       |   |   |   |   pyi_rth_django.py
-|   |       |   |   |   |   pyi_rth_gdkpixbuf.py
-|   |       |   |   |   |   pyi_rth_gi.py
-|   |       |   |   |   |   pyi_rth_gio.py
-|   |       |   |   |   |   pyi_rth_glib.py
-|   |       |   |   |   |   pyi_rth_gstreamer.py
-|   |       |   |   |   |   pyi_rth_gtk.py
-|   |       |   |   |   |   pyi_rth_inspect.py
-|   |       |   |   |   |   pyi_rth_kivy.py
-|   |       |   |   |   |   pyi_rth_mplconfig.py
-|   |       |   |   |   |   pyi_rth_multiprocessing.py
-|   |       |   |   |   |   pyi_rth_pkgres.py
-|   |       |   |   |   |   pyi_rth_pkgutil.py
-|   |       |   |   |   |   pyi_rth_pyqt5.py
-|   |       |   |   |   |   pyi_rth_pyqt6.py
-|   |       |   |   |   |   pyi_rth_pyside2.py
-|   |       |   |   |   |   pyi_rth_pyside6.py
-|   |       |   |   |   |   pyi_rth_setuptools.py
-|   |       |   |   |   |   pyi_rth__tkinter.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           pyi_rth_django.cpython-313.pyc
-|   |       |   |   |           pyi_rth_gdkpixbuf.cpython-313.pyc
-|   |       |   |   |           pyi_rth_gi.cpython-313.pyc
-|   |       |   |   |           pyi_rth_gio.cpython-313.pyc
-|   |       |   |   |           pyi_rth_glib.cpython-313.pyc
-|   |       |   |   |           pyi_rth_gstreamer.cpython-313.pyc
-|   |       |   |   |           pyi_rth_gtk.cpython-313.pyc
-|   |       |   |   |           pyi_rth_inspect.cpython-313.pyc
-|   |       |   |   |           pyi_rth_kivy.cpython-313.pyc
-|   |       |   |   |           pyi_rth_mplconfig.cpython-313.pyc
-|   |       |   |   |           pyi_rth_multiprocessing.cpython-313.pyc
-|   |       |   |   |           pyi_rth_pkgres.cpython-313.pyc
-|   |       |   |   |           pyi_rth_pkgutil.cpython-313.pyc
-|   |       |   |   |           pyi_rth_pyqt5.cpython-313.pyc
-|   |       |   |   |           pyi_rth_pyqt6.cpython-313.pyc
-|   |       |   |   |           pyi_rth_pyside2.cpython-313.pyc
-|   |       |   |   |           pyi_rth_pyside6.cpython-313.pyc
-|   |       |   |   |           pyi_rth_setuptools.cpython-313.pyc
-|   |       |   |   |           pyi_rth__tkinter.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           hook-babel.cpython-313.pyc
-|   |       |   |           hook-difflib.cpython-313.pyc
-|   |       |   |           hook-distutils.command.check.cpython-313.pyc
-|   |       |   |           hook-distutils.cpython-313.pyc
-|   |       |   |           hook-distutils.util.cpython-313.pyc
-|   |       |   |           hook-django.contrib.sessions.cpython-313.pyc
-|   |       |   |           hook-django.core.cache.cpython-313.pyc
-|   |       |   |           hook-django.core.mail.cpython-313.pyc
-|   |       |   |           hook-django.core.management.cpython-313.pyc
-|   |       |   |           hook-django.cpython-313.pyc
-|   |       |   |           hook-django.db.backends.cpython-313.pyc
-|   |       |   |           hook-django.db.backends.mysql.base.cpython-313.pyc
-|   |       |   |           hook-django.db.backends.oracle.base.cpython-313.pyc
-|   |       |   |           hook-django.template.loaders.cpython-313.pyc
-|   |       |   |           hook-encodings.cpython-313.pyc
-|   |       |   |           hook-gevent.cpython-313.pyc
-|   |       |   |           hook-gi.cpython-313.pyc
-|   |       |   |           hook-gi.repository.Adw.cpython-313.pyc
-|   |       |   |           hook-gi.repository.AppIndicator3.cpython-313.pyc
-|   |       |   |           hook-gi.repository.Atk.cpython-313.pyc
-|   |       |   |           hook-gi.repository.AyatanaAppIndicator3.cpython-313.pyc
-|   |       |   |           hook-gi.repository.cairo.cpython-313.pyc
-|   |       |   |           hook-gi.repository.Champlain.cpython-313.pyc
-|   |       |   |           hook-gi.repository.Clutter.cpython-313.pyc
-|   |       |   |           hook-gi.repository.DBus.cpython-313.pyc
-|   |       |   |           hook-gi.repository.freetype2.cpython-313.pyc
-|   |       |   |           hook-gi.repository.Gdk.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GdkPixbuf.cpython-313.pyc
-|   |       |   |           hook-gi.repository.Gio.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GIRepository.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GLib.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GModule.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GObject.cpython-313.pyc
-|   |       |   |           hook-gi.repository.Graphene.cpython-313.pyc
-|   |       |   |           hook-gi.repository.Gsk.cpython-313.pyc
-|   |       |   |           hook-gi.repository.Gst.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstAllocators.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstApp.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstAudio.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstBadAudio.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstBase.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstCheck.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstCodecs.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstController.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstGL.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstGLEGL.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstGLWayland.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstGLX11.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstInsertBin.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstMpegts.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstNet.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstPbutils.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstPlay.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstPlayer.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstRtp.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstRtsp.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstRtspServer.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstSdp.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstTag.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstTranscoder.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstVideo.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstVulkan.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstVulkanWayland.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstVulkanXCB.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GstWebRTC.cpython-313.pyc
-|   |       |   |           hook-gi.repository.Gtk.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GtkChamplain.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GtkClutter.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GtkosxApplication.cpython-313.pyc
-|   |       |   |           hook-gi.repository.GtkSource.cpython-313.pyc
-|   |       |   |           hook-gi.repository.HarfBuzz.cpython-313.pyc
-|   |       |   |           hook-gi.repository.OsmGpsMap.cpython-313.pyc
-|   |       |   |           hook-gi.repository.Pango.cpython-313.pyc
-|   |       |   |           hook-gi.repository.PangoCairo.cpython-313.pyc
-|   |       |   |           hook-gi.repository.Rsvg.cpython-313.pyc
-|   |       |   |           hook-gi.repository.xlib.cpython-313.pyc
-|   |       |   |           hook-heapq.cpython-313.pyc
-|   |       |   |           hook-idlelib.cpython-313.pyc
-|   |       |   |           hook-importlib_metadata.cpython-313.pyc
-|   |       |   |           hook-importlib_resources.cpython-313.pyc
-|   |       |   |           hook-keyring.cpython-313.pyc
-|   |       |   |           hook-kivy.cpython-313.pyc
-|   |       |   |           hook-lib2to3.cpython-313.pyc
-|   |       |   |           hook-matplotlib.backends.backend_qtagg.cpython-313.pyc
-|   |       |   |           hook-matplotlib.backends.backend_qtcairo.cpython-313.pyc
-|   |       |   |           hook-matplotlib.backends.cpython-313.pyc
-|   |       |   |           hook-matplotlib.backends.qt_compat.cpython-313.pyc
-|   |       |   |           hook-matplotlib.backend_bases.cpython-313.pyc
-|   |       |   |           hook-matplotlib.cpython-313.pyc
-|   |       |   |           hook-matplotlib.numerix.cpython-313.pyc
-|   |       |   |           hook-matplotlib.pyplot.cpython-313.pyc
-|   |       |   |           hook-multiprocessing.util.cpython-313.pyc
-|   |       |   |           hook-numpy.cpython-313.pyc
-|   |       |   |           hook-pandas.cpython-313.pyc
-|   |       |   |           hook-pandas.io.clipboard.cpython-313.pyc
-|   |       |   |           hook-pandas.io.formats.style.cpython-313.pyc
-|   |       |   |           hook-pandas.plotting.cpython-313.pyc
-|   |       |   |           hook-pickle.cpython-313.pyc
-|   |       |   |           hook-PIL.cpython-313.pyc
-|   |       |   |           hook-PIL.Image.cpython-313.pyc
-|   |       |   |           hook-PIL.ImageFilter.cpython-313.pyc
-|   |       |   |           hook-PIL.SpiderImagePlugin.cpython-313.pyc
-|   |       |   |           hook-pkg_resources.cpython-313.pyc
-|   |       |   |           hook-platform.cpython-313.pyc
-|   |       |   |           hook-pygments.cpython-313.pyc
-|   |       |   |           hook-PyQt5.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QAxContainer.cpython-313.pyc
-|   |       |   |           hook-PyQt5.Qsci.cpython-313.pyc
-|   |       |   |           hook-PyQt5.Qt.cpython-313.pyc
-|   |       |   |           hook-PyQt5.Qt3DAnimation.cpython-313.pyc
-|   |       |   |           hook-PyQt5.Qt3DCore.cpython-313.pyc
-|   |       |   |           hook-PyQt5.Qt3DExtras.cpython-313.pyc
-|   |       |   |           hook-PyQt5.Qt3DInput.cpython-313.pyc
-|   |       |   |           hook-PyQt5.Qt3DLogic.cpython-313.pyc
-|   |       |   |           hook-PyQt5.Qt3DRender.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtBluetooth.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtChart.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtCore.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtDataVisualization.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtDBus.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtDesigner.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtGui.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtHelp.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtLocation.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtMacExtras.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtMultimedia.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtMultimediaWidgets.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtNetwork.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtNetworkAuth.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtNfc.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtOpenGL.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtPositioning.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtPrintSupport.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtPurchasing.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtQml.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtQuick.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtQuick3D.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtQuickWidgets.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtRemoteObjects.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtScript.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtSensors.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtSerialPort.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtSql.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtSvg.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtTest.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtTextToSpeech.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtWebChannel.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtWebEngine.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtWebEngineCore.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtWebEngineWidgets.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtWebKit.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtWebKitWidgets.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtWebSockets.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtWidgets.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtWinExtras.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtX11Extras.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtXml.cpython-313.pyc
-|   |       |   |           hook-PyQt5.QtXmlPatterns.cpython-313.pyc
-|   |       |   |           hook-PyQt5.uic.cpython-313.pyc
-|   |       |   |           hook-PyQt6.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QAxContainer.cpython-313.pyc
-|   |       |   |           hook-PyQt6.Qsci.cpython-313.pyc
-|   |       |   |           hook-PyQt6.Qt3DAnimation.cpython-313.pyc
-|   |       |   |           hook-PyQt6.Qt3DCore.cpython-313.pyc
-|   |       |   |           hook-PyQt6.Qt3DExtras.cpython-313.pyc
-|   |       |   |           hook-PyQt6.Qt3DInput.cpython-313.pyc
-|   |       |   |           hook-PyQt6.Qt3DLogic.cpython-313.pyc
-|   |       |   |           hook-PyQt6.Qt3DRender.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtBluetooth.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtCharts.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtCore.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtDataVisualization.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtDBus.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtDesigner.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtGraphs.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtGraphsWidgets.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtGui.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtHelp.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtMultimedia.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtMultimediaWidgets.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtNetwork.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtNetworkAuth.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtNfc.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtOpenGL.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtOpenGLWidgets.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtPdf.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtPdfWidgets.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtPositioning.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtPrintSupport.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtQml.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtQuick.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtQuick3D.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtQuickWidgets.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtRemoteObjects.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtSensors.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtSerialPort.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtSpatialAudio.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtSql.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtStateMachine.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtSvg.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtSvgWidgets.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtTest.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtTextToSpeech.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtWebChannel.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtWebEngineCore.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtWebEngineQuick.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtWebEngineWidgets.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtWebSockets.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtWidgets.cpython-313.pyc
-|   |       |   |           hook-PyQt6.QtXml.cpython-313.pyc
-|   |       |   |           hook-PyQt6.uic.cpython-313.pyc
-|   |       |   |           hook-PySide2.cpython-313.pyc
-|   |       |   |           hook-PySide2.Qt3DAnimation.cpython-313.pyc
-|   |       |   |           hook-PySide2.Qt3DCore.cpython-313.pyc
-|   |       |   |           hook-PySide2.Qt3DExtras.cpython-313.pyc
-|   |       |   |           hook-PySide2.Qt3DInput.cpython-313.pyc
-|   |       |   |           hook-PySide2.Qt3DLogic.cpython-313.pyc
-|   |       |   |           hook-PySide2.Qt3DRender.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtAxContainer.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtCharts.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtConcurrent.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtCore.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtDataVisualization.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtGui.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtHelp.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtLocation.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtMacExtras.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtMultimedia.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtMultimediaWidgets.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtNetwork.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtOpenGL.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtOpenGLFunctions.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtPositioning.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtPrintSupport.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtQml.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtQuick.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtQuickControls2.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtQuickWidgets.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtRemoteObjects.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtScript.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtScriptTools.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtScxml.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtSensors.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtSerialPort.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtSql.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtSvg.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtTest.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtTextToSpeech.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtUiTools.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtWebChannel.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtWebEngine.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtWebEngineCore.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtWebEngineWidgets.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtWebKit.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtWebKitWidgets.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtWebSockets.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtWidgets.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtWinExtras.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtX11Extras.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtXml.cpython-313.pyc
-|   |       |   |           hook-PySide2.QtXmlPatterns.cpython-313.pyc
-|   |       |   |           hook-PySide2.Qwt5.cpython-313.pyc
-|   |       |   |           hook-PySide6.cpython-313.pyc
-|   |       |   |           hook-PySide6.Qt3DAnimation.cpython-313.pyc
-|   |       |   |           hook-PySide6.Qt3DCore.cpython-313.pyc
-|   |       |   |           hook-PySide6.Qt3DExtras.cpython-313.pyc
-|   |       |   |           hook-PySide6.Qt3DInput.cpython-313.pyc
-|   |       |   |           hook-PySide6.Qt3DLogic.cpython-313.pyc
-|   |       |   |           hook-PySide6.Qt3DRender.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtAxContainer.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtBluetooth.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtCharts.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtConcurrent.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtCore.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtDataVisualization.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtDBus.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtDesigner.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtGraphs.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtGraphsWidgets.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtGui.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtHelp.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtHttpServer.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtLocation.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtMultimedia.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtMultimediaWidgets.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtNetwork.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtNetworkAuth.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtNfc.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtOpenGL.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtOpenGLWidgets.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtPdf.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtPdfWidgets.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtPositioning.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtPrintSupport.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtQml.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtQuick.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtQuick3D.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtQuickControls2.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtQuickWidgets.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtRemoteObjects.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtScxml.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtSensors.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtSerialBus.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtSerialPort.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtSpatialAudio.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtSql.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtStateMachine.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtSvg.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtSvgWidgets.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtTest.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtTextToSpeech.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtUiTools.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtWebChannel.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtWebEngineCore.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtWebEngineQuick.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtWebEngineWidgets.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtWebSockets.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtWidgets.cpython-313.pyc
-|   |       |   |           hook-PySide6.QtXml.cpython-313.pyc
-|   |       |   |           hook-pytz.cpython-313.pyc
-|   |       |   |           hook-pytzdata.cpython-313.pyc
-|   |       |   |           hook-qtawesome.cpython-313.pyc
-|   |       |   |           hook-qtpy.cpython-313.pyc
-|   |       |   |           hook-scapy.layers.all.cpython-313.pyc
-|   |       |   |           hook-scipy.cpython-313.pyc
-|   |       |   |           hook-scipy.io.matlab.cpython-313.pyc
-|   |       |   |           hook-scipy.linalg.cpython-313.pyc
-|   |       |   |           hook-scipy.sparse.csgraph.cpython-313.pyc
-|   |       |   |           hook-scipy.spatial.transform.rotation.cpython-313.pyc
-|   |       |   |           hook-scipy.spatial._ckdtree.cpython-313.pyc
-|   |       |   |           hook-scipy.special._ellip_harm_2.cpython-313.pyc
-|   |       |   |           hook-scipy.special._ufuncs.cpython-313.pyc
-|   |       |   |           hook-scipy.stats._stats.cpython-313.pyc
-|   |       |   |           hook-scrapy.cpython-313.pyc
-|   |       |   |           hook-setuptools.cpython-313.pyc
-|   |       |   |           hook-setuptools._vendor.importlib_metadata.cpython-313.pyc
-|   |       |   |           hook-setuptools._vendor.jaraco.text.cpython-313.pyc
-|   |       |   |           hook-shelve.cpython-313.pyc
-|   |       |   |           hook-shiboken6.cpython-313.pyc
-|   |       |   |           hook-sphinx.cpython-313.pyc
-|   |       |   |           hook-sqlalchemy.cpython-313.pyc
-|   |       |   |           hook-sqlite3.cpython-313.pyc
-|   |       |   |           hook-sysconfig.cpython-313.pyc
-|   |       |   |           hook-wcwidth.cpython-313.pyc
-|   |       |   |           hook-win32ctypes.core.cpython-313.pyc
-|   |       |   |           hook-xml.cpython-313.pyc
-|   |       |   |           hook-xml.dom.domreg.cpython-313.pyc
-|   |       |   |           hook-xml.etree.cElementTree.cpython-313.pyc
-|   |       |   |           hook-zope.interface.cpython-313.pyc
-|   |       |   |           hook-_ctypes.cpython-313.pyc
-|   |       |   |           hook-_osx_support.cpython-313.pyc
-|   |       |   |           hook-_pyi_rth_utils.cpython-313.pyc
-|   |       |   |           hook-_tkinter.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---isolated
-|   |       |   |   |   _child.py
-|   |       |   |   |   _parent.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           _child.cpython-313.pyc
-|   |       |   |           _parent.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---lib
-|   |       |   |   |   README.rst
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---modulegraph
-|   |       |   |   |   |   find_modules.py
-|   |       |   |   |   |   modulegraph.py
-|   |       |   |   |   |   util.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   __main__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           find_modules.cpython-313.pyc
-|   |       |   |   |           modulegraph.cpython-313.pyc
-|   |       |   |   |           util.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           __main__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---loader
-|   |       |   |   |   pyiboot01_bootstrap.py
-|   |       |   |   |   pyimod01_archive.py
-|   |       |   |   |   pyimod02_importers.py
-|   |       |   |   |   pyimod03_ctypes.py
-|   |       |   |   |   pyimod04_pywin32.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           pyiboot01_bootstrap.cpython-313.pyc
-|   |       |   |           pyimod01_archive.cpython-313.pyc
-|   |       |   |           pyimod02_importers.cpython-313.pyc
-|   |       |   |           pyimod03_ctypes.cpython-313.pyc
-|   |       |   |           pyimod04_pywin32.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---utils
-|   |       |   |   |   conftest.py
-|   |       |   |   |   misc.py
-|   |       |   |   |   osx.py
-|   |       |   |   |   run_tests.py
-|   |       |   |   |   tests.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---cliutils
-|   |       |   |   |   |   archive_viewer.py
-|   |       |   |   |   |   bindepend.py
-|   |       |   |   |   |   grab_version.py
-|   |       |   |   |   |   makespec.py
-|   |       |   |   |   |   set_version.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           archive_viewer.cpython-313.pyc
-|   |       |   |   |           bindepend.cpython-313.pyc
-|   |       |   |   |           grab_version.cpython-313.pyc
-|   |       |   |   |           makespec.cpython-313.pyc
-|   |       |   |   |           set_version.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---hooks
-|   |       |   |   |   |   conda.py
-|   |       |   |   |   |   django.py
-|   |       |   |   |   |   gi.py
-|   |       |   |   |   |   setuptools.py
-|   |       |   |   |   |   tcl_tk.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---qt
-|   |       |   |   |   |   |   _modules_info.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           _modules_info.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           conda.cpython-313.pyc
-|   |       |   |   |           django.cpython-313.pyc
-|   |       |   |   |           gi.cpython-313.pyc
-|   |       |   |   |           setuptools.cpython-313.pyc
-|   |       |   |   |           tcl_tk.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---win32
-|   |       |   |   |   |   icon.py
-|   |       |   |   |   |   versioninfo.py
-|   |       |   |   |   |   winmanifest.py
-|   |       |   |   |   |   winresource.py
-|   |       |   |   |   |   winutils.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           icon.cpython-313.pyc
-|   |       |   |   |           versioninfo.cpython-313.pyc
-|   |       |   |   |           winmanifest.cpython-313.pyc
-|   |       |   |   |           winresource.cpython-313.pyc
-|   |       |   |   |           winutils.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           conftest.cpython-313.pyc
-|   |       |   |           misc.cpython-313.pyc
-|   |       |   |           osx.cpython-313.pyc
-|   |       |   |           run_tests.cpython-313.pyc
-|   |       |   |           tests.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           compat.cpython-313.pyc
-|   |       |           config.cpython-313.pyc
-|   |       |           configure.cpython-313.pyc
-|   |       |           exceptions.cpython-313.pyc
-|   |       |           log.cpython-313.pyc
-|   |       |           _recursion_too_deep_message.cpython-313.pyc
-|   |       |           _shared_with_waf.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           __main__.cpython-313.pyc
-|   |       |           
-|   |       +---pyinstaller-6.17.0.dist-info
-|   |       |   |   entry_points.txt
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           COPYING.txt
-|   |       |           
-|   |       +---pyinstaller_hooks_contrib-2025.11.dist-info
-|   |       |   |   entry_points.txt
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   top_level.txt
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE
-|   |       |           
-|   |       +---PyQt6
-|   |       |   |   py.typed
-|   |       |   |   QAxContainer.pyd
-|   |       |   |   QAxContainer.pyi
-|   |       |   |   QtBluetooth.pyd
-|   |       |   |   QtBluetooth.pyi
-|   |       |   |   QtCore.pyd
-|   |       |   |   QtCore.pyi
-|   |       |   |   QtDBus.pyd
-|   |       |   |   QtDBus.pyi
-|   |       |   |   QtDesigner.pyd
-|   |       |   |   QtDesigner.pyi
-|   |       |   |   QtGui.pyd
-|   |       |   |   QtGui.pyi
-|   |       |   |   QtHelp.pyd
-|   |       |   |   QtHelp.pyi
-|   |       |   |   QtMultimedia.pyd
-|   |       |   |   QtMultimedia.pyi
-|   |       |   |   QtMultimediaWidgets.pyd
-|   |       |   |   QtMultimediaWidgets.pyi
-|   |       |   |   QtNetwork.pyd
-|   |       |   |   QtNetwork.pyi
-|   |       |   |   QtNfc.pyd
-|   |       |   |   QtNfc.pyi
-|   |       |   |   QtOpenGL.pyd
-|   |       |   |   QtOpenGL.pyi
-|   |       |   |   QtOpenGLWidgets.pyd
-|   |       |   |   QtOpenGLWidgets.pyi
-|   |       |   |   QtPdf.pyd
-|   |       |   |   QtPdf.pyi
-|   |       |   |   QtPdfWidgets.pyd
-|   |       |   |   QtPdfWidgets.pyi
-|   |       |   |   QtPositioning.pyd
-|   |       |   |   QtPositioning.pyi
-|   |       |   |   QtPrintSupport.pyd
-|   |       |   |   QtPrintSupport.pyi
-|   |       |   |   QtQml.pyd
-|   |       |   |   QtQml.pyi
-|   |       |   |   QtQuick.pyd
-|   |       |   |   QtQuick.pyi
-|   |       |   |   QtQuick3D.pyd
-|   |       |   |   QtQuick3D.pyi
-|   |       |   |   QtQuickWidgets.pyd
-|   |       |   |   QtQuickWidgets.pyi
-|   |       |   |   QtRemoteObjects.pyd
-|   |       |   |   QtRemoteObjects.pyi
-|   |       |   |   QtSensors.pyd
-|   |       |   |   QtSensors.pyi
-|   |       |   |   QtSerialPort.pyd
-|   |       |   |   QtSerialPort.pyi
-|   |       |   |   QtSpatialAudio.pyd
-|   |       |   |   QtSpatialAudio.pyi
-|   |       |   |   QtSql.pyd
-|   |       |   |   QtSql.pyi
-|   |       |   |   QtStateMachine.pyd
-|   |       |   |   QtStateMachine.pyi
-|   |       |   |   QtSvg.pyd
-|   |       |   |   QtSvg.pyi
-|   |       |   |   QtSvgWidgets.pyd
-|   |       |   |   QtSvgWidgets.pyi
-|   |       |   |   QtTest.pyd
-|   |       |   |   QtTest.pyi
-|   |       |   |   QtTextToSpeech.pyd
-|   |       |   |   QtTextToSpeech.pyi
-|   |       |   |   QtWebChannel.pyd
-|   |       |   |   QtWebChannel.pyi
-|   |       |   |   QtWebSockets.pyd
-|   |       |   |   QtWebSockets.pyi
-|   |       |   |   QtWidgets.pyd
-|   |       |   |   QtWidgets.pyi
-|   |       |   |   QtXml.pyd
-|   |       |   |   QtXml.pyi
-|   |       |   |   sip.cp313-win_amd64.pyd
-|   |       |   |   sip.pyi
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   +---bindings
-|   |       |   |   +---QAxContainer
-|   |       |   |   |       qaxbase.sip
-|   |       |   |   |       QAxContainer.toml
-|   |       |   |   |       QAxContainermod.sip
-|   |       |   |   |       qaxobject.sip
-|   |       |   |   |       qaxobjectinterface.sip
-|   |       |   |   |       qaxwidget.sip
-|   |       |   |   |       
-|   |       |   |   +---QtBluetooth
-|   |       |   |   |       qbluetooth.sip
-|   |       |   |   |       qbluetoothaddress.sip
-|   |       |   |   |       qbluetoothdevicediscoveryagent.sip
-|   |       |   |   |       qbluetoothdeviceinfo.sip
-|   |       |   |   |       qbluetoothhostinfo.sip
-|   |       |   |   |       qbluetoothlocaldevice.sip
-|   |       |   |   |       qbluetoothserver.sip
-|   |       |   |   |       qbluetoothservicediscoveryagent.sip
-|   |       |   |   |       qbluetoothserviceinfo.sip
-|   |       |   |   |       qbluetoothsocket.sip
-|   |       |   |   |       qbluetoothuuid.sip
-|   |       |   |   |       qlowenergyadvertisingdata.sip
-|   |       |   |   |       qlowenergyadvertisingparameters.sip
-|   |       |   |   |       qlowenergycharacteristic.sip
-|   |       |   |   |       qlowenergycharacteristicdata.sip
-|   |       |   |   |       qlowenergyconnectionparameters.sip
-|   |       |   |   |       qlowenergycontroller.sip
-|   |       |   |   |       qlowenergydescriptor.sip
-|   |       |   |   |       qlowenergydescriptordata.sip
-|   |       |   |   |       qlowenergyservice.sip
-|   |       |   |   |       qlowenergyservicedata.sip
-|   |       |   |   |       qpybluetooth_qlist.sip
-|   |       |   |   |       qpybluetooth_qmultihash.sip
-|   |       |   |   |       qpybluetooth_quint128.sip
-|   |       |   |   |       QtBluetooth.toml
-|   |       |   |   |       QtBluetoothmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtCore
-|   |       |   |   |       pyqt-gpl.sip5
-|   |       |   |   |       qabstractanimation.sip
-|   |       |   |   |       qabstracteventdispatcher.sip
-|   |       |   |   |       qabstractitemmodel.sip
-|   |       |   |   |       qabstractnativeeventfilter.sip
-|   |       |   |   |       qabstractproxymodel.sip
-|   |       |   |   |       qanimationgroup.sip
-|   |       |   |   |       qanystringview.sip
-|   |       |   |   |       qbasictimer.sip
-|   |       |   |   |       qbitarray.sip
-|   |       |   |   |       qbuffer.sip
-|   |       |   |   |       qbytearray.sip
-|   |       |   |   |       qbytearrayalgorithms.sip
-|   |       |   |   |       qbytearraylist.sip
-|   |       |   |   |       qbytearraymatcher.sip
-|   |       |   |   |       qbytearrayview.sip
-|   |       |   |   |       qcalendar.sip
-|   |       |   |   |       qcborcommon.sip
-|   |       |   |   |       qcborstreamreader.sip
-|   |       |   |   |       qcborstreamwriter.sip
-|   |       |   |   |       qchar.sip
-|   |       |   |   |       qcollator.sip
-|   |       |   |   |       qcommandlineoption.sip
-|   |       |   |   |       qcommandlineparser.sip
-|   |       |   |   |       qconcatenatetablesproxymodel.sip
-|   |       |   |   |       qcoreapplication.sip
-|   |       |   |   |       qcoreevent.sip
-|   |       |   |   |       qcryptographichash.sip
-|   |       |   |   |       qdatastream.sip
-|   |       |   |   |       qdatetime.sip
-|   |       |   |   |       qdeadlinetimer.sip
-|   |       |   |   |       qdir.sip
-|   |       |   |   |       qdiriterator.sip
-|   |       |   |   |       qeasingcurve.sip
-|   |       |   |   |       qelapsedtimer.sip
-|   |       |   |   |       qeventloop.sip
-|   |       |   |   |       qfile.sip
-|   |       |   |   |       qfiledevice.sip
-|   |       |   |   |       qfileinfo.sip
-|   |       |   |   |       qfileselector.sip
-|   |       |   |   |       qfilesystemwatcher.sip
-|   |       |   |   |       qflags.sip
-|   |       |   |   |       qglobal.sip
-|   |       |   |   |       qidentityproxymodel.sip
-|   |       |   |   |       qiodevice.sip
-|   |       |   |   |       qiodevicebase.sip
-|   |       |   |   |       qitemselectionmodel.sip
-|   |       |   |   |       qjsonarray.sip
-|   |       |   |   |       qjsondocument.sip
-|   |       |   |   |       qjsonobject.sip
-|   |       |   |   |       qjsonparseerror.sip
-|   |       |   |   |       qjsonvalue.sip
-|   |       |   |   |       qlibrary.sip
-|   |       |   |   |       qlibraryinfo.sip
-|   |       |   |   |       qline.sip
-|   |       |   |   |       qlocale.sip
-|   |       |   |   |       qlockfile.sip
-|   |       |   |   |       qlogging.sip
-|   |       |   |   |       qloggingcategory.sip
-|   |       |   |   |       qmargins.sip
-|   |       |   |   |       qmessageauthenticationcode.sip
-|   |       |   |   |       qmetaobject.sip
-|   |       |   |   |       qmetatype.sip
-|   |       |   |   |       qmimedata.sip
-|   |       |   |   |       qmimedatabase.sip
-|   |       |   |   |       qmimetype.sip
-|   |       |   |   |       qmutex.sip
-|   |       |   |   |       qmutexlocker.sip
-|   |       |   |   |       qnamespace.sip
-|   |       |   |   |       qnumeric.sip
-|   |       |   |   |       qobject.sip
-|   |       |   |   |       qobjectcleanuphandler.sip
-|   |       |   |   |       qobjectdefs.sip
-|   |       |   |   |       qoperatingsystemversion.sip
-|   |       |   |   |       qparallelanimationgroup.sip
-|   |       |   |   |       qpauseanimation.sip
-|   |       |   |   |       qpermissions.sip
-|   |       |   |   |       qpluginloader.sip
-|   |       |   |   |       qpoint.sip
-|   |       |   |   |       qprocess.sip
-|   |       |   |   |       qpropertyanimation.sip
-|   |       |   |   |       qpycore_native_interface.sip
-|   |       |   |   |       qpycore_qhash.sip
-|   |       |   |   |       qpycore_qlist.sip
-|   |       |   |   |       qpycore_qmap.sip
-|   |       |   |   |       qpycore_qset.sip
-|   |       |   |   |       qpycore_std_chrono_duration.sip
-|   |       |   |   |       qpycore_std_optional.sip
-|   |       |   |   |       qpycore_std_pair.sip
-|   |       |   |   |       qpycore_virtual_error_handler.sip
-|   |       |   |   |       qrandom.sip
-|   |       |   |   |       qrangemodel.sip
-|   |       |   |   |       qreadwritelock.sip
-|   |       |   |   |       qrect.sip
-|   |       |   |   |       qregularexpression.sip
-|   |       |   |   |       qresource.sip
-|   |       |   |   |       qrunnable.sip
-|   |       |   |   |       qsavefile.sip
-|   |       |   |   |       qsemaphore.sip
-|   |       |   |   |       qsequentialanimationgroup.sip
-|   |       |   |   |       qsettings.sip
-|   |       |   |   |       qsharedmemory.sip
-|   |       |   |   |       qsignalmapper.sip
-|   |       |   |   |       qsize.sip
-|   |       |   |   |       qsocketnotifier.sip
-|   |       |   |   |       qsortfilterproxymodel.sip
-|   |       |   |   |       qstandardpaths.sip
-|   |       |   |   |       qstorageinfo.sip
-|   |       |   |   |       qstring.sip
-|   |       |   |   |       qstringconverter.sip
-|   |       |   |   |       qstringconverter_base.sip
-|   |       |   |   |       qstringlist.sip
-|   |       |   |   |       qstringlistmodel.sip
-|   |       |   |   |       qstringview.sip
-|   |       |   |   |       qsysinfo.sip
-|   |       |   |   |       qsystemsemaphore.sip
-|   |       |   |   |       QtCore.toml
-|   |       |   |   |       QtCoremod.sip
-|   |       |   |   |       qtemporarydir.sip
-|   |       |   |   |       qtemporaryfile.sip
-|   |       |   |   |       qtenvironmentvariables.sip
-|   |       |   |   |       qtextboundaryfinder.sip
-|   |       |   |   |       qtextstream.sip
-|   |       |   |   |       qthread.sip
-|   |       |   |   |       qthreadpool.sip
-|   |       |   |   |       qtimeline.sip
-|   |       |   |   |       qtimer.sip
-|   |       |   |   |       qtimezone.sip
-|   |       |   |   |       qtipccommon.sip
-|   |       |   |   |       qtranslator.sip
-|   |       |   |   |       qtransposeproxymodel.sip
-|   |       |   |   |       qtversion.sip
-|   |       |   |   |       qtyperevision.sip
-|   |       |   |   |       qtypes.sip
-|   |       |   |   |       qurl.sip
-|   |       |   |   |       qurlquery.sip
-|   |       |   |   |       quuid.sip
-|   |       |   |   |       qvariant.sip
-|   |       |   |   |       qvariantanimation.sip
-|   |       |   |   |       qversionnumber.sip
-|   |       |   |   |       qwaitcondition.sip
-|   |       |   |   |       qwineventnotifier.sip
-|   |       |   |   |       qxmlstream.sip
-|   |       |   |   |       qyieldcpu.sip
-|   |       |   |   |       
-|   |       |   |   +---QtDBus
-|   |       |   |   |       qdbusabstractadaptor.sip
-|   |       |   |   |       qdbusabstractinterface.sip
-|   |       |   |   |       qdbusargument.sip
-|   |       |   |   |       qdbusconnection.sip
-|   |       |   |   |       qdbusconnectioninterface.sip
-|   |       |   |   |       qdbuserror.sip
-|   |       |   |   |       qdbusextratypes.sip
-|   |       |   |   |       qdbusinterface.sip
-|   |       |   |   |       qdbusmessage.sip
-|   |       |   |   |       qdbuspendingcall.sip
-|   |       |   |   |       qdbusservicewatcher.sip
-|   |       |   |   |       qdbusunixfiledescriptor.sip
-|   |       |   |   |       qpydbuspendingreply.sip
-|   |       |   |   |       qpydbusreply.sip
-|   |       |   |   |       QtDBus.toml
-|   |       |   |   |       QtDBusmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtDesigner
-|   |       |   |   |       abstractactioneditor.sip
-|   |       |   |   |       abstractformbuilder.sip
-|   |       |   |   |       abstractformeditor.sip
-|   |       |   |   |       abstractformwindow.sip
-|   |       |   |   |       abstractformwindowcursor.sip
-|   |       |   |   |       abstractformwindowmanager.sip
-|   |       |   |   |       abstractobjectinspector.sip
-|   |       |   |   |       abstractpropertyeditor.sip
-|   |       |   |   |       abstractwidgetbox.sip
-|   |       |   |   |       container.sip
-|   |       |   |   |       customwidget.sip
-|   |       |   |   |       default_extensionfactory.sip
-|   |       |   |   |       extension.sip
-|   |       |   |   |       formbuilder.sip
-|   |       |   |   |       membersheet.sip
-|   |       |   |   |       propertysheet.sip
-|   |       |   |   |       qextensionmanager.sip
-|   |       |   |   |       qpydesignercontainerextension.sip
-|   |       |   |   |       qpydesignercustomwidgetcollectionplugin.sip
-|   |       |   |   |       qpydesignercustomwidgetplugin.sip
-|   |       |   |   |       qpydesignermembersheetextension.sip
-|   |       |   |   |       qpydesignerpropertysheetextension.sip
-|   |       |   |   |       qpydesignertaskmenuextension.sip
-|   |       |   |   |       QtDesigner.toml
-|   |       |   |   |       QtDesignermod.sip
-|   |       |   |   |       taskmenu.sip
-|   |       |   |   |       
-|   |       |   |   +---QtGui
-|   |       |   |   |       opengl_types.sip
-|   |       |   |   |       qabstractfileiconprovider.sip
-|   |       |   |   |       qabstracttextdocumentlayout.sip
-|   |       |   |   |       qaccessibilityhints.sip
-|   |       |   |   |       qaction.sip
-|   |       |   |   |       qactiongroup.sip
-|   |       |   |   |       qbackingstore.sip
-|   |       |   |   |       qbitmap.sip
-|   |       |   |   |       qbrush.sip
-|   |       |   |   |       qclipboard.sip
-|   |       |   |   |       qcolor.sip
-|   |       |   |   |       qcolorspace.sip
-|   |       |   |   |       qcolortransform.sip
-|   |       |   |   |       qcursor.sip
-|   |       |   |   |       qdesktopservices.sip
-|   |       |   |   |       qdrag.sip
-|   |       |   |   |       qevent.sip
-|   |       |   |   |       qeventpoint.sip
-|   |       |   |   |       qfilesystemmodel.sip
-|   |       |   |   |       qfont.sip
-|   |       |   |   |       qfontdatabase.sip
-|   |       |   |   |       qfontinfo.sip
-|   |       |   |   |       qfontmetrics.sip
-|   |       |   |   |       qfontvariableaxis.sip
-|   |       |   |   |       qgenericmatrix.sip
-|   |       |   |   |       qglyphrun.sip
-|   |       |   |   |       qguiapplication.sip
-|   |       |   |   |       qicon.sip
-|   |       |   |   |       qiconengine.sip
-|   |       |   |   |       qimage.sip
-|   |       |   |   |       qimageiohandler.sip
-|   |       |   |   |       qimagereader.sip
-|   |       |   |   |       qimagewriter.sip
-|   |       |   |   |       qinputdevice.sip
-|   |       |   |   |       qinputmethod.sip
-|   |       |   |   |       qkeysequence.sip
-|   |       |   |   |       qmatrix4x4.sip
-|   |       |   |   |       qmovie.sip
-|   |       |   |   |       qoffscreensurface.sip
-|   |       |   |   |       qopenglcontext.sip
-|   |       |   |   |       qpagedpaintdevice.sip
-|   |       |   |   |       qpagelayout.sip
-|   |       |   |   |       qpageranges.sip
-|   |       |   |   |       qpagesize.sip
-|   |       |   |   |       qpaintdevice.sip
-|   |       |   |   |       qpaintdevicewindow.sip
-|   |       |   |   |       qpaintengine.sip
-|   |       |   |   |       qpainter.sip
-|   |       |   |   |       qpainterpath.sip
-|   |       |   |   |       qpainterstateguard.sip
-|   |       |   |   |       qpalette.sip
-|   |       |   |   |       qpdfoutputintent.sip
-|   |       |   |   |       qpdfwriter.sip
-|   |       |   |   |       qpen.sip
-|   |       |   |   |       qpicture.sip
-|   |       |   |   |       qpixelformat.sip
-|   |       |   |   |       qpixmap.sip
-|   |       |   |   |       qpixmapcache.sip
-|   |       |   |   |       qpointingdevice.sip
-|   |       |   |   |       qpolygon.sip
-|   |       |   |   |       qpygui_native_interface.sip
-|   |       |   |   |       qpygui_qlist.sip
-|   |       |   |   |       qpygui_vulkan.sip
-|   |       |   |   |       qquaternion.sip
-|   |       |   |   |       qrasterwindow.sip
-|   |       |   |   |       qrawfont.sip
-|   |       |   |   |       qregion.sip
-|   |       |   |   |       qrgb.sip
-|   |       |   |   |       qrgba64.sip
-|   |       |   |   |       qscreen.sip
-|   |       |   |   |       qsessionmanager.sip
-|   |       |   |   |       qshortcut.sip
-|   |       |   |   |       qstandarditemmodel.sip
-|   |       |   |   |       qstatictext.sip
-|   |       |   |   |       qstylehints.sip
-|   |       |   |   |       qsurface.sip
-|   |       |   |   |       qsurfaceformat.sip
-|   |       |   |   |       qsyntaxhighlighter.sip
-|   |       |   |   |       qtextcursor.sip
-|   |       |   |   |       qtextdocument.sip
-|   |       |   |   |       qtextdocumentfragment.sip
-|   |       |   |   |       qtextdocumentwriter.sip
-|   |       |   |   |       qtextformat.sip
-|   |       |   |   |       qtextlayout.sip
-|   |       |   |   |       qtextlist.sip
-|   |       |   |   |       qtextobject.sip
-|   |       |   |   |       qtextoption.sip
-|   |       |   |   |       qtexttable.sip
-|   |       |   |   |       QtGui.toml
-|   |       |   |   |       QtGuimod.sip
-|   |       |   |   |       qtransform.sip
-|   |       |   |   |       qundogroup.sip
-|   |       |   |   |       qundostack.sip
-|   |       |   |   |       qutimimeconverter.sip
-|   |       |   |   |       qvalidator.sip
-|   |       |   |   |       qvectornd.sip
-|   |       |   |   |       qwindow.sip
-|   |       |   |   |       qwindowdefs.sip
-|   |       |   |   |       
-|   |       |   |   +---QtHelp
-|   |       |   |   |       qcompressedhelpinfo.sip
-|   |       |   |   |       qhelpcontentitem.sip
-|   |       |   |   |       qhelpcontentwidget.sip
-|   |       |   |   |       qhelpengine.sip
-|   |       |   |   |       qhelpenginecore.sip
-|   |       |   |   |       qhelpfilterdata.sip
-|   |       |   |   |       qhelpfilterengine.sip
-|   |       |   |   |       qhelpfiltersettingswidget.sip
-|   |       |   |   |       qhelpindexwidget.sip
-|   |       |   |   |       qhelplink.sip
-|   |       |   |   |       qhelpsearchengine.sip
-|   |       |   |   |       qhelpsearchenginecore.sip
-|   |       |   |   |       qhelpsearchquerywidget.sip
-|   |       |   |   |       qhelpsearchresult.sip
-|   |       |   |   |       qhelpsearchresultwidget.sip
-|   |       |   |   |       QtHelp.toml
-|   |       |   |   |       QtHelpmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtMultimedia
-|   |       |   |   |       qaudio.sip
-|   |       |   |   |       qaudiobuffer.sip
-|   |       |   |   |       qaudiobufferinput.sip
-|   |       |   |   |       qaudiobufferoutput.sip
-|   |       |   |   |       qaudiodecoder.sip
-|   |       |   |   |       qaudiodevice.sip
-|   |       |   |   |       qaudioformat.sip
-|   |       |   |   |       qaudioinput.sip
-|   |       |   |   |       qaudiooutput.sip
-|   |       |   |   |       qaudiosink.sip
-|   |       |   |   |       qaudiosource.sip
-|   |       |   |   |       qcamera.sip
-|   |       |   |   |       qcameradevice.sip
-|   |       |   |   |       qcapturablewindow.sip
-|   |       |   |   |       qimagecapture.sip
-|   |       |   |   |       qmediacapturesession.sip
-|   |       |   |   |       qmediadevices.sip
-|   |       |   |   |       qmediaformat.sip
-|   |       |   |   |       qmediametadata.sip
-|   |       |   |   |       qmediaplayer.sip
-|   |       |   |   |       qmediarecorder.sip
-|   |       |   |   |       qmediatimerange.sip
-|   |       |   |   |       qplaybackoptions.sip
-|   |       |   |   |       qpymultimedia_qlist.sip
-|   |       |   |   |       qscreencapture.sip
-|   |       |   |   |       qsoundeffect.sip
-|   |       |   |   |       QtMultimedia.toml
-|   |       |   |   |       QtMultimediamod.sip
-|   |       |   |   |       qtvideo.sip
-|   |       |   |   |       qvideoframe.sip
-|   |       |   |   |       qvideoframeformat.sip
-|   |       |   |   |       qvideoframeinput.sip
-|   |       |   |   |       qvideosink.sip
-|   |       |   |   |       qwindowcapture.sip
-|   |       |   |   |       
-|   |       |   |   +---QtMultimediaWidgets
-|   |       |   |   |       qgraphicsvideoitem.sip
-|   |       |   |   |       QtMultimediaWidgets.toml
-|   |       |   |   |       QtMultimediaWidgetsmod.sip
-|   |       |   |   |       qvideowidget.sip
-|   |       |   |   |       
-|   |       |   |   +---QtNetwork
-|   |       |   |   |       qabstractnetworkcache.sip
-|   |       |   |   |       qabstractsocket.sip
-|   |       |   |   |       qauthenticator.sip
-|   |       |   |   |       qdnslookup.sip
-|   |       |   |   |       qformdatabuilder.sip
-|   |       |   |   |       qhostaddress.sip
-|   |       |   |   |       qhostinfo.sip
-|   |       |   |   |       qhstspolicy.sip
-|   |       |   |   |       qhttp1configuration.sip
-|   |       |   |   |       qhttp2configuration.sip
-|   |       |   |   |       qhttpheaders.sip
-|   |       |   |   |       qhttpmultipart.sip
-|   |       |   |   |       qlocalserver.sip
-|   |       |   |   |       qlocalsocket.sip
-|   |       |   |   |       qnetworkaccessmanager.sip
-|   |       |   |   |       qnetworkcookie.sip
-|   |       |   |   |       qnetworkcookiejar.sip
-|   |       |   |   |       qnetworkdatagram.sip
-|   |       |   |   |       qnetworkdiskcache.sip
-|   |       |   |   |       qnetworkinformation.sip
-|   |       |   |   |       qnetworkinterface.sip
-|   |       |   |   |       qnetworkproxy.sip
-|   |       |   |   |       qnetworkreply.sip
-|   |       |   |   |       qnetworkrequest.sip
-|   |       |   |   |       qnetworkrequestfactory.sip
-|   |       |   |   |       qocspresponse.sip
-|   |       |   |   |       qpassworddigestor.sip
-|   |       |   |   |       qpynetwork_qhash.sip
-|   |       |   |   |       qpynetwork_qlist.sip
-|   |       |   |   |       qpynetwork_qmap.sip
-|   |       |   |   |       qrestaccessmanager.sip
-|   |       |   |   |       qrestreply.sip
-|   |       |   |   |       qssl.sip
-|   |       |   |   |       qsslcertificate.sip
-|   |       |   |   |       qsslcertificateextension.sip
-|   |       |   |   |       qsslcipher.sip
-|   |       |   |   |       qsslconfiguration.sip
-|   |       |   |   |       qssldiffiehellmanparameters.sip
-|   |       |   |   |       qsslellipticcurve.sip
-|   |       |   |   |       qsslerror.sip
-|   |       |   |   |       qsslkey.sip
-|   |       |   |   |       qsslpresharedkeyauthenticator.sip
-|   |       |   |   |       qsslserver.sip
-|   |       |   |   |       qsslsocket.sip
-|   |       |   |   |       qtcpserver.sip
-|   |       |   |   |       qtcpsocket.sip
-|   |       |   |   |       QtNetwork.toml
-|   |       |   |   |       QtNetworkmod.sip
-|   |       |   |   |       qudpsocket.sip
-|   |       |   |   |       
-|   |       |   |   +---QtNfc
-|   |       |   |   |       qndeffilter.sip
-|   |       |   |   |       qndefmessage.sip
-|   |       |   |   |       qndefnfcsmartposterrecord.sip
-|   |       |   |   |       qndefnfctextrecord.sip
-|   |       |   |   |       qndefnfcurirecord.sip
-|   |       |   |   |       qndefrecord.sip
-|   |       |   |   |       qnearfieldmanager.sip
-|   |       |   |   |       qnearfieldtarget.sip
-|   |       |   |   |       QtNfc.toml
-|   |       |   |   |       QtNfcmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtOpenGL
-|   |       |   |   |       qopenglbuffer.sip
-|   |       |   |   |       qopengldebug.sip
-|   |       |   |   |       qopenglframebufferobject.sip
-|   |       |   |   |       qopenglfunctions_2_0.sip
-|   |       |   |   |       qopenglfunctions_2_1.sip
-|   |       |   |   |       qopenglfunctions_4_1_core.sip
-|   |       |   |   |       qopenglfunctions_es2.sip
-|   |       |   |   |       qopenglpaintdevice.sip
-|   |       |   |   |       qopenglpixeltransferoptions.sip
-|   |       |   |   |       qopenglshaderprogram.sip
-|   |       |   |   |       qopengltexture.sip
-|   |       |   |   |       qopengltextureblitter.sip
-|   |       |   |   |       qopengltimerquery.sip
-|   |       |   |   |       qopenglversionfunctions.sip
-|   |       |   |   |       qopenglversionfunctionsfactory.sip
-|   |       |   |   |       qopenglversionprofile.sip
-|   |       |   |   |       qopenglvertexarrayobject.sip
-|   |       |   |   |       qopenglwindow.sip
-|   |       |   |   |       qpyopengl_qlist.sip
-|   |       |   |   |       qpyopengl_std_pair.sip
-|   |       |   |   |       QtOpenGL.toml
-|   |       |   |   |       QtOpenGLmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtOpenGLWidgets
-|   |       |   |   |       qopenglwidget.sip
-|   |       |   |   |       QtOpenGLWidgets.toml
-|   |       |   |   |       QtOpenGLWidgetsmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtPdf
-|   |       |   |   |       qpdfbookmarkmodel.sip
-|   |       |   |   |       qpdfdocument.sip
-|   |       |   |   |       qpdfdocumentrenderoptions.sip
-|   |       |   |   |       qpdflink.sip
-|   |       |   |   |       qpdflinkmodel.sip
-|   |       |   |   |       qpdfpagenavigator.sip
-|   |       |   |   |       qpdfpagerenderer.sip
-|   |       |   |   |       qpdfsearchmodel.sip
-|   |       |   |   |       qpdfselection.sip
-|   |       |   |   |       QtPdf.toml
-|   |       |   |   |       QtPdfmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtPdfWidgets
-|   |       |   |   |       qpdfpageselector.sip
-|   |       |   |   |       qpdfview.sip
-|   |       |   |   |       QtPdfWidgets.toml
-|   |       |   |   |       QtPdfWidgetsmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtPositioning
-|   |       |   |   |       qgeoaddress.sip
-|   |       |   |   |       qgeoareamonitorinfo.sip
-|   |       |   |   |       qgeoareamonitorsource.sip
-|   |       |   |   |       qgeocircle.sip
-|   |       |   |   |       qgeocoordinate.sip
-|   |       |   |   |       qgeolocation.sip
-|   |       |   |   |       qgeopath.sip
-|   |       |   |   |       qgeopolygon.sip
-|   |       |   |   |       qgeopositioninfo.sip
-|   |       |   |   |       qgeopositioninfosource.sip
-|   |       |   |   |       qgeorectangle.sip
-|   |       |   |   |       qgeosatelliteinfo.sip
-|   |       |   |   |       qgeosatelliteinfosource.sip
-|   |       |   |   |       qgeoshape.sip
-|   |       |   |   |       qnmeapositioninfosource.sip
-|   |       |   |   |       qnmeasatelliteinfosource.sip
-|   |       |   |   |       QtPositioning.toml
-|   |       |   |   |       QtPositioningmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtPrintSupport
-|   |       |   |   |       qabstractprintdialog.sip
-|   |       |   |   |       qpagesetupdialog.sip
-|   |       |   |   |       qprintdialog.sip
-|   |       |   |   |       qprintengine.sip
-|   |       |   |   |       qprinter.sip
-|   |       |   |   |       qprinterinfo.sip
-|   |       |   |   |       qprintpreviewdialog.sip
-|   |       |   |   |       qprintpreviewwidget.sip
-|   |       |   |   |       qpyprintsupport_qlist.sip
-|   |       |   |   |       QtPrintSupport.toml
-|   |       |   |   |       QtPrintSupportmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtQml
-|   |       |   |   |       qjsengine.sip
-|   |       |   |   |       qjsmanagedvalue.sip
-|   |       |   |   |       qjsprimitivevalue.sip
-|   |       |   |   |       qjsvalue.sip
-|   |       |   |   |       qjsvalueiterator.sip
-|   |       |   |   |       qmlattachedpropertiesobject.sip
-|   |       |   |   |       qmlregistertype.sip
-|   |       |   |   |       qpyqmllistproperty.sip
-|   |       |   |   |       qqml.sip
-|   |       |   |   |       qqmlabstracturlinterceptor.sip
-|   |       |   |   |       qqmlapplicationengine.sip
-|   |       |   |   |       qqmlcomponent.sip
-|   |       |   |   |       qqmlcontext.sip
-|   |       |   |   |       qqmlengine.sip
-|   |       |   |   |       qqmlerror.sip
-|   |       |   |   |       qqmlexpression.sip
-|   |       |   |   |       qqmlextensionplugin.sip
-|   |       |   |   |       qqmlfileselector.sip
-|   |       |   |   |       qqmlincubator.sip
-|   |       |   |   |       qqmllist.sip
-|   |       |   |   |       qqmlnetworkaccessmanagerfactory.sip
-|   |       |   |   |       qqmlparserstatus.sip
-|   |       |   |   |       qqmlproperty.sip
-|   |       |   |   |       qqmlpropertymap.sip
-|   |       |   |   |       qqmlpropertyvaluesource.sip
-|   |       |   |   |       qqmlscriptstring.sip
-|   |       |   |   |       QtQml.toml
-|   |       |   |   |       QtQmlmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtQuick
-|   |       |   |   |       qquickframebufferobject.sip
-|   |       |   |   |       qquickgraphicsconfiguration.sip
-|   |       |   |   |       qquickgraphicsdevice.sip
-|   |       |   |   |       qquickimageprovider.sip
-|   |       |   |   |       qquickitem.sip
-|   |       |   |   |       qquickitemgrabresult.sip
-|   |       |   |   |       qquickpainteditem.sip
-|   |       |   |   |       qquickrendercontrol.sip
-|   |       |   |   |       qquickrendertarget.sip
-|   |       |   |   |       qquicktextdocument.sip
-|   |       |   |   |       qquickview.sip
-|   |       |   |   |       qquickwindow.sip
-|   |       |   |   |       qsgflatcolormaterial.sip
-|   |       |   |   |       qsggeometry.sip
-|   |       |   |   |       qsgimagenode.sip
-|   |       |   |   |       qsgmaterial.sip
-|   |       |   |   |       qsgmaterialshader.sip
-|   |       |   |   |       qsgmaterialtype.sip
-|   |       |   |   |       qsgnode.sip
-|   |       |   |   |       qsgrectanglenode.sip
-|   |       |   |   |       qsgrendererinterface.sip
-|   |       |   |   |       qsgrendernode.sip
-|   |       |   |   |       qsgsimplerectnode.sip
-|   |       |   |   |       qsgsimpletexturenode.sip
-|   |       |   |   |       qsgtextnode.sip
-|   |       |   |   |       qsgtexture.sip
-|   |       |   |   |       qsgtexturematerial.sip
-|   |       |   |   |       qsgtextureprovider.sip
-|   |       |   |   |       qsgtexture_platform.sip
-|   |       |   |   |       qsgvertexcolormaterial.sip
-|   |       |   |   |       QtQuick.toml
-|   |       |   |   |       QtQuickmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtQuick3D
-|   |       |   |   |       qquick3d.sip
-|   |       |   |   |       qquick3dgeometry.sip
-|   |       |   |   |       qquick3dobject.sip
-|   |       |   |   |       qquick3dtexturedata.sip
-|   |       |   |   |       QtQuick3D.toml
-|   |       |   |   |       QtQuick3Dmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtQuickWidgets
-|   |       |   |   |       qquickwidget.sip
-|   |       |   |   |       QtQuickWidgets.toml
-|   |       |   |   |       QtQuickWidgetsmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtRemoteObjects
-|   |       |   |   |       qremoteobjectabstractitemmodelreplica.sip
-|   |       |   |   |       qremoteobjectdynamicreplica.sip
-|   |       |   |   |       qremoteobjectnode.sip
-|   |       |   |   |       qremoteobjectregistry.sip
-|   |       |   |   |       qremoteobjectreplica.sip
-|   |       |   |   |       qtremoteobjectglobal.sip
-|   |       |   |   |       QtRemoteObjects.toml
-|   |       |   |   |       QtRemoteObjectsmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtSensors
-|   |       |   |   |       qaccelerometer.sip
-|   |       |   |   |       qambientlightsensor.sip
-|   |       |   |   |       qambienttemperaturesensor.sip
-|   |       |   |   |       qcompass.sip
-|   |       |   |   |       qgyroscope.sip
-|   |       |   |   |       qhumiditysensor.sip
-|   |       |   |   |       qirproximitysensor.sip
-|   |       |   |   |       qlidsensor.sip
-|   |       |   |   |       qlightsensor.sip
-|   |       |   |   |       qmagnetometer.sip
-|   |       |   |   |       qorientationsensor.sip
-|   |       |   |   |       qpressuresensor.sip
-|   |       |   |   |       qproximitysensor.sip
-|   |       |   |   |       qrotationsensor.sip
-|   |       |   |   |       qsensor.sip
-|   |       |   |   |       qtapsensor.sip
-|   |       |   |   |       qtiltsensor.sip
-|   |       |   |   |       QtSensors.toml
-|   |       |   |   |       QtSensorsmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtSerialPort
-|   |       |   |   |       qserialport.sip
-|   |       |   |   |       qserialportinfo.sip
-|   |       |   |   |       QtSerialPort.toml
-|   |       |   |   |       QtSerialPortmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtSpatialAudio
-|   |       |   |   |       qambientsound.sip
-|   |       |   |   |       qaudioengine.sip
-|   |       |   |   |       qaudiolistener.sip
-|   |       |   |   |       qaudioroom.sip
-|   |       |   |   |       qspatialsound.sip
-|   |       |   |   |       QtSpatialAudio.toml
-|   |       |   |   |       QtSpatialAudiomod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtSql
-|   |       |   |   |       qsqldatabase.sip
-|   |       |   |   |       qsqldriver.sip
-|   |       |   |   |       qsqlerror.sip
-|   |       |   |   |       qsqlfield.sip
-|   |       |   |   |       qsqlindex.sip
-|   |       |   |   |       qsqlquery.sip
-|   |       |   |   |       qsqlquerymodel.sip
-|   |       |   |   |       qsqlrecord.sip
-|   |       |   |   |       qsqlrelationaldelegate.sip
-|   |       |   |   |       qsqlrelationaltablemodel.sip
-|   |       |   |   |       qsqlresult.sip
-|   |       |   |   |       qsqltablemodel.sip
-|   |       |   |   |       QtSql.toml
-|   |       |   |   |       qtsqlglobal.sip
-|   |       |   |   |       QtSqlmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtStateMachine
-|   |       |   |   |       qabstractstate.sip
-|   |       |   |   |       qabstracttransition.sip
-|   |       |   |   |       qeventtransition.sip
-|   |       |   |   |       qfinalstate.sip
-|   |       |   |   |       qhistorystate.sip
-|   |       |   |   |       qkeyeventtransition.sip
-|   |       |   |   |       qmouseeventtransition.sip
-|   |       |   |   |       qsignaltransition.sip
-|   |       |   |   |       qstate.sip
-|   |       |   |   |       qstatemachine.sip
-|   |       |   |   |       QtStateMachine.toml
-|   |       |   |   |       QtStateMachinemod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtSvg
-|   |       |   |   |       qsvggenerator.sip
-|   |       |   |   |       qsvgrenderer.sip
-|   |       |   |   |       QtSvg.toml
-|   |       |   |   |       qtsvgglobal.sip
-|   |       |   |   |       QtSvgmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtSvgWidgets
-|   |       |   |   |       qgraphicssvgitem.sip
-|   |       |   |   |       qsvgwidget.sip
-|   |       |   |   |       QtSvgWidgets.toml
-|   |       |   |   |       QtSvgWidgetsmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtTest
-|   |       |   |   |       qabstractitemmodeltester.sip
-|   |       |   |   |       qsignalspy.sip
-|   |       |   |   |       qtestkeyboard.sip
-|   |       |   |   |       qtestmouse.sip
-|   |       |   |   |       qtestsystem.sip
-|   |       |   |   |       QtTest.toml
-|   |       |   |   |       QtTestmod.sip
-|   |       |   |   |       
-|   |       |   |   +---QtTextToSpeech
-|   |       |   |   |       qtexttospeech.sip
-|   |       |   |   |       QtTextToSpeech.toml
-|   |       |   |   |       QtTextToSpeechmod.sip
-|   |       |   |   |       qvoice.sip
-|   |       |   |   |       
-|   |       |   |   +---QtWebChannel
-|   |       |   |   |       QtWebChannel.toml
-|   |       |   |   |       QtWebChannelmod.sip
-|   |       |   |   |       qwebchannel.sip
-|   |       |   |   |       qwebchannelabstracttransport.sip
-|   |       |   |   |       
-|   |       |   |   +---QtWebSockets
-|   |       |   |   |       qmaskgenerator.sip
-|   |       |   |   |       QtWebSockets.toml
-|   |       |   |   |       QtWebSocketsmod.sip
-|   |       |   |   |       qwebsocket.sip
-|   |       |   |   |       qwebsocketcorsauthenticator.sip
-|   |       |   |   |       qwebsockethandshakeoptions.sip
-|   |       |   |   |       qwebsocketprotocol.sip
-|   |       |   |   |       qwebsocketserver.sip
-|   |       |   |   |       
-|   |       |   |   +---QtWidgets
-|   |       |   |   |       qabstractbutton.sip
-|   |       |   |   |       qabstractitemdelegate.sip
-|   |       |   |   |       qabstractitemview.sip
-|   |       |   |   |       qabstractscrollarea.sip
-|   |       |   |   |       qabstractslider.sip
-|   |       |   |   |       qabstractspinbox.sip
-|   |       |   |   |       qapplication.sip
-|   |       |   |   |       qboxlayout.sip
-|   |       |   |   |       qbuttongroup.sip
-|   |       |   |   |       qcalendarwidget.sip
-|   |       |   |   |       qcheckbox.sip
-|   |       |   |   |       qcolordialog.sip
-|   |       |   |   |       qcolumnview.sip
-|   |       |   |   |       qcombobox.sip
-|   |       |   |   |       qcommandlinkbutton.sip
-|   |       |   |   |       qcommonstyle.sip
-|   |       |   |   |       qcompleter.sip
-|   |       |   |   |       qdatawidgetmapper.sip
-|   |       |   |   |       qdatetimeedit.sip
-|   |       |   |   |       qdial.sip
-|   |       |   |   |       qdialog.sip
-|   |       |   |   |       qdialogbuttonbox.sip
-|   |       |   |   |       qdockwidget.sip
-|   |       |   |   |       qdrawutil.sip
-|   |       |   |   |       qerrormessage.sip
-|   |       |   |   |       qfiledialog.sip
-|   |       |   |   |       qfileiconprovider.sip
-|   |       |   |   |       qfilesystemmodel.sip
-|   |       |   |   |       qfocusframe.sip
-|   |       |   |   |       qfontcombobox.sip
-|   |       |   |   |       qfontdialog.sip
-|   |       |   |   |       qformlayout.sip
-|   |       |   |   |       qframe.sip
-|   |       |   |   |       qgesture.sip
-|   |       |   |   |       qgesturerecognizer.sip
-|   |       |   |   |       qgraphicsanchorlayout.sip
-|   |       |   |   |       qgraphicseffect.sip
-|   |       |   |   |       qgraphicsgridlayout.sip
-|   |       |   |   |       qgraphicsitem.sip
-|   |       |   |   |       qgraphicslayout.sip
-|   |       |   |   |       qgraphicslayoutitem.sip
-|   |       |   |   |       qgraphicslinearlayout.sip
-|   |       |   |   |       qgraphicsproxywidget.sip
-|   |       |   |   |       qgraphicsscene.sip
-|   |       |   |   |       qgraphicssceneevent.sip
-|   |       |   |   |       qgraphicstransform.sip
-|   |       |   |   |       qgraphicsview.sip
-|   |       |   |   |       qgraphicswidget.sip
-|   |       |   |   |       qgridlayout.sip
-|   |       |   |   |       qgroupbox.sip
-|   |       |   |   |       qheaderview.sip
-|   |       |   |   |       qinputdialog.sip
-|   |       |   |   |       qitemdelegate.sip
-|   |       |   |   |       qitemeditorfactory.sip
-|   |       |   |   |       qkeysequenceedit.sip
-|   |       |   |   |       qlabel.sip
-|   |       |   |   |       qlayout.sip
-|   |       |   |   |       qlayoutitem.sip
-|   |       |   |   |       qlcdnumber.sip
-|   |       |   |   |       qlineedit.sip
-|   |       |   |   |       qlistview.sip
-|   |       |   |   |       qlistwidget.sip
-|   |       |   |   |       qmainwindow.sip
-|   |       |   |   |       qmdiarea.sip
-|   |       |   |   |       qmdisubwindow.sip
-|   |       |   |   |       qmenu.sip
-|   |       |   |   |       qmenubar.sip
-|   |       |   |   |       qmessagebox.sip
-|   |       |   |   |       qplaintextedit.sip
-|   |       |   |   |       qprogressbar.sip
-|   |       |   |   |       qprogressdialog.sip
-|   |       |   |   |       qproxystyle.sip
-|   |       |   |   |       qpushbutton.sip
-|   |       |   |   |       qpywidgets_qlist.sip
-|   |       |   |   |       qradiobutton.sip
-|   |       |   |   |       qrubberband.sip
-|   |       |   |   |       qscrollarea.sip
-|   |       |   |   |       qscrollbar.sip
-|   |       |   |   |       qscroller.sip
-|   |       |   |   |       qscrollerproperties.sip
-|   |       |   |   |       qsizegrip.sip
-|   |       |   |   |       qsizepolicy.sip
-|   |       |   |   |       qslider.sip
-|   |       |   |   |       qspinbox.sip
-|   |       |   |   |       qsplashscreen.sip
-|   |       |   |   |       qsplitter.sip
-|   |       |   |   |       qstackedlayout.sip
-|   |       |   |   |       qstackedwidget.sip
-|   |       |   |   |       qstatusbar.sip
-|   |       |   |   |       qstyle.sip
-|   |       |   |   |       qstyleditemdelegate.sip
-|   |       |   |   |       qstylefactory.sip
-|   |       |   |   |       qstyleoption.sip
-|   |       |   |   |       qstylepainter.sip
-|   |       |   |   |       qsystemtrayicon.sip
-|   |       |   |   |       qtabbar.sip
-|   |       |   |   |       qtableview.sip
-|   |       |   |   |       qtablewidget.sip
-|   |       |   |   |       qtabwidget.sip
-|   |       |   |   |       qtextbrowser.sip
-|   |       |   |   |       qtextedit.sip
-|   |       |   |   |       qtoolbar.sip
-|   |       |   |   |       qtoolbox.sip
-|   |       |   |   |       qtoolbutton.sip
-|   |       |   |   |       qtooltip.sip
-|   |       |   |   |       qtreeview.sip
-|   |       |   |   |       qtreewidget.sip
-|   |       |   |   |       qtreewidgetitemiterator.sip
-|   |       |   |   |       QtWidgets.toml
-|   |       |   |   |       QtWidgetsmod.sip
-|   |       |   |   |       qundoview.sip
-|   |       |   |   |       qwhatsthis.sip
-|   |       |   |   |       qwidget.sip
-|   |       |   |   |       qwidgetaction.sip
-|   |       |   |   |       qwizard.sip
-|   |       |   |   |       
-|   |       |   |   \---QtXml
-|   |       |   |           qdom.sip
-|   |       |   |           QtXml.toml
-|   |       |   |           QtXmlmod.sip
-|   |       |   |           
-|   |       |   +---lupdate
-|   |       |   |   |   designer_source.py
-|   |       |   |   |   lupdate.py
-|   |       |   |   |   pylupdate.py
-|   |       |   |   |   python_source.py
-|   |       |   |   |   source_file.py
-|   |       |   |   |   translations.py
-|   |       |   |   |   translation_file.py
-|   |       |   |   |   user.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           designer_source.cpython-313.pyc
-|   |       |   |           lupdate.cpython-313.pyc
-|   |       |   |           pylupdate.cpython-313.pyc
-|   |       |   |           python_source.cpython-313.pyc
-|   |       |   |           source_file.cpython-313.pyc
-|   |       |   |           translations.cpython-313.pyc
-|   |       |   |           translation_file.cpython-313.pyc
-|   |       |   |           user.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---Qt6
-|   |       |   |   +---bin
-|   |       |   |   |       avcodec-61.dll
-|   |       |   |   |       avformat-61.dll
-|   |       |   |   |       avutil-59.dll
-|   |       |   |   |       concrt140.dll
-|   |       |   |   |       d3dcompiler_47.dll
-|   |       |   |   |       msvcp140.dll
-|   |       |   |   |       msvcp140_1.dll
-|   |       |   |   |       msvcp140_2.dll
-|   |       |   |   |       opengl32sw.dll
-|   |       |   |   |       Qt6Bluetooth.dll
-|   |       |   |   |       Qt6Concurrent.dll
-|   |       |   |   |       Qt6Core.dll
-|   |       |   |   |       Qt6DBus.dll
-|   |       |   |   |       Qt6Designer.dll
-|   |       |   |   |       Qt6Gui.dll
-|   |       |   |   |       Qt6Help.dll
-|   |       |   |   |       Qt6LabsAnimation.dll
-|   |       |   |   |       Qt6LabsFolderListModel.dll
-|   |       |   |   |       Qt6LabsPlatform.dll
-|   |       |   |   |       Qt6LabsQmlModels.dll
-|   |       |   |   |       Qt6LabsSettings.dll
-|   |       |   |   |       Qt6LabsSharedImage.dll
-|   |       |   |   |       Qt6LabsWavefrontMesh.dll
-|   |       |   |   |       Qt6Multimedia.dll
-|   |       |   |   |       Qt6MultimediaQuick.dll
-|   |       |   |   |       Qt6MultimediaWidgets.dll
-|   |       |   |   |       Qt6Network.dll
-|   |       |   |   |       Qt6Nfc.dll
-|   |       |   |   |       Qt6OpenGL.dll
-|   |       |   |   |       Qt6OpenGLWidgets.dll
-|   |       |   |   |       Qt6Pdf.dll
-|   |       |   |   |       Qt6PdfQuick.dll
-|   |       |   |   |       Qt6PdfWidgets.dll
-|   |       |   |   |       Qt6Positioning.dll
-|   |       |   |   |       Qt6PositioningQuick.dll
-|   |       |   |   |       Qt6PrintSupport.dll
-|   |       |   |   |       Qt6Qml.dll
-|   |       |   |   |       Qt6QmlMeta.dll
-|   |       |   |   |       Qt6QmlModels.dll
-|   |       |   |   |       Qt6QmlWorkerScript.dll
-|   |       |   |   |       Qt6Quick.dll
-|   |       |   |   |       Qt6Quick3D.dll
-|   |       |   |   |       Qt6Quick3DAssetImport.dll
-|   |       |   |   |       Qt6Quick3DAssetUtils.dll
-|   |       |   |   |       Qt6Quick3DEffects.dll
-|   |       |   |   |       Qt6Quick3DGlslParser.dll
-|   |       |   |   |       Qt6Quick3DHelpers.dll
-|   |       |   |   |       Qt6Quick3DHelpersImpl.dll
-|   |       |   |   |       Qt6Quick3DIblBaker.dll
-|   |       |   |   |       Qt6Quick3DParticles.dll
-|   |       |   |   |       Qt6Quick3DPhysics.dll
-|   |       |   |   |       Qt6Quick3DPhysicsHelpers.dll
-|   |       |   |   |       Qt6Quick3DRuntimeRender.dll
-|   |       |   |   |       Qt6Quick3DSpatialAudio.dll
-|   |       |   |   |       Qt6Quick3DUtils.dll
-|   |       |   |   |       Qt6Quick3DXr.dll
-|   |       |   |   |       Qt6QuickControls2.dll
-|   |       |   |   |       Qt6QuickControls2Basic.dll
-|   |       |   |   |       Qt6QuickControls2BasicStyleImpl.dll
-|   |       |   |   |       Qt6QuickControls2Fusion.dll
-|   |       |   |   |       Qt6QuickControls2FusionStyleImpl.dll
-|   |       |   |   |       Qt6QuickControls2Imagine.dll
-|   |       |   |   |       Qt6QuickControls2ImagineStyleImpl.dll
-|   |       |   |   |       Qt6QuickControls2Impl.dll
-|   |       |   |   |       Qt6QuickControls2Material.dll
-|   |       |   |   |       Qt6QuickControls2MaterialStyleImpl.dll
-|   |       |   |   |       Qt6QuickControls2Universal.dll
-|   |       |   |   |       Qt6QuickControls2UniversalStyleImpl.dll
-|   |       |   |   |       Qt6QuickDialogs2.dll
-|   |       |   |   |       Qt6QuickDialogs2QuickImpl.dll
-|   |       |   |   |       Qt6QuickDialogs2Utils.dll
-|   |       |   |   |       Qt6QuickEffects.dll
-|   |       |   |   |       Qt6QuickLayouts.dll
-|   |       |   |   |       Qt6QuickParticles.dll
-|   |       |   |   |       Qt6QuickShapes.dll
-|   |       |   |   |       Qt6QuickTemplates2.dll
-|   |       |   |   |       Qt6QuickTest.dll
-|   |       |   |   |       Qt6QuickTimeline.dll
-|   |       |   |   |       Qt6QuickTimelineBlendTrees.dll
-|   |       |   |   |       Qt6QuickVectorImage.dll
-|   |       |   |   |       Qt6QuickVectorImageGenerator.dll
-|   |       |   |   |       Qt6QuickWidgets.dll
-|   |       |   |   |       Qt6RemoteObjects.dll
-|   |       |   |   |       Qt6RemoteObjectsQml.dll
-|   |       |   |   |       Qt6Sensors.dll
-|   |       |   |   |       Qt6SensorsQuick.dll
-|   |       |   |   |       Qt6SerialPort.dll
-|   |       |   |   |       Qt6ShaderTools.dll
-|   |       |   |   |       Qt6SpatialAudio.dll
-|   |       |   |   |       Qt6Sql.dll
-|   |       |   |   |       Qt6StateMachine.dll
-|   |       |   |   |       Qt6StateMachineQml.dll
-|   |       |   |   |       Qt6Svg.dll
-|   |       |   |   |       Qt6SvgWidgets.dll
-|   |       |   |   |       Qt6Test.dll
-|   |       |   |   |       Qt6TextToSpeech.dll
-|   |       |   |   |       Qt6WebChannel.dll
-|   |       |   |   |       Qt6WebChannelQuick.dll
-|   |       |   |   |       Qt6WebSockets.dll
-|   |       |   |   |       Qt6Widgets.dll
-|   |       |   |   |       Qt6Xml.dll
-|   |       |   |   |       swresample-5.dll
-|   |       |   |   |       swscale-8.dll
-|   |       |   |   |       vcruntime140.dll
-|   |       |   |   |       vcruntime140_1.dll
-|   |       |   |   |       
-|   |       |   |   +---plugins
-|   |       |   |   |   +---assetimporters
-|   |       |   |   |   |       assimp.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---generic
-|   |       |   |   |   |       qtuiotouchplugin.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---geometryloaders
-|   |       |   |   |   |       defaultgeometryloader.dll
-|   |       |   |   |   |       gltfgeometryloader.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---help
-|   |       |   |   |   |       helpplugin.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---iconengines
-|   |       |   |   |   |       qsvgicon.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---imageformats
-|   |       |   |   |   |       qgif.dll
-|   |       |   |   |   |       qicns.dll
-|   |       |   |   |   |       qico.dll
-|   |       |   |   |   |       qjpeg.dll
-|   |       |   |   |   |       qpdf.dll
-|   |       |   |   |   |       qsvg.dll
-|   |       |   |   |   |       qtga.dll
-|   |       |   |   |   |       qtiff.dll
-|   |       |   |   |   |       qwbmp.dll
-|   |       |   |   |   |       qwebp.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---multimedia
-|   |       |   |   |   |       ffmpegmediaplugin.dll
-|   |       |   |   |   |       windowsmediaplugin.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---networkinformation
-|   |       |   |   |   |       qnetworklistmanager.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---platforms
-|   |       |   |   |   |       qminimal.dll
-|   |       |   |   |   |       qoffscreen.dll
-|   |       |   |   |   |       qwindows.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---position
-|   |       |   |   |   |       qtposition_nmea.dll
-|   |       |   |   |   |       qtposition_positionpoll.dll
-|   |       |   |   |   |       qtposition_winrt.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---PyQt6
-|   |       |   |   |   |       pyqt6qmlplugin.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---qmllint
-|   |       |   |   |   |       qdslintplugin.dll
-|   |       |   |   |   |       quicklintplugin.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---qmlls
-|   |       |   |   |   |       qmllsquickplugin.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---renderers
-|   |       |   |   |   |       openglrenderer.dll
-|   |       |   |   |   |       rhirenderer.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---sceneparsers
-|   |       |   |   |   |       assimpsceneimport.dll
-|   |       |   |   |   |       gltfsceneexport.dll
-|   |       |   |   |   |       gltfsceneimport.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---scxmldatamodel
-|   |       |   |   |   |       qscxmlecmascriptdatamodel.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---sensors
-|   |       |   |   |   |       qtsensors_generic.dll
-|   |       |   |   |   |       qtsensors_winrt.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---sqldrivers
-|   |       |   |   |   |       qsqlibase.dll
-|   |       |   |   |   |       qsqlite.dll
-|   |       |   |   |   |       qsqlmimer.dll
-|   |       |   |   |   |       qsqloci.dll
-|   |       |   |   |   |       qsqlodbc.dll
-|   |       |   |   |   |       qsqlpsql.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---styles
-|   |       |   |   |   |       qmodernwindowsstyle.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---texttospeech
-|   |       |   |   |   |       qtexttospeech_mock.dll
-|   |       |   |   |   |       qtexttospeech_sapi.dll
-|   |       |   |   |   |       qtexttospeech_winrt.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---tls
-|   |       |   |   |   |       qcertonlybackend.dll
-|   |       |   |   |   |       qopensslbackend.dll
-|   |       |   |   |   |       qschannelbackend.dll
-|   |       |   |   |   |       
-|   |       |   |   |   \---webview
-|   |       |   |   |           qtwebview_webengine.dll
-|   |       |   |   |           qtwebview_webview2.dll
-|   |       |   |   |           
-|   |       |   |   +---qml
-|   |       |   |   |   +---QtCore
-|   |       |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |       qmldir
-|   |       |   |   |   |       qtqmlcoreplugin.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---QtMultimedia
-|   |       |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |       qmldir
-|   |       |   |   |   |       quickmultimediaplugin.dll
-|   |       |   |   |   |       Video.qml
-|   |       |   |   |   |       
-|   |       |   |   |   +---QtNetwork
-|   |       |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |       qmldir
-|   |       |   |   |   |       qmlnetworkplugin.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---QtPositioning
-|   |       |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |       positioningquickplugin.dll
-|   |       |   |   |   |       qmldir
-|   |       |   |   |   |       
-|   |       |   |   |   +---QtQml
-|   |       |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   qmlplugin.dll
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   +---Models
-|   |       |   |   |   |   |       modelsplugin.dll
-|   |       |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |       qmldir
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---StateMachine
-|   |       |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |       qmldir
-|   |       |   |   |   |   |       qtqmlstatemachineplugin.dll
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---WorkerScript
-|   |       |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |       qmldir
-|   |       |   |   |   |   |       workerscriptplugin.dll
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   \---XmlListModel
-|   |       |   |   |   |           plugins.qmltypes
-|   |       |   |   |   |           qmldir
-|   |       |   |   |   |           qmlxmllistmodelplugin.dll
-|   |       |   |   |   |           
-|   |       |   |   |   +---QtQuick
-|   |       |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   qtquick2plugin.dll
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   +---Controls
-|   |       |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   qtquickcontrols2plugin.dll
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   +---Basic
-|   |       |   |   |   |   |   |   |   AbstractButton.qml
-|   |       |   |   |   |   |   |   |   Action.qml
-|   |       |   |   |   |   |   |   |   ActionGroup.qml
-|   |       |   |   |   |   |   |   |   ApplicationWindow.qml
-|   |       |   |   |   |   |   |   |   BusyIndicator.qml
-|   |       |   |   |   |   |   |   |   Button.qml
-|   |       |   |   |   |   |   |   |   ButtonGroup.qml
-|   |       |   |   |   |   |   |   |   Calendar.qml
-|   |       |   |   |   |   |   |   |   CalendarModel.qml
-|   |       |   |   |   |   |   |   |   CheckBox.qml
-|   |       |   |   |   |   |   |   |   CheckDelegate.qml
-|   |       |   |   |   |   |   |   |   ComboBox.qml
-|   |       |   |   |   |   |   |   |   Container.qml
-|   |       |   |   |   |   |   |   |   Control.qml
-|   |       |   |   |   |   |   |   |   DayOfWeekRow.qml
-|   |       |   |   |   |   |   |   |   DelayButton.qml
-|   |       |   |   |   |   |   |   |   Dial.qml
-|   |       |   |   |   |   |   |   |   Dialog.qml
-|   |       |   |   |   |   |   |   |   DialogButtonBox.qml
-|   |       |   |   |   |   |   |   |   Drawer.qml
-|   |       |   |   |   |   |   |   |   Frame.qml
-|   |       |   |   |   |   |   |   |   GroupBox.qml
-|   |       |   |   |   |   |   |   |   HorizontalHeaderView.qml
-|   |       |   |   |   |   |   |   |   HorizontalHeaderViewDelegate.qml
-|   |       |   |   |   |   |   |   |   ItemDelegate.qml
-|   |       |   |   |   |   |   |   |   Label.qml
-|   |       |   |   |   |   |   |   |   Menu.qml
-|   |       |   |   |   |   |   |   |   MenuBar.qml
-|   |       |   |   |   |   |   |   |   MenuBarItem.qml
-|   |       |   |   |   |   |   |   |   MenuItem.qml
-|   |       |   |   |   |   |   |   |   MenuSeparator.qml
-|   |       |   |   |   |   |   |   |   MonthGrid.qml
-|   |       |   |   |   |   |   |   |   Page.qml
-|   |       |   |   |   |   |   |   |   PageIndicator.qml
-|   |       |   |   |   |   |   |   |   Pane.qml
-|   |       |   |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   |   Popup.qml
-|   |       |   |   |   |   |   |   |   ProgressBar.qml
-|   |       |   |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   |   qtquickcontrols2basicstyleplugin.dll
-|   |       |   |   |   |   |   |   |   RadioButton.qml
-|   |       |   |   |   |   |   |   |   RadioDelegate.qml
-|   |       |   |   |   |   |   |   |   RangeSlider.qml
-|   |       |   |   |   |   |   |   |   RoundButton.qml
-|   |       |   |   |   |   |   |   |   ScrollBar.qml
-|   |       |   |   |   |   |   |   |   ScrollIndicator.qml
-|   |       |   |   |   |   |   |   |   ScrollView.qml
-|   |       |   |   |   |   |   |   |   SearchField.qml
-|   |       |   |   |   |   |   |   |   SelectionRectangle.qml
-|   |       |   |   |   |   |   |   |   Slider.qml
-|   |       |   |   |   |   |   |   |   SpinBox.qml
-|   |       |   |   |   |   |   |   |   SplitView.qml
-|   |       |   |   |   |   |   |   |   StackView.qml
-|   |       |   |   |   |   |   |   |   SwipeDelegate.qml
-|   |       |   |   |   |   |   |   |   SwipeView.qml
-|   |       |   |   |   |   |   |   |   Switch.qml
-|   |       |   |   |   |   |   |   |   SwitchDelegate.qml
-|   |       |   |   |   |   |   |   |   TabBar.qml
-|   |       |   |   |   |   |   |   |   TabButton.qml
-|   |       |   |   |   |   |   |   |   TableViewDelegate.qml
-|   |       |   |   |   |   |   |   |   TextArea.qml
-|   |       |   |   |   |   |   |   |   TextField.qml
-|   |       |   |   |   |   |   |   |   ToolBar.qml
-|   |       |   |   |   |   |   |   |   ToolButton.qml
-|   |       |   |   |   |   |   |   |   ToolSeparator.qml
-|   |       |   |   |   |   |   |   |   ToolTip.qml
-|   |       |   |   |   |   |   |   |   TreeViewDelegate.qml
-|   |       |   |   |   |   |   |   |   Tumbler.qml
-|   |       |   |   |   |   |   |   |   VerticalHeaderView.qml
-|   |       |   |   |   |   |   |   |   VerticalHeaderViewDelegate.qml
-|   |       |   |   |   |   |   |   |   WeekNumberColumn.qml
-|   |       |   |   |   |   |   |   |   
-|   |       |   |   |   |   |   |   \---impl
-|   |       |   |   |   |   |   |           plugins.qmltypes
-|   |       |   |   |   |   |   |           qmldir
-|   |       |   |   |   |   |   |           qtquickcontrols2basicstyleimplplugin.dll
-|   |       |   |   |   |   |   |           
-|   |       |   |   |   |   |   +---designer
-|   |       |   |   |   |   |   |   |   AbstractButtonSection.qml
-|   |       |   |   |   |   |   |   |   BusyIndicatorSpecifics.qml
-|   |       |   |   |   |   |   |   |   ButtonSection.qml
-|   |       |   |   |   |   |   |   |   ButtonSpecifics.qml
-|   |       |   |   |   |   |   |   |   CheckBoxSpecifics.qml
-|   |       |   |   |   |   |   |   |   CheckDelegateSpecifics.qml
-|   |       |   |   |   |   |   |   |   CheckSection.qml
-|   |       |   |   |   |   |   |   |   ComboBoxSpecifics.qml
-|   |       |   |   |   |   |   |   |   ContainerSection.qml
-|   |       |   |   |   |   |   |   |   ControlSection.qml
-|   |       |   |   |   |   |   |   |   ControlSpecifics.qml
-|   |       |   |   |   |   |   |   |   DelayButtonSpecifics.qml
-|   |       |   |   |   |   |   |   |   DialSpecifics.qml
-|   |       |   |   |   |   |   |   |   FrameSpecifics.qml
-|   |       |   |   |   |   |   |   |   GroupBoxSpecifics.qml
-|   |       |   |   |   |   |   |   |   InsetSection.qml
-|   |       |   |   |   |   |   |   |   ItemDelegateSection.qml
-|   |       |   |   |   |   |   |   |   ItemDelegateSpecifics.qml
-|   |       |   |   |   |   |   |   |   LabelSpecifics.qml
-|   |       |   |   |   |   |   |   |   PaddingSection.qml
-|   |       |   |   |   |   |   |   |   PageIndicatorSpecifics.qml
-|   |       |   |   |   |   |   |   |   PageSpecifics.qml
-|   |       |   |   |   |   |   |   |   PaneSection.qml
-|   |       |   |   |   |   |   |   |   PaneSpecifics.qml
-|   |       |   |   |   |   |   |   |   ProgressBarSpecifics.qml
-|   |       |   |   |   |   |   |   |   qtquickcontrols2.metainfo
-|   |       |   |   |   |   |   |   |   RadioButtonSpecifics.qml
-|   |       |   |   |   |   |   |   |   RadioDelegateSpecifics.qml
-|   |       |   |   |   |   |   |   |   RangeSliderSpecifics.qml
-|   |       |   |   |   |   |   |   |   RoundButtonSpecifics.qml
-|   |       |   |   |   |   |   |   |   ScrollViewSpecifics.qml
-|   |       |   |   |   |   |   |   |   SliderSpecifics.qml
-|   |       |   |   |   |   |   |   |   SpinBoxSpecifics.qml
-|   |       |   |   |   |   |   |   |   StackViewSpecifics.qml
-|   |       |   |   |   |   |   |   |   SwipeDelegateSpecifics.qml
-|   |       |   |   |   |   |   |   |   SwipeViewSpecifics.qml
-|   |       |   |   |   |   |   |   |   SwitchDelegateSpecifics.qml
-|   |       |   |   |   |   |   |   |   SwitchSpecifics.qml
-|   |       |   |   |   |   |   |   |   TabBarSpecifics.qml
-|   |       |   |   |   |   |   |   |   TabButtonSpecifics.qml
-|   |       |   |   |   |   |   |   |   TextAreaSpecifics.qml
-|   |       |   |   |   |   |   |   |   TextFieldSpecifics.qml
-|   |       |   |   |   |   |   |   |   ToolBarSpecifics.qml
-|   |       |   |   |   |   |   |   |   ToolButtonSpecifics.qml
-|   |       |   |   |   |   |   |   |   ToolSeparatorSpecifics.qml
-|   |       |   |   |   |   |   |   |   TumblerSpecifics.qml
-|   |       |   |   |   |   |   |   |   
-|   |       |   |   |   |   |   |   \---images
-|   |       |   |   |   |   |   |           busyindicator-icon.png
-|   |       |   |   |   |   |   |           busyindicator-icon16.png
-|   |       |   |   |   |   |   |           busyindicator-icon@2x.png
-|   |       |   |   |   |   |   |           button-icon.png
-|   |       |   |   |   |   |   |           button-icon16.png
-|   |       |   |   |   |   |   |           button-icon@2x.png
-|   |       |   |   |   |   |   |           checkbox-icon.png
-|   |       |   |   |   |   |   |           checkbox-icon16.png
-|   |       |   |   |   |   |   |           checkbox-icon@2x.png
-|   |       |   |   |   |   |   |           combobox-icon.png
-|   |       |   |   |   |   |   |           combobox-icon16.png
-|   |       |   |   |   |   |   |           combobox-icon@2x.png
-|   |       |   |   |   |   |   |           control-icon.png
-|   |       |   |   |   |   |   |           control-icon16.png
-|   |       |   |   |   |   |   |           control-icon@2x.png
-|   |       |   |   |   |   |   |           delaybutton-icon.png
-|   |       |   |   |   |   |   |           delaybutton-icon16.png
-|   |       |   |   |   |   |   |           delaybutton-icon@2x.png
-|   |       |   |   |   |   |   |           dial-icon.png
-|   |       |   |   |   |   |   |           dial-icon16.png
-|   |       |   |   |   |   |   |           dial-icon@2x.png
-|   |       |   |   |   |   |   |           frame-icon.png
-|   |       |   |   |   |   |   |           frame-icon16.png
-|   |       |   |   |   |   |   |           frame-icon@2x.png
-|   |       |   |   |   |   |   |           groupbox-icon.png
-|   |       |   |   |   |   |   |           groupbox-icon16.png
-|   |       |   |   |   |   |   |           groupbox-icon@2x.png
-|   |       |   |   |   |   |   |           itemdelegate-icon.png
-|   |       |   |   |   |   |   |           itemdelegate-icon16.png
-|   |       |   |   |   |   |   |           itemdelegate-icon@2x.png
-|   |       |   |   |   |   |   |           label-icon.png
-|   |       |   |   |   |   |   |           label-icon16.png
-|   |       |   |   |   |   |   |           label-icon@2x.png
-|   |       |   |   |   |   |   |           page-icon.png
-|   |       |   |   |   |   |   |           page-icon16.png
-|   |       |   |   |   |   |   |           page-icon@2x.png
-|   |       |   |   |   |   |   |           pageindicator-icon.png
-|   |       |   |   |   |   |   |           pageindicator-icon16.png
-|   |       |   |   |   |   |   |           pageindicator-icon@2x.png
-|   |       |   |   |   |   |   |           pane-icon.png
-|   |       |   |   |   |   |   |           pane-icon16.png
-|   |       |   |   |   |   |   |           pane-icon@2x.png
-|   |       |   |   |   |   |   |           progressbar-icon.png
-|   |       |   |   |   |   |   |           progressbar-icon16.png
-|   |       |   |   |   |   |   |           progressbar-icon@2x.png
-|   |       |   |   |   |   |   |           radiobutton-icon.png
-|   |       |   |   |   |   |   |           radiobutton-icon16.png
-|   |       |   |   |   |   |   |           radiobutton-icon@2x.png
-|   |       |   |   |   |   |   |           rangeslider-icon.png
-|   |       |   |   |   |   |   |           rangeslider-icon16.png
-|   |       |   |   |   |   |   |           rangeslider-icon@2x.png
-|   |       |   |   |   |   |   |           roundbutton-icon.png
-|   |       |   |   |   |   |   |           roundbutton-icon16.png
-|   |       |   |   |   |   |   |           roundbutton-icon@2x.png
-|   |       |   |   |   |   |   |           scrollview-icon.png
-|   |       |   |   |   |   |   |           scrollview-icon16.png
-|   |       |   |   |   |   |   |           scrollview-icon@2x.png
-|   |       |   |   |   |   |   |           slider-icon.png
-|   |       |   |   |   |   |   |           slider-icon16.png
-|   |       |   |   |   |   |   |           slider-icon@2x.png
-|   |       |   |   |   |   |   |           spinbox-icon.png
-|   |       |   |   |   |   |   |           spinbox-icon16.png
-|   |       |   |   |   |   |   |           spinbox-icon@2x.png
-|   |       |   |   |   |   |   |           stackview-icon.png
-|   |       |   |   |   |   |   |           stackview-icon16.png
-|   |       |   |   |   |   |   |           stackview-icon@2x.png
-|   |       |   |   |   |   |   |           swipeview-icon.png
-|   |       |   |   |   |   |   |           swipeview-icon16.png
-|   |       |   |   |   |   |   |           swipeview-icon@2x.png
-|   |       |   |   |   |   |   |           switch-icon.png
-|   |       |   |   |   |   |   |           switch-icon16.png
-|   |       |   |   |   |   |   |           switch-icon@2x.png
-|   |       |   |   |   |   |   |           textarea-icon.png
-|   |       |   |   |   |   |   |           textarea-icon16.png
-|   |       |   |   |   |   |   |           textarea-icon@2x.png
-|   |       |   |   |   |   |   |           textfield-icon.png
-|   |       |   |   |   |   |   |           textfield-icon16.png
-|   |       |   |   |   |   |   |           textfield-icon@2x.png
-|   |       |   |   |   |   |   |           toolbar-icon.png
-|   |       |   |   |   |   |   |           toolbar-icon16.png
-|   |       |   |   |   |   |   |           toolbar-icon@2x.png
-|   |       |   |   |   |   |   |           toolbutton-icon.png
-|   |       |   |   |   |   |   |           toolbutton-icon16.png
-|   |       |   |   |   |   |   |           toolbutton-icon@2x.png
-|   |       |   |   |   |   |   |           toolseparator-icon.png
-|   |       |   |   |   |   |   |           toolseparator-icon16.png
-|   |       |   |   |   |   |   |           toolseparator-icon@2x.png
-|   |       |   |   |   |   |   |           tumbler-icon.png
-|   |       |   |   |   |   |   |           tumbler-icon16.png
-|   |       |   |   |   |   |   |           tumbler-icon@2x.png
-|   |       |   |   |   |   |   |           
-|   |       |   |   |   |   |   +---FluentWinUI3
-|   |       |   |   |   |   |   |   |   ApplicationWindow.qml
-|   |       |   |   |   |   |   |   |   BusyIndicator.qml
-|   |       |   |   |   |   |   |   |   Button.qml
-|   |       |   |   |   |   |   |   |   CheckBox.qml
-|   |       |   |   |   |   |   |   |   CheckDelegate.qml
-|   |       |   |   |   |   |   |   |   ComboBox.qml
-|   |       |   |   |   |   |   |   |   Config.qml
-|   |       |   |   |   |   |   |   |   DelayButton.qml
-|   |       |   |   |   |   |   |   |   Dialog.qml
-|   |       |   |   |   |   |   |   |   DialogButtonBox.qml
-|   |       |   |   |   |   |   |   |   FocusFrame.qml
-|   |       |   |   |   |   |   |   |   Frame.qml
-|   |       |   |   |   |   |   |   |   GroupBox.qml
-|   |       |   |   |   |   |   |   |   ItemDelegate.qml
-|   |       |   |   |   |   |   |   |   Menu.qml
-|   |       |   |   |   |   |   |   |   MenuBar.qml
-|   |       |   |   |   |   |   |   |   MenuBarItem.qml
-|   |       |   |   |   |   |   |   |   MenuItem.qml
-|   |       |   |   |   |   |   |   |   MenuSeparator.qml
-|   |       |   |   |   |   |   |   |   PageIndicator.qml
-|   |       |   |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   |   Popup.qml
-|   |       |   |   |   |   |   |   |   ProgressBar.qml
-|   |       |   |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   |   qtquickcontrols2fluentwinui3styleplugin.dll
-|   |       |   |   |   |   |   |   |   RadioButton.qml
-|   |       |   |   |   |   |   |   |   RadioDelegate.qml
-|   |       |   |   |   |   |   |   |   RangeSlider.qml
-|   |       |   |   |   |   |   |   |   RoundButton.qml
-|   |       |   |   |   |   |   |   |   SearchField.qml
-|   |       |   |   |   |   |   |   |   Slider.qml
-|   |       |   |   |   |   |   |   |   SpinBox.qml
-|   |       |   |   |   |   |   |   |   StyleImage.qml
-|   |       |   |   |   |   |   |   |   SwipeDelegate.qml
-|   |       |   |   |   |   |   |   |   Switch.qml
-|   |       |   |   |   |   |   |   |   SwitchDelegate.qml
-|   |       |   |   |   |   |   |   |   TabBar.qml
-|   |       |   |   |   |   |   |   |   TabButton.qml
-|   |       |   |   |   |   |   |   |   TextArea.qml
-|   |       |   |   |   |   |   |   |   TextField.qml
-|   |       |   |   |   |   |   |   |   ToolBar.qml
-|   |       |   |   |   |   |   |   |   ToolButton.qml
-|   |       |   |   |   |   |   |   |   ToolSeparator.qml
-|   |       |   |   |   |   |   |   |   ToolTip.qml
-|   |       |   |   |   |   |   |   |   
-|   |       |   |   |   |   |   |   +---dark
-|   |       |   |   |   |   |   |   |   \---images
-|   |       |   |   |   |   |   |   |           checkbox-indicator-checked-disabled.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-checked-disabled@2x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-checked-disabled@3x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-checked-hovered.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-checked-hovered@2x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-checked-hovered@3x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-checked-pressed.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-checked-pressed@2x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-checked-pressed@3x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-checked.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-checked@2x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-checked@3x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-disabled-partiallyChecked.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-disabled-partiallyChecked@2x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-disabled-partiallyChecked@3x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-disabled.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-disabled@2x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-disabled@3x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-hovered-partiallyChecked.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-hovered-partiallyChecked@2x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-hovered-partiallyChecked@3x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-hovered.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-hovered@2x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-hovered@3x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-partiallyChecked-pressed.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-partiallyChecked-pressed@2x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-partiallyChecked-pressed@3x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-partiallyChecked.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-partiallyChecked@2x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-partiallyChecked@3x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-pressed.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-pressed@2x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator-pressed@3x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator@2x.png
-|   |       |   |   |   |   |   |   |           checkbox-indicator@3x.png
-|   |       |   |   |   |   |   |   |           combobox-background-disabled.png
-|   |       |   |   |   |   |   |   |           combobox-background-disabled@2x.png
-|   |       |   |   |   |   |   |   |           combobox-background-disabled@3x.png
-|   |       |   |   |   |   |   |   |           combobox-background-focused.png
-|   |       |   |   |   |   |   |   |           combobox-background-focused@2x.png
-|   |       |   |   |   |   |   |   |           combobox-background-focused@3x.png
-|   |       |   |   |   |   |   |   |           combobox-background-hovered-open.png
-|   |       |   |   |   |   |   |   |           combobox-background-hovered-open@2x.png
-|   |       |   |   |   |   |   |   |           combobox-background-hovered-open@3x.png
-|   |       |   |   |   |   |   |   |           combobox-background-hovered.png
-|   |       |   |   |   |   |   |   |           combobox-background-hovered@2x.png
-|   |       |   |   |   |   |   |   |           combobox-background-hovered@3x.png
-|   |       |   |   |   |   |   |   |           combobox-background-open-pressed.png
-|   |       |   |   |   |   |   |   |           combobox-background-open-pressed@2x.png
-|   |       |   |   |   |   |   |   |           combobox-background-open-pressed@3x.png
-|   |       |   |   |   |   |   |   |           combobox-background-open.png
-|   |       |   |   |   |   |   |   |           combobox-background-open@2x.png
-|   |       |   |   |   |   |   |   |           combobox-background-open@3x.png
-|   |       |   |   |   |   |   |   |           combobox-background-pressed.png
-|   |       |   |   |   |   |   |   |           combobox-background-pressed@2x.png
-|   |       |   |   |   |   |   |   |           combobox-background-pressed@3x.png
-|   |       |   |   |   |   |   |   |           combobox-background.png
-|   |       |   |   |   |   |   |   |           combobox-background@2x.png
-|   |       |   |   |   |   |   |   |           combobox-background@3x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-disabled.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-disabled@2x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-disabled@3x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-focused.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-focused@2x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-focused@3x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-hovered-open.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-hovered-open@2x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-hovered-open@3x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-hovered.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-hovered@2x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-hovered@3x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-open-pressed.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-open-pressed@2x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-open-pressed@3x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-open.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-open@2x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-open@3x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-pressed.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-pressed@2x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator-pressed@3x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator.png
-|   |       |   |   |   |   |   |   |           combobox-indicator@2x.png
-|   |       |   |   |   |   |   |   |           combobox-indicator@3x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-background-hovered-open.png
-|   |       |   |   |   |   |   |   |           editablecombobox-background-hovered-open@2x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-background-hovered-open@3x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-background-open-pressed.png
-|   |       |   |   |   |   |   |   |           editablecombobox-background-open-pressed@2x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-background-open-pressed@3x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-background-open.png
-|   |       |   |   |   |   |   |   |           editablecombobox-background-open@2x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-background-open@3x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-indicator-hovered-open.png
-|   |       |   |   |   |   |   |   |           editablecombobox-indicator-hovered-open@2x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-indicator-hovered-open@3x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-indicator-open-pressed.png
-|   |       |   |   |   |   |   |   |           editablecombobox-indicator-open-pressed@2x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-indicator-open-pressed@3x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-indicator-open.png
-|   |       |   |   |   |   |   |   |           editablecombobox-indicator-open@2x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-indicator-open@3x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-popup-background-hovered-open.png
-|   |       |   |   |   |   |   |   |           editablecombobox-popup-background-hovered-open@2x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-popup-background-hovered-open@3x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-popup-background-open-pressed.png
-|   |       |   |   |   |   |   |   |           editablecombobox-popup-background-open-pressed@2x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-popup-background-open-pressed@3x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-popup-background-open.png
-|   |       |   |   |   |   |   |   |           editablecombobox-popup-background-open@2x.png
-|   |       |   |   |   |   |   |   |           editablecombobox-popup-background-open@3x.png
-|   |       |   |   |   |   |   |   |           frame-background-disabled.png
-|   |       |   |   |   |   |   |   |           frame-background-disabled@2x.png
-|   |       |   |   |   |   |   |   |           frame-background-disabled@3x.png
-|   |       |   |   |   |   |   |   |           frame-background.png
-|   |       |   |   |   |   |   |   |           frame-background@2x.png
-|   |       |   |   |   |   |   |   |           frame-background@3x.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-highlighted-hovered.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-highlighted-hovered@2x.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-highlighted-hovered@3x.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-highlighted-pressed.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-highlighted-pressed@2x.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-highlighted-pressed@3x.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-highlighted.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-highlighted@2x.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-highlighted@3x.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-hovered.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-hovered@2x.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-hovered@3x.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-pressed.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-pressed@2x.png
-|   |       |   |   |   |   |   |   |           itemdelegate-background-pressed@3x.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-delegate-current-hovered.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-delegate-current-hovered@2x.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-delegate-current-hovered@3x.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-delegate-current-pressed.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-delegate-current-pressed@2x.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-delegate-current-pressed@3x.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-delegate-current.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-delegate-current@2x.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-delegate-current@3x.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-delegate-pressed.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-delegate-pressed@2x.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-delegate-pressed@3x.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-disabled.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-disabled@2x.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-disabled@3x.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-hovered.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-hovered@2x.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator-hovered@3x.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator@2x.png
-|   |       |   |   |   |   |   |   |           pageindicatordelegate-indicator@3x.png
-|   |       |   |   |   |   |   |   |           popup-background.png
-|   |       |   |   |   |   |   |   |           popup-background@2x.png
-|   |       |   |   |   |   |   |   |           popup-background@3x.png
-|   |       |   |   |   |   |   |   |           progressbar-groove-disabled.png
-|   |       |   |   |   |   |   |   |           progressbar-groove-disabled@2x.png
-|   |       |   |   |   |   |   |   |           progressbar-groove-disabled@3x.png
-|   |       |   |   |   |   |   |   |           progressbar-groove.png
-|   |       |   |   |   |   |   |   |           progressbar-groove@2x.png
-|   |       |   |   |   |   |   |   |           progressbar-groove@3x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-checked-disabled.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-checked-disabled@2x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-checked-disabled@3x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-checked-hovered.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-checked-hovered@2x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-checked-hovered@3x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-checked-pressed.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-checked-pressed@2x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-checked-pressed@3x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-checked.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-checked@2x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-checked@3x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-disabled.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-disabled@2x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-disabled@3x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-hovered.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-hovered@2x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-hovered@3x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-pressed.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-pressed@2x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator-pressed@3x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator@2x.png
-|   |       |   |   |   |   |   |   |           radiobutton-indicator@3x.png
-|   |       |   |   |   |   |   |   |           rangeslider-first-handle-disabled.png
-|   |       |   |   |   |   |   |   |           rangeslider-first-handle-disabled@2x.png
-|   |       |   |   |   |   |   |   |           rangeslider-first-handle-disabled@3x.png
-|   |       |   |   |   |   |   |   |           rangeslider-first-handle-handle-pressed.png
-|   |       |   |   |   |   |   |   |           rangeslider-first-handle-handle-pressed@2x.png
-|   |       |   |   |   |   |   |   |           rangeslider-first-handle-handle-pressed@3x.png
-|   |       |   |   |   |   |   |   |           rangeslider-first-handle-hovered.png
-|   |       |   |   |   |   |   |   |           rangeslider-first-handle-hovered@2x.png
-|   |       |   |   |   |   |   |   |           rangeslider-first-handle-hovered@3x.png
-|   |       |   |   |   |   |   |   |           rangeslider-first-handle.png
-|   |       |   |   |   |   |   |   |           rangeslider-first-handle@2x.png
-|   |       |   |   |   |   |   |   |           rangeslider-first-handle@3x.png
-|   |       |   |   |   |   |   |   |           rangeslider-groove-disabled.png
-|   |       |   |   |   |   |   |   |           rangeslider-groove-disabled@2x.png
-|   |       |   |   |   |   |   |   |           rangeslider-groove-disabled@3x.png
-|   |       |   |   |   |   |   |   |           rangeslider-groove-handle-pressed.png
-|   |       |   |   |   |   |   |   |           rangeslider-groove-handle-pressed@2x.png
-|   |       |   |   |   |   |   |   |           rangeslider-groove-handle-pressed@3x.png
-|   |       |   |   |   |   |   |   |           rangeslider-groove-hovered.png
-|   |       |   |   |   |   |   |   |           rangeslider-groove-hovered@2x.png
-|   |       |   |   |   |   |   |   |           rangeslider-groove-hovered@3x.png
-|   |       |   |   |   |   |   |   |           rangeslider-groove.png
-|   |       |   |   |   |   |   |   |           rangeslider-groove@2x.png
-|   |       |   |   |   |   |   |   |           rangeslider-groove@3x.png
-|   |       |   |   |   |   |   |   |           rangeslider-second-handle-disabled.png
-|   |       |   |   |   |   |   |   |           rangeslider-second-handle-disabled@2x.png
-|   |       |   |   |   |   |   |   |           rangeslider-second-handle-disabled@3x.png
-|   |       |   |   |   |   |   |   |           rangeslider-second-handle-handle-pressed.png
-|   |       |   |   |   |   |   |   |           rangeslider-second-handle-handle-pressed@2x.png
-|   |       |   |   |   |   |   |   |           rangeslider-second-handle-handle-pressed@3x.png
-|   |       |   |   |   |   |   |   |           rangeslider-second-handle-hovered.png
-|   |       |   |   |   |   |   |   |           rangeslider-second-handle-hovered@2x.png
-|   |       |   |   |   |   |   |   |           rangeslider-second-handle-hovered@3x.png
-|   |       |   |   |   |   |   |   |           rangeslider-second-handle.png
-|   |       |   |   |   |   |   |   |           rangeslider-second-handle@2x.png
-|   |       |   |   |   |   |   |   |           rangeslider-second-handle@3x.png
-|   |       |   |   |   |   |   |   |           slider-groove-disabled.png
-|   |       |   |   |   |   |   |   |           slider-groove-disabled@2x.png
-|   |       |   |   |   |   |   |   |           slider-groove-disabled@3x.png
-|   |       |   |   |   |   |   |   |           slider-groove-hovered.png
-|   |       |   |   |   |   |   |   |           slider-groove-hovered@2x.png
-|   |       |   |   |   |   |   |   |           slider-groove-hovered@3x.png
-|   |       |   |   |   |   |   |   |           slider-groove-pressed.png
-|   |       |   |   |   |   |   |   |           slider-groove-pressed@2x.png
-|   |       |   |   |   |   |   |   |           slider-groove-pressed@3x.png
-|   |       |   |   |   |   |   |   |           slider-groove.png
-|   |       |   |   |   |   |   |   |           slider-groove@2x.png
-|   |       |   |   |   |   |   |   |           slider-groove@3x.png
-|   |       |   |   |   |   |   |   |           slider-handle-disabled.png
-|   |       |   |   |   |   |   |   |           slider-handle-disabled@2x.png
-|   |       |   |   |   |   |   |   |           slider-handle-disabled@3x.png
-|   |       |   |   |   |   |   |   |           slider-handle-hovered.png
-|   |       |   |   |   |   |   |   |           slider-handle-hovered@2x.png
-|   |       |   |   |   |   |   |   |           slider-handle-hovered@3x.png
-|   |       |   |   |   |   |   |   |           slider-handle-pressed.png
-|   |       |   |   |   |   |   |   |           slider-handle-pressed@2x.png
-|   |       |   |   |   |   |   |   |           slider-handle-pressed@3x.png
-|   |       |   |   |   |   |   |   |           slider-handle.png
-|   |       |   |   |   |   |   |   |           slider-handle@2x.png
-|   |       |   |   |   |   |   |   |           slider-handle@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-background-atlimit.png
-|   |       |   |   |   |   |   |   |           spinbox-background-atlimit@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-background-atlimit@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-background-disabled.png
-|   |       |   |   |   |   |   |   |           spinbox-background-disabled@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-background-disabled@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-background-down-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-background-down-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-background-down-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-background-down-pressed.png
-|   |       |   |   |   |   |   |   |           spinbox-background-down-pressed@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-background-down-pressed@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-background-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-background-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-background-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-background-up-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-background-up-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-background-up-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-background-up-pressed.png
-|   |       |   |   |   |   |   |   |           spinbox-background-up-pressed@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-background-up-pressed@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-background.png
-|   |       |   |   |   |   |   |   |           spinbox-background@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-background@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-atlimit.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-atlimit@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-atlimit@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-disabled.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-disabled@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-disabled@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-down-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-down-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-down-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-down-pressed.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-down-pressed@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-down-pressed@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-up-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-up-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-up-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-up-pressed.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-up-pressed@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background-up-pressed@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-background@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-atlimit.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-atlimit@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-atlimit@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-disabled.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-disabled@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-disabled@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-down-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-down-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-down-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-down-pressed.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-down-pressed@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-down-pressed@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-up-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-up-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-up-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-up-pressed.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-up-pressed@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon-up-pressed@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-down-icon@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-atlimit.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-atlimit@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-atlimit@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-disabled.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-disabled@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-disabled@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-down-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-down-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-down-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-down-pressed.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-down-pressed@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-down-pressed@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-up-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-up-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-up-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-up-pressed.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-up-pressed@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background-up-pressed@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-background@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-atlimit.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-atlimit@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-atlimit@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-disabled.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-disabled@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-disabled@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-down-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-down-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-down-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-down-pressed.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-down-pressed@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-down-pressed@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-up-hovered.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-up-hovered@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-up-hovered@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-up-pressed.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-up-pressed@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon-up-pressed@3x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon@2x.png
-|   |       |   |   |   |   |   |   |           spinbox-indicator-up-icon@3x.png
-|   |       |   |   |   |   |   |   |           textarea-background-disabled.png
-|   |       |   |   |   |   |   |   |           textarea-background-disabled@2x.png
-|   |       |   |   |   |   |   |   |           textarea-background-disabled@3x.png
-|   |       |   |   |   |   |   |   |           textarea-background-focused.png
-|   |       |   |   |   |   |   |   |           textarea-background-focused@2x.png
-|   |       |   |   |   |   |   |   |           textarea-background-focused@3x.png
-|   |       |   |   |   |   |   |   |           textarea-background-hovered.png
-|   |       |   |   |   |   |   |   |           textarea-background-hovered@2x.png
-|   |       |   |   |   |   |   |   |           textarea-background-hovered@3x.png
-|   |       |   |   |   |   |   |   |           textarea-background.png
-|   |       |   |   |   |   |   |   |           textarea-background@2x.png
-|   |       |   |   |   |   |   |   |           textarea-background@3x.png
-|   |       |   |   |   |   |   |   |           textfield-background-disabled.png
-|   |       |   |   |   |   |   |   |           textfield-background-disabled@2x.png
-|   |       |   |   |   |   |   |   |           textfield-background-disabled@3x.png
-|   |       |   |   |   |   |   |   |           textfield-background-focused.png
-|   |       |   |   |   |   |   |   |           textfield-background-focused@2x.png
-|   |       |   |   |   |   |   |   |           textfield-background-focused@3x.png
-|   |       |   |   |   |   |   |   |           textfield-background-hovered.png
-|   |       |   |   |   |   |   |   |           textfield-background-hovered@2x.png
-|   |       |   |   |   |   |   |   |           textfield-background-hovered@3x.png
-|   |       |   |   |   |   |   |   |           textfield-background.png
-|   |       |   |   |   |   |   |   |           textfield-background@2x.png
-|   |       |   |   |   |   |   |   |           textfield-background@3x.png
-|   |       |   |   |   |   |   |   |           
-|   |       |   |   |   |   |   |   +---icons
-|   |       |   |   |   |   |   |   |       checkmark.png
-|   |       |   |   |   |   |   |   |       checkmark@2x.png
-|   |       |   |   |   |   |   |   |       checkmark@3x.png
-|   |       |   |   |   |   |   |   |       close_big.png
-|   |       |   |   |   |   |   |   |       close_big@2x.png
-|   |       |   |   |   |   |   |   |       close_big@3x.png
-|   |       |   |   |   |   |   |   |       menuarrow.png
-|   |       |   |   |   |   |   |   |       menuarrow@2x.png
-|   |       |   |   |   |   |   |   |       menuarrow@3x.png
-|   |       |   |   |   |   |   |   |       search-magnifier.png
-|   |       |   |   |   |   |   |   |       search-magnifier@2x.png
-|   |       |   |   |   |   |   |   |       search-magnifier@3x.png
-|   |       |   |   |   |   |   |   |       
-|   |       |   |   |   |   |   |   +---impl
-|   |       |   |   |   |   |   |   |       ButtonBackground.qml
-|   |       |   |   |   |   |   |   |       CheckIndicator.qml
-|   |       |   |   |   |   |   |   |       FocusFrame.qml
-|   |       |   |   |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |   |   |       qmldir
-|   |       |   |   |   |   |   |   |       qtquickcontrols2fluentwinui3styleimplplugin.dll
-|   |       |   |   |   |   |   |   |       RadioIndicator.qml
-|   |       |   |   |   |   |   |   |       StyleImage.qml
-|   |       |   |   |   |   |   |   |       SwitchIndicator.qml
-|   |       |   |   |   |   |   |   |       
-|   |       |   |   |   |   |   |   \---light
-|   |       |   |   |   |   |   |       \---images
-|   |       |   |   |   |   |   |               checkbox-indicator-checked-disabled.png
-|   |       |   |   |   |   |   |               checkbox-indicator-checked-disabled@2x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-checked-disabled@3x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-checked-hovered.png
-|   |       |   |   |   |   |   |               checkbox-indicator-checked-hovered@2x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-checked-hovered@3x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-checked-pressed.png
-|   |       |   |   |   |   |   |               checkbox-indicator-checked-pressed@2x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-checked-pressed@3x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-checked.png
-|   |       |   |   |   |   |   |               checkbox-indicator-checked@2x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-checked@3x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-disabled-partiallyChecked.png
-|   |       |   |   |   |   |   |               checkbox-indicator-disabled-partiallyChecked@2x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-disabled-partiallyChecked@3x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-disabled.png
-|   |       |   |   |   |   |   |               checkbox-indicator-disabled@2x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-disabled@3x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-hovered-partiallyChecked.png
-|   |       |   |   |   |   |   |               checkbox-indicator-hovered-partiallyChecked@2x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-hovered-partiallyChecked@3x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-hovered.png
-|   |       |   |   |   |   |   |               checkbox-indicator-hovered@2x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-hovered@3x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-partiallyChecked-pressed.png
-|   |       |   |   |   |   |   |               checkbox-indicator-partiallyChecked-pressed@2x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-partiallyChecked-pressed@3x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-partiallyChecked.png
-|   |       |   |   |   |   |   |               checkbox-indicator-partiallyChecked@2x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-partiallyChecked@3x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-pressed.png
-|   |       |   |   |   |   |   |               checkbox-indicator-pressed@2x.png
-|   |       |   |   |   |   |   |               checkbox-indicator-pressed@3x.png
-|   |       |   |   |   |   |   |               checkbox-indicator.png
-|   |       |   |   |   |   |   |               checkbox-indicator@2x.png
-|   |       |   |   |   |   |   |               checkbox-indicator@3x.png
-|   |       |   |   |   |   |   |               combobox-background-disabled.png
-|   |       |   |   |   |   |   |               combobox-background-disabled@2x.png
-|   |       |   |   |   |   |   |               combobox-background-disabled@3x.png
-|   |       |   |   |   |   |   |               combobox-background-focused.png
-|   |       |   |   |   |   |   |               combobox-background-focused@2x.png
-|   |       |   |   |   |   |   |               combobox-background-focused@3x.png
-|   |       |   |   |   |   |   |               combobox-background-hovered-open.png
-|   |       |   |   |   |   |   |               combobox-background-hovered-open@2x.png
-|   |       |   |   |   |   |   |               combobox-background-hovered-open@3x.png
-|   |       |   |   |   |   |   |               combobox-background-hovered.png
-|   |       |   |   |   |   |   |               combobox-background-hovered@2x.png
-|   |       |   |   |   |   |   |               combobox-background-hovered@3x.png
-|   |       |   |   |   |   |   |               combobox-background-open-pressed.png
-|   |       |   |   |   |   |   |               combobox-background-open-pressed@2x.png
-|   |       |   |   |   |   |   |               combobox-background-open-pressed@3x.png
-|   |       |   |   |   |   |   |               combobox-background-open.png
-|   |       |   |   |   |   |   |               combobox-background-open@2x.png
-|   |       |   |   |   |   |   |               combobox-background-open@3x.png
-|   |       |   |   |   |   |   |               combobox-background-pressed.png
-|   |       |   |   |   |   |   |               combobox-background-pressed@2x.png
-|   |       |   |   |   |   |   |               combobox-background-pressed@3x.png
-|   |       |   |   |   |   |   |               combobox-background.png
-|   |       |   |   |   |   |   |               combobox-background@2x.png
-|   |       |   |   |   |   |   |               combobox-background@3x.png
-|   |       |   |   |   |   |   |               combobox-indicator-disabled.png
-|   |       |   |   |   |   |   |               combobox-indicator-disabled@2x.png
-|   |       |   |   |   |   |   |               combobox-indicator-disabled@3x.png
-|   |       |   |   |   |   |   |               combobox-indicator-focused.png
-|   |       |   |   |   |   |   |               combobox-indicator-focused@2x.png
-|   |       |   |   |   |   |   |               combobox-indicator-focused@3x.png
-|   |       |   |   |   |   |   |               combobox-indicator-hovered-open.png
-|   |       |   |   |   |   |   |               combobox-indicator-hovered-open@2x.png
-|   |       |   |   |   |   |   |               combobox-indicator-hovered-open@3x.png
-|   |       |   |   |   |   |   |               combobox-indicator-hovered.png
-|   |       |   |   |   |   |   |               combobox-indicator-hovered@2x.png
-|   |       |   |   |   |   |   |               combobox-indicator-hovered@3x.png
-|   |       |   |   |   |   |   |               combobox-indicator-open-pressed.png
-|   |       |   |   |   |   |   |               combobox-indicator-open-pressed@2x.png
-|   |       |   |   |   |   |   |               combobox-indicator-open-pressed@3x.png
-|   |       |   |   |   |   |   |               combobox-indicator-open.png
-|   |       |   |   |   |   |   |               combobox-indicator-open@2x.png
-|   |       |   |   |   |   |   |               combobox-indicator-open@3x.png
-|   |       |   |   |   |   |   |               combobox-indicator-pressed.png
-|   |       |   |   |   |   |   |               combobox-indicator-pressed@2x.png
-|   |       |   |   |   |   |   |               combobox-indicator-pressed@3x.png
-|   |       |   |   |   |   |   |               combobox-indicator.png
-|   |       |   |   |   |   |   |               combobox-indicator@2x.png
-|   |       |   |   |   |   |   |               combobox-indicator@3x.png
-|   |       |   |   |   |   |   |               editablecombobox-background-hovered-open.png
-|   |       |   |   |   |   |   |               editablecombobox-background-hovered-open@2x.png
-|   |       |   |   |   |   |   |               editablecombobox-background-hovered-open@3x.png
-|   |       |   |   |   |   |   |               editablecombobox-background-open-pressed.png
-|   |       |   |   |   |   |   |               editablecombobox-background-open-pressed@2x.png
-|   |       |   |   |   |   |   |               editablecombobox-background-open-pressed@3x.png
-|   |       |   |   |   |   |   |               editablecombobox-background-open.png
-|   |       |   |   |   |   |   |               editablecombobox-background-open@2x.png
-|   |       |   |   |   |   |   |               editablecombobox-background-open@3x.png
-|   |       |   |   |   |   |   |               editablecombobox-indicator-hovered-open.png
-|   |       |   |   |   |   |   |               editablecombobox-indicator-hovered-open@2x.png
-|   |       |   |   |   |   |   |               editablecombobox-indicator-hovered-open@3x.png
-|   |       |   |   |   |   |   |               editablecombobox-indicator-open-pressed.png
-|   |       |   |   |   |   |   |               editablecombobox-indicator-open-pressed@2x.png
-|   |       |   |   |   |   |   |               editablecombobox-indicator-open-pressed@3x.png
-|   |       |   |   |   |   |   |               editablecombobox-indicator-open.png
-|   |       |   |   |   |   |   |               editablecombobox-indicator-open@2x.png
-|   |       |   |   |   |   |   |               editablecombobox-indicator-open@3x.png
-|   |       |   |   |   |   |   |               editablecombobox-popup-background-hovered-open.png
-|   |       |   |   |   |   |   |               editablecombobox-popup-background-hovered-open@2x.png
-|   |       |   |   |   |   |   |               editablecombobox-popup-background-hovered-open@3x.png
-|   |       |   |   |   |   |   |               editablecombobox-popup-background-open-pressed.png
-|   |       |   |   |   |   |   |               editablecombobox-popup-background-open-pressed@2x.png
-|   |       |   |   |   |   |   |               editablecombobox-popup-background-open-pressed@3x.png
-|   |       |   |   |   |   |   |               editablecombobox-popup-background-open.png
-|   |       |   |   |   |   |   |               editablecombobox-popup-background-open@2x.png
-|   |       |   |   |   |   |   |               editablecombobox-popup-background-open@3x.png
-|   |       |   |   |   |   |   |               frame-background-disabled.png
-|   |       |   |   |   |   |   |               frame-background-disabled@2x.png
-|   |       |   |   |   |   |   |               frame-background-disabled@3x.png
-|   |       |   |   |   |   |   |               frame-background.png
-|   |       |   |   |   |   |   |               frame-background@2x.png
-|   |       |   |   |   |   |   |               frame-background@3x.png
-|   |       |   |   |   |   |   |               itemdelegate-background-highlighted-hovered.png
-|   |       |   |   |   |   |   |               itemdelegate-background-highlighted-hovered@2x.png
-|   |       |   |   |   |   |   |               itemdelegate-background-highlighted-hovered@3x.png
-|   |       |   |   |   |   |   |               itemdelegate-background-highlighted-pressed.png
-|   |       |   |   |   |   |   |               itemdelegate-background-highlighted-pressed@2x.png
-|   |       |   |   |   |   |   |               itemdelegate-background-highlighted-pressed@3x.png
-|   |       |   |   |   |   |   |               itemdelegate-background-highlighted.png
-|   |       |   |   |   |   |   |               itemdelegate-background-highlighted@2x.png
-|   |       |   |   |   |   |   |               itemdelegate-background-highlighted@3x.png
-|   |       |   |   |   |   |   |               itemdelegate-background-hovered.png
-|   |       |   |   |   |   |   |               itemdelegate-background-hovered@2x.png
-|   |       |   |   |   |   |   |               itemdelegate-background-hovered@3x.png
-|   |       |   |   |   |   |   |               itemdelegate-background-pressed.png
-|   |       |   |   |   |   |   |               itemdelegate-background-pressed@2x.png
-|   |       |   |   |   |   |   |               itemdelegate-background-pressed@3x.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-delegate-current-hovered.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-delegate-current-hovered@2x.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-delegate-current-hovered@3x.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-delegate-current-pressed.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-delegate-current-pressed@2x.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-delegate-current-pressed@3x.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-delegate-current.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-delegate-current@2x.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-delegate-current@3x.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-delegate-pressed.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-delegate-pressed@2x.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-delegate-pressed@3x.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-disabled.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-disabled@2x.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-disabled@3x.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-hovered.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-hovered@2x.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator-hovered@3x.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator@2x.png
-|   |       |   |   |   |   |   |               pageindicatordelegate-indicator@3x.png
-|   |       |   |   |   |   |   |               popup-background.png
-|   |       |   |   |   |   |   |               popup-background@2x.png
-|   |       |   |   |   |   |   |               popup-background@3x.png
-|   |       |   |   |   |   |   |               progressbar-groove-disabled.png
-|   |       |   |   |   |   |   |               progressbar-groove-disabled@2x.png
-|   |       |   |   |   |   |   |               progressbar-groove-disabled@3x.png
-|   |       |   |   |   |   |   |               progressbar-groove.png
-|   |       |   |   |   |   |   |               progressbar-groove@2x.png
-|   |       |   |   |   |   |   |               progressbar-groove@3x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-checked-disabled.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-checked-disabled@2x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-checked-disabled@3x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-checked-hovered.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-checked-hovered@2x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-checked-hovered@3x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-checked-pressed.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-checked-pressed@2x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-checked-pressed@3x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-checked.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-checked@2x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-checked@3x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-disabled.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-disabled@2x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-disabled@3x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-hovered.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-hovered@2x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-hovered@3x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-pressed.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-pressed@2x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator-pressed@3x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator.png
-|   |       |   |   |   |   |   |               radiobutton-indicator@2x.png
-|   |       |   |   |   |   |   |               radiobutton-indicator@3x.png
-|   |       |   |   |   |   |   |               rangeslider-first-handle-disabled.png
-|   |       |   |   |   |   |   |               rangeslider-first-handle-disabled@2x.png
-|   |       |   |   |   |   |   |               rangeslider-first-handle-disabled@3x.png
-|   |       |   |   |   |   |   |               rangeslider-first-handle-handle-pressed.png
-|   |       |   |   |   |   |   |               rangeslider-first-handle-handle-pressed@2x.png
-|   |       |   |   |   |   |   |               rangeslider-first-handle-handle-pressed@3x.png
-|   |       |   |   |   |   |   |               rangeslider-first-handle-hovered.png
-|   |       |   |   |   |   |   |               rangeslider-first-handle-hovered@2x.png
-|   |       |   |   |   |   |   |               rangeslider-first-handle-hovered@3x.png
-|   |       |   |   |   |   |   |               rangeslider-first-handle.png
-|   |       |   |   |   |   |   |               rangeslider-first-handle@2x.png
-|   |       |   |   |   |   |   |               rangeslider-first-handle@3x.png
-|   |       |   |   |   |   |   |               rangeslider-groove-disabled.png
-|   |       |   |   |   |   |   |               rangeslider-groove-disabled@2x.png
-|   |       |   |   |   |   |   |               rangeslider-groove-disabled@3x.png
-|   |       |   |   |   |   |   |               rangeslider-groove-handle-pressed.png
-|   |       |   |   |   |   |   |               rangeslider-groove-handle-pressed@2x.png
-|   |       |   |   |   |   |   |               rangeslider-groove-handle-pressed@3x.png
-|   |       |   |   |   |   |   |               rangeslider-groove-hovered.png
-|   |       |   |   |   |   |   |               rangeslider-groove-hovered@2x.png
-|   |       |   |   |   |   |   |               rangeslider-groove-hovered@3x.png
-|   |       |   |   |   |   |   |               rangeslider-groove.png
-|   |       |   |   |   |   |   |               rangeslider-groove@2x.png
-|   |       |   |   |   |   |   |               rangeslider-groove@3x.png
-|   |       |   |   |   |   |   |               rangeslider-second-handle-disabled.png
-|   |       |   |   |   |   |   |               rangeslider-second-handle-disabled@2x.png
-|   |       |   |   |   |   |   |               rangeslider-second-handle-disabled@3x.png
-|   |       |   |   |   |   |   |               rangeslider-second-handle-handle-pressed.png
-|   |       |   |   |   |   |   |               rangeslider-second-handle-handle-pressed@2x.png
-|   |       |   |   |   |   |   |               rangeslider-second-handle-handle-pressed@3x.png
-|   |       |   |   |   |   |   |               rangeslider-second-handle-hovered.png
-|   |       |   |   |   |   |   |               rangeslider-second-handle-hovered@2x.png
-|   |       |   |   |   |   |   |               rangeslider-second-handle-hovered@3x.png
-|   |       |   |   |   |   |   |               rangeslider-second-handle.png
-|   |       |   |   |   |   |   |               rangeslider-second-handle@2x.png
-|   |       |   |   |   |   |   |               rangeslider-second-handle@3x.png
-|   |       |   |   |   |   |   |               slider-groove-disabled.png
-|   |       |   |   |   |   |   |               slider-groove-disabled@2x.png
-|   |       |   |   |   |   |   |               slider-groove-disabled@3x.png
-|   |       |   |   |   |   |   |               slider-groove-hovered.png
-|   |       |   |   |   |   |   |               slider-groove-hovered@2x.png
-|   |       |   |   |   |   |   |               slider-groove-hovered@3x.png
-|   |       |   |   |   |   |   |               slider-groove-pressed.png
-|   |       |   |   |   |   |   |               slider-groove-pressed@2x.png
-|   |       |   |   |   |   |   |               slider-groove-pressed@3x.png
-|   |       |   |   |   |   |   |               slider-groove.png
-|   |       |   |   |   |   |   |               slider-groove@2x.png
-|   |       |   |   |   |   |   |               slider-groove@3x.png
-|   |       |   |   |   |   |   |               slider-handle-disabled.png
-|   |       |   |   |   |   |   |               slider-handle-disabled@2x.png
-|   |       |   |   |   |   |   |               slider-handle-disabled@3x.png
-|   |       |   |   |   |   |   |               slider-handle-hovered.png
-|   |       |   |   |   |   |   |               slider-handle-hovered@2x.png
-|   |       |   |   |   |   |   |               slider-handle-hovered@3x.png
-|   |       |   |   |   |   |   |               slider-handle-pressed.png
-|   |       |   |   |   |   |   |               slider-handle-pressed@2x.png
-|   |       |   |   |   |   |   |               slider-handle-pressed@3x.png
-|   |       |   |   |   |   |   |               slider-handle.png
-|   |       |   |   |   |   |   |               slider-handle@2x.png
-|   |       |   |   |   |   |   |               slider-handle@3x.png
-|   |       |   |   |   |   |   |               spinbox-background-atlimit.png
-|   |       |   |   |   |   |   |               spinbox-background-atlimit@2x.png
-|   |       |   |   |   |   |   |               spinbox-background-atlimit@3x.png
-|   |       |   |   |   |   |   |               spinbox-background-disabled.png
-|   |       |   |   |   |   |   |               spinbox-background-disabled@2x.png
-|   |       |   |   |   |   |   |               spinbox-background-disabled@3x.png
-|   |       |   |   |   |   |   |               spinbox-background-down-hovered.png
-|   |       |   |   |   |   |   |               spinbox-background-down-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-background-down-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-background-down-pressed.png
-|   |       |   |   |   |   |   |               spinbox-background-down-pressed@2x.png
-|   |       |   |   |   |   |   |               spinbox-background-down-pressed@3x.png
-|   |       |   |   |   |   |   |               spinbox-background-hovered.png
-|   |       |   |   |   |   |   |               spinbox-background-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-background-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-background-up-hovered.png
-|   |       |   |   |   |   |   |               spinbox-background-up-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-background-up-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-background-up-pressed.png
-|   |       |   |   |   |   |   |               spinbox-background-up-pressed@2x.png
-|   |       |   |   |   |   |   |               spinbox-background-up-pressed@3x.png
-|   |       |   |   |   |   |   |               spinbox-background.png
-|   |       |   |   |   |   |   |               spinbox-background@2x.png
-|   |       |   |   |   |   |   |               spinbox-background@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-atlimit.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-atlimit@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-atlimit@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-disabled.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-disabled@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-disabled@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-down-hovered.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-down-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-down-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-down-pressed.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-down-pressed@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-down-pressed@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-hovered.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-up-hovered.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-up-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-up-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-up-pressed.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-up-pressed@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background-up-pressed@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-background@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-atlimit.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-atlimit@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-atlimit@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-disabled.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-disabled@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-disabled@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-down-hovered.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-down-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-down-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-down-pressed.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-down-pressed@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-down-pressed@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-hovered.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-up-hovered.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-up-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-up-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-up-pressed.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-up-pressed@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon-up-pressed@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-down-icon@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-atlimit.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-atlimit@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-atlimit@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-disabled.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-disabled@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-disabled@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-down-hovered.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-down-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-down-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-down-pressed.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-down-pressed@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-down-pressed@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-hovered.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-up-hovered.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-up-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-up-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-up-pressed.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-up-pressed@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background-up-pressed@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-background@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-atlimit.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-atlimit@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-atlimit@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-disabled.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-disabled@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-disabled@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-down-hovered.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-down-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-down-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-down-pressed.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-down-pressed@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-down-pressed@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-hovered.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-up-hovered.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-up-hovered@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-up-hovered@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-up-pressed.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-up-pressed@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon-up-pressed@3x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon@2x.png
-|   |       |   |   |   |   |   |               spinbox-indicator-up-icon@3x.png
-|   |       |   |   |   |   |   |               textarea-background-disabled.png
-|   |       |   |   |   |   |   |               textarea-background-disabled@2x.png
-|   |       |   |   |   |   |   |               textarea-background-disabled@3x.png
-|   |       |   |   |   |   |   |               textarea-background-focused.png
-|   |       |   |   |   |   |   |               textarea-background-focused@2x.png
-|   |       |   |   |   |   |   |               textarea-background-focused@3x.png
-|   |       |   |   |   |   |   |               textarea-background-hovered.png
-|   |       |   |   |   |   |   |               textarea-background-hovered@2x.png
-|   |       |   |   |   |   |   |               textarea-background-hovered@3x.png
-|   |       |   |   |   |   |   |               textarea-background.png
-|   |       |   |   |   |   |   |               textarea-background@2x.png
-|   |       |   |   |   |   |   |               textarea-background@3x.png
-|   |       |   |   |   |   |   |               textfield-background-disabled.png
-|   |       |   |   |   |   |   |               textfield-background-disabled@2x.png
-|   |       |   |   |   |   |   |               textfield-background-disabled@3x.png
-|   |       |   |   |   |   |   |               textfield-background-focused.png
-|   |       |   |   |   |   |   |               textfield-background-focused@2x.png
-|   |       |   |   |   |   |   |               textfield-background-focused@3x.png
-|   |       |   |   |   |   |   |               textfield-background-hovered.png
-|   |       |   |   |   |   |   |               textfield-background-hovered@2x.png
-|   |       |   |   |   |   |   |               textfield-background-hovered@3x.png
-|   |       |   |   |   |   |   |               textfield-background.png
-|   |       |   |   |   |   |   |               textfield-background@2x.png
-|   |       |   |   |   |   |   |               textfield-background@3x.png
-|   |       |   |   |   |   |   |               
-|   |       |   |   |   |   |   +---Fusion
-|   |       |   |   |   |   |   |   |   ApplicationWindow.qml
-|   |       |   |   |   |   |   |   |   BusyIndicator.qml
-|   |       |   |   |   |   |   |   |   Button.qml
-|   |       |   |   |   |   |   |   |   CheckBox.qml
-|   |       |   |   |   |   |   |   |   CheckDelegate.qml
-|   |       |   |   |   |   |   |   |   ComboBox.qml
-|   |       |   |   |   |   |   |   |   DelayButton.qml
-|   |       |   |   |   |   |   |   |   Dial.qml
-|   |       |   |   |   |   |   |   |   Dialog.qml
-|   |       |   |   |   |   |   |   |   DialogButtonBox.qml
-|   |       |   |   |   |   |   |   |   Drawer.qml
-|   |       |   |   |   |   |   |   |   Frame.qml
-|   |       |   |   |   |   |   |   |   GroupBox.qml
-|   |       |   |   |   |   |   |   |   HorizontalHeaderView.qml
-|   |       |   |   |   |   |   |   |   HorizontalHeaderViewDelegate.qml
-|   |       |   |   |   |   |   |   |   ItemDelegate.qml
-|   |       |   |   |   |   |   |   |   Label.qml
-|   |       |   |   |   |   |   |   |   Menu.qml
-|   |       |   |   |   |   |   |   |   MenuBar.qml
-|   |       |   |   |   |   |   |   |   MenuBarItem.qml
-|   |       |   |   |   |   |   |   |   MenuItem.qml
-|   |       |   |   |   |   |   |   |   MenuSeparator.qml
-|   |       |   |   |   |   |   |   |   Page.qml
-|   |       |   |   |   |   |   |   |   PageIndicator.qml
-|   |       |   |   |   |   |   |   |   Pane.qml
-|   |       |   |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   |   Popup.qml
-|   |       |   |   |   |   |   |   |   ProgressBar.qml
-|   |       |   |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   |   qtquickcontrols2fusionstyleplugin.dll
-|   |       |   |   |   |   |   |   |   RadioButton.qml
-|   |       |   |   |   |   |   |   |   RadioDelegate.qml
-|   |       |   |   |   |   |   |   |   RangeSlider.qml
-|   |       |   |   |   |   |   |   |   RoundButton.qml
-|   |       |   |   |   |   |   |   |   ScrollBar.qml
-|   |       |   |   |   |   |   |   |   ScrollIndicator.qml
-|   |       |   |   |   |   |   |   |   ScrollView.qml
-|   |       |   |   |   |   |   |   |   SearchField.qml
-|   |       |   |   |   |   |   |   |   SelectionRectangle.qml
-|   |       |   |   |   |   |   |   |   Slider.qml
-|   |       |   |   |   |   |   |   |   SpinBox.qml
-|   |       |   |   |   |   |   |   |   SplitView.qml
-|   |       |   |   |   |   |   |   |   SwipeDelegate.qml
-|   |       |   |   |   |   |   |   |   Switch.qml
-|   |       |   |   |   |   |   |   |   SwitchDelegate.qml
-|   |       |   |   |   |   |   |   |   TabBar.qml
-|   |       |   |   |   |   |   |   |   TabButton.qml
-|   |       |   |   |   |   |   |   |   TextArea.qml
-|   |       |   |   |   |   |   |   |   TextField.qml
-|   |       |   |   |   |   |   |   |   ToolBar.qml
-|   |       |   |   |   |   |   |   |   ToolButton.qml
-|   |       |   |   |   |   |   |   |   ToolSeparator.qml
-|   |       |   |   |   |   |   |   |   ToolTip.qml
-|   |       |   |   |   |   |   |   |   TreeViewDelegate.qml
-|   |       |   |   |   |   |   |   |   Tumbler.qml
-|   |       |   |   |   |   |   |   |   VerticalHeaderView.qml
-|   |       |   |   |   |   |   |   |   VerticalHeaderViewDelegate.qml
-|   |       |   |   |   |   |   |   |   
-|   |       |   |   |   |   |   |   \---impl
-|   |       |   |   |   |   |   |           ButtonPanel.qml
-|   |       |   |   |   |   |   |           CheckIndicator.qml
-|   |       |   |   |   |   |   |           plugins.qmltypes
-|   |       |   |   |   |   |   |           qmldir
-|   |       |   |   |   |   |   |           qtquickcontrols2fusionstyleimplplugin.dll
-|   |       |   |   |   |   |   |           RadioIndicator.qml
-|   |       |   |   |   |   |   |           SliderGroove.qml
-|   |       |   |   |   |   |   |           SliderHandle.qml
-|   |       |   |   |   |   |   |           SwitchIndicator.qml
-|   |       |   |   |   |   |   |           
-|   |       |   |   |   |   |   +---Imagine
-|   |       |   |   |   |   |   |   |   ApplicationWindow.qml
-|   |       |   |   |   |   |   |   |   BusyIndicator.qml
-|   |       |   |   |   |   |   |   |   Button.qml
-|   |       |   |   |   |   |   |   |   CheckBox.qml
-|   |       |   |   |   |   |   |   |   CheckDelegate.qml
-|   |       |   |   |   |   |   |   |   ComboBox.qml
-|   |       |   |   |   |   |   |   |   DelayButton.qml
-|   |       |   |   |   |   |   |   |   Dial.qml
-|   |       |   |   |   |   |   |   |   Dialog.qml
-|   |       |   |   |   |   |   |   |   DialogButtonBox.qml
-|   |       |   |   |   |   |   |   |   Drawer.qml
-|   |       |   |   |   |   |   |   |   Frame.qml
-|   |       |   |   |   |   |   |   |   GroupBox.qml
-|   |       |   |   |   |   |   |   |   HorizontalHeaderView.qml
-|   |       |   |   |   |   |   |   |   HorizontalHeaderViewDelegate.qml
-|   |       |   |   |   |   |   |   |   ItemDelegate.qml
-|   |       |   |   |   |   |   |   |   Label.qml
-|   |       |   |   |   |   |   |   |   Menu.qml
-|   |       |   |   |   |   |   |   |   MenuItem.qml
-|   |       |   |   |   |   |   |   |   MenuSeparator.qml
-|   |       |   |   |   |   |   |   |   Page.qml
-|   |       |   |   |   |   |   |   |   PageIndicator.qml
-|   |       |   |   |   |   |   |   |   Pane.qml
-|   |       |   |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   |   Popup.qml
-|   |       |   |   |   |   |   |   |   ProgressBar.qml
-|   |       |   |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   |   qtquickcontrols2imaginestyleplugin.dll
-|   |       |   |   |   |   |   |   |   RadioButton.qml
-|   |       |   |   |   |   |   |   |   RadioDelegate.qml
-|   |       |   |   |   |   |   |   |   RangeSlider.qml
-|   |       |   |   |   |   |   |   |   RoundButton.qml
-|   |       |   |   |   |   |   |   |   ScrollBar.qml
-|   |       |   |   |   |   |   |   |   ScrollIndicator.qml
-|   |       |   |   |   |   |   |   |   ScrollView.qml
-|   |       |   |   |   |   |   |   |   SelectionRectangle.qml
-|   |       |   |   |   |   |   |   |   Slider.qml
-|   |       |   |   |   |   |   |   |   SpinBox.qml
-|   |       |   |   |   |   |   |   |   SplitView.qml
-|   |       |   |   |   |   |   |   |   StackView.qml
-|   |       |   |   |   |   |   |   |   SwipeDelegate.qml
-|   |       |   |   |   |   |   |   |   SwipeView.qml
-|   |       |   |   |   |   |   |   |   Switch.qml
-|   |       |   |   |   |   |   |   |   SwitchDelegate.qml
-|   |       |   |   |   |   |   |   |   TabBar.qml
-|   |       |   |   |   |   |   |   |   TabButton.qml
-|   |       |   |   |   |   |   |   |   TextArea.qml
-|   |       |   |   |   |   |   |   |   TextField.qml
-|   |       |   |   |   |   |   |   |   ToolBar.qml
-|   |       |   |   |   |   |   |   |   ToolButton.qml
-|   |       |   |   |   |   |   |   |   ToolSeparator.qml
-|   |       |   |   |   |   |   |   |   ToolTip.qml
-|   |       |   |   |   |   |   |   |   Tumbler.qml
-|   |       |   |   |   |   |   |   |   VerticalHeaderView.qml
-|   |       |   |   |   |   |   |   |   VerticalHeaderViewDelegate.qml
-|   |       |   |   |   |   |   |   |   
-|   |       |   |   |   |   |   |   \---impl
-|   |       |   |   |   |   |   |           OpacityMask.qml
-|   |       |   |   |   |   |   |           qmldir
-|   |       |   |   |   |   |   |           qtquickcontrols2imaginestyleimplplugin.dll
-|   |       |   |   |   |   |   |           QuickControls2ImagineStyleImpl.qmltypes
-|   |       |   |   |   |   |   |           
-|   |       |   |   |   |   |   +---impl
-|   |       |   |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |   |       qmldir
-|   |       |   |   |   |   |   |       qtquickcontrols2implplugin.dll
-|   |       |   |   |   |   |   |       
-|   |       |   |   |   |   |   +---Material
-|   |       |   |   |   |   |   |   |   ApplicationWindow.qml
-|   |       |   |   |   |   |   |   |   BusyIndicator.qml
-|   |       |   |   |   |   |   |   |   Button.qml
-|   |       |   |   |   |   |   |   |   CheckBox.qml
-|   |       |   |   |   |   |   |   |   CheckDelegate.qml
-|   |       |   |   |   |   |   |   |   ComboBox.qml
-|   |       |   |   |   |   |   |   |   DelayButton.qml
-|   |       |   |   |   |   |   |   |   Dial.qml
-|   |       |   |   |   |   |   |   |   Dialog.qml
-|   |       |   |   |   |   |   |   |   DialogButtonBox.qml
-|   |       |   |   |   |   |   |   |   Drawer.qml
-|   |       |   |   |   |   |   |   |   Frame.qml
-|   |       |   |   |   |   |   |   |   GroupBox.qml
-|   |       |   |   |   |   |   |   |   HorizontalHeaderView.qml
-|   |       |   |   |   |   |   |   |   HorizontalHeaderViewDelegate.qml
-|   |       |   |   |   |   |   |   |   ItemDelegate.qml
-|   |       |   |   |   |   |   |   |   Label.qml
-|   |       |   |   |   |   |   |   |   Menu.qml
-|   |       |   |   |   |   |   |   |   MenuBar.qml
-|   |       |   |   |   |   |   |   |   MenuBarItem.qml
-|   |       |   |   |   |   |   |   |   MenuItem.qml
-|   |       |   |   |   |   |   |   |   MenuSeparator.qml
-|   |       |   |   |   |   |   |   |   Page.qml
-|   |       |   |   |   |   |   |   |   PageIndicator.qml
-|   |       |   |   |   |   |   |   |   Pane.qml
-|   |       |   |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   |   Popup.qml
-|   |       |   |   |   |   |   |   |   ProgressBar.qml
-|   |       |   |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   |   qtquickcontrols2materialstyleplugin.dll
-|   |       |   |   |   |   |   |   |   RadioButton.qml
-|   |       |   |   |   |   |   |   |   RadioDelegate.qml
-|   |       |   |   |   |   |   |   |   RangeSlider.qml
-|   |       |   |   |   |   |   |   |   RoundButton.qml
-|   |       |   |   |   |   |   |   |   ScrollBar.qml
-|   |       |   |   |   |   |   |   |   ScrollIndicator.qml
-|   |       |   |   |   |   |   |   |   ScrollView.qml
-|   |       |   |   |   |   |   |   |   SearchField.qml
-|   |       |   |   |   |   |   |   |   SelectionRectangle.qml
-|   |       |   |   |   |   |   |   |   Slider.qml
-|   |       |   |   |   |   |   |   |   SpinBox.qml
-|   |       |   |   |   |   |   |   |   SplitView.qml
-|   |       |   |   |   |   |   |   |   StackView.qml
-|   |       |   |   |   |   |   |   |   SwipeDelegate.qml
-|   |       |   |   |   |   |   |   |   SwipeView.qml
-|   |       |   |   |   |   |   |   |   Switch.qml
-|   |       |   |   |   |   |   |   |   SwitchDelegate.qml
-|   |       |   |   |   |   |   |   |   TabBar.qml
-|   |       |   |   |   |   |   |   |   TabButton.qml
-|   |       |   |   |   |   |   |   |   TextArea.qml
-|   |       |   |   |   |   |   |   |   TextField.qml
-|   |       |   |   |   |   |   |   |   ToolBar.qml
-|   |       |   |   |   |   |   |   |   ToolButton.qml
-|   |       |   |   |   |   |   |   |   ToolSeparator.qml
-|   |       |   |   |   |   |   |   |   ToolTip.qml
-|   |       |   |   |   |   |   |   |   TreeViewDelegate.qml
-|   |       |   |   |   |   |   |   |   Tumbler.qml
-|   |       |   |   |   |   |   |   |   VerticalHeaderView.qml
-|   |       |   |   |   |   |   |   |   VerticalHeaderViewDelegate.qml
-|   |       |   |   |   |   |   |   |   
-|   |       |   |   |   |   |   |   \---impl
-|   |       |   |   |   |   |   |           BoxShadow.qml
-|   |       |   |   |   |   |   |           CheckIndicator.qml
-|   |       |   |   |   |   |   |           CursorDelegate.qml
-|   |       |   |   |   |   |   |           ElevationEffect.qml
-|   |       |   |   |   |   |   |           plugins.qmltypes
-|   |       |   |   |   |   |   |           qmldir
-|   |       |   |   |   |   |   |           qtquickcontrols2materialstyleimplplugin.dll
-|   |       |   |   |   |   |   |           RadioIndicator.qml
-|   |       |   |   |   |   |   |           RectangularGlow.qml
-|   |       |   |   |   |   |   |           RoundedElevationEffect.qml
-|   |       |   |   |   |   |   |           SliderHandle.qml
-|   |       |   |   |   |   |   |           SwitchIndicator.qml
-|   |       |   |   |   |   |   |           
-|   |       |   |   |   |   |   +---Universal
-|   |       |   |   |   |   |   |   |   ApplicationWindow.qml
-|   |       |   |   |   |   |   |   |   BusyIndicator.qml
-|   |       |   |   |   |   |   |   |   Button.qml
-|   |       |   |   |   |   |   |   |   CheckBox.qml
-|   |       |   |   |   |   |   |   |   CheckDelegate.qml
-|   |       |   |   |   |   |   |   |   ComboBox.qml
-|   |       |   |   |   |   |   |   |   DelayButton.qml
-|   |       |   |   |   |   |   |   |   Dial.qml
-|   |       |   |   |   |   |   |   |   Dialog.qml
-|   |       |   |   |   |   |   |   |   DialogButtonBox.qml
-|   |       |   |   |   |   |   |   |   Drawer.qml
-|   |       |   |   |   |   |   |   |   Frame.qml
-|   |       |   |   |   |   |   |   |   GroupBox.qml
-|   |       |   |   |   |   |   |   |   HorizontalHeaderView.qml
-|   |       |   |   |   |   |   |   |   HorizontalHeaderViewDelegate.qml
-|   |       |   |   |   |   |   |   |   ItemDelegate.qml
-|   |       |   |   |   |   |   |   |   Label.qml
-|   |       |   |   |   |   |   |   |   Menu.qml
-|   |       |   |   |   |   |   |   |   MenuBar.qml
-|   |       |   |   |   |   |   |   |   MenuBarItem.qml
-|   |       |   |   |   |   |   |   |   MenuItem.qml
-|   |       |   |   |   |   |   |   |   MenuSeparator.qml
-|   |       |   |   |   |   |   |   |   Page.qml
-|   |       |   |   |   |   |   |   |   PageIndicator.qml
-|   |       |   |   |   |   |   |   |   Pane.qml
-|   |       |   |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   |   Popup.qml
-|   |       |   |   |   |   |   |   |   ProgressBar.qml
-|   |       |   |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   |   qtquickcontrols2universalstyleplugin.dll
-|   |       |   |   |   |   |   |   |   RadioButton.qml
-|   |       |   |   |   |   |   |   |   RadioDelegate.qml
-|   |       |   |   |   |   |   |   |   RangeSlider.qml
-|   |       |   |   |   |   |   |   |   RoundButton.qml
-|   |       |   |   |   |   |   |   |   ScrollBar.qml
-|   |       |   |   |   |   |   |   |   ScrollIndicator.qml
-|   |       |   |   |   |   |   |   |   ScrollView.qml
-|   |       |   |   |   |   |   |   |   SelectionRectangle.qml
-|   |       |   |   |   |   |   |   |   Slider.qml
-|   |       |   |   |   |   |   |   |   SpinBox.qml
-|   |       |   |   |   |   |   |   |   SplitView.qml
-|   |       |   |   |   |   |   |   |   StackView.qml
-|   |       |   |   |   |   |   |   |   SwipeDelegate.qml
-|   |       |   |   |   |   |   |   |   Switch.qml
-|   |       |   |   |   |   |   |   |   SwitchDelegate.qml
-|   |       |   |   |   |   |   |   |   TabBar.qml
-|   |       |   |   |   |   |   |   |   TabButton.qml
-|   |       |   |   |   |   |   |   |   TextArea.qml
-|   |       |   |   |   |   |   |   |   TextField.qml
-|   |       |   |   |   |   |   |   |   ToolBar.qml
-|   |       |   |   |   |   |   |   |   ToolButton.qml
-|   |       |   |   |   |   |   |   |   ToolSeparator.qml
-|   |       |   |   |   |   |   |   |   ToolTip.qml
-|   |       |   |   |   |   |   |   |   Tumbler.qml
-|   |       |   |   |   |   |   |   |   VerticalHeaderView.qml
-|   |       |   |   |   |   |   |   |   VerticalHeaderViewDelegate.qml
-|   |       |   |   |   |   |   |   |   
-|   |       |   |   |   |   |   |   \---impl
-|   |       |   |   |   |   |   |           CheckIndicator.qml
-|   |       |   |   |   |   |   |           plugins.qmltypes
-|   |       |   |   |   |   |   |           qmldir
-|   |       |   |   |   |   |   |           qtquickcontrols2universalstyleimplplugin.dll
-|   |       |   |   |   |   |   |           RadioIndicator.qml
-|   |       |   |   |   |   |   |           SwitchIndicator.qml
-|   |       |   |   |   |   |   |           
-|   |       |   |   |   |   |   \---Windows
-|   |       |   |   |   |   |       |   ApplicationWindow.qml
-|   |       |   |   |   |   |       |   Button.qml
-|   |       |   |   |   |   |       |   CheckBox.qml
-|   |       |   |   |   |   |       |   CheckDelegate.qml
-|   |       |   |   |   |   |       |   ComboBox.qml
-|   |       |   |   |   |   |       |   DelayButton.qml
-|   |       |   |   |   |   |       |   Frame.qml
-|   |       |   |   |   |   |       |   GroupBox.qml
-|   |       |   |   |   |   |       |   ItemDelegate.qml
-|   |       |   |   |   |   |       |   Menu.qml
-|   |       |   |   |   |   |       |   MenuBar.qml
-|   |       |   |   |   |   |       |   MenuBarItem.qml
-|   |       |   |   |   |   |       |   MenuItem.qml
-|   |       |   |   |   |   |       |   MenuSeparator.qml
-|   |       |   |   |   |   |       |   plugins.qmltypes
-|   |       |   |   |   |   |       |   ProgressBar.qml
-|   |       |   |   |   |   |       |   qmldir
-|   |       |   |   |   |   |       |   qtquickcontrols2windowsstyleplugin.dll
-|   |       |   |   |   |   |       |   RadioButton.qml
-|   |       |   |   |   |   |       |   RadioDelegate.qml
-|   |       |   |   |   |   |       |   RangeSlider.qml
-|   |       |   |   |   |   |       |   ScrollBar.qml
-|   |       |   |   |   |   |       |   ScrollIndicator.qml
-|   |       |   |   |   |   |       |   ScrollView.qml
-|   |       |   |   |   |   |       |   SearchField.qml
-|   |       |   |   |   |   |       |   SelectionRectangle.qml
-|   |       |   |   |   |   |       |   Slider.qml
-|   |       |   |   |   |   |       |   SpinBox.qml
-|   |       |   |   |   |   |       |   Switch.qml
-|   |       |   |   |   |   |       |   SwitchDelegate.qml
-|   |       |   |   |   |   |       |   TextArea.qml
-|   |       |   |   |   |   |       |   TextField.qml
-|   |       |   |   |   |   |       |   
-|   |       |   |   |   |   |       +---images
-|   |       |   |   |   |   |       |       checkmark.png
-|   |       |   |   |   |   |       |       checkmark@2x.png
-|   |       |   |   |   |   |       |       checkmark@3x.png
-|   |       |   |   |   |   |       |       close_big.png
-|   |       |   |   |   |   |       |       close_big@2x.png
-|   |       |   |   |   |   |       |       close_big@3x.png
-|   |       |   |   |   |   |       |       menuarrow.png
-|   |       |   |   |   |   |       |       menuarrow@2x.png
-|   |       |   |   |   |   |       |       menuarrow@3x.png
-|   |       |   |   |   |   |       |       search-magnifier.png
-|   |       |   |   |   |   |       |       search-magnifier@2x.png
-|   |       |   |   |   |   |       |       search-magnifier@3x.png
-|   |       |   |   |   |   |       |       
-|   |       |   |   |   |   |       \---impl
-|   |       |   |   |   |   |               CheckIndicator.qml
-|   |       |   |   |   |   |               qmldir
-|   |       |   |   |   |   |               qtquickcontrols2windowsstyleimplplugin.dll
-|   |       |   |   |   |   |               QuickControls2WindowsStyleImpl.qmltypes
-|   |       |   |   |   |   |               SwitchIndicator.qml
-|   |       |   |   |   |   |               
-|   |       |   |   |   |   +---Dialogs
-|   |       |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   qtquickdialogsplugin.dll
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   \---quickimpl
-|   |       |   |   |   |   |       |   plugins.qmltypes
-|   |       |   |   |   |   |       |   qmldir
-|   |       |   |   |   |   |       |   qtquickdialogs2quickimplplugin.dll
-|   |       |   |   |   |   |       |   
-|   |       |   |   |   |   |       \---qml
-|   |       |   |   |   |   |           |   ColorDialog.qml
-|   |       |   |   |   |   |           |   ColorInputs.qml
-|   |       |   |   |   |   |           |   FileDialog.qml
-|   |       |   |   |   |   |           |   FileDialogDelegate.qml
-|   |       |   |   |   |   |           |   FileDialogDelegateLabel.qml
-|   |       |   |   |   |   |           |   FolderBreadcrumbBar.qml
-|   |       |   |   |   |   |           |   FolderDialog.qml
-|   |       |   |   |   |   |           |   FolderDialogDelegate.qml
-|   |       |   |   |   |   |           |   FolderDialogDelegateLabel.qml
-|   |       |   |   |   |   |           |   FontDialog.qml
-|   |       |   |   |   |   |           |   FontDialogContent.qml
-|   |       |   |   |   |   |           |   HueGradient.qml
-|   |       |   |   |   |   |           |   MessageDialog.qml
-|   |       |   |   |   |   |           |   PickerHandle.qml
-|   |       |   |   |   |   |           |   SaturationLightnessPicker.qml
-|   |       |   |   |   |   |           |   SideBar.qml
-|   |       |   |   |   |   |           |   
-|   |       |   |   |   |   |           +---+Fusion
-|   |       |   |   |   |   |           |       ColorDialog.qml
-|   |       |   |   |   |   |           |       ColorInputs.qml
-|   |       |   |   |   |   |           |       FileDialog.qml
-|   |       |   |   |   |   |           |       FileDialogDelegate.qml
-|   |       |   |   |   |   |           |       FolderBreadcrumbBar.qml
-|   |       |   |   |   |   |           |       FolderDialog.qml
-|   |       |   |   |   |   |           |       FolderDialogDelegate.qml
-|   |       |   |   |   |   |           |       FontDialog.qml
-|   |       |   |   |   |   |           |       MessageDialog.qml
-|   |       |   |   |   |   |           |       SideBar.qml
-|   |       |   |   |   |   |           |       
-|   |       |   |   |   |   |           +---+Imagine
-|   |       |   |   |   |   |           |       ColorDialog.qml
-|   |       |   |   |   |   |           |       ColorInputs.qml
-|   |       |   |   |   |   |           |       FileDialog.qml
-|   |       |   |   |   |   |           |       FileDialogDelegate.qml
-|   |       |   |   |   |   |           |       FolderBreadcrumbBar.qml
-|   |       |   |   |   |   |           |       FolderDialog.qml
-|   |       |   |   |   |   |           |       FolderDialogDelegate.qml
-|   |       |   |   |   |   |           |       FontDialog.qml
-|   |       |   |   |   |   |           |       MessageDialog.qml
-|   |       |   |   |   |   |           |       SideBar.qml
-|   |       |   |   |   |   |           |       
-|   |       |   |   |   |   |           +---+Material
-|   |       |   |   |   |   |           |       ColorDialog.qml
-|   |       |   |   |   |   |           |       ColorInputs.qml
-|   |       |   |   |   |   |           |       FileDialog.qml
-|   |       |   |   |   |   |           |       FileDialogDelegate.qml
-|   |       |   |   |   |   |           |       FolderBreadcrumbBar.qml
-|   |       |   |   |   |   |           |       FolderDialog.qml
-|   |       |   |   |   |   |           |       FolderDialogDelegate.qml
-|   |       |   |   |   |   |           |       FontDialog.qml
-|   |       |   |   |   |   |           |       MessageDialog.qml
-|   |       |   |   |   |   |           |       SideBar.qml
-|   |       |   |   |   |   |           |       
-|   |       |   |   |   |   |           \---+Universal
-|   |       |   |   |   |   |                   ColorDialog.qml
-|   |       |   |   |   |   |                   ColorInputs.qml
-|   |       |   |   |   |   |                   FileDialog.qml
-|   |       |   |   |   |   |                   FileDialogDelegate.qml
-|   |       |   |   |   |   |                   FolderBreadcrumbBar.qml
-|   |       |   |   |   |   |                   FolderDialog.qml
-|   |       |   |   |   |   |                   FolderDialogDelegate.qml
-|   |       |   |   |   |   |                   FontDialog.qml
-|   |       |   |   |   |   |                   MessageDialog.qml
-|   |       |   |   |   |   |                   SideBar.qml
-|   |       |   |   |   |   |                   
-|   |       |   |   |   |   +---Effects
-|   |       |   |   |   |   |       effectsplugin.dll
-|   |       |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |       qmldir
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---Layouts
-|   |       |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |       qmldir
-|   |       |   |   |   |   |       qquicklayoutsplugin.dll
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---LocalStorage
-|   |       |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |       qmldir
-|   |       |   |   |   |   |       qmllocalstorageplugin.dll
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---NativeStyle
-|   |       |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   qtquickcontrols2nativestyleplugin.dll
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   +---controls
-|   |       |   |   |   |   |   |       DefaultButton.qml
-|   |       |   |   |   |   |   |       DefaultCheckBox.qml
-|   |       |   |   |   |   |   |       DefaultComboBox.qml
-|   |       |   |   |   |   |   |       DefaultDial.qml
-|   |       |   |   |   |   |   |       DefaultFrame.qml
-|   |       |   |   |   |   |   |       DefaultGroupBox.qml
-|   |       |   |   |   |   |   |       DefaultItemDelegate.qml
-|   |       |   |   |   |   |   |       DefaultItemDelegateIconLabel.qml
-|   |       |   |   |   |   |   |       DefaultProgressBar.qml
-|   |       |   |   |   |   |   |       DefaultRadioButton.qml
-|   |       |   |   |   |   |   |       DefaultRadioDelegate.qml
-|   |       |   |   |   |   |   |       DefaultScrollBar.qml
-|   |       |   |   |   |   |   |       DefaultSearchField.qml
-|   |       |   |   |   |   |   |       DefaultSlider.qml
-|   |       |   |   |   |   |   |       DefaultSpinBox.qml
-|   |       |   |   |   |   |   |       DefaultTextArea.qml
-|   |       |   |   |   |   |   |       DefaultTextField.qml
-|   |       |   |   |   |   |   |       DefaultTreeViewDelegate.qml
-|   |       |   |   |   |   |   |       qmldir
-|   |       |   |   |   |   |   |       
-|   |       |   |   |   |   |   \---util
-|   |       |   |   |   |   |           qmldir
-|   |       |   |   |   |   |           WindowsFocusFrame.qml
-|   |       |   |   |   |   |           
-|   |       |   |   |   |   +---Particles
-|   |       |   |   |   |   |       particlesplugin.dll
-|   |       |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |       qmldir
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---Pdf
-|   |       |   |   |   |   |   |   PdfLinkDelegate.qml
-|   |       |   |   |   |   |   |   PdfMultiPageView.qml
-|   |       |   |   |   |   |   |   PdfPageView.qml
-|   |       |   |   |   |   |   |   pdfquickplugin.dll
-|   |       |   |   |   |   |   |   PdfScrollablePageView.qml
-|   |       |   |   |   |   |   |   PdfStyle.qml
-|   |       |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   +---+Material
-|   |       |   |   |   |   |   |       PdfStyle.qml
-|   |       |   |   |   |   |   |       
-|   |       |   |   |   |   |   \---+Universal
-|   |       |   |   |   |   |           PdfStyle.qml
-|   |       |   |   |   |   |           
-|   |       |   |   |   |   +---Scene2D
-|   |       |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |       qmldir
-|   |       |   |   |   |   |       qtquickscene2dplugin.dll
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---Scene3D
-|   |       |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |       qmldir
-|   |       |   |   |   |   |       qtquickscene3dplugin.dll
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---Shapes
-|   |       |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   qmlshapesplugin.dll
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   \---DesignHelpers
-|   |       |   |   |   |   |           plugins.qmltypes
-|   |       |   |   |   |   |           qmldir
-|   |       |   |   |   |   |           qtquickshapesdesignhelpersplugin.dll
-|   |       |   |   |   |   |           
-|   |       |   |   |   |   +---Templates
-|   |       |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |       qmldir
-|   |       |   |   |   |   |       qtquicktemplates2plugin.dll
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---Timeline
-|   |       |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   qtquicktimelineplugin.dll
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   \---BlendTrees
-|   |       |   |   |   |   |           plugins.qmltypes
-|   |       |   |   |   |   |           qmldir
-|   |       |   |   |   |   |           qtquicktimelineblendtreesplugin.dll
-|   |       |   |   |   |   |           
-|   |       |   |   |   |   +---tooling
-|   |       |   |   |   |   |       Component.qml
-|   |       |   |   |   |   |       Enum.qml
-|   |       |   |   |   |   |       Member.qml
-|   |       |   |   |   |   |       Method.qml
-|   |       |   |   |   |   |       Module.qml
-|   |       |   |   |   |   |       Parameter.qml
-|   |       |   |   |   |   |       Property.qml
-|   |       |   |   |   |   |       qmldir
-|   |       |   |   |   |   |       quicktooling.qmltypes
-|   |       |   |   |   |   |       quicktoolingplugin.dll
-|   |       |   |   |   |   |       Signal.qml
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---VectorImage
-|   |       |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   qquickvectorimageplugin.dll
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   \---Helpers
-|   |       |   |   |   |   |           plugins.qmltypes
-|   |       |   |   |   |   |           qmldir
-|   |       |   |   |   |   |           qquickvectorimagehelpersplugin.dll
-|   |       |   |   |   |   |           
-|   |       |   |   |   |   \---Window
-|   |       |   |   |   |           qmldir
-|   |       |   |   |   |           quickwindow.qmltypes
-|   |       |   |   |   |           quickwindowplugin.dll
-|   |       |   |   |   |           
-|   |       |   |   |   +---QtQuick3D
-|   |       |   |   |   |   |   LightmapperOutputWindow.qml
-|   |       |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   qquick3dplugin.dll
-|   |       |   |   |   |   |   Quick3D.qmltypes
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   +---AssetUtils
-|   |       |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   qtquick3dassetutilsplugin.dll
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   \---designer
-|   |       |   |   |   |   |       |   assetutils.metainfo
-|   |       |   |   |   |   |       |   NodeSection.qml
-|   |       |   |   |   |   |       |   RuntimeLoaderSection.qml
-|   |       |   |   |   |   |       |   RuntimeLoaderSpecifics.qml
-|   |       |   |   |   |   |       |   
-|   |       |   |   |   |   |       \---images
-|   |       |   |   |   |   |               dummy.png
-|   |       |   |   |   |   |               dummy16.png
-|   |       |   |   |   |   |               dummy@2x.png
-|   |       |   |   |   |   |               runtimeloader.png
-|   |       |   |   |   |   |               runtimeloader16.png
-|   |       |   |   |   |   |               runtimeloader@2x.png
-|   |       |   |   |   |   |               
-|   |       |   |   |   |   +---designer
-|   |       |   |   |   |   |   |   AbstractLightSection.qml
-|   |       |   |   |   |   |   |   BufferInputSection.qml
-|   |       |   |   |   |   |   |   BufferInputSpecifics.qml
-|   |       |   |   |   |   |   |   BufferSection.qml
-|   |       |   |   |   |   |   |   BufferSpecifics.qml
-|   |       |   |   |   |   |   |   CameraSection.qml
-|   |       |   |   |   |   |   |   CascadesSection.qml
-|   |       |   |   |   |   |   |   CubeMapTextureSpecifics.qml
-|   |       |   |   |   |   |   |   CustomCameraSpecifics.qml
-|   |       |   |   |   |   |   |   CustomMaterialSection.qml
-|   |       |   |   |   |   |   |   CustomMaterialSpecifics.qml
-|   |       |   |   |   |   |   |   DebugSettingsSection.qml
-|   |       |   |   |   |   |   |   DebugSettingsSpecifics.qml
-|   |       |   |   |   |   |   |   DefaultMaterialSection.qml
-|   |       |   |   |   |   |   |   DefaultMaterialSpecifics.qml
-|   |       |   |   |   |   |   |   DirectionalLightSection.qml
-|   |       |   |   |   |   |   |   DirectionalLightSpecifics.qml
-|   |       |   |   |   |   |   |   EffectSection.qml
-|   |       |   |   |   |   |   |   EffectSpecifics.qml
-|   |       |   |   |   |   |   |   FileInstancingSection.qml
-|   |       |   |   |   |   |   |   FileInstancingSpecifics.qml
-|   |       |   |   |   |   |   |   FogSection.qml
-|   |       |   |   |   |   |   |   FogSpecifics.qml
-|   |       |   |   |   |   |   |   FrustumCameraSection.qml
-|   |       |   |   |   |   |   |   FrustumCameraSpecifics.qml
-|   |       |   |   |   |   |   |   InstanceListEntrySection.qml
-|   |       |   |   |   |   |   |   InstanceListEntrySpecifics.qml
-|   |       |   |   |   |   |   |   InstanceListSection.qml
-|   |       |   |   |   |   |   |   InstanceListSpecifics.qml
-|   |       |   |   |   |   |   |   InstancingSection.qml
-|   |       |   |   |   |   |   |   JointSection.qml
-|   |       |   |   |   |   |   |   JointSpecifics.qml
-|   |       |   |   |   |   |   |   LightmapperSection.qml
-|   |       |   |   |   |   |   |   LightmapperSpecifics.qml
-|   |       |   |   |   |   |   |   Loader3DSection.qml
-|   |       |   |   |   |   |   |   Loader3DSpecifics.qml
-|   |       |   |   |   |   |   |   MaterialSection.qml
-|   |       |   |   |   |   |   |   ModelSection.qml
-|   |       |   |   |   |   |   |   ModelSpecifics.qml
-|   |       |   |   |   |   |   |   MorphTargetSection.qml
-|   |       |   |   |   |   |   |   MorphTargetSpecifics.qml
-|   |       |   |   |   |   |   |   NodeSection.qml
-|   |       |   |   |   |   |   |   NodeSpecifics.qml
-|   |       |   |   |   |   |   |   Object3DSection.qml
-|   |       |   |   |   |   |   |   OrthographicCameraSection.qml
-|   |       |   |   |   |   |   |   OrthographicCameraSpecifics.qml
-|   |       |   |   |   |   |   |   PassSection.qml
-|   |       |   |   |   |   |   |   PassSpecifics.qml
-|   |       |   |   |   |   |   |   PerspectiveCameraSection.qml
-|   |       |   |   |   |   |   |   PerspectiveCameraSpecifics.qml
-|   |       |   |   |   |   |   |   PointLightSection.qml
-|   |       |   |   |   |   |   |   PointLightSpecifics.qml
-|   |       |   |   |   |   |   |   PrincipledMaterialSection.qml
-|   |       |   |   |   |   |   |   PrincipledMaterialSpecifics.qml
-|   |       |   |   |   |   |   |   propertyGroups.json
-|   |       |   |   |   |   |   |   quick3d.metainfo
-|   |       |   |   |   |   |   |   ReflectionProbeSection.qml
-|   |       |   |   |   |   |   |   ReflectionProbeSpecifics.qml
-|   |       |   |   |   |   |   |   Repeater3DSection.qml
-|   |       |   |   |   |   |   |   Repeater3DSpecifics.qml
-|   |       |   |   |   |   |   |   ResourceLoaderSection.qml
-|   |       |   |   |   |   |   |   ResourceLoaderSpecifics.qml
-|   |       |   |   |   |   |   |   SceneEnvironmentSection.qml
-|   |       |   |   |   |   |   |   SceneEnvironmentSpecifics.qml
-|   |       |   |   |   |   |   |   SetUniformValueSection.qml
-|   |       |   |   |   |   |   |   SetUniformValueSpecifics.qml
-|   |       |   |   |   |   |   |   ShaderSection.qml
-|   |       |   |   |   |   |   |   ShaderSpecifics.qml
-|   |       |   |   |   |   |   |   ShadowSection.qml
-|   |       |   |   |   |   |   |   SkinSection.qml
-|   |       |   |   |   |   |   |   SkinSpecifics.qml
-|   |       |   |   |   |   |   |   SpecularGlossyMaterialSection.qml
-|   |       |   |   |   |   |   |   SpecularGlossyMaterialSpecifics.qml
-|   |       |   |   |   |   |   |   SpotLightSection.qml
-|   |       |   |   |   |   |   |   SpotLightSpecifics.qml
-|   |       |   |   |   |   |   |   TextureInputSection.qml
-|   |       |   |   |   |   |   |   TextureInputSpecifics.qml
-|   |       |   |   |   |   |   |   TextureSection.qml
-|   |       |   |   |   |   |   |   TextureSpecifics.qml
-|   |       |   |   |   |   |   |   View3DSection.qml
-|   |       |   |   |   |   |   |   View3DSpecifics.qml
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   +---images
-|   |       |   |   |   |   |   |       camera.png
-|   |       |   |   |   |   |   |       camera16.png
-|   |       |   |   |   |   |   |       camera@2x.png
-|   |       |   |   |   |   |   |       cone.png
-|   |       |   |   |   |   |   |       cone16.png
-|   |       |   |   |   |   |   |       cone@2x.png
-|   |       |   |   |   |   |   |       cube.png
-|   |       |   |   |   |   |   |       cube16.png
-|   |       |   |   |   |   |   |       cube@2x.png
-|   |       |   |   |   |   |   |       cubemaptexture.png
-|   |       |   |   |   |   |   |       cubemaptexture16.png
-|   |       |   |   |   |   |   |       cubemaptexture@2x.png
-|   |       |   |   |   |   |   |       custommaterial.png
-|   |       |   |   |   |   |   |       custommaterial16.png
-|   |       |   |   |   |   |   |       custommaterial@2x.png
-|   |       |   |   |   |   |   |       cylinder.png
-|   |       |   |   |   |   |   |       cylinder16.png
-|   |       |   |   |   |   |   |       cylinder@2x.png
-|   |       |   |   |   |   |   |       debugsettings.png
-|   |       |   |   |   |   |   |       debugsettings16.png
-|   |       |   |   |   |   |   |       debugsettings@2x.png
-|   |       |   |   |   |   |   |       dummy.png
-|   |       |   |   |   |   |   |       dummy16.png
-|   |       |   |   |   |   |   |       dummy@2x.png
-|   |       |   |   |   |   |   |       effect.png
-|   |       |   |   |   |   |   |       effect16.png
-|   |       |   |   |   |   |   |       effect@2x.png
-|   |       |   |   |   |   |   |       fileinstancing.png
-|   |       |   |   |   |   |   |       fileinstancing16.png
-|   |       |   |   |   |   |   |       fileinstancing@2x.png
-|   |       |   |   |   |   |   |       fog.png
-|   |       |   |   |   |   |   |       fog16.png
-|   |       |   |   |   |   |   |       fog@2x.png
-|   |       |   |   |   |   |   |       group.png
-|   |       |   |   |   |   |   |       group16.png
-|   |       |   |   |   |   |   |       group@2x.png
-|   |       |   |   |   |   |   |       instancelist.png
-|   |       |   |   |   |   |   |       instancelist16.png
-|   |       |   |   |   |   |   |       instancelist@2x.png
-|   |       |   |   |   |   |   |       instancelistentry.png
-|   |       |   |   |   |   |   |       instancelistentry16.png
-|   |       |   |   |   |   |   |       instancelistentry@2x.png
-|   |       |   |   |   |   |   |       joint.png
-|   |       |   |   |   |   |   |       joint16.png
-|   |       |   |   |   |   |   |       joint@2x.png
-|   |       |   |   |   |   |   |       lightdirectional.png
-|   |       |   |   |   |   |   |       lightdirectional16.png
-|   |       |   |   |   |   |   |       lightdirectional@2x.png
-|   |       |   |   |   |   |   |       lightmapper.png
-|   |       |   |   |   |   |   |       lightmapper16.png
-|   |       |   |   |   |   |   |       lightmapper@2x.png
-|   |       |   |   |   |   |   |       lightpoint.png
-|   |       |   |   |   |   |   |       lightpoint16.png
-|   |       |   |   |   |   |   |       lightpoint@2x.png
-|   |       |   |   |   |   |   |       lightspot.png
-|   |       |   |   |   |   |   |       lightspot16.png
-|   |       |   |   |   |   |   |       lightspot@2x.png
-|   |       |   |   |   |   |   |       loader3d.png
-|   |       |   |   |   |   |   |       loader3d16.png
-|   |       |   |   |   |   |   |       loader3d@2x.png
-|   |       |   |   |   |   |   |       material.png
-|   |       |   |   |   |   |   |       material16.png
-|   |       |   |   |   |   |   |       material@2x.png
-|   |       |   |   |   |   |   |       model16.png
-|   |       |   |   |   |   |   |       morphtarget.png
-|   |       |   |   |   |   |   |       morphtarget16.png
-|   |       |   |   |   |   |   |       morphtarget@2x.png
-|   |       |   |   |   |   |   |       plane.png
-|   |       |   |   |   |   |   |       plane16.png
-|   |       |   |   |   |   |   |       plane@2x.png
-|   |       |   |   |   |   |   |       reflectionProbe.png
-|   |       |   |   |   |   |   |       reflectionProbe16.png
-|   |       |   |   |   |   |   |       reflectionProbe@2x.png
-|   |       |   |   |   |   |   |       repeater3d.png
-|   |       |   |   |   |   |   |       repeater3d16.png
-|   |       |   |   |   |   |   |       repeater3d@2x.png
-|   |       |   |   |   |   |   |       resourceloader.png
-|   |       |   |   |   |   |   |       resourceloader16.png
-|   |       |   |   |   |   |   |       resourceloader@2x.png
-|   |       |   |   |   |   |   |       scene.png
-|   |       |   |   |   |   |   |       scene16.png
-|   |       |   |   |   |   |   |       scene@2x.png
-|   |       |   |   |   |   |   |       shadercommand.png
-|   |       |   |   |   |   |   |       shadercommand16.png
-|   |       |   |   |   |   |   |       shadercommand@2x.png
-|   |       |   |   |   |   |   |       shaderutil.png
-|   |       |   |   |   |   |   |       shaderutil16.png
-|   |       |   |   |   |   |   |       shaderutil@2x.png
-|   |       |   |   |   |   |   |       skeleton.png
-|   |       |   |   |   |   |   |       skeleton16.png
-|   |       |   |   |   |   |   |       skeleton@2x.png
-|   |       |   |   |   |   |   |       skin.png
-|   |       |   |   |   |   |   |       skin16.png
-|   |       |   |   |   |   |   |       skin@2x.png
-|   |       |   |   |   |   |   |       sphere.png
-|   |       |   |   |   |   |   |       sphere16.png
-|   |       |   |   |   |   |   |       sphere@2x.png
-|   |       |   |   |   |   |   |       texture.png
-|   |       |   |   |   |   |   |       texture16.png
-|   |       |   |   |   |   |   |       texture@2x.png
-|   |       |   |   |   |   |   |       view3D.png
-|   |       |   |   |   |   |   |       view3D16.png
-|   |       |   |   |   |   |   |       view3D@2x.png
-|   |       |   |   |   |   |   |       
-|   |       |   |   |   |   |   \---source
-|   |       |   |   |   |   |           custom_material_default_shader.frag
-|   |       |   |   |   |   |           effect_default_shader.frag
-|   |       |   |   |   |   |           effect_template.qml
-|   |       |   |   |   |   |           view3D_template.qml
-|   |       |   |   |   |   |           
-|   |       |   |   |   |   +---Effects
-|   |       |   |   |   |   |   |   AdditiveColorGradient.qml
-|   |       |   |   |   |   |   |   Blur.qml
-|   |       |   |   |   |   |   |   BrushStrokes.qml
-|   |       |   |   |   |   |   |   ChromaticAberration.qml
-|   |       |   |   |   |   |   |   ColorMaster.qml
-|   |       |   |   |   |   |   |   DepthOfFieldHQBlur.qml
-|   |       |   |   |   |   |   |   Desaturate.qml
-|   |       |   |   |   |   |   |   DistortionRipple.qml
-|   |       |   |   |   |   |   |   DistortionSphere.qml
-|   |       |   |   |   |   |   |   DistortionSpiral.qml
-|   |       |   |   |   |   |   |   EdgeDetect.qml
-|   |       |   |   |   |   |   |   Emboss.qml
-|   |       |   |   |   |   |   |   Flip.qml
-|   |       |   |   |   |   |   |   Fxaa.qml
-|   |       |   |   |   |   |   |   GaussianBlur.qml
-|   |       |   |   |   |   |   |   HDRBloomTonemap.qml
-|   |       |   |   |   |   |   |   MotionBlur.qml
-|   |       |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   qtquick3deffectplugin.dll
-|   |       |   |   |   |   |   |   Quick3DEffects.qmltypes
-|   |       |   |   |   |   |   |   Scatter.qml
-|   |       |   |   |   |   |   |   SCurveTonemap.qml
-|   |       |   |   |   |   |   |   TiltShift.qml
-|   |       |   |   |   |   |   |   Vignette.qml
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   \---designer
-|   |       |   |   |   |   |       |   AdditiveColorGradientSection.qml
-|   |       |   |   |   |   |       |   AdditiveColorGradientSpecifics.qml
-|   |       |   |   |   |   |       |   BlurSection.qml
-|   |       |   |   |   |   |       |   BlurSpecifics.qml
-|   |       |   |   |   |   |       |   BrushStrokesSection.qml
-|   |       |   |   |   |   |       |   BrushStrokesSpecifics.qml
-|   |       |   |   |   |   |       |   ChromaticAberrationSection.qml
-|   |       |   |   |   |   |       |   ChromaticAberrationSpecifics.qml
-|   |       |   |   |   |   |       |   ColorMasterSection.qml
-|   |       |   |   |   |   |       |   ColorMasterSpecifics.qml
-|   |       |   |   |   |   |       |   DepthOfFieldHQBlurSection.qml
-|   |       |   |   |   |   |       |   DepthOfFieldHQBlurSpecifics.qml
-|   |       |   |   |   |   |       |   DesaturateSection.qml
-|   |       |   |   |   |   |       |   DesaturateSpecifics.qml
-|   |       |   |   |   |   |       |   DistortionRippleSection.qml
-|   |       |   |   |   |   |       |   DistortionRippleSpecifics.qml
-|   |       |   |   |   |   |       |   DistortionSphereSection.qml
-|   |       |   |   |   |   |       |   DistortionSphereSpecifics.qml
-|   |       |   |   |   |   |       |   DistortionSpiralSection.qml
-|   |       |   |   |   |   |       |   DistortionSpiralSpecifics.qml
-|   |       |   |   |   |   |       |   EdgeDetectSection.qml
-|   |       |   |   |   |   |       |   EdgeDetectSpecifics.qml
-|   |       |   |   |   |   |       |   effectlib.metainfo
-|   |       |   |   |   |   |       |   EmbossSection.qml
-|   |       |   |   |   |   |       |   EmbossSpecifics.qml
-|   |       |   |   |   |   |       |   FlipSection.qml
-|   |       |   |   |   |   |       |   FlipSpecifics.qml
-|   |       |   |   |   |   |       |   FxaaSection.qml
-|   |       |   |   |   |   |       |   FxaaSpecifics.qml
-|   |       |   |   |   |   |       |   GaussianBlurSection.qml
-|   |       |   |   |   |   |       |   GaussianBlurSpecifics.qml
-|   |       |   |   |   |   |       |   HDRBloomTonemapSection.qml
-|   |       |   |   |   |   |       |   HDRBloomTonemapSpecifics.qml
-|   |       |   |   |   |   |       |   MotionBlurSection.qml
-|   |       |   |   |   |   |       |   MotionBlurSpecifics.qml
-|   |       |   |   |   |   |       |   ScatterSection.qml
-|   |       |   |   |   |   |       |   ScatterSpecifics.qml
-|   |       |   |   |   |   |       |   SCurveTonemapSection.qml
-|   |       |   |   |   |   |       |   SCurveTonemapSpecifics.qml
-|   |       |   |   |   |   |       |   TiltShiftSection.qml
-|   |       |   |   |   |   |       |   TiltShiftSpecifics.qml
-|   |       |   |   |   |   |       |   VignetteSection.qml
-|   |       |   |   |   |   |       |   VignetteSpecifics.qml
-|   |       |   |   |   |   |       |   
-|   |       |   |   |   |   |       \---images
-|   |       |   |   |   |   |               effect.png
-|   |       |   |   |   |   |               effect16.png
-|   |       |   |   |   |   |               effect@2x.png
-|   |       |   |   |   |   |               
-|   |       |   |   |   |   +---Helpers
-|   |       |   |   |   |   |   |   AxisHelper.qml
-|   |       |   |   |   |   |   |   DebugView.qml
-|   |       |   |   |   |   |   |   ExtendedSceneEnvironment.qml
-|   |       |   |   |   |   |   |   LodManager.qml
-|   |       |   |   |   |   |   |   OrbitCameraController.qml
-|   |       |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   qtquick3dhelpersplugin.dll
-|   |       |   |   |   |   |   |   WasdController.qml
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   +---designer
-|   |       |   |   |   |   |   |   |   AxisHelperSection.qml
-|   |       |   |   |   |   |   |   |   AxisHelperSpecifics.qml
-|   |       |   |   |   |   |   |   |   DebugViewSection.qml
-|   |       |   |   |   |   |   |   |   DebugViewSpecifics.qml
-|   |       |   |   |   |   |   |   |   ExtendedSceneEnvironmentSection.qml
-|   |       |   |   |   |   |   |   |   ExtendedSceneEnvironmentSpecifics.qml
-|   |       |   |   |   |   |   |   |   GridGeometrySection.qml
-|   |       |   |   |   |   |   |   |   GridGeometrySpecifics.qml
-|   |       |   |   |   |   |   |   |   HeightFieldGeometrySection.qml
-|   |       |   |   |   |   |   |   |   HeightFieldGeometrySpecifics.qml
-|   |       |   |   |   |   |   |   |   helpers.metainfo
-|   |       |   |   |   |   |   |   |   InfiniteGridSection.qml
-|   |       |   |   |   |   |   |   |   InfiniteGridSpecifics.qml
-|   |       |   |   |   |   |   |   |   InstanceModelSection.qml
-|   |       |   |   |   |   |   |   |   InstanceModelSpecifics.qml
-|   |       |   |   |   |   |   |   |   InstanceRepeaterSection.qml
-|   |       |   |   |   |   |   |   |   InstanceRepeaterSpecifics.qml
-|   |       |   |   |   |   |   |   |   LodManagerSection.qml
-|   |       |   |   |   |   |   |   |   LodManagerSpecifics.qml
-|   |       |   |   |   |   |   |   |   LookAtNodeSection.qml
-|   |       |   |   |   |   |   |   |   LookAtNodeSpecifics.qml
-|   |       |   |   |   |   |   |   |   NodeSection.qml
-|   |       |   |   |   |   |   |   |   OrbitCameraControllerSection.qml
-|   |       |   |   |   |   |   |   |   OrbitCameraControllerSpecifics.qml
-|   |       |   |   |   |   |   |   |   ProceduralSkyTextureDataSection.qml
-|   |       |   |   |   |   |   |   |   ProceduralSkyTextureDataSpecifics.qml
-|   |       |   |   |   |   |   |   |   Repeater3DSection.qml
-|   |       |   |   |   |   |   |   |   WasdControllerSection.qml
-|   |       |   |   |   |   |   |   |   WasdControllerSpecifics.qml
-|   |       |   |   |   |   |   |   |   
-|   |       |   |   |   |   |   |   \---images
-|   |       |   |   |   |   |   |           axishelper.png
-|   |       |   |   |   |   |   |           axishelper16.png
-|   |       |   |   |   |   |   |           axishelper@2x.png
-|   |       |   |   |   |   |   |           debugview.png
-|   |       |   |   |   |   |   |           debugview16.png
-|   |       |   |   |   |   |   |           debugview@2x.png
-|   |       |   |   |   |   |   |           dummy.png
-|   |       |   |   |   |   |   |           dummy16.png
-|   |       |   |   |   |   |   |           dummy@2x.png
-|   |       |   |   |   |   |   |           extendedsceneenvironment.png
-|   |       |   |   |   |   |   |           extendedsceneenvironment16.png
-|   |       |   |   |   |   |   |           extendedsceneenvironment@2x.png
-|   |       |   |   |   |   |   |           gridgeometry.png
-|   |       |   |   |   |   |   |           gridgeometry16.png
-|   |       |   |   |   |   |   |           gridgeometry@2x.png
-|   |       |   |   |   |   |   |           heightfieldgeometry.png
-|   |       |   |   |   |   |   |           heightfieldgeometry16.png
-|   |       |   |   |   |   |   |           heightfieldgeometry@2x.png
-|   |       |   |   |   |   |   |           infinitegrid.png
-|   |       |   |   |   |   |   |           infinitegrid16.png
-|   |       |   |   |   |   |   |           infinitegrid@2x.png
-|   |       |   |   |   |   |   |           instancemodel.png
-|   |       |   |   |   |   |   |           instancemodel16.png
-|   |       |   |   |   |   |   |           instancemodel@2x.png
-|   |       |   |   |   |   |   |           instancerepeater.png
-|   |       |   |   |   |   |   |           instancerepeater16.png
-|   |       |   |   |   |   |   |           instancerepeater@2x.png
-|   |       |   |   |   |   |   |           lodmanager.png
-|   |       |   |   |   |   |   |           lodmanager16.png
-|   |       |   |   |   |   |   |           lodmanager@2x.png
-|   |       |   |   |   |   |   |           lookatnode.png
-|   |       |   |   |   |   |   |           lookatnode16.png
-|   |       |   |   |   |   |   |           lookatnode@2x.png
-|   |       |   |   |   |   |   |           orbitcameracontroller.png
-|   |       |   |   |   |   |   |           orbitcameracontroller16.png
-|   |       |   |   |   |   |   |           orbitcameracontroller@2x.png
-|   |       |   |   |   |   |   |           proceduralskytexturedata.png
-|   |       |   |   |   |   |   |           proceduralskytexturedata16.png
-|   |       |   |   |   |   |   |           proceduralskytexturedata@2x.png
-|   |       |   |   |   |   |   |           wasdcontroller.png
-|   |       |   |   |   |   |   |           wasdcontroller16.png
-|   |       |   |   |   |   |   |           wasdcontroller@2x.png
-|   |       |   |   |   |   |   |           
-|   |       |   |   |   |   |   +---impl
-|   |       |   |   |   |   |   |       DepthOfFieldBlur.qml
-|   |       |   |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |   |       qmldir
-|   |       |   |   |   |   |   |       qtquick3dhelpersimplplugin.dll
-|   |       |   |   |   |   |   |       SceneEffect.qml
-|   |       |   |   |   |   |   |       
-|   |       |   |   |   |   |   \---meshes
-|   |       |   |   |   |   |           axisGrid.mesh
-|   |       |   |   |   |   |           
-|   |       |   |   |   |   +---lightmapviewer
-|   |       |   |   |   |   |       LightmapViewer.qml
-|   |       |   |   |   |   |       lightmapviewer.qmltypes
-|   |       |   |   |   |   |       qmldir
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---MaterialEditor
-|   |       |   |   |   |   |       AboutDialog.qml
-|   |       |   |   |   |   |       EditorView.qml
-|   |       |   |   |   |   |       FrostedGlass.qml
-|   |       |   |   |   |   |       InstancingPropertiesPane.qml
-|   |       |   |   |   |   |       main.qml
-|   |       |   |   |   |   |       MaterialPropertiesPane.qml
-|   |       |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |       Preview.qml
-|   |       |   |   |   |   |       PreviewControls.qml
-|   |       |   |   |   |   |       qmldir
-|   |       |   |   |   |   |       SaveChangesDialog.qml
-|   |       |   |   |   |   |       ShaderEditor.qml
-|   |       |   |   |   |   |       UniformManagerPane.qml
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   +---ParticleEffects
-|   |       |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   qtquick3dparticleeffectsplugin.dll
-|   |       |   |   |   |   |   |   Quick3DParticleEffects.qmltypes
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   \---designer
-|   |       |   |   |   |   |       |   particleeffects.metainfo
-|   |       |   |   |   |   |       |   
-|   |       |   |   |   |   |       +---images
-|   |       |   |   |   |   |       |       color_table.png
-|   |       |   |   |   |   |       |       color_table2.png
-|   |       |   |   |   |   |       |       droplet.png
-|   |       |   |   |   |   |       |       dummy.png
-|   |       |   |   |   |   |       |       dummy16.png
-|   |       |   |   |   |   |       |       dummy@2x.png
-|   |       |   |   |   |   |       |       rain.png
-|   |       |   |   |   |   |       |       ripple.png
-|   |       |   |   |   |   |       |       smoke2.png
-|   |       |   |   |   |   |       |       smoke_sprite.png
-|   |       |   |   |   |   |       |       smoke_sprite2.png
-|   |       |   |   |   |   |       |       snowflake.png
-|   |       |   |   |   |   |       |       sphere.png
-|   |       |   |   |   |   |       |       splash7.png
-|   |       |   |   |   |   |       |       
-|   |       |   |   |   |   |       \---source
-|   |       |   |   |   |   |               particleeffect_clouds.qml
-|   |       |   |   |   |   |               particleeffect_dust.qml
-|   |       |   |   |   |   |               particleeffect_exhaust.qml
-|   |       |   |   |   |   |               particleeffect_fire.qml
-|   |       |   |   |   |   |               particleeffect_heavyrain.qml
-|   |       |   |   |   |   |               particleeffect_heavyrain_tirespray.qml
-|   |       |   |   |   |   |               particleeffect_lightrain.qml
-|   |       |   |   |   |   |               particleeffect_lightrain_tirespray.qml
-|   |       |   |   |   |   |               particleeffect_rainmist.qml
-|   |       |   |   |   |   |               particleeffect_snow.qml
-|   |       |   |   |   |   |               particleeffect_steam.qml
-|   |       |   |   |   |   |               
-|   |       |   |   |   |   +---Particles3D
-|   |       |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   qtquick3dparticles3dplugin.dll
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   \---designer
-|   |       |   |   |   |   |       |   Affector3DSection.qml
-|   |       |   |   |   |   |       |   Affector3DSpecifics.qml
-|   |       |   |   |   |   |       |   Attractor3DSection.qml
-|   |       |   |   |   |   |       |   Attractor3DSpecifics.qml
-|   |       |   |   |   |   |       |   DynamicBurst3DSection.qml
-|   |       |   |   |   |   |       |   DynamicBurst3DSpecifics.qml
-|   |       |   |   |   |   |       |   EmitBurst3DSection.qml
-|   |       |   |   |   |   |       |   EmitBurst3DSpecifics.qml
-|   |       |   |   |   |   |       |   Gravity3DSection.qml
-|   |       |   |   |   |   |       |   Gravity3DSpecifics.qml
-|   |       |   |   |   |   |       |   LineParticle3DSection.qml
-|   |       |   |   |   |   |       |   LineParticle3DSpecifics.qml
-|   |       |   |   |   |   |       |   ModelBlendParticle3DSection.qml
-|   |       |   |   |   |   |       |   ModelBlendParticle3DSpecifics.qml
-|   |       |   |   |   |   |       |   ModelParticle3DSection.qml
-|   |       |   |   |   |   |       |   ModelParticle3DSpecifics.qml
-|   |       |   |   |   |   |       |   NodeSection.qml
-|   |       |   |   |   |   |       |   NodeSpecifics.qml
-|   |       |   |   |   |   |       |   Particle3DSection.qml
-|   |       |   |   |   |   |       |   Particle3DSpecifics.qml
-|   |       |   |   |   |   |       |   ParticleCustomShape3DSection.qml
-|   |       |   |   |   |   |       |   ParticleCustomShape3DSpecifics.qml
-|   |       |   |   |   |   |       |   ParticleEmitter3DSection.qml
-|   |       |   |   |   |   |       |   ParticleEmitter3DSpecifics.qml
-|   |       |   |   |   |   |       |   ParticleModelShape3DSection.qml
-|   |       |   |   |   |   |       |   ParticleModelShape3DSpecifics.qml
-|   |       |   |   |   |   |       |   particles3d.metainfo
-|   |       |   |   |   |   |       |   ParticleShape3DSection.qml
-|   |       |   |   |   |   |       |   ParticleShape3DSpecifics.qml
-|   |       |   |   |   |   |       |   ParticleSystem3DSection.qml
-|   |       |   |   |   |   |       |   ParticleSystem3DSpecifics.qml
-|   |       |   |   |   |   |       |   PointRotator3DSection.qml
-|   |       |   |   |   |   |       |   PointRotator3DSpecifics.qml
-|   |       |   |   |   |   |       |   Repeller3DSection.qml
-|   |       |   |   |   |   |       |   Repeller3DSpecifics.qml
-|   |       |   |   |   |   |       |   ScaleAffector3DSection.qml
-|   |       |   |   |   |   |       |   ScaleAffector3DSpecifics.qml
-|   |       |   |   |   |   |       |   SpriteParticle3DSection.qml
-|   |       |   |   |   |   |       |   SpriteParticle3DSpecifics.qml
-|   |       |   |   |   |   |       |   SpriteSequence3DSection.qml
-|   |       |   |   |   |   |       |   SpriteSequence3DSpecifics.qml
-|   |       |   |   |   |   |       |   TargetDirection3DSection.qml
-|   |       |   |   |   |   |       |   TargetDirection3DSpecifics.qml
-|   |       |   |   |   |   |       |   TrailEmitter3DSection.qml
-|   |       |   |   |   |   |       |   TrailEmitter3DSpecifics.qml
-|   |       |   |   |   |   |       |   VectorDirection3DSection.qml
-|   |       |   |   |   |   |       |   VectorDirection3DSpecifics.qml
-|   |       |   |   |   |   |       |   Wander3DSection.qml
-|   |       |   |   |   |   |       |   Wander3DSpecifics.qml
-|   |       |   |   |   |   |       |   
-|   |       |   |   |   |   |       +---images
-|   |       |   |   |   |   |       |       attractor-16px.png
-|   |       |   |   |   |   |       |       attractor-24px.png
-|   |       |   |   |   |   |       |       attractor-24px@2x.png
-|   |       |   |   |   |   |       |       dummy.png
-|   |       |   |   |   |   |       |       dummy16.png
-|   |       |   |   |   |   |       |       dummy@2x.png
-|   |       |   |   |   |   |       |       emit-burst-16px.png
-|   |       |   |   |   |   |       |       emit-burst-24px.png
-|   |       |   |   |   |   |       |       emit-burst-24px@2x.png
-|   |       |   |   |   |   |       |       emitter-16px.png
-|   |       |   |   |   |   |       |       emitter-24px.png
-|   |       |   |   |   |   |       |       emitter-24px@2x.png
-|   |       |   |   |   |   |       |       gravity-16px.png
-|   |       |   |   |   |   |       |       gravity-24px.png
-|   |       |   |   |   |   |       |       gravity-24px@2x.png
-|   |       |   |   |   |   |       |       line-particle-16px.png
-|   |       |   |   |   |   |       |       line-particle-24px.png
-|   |       |   |   |   |   |       |       line-particle-24px@2x.png
-|   |       |   |   |   |   |       |       model-blend-particle-16px.png
-|   |       |   |   |   |   |       |       model-blend-particle-24px.png
-|   |       |   |   |   |   |       |       model-blend-particle-24px@2x.png
-|   |       |   |   |   |   |       |       model-particle-16px.png
-|   |       |   |   |   |   |       |       model-particle-24px.png
-|   |       |   |   |   |   |       |       model-particle-24px@2x.png
-|   |       |   |   |   |   |       |       model-shape-16px.png
-|   |       |   |   |   |   |       |       model-shape-24px.png
-|   |       |   |   |   |   |       |       model-shape-24px@2x.png
-|   |       |   |   |   |   |       |       particle-custom-shape-16px.png
-|   |       |   |   |   |   |       |       particle-custom-shape-24px.png
-|   |       |   |   |   |   |       |       particle-custom-shape-24px@2x.png
-|   |       |   |   |   |   |       |       particle-shape-16px.png
-|   |       |   |   |   |   |       |       particle-shape-24px.png
-|   |       |   |   |   |   |       |       particle-shape-24px@2x.png
-|   |       |   |   |   |   |       |       particle-system-16px.png
-|   |       |   |   |   |   |       |       particle-system-24px.png
-|   |       |   |   |   |   |       |       particle-system-24px@2x.png
-|   |       |   |   |   |   |       |       point-rotator-16px.png
-|   |       |   |   |   |   |       |       point-rotator-24px.png
-|   |       |   |   |   |   |       |       point-rotator-24px@2x.png
-|   |       |   |   |   |   |       |       repeller-16px.png
-|   |       |   |   |   |   |       |       repeller-24px.png
-|   |       |   |   |   |   |       |       repeller-24px@2x.png
-|   |       |   |   |   |   |       |       scale-affector-16px.png
-|   |       |   |   |   |   |       |       scale-affector-24px.png
-|   |       |   |   |   |   |       |       scale-affector-24px@2x.png
-|   |       |   |   |   |   |       |       sprite-particle-16px.png
-|   |       |   |   |   |   |       |       sprite-particle-24px.png
-|   |       |   |   |   |   |       |       sprite-particle-24px@2x.png
-|   |       |   |   |   |   |       |       sprite-sequence-16px.png
-|   |       |   |   |   |   |       |       sprite-sequence-24px.png
-|   |       |   |   |   |   |       |       sprite-sequence-24px@2x.png
-|   |       |   |   |   |   |       |       target-direction-16px.png
-|   |       |   |   |   |   |       |       target-direction-24px.png
-|   |       |   |   |   |   |       |       target-direction-24px@2x.png
-|   |       |   |   |   |   |       |       trail-emitter-16px.png
-|   |       |   |   |   |   |       |       trail-emitter-24px.png
-|   |       |   |   |   |   |       |       trail-emitter-24px@2x.png
-|   |       |   |   |   |   |       |       vector-direction-16px.png
-|   |       |   |   |   |   |       |       vector-direction-24px.png
-|   |       |   |   |   |   |       |       vector-direction-24px@2x.png
-|   |       |   |   |   |   |       |       wander-16px.png
-|   |       |   |   |   |   |       |       wander-24px.png
-|   |       |   |   |   |   |       |       wander-24px@2x.png
-|   |       |   |   |   |   |       |       
-|   |       |   |   |   |   |       \---source
-|   |       |   |   |   |   |               particlesystem_animatedsprite_template.qml
-|   |       |   |   |   |   |               particlesystem_attractor_template.qml
-|   |       |   |   |   |   |               particlesystem_burst_template.qml
-|   |       |   |   |   |   |               particlesystem_modelblend_template.qml
-|   |       |   |   |   |   |               particlesystem_modelshape_template.qml
-|   |       |   |   |   |   |               particlesystem_particletrail_template.qml
-|   |       |   |   |   |   |               particlesystem_sprite_template.qml
-|   |       |   |   |   |   |               particlesystem_template.qml
-|   |       |   |   |   |   |               particlesystem_wander_template.qml
-|   |       |   |   |   |   |               
-|   |       |   |   |   |   +---Physics
-|   |       |   |   |   |   |   |   plugins.qmltypes
-|   |       |   |   |   |   |   |   qmldir
-|   |       |   |   |   |   |   |   qquick3dphysicsplugin.dll
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   +---designer
-|   |       |   |   |   |   |   |   |   BoxShapeSection.qml
-|   |       |   |   |   |   |   |   |   BoxShapeSpecifics.qml
-|   |       |   |   |   |   |   |   |   CapsuleShapeSection.qml
-|   |       |   |   |   |   |   |   |   CapsuleShapeSpecifics.qml
-|   |       |   |   |   |   |   |   |   CharacterControllerSection.qml
-|   |       |   |   |   |   |   |   |   CharacterControllerSpecifics.qml
-|   |       |   |   |   |   |   |   |   CollisionShapeSection.qml
-|   |       |   |   |   |   |   |   |   ConvexMeshShapeSection.qml
-|   |       |   |   |   |   |   |   |   ConvexMeshShapeSpecifics.qml
-|   |       |   |   |   |   |   |   |   DynamicRigidBodySection.qml
-|   |       |   |   |   |   |   |   |   DynamicRigidBodySpecifics.qml
-|   |       |   |   |   |   |   |   |   HeightFieldShapeSection.qml
-|   |       |   |   |   |   |   |   |   HeightFieldShapeSpecifics.qml
-|   |       |   |   |   |   |   |   |   NodeSection.qml
-|   |       |   |   |   |   |   |   |   physics.metainfo
-|   |       |   |   |   |   |   |   |   PhysicsBodySection.qml
-|   |       |   |   |   |   |   |   |   PhysicsMaterialSection.qml
-|   |       |   |   |   |   |   |   |   PhysicsMaterialSpecifics.qml
-|   |       |   |   |   |   |   |   |   PhysicsNodeSection.qml
-|   |       |   |   |   |   |   |   |   PhysicsWorldSection.qml
-|   |       |   |   |   |   |   |   |   PhysicsWorldSpecifics.qml
-|   |       |   |   |   |   |   |   |   PlaneShapeSpecifics.qml
-|   |       |   |   |   |   |   |   |   SphereShapeSection.qml
-|   |       |   |   |   |   |   |   |   SphereShapeSpecifics.qml
-|   |       |   |   |   |   |   |   |   StaticRigidBodySpecifics.qml
-|   |       |   |   |   |   |   |   |   TriangleMeshShapeSection.qml
-|   |       |   |   |   |   |   |   |   TriangleMeshShapeSpecifics.qml
-|   |       |   |   |   |   |   |   |   TriggerBodySpecifics.qml
-|   |       |   |   |   |   |   |   |   
-|   |       |   |   |   |   |   |   \---images
-|   |       |   |   |   |   |   |           boxshape.png
-|   |       |   |   |   |   |   |           boxshape16.png
-|   |       |   |   |   |   |   |           boxshape@2x.png
-|   |       |   |   |   |   |   |           capsuleshape.png
-|   |       |   |   |   |   |   |           capsuleshape16.png
-|   |       |   |   |   |   |   |           capsuleshape@2x.png
-|   |       |   |   |   |   |   |           charactercontroller.png
-|   |       |   |   |   |   |   |           charactercontroller16.png
-|   |       |   |   |   |   |   |           charactercontroller@2x.png
-|   |       |   |   |   |   |   |           convexmeshshape.png
-|   |       |   |   |   |   |   |           convexmeshshape16.png
-|   |       |   |   |   |   |   |           convexmeshshape@2x.png
-|   |       |   |   |   |   |   |           dynamicrigidbody.png
-|   |       |   |   |   |   |   |           dynamicrigidbody16.png
-|   |       |   |   |   |   |   |           dynamicrigidbody@2x.png
-|   |       |   |   |   |   |   |           heightfieldshape.png
-|   |       |   |   |   |   |   |           heightfieldshape16.png
-|   |       |   |   |   |   |   |           heightfieldshape@2x.png
-|   |       |   |   |   |   |   |           physicsmaterial.png
-|   |       |   |   |   |   |   |           physicsmaterial16.png
-|   |       |   |   |   |   |   |           physicsmaterial@2x.png
-|   |       |   |   |   |   |   |           physicsworld.png
-|   |       |   |   |   |   |   |           physicsworld16.png
-|   |       |   |   |   |   |   |           physicsworld@2x.png
-|   |       |   |   |   |   |   |           planeshape.png
-|   |       |   |   |   |   |   |           planeshape16.png
-|   |       |   |   |   |   |   |           planeshape@2x.png
-|   |       |   |   |   |   |   |           sphereshape.png
-|   |       |   |   |   |   |   |           sphereshape16.png
-|   |       |   |   |   |   |   |           sphereshape@2x.png
-|   |       |   |   |   |   |   |           staticrigidbody.png
-|   |       |   |   |   |   |   |           staticrigidbody16.png
-|   |       |   |   |   |   |   |           staticrigidbody@2x.png
-|   |       |   |   |   |   |   |           trianglemeshshape.png
-|   |       |   |   |   |   |   |           trianglemeshshape16.png
-|   |       |   |   |   |   |   |           trianglemeshshape@2x.png
-|   |       |   |   |   |   |   |           triggerbody.png
-|   |       |   |   |   |   |   |           triggerbody16.png
-|   |       |   |   |   |   |   |           triggerbody@2x.png
-|   |       |   |   |   |   |   |           
-|   |       |   |   |   |   |   \---Helpers
-|   |       |   |   |   |   |           plugins.qmltypes
-|   |       |   |   |   |   |           qmldir
-|   |       |   |   |   |   |           qtquick3dphysicshelpersplugin.dll
-|   |       |   |   |   |   |           
-|   |       |   |   |   |   +---SpatialAudio
-|   |       |   |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |   |       qmldir
-|   |       |   |   |   |   |       quick3dspatialaudioplugin.dll
-|   |       |   |   |   |   |       
-|   |       |   |   |   |   \---Xr
-|   |       |   |   |   |           plugins.qmltypes
-|   |       |   |   |   |           qmldir
-|   |       |   |   |   |           quick3dxrplugin.dll
-|   |       |   |   |   |           XrErrorDialog.qml
-|   |       |   |   |   |           
-|   |       |   |   |   +---QtRemoteObjects
-|   |       |   |   |   |       declarative_remoteobjectsplugin.dll
-|   |       |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |       qmldir
-|   |       |   |   |   |       
-|   |       |   |   |   +---QtSensors
-|   |       |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |       qmldir
-|   |       |   |   |   |       sensorsquickplugin.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---QtTest
-|   |       |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |       qmldir
-|   |       |   |   |   |       quicktestplugin.dll
-|   |       |   |   |   |       SignalSpy.qml
-|   |       |   |   |   |       TestCase.qml
-|   |       |   |   |   |       testlogger.js
-|   |       |   |   |   |       TestSchedule.qml
-|   |       |   |   |   |       
-|   |       |   |   |   +---QtTextToSpeech
-|   |       |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |       qmldir
-|   |       |   |   |   |       texttospeechqmlplugin.dll
-|   |       |   |   |   |       
-|   |       |   |   |   +---QtWebChannel
-|   |       |   |   |   |       plugins.qmltypes
-|   |       |   |   |   |       qmldir
-|   |       |   |   |   |       webchannelquickplugin.dll
-|   |       |   |   |   |       
-|   |       |   |   |   \---QtWebSockets
-|   |       |   |   |           plugins.qmltypes
-|   |       |   |   |           qmldir
-|   |       |   |   |           qmlwebsocketsplugin.dll
-|   |       |   |   |           
-|   |       |   |   +---qsci
-|   |       |   |   |   \---api
-|   |       |   |   |       \---python
-|   |       |   |   |               PyQt6.api
-|   |       |   |   |               
-|   |       |   |   \---translations
-|   |       |   |           qtbase_ar.qm
-|   |       |   |           qtbase_bg.qm
-|   |       |   |           qtbase_ca.qm
-|   |       |   |           qtbase_cs.qm
-|   |       |   |           qtbase_da.qm
-|   |       |   |           qtbase_de.qm
-|   |       |   |           qtbase_en.qm
-|   |       |   |           qtbase_es.qm
-|   |       |   |           qtbase_fa.qm
-|   |       |   |           qtbase_fi.qm
-|   |       |   |           qtbase_fr.qm
-|   |       |   |           qtbase_gd.qm
-|   |       |   |           qtbase_he.qm
-|   |       |   |           qtbase_hr.qm
-|   |       |   |           qtbase_hu.qm
-|   |       |   |           qtbase_it.qm
-|   |       |   |           qtbase_ja.qm
-|   |       |   |           qtbase_ka.qm
-|   |       |   |           qtbase_ko.qm
-|   |       |   |           qtbase_lg.qm
-|   |       |   |           qtbase_lv.qm
-|   |       |   |           qtbase_nl.qm
-|   |       |   |           qtbase_nn.qm
-|   |       |   |           qtbase_pl.qm
-|   |       |   |           qtbase_pt_BR.qm
-|   |       |   |           qtbase_ru.qm
-|   |       |   |           qtbase_sk.qm
-|   |       |   |           qtbase_sv.qm
-|   |       |   |           qtbase_tr.qm
-|   |       |   |           qtbase_uk.qm
-|   |       |   |           qtbase_zh_CN.qm
-|   |       |   |           qtbase_zh_TW.qm
-|   |       |   |           qtconnectivity_bg.qm
-|   |       |   |           qtconnectivity_ca.qm
-|   |       |   |           qtconnectivity_da.qm
-|   |       |   |           qtconnectivity_de.qm
-|   |       |   |           qtconnectivity_en.qm
-|   |       |   |           qtconnectivity_es.qm
-|   |       |   |           qtconnectivity_hr.qm
-|   |       |   |           qtconnectivity_hu.qm
-|   |       |   |           qtconnectivity_ka.qm
-|   |       |   |           qtconnectivity_ko.qm
-|   |       |   |           qtconnectivity_nl.qm
-|   |       |   |           qtconnectivity_pl.qm
-|   |       |   |           qtconnectivity_pt_BR.qm
-|   |       |   |           qtconnectivity_ru.qm
-|   |       |   |           qtconnectivity_sv.qm
-|   |       |   |           qtconnectivity_tr.qm
-|   |       |   |           qtconnectivity_uk.qm
-|   |       |   |           qtconnectivity_zh_CN.qm
-|   |       |   |           qtdeclarative_ar.qm
-|   |       |   |           qtdeclarative_bg.qm
-|   |       |   |           qtdeclarative_ca.qm
-|   |       |   |           qtdeclarative_da.qm
-|   |       |   |           qtdeclarative_de.qm
-|   |       |   |           qtdeclarative_en.qm
-|   |       |   |           qtdeclarative_es.qm
-|   |       |   |           qtdeclarative_fa.qm
-|   |       |   |           qtdeclarative_fi.qm
-|   |       |   |           qtdeclarative_fr.qm
-|   |       |   |           qtdeclarative_hr.qm
-|   |       |   |           qtdeclarative_hu.qm
-|   |       |   |           qtdeclarative_ja.qm
-|   |       |   |           qtdeclarative_ka.qm
-|   |       |   |           qtdeclarative_ko.qm
-|   |       |   |           qtdeclarative_lv.qm
-|   |       |   |           qtdeclarative_nl.qm
-|   |       |   |           qtdeclarative_nn.qm
-|   |       |   |           qtdeclarative_pl.qm
-|   |       |   |           qtdeclarative_pt_BR.qm
-|   |       |   |           qtdeclarative_ru.qm
-|   |       |   |           qtdeclarative_sk.qm
-|   |       |   |           qtdeclarative_sv.qm
-|   |       |   |           qtdeclarative_tr.qm
-|   |       |   |           qtdeclarative_uk.qm
-|   |       |   |           qtdeclarative_zh_CN.qm
-|   |       |   |           qtdeclarative_zh_TW.qm
-|   |       |   |           qtlocation_bg.qm
-|   |       |   |           qtlocation_ca.qm
-|   |       |   |           qtlocation_da.qm
-|   |       |   |           qtlocation_de.qm
-|   |       |   |           qtlocation_en.qm
-|   |       |   |           qtlocation_es.qm
-|   |       |   |           qtlocation_fi.qm
-|   |       |   |           qtlocation_fr.qm
-|   |       |   |           qtlocation_hr.qm
-|   |       |   |           qtlocation_hu.qm
-|   |       |   |           qtlocation_ka.qm
-|   |       |   |           qtlocation_ko.qm
-|   |       |   |           qtlocation_nl.qm
-|   |       |   |           qtlocation_pl.qm
-|   |       |   |           qtlocation_pt_BR.qm
-|   |       |   |           qtlocation_ru.qm
-|   |       |   |           qtlocation_sv.qm
-|   |       |   |           qtlocation_tr.qm
-|   |       |   |           qtlocation_uk.qm
-|   |       |   |           qtlocation_zh_CN.qm
-|   |       |   |           qtmultimedia_ar.qm
-|   |       |   |           qtmultimedia_bg.qm
-|   |       |   |           qtmultimedia_ca.qm
-|   |       |   |           qtmultimedia_cs.qm
-|   |       |   |           qtmultimedia_da.qm
-|   |       |   |           qtmultimedia_de.qm
-|   |       |   |           qtmultimedia_en.qm
-|   |       |   |           qtmultimedia_es.qm
-|   |       |   |           qtmultimedia_fa.qm
-|   |       |   |           qtmultimedia_fi.qm
-|   |       |   |           qtmultimedia_fr.qm
-|   |       |   |           qtmultimedia_hr.qm
-|   |       |   |           qtmultimedia_hu.qm
-|   |       |   |           qtmultimedia_it.qm
-|   |       |   |           qtmultimedia_ja.qm
-|   |       |   |           qtmultimedia_ka.qm
-|   |       |   |           qtmultimedia_ko.qm
-|   |       |   |           qtmultimedia_nl.qm
-|   |       |   |           qtmultimedia_nn.qm
-|   |       |   |           qtmultimedia_pl.qm
-|   |       |   |           qtmultimedia_pt_BR.qm
-|   |       |   |           qtmultimedia_ru.qm
-|   |       |   |           qtmultimedia_sk.qm
-|   |       |   |           qtmultimedia_sv.qm
-|   |       |   |           qtmultimedia_tr.qm
-|   |       |   |           qtmultimedia_uk.qm
-|   |       |   |           qtmultimedia_zh_CN.qm
-|   |       |   |           qtmultimedia_zh_TW.qm
-|   |       |   |           qtserialport_de.qm
-|   |       |   |           qtserialport_en.qm
-|   |       |   |           qtserialport_es.qm
-|   |       |   |           qtserialport_ja.qm
-|   |       |   |           qtserialport_ka.qm
-|   |       |   |           qtserialport_ko.qm
-|   |       |   |           qtserialport_pl.qm
-|   |       |   |           qtserialport_ru.qm
-|   |       |   |           qtserialport_sv.qm
-|   |       |   |           qtserialport_tr.qm
-|   |       |   |           qtserialport_uk.qm
-|   |       |   |           qtserialport_zh_CN.qm
-|   |       |   |           qtwebsockets_ca.qm
-|   |       |   |           qtwebsockets_de.qm
-|   |       |   |           qtwebsockets_en.qm
-|   |       |   |           qtwebsockets_es.qm
-|   |       |   |           qtwebsockets_fr.qm
-|   |       |   |           qtwebsockets_ja.qm
-|   |       |   |           qtwebsockets_ka.qm
-|   |       |   |           qtwebsockets_ko.qm
-|   |       |   |           qtwebsockets_pl.qm
-|   |       |   |           qtwebsockets_ru.qm
-|   |       |   |           qtwebsockets_sv.qm
-|   |       |   |           qtwebsockets_tr.qm
-|   |       |   |           qtwebsockets_uk.qm
-|   |       |   |           qtwebsockets_zh_CN.qm
-|   |       |   |           qt_ar.qm
-|   |       |   |           qt_bg.qm
-|   |       |   |           qt_ca.qm
-|   |       |   |           qt_cs.qm
-|   |       |   |           qt_da.qm
-|   |       |   |           qt_de.qm
-|   |       |   |           qt_en.qm
-|   |       |   |           qt_es.qm
-|   |       |   |           qt_fa.qm
-|   |       |   |           qt_fi.qm
-|   |       |   |           qt_fr.qm
-|   |       |   |           qt_gd.qm
-|   |       |   |           qt_gl.qm
-|   |       |   |           qt_he.qm
-|   |       |   |           qt_help_ar.qm
-|   |       |   |           qt_help_bg.qm
-|   |       |   |           qt_help_ca.qm
-|   |       |   |           qt_help_cs.qm
-|   |       |   |           qt_help_da.qm
-|   |       |   |           qt_help_de.qm
-|   |       |   |           qt_help_en.qm
-|   |       |   |           qt_help_es.qm
-|   |       |   |           qt_help_fr.qm
-|   |       |   |           qt_help_gl.qm
-|   |       |   |           qt_help_hr.qm
-|   |       |   |           qt_help_hu.qm
-|   |       |   |           qt_help_it.qm
-|   |       |   |           qt_help_ja.qm
-|   |       |   |           qt_help_ka.qm
-|   |       |   |           qt_help_ko.qm
-|   |       |   |           qt_help_nl.qm
-|   |       |   |           qt_help_nn.qm
-|   |       |   |           qt_help_pl.qm
-|   |       |   |           qt_help_pt_BR.qm
-|   |       |   |           qt_help_ru.qm
-|   |       |   |           qt_help_sk.qm
-|   |       |   |           qt_help_sl.qm
-|   |       |   |           qt_help_sv.qm
-|   |       |   |           qt_help_tr.qm
-|   |       |   |           qt_help_uk.qm
-|   |       |   |           qt_help_zh_CN.qm
-|   |       |   |           qt_help_zh_TW.qm
-|   |       |   |           qt_hr.qm
-|   |       |   |           qt_hu.qm
-|   |       |   |           qt_it.qm
-|   |       |   |           qt_ja.qm
-|   |       |   |           qt_ka.qm
-|   |       |   |           qt_ko.qm
-|   |       |   |           qt_lg.qm
-|   |       |   |           qt_lt.qm
-|   |       |   |           qt_lv.qm
-|   |       |   |           qt_nl.qm
-|   |       |   |           qt_nn.qm
-|   |       |   |           qt_pl.qm
-|   |       |   |           qt_pt_BR.qm
-|   |       |   |           qt_pt_PT.qm
-|   |       |   |           qt_ru.qm
-|   |       |   |           qt_sk.qm
-|   |       |   |           qt_sl.qm
-|   |       |   |           qt_sv.qm
-|   |       |   |           qt_tr.qm
-|   |       |   |           qt_uk.qm
-|   |       |   |           qt_zh_CN.qm
-|   |       |   |           qt_zh_TW.qm
-|   |       |   |           
-|   |       |   +---uic
-|   |       |   |   |   compile_ui.py
-|   |       |   |   |   enum_map.py
-|   |       |   |   |   exceptions.py
-|   |       |   |   |   icon_cache.py
-|   |       |   |   |   load_ui.py
-|   |       |   |   |   objcreator.py
-|   |       |   |   |   properties.py
-|   |       |   |   |   pyuic.py
-|   |       |   |   |   uiparser.py
-|   |       |   |   |   ui_file.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---Compiler
-|   |       |   |   |   |   as_string.py
-|   |       |   |   |   |   compiler.py
-|   |       |   |   |   |   indenter.py
-|   |       |   |   |   |   misc.py
-|   |       |   |   |   |   proxy_metaclass.py
-|   |       |   |   |   |   qobjectcreator.py
-|   |       |   |   |   |   qtproxies.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           as_string.cpython-313.pyc
-|   |       |   |   |           compiler.cpython-313.pyc
-|   |       |   |   |           indenter.cpython-313.pyc
-|   |       |   |   |           misc.cpython-313.pyc
-|   |       |   |   |           proxy_metaclass.cpython-313.pyc
-|   |       |   |   |           qobjectcreator.cpython-313.pyc
-|   |       |   |   |           qtproxies.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---Loader
-|   |       |   |   |   |   loader.py
-|   |       |   |   |   |   qobjectcreator.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           loader.cpython-313.pyc
-|   |       |   |   |           qobjectcreator.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---widget-plugins
-|   |       |   |   |   |   qaxcontainer.py
-|   |       |   |   |   |   qscintilla.py
-|   |       |   |   |   |   qtcharts.py
-|   |       |   |   |   |   qtopenglwidgets.py
-|   |       |   |   |   |   qtprintsupport.py
-|   |       |   |   |   |   qtquickwidgets.py
-|   |       |   |   |   |   qtwebenginewidgets.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           qaxcontainer.cpython-313.pyc
-|   |       |   |   |           qscintilla.cpython-313.pyc
-|   |       |   |   |           qtcharts.cpython-313.pyc
-|   |       |   |   |           qtopenglwidgets.cpython-313.pyc
-|   |       |   |   |           qtprintsupport.cpython-313.pyc
-|   |       |   |   |           qtquickwidgets.cpython-313.pyc
-|   |       |   |   |           qtwebenginewidgets.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           compile_ui.cpython-313.pyc
-|   |       |   |           enum_map.cpython-313.pyc
-|   |       |   |           exceptions.cpython-313.pyc
-|   |       |   |           icon_cache.cpython-313.pyc
-|   |       |   |           load_ui.cpython-313.pyc
-|   |       |   |           objcreator.cpython-313.pyc
-|   |       |   |           properties.cpython-313.pyc
-|   |       |   |           pyuic.cpython-313.pyc
-|   |       |   |           uiparser.cpython-313.pyc
-|   |       |   |           ui_file.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---pyqt6-6.10.0.dist-info
-|   |       |   |   entry_points.txt
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE
-|   |       |           
-|   |       +---pyqt6_qt6-6.10.0.dist-info
-|   |       |       INSTALLER
-|   |       |       LICENSE
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       WHEEL
-|   |       |       
-|   |       +---pyqt6_sip-13.10.2.dist-info
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   top_level.txt
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE
-|   |       |           
-|   |       +---pywin32_ctypes-0.2.3.dist-info
-|   |       |       INSTALLER
-|   |       |       LICENSE.txt
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       top_level.txt
-|   |       |       WHEEL
-|   |       |       
-|   |       +---reportlab
-|   |       |   |   rl_config.py
-|   |       |   |   rl_settings.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   +---fonts
-|   |       |   |       00readme.txt
-|   |       |   |       bitstream-vera-license.txt
-|   |       |   |       callig15.afm
-|   |       |   |       callig15.pfb
-|   |       |   |       cobo____.pfb
-|   |       |   |       cob_____.pfb
-|   |       |   |       com_____.pfb
-|   |       |   |       coo_____.pfb
-|   |       |   |       DarkGarden-changelog.txt
-|   |       |   |       DarkGarden-copying-gpl.txt
-|   |       |   |       DarkGarden-copying.txt
-|   |       |   |       DarkGarden-readme.txt
-|   |       |   |       DarkGarden.sfd
-|   |       |   |       DarkGardenMK.afm
-|   |       |   |       DarkGardenMK.pfb
-|   |       |   |       sy______.pfb
-|   |       |   |       Vera.ttf
-|   |       |   |       VeraBd.ttf
-|   |       |   |       VeraBI.ttf
-|   |       |   |       VeraIt.ttf
-|   |       |   |       zd______.pfb
-|   |       |   |       zx______.pfb
-|   |       |   |       zy______.pfb
-|   |       |   |       _abi____.pfb
-|   |       |   |       _ab_____.pfb
-|   |       |   |       _ai_____.pfb
-|   |       |   |       _a______.pfb
-|   |       |   |       _ebi____.pfb
-|   |       |   |       _eb_____.pfb
-|   |       |   |       _ei_____.pfb
-|   |       |   |       _er_____.pfb
-|   |       |   |       
-|   |       |   +---graphics
-|   |       |   |   |   renderbase.py
-|   |       |   |   |   renderPDF.py
-|   |       |   |   |   renderPM.py
-|   |       |   |   |   renderPS.py
-|   |       |   |   |   renderSVG.py
-|   |       |   |   |   shapes.py
-|   |       |   |   |   testdrawings.py
-|   |       |   |   |   testshapes.py
-|   |       |   |   |   transform.py
-|   |       |   |   |   utils.py
-|   |       |   |   |   widgetbase.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---barcode
-|   |       |   |   |   |   code128.py
-|   |       |   |   |   |   code39.py
-|   |       |   |   |   |   code93.py
-|   |       |   |   |   |   common.py
-|   |       |   |   |   |   dmtx.py
-|   |       |   |   |   |   eanbc.py
-|   |       |   |   |   |   ecc200datamatrix.py
-|   |       |   |   |   |   fourstate.py
-|   |       |   |   |   |   lto.py
-|   |       |   |   |   |   qr.py
-|   |       |   |   |   |   qrencoder.py
-|   |       |   |   |   |   test.py
-|   |       |   |   |   |   usps.py
-|   |       |   |   |   |   usps4s.py
-|   |       |   |   |   |   widgets.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           code128.cpython-313.pyc
-|   |       |   |   |           code39.cpython-313.pyc
-|   |       |   |   |           code93.cpython-313.pyc
-|   |       |   |   |           common.cpython-313.pyc
-|   |       |   |   |           dmtx.cpython-313.pyc
-|   |       |   |   |           eanbc.cpython-313.pyc
-|   |       |   |   |           ecc200datamatrix.cpython-313.pyc
-|   |       |   |   |           fourstate.cpython-313.pyc
-|   |       |   |   |           lto.cpython-313.pyc
-|   |       |   |   |           qr.cpython-313.pyc
-|   |       |   |   |           qrencoder.cpython-313.pyc
-|   |       |   |   |           test.cpython-313.pyc
-|   |       |   |   |           usps.cpython-313.pyc
-|   |       |   |   |           usps4s.cpython-313.pyc
-|   |       |   |   |           widgets.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---charts
-|   |       |   |   |   |   areas.py
-|   |       |   |   |   |   axes.py
-|   |       |   |   |   |   barcharts.py
-|   |       |   |   |   |   dotbox.py
-|   |       |   |   |   |   doughnut.py
-|   |       |   |   |   |   legends.py
-|   |       |   |   |   |   linecharts.py
-|   |       |   |   |   |   lineplots.py
-|   |       |   |   |   |   markers.py
-|   |       |   |   |   |   piecharts.py
-|   |       |   |   |   |   slidebox.py
-|   |       |   |   |   |   spider.py
-|   |       |   |   |   |   textlabels.py
-|   |       |   |   |   |   utils.py
-|   |       |   |   |   |   utils3d.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           areas.cpython-313.pyc
-|   |       |   |   |           axes.cpython-313.pyc
-|   |       |   |   |           barcharts.cpython-313.pyc
-|   |       |   |   |           dotbox.cpython-313.pyc
-|   |       |   |   |           doughnut.cpython-313.pyc
-|   |       |   |   |           legends.cpython-313.pyc
-|   |       |   |   |           linecharts.cpython-313.pyc
-|   |       |   |   |           lineplots.cpython-313.pyc
-|   |       |   |   |           markers.cpython-313.pyc
-|   |       |   |   |           piecharts.cpython-313.pyc
-|   |       |   |   |           slidebox.cpython-313.pyc
-|   |       |   |   |           spider.cpython-313.pyc
-|   |       |   |   |           textlabels.cpython-313.pyc
-|   |       |   |   |           utils.cpython-313.pyc
-|   |       |   |   |           utils3d.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---samples
-|   |       |   |   |   |   bubble.py
-|   |       |   |   |   |   clustered_bar.py
-|   |       |   |   |   |   clustered_column.py
-|   |       |   |   |   |   excelcolors.py
-|   |       |   |   |   |   exploded_pie.py
-|   |       |   |   |   |   filled_radar.py
-|   |       |   |   |   |   linechart_with_markers.py
-|   |       |   |   |   |   line_chart.py
-|   |       |   |   |   |   radar.py
-|   |       |   |   |   |   runall.py
-|   |       |   |   |   |   scatter.py
-|   |       |   |   |   |   scatter_lines.py
-|   |       |   |   |   |   scatter_lines_markers.py
-|   |       |   |   |   |   simple_pie.py
-|   |       |   |   |   |   stacked_bar.py
-|   |       |   |   |   |   stacked_column.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           bubble.cpython-313.pyc
-|   |       |   |   |           clustered_bar.cpython-313.pyc
-|   |       |   |   |           clustered_column.cpython-313.pyc
-|   |       |   |   |           excelcolors.cpython-313.pyc
-|   |       |   |   |           exploded_pie.cpython-313.pyc
-|   |       |   |   |           filled_radar.cpython-313.pyc
-|   |       |   |   |           linechart_with_markers.cpython-313.pyc
-|   |       |   |   |           line_chart.cpython-313.pyc
-|   |       |   |   |           radar.cpython-313.pyc
-|   |       |   |   |           runall.cpython-313.pyc
-|   |       |   |   |           scatter.cpython-313.pyc
-|   |       |   |   |           scatter_lines.cpython-313.pyc
-|   |       |   |   |           scatter_lines_markers.cpython-313.pyc
-|   |       |   |   |           simple_pie.cpython-313.pyc
-|   |       |   |   |           stacked_bar.cpython-313.pyc
-|   |       |   |   |           stacked_column.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---widgets
-|   |       |   |   |   |   adjustableArrow.py
-|   |       |   |   |   |   eventcal.py
-|   |       |   |   |   |   flags.py
-|   |       |   |   |   |   grids.py
-|   |       |   |   |   |   markers.py
-|   |       |   |   |   |   signsandsymbols.py
-|   |       |   |   |   |   table.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           adjustableArrow.cpython-313.pyc
-|   |       |   |   |           eventcal.cpython-313.pyc
-|   |       |   |   |           flags.cpython-313.pyc
-|   |       |   |   |           grids.cpython-313.pyc
-|   |       |   |   |           markers.cpython-313.pyc
-|   |       |   |   |           signsandsymbols.cpython-313.pyc
-|   |       |   |   |           table.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           renderbase.cpython-313.pyc
-|   |       |   |           renderPDF.cpython-313.pyc
-|   |       |   |           renderPM.cpython-313.pyc
-|   |       |   |           renderPS.cpython-313.pyc
-|   |       |   |           renderSVG.cpython-313.pyc
-|   |       |   |           shapes.cpython-313.pyc
-|   |       |   |           testdrawings.cpython-313.pyc
-|   |       |   |           testshapes.cpython-313.pyc
-|   |       |   |           transform.cpython-313.pyc
-|   |       |   |           utils.cpython-313.pyc
-|   |       |   |           widgetbase.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---lib
-|   |       |   |   |   abag.py
-|   |       |   |   |   arciv.py
-|   |       |   |   |   attrmap.py
-|   |       |   |   |   boxstuff.py
-|   |       |   |   |   codecharts.py
-|   |       |   |   |   colors.py
-|   |       |   |   |   corp.py
-|   |       |   |   |   enums.py
-|   |       |   |   |   extformat.py
-|   |       |   |   |   fontfinder.py
-|   |       |   |   |   fonts.py
-|   |       |   |   |   formatters.py
-|   |       |   |   |   geomutils.py
-|   |       |   |   |   logger.py
-|   |       |   |   |   normalDate.py
-|   |       |   |   |   pagesizes.py
-|   |       |   |   |   pdfencrypt.py
-|   |       |   |   |   PyFontify.py
-|   |       |   |   |   pygments2xpre.py
-|   |       |   |   |   randomtext.py
-|   |       |   |   |   rltempfile.py
-|   |       |   |   |   rl_accel.py
-|   |       |   |   |   rl_safe_eval.py
-|   |       |   |   |   rparsexml.py
-|   |       |   |   |   sequencer.py
-|   |       |   |   |   styles.py
-|   |       |   |   |   testutils.py
-|   |       |   |   |   textsplit.py
-|   |       |   |   |   units.py
-|   |       |   |   |   utils.py
-|   |       |   |   |   validators.py
-|   |       |   |   |   yaml.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           abag.cpython-313.pyc
-|   |       |   |           arciv.cpython-313.pyc
-|   |       |   |           attrmap.cpython-313.pyc
-|   |       |   |           boxstuff.cpython-313.pyc
-|   |       |   |           codecharts.cpython-313.pyc
-|   |       |   |           colors.cpython-313.pyc
-|   |       |   |           corp.cpython-313.pyc
-|   |       |   |           enums.cpython-313.pyc
-|   |       |   |           extformat.cpython-313.pyc
-|   |       |   |           fontfinder.cpython-313.pyc
-|   |       |   |           fonts.cpython-313.pyc
-|   |       |   |           formatters.cpython-313.pyc
-|   |       |   |           geomutils.cpython-313.pyc
-|   |       |   |           logger.cpython-313.pyc
-|   |       |   |           normalDate.cpython-313.pyc
-|   |       |   |           pagesizes.cpython-313.pyc
-|   |       |   |           pdfencrypt.cpython-313.pyc
-|   |       |   |           PyFontify.cpython-313.pyc
-|   |       |   |           pygments2xpre.cpython-313.pyc
-|   |       |   |           randomtext.cpython-313.pyc
-|   |       |   |           rltempfile.cpython-313.pyc
-|   |       |   |           rl_accel.cpython-313.pyc
-|   |       |   |           rl_safe_eval.cpython-313.pyc
-|   |       |   |           rparsexml.cpython-313.pyc
-|   |       |   |           sequencer.cpython-313.pyc
-|   |       |   |           styles.cpython-313.pyc
-|   |       |   |           testutils.cpython-313.pyc
-|   |       |   |           textsplit.cpython-313.pyc
-|   |       |   |           units.cpython-313.pyc
-|   |       |   |           utils.cpython-313.pyc
-|   |       |   |           validators.cpython-313.pyc
-|   |       |   |           yaml.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---pdfbase
-|   |       |   |   |   acroform.py
-|   |       |   |   |   cidfonts.py
-|   |       |   |   |   pdfdoc.py
-|   |       |   |   |   pdfform.py
-|   |       |   |   |   pdfmetrics.py
-|   |       |   |   |   pdfpattern.py
-|   |       |   |   |   pdfutils.py
-|   |       |   |   |   rl_codecs.py
-|   |       |   |   |   ttfonts.py
-|   |       |   |   |   _can_cmap_data.py
-|   |       |   |   |   _cidfontdata.py
-|   |       |   |   |   _fontdata.py
-|   |       |   |   |   _fontdata_enc_macexpert.py
-|   |       |   |   |   _fontdata_enc_macroman.py
-|   |       |   |   |   _fontdata_enc_pdfdoc.py
-|   |       |   |   |   _fontdata_enc_standard.py
-|   |       |   |   |   _fontdata_enc_symbol.py
-|   |       |   |   |   _fontdata_enc_winansi.py
-|   |       |   |   |   _fontdata_enc_zapfdingbats.py
-|   |       |   |   |   _fontdata_widths_courier.py
-|   |       |   |   |   _fontdata_widths_courierbold.py
-|   |       |   |   |   _fontdata_widths_courierboldoblique.py
-|   |       |   |   |   _fontdata_widths_courieroblique.py
-|   |       |   |   |   _fontdata_widths_helvetica.py
-|   |       |   |   |   _fontdata_widths_helveticabold.py
-|   |       |   |   |   _fontdata_widths_helveticaboldoblique.py
-|   |       |   |   |   _fontdata_widths_helveticaoblique.py
-|   |       |   |   |   _fontdata_widths_symbol.py
-|   |       |   |   |   _fontdata_widths_timesbold.py
-|   |       |   |   |   _fontdata_widths_timesbolditalic.py
-|   |       |   |   |   _fontdata_widths_timesitalic.py
-|   |       |   |   |   _fontdata_widths_timesroman.py
-|   |       |   |   |   _fontdata_widths_zapfdingbats.py
-|   |       |   |   |   _glyphlist.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           acroform.cpython-313.pyc
-|   |       |   |           cidfonts.cpython-313.pyc
-|   |       |   |           pdfdoc.cpython-313.pyc
-|   |       |   |           pdfform.cpython-313.pyc
-|   |       |   |           pdfmetrics.cpython-313.pyc
-|   |       |   |           pdfpattern.cpython-313.pyc
-|   |       |   |           pdfutils.cpython-313.pyc
-|   |       |   |           rl_codecs.cpython-313.pyc
-|   |       |   |           ttfonts.cpython-313.pyc
-|   |       |   |           _can_cmap_data.cpython-313.pyc
-|   |       |   |           _cidfontdata.cpython-313.pyc
-|   |       |   |           _fontdata.cpython-313.pyc
-|   |       |   |           _fontdata_enc_macexpert.cpython-313.pyc
-|   |       |   |           _fontdata_enc_macroman.cpython-313.pyc
-|   |       |   |           _fontdata_enc_pdfdoc.cpython-313.pyc
-|   |       |   |           _fontdata_enc_standard.cpython-313.pyc
-|   |       |   |           _fontdata_enc_symbol.cpython-313.pyc
-|   |       |   |           _fontdata_enc_winansi.cpython-313.pyc
-|   |       |   |           _fontdata_enc_zapfdingbats.cpython-313.pyc
-|   |       |   |           _fontdata_widths_courier.cpython-313.pyc
-|   |       |   |           _fontdata_widths_courierbold.cpython-313.pyc
-|   |       |   |           _fontdata_widths_courierboldoblique.cpython-313.pyc
-|   |       |   |           _fontdata_widths_courieroblique.cpython-313.pyc
-|   |       |   |           _fontdata_widths_helvetica.cpython-313.pyc
-|   |       |   |           _fontdata_widths_helveticabold.cpython-313.pyc
-|   |       |   |           _fontdata_widths_helveticaboldoblique.cpython-313.pyc
-|   |       |   |           _fontdata_widths_helveticaoblique.cpython-313.pyc
-|   |       |   |           _fontdata_widths_symbol.cpython-313.pyc
-|   |       |   |           _fontdata_widths_timesbold.cpython-313.pyc
-|   |       |   |           _fontdata_widths_timesbolditalic.cpython-313.pyc
-|   |       |   |           _fontdata_widths_timesitalic.cpython-313.pyc
-|   |       |   |           _fontdata_widths_timesroman.cpython-313.pyc
-|   |       |   |           _fontdata_widths_zapfdingbats.cpython-313.pyc
-|   |       |   |           _glyphlist.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---pdfgen
-|   |       |   |   |   canvas.py
-|   |       |   |   |   pathobject.py
-|   |       |   |   |   pdfgeom.py
-|   |       |   |   |   pdfimages.py
-|   |       |   |   |   textobject.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           canvas.cpython-313.pyc
-|   |       |   |           pathobject.cpython-313.pyc
-|   |       |   |           pdfgeom.cpython-313.pyc
-|   |       |   |           pdfimages.cpython-313.pyc
-|   |       |   |           textobject.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---platypus
-|   |       |   |   |   doctemplate.py
-|   |       |   |   |   figures.py
-|   |       |   |   |   flowables.py
-|   |       |   |   |   frames.py
-|   |       |   |   |   multicol.py
-|   |       |   |   |   para.py
-|   |       |   |   |   paragraph.py
-|   |       |   |   |   paraparser.py
-|   |       |   |   |   tableofcontents.py
-|   |       |   |   |   tables.py
-|   |       |   |   |   xpreformatted.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           doctemplate.cpython-313.pyc
-|   |       |   |           figures.cpython-313.pyc
-|   |       |   |           flowables.cpython-313.pyc
-|   |       |   |           frames.cpython-313.pyc
-|   |       |   |           multicol.cpython-313.pyc
-|   |       |   |           para.cpython-313.pyc
-|   |       |   |           paragraph.cpython-313.pyc
-|   |       |   |           paraparser.cpython-313.pyc
-|   |       |   |           tableofcontents.cpython-313.pyc
-|   |       |   |           tables.cpython-313.pyc
-|   |       |   |           xpreformatted.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           rl_config.cpython-313.pyc
-|   |       |           rl_settings.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---reportlab2-4.1.0.dist-info
-|   |       |       INSTALLER
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       top_level.txt
-|   |       |       WHEEL
-|   |       |       
-|   |       +---requests
-|   |       |   |   adapters.py
-|   |       |   |   api.py
-|   |       |   |   auth.py
-|   |       |   |   certs.py
-|   |       |   |   compat.py
-|   |       |   |   cookies.py
-|   |       |   |   exceptions.py
-|   |       |   |   help.py
-|   |       |   |   hooks.py
-|   |       |   |   models.py
-|   |       |   |   packages.py
-|   |       |   |   sessions.py
-|   |       |   |   status_codes.py
-|   |       |   |   structures.py
-|   |       |   |   utils.py
-|   |       |   |   _internal_utils.py
-|   |       |   |   __init__.py
-|   |       |   |   __version__.py
-|   |       |   |   
-|   |       |   \---__pycache__
-|   |       |           adapters.cpython-313.pyc
-|   |       |           api.cpython-313.pyc
-|   |       |           auth.cpython-313.pyc
-|   |       |           certs.cpython-313.pyc
-|   |       |           compat.cpython-313.pyc
-|   |       |           cookies.cpython-313.pyc
-|   |       |           exceptions.cpython-313.pyc
-|   |       |           help.cpython-313.pyc
-|   |       |           hooks.cpython-313.pyc
-|   |       |           models.cpython-313.pyc
-|   |       |           packages.cpython-313.pyc
-|   |       |           sessions.cpython-313.pyc
-|   |       |           status_codes.cpython-313.pyc
-|   |       |           structures.cpython-313.pyc
-|   |       |           utils.cpython-313.pyc
-|   |       |           _internal_utils.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           __version__.cpython-313.pyc
-|   |       |           
-|   |       +---requests-2.32.5.dist-info
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   top_level.txt
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE
-|   |       |           
-|   |       +---roman_numerals
-|   |       |   |   py.typed
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   \---__pycache__
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---roman_numerals-3.1.0.dist-info
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENCE.rst
-|   |       |           
-|   |       +---setuptools
-|   |       |   |   archive_util.py
-|   |       |   |   build_meta.py
-|   |       |   |   cli-32.exe
-|   |       |   |   cli-64.exe
-|   |       |   |   cli-arm64.exe
-|   |       |   |   cli.exe
-|   |       |   |   depends.py
-|   |       |   |   discovery.py
-|   |       |   |   dist.py
-|   |       |   |   errors.py
-|   |       |   |   extension.py
-|   |       |   |   glob.py
-|   |       |   |   gui-32.exe
-|   |       |   |   gui-64.exe
-|   |       |   |   gui-arm64.exe
-|   |       |   |   gui.exe
-|   |       |   |   installer.py
-|   |       |   |   launch.py
-|   |       |   |   logging.py
-|   |       |   |   modified.py
-|   |       |   |   monkey.py
-|   |       |   |   msvc.py
-|   |       |   |   namespaces.py
-|   |       |   |   script (dev).tmpl
-|   |       |   |   script.tmpl
-|   |       |   |   unicode_utils.py
-|   |       |   |   version.py
-|   |       |   |   warnings.py
-|   |       |   |   wheel.py
-|   |       |   |   windows_support.py
-|   |       |   |   _core_metadata.py
-|   |       |   |   _discovery.py
-|   |       |   |   _entry_points.py
-|   |       |   |   _imp.py
-|   |       |   |   _importlib.py
-|   |       |   |   _itertools.py
-|   |       |   |   _normalization.py
-|   |       |   |   _path.py
-|   |       |   |   _reqs.py
-|   |       |   |   _scripts.py
-|   |       |   |   _shutil.py
-|   |       |   |   _static.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   +---command
-|   |       |   |   |   alias.py
-|   |       |   |   |   bdist_egg.py
-|   |       |   |   |   bdist_rpm.py
-|   |       |   |   |   bdist_wheel.py
-|   |       |   |   |   build.py
-|   |       |   |   |   build_clib.py
-|   |       |   |   |   build_ext.py
-|   |       |   |   |   build_py.py
-|   |       |   |   |   develop.py
-|   |       |   |   |   dist_info.py
-|   |       |   |   |   easy_install.py
-|   |       |   |   |   editable_wheel.py
-|   |       |   |   |   egg_info.py
-|   |       |   |   |   install.py
-|   |       |   |   |   install_egg_info.py
-|   |       |   |   |   install_lib.py
-|   |       |   |   |   install_scripts.py
-|   |       |   |   |   launcher manifest.xml
-|   |       |   |   |   rotate.py
-|   |       |   |   |   saveopts.py
-|   |       |   |   |   sdist.py
-|   |       |   |   |   setopt.py
-|   |       |   |   |   test.py
-|   |       |   |   |   _requirestxt.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           alias.cpython-313.pyc
-|   |       |   |           bdist_egg.cpython-313.pyc
-|   |       |   |           bdist_rpm.cpython-313.pyc
-|   |       |   |           bdist_wheel.cpython-313.pyc
-|   |       |   |           build.cpython-313.pyc
-|   |       |   |           build_clib.cpython-313.pyc
-|   |       |   |           build_ext.cpython-313.pyc
-|   |       |   |           build_py.cpython-313.pyc
-|   |       |   |           develop.cpython-313.pyc
-|   |       |   |           dist_info.cpython-313.pyc
-|   |       |   |           easy_install.cpython-313.pyc
-|   |       |   |           editable_wheel.cpython-313.pyc
-|   |       |   |           egg_info.cpython-313.pyc
-|   |       |   |           install.cpython-313.pyc
-|   |       |   |           install_egg_info.cpython-313.pyc
-|   |       |   |           install_lib.cpython-313.pyc
-|   |       |   |           install_scripts.cpython-313.pyc
-|   |       |   |           rotate.cpython-313.pyc
-|   |       |   |           saveopts.cpython-313.pyc
-|   |       |   |           sdist.cpython-313.pyc
-|   |       |   |           setopt.cpython-313.pyc
-|   |       |   |           test.cpython-313.pyc
-|   |       |   |           _requirestxt.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---compat
-|   |       |   |   |   py310.py
-|   |       |   |   |   py311.py
-|   |       |   |   |   py312.py
-|   |       |   |   |   py39.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           py310.cpython-313.pyc
-|   |       |   |           py311.cpython-313.pyc
-|   |       |   |           py312.cpython-313.pyc
-|   |       |   |           py39.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---config
-|   |       |   |   |   distutils.schema.json
-|   |       |   |   |   expand.py
-|   |       |   |   |   NOTICE
-|   |       |   |   |   pyprojecttoml.py
-|   |       |   |   |   setupcfg.py
-|   |       |   |   |   setuptools.schema.json
-|   |       |   |   |   _apply_pyprojecttoml.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---_validate_pyproject
-|   |       |   |   |   |   error_reporting.py
-|   |       |   |   |   |   extra_validations.py
-|   |       |   |   |   |   fastjsonschema_exceptions.py
-|   |       |   |   |   |   fastjsonschema_validations.py
-|   |       |   |   |   |   formats.py
-|   |       |   |   |   |   NOTICE
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           error_reporting.cpython-313.pyc
-|   |       |   |   |           extra_validations.cpython-313.pyc
-|   |       |   |   |           fastjsonschema_exceptions.cpython-313.pyc
-|   |       |   |   |           fastjsonschema_validations.cpython-313.pyc
-|   |       |   |   |           formats.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           expand.cpython-313.pyc
-|   |       |   |           pyprojecttoml.cpython-313.pyc
-|   |       |   |           setupcfg.cpython-313.pyc
-|   |       |   |           _apply_pyprojecttoml.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---tests
-|   |       |   |   |   contexts.py
-|   |       |   |   |   environment.py
-|   |       |   |   |   fixtures.py
-|   |       |   |   |   mod_with_constant.py
-|   |       |   |   |   namespaces.py
-|   |       |   |   |   script-with-bom.py
-|   |       |   |   |   test_archive_util.py
-|   |       |   |   |   test_bdist_deprecations.py
-|   |       |   |   |   test_bdist_egg.py
-|   |       |   |   |   test_bdist_wheel.py
-|   |       |   |   |   test_build.py
-|   |       |   |   |   test_build_clib.py
-|   |       |   |   |   test_build_ext.py
-|   |       |   |   |   test_build_meta.py
-|   |       |   |   |   test_build_py.py
-|   |       |   |   |   test_config_discovery.py
-|   |       |   |   |   test_core_metadata.py
-|   |       |   |   |   test_depends.py
-|   |       |   |   |   test_develop.py
-|   |       |   |   |   test_dist.py
-|   |       |   |   |   test_distutils_adoption.py
-|   |       |   |   |   test_dist_info.py
-|   |       |   |   |   test_editable_install.py
-|   |       |   |   |   test_egg_info.py
-|   |       |   |   |   test_extern.py
-|   |       |   |   |   test_find_packages.py
-|   |       |   |   |   test_find_py_modules.py
-|   |       |   |   |   test_glob.py
-|   |       |   |   |   test_install_scripts.py
-|   |       |   |   |   test_logging.py
-|   |       |   |   |   test_manifest.py
-|   |       |   |   |   test_namespaces.py
-|   |       |   |   |   test_scripts.py
-|   |       |   |   |   test_sdist.py
-|   |       |   |   |   test_setopt.py
-|   |       |   |   |   test_setuptools.py
-|   |       |   |   |   test_shutil_wrapper.py
-|   |       |   |   |   test_unicode_utils.py
-|   |       |   |   |   test_virtualenv.py
-|   |       |   |   |   test_warnings.py
-|   |       |   |   |   test_wheel.py
-|   |       |   |   |   test_windows_wrappers.py
-|   |       |   |   |   text.py
-|   |       |   |   |   textwrap.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---compat
-|   |       |   |   |   |   py39.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           py39.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---config
-|   |       |   |   |   |   setupcfg_examples.txt
-|   |       |   |   |   |   test_apply_pyprojecttoml.py
-|   |       |   |   |   |   test_expand.py
-|   |       |   |   |   |   test_pyprojecttoml.py
-|   |       |   |   |   |   test_pyprojecttoml_dynamic_deps.py
-|   |       |   |   |   |   test_setupcfg.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---downloads
-|   |       |   |   |   |   |   preload.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           preload.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           test_apply_pyprojecttoml.cpython-313.pyc
-|   |       |   |   |           test_expand.cpython-313.pyc
-|   |       |   |   |           test_pyprojecttoml.cpython-313.pyc
-|   |       |   |   |           test_pyprojecttoml_dynamic_deps.cpython-313.pyc
-|   |       |   |   |           test_setupcfg.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---indexes
-|   |       |   |   |   \---test_links_priority
-|   |       |   |   |       |   external.html
-|   |       |   |   |       |   
-|   |       |   |   |       \---simple
-|   |       |   |   |           \---foobar
-|   |       |   |   |                   index.html
-|   |       |   |   |                   
-|   |       |   |   +---integration
-|   |       |   |   |   |   helpers.py
-|   |       |   |   |   |   test_pbr.py
-|   |       |   |   |   |   test_pip_install_sdist.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           helpers.cpython-313.pyc
-|   |       |   |   |           test_pbr.cpython-313.pyc
-|   |       |   |   |           test_pip_install_sdist.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           contexts.cpython-313.pyc
-|   |       |   |           environment.cpython-313.pyc
-|   |       |   |           fixtures.cpython-313.pyc
-|   |       |   |           mod_with_constant.cpython-313.pyc
-|   |       |   |           namespaces.cpython-313.pyc
-|   |       |   |           script-with-bom.cpython-313.pyc
-|   |       |   |           test_archive_util.cpython-313.pyc
-|   |       |   |           test_bdist_deprecations.cpython-313.pyc
-|   |       |   |           test_bdist_egg.cpython-313.pyc
-|   |       |   |           test_bdist_wheel.cpython-313.pyc
-|   |       |   |           test_build.cpython-313.pyc
-|   |       |   |           test_build_clib.cpython-313.pyc
-|   |       |   |           test_build_ext.cpython-313.pyc
-|   |       |   |           test_build_meta.cpython-313.pyc
-|   |       |   |           test_build_py.cpython-313.pyc
-|   |       |   |           test_config_discovery.cpython-313.pyc
-|   |       |   |           test_core_metadata.cpython-313.pyc
-|   |       |   |           test_depends.cpython-313.pyc
-|   |       |   |           test_develop.cpython-313.pyc
-|   |       |   |           test_dist.cpython-313.pyc
-|   |       |   |           test_distutils_adoption.cpython-313.pyc
-|   |       |   |           test_dist_info.cpython-313.pyc
-|   |       |   |           test_editable_install.cpython-313.pyc
-|   |       |   |           test_egg_info.cpython-313.pyc
-|   |       |   |           test_extern.cpython-313.pyc
-|   |       |   |           test_find_packages.cpython-313.pyc
-|   |       |   |           test_find_py_modules.cpython-313.pyc
-|   |       |   |           test_glob.cpython-313.pyc
-|   |       |   |           test_install_scripts.cpython-313.pyc
-|   |       |   |           test_logging.cpython-313.pyc
-|   |       |   |           test_manifest.cpython-313.pyc
-|   |       |   |           test_namespaces.cpython-313.pyc
-|   |       |   |           test_scripts.cpython-313.pyc
-|   |       |   |           test_sdist.cpython-313.pyc
-|   |       |   |           test_setopt.cpython-313.pyc
-|   |       |   |           test_setuptools.cpython-313.pyc
-|   |       |   |           test_shutil_wrapper.cpython-313.pyc
-|   |       |   |           test_unicode_utils.cpython-313.pyc
-|   |       |   |           test_virtualenv.cpython-313.pyc
-|   |       |   |           test_warnings.cpython-313.pyc
-|   |       |   |           test_wheel.cpython-313.pyc
-|   |       |   |           test_windows_wrappers.cpython-313.pyc
-|   |       |   |           text.cpython-313.pyc
-|   |       |   |           textwrap.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---_distutils
-|   |       |   |   |   archive_util.py
-|   |       |   |   |   ccompiler.py
-|   |       |   |   |   cmd.py
-|   |       |   |   |   core.py
-|   |       |   |   |   cygwinccompiler.py
-|   |       |   |   |   debug.py
-|   |       |   |   |   dep_util.py
-|   |       |   |   |   dir_util.py
-|   |       |   |   |   dist.py
-|   |       |   |   |   errors.py
-|   |       |   |   |   extension.py
-|   |       |   |   |   fancy_getopt.py
-|   |       |   |   |   filelist.py
-|   |       |   |   |   file_util.py
-|   |       |   |   |   log.py
-|   |       |   |   |   spawn.py
-|   |       |   |   |   sysconfig.py
-|   |       |   |   |   text_file.py
-|   |       |   |   |   unixccompiler.py
-|   |       |   |   |   util.py
-|   |       |   |   |   version.py
-|   |       |   |   |   versionpredicate.py
-|   |       |   |   |   zosccompiler.py
-|   |       |   |   |   _log.py
-|   |       |   |   |   _macos_compat.py
-|   |       |   |   |   _modified.py
-|   |       |   |   |   _msvccompiler.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---command
-|   |       |   |   |   |   bdist.py
-|   |       |   |   |   |   bdist_dumb.py
-|   |       |   |   |   |   bdist_rpm.py
-|   |       |   |   |   |   build.py
-|   |       |   |   |   |   build_clib.py
-|   |       |   |   |   |   build_ext.py
-|   |       |   |   |   |   build_py.py
-|   |       |   |   |   |   build_scripts.py
-|   |       |   |   |   |   check.py
-|   |       |   |   |   |   clean.py
-|   |       |   |   |   |   config.py
-|   |       |   |   |   |   install.py
-|   |       |   |   |   |   install_data.py
-|   |       |   |   |   |   install_egg_info.py
-|   |       |   |   |   |   install_headers.py
-|   |       |   |   |   |   install_lib.py
-|   |       |   |   |   |   install_scripts.py
-|   |       |   |   |   |   sdist.py
-|   |       |   |   |   |   _framework_compat.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           bdist.cpython-313.pyc
-|   |       |   |   |           bdist_dumb.cpython-313.pyc
-|   |       |   |   |           bdist_rpm.cpython-313.pyc
-|   |       |   |   |           build.cpython-313.pyc
-|   |       |   |   |           build_clib.cpython-313.pyc
-|   |       |   |   |           build_ext.cpython-313.pyc
-|   |       |   |   |           build_py.cpython-313.pyc
-|   |       |   |   |           build_scripts.cpython-313.pyc
-|   |       |   |   |           check.cpython-313.pyc
-|   |       |   |   |           clean.cpython-313.pyc
-|   |       |   |   |           config.cpython-313.pyc
-|   |       |   |   |           install.cpython-313.pyc
-|   |       |   |   |           install_data.cpython-313.pyc
-|   |       |   |   |           install_egg_info.cpython-313.pyc
-|   |       |   |   |           install_headers.cpython-313.pyc
-|   |       |   |   |           install_lib.cpython-313.pyc
-|   |       |   |   |           install_scripts.cpython-313.pyc
-|   |       |   |   |           sdist.cpython-313.pyc
-|   |       |   |   |           _framework_compat.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---compat
-|   |       |   |   |   |   numpy.py
-|   |       |   |   |   |   py39.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           numpy.cpython-313.pyc
-|   |       |   |   |           py39.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---compilers
-|   |       |   |   |   \---C
-|   |       |   |   |       |   base.py
-|   |       |   |   |       |   cygwin.py
-|   |       |   |   |       |   errors.py
-|   |       |   |   |       |   msvc.py
-|   |       |   |   |       |   unix.py
-|   |       |   |   |       |   zos.py
-|   |       |   |   |       |   
-|   |       |   |   |       +---tests
-|   |       |   |   |       |   |   test_base.py
-|   |       |   |   |       |   |   test_cygwin.py
-|   |       |   |   |       |   |   test_mingw.py
-|   |       |   |   |       |   |   test_msvc.py
-|   |       |   |   |       |   |   test_unix.py
-|   |       |   |   |       |   |   
-|   |       |   |   |       |   \---__pycache__
-|   |       |   |   |       |           test_base.cpython-313.pyc
-|   |       |   |   |       |           test_cygwin.cpython-313.pyc
-|   |       |   |   |       |           test_mingw.cpython-313.pyc
-|   |       |   |   |       |           test_msvc.cpython-313.pyc
-|   |       |   |   |       |           test_unix.cpython-313.pyc
-|   |       |   |   |       |           
-|   |       |   |   |       \---__pycache__
-|   |       |   |   |               base.cpython-313.pyc
-|   |       |   |   |               cygwin.cpython-313.pyc
-|   |       |   |   |               errors.cpython-313.pyc
-|   |       |   |   |               msvc.cpython-313.pyc
-|   |       |   |   |               unix.cpython-313.pyc
-|   |       |   |   |               zos.cpython-313.pyc
-|   |       |   |   |               
-|   |       |   |   +---tests
-|   |       |   |   |   |   support.py
-|   |       |   |   |   |   test_archive_util.py
-|   |       |   |   |   |   test_bdist.py
-|   |       |   |   |   |   test_bdist_dumb.py
-|   |       |   |   |   |   test_bdist_rpm.py
-|   |       |   |   |   |   test_build.py
-|   |       |   |   |   |   test_build_clib.py
-|   |       |   |   |   |   test_build_ext.py
-|   |       |   |   |   |   test_build_py.py
-|   |       |   |   |   |   test_build_scripts.py
-|   |       |   |   |   |   test_check.py
-|   |       |   |   |   |   test_clean.py
-|   |       |   |   |   |   test_cmd.py
-|   |       |   |   |   |   test_config_cmd.py
-|   |       |   |   |   |   test_core.py
-|   |       |   |   |   |   test_dir_util.py
-|   |       |   |   |   |   test_dist.py
-|   |       |   |   |   |   test_extension.py
-|   |       |   |   |   |   test_filelist.py
-|   |       |   |   |   |   test_file_util.py
-|   |       |   |   |   |   test_install.py
-|   |       |   |   |   |   test_install_data.py
-|   |       |   |   |   |   test_install_headers.py
-|   |       |   |   |   |   test_install_lib.py
-|   |       |   |   |   |   test_install_scripts.py
-|   |       |   |   |   |   test_log.py
-|   |       |   |   |   |   test_modified.py
-|   |       |   |   |   |   test_sdist.py
-|   |       |   |   |   |   test_spawn.py
-|   |       |   |   |   |   test_sysconfig.py
-|   |       |   |   |   |   test_text_file.py
-|   |       |   |   |   |   test_util.py
-|   |       |   |   |   |   test_version.py
-|   |       |   |   |   |   test_versionpredicate.py
-|   |       |   |   |   |   unix_compat.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---compat
-|   |       |   |   |   |   |   py39.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           py39.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           support.cpython-313.pyc
-|   |       |   |   |           test_archive_util.cpython-313.pyc
-|   |       |   |   |           test_bdist.cpython-313.pyc
-|   |       |   |   |           test_bdist_dumb.cpython-313.pyc
-|   |       |   |   |           test_bdist_rpm.cpython-313.pyc
-|   |       |   |   |           test_build.cpython-313.pyc
-|   |       |   |   |           test_build_clib.cpython-313.pyc
-|   |       |   |   |           test_build_ext.cpython-313.pyc
-|   |       |   |   |           test_build_py.cpython-313.pyc
-|   |       |   |   |           test_build_scripts.cpython-313.pyc
-|   |       |   |   |           test_check.cpython-313.pyc
-|   |       |   |   |           test_clean.cpython-313.pyc
-|   |       |   |   |           test_cmd.cpython-313.pyc
-|   |       |   |   |           test_config_cmd.cpython-313.pyc
-|   |       |   |   |           test_core.cpython-313.pyc
-|   |       |   |   |           test_dir_util.cpython-313.pyc
-|   |       |   |   |           test_dist.cpython-313.pyc
-|   |       |   |   |           test_extension.cpython-313.pyc
-|   |       |   |   |           test_filelist.cpython-313.pyc
-|   |       |   |   |           test_file_util.cpython-313.pyc
-|   |       |   |   |           test_install.cpython-313.pyc
-|   |       |   |   |           test_install_data.cpython-313.pyc
-|   |       |   |   |           test_install_headers.cpython-313.pyc
-|   |       |   |   |           test_install_lib.cpython-313.pyc
-|   |       |   |   |           test_install_scripts.cpython-313.pyc
-|   |       |   |   |           test_log.cpython-313.pyc
-|   |       |   |   |           test_modified.cpython-313.pyc
-|   |       |   |   |           test_sdist.cpython-313.pyc
-|   |       |   |   |           test_spawn.cpython-313.pyc
-|   |       |   |   |           test_sysconfig.cpython-313.pyc
-|   |       |   |   |           test_text_file.cpython-313.pyc
-|   |       |   |   |           test_util.cpython-313.pyc
-|   |       |   |   |           test_version.cpython-313.pyc
-|   |       |   |   |           test_versionpredicate.cpython-313.pyc
-|   |       |   |   |           unix_compat.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           archive_util.cpython-313.pyc
-|   |       |   |           ccompiler.cpython-313.pyc
-|   |       |   |           cmd.cpython-313.pyc
-|   |       |   |           core.cpython-313.pyc
-|   |       |   |           cygwinccompiler.cpython-313.pyc
-|   |       |   |           debug.cpython-313.pyc
-|   |       |   |           dep_util.cpython-313.pyc
-|   |       |   |           dir_util.cpython-313.pyc
-|   |       |   |           dist.cpython-313.pyc
-|   |       |   |           errors.cpython-313.pyc
-|   |       |   |           extension.cpython-313.pyc
-|   |       |   |           fancy_getopt.cpython-313.pyc
-|   |       |   |           filelist.cpython-313.pyc
-|   |       |   |           file_util.cpython-313.pyc
-|   |       |   |           log.cpython-313.pyc
-|   |       |   |           spawn.cpython-313.pyc
-|   |       |   |           sysconfig.cpython-313.pyc
-|   |       |   |           text_file.cpython-313.pyc
-|   |       |   |           unixccompiler.cpython-313.pyc
-|   |       |   |           util.cpython-313.pyc
-|   |       |   |           version.cpython-313.pyc
-|   |       |   |           versionpredicate.cpython-313.pyc
-|   |       |   |           zosccompiler.cpython-313.pyc
-|   |       |   |           _log.cpython-313.pyc
-|   |       |   |           _macos_compat.cpython-313.pyc
-|   |       |   |           _modified.cpython-313.pyc
-|   |       |   |           _msvccompiler.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---_vendor
-|   |       |   |   |   typing_extensions.py
-|   |       |   |   |   
-|   |       |   |   +---autocommand
-|   |       |   |   |   |   autoasync.py
-|   |       |   |   |   |   autocommand.py
-|   |       |   |   |   |   automain.py
-|   |       |   |   |   |   autoparse.py
-|   |       |   |   |   |   errors.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           autoasync.cpython-313.pyc
-|   |       |   |   |           autocommand.cpython-313.pyc
-|   |       |   |   |           automain.cpython-313.pyc
-|   |       |   |   |           autoparse.cpython-313.pyc
-|   |       |   |   |           errors.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---autocommand-2.2.2.dist-info
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       top_level.txt
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   +---backports
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---tarfile
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   __main__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   +---compat
-|   |       |   |   |   |   |   |   py38.py
-|   |       |   |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   \---__pycache__
-|   |       |   |   |   |   |           py38.cpython-313.pyc
-|   |       |   |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |   |           
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           __main__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---backports.tarfile-1.2.0.dist-info
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       REQUESTED
-|   |       |   |   |       top_level.txt
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   +---importlib_metadata
-|   |       |   |   |   |   diagnose.py
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   _adapters.py
-|   |       |   |   |   |   _collections.py
-|   |       |   |   |   |   _compat.py
-|   |       |   |   |   |   _functools.py
-|   |       |   |   |   |   _itertools.py
-|   |       |   |   |   |   _meta.py
-|   |       |   |   |   |   _text.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---compat
-|   |       |   |   |   |   |   py311.py
-|   |       |   |   |   |   |   py39.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           py311.cpython-313.pyc
-|   |       |   |   |   |           py39.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           diagnose.cpython-313.pyc
-|   |       |   |   |           _adapters.cpython-313.pyc
-|   |       |   |   |           _collections.cpython-313.pyc
-|   |       |   |   |           _compat.cpython-313.pyc
-|   |       |   |   |           _functools.cpython-313.pyc
-|   |       |   |   |           _itertools.cpython-313.pyc
-|   |       |   |   |           _meta.cpython-313.pyc
-|   |       |   |   |           _text.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---importlib_metadata-8.0.0.dist-info
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       REQUESTED
-|   |       |   |   |       top_level.txt
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   +---inflect
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---compat
-|   |       |   |   |   |   |   py38.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           py38.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---inflect-7.3.1.dist-info
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       top_level.txt
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   +---jaraco
-|   |       |   |   |   |   context.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---collections
-|   |       |   |   |   |   |   py.typed
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   +---functools
-|   |       |   |   |   |   |   py.typed
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   __init__.pyi
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   +---text
-|   |       |   |   |   |   |   layouts.py
-|   |       |   |   |   |   |   Lorem ipsum.txt
-|   |       |   |   |   |   |   show-newlines.py
-|   |       |   |   |   |   |   strip-prefix.py
-|   |       |   |   |   |   |   to-dvorak.py
-|   |       |   |   |   |   |   to-qwerty.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           layouts.cpython-313.pyc
-|   |       |   |   |   |           show-newlines.cpython-313.pyc
-|   |       |   |   |   |           strip-prefix.cpython-313.pyc
-|   |       |   |   |   |           to-dvorak.cpython-313.pyc
-|   |       |   |   |   |           to-qwerty.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           context.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---jaraco.collections-5.1.0.dist-info
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       REQUESTED
-|   |       |   |   |       top_level.txt
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   +---jaraco.context-5.3.0.dist-info
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       top_level.txt
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   +---jaraco.functools-4.0.1.dist-info
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       top_level.txt
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   +---jaraco.text-3.12.1.dist-info
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       REQUESTED
-|   |       |   |   |       top_level.txt
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   +---more_itertools
-|   |       |   |   |   |   more.py
-|   |       |   |   |   |   more.pyi
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   recipes.py
-|   |       |   |   |   |   recipes.pyi
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   __init__.pyi
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           more.cpython-313.pyc
-|   |       |   |   |           recipes.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---more_itertools-10.3.0.dist-info
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       REQUESTED
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   +---packaging
-|   |       |   |   |   |   markers.py
-|   |       |   |   |   |   metadata.py
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   requirements.py
-|   |       |   |   |   |   specifiers.py
-|   |       |   |   |   |   tags.py
-|   |       |   |   |   |   utils.py
-|   |       |   |   |   |   version.py
-|   |       |   |   |   |   _elffile.py
-|   |       |   |   |   |   _manylinux.py
-|   |       |   |   |   |   _musllinux.py
-|   |       |   |   |   |   _parser.py
-|   |       |   |   |   |   _structures.py
-|   |       |   |   |   |   _tokenizer.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---licenses
-|   |       |   |   |   |   |   _spdx.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           _spdx.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           markers.cpython-313.pyc
-|   |       |   |   |           metadata.cpython-313.pyc
-|   |       |   |   |           requirements.cpython-313.pyc
-|   |       |   |   |           specifiers.cpython-313.pyc
-|   |       |   |   |           tags.cpython-313.pyc
-|   |       |   |   |           utils.cpython-313.pyc
-|   |       |   |   |           version.cpython-313.pyc
-|   |       |   |   |           _elffile.cpython-313.pyc
-|   |       |   |   |           _manylinux.cpython-313.pyc
-|   |       |   |   |           _musllinux.cpython-313.pyc
-|   |       |   |   |           _parser.cpython-313.pyc
-|   |       |   |   |           _structures.cpython-313.pyc
-|   |       |   |   |           _tokenizer.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---packaging-24.2.dist-info
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE
-|   |       |   |   |       LICENSE.APACHE
-|   |       |   |   |       LICENSE.BSD
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       REQUESTED
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   +---platformdirs
-|   |       |   |   |   |   android.py
-|   |       |   |   |   |   api.py
-|   |       |   |   |   |   macos.py
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   unix.py
-|   |       |   |   |   |   version.py
-|   |       |   |   |   |   windows.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   __main__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           android.cpython-313.pyc
-|   |       |   |   |           api.cpython-313.pyc
-|   |       |   |   |           macos.cpython-313.pyc
-|   |       |   |   |           unix.cpython-313.pyc
-|   |       |   |   |           version.cpython-313.pyc
-|   |       |   |   |           windows.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           __main__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---platformdirs-4.2.2.dist-info
-|   |       |   |   |   |   INSTALLER
-|   |       |   |   |   |   METADATA
-|   |       |   |   |   |   RECORD
-|   |       |   |   |   |   REQUESTED
-|   |       |   |   |   |   WHEEL
-|   |       |   |   |   |   
-|   |       |   |   |   \---licenses
-|   |       |   |   |           LICENSE
-|   |       |   |   |           
-|   |       |   |   +---tomli
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   _parser.py
-|   |       |   |   |   |   _re.py
-|   |       |   |   |   |   _types.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           _parser.cpython-313.pyc
-|   |       |   |   |           _re.cpython-313.pyc
-|   |       |   |   |           _types.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---tomli-2.0.1.dist-info
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       REQUESTED
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   +---typeguard
-|   |       |   |   |   |   py.typed
-|   |       |   |   |   |   _checkers.py
-|   |       |   |   |   |   _config.py
-|   |       |   |   |   |   _decorators.py
-|   |       |   |   |   |   _exceptions.py
-|   |       |   |   |   |   _functions.py
-|   |       |   |   |   |   _importhook.py
-|   |       |   |   |   |   _memo.py
-|   |       |   |   |   |   _pytest_plugin.py
-|   |       |   |   |   |   _suppression.py
-|   |       |   |   |   |   _transformer.py
-|   |       |   |   |   |   _union_transformer.py
-|   |       |   |   |   |   _utils.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           _checkers.cpython-313.pyc
-|   |       |   |   |           _config.cpython-313.pyc
-|   |       |   |   |           _decorators.cpython-313.pyc
-|   |       |   |   |           _exceptions.cpython-313.pyc
-|   |       |   |   |           _functions.cpython-313.pyc
-|   |       |   |   |           _importhook.cpython-313.pyc
-|   |       |   |   |           _memo.cpython-313.pyc
-|   |       |   |   |           _pytest_plugin.cpython-313.pyc
-|   |       |   |   |           _suppression.cpython-313.pyc
-|   |       |   |   |           _transformer.cpython-313.pyc
-|   |       |   |   |           _union_transformer.cpython-313.pyc
-|   |       |   |   |           _utils.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---typeguard-4.3.0.dist-info
-|   |       |   |   |       entry_points.txt
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       top_level.txt
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   +---typing_extensions-4.12.2.dist-info
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   +---wheel
-|   |       |   |   |   |   bdist_wheel.py
-|   |       |   |   |   |   macosx_libfile.py
-|   |       |   |   |   |   metadata.py
-|   |       |   |   |   |   util.py
-|   |       |   |   |   |   wheelfile.py
-|   |       |   |   |   |   _bdist_wheel.py
-|   |       |   |   |   |   _setuptools_logging.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   __main__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---cli
-|   |       |   |   |   |   |   convert.py
-|   |       |   |   |   |   |   pack.py
-|   |       |   |   |   |   |   tags.py
-|   |       |   |   |   |   |   unpack.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           convert.cpython-313.pyc
-|   |       |   |   |   |           pack.cpython-313.pyc
-|   |       |   |   |   |           tags.cpython-313.pyc
-|   |       |   |   |   |           unpack.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   +---vendored
-|   |       |   |   |   |   |   vendor.txt
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   +---packaging
-|   |       |   |   |   |   |   |   LICENSE
-|   |       |   |   |   |   |   |   LICENSE.APACHE
-|   |       |   |   |   |   |   |   LICENSE.BSD
-|   |       |   |   |   |   |   |   markers.py
-|   |       |   |   |   |   |   |   requirements.py
-|   |       |   |   |   |   |   |   specifiers.py
-|   |       |   |   |   |   |   |   tags.py
-|   |       |   |   |   |   |   |   utils.py
-|   |       |   |   |   |   |   |   version.py
-|   |       |   |   |   |   |   |   _elffile.py
-|   |       |   |   |   |   |   |   _manylinux.py
-|   |       |   |   |   |   |   |   _musllinux.py
-|   |       |   |   |   |   |   |   _parser.py
-|   |       |   |   |   |   |   |   _structures.py
-|   |       |   |   |   |   |   |   _tokenizer.py
-|   |       |   |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   |   
-|   |       |   |   |   |   |   \---__pycache__
-|   |       |   |   |   |   |           markers.cpython-313.pyc
-|   |       |   |   |   |   |           requirements.cpython-313.pyc
-|   |       |   |   |   |   |           specifiers.cpython-313.pyc
-|   |       |   |   |   |   |           tags.cpython-313.pyc
-|   |       |   |   |   |   |           utils.cpython-313.pyc
-|   |       |   |   |   |   |           version.cpython-313.pyc
-|   |       |   |   |   |   |           _elffile.cpython-313.pyc
-|   |       |   |   |   |   |           _manylinux.cpython-313.pyc
-|   |       |   |   |   |   |           _musllinux.cpython-313.pyc
-|   |       |   |   |   |   |           _parser.cpython-313.pyc
-|   |       |   |   |   |   |           _structures.cpython-313.pyc
-|   |       |   |   |   |   |           _tokenizer.cpython-313.pyc
-|   |       |   |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |   |           
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           bdist_wheel.cpython-313.pyc
-|   |       |   |   |           macosx_libfile.cpython-313.pyc
-|   |       |   |   |           metadata.cpython-313.pyc
-|   |       |   |   |           util.cpython-313.pyc
-|   |       |   |   |           wheelfile.cpython-313.pyc
-|   |       |   |   |           _bdist_wheel.cpython-313.pyc
-|   |       |   |   |           _setuptools_logging.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           __main__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---wheel-0.45.1.dist-info
-|   |       |   |   |       entry_points.txt
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE.txt
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       REQUESTED
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   +---zipp
-|   |       |   |   |   |   glob.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---compat
-|   |       |   |   |   |   |   py310.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           py310.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           glob.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---zipp-3.19.2.dist-info
-|   |       |   |   |       INSTALLER
-|   |       |   |   |       LICENSE
-|   |       |   |   |       METADATA
-|   |       |   |   |       RECORD
-|   |       |   |   |       REQUESTED
-|   |       |   |   |       top_level.txt
-|   |       |   |   |       WHEEL
-|   |       |   |   |       
-|   |       |   |   \---__pycache__
-|   |       |   |           typing_extensions.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           archive_util.cpython-313.pyc
-|   |       |           build_meta.cpython-313.pyc
-|   |       |           depends.cpython-313.pyc
-|   |       |           discovery.cpython-313.pyc
-|   |       |           dist.cpython-313.pyc
-|   |       |           errors.cpython-313.pyc
-|   |       |           extension.cpython-313.pyc
-|   |       |           glob.cpython-313.pyc
-|   |       |           installer.cpython-313.pyc
-|   |       |           launch.cpython-313.pyc
-|   |       |           logging.cpython-313.pyc
-|   |       |           modified.cpython-313.pyc
-|   |       |           monkey.cpython-313.pyc
-|   |       |           msvc.cpython-313.pyc
-|   |       |           namespaces.cpython-313.pyc
-|   |       |           unicode_utils.cpython-313.pyc
-|   |       |           version.cpython-313.pyc
-|   |       |           warnings.cpython-313.pyc
-|   |       |           wheel.cpython-313.pyc
-|   |       |           windows_support.cpython-313.pyc
-|   |       |           _core_metadata.cpython-313.pyc
-|   |       |           _discovery.cpython-313.pyc
-|   |       |           _entry_points.cpython-313.pyc
-|   |       |           _imp.cpython-313.pyc
-|   |       |           _importlib.cpython-313.pyc
-|   |       |           _itertools.cpython-313.pyc
-|   |       |           _normalization.cpython-313.pyc
-|   |       |           _path.cpython-313.pyc
-|   |       |           _reqs.cpython-313.pyc
-|   |       |           _scripts.cpython-313.pyc
-|   |       |           _shutil.cpython-313.pyc
-|   |       |           _static.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---setuptools-80.9.0.dist-info
-|   |       |   |   entry_points.txt
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   top_level.txt
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE
-|   |       |           
-|   |       +---snowballstemmer
-|   |       |   |   among.py
-|   |       |   |   arabic_stemmer.py
-|   |       |   |   armenian_stemmer.py
-|   |       |   |   basestemmer.py
-|   |       |   |   basque_stemmer.py
-|   |       |   |   catalan_stemmer.py
-|   |       |   |   danish_stemmer.py
-|   |       |   |   dutch_porter_stemmer.py
-|   |       |   |   dutch_stemmer.py
-|   |       |   |   english_stemmer.py
-|   |       |   |   esperanto_stemmer.py
-|   |       |   |   estonian_stemmer.py
-|   |       |   |   finnish_stemmer.py
-|   |       |   |   french_stemmer.py
-|   |       |   |   german_stemmer.py
-|   |       |   |   greek_stemmer.py
-|   |       |   |   hindi_stemmer.py
-|   |       |   |   hungarian_stemmer.py
-|   |       |   |   indonesian_stemmer.py
-|   |       |   |   irish_stemmer.py
-|   |       |   |   italian_stemmer.py
-|   |       |   |   lithuanian_stemmer.py
-|   |       |   |   nepali_stemmer.py
-|   |       |   |   norwegian_stemmer.py
-|   |       |   |   porter_stemmer.py
-|   |       |   |   portuguese_stemmer.py
-|   |       |   |   romanian_stemmer.py
-|   |       |   |   russian_stemmer.py
-|   |       |   |   serbian_stemmer.py
-|   |       |   |   spanish_stemmer.py
-|   |       |   |   swedish_stemmer.py
-|   |       |   |   tamil_stemmer.py
-|   |       |   |   turkish_stemmer.py
-|   |       |   |   yiddish_stemmer.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   \---__pycache__
-|   |       |           among.cpython-313.pyc
-|   |       |           arabic_stemmer.cpython-313.pyc
-|   |       |           armenian_stemmer.cpython-313.pyc
-|   |       |           basestemmer.cpython-313.pyc
-|   |       |           basque_stemmer.cpython-313.pyc
-|   |       |           catalan_stemmer.cpython-313.pyc
-|   |       |           danish_stemmer.cpython-313.pyc
-|   |       |           dutch_porter_stemmer.cpython-313.pyc
-|   |       |           dutch_stemmer.cpython-313.pyc
-|   |       |           english_stemmer.cpython-313.pyc
-|   |       |           esperanto_stemmer.cpython-313.pyc
-|   |       |           estonian_stemmer.cpython-313.pyc
-|   |       |           finnish_stemmer.cpython-313.pyc
-|   |       |           french_stemmer.cpython-313.pyc
-|   |       |           german_stemmer.cpython-313.pyc
-|   |       |           greek_stemmer.cpython-313.pyc
-|   |       |           hindi_stemmer.cpython-313.pyc
-|   |       |           hungarian_stemmer.cpython-313.pyc
-|   |       |           indonesian_stemmer.cpython-313.pyc
-|   |       |           irish_stemmer.cpython-313.pyc
-|   |       |           italian_stemmer.cpython-313.pyc
-|   |       |           lithuanian_stemmer.cpython-313.pyc
-|   |       |           nepali_stemmer.cpython-313.pyc
-|   |       |           norwegian_stemmer.cpython-313.pyc
-|   |       |           porter_stemmer.cpython-313.pyc
-|   |       |           portuguese_stemmer.cpython-313.pyc
-|   |       |           romanian_stemmer.cpython-313.pyc
-|   |       |           russian_stemmer.cpython-313.pyc
-|   |       |           serbian_stemmer.cpython-313.pyc
-|   |       |           spanish_stemmer.cpython-313.pyc
-|   |       |           swedish_stemmer.cpython-313.pyc
-|   |       |           tamil_stemmer.cpython-313.pyc
-|   |       |           turkish_stemmer.cpython-313.pyc
-|   |       |           yiddish_stemmer.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---snowballstemmer-3.0.1.dist-info
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   top_level.txt
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           COPYING
-|   |       |           
-|   |       +---sphinx
-|   |       |   |   addnodes.py
-|   |       |   |   application.py
-|   |       |   |   config.py
-|   |       |   |   deprecation.py
-|   |       |   |   errors.py
-|   |       |   |   events.py
-|   |       |   |   extension.py
-|   |       |   |   highlighting.py
-|   |       |   |   io.py
-|   |       |   |   jinja2glue.py
-|   |       |   |   parsers.py
-|   |       |   |   project.py
-|   |       |   |   py.typed
-|   |       |   |   pygments_styles.py
-|   |       |   |   registry.py
-|   |       |   |   roles.py
-|   |       |   |   theming.py
-|   |       |   |   versioning.py
-|   |       |   |   __init__.py
-|   |       |   |   __main__.py
-|   |       |   |   
-|   |       |   +---builders
-|   |       |   |   |   changes.py
-|   |       |   |   |   dirhtml.py
-|   |       |   |   |   dummy.py
-|   |       |   |   |   epub3.py
-|   |       |   |   |   gettext.py
-|   |       |   |   |   linkcheck.py
-|   |       |   |   |   manpage.py
-|   |       |   |   |   singlehtml.py
-|   |       |   |   |   texinfo.py
-|   |       |   |   |   text.py
-|   |       |   |   |   xml.py
-|   |       |   |   |   _epub_base.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---html
-|   |       |   |   |   |   _assets.py
-|   |       |   |   |   |   _build_info.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           _assets.cpython-313.pyc
-|   |       |   |   |           _build_info.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---latex
-|   |       |   |   |   |   constants.py
-|   |       |   |   |   |   nodes.py
-|   |       |   |   |   |   theming.py
-|   |       |   |   |   |   transforms.py
-|   |       |   |   |   |   util.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           constants.cpython-313.pyc
-|   |       |   |   |           nodes.cpython-313.pyc
-|   |       |   |   |           theming.cpython-313.pyc
-|   |       |   |   |           transforms.cpython-313.pyc
-|   |       |   |   |           util.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           changes.cpython-313.pyc
-|   |       |   |           dirhtml.cpython-313.pyc
-|   |       |   |           dummy.cpython-313.pyc
-|   |       |   |           epub3.cpython-313.pyc
-|   |       |   |           gettext.cpython-313.pyc
-|   |       |   |           linkcheck.cpython-313.pyc
-|   |       |   |           manpage.cpython-313.pyc
-|   |       |   |           singlehtml.cpython-313.pyc
-|   |       |   |           texinfo.cpython-313.pyc
-|   |       |   |           text.cpython-313.pyc
-|   |       |   |           xml.cpython-313.pyc
-|   |       |   |           _epub_base.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---cmd
-|   |       |   |   |   build.py
-|   |       |   |   |   make_mode.py
-|   |       |   |   |   quickstart.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           build.cpython-313.pyc
-|   |       |   |           make_mode.cpython-313.pyc
-|   |       |   |           quickstart.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---directives
-|   |       |   |   |   admonitions.py
-|   |       |   |   |   code.py
-|   |       |   |   |   other.py
-|   |       |   |   |   patches.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           admonitions.cpython-313.pyc
-|   |       |   |           code.cpython-313.pyc
-|   |       |   |           other.cpython-313.pyc
-|   |       |   |           patches.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---domains
-|   |       |   |   |   changeset.py
-|   |       |   |   |   citation.py
-|   |       |   |   |   index.py
-|   |       |   |   |   javascript.py
-|   |       |   |   |   math.py
-|   |       |   |   |   rst.py
-|   |       |   |   |   _domains_container.py
-|   |       |   |   |   _index.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---c
-|   |       |   |   |   |   _ast.py
-|   |       |   |   |   |   _ids.py
-|   |       |   |   |   |   _parser.py
-|   |       |   |   |   |   _symbol.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           _ast.cpython-313.pyc
-|   |       |   |   |           _ids.cpython-313.pyc
-|   |       |   |   |           _parser.cpython-313.pyc
-|   |       |   |   |           _symbol.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---cpp
-|   |       |   |   |   |   _ast.py
-|   |       |   |   |   |   _ids.py
-|   |       |   |   |   |   _parser.py
-|   |       |   |   |   |   _symbol.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           _ast.cpython-313.pyc
-|   |       |   |   |           _ids.cpython-313.pyc
-|   |       |   |   |           _parser.cpython-313.pyc
-|   |       |   |   |           _symbol.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---python
-|   |       |   |   |   |   _annotations.py
-|   |       |   |   |   |   _object.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           _annotations.cpython-313.pyc
-|   |       |   |   |           _object.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---std
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           changeset.cpython-313.pyc
-|   |       |   |           citation.cpython-313.pyc
-|   |       |   |           index.cpython-313.pyc
-|   |       |   |           javascript.cpython-313.pyc
-|   |       |   |           math.cpython-313.pyc
-|   |       |   |           rst.cpython-313.pyc
-|   |       |   |           _domains_container.cpython-313.pyc
-|   |       |   |           _index.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---environment
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---adapters
-|   |       |   |   |   |   asset.py
-|   |       |   |   |   |   indexentries.py
-|   |       |   |   |   |   toctree.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           asset.cpython-313.pyc
-|   |       |   |   |           indexentries.cpython-313.pyc
-|   |       |   |   |           toctree.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---collectors
-|   |       |   |   |   |   asset.py
-|   |       |   |   |   |   dependencies.py
-|   |       |   |   |   |   metadata.py
-|   |       |   |   |   |   title.py
-|   |       |   |   |   |   toctree.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           asset.cpython-313.pyc
-|   |       |   |   |           dependencies.cpython-313.pyc
-|   |       |   |   |           metadata.cpython-313.pyc
-|   |       |   |   |           title.cpython-313.pyc
-|   |       |   |   |           toctree.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---ext
-|   |       |   |   |   autosectionlabel.py
-|   |       |   |   |   coverage.py
-|   |       |   |   |   doctest.py
-|   |       |   |   |   duration.py
-|   |       |   |   |   extlinks.py
-|   |       |   |   |   githubpages.py
-|   |       |   |   |   graphviz.py
-|   |       |   |   |   ifconfig.py
-|   |       |   |   |   imgconverter.py
-|   |       |   |   |   imgmath.py
-|   |       |   |   |   inheritance_diagram.py
-|   |       |   |   |   linkcode.py
-|   |       |   |   |   mathjax.py
-|   |       |   |   |   todo.py
-|   |       |   |   |   viewcode.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---apidoc
-|   |       |   |   |   |   _cli.py
-|   |       |   |   |   |   _extension.py
-|   |       |   |   |   |   _generate.py
-|   |       |   |   |   |   _shared.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   __main__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           _cli.cpython-313.pyc
-|   |       |   |   |           _extension.cpython-313.pyc
-|   |       |   |   |           _generate.cpython-313.pyc
-|   |       |   |   |           _shared.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           __main__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---autodoc
-|   |       |   |   |   |   directive.py
-|   |       |   |   |   |   importer.py
-|   |       |   |   |   |   mock.py
-|   |       |   |   |   |   preserve_defaults.py
-|   |       |   |   |   |   typehints.py
-|   |       |   |   |   |   type_comment.py
-|   |       |   |   |   |   _directive.py
-|   |       |   |   |   |   _directive_options.py
-|   |       |   |   |   |   _event_listeners.py
-|   |       |   |   |   |   _generate.py
-|   |       |   |   |   |   _names.py
-|   |       |   |   |   |   _property_types.py
-|   |       |   |   |   |   _renderer.py
-|   |       |   |   |   |   _sentinels.py
-|   |       |   |   |   |   _shared.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---_dynamic
-|   |       |   |   |   |   |   _docstrings.py
-|   |       |   |   |   |   |   _importer.py
-|   |       |   |   |   |   |   _loader.py
-|   |       |   |   |   |   |   _member_finder.py
-|   |       |   |   |   |   |   _mock.py
-|   |       |   |   |   |   |   _preserve_defaults.py
-|   |       |   |   |   |   |   _signatures.py
-|   |       |   |   |   |   |   _type_annotations.py
-|   |       |   |   |   |   |   _type_comments.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           _docstrings.cpython-313.pyc
-|   |       |   |   |   |           _importer.cpython-313.pyc
-|   |       |   |   |   |           _loader.cpython-313.pyc
-|   |       |   |   |   |           _member_finder.cpython-313.pyc
-|   |       |   |   |   |           _mock.cpython-313.pyc
-|   |       |   |   |   |           _preserve_defaults.cpython-313.pyc
-|   |       |   |   |   |           _signatures.cpython-313.pyc
-|   |       |   |   |   |           _type_annotations.cpython-313.pyc
-|   |       |   |   |   |           _type_comments.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   +---_legacy_class_based
-|   |       |   |   |   |   |   _directive_options.py
-|   |       |   |   |   |   |   _documenters.py
-|   |       |   |   |   |   |   _sentinels.py
-|   |       |   |   |   |   |   __init__.py
-|   |       |   |   |   |   |   
-|   |       |   |   |   |   \---__pycache__
-|   |       |   |   |   |           _directive_options.cpython-313.pyc
-|   |       |   |   |   |           _documenters.cpython-313.pyc
-|   |       |   |   |   |           _sentinels.cpython-313.pyc
-|   |       |   |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           directive.cpython-313.pyc
-|   |       |   |   |           importer.cpython-313.pyc
-|   |       |   |   |           mock.cpython-313.pyc
-|   |       |   |   |           preserve_defaults.cpython-313.pyc
-|   |       |   |   |           typehints.cpython-313.pyc
-|   |       |   |   |           type_comment.cpython-313.pyc
-|   |       |   |   |           _directive.cpython-313.pyc
-|   |       |   |   |           _directive_options.cpython-313.pyc
-|   |       |   |   |           _event_listeners.cpython-313.pyc
-|   |       |   |   |           _generate.cpython-313.pyc
-|   |       |   |   |           _names.cpython-313.pyc
-|   |       |   |   |           _property_types.cpython-313.pyc
-|   |       |   |   |           _renderer.cpython-313.pyc
-|   |       |   |   |           _sentinels.cpython-313.pyc
-|   |       |   |   |           _shared.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---autosummary
-|   |       |   |   |   |   generate.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   +---templates
-|   |       |   |   |   |   \---autosummary
-|   |       |   |   |   |           base.rst
-|   |       |   |   |   |           class.rst
-|   |       |   |   |   |           module.rst
-|   |       |   |   |   |           
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           generate.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---intersphinx
-|   |       |   |   |   |   _cli.py
-|   |       |   |   |   |   _load.py
-|   |       |   |   |   |   _resolve.py
-|   |       |   |   |   |   _shared.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   __main__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           _cli.cpython-313.pyc
-|   |       |   |   |           _load.cpython-313.pyc
-|   |       |   |   |           _resolve.cpython-313.pyc
-|   |       |   |   |           _shared.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           __main__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---napoleon
-|   |       |   |   |   |   docstring.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           docstring.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           autosectionlabel.cpython-313.pyc
-|   |       |   |           coverage.cpython-313.pyc
-|   |       |   |           doctest.cpython-313.pyc
-|   |       |   |           duration.cpython-313.pyc
-|   |       |   |           extlinks.cpython-313.pyc
-|   |       |   |           githubpages.cpython-313.pyc
-|   |       |   |           graphviz.cpython-313.pyc
-|   |       |   |           ifconfig.cpython-313.pyc
-|   |       |   |           imgconverter.cpython-313.pyc
-|   |       |   |           imgmath.cpython-313.pyc
-|   |       |   |           inheritance_diagram.cpython-313.pyc
-|   |       |   |           linkcode.cpython-313.pyc
-|   |       |   |           mathjax.cpython-313.pyc
-|   |       |   |           todo.cpython-313.pyc
-|   |       |   |           viewcode.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---locale
-|   |       |   |   |   sphinx.pot
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---.tx
-|   |       |   |   |       config
-|   |       |   |   |       
-|   |       |   |   +---ar
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---bg
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---bn
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---ca
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---ca@valencia
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---cak
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---cs
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---cy
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---da
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---de
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---de_DE
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---el
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---en_DE
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---en_FR
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---en_GB
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---en_HK
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---eo
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---es
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---es_CO
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---et
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---eu
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---fa
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---fi
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---fr
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---fr_FR
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---gl
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---he
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---hi
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---hi_IN
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---hr
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---hu
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---id
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---is
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---it
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---ja
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---ka
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---ko
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---lt
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---lv
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---mk
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---nb
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---nb_NO
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---ne
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---nl
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---no
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---pl
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---pt
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---pt_BR
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---pt_PT
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---ro
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---ru
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---si
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---sk
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---sl
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---sq
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---sr
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---sr@latin
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---sr_RS
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---sv
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---ta
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---te
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---tr
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---uk_UA
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---ur
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---vi
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---yue
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---zh_CN
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---zh_HK
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---zh_TW
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   +---zh_TW.Big5
-|   |       |   |   |   \---LC_MESSAGES
-|   |       |   |   |           sphinx.js
-|   |       |   |   |           sphinx.mo
-|   |       |   |   |           sphinx.po
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---pycode
-|   |       |   |   |   ast.py
-|   |       |   |   |   parser.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           ast.cpython-313.pyc
-|   |       |   |           parser.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---search
-|   |       |   |   |   da.py
-|   |       |   |   |   de.py
-|   |       |   |   |   en.py
-|   |       |   |   |   es.py
-|   |       |   |   |   fi.py
-|   |       |   |   |   fr.py
-|   |       |   |   |   hu.py
-|   |       |   |   |   it.py
-|   |       |   |   |   ja.py
-|   |       |   |   |   nl.py
-|   |       |   |   |   no.py
-|   |       |   |   |   pt.py
-|   |       |   |   |   ro.py
-|   |       |   |   |   ru.py
-|   |       |   |   |   sv.py
-|   |       |   |   |   tr.py
-|   |       |   |   |   zh.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---minified-js
-|   |       |   |   |       arabic-stemmer.js
-|   |       |   |   |       armenian-stemmer.js
-|   |       |   |   |       base-stemmer.js
-|   |       |   |   |       basque-stemmer.js
-|   |       |   |   |       catalan-stemmer.js
-|   |       |   |   |       danish-stemmer.js
-|   |       |   |   |       dutch-stemmer.js
-|   |       |   |   |       dutch_porter-stemmer.js
-|   |       |   |   |       english-stemmer.js
-|   |       |   |   |       esperanto-stemmer.js
-|   |       |   |   |       estonian-stemmer.js
-|   |       |   |   |       finnish-stemmer.js
-|   |       |   |   |       french-stemmer.js
-|   |       |   |   |       german-stemmer.js
-|   |       |   |   |       greek-stemmer.js
-|   |       |   |   |       hindi-stemmer.js
-|   |       |   |   |       hungarian-stemmer.js
-|   |       |   |   |       indonesian-stemmer.js
-|   |       |   |   |       irish-stemmer.js
-|   |       |   |   |       italian-stemmer.js
-|   |       |   |   |       lithuanian-stemmer.js
-|   |       |   |   |       nepali-stemmer.js
-|   |       |   |   |       norwegian-stemmer.js
-|   |       |   |   |       porter-stemmer.js
-|   |       |   |   |       portuguese-stemmer.js
-|   |       |   |   |       README.rst
-|   |       |   |   |       romanian-stemmer.js
-|   |       |   |   |       russian-stemmer.js
-|   |       |   |   |       serbian-stemmer.js
-|   |       |   |   |       spanish-stemmer.js
-|   |       |   |   |       swedish-stemmer.js
-|   |       |   |   |       tamil-stemmer.js
-|   |       |   |   |       turkish-stemmer.js
-|   |       |   |   |       yiddish-stemmer.js
-|   |       |   |   |       
-|   |       |   |   +---non-minified-js
-|   |       |   |   |       arabic-stemmer.js
-|   |       |   |   |       armenian-stemmer.js
-|   |       |   |   |       base-stemmer.js
-|   |       |   |   |       basque-stemmer.js
-|   |       |   |   |       catalan-stemmer.js
-|   |       |   |   |       danish-stemmer.js
-|   |       |   |   |       dutch-stemmer.js
-|   |       |   |   |       dutch_porter-stemmer.js
-|   |       |   |   |       english-stemmer.js
-|   |       |   |   |       esperanto-stemmer.js
-|   |       |   |   |       estonian-stemmer.js
-|   |       |   |   |       finnish-stemmer.js
-|   |       |   |   |       french-stemmer.js
-|   |       |   |   |       german-stemmer.js
-|   |       |   |   |       greek-stemmer.js
-|   |       |   |   |       hindi-stemmer.js
-|   |       |   |   |       hungarian-stemmer.js
-|   |       |   |   |       indonesian-stemmer.js
-|   |       |   |   |       irish-stemmer.js
-|   |       |   |   |       italian-stemmer.js
-|   |       |   |   |       lithuanian-stemmer.js
-|   |       |   |   |       nepali-stemmer.js
-|   |       |   |   |       norwegian-stemmer.js
-|   |       |   |   |       porter-stemmer.js
-|   |       |   |   |       portuguese-stemmer.js
-|   |       |   |   |       romanian-stemmer.js
-|   |       |   |   |       russian-stemmer.js
-|   |       |   |   |       serbian-stemmer.js
-|   |       |   |   |       spanish-stemmer.js
-|   |       |   |   |       swedish-stemmer.js
-|   |       |   |   |       tamil-stemmer.js
-|   |       |   |   |       turkish-stemmer.js
-|   |       |   |   |       yiddish-stemmer.js
-|   |       |   |   |       
-|   |       |   |   +---_stopwords
-|   |       |   |   |   |   da.py
-|   |       |   |   |   |   da.txt
-|   |       |   |   |   |   de.py
-|   |       |   |   |   |   de.txt
-|   |       |   |   |   |   en.py
-|   |       |   |   |   |   en.txt
-|   |       |   |   |   |   es.py
-|   |       |   |   |   |   es.txt
-|   |       |   |   |   |   fi.py
-|   |       |   |   |   |   fi.txt
-|   |       |   |   |   |   fr.py
-|   |       |   |   |   |   fr.txt
-|   |       |   |   |   |   hu.py
-|   |       |   |   |   |   hu.txt
-|   |       |   |   |   |   it.py
-|   |       |   |   |   |   it.txt
-|   |       |   |   |   |   nl.py
-|   |       |   |   |   |   nl.txt
-|   |       |   |   |   |   no.py
-|   |       |   |   |   |   no.txt
-|   |       |   |   |   |   pt.py
-|   |       |   |   |   |   pt.txt
-|   |       |   |   |   |   ru.py
-|   |       |   |   |   |   ru.txt
-|   |       |   |   |   |   sv.py
-|   |       |   |   |   |   sv.txt
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           da.cpython-313.pyc
-|   |       |   |   |           de.cpython-313.pyc
-|   |       |   |   |           en.cpython-313.pyc
-|   |       |   |   |           es.cpython-313.pyc
-|   |       |   |   |           fi.cpython-313.pyc
-|   |       |   |   |           fr.cpython-313.pyc
-|   |       |   |   |           hu.cpython-313.pyc
-|   |       |   |   |           it.cpython-313.pyc
-|   |       |   |   |           nl.cpython-313.pyc
-|   |       |   |   |           no.cpython-313.pyc
-|   |       |   |   |           pt.cpython-313.pyc
-|   |       |   |   |           ru.cpython-313.pyc
-|   |       |   |   |           sv.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           da.cpython-313.pyc
-|   |       |   |           de.cpython-313.pyc
-|   |       |   |           en.cpython-313.pyc
-|   |       |   |           es.cpython-313.pyc
-|   |       |   |           fi.cpython-313.pyc
-|   |       |   |           fr.cpython-313.pyc
-|   |       |   |           hu.cpython-313.pyc
-|   |       |   |           it.cpython-313.pyc
-|   |       |   |           ja.cpython-313.pyc
-|   |       |   |           nl.cpython-313.pyc
-|   |       |   |           no.cpython-313.pyc
-|   |       |   |           pt.cpython-313.pyc
-|   |       |   |           ro.cpython-313.pyc
-|   |       |   |           ru.cpython-313.pyc
-|   |       |   |           sv.cpython-313.pyc
-|   |       |   |           tr.cpython-313.pyc
-|   |       |   |           zh.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---templates
-|   |       |   |   +---apidoc
-|   |       |   |   |       module.rst.jinja
-|   |       |   |   |       package.rst.jinja
-|   |       |   |   |       toc.rst.jinja
-|   |       |   |   |       
-|   |       |   |   +---epub3
-|   |       |   |   |       container.xml
-|   |       |   |   |       content.opf.jinja
-|   |       |   |   |       mimetype
-|   |       |   |   |       nav.xhtml.jinja
-|   |       |   |   |       toc.ncx.jinja
-|   |       |   |   |       
-|   |       |   |   +---gettext
-|   |       |   |   |       message.pot.jinja
-|   |       |   |   |       
-|   |       |   |   +---graphviz
-|   |       |   |   |       graphviz.css
-|   |       |   |   |       
-|   |       |   |   +---htmlhelp
-|   |       |   |   |       project.hhc
-|   |       |   |   |       project.hhp
-|   |       |   |   |       project.stp
-|   |       |   |   |       
-|   |       |   |   +---imgmath
-|   |       |   |   |       preview.tex.jinja
-|   |       |   |   |       template.tex.jinja
-|   |       |   |   |       
-|   |       |   |   +---latex
-|   |       |   |   |       latex.tex.jinja
-|   |       |   |   |       longtable.tex.jinja
-|   |       |   |   |       sphinxmessages.sty.jinja
-|   |       |   |   |       tabular.tex.jinja
-|   |       |   |   |       tabulary.tex.jinja
-|   |       |   |   |       
-|   |       |   |   +---quickstart
-|   |       |   |   |       conf.py.jinja
-|   |       |   |   |       make.bat.new.jinja
-|   |       |   |   |       Makefile.new.jinja
-|   |       |   |   |       root_doc.rst.jinja
-|   |       |   |   |       
-|   |       |   |   \---texinfo
-|   |       |   |           Makefile
-|   |       |   |           
-|   |       |   +---testing
-|   |       |   |   |   fixtures.py
-|   |       |   |   |   restructuredtext.py
-|   |       |   |   |   util.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           fixtures.cpython-313.pyc
-|   |       |   |           restructuredtext.cpython-313.pyc
-|   |       |   |           util.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---texinputs
-|   |       |   |       latexmkjarc.jinja
-|   |       |   |       latexmkrc.jinja
-|   |       |   |       LatinRules.xdy
-|   |       |   |       LICRcyr2utf8.xdy
-|   |       |   |       LICRlatin2utf8.xdy
-|   |       |   |       make.bat.jinja
-|   |       |   |       Makefile.jinja
-|   |       |   |       python.ist
-|   |       |   |       sphinx.sty
-|   |       |   |       sphinx.xdy
-|   |       |   |       sphinxhowto.cls
-|   |       |   |       sphinxlatexadmonitions.sty
-|   |       |   |       sphinxlatexcontainers.sty
-|   |       |   |       sphinxlatexgraphics.sty
-|   |       |   |       sphinxlatexindbibtoc.sty
-|   |       |   |       sphinxlatexlists.sty
-|   |       |   |       sphinxlatexliterals.sty
-|   |       |   |       sphinxlatexnumfig.sty
-|   |       |   |       sphinxlatexobjects.sty
-|   |       |   |       sphinxlatexshadowbox.sty
-|   |       |   |       sphinxlatexstyleheadings.sty
-|   |       |   |       sphinxlatexstylepage.sty
-|   |       |   |       sphinxlatexstyletext.sty
-|   |       |   |       sphinxlatextables.sty
-|   |       |   |       sphinxmanual.cls
-|   |       |   |       sphinxoptionsgeometry.sty
-|   |       |   |       sphinxoptionshyperref.sty
-|   |       |   |       sphinxpackageboxes.sty
-|   |       |   |       sphinxpackagecyrillic.sty
-|   |       |   |       sphinxpackagefootnote.sty
-|   |       |   |       sphinxpackagesubstitutefont.sty
-|   |       |   |       
-|   |       |   +---texinputs_win
-|   |       |   |       Makefile.jinja
-|   |       |   |       
-|   |       |   +---themes
-|   |       |   |   +---agogo
-|   |       |   |   |   |   layout.html
-|   |       |   |   |   |   theme.toml
-|   |       |   |   |   |   
-|   |       |   |   |   \---static
-|   |       |   |   |           agogo.css.jinja
-|   |       |   |   |           bgfooter.png
-|   |       |   |   |           bgtop.png
-|   |       |   |   |           
-|   |       |   |   +---basic
-|   |       |   |   |   |   defindex.html
-|   |       |   |   |   |   domainindex.html
-|   |       |   |   |   |   genindex-single.html
-|   |       |   |   |   |   genindex-split.html
-|   |       |   |   |   |   genindex.html
-|   |       |   |   |   |   globaltoc.html
-|   |       |   |   |   |   layout.html
-|   |       |   |   |   |   localtoc.html
-|   |       |   |   |   |   opensearch.xml
-|   |       |   |   |   |   page.html
-|   |       |   |   |   |   relations.html
-|   |       |   |   |   |   search.html
-|   |       |   |   |   |   searchbox.html
-|   |       |   |   |   |   searchfield.html
-|   |       |   |   |   |   sourcelink.html
-|   |       |   |   |   |   theme.toml
-|   |       |   |   |   |   
-|   |       |   |   |   +---changes
-|   |       |   |   |   |       frameset.html
-|   |       |   |   |   |       rstsource.html
-|   |       |   |   |   |       versionchanges.html
-|   |       |   |   |   |       
-|   |       |   |   |   \---static
-|   |       |   |   |           basic.css.jinja
-|   |       |   |   |           doctools.js
-|   |       |   |   |           documentation_options.js.jinja
-|   |       |   |   |           file.png
-|   |       |   |   |           language_data.js.jinja
-|   |       |   |   |           minus.png
-|   |       |   |   |           plus.png
-|   |       |   |   |           searchtools.js
-|   |       |   |   |           sphinx_highlight.js
-|   |       |   |   |           
-|   |       |   |   +---bizstyle
-|   |       |   |   |   |   layout.html
-|   |       |   |   |   |   theme.toml
-|   |       |   |   |   |   
-|   |       |   |   |   \---static
-|   |       |   |   |           background_b01.png
-|   |       |   |   |           bizstyle.css.jinja
-|   |       |   |   |           bizstyle.js.jinja
-|   |       |   |   |           css3-mediaqueries.js
-|   |       |   |   |           css3-mediaqueries_src.js
-|   |       |   |   |           
-|   |       |   |   +---classic
-|   |       |   |   |   |   layout.html
-|   |       |   |   |   |   theme.toml
-|   |       |   |   |   |   
-|   |       |   |   |   \---static
-|   |       |   |   |           classic.css.jinja
-|   |       |   |   |           sidebar.js.jinja
-|   |       |   |   |           
-|   |       |   |   +---default
-|   |       |   |   |   |   theme.toml
-|   |       |   |   |   |   
-|   |       |   |   |   \---static
-|   |       |   |   |           default.css
-|   |       |   |   |           
-|   |       |   |   +---epub
-|   |       |   |   |   |   epub-cover.html
-|   |       |   |   |   |   layout.html
-|   |       |   |   |   |   theme.toml
-|   |       |   |   |   |   
-|   |       |   |   |   \---static
-|   |       |   |   |           epub.css.jinja
-|   |       |   |   |           
-|   |       |   |   +---haiku
-|   |       |   |   |   |   layout.html
-|   |       |   |   |   |   theme.toml
-|   |       |   |   |   |   
-|   |       |   |   |   \---static
-|   |       |   |   |           alert_info_32.png
-|   |       |   |   |           alert_warning_32.png
-|   |       |   |   |           bg-page.png
-|   |       |   |   |           bullet_orange.png
-|   |       |   |   |           haiku.css.jinja
-|   |       |   |   |           
-|   |       |   |   +---nature
-|   |       |   |   |   |   theme.toml
-|   |       |   |   |   |   
-|   |       |   |   |   \---static
-|   |       |   |   |           nature.css.jinja
-|   |       |   |   |           
-|   |       |   |   +---nonav
-|   |       |   |   |   |   layout.html
-|   |       |   |   |   |   theme.toml
-|   |       |   |   |   |   
-|   |       |   |   |   \---static
-|   |       |   |   |           nonav.css.jinja
-|   |       |   |   |           
-|   |       |   |   +---pyramid
-|   |       |   |   |   |   layout.html
-|   |       |   |   |   |   theme.toml
-|   |       |   |   |   |   
-|   |       |   |   |   \---static
-|   |       |   |   |           dialog-note.png
-|   |       |   |   |           dialog-seealso.png
-|   |       |   |   |           dialog-todo.png
-|   |       |   |   |           dialog-topic.png
-|   |       |   |   |           dialog-warning.png
-|   |       |   |   |           epub.css.jinja
-|   |       |   |   |           footerbg.png
-|   |       |   |   |           headerbg.png
-|   |       |   |   |           ie6.css
-|   |       |   |   |           middlebg.png
-|   |       |   |   |           pyramid.css.jinja
-|   |       |   |   |           transparent.gif
-|   |       |   |   |           
-|   |       |   |   +---scrolls
-|   |       |   |   |   |   layout.html
-|   |       |   |   |   |   theme.toml
-|   |       |   |   |   |   
-|   |       |   |   |   +---artwork
-|   |       |   |   |   |       logo.svg
-|   |       |   |   |   |       
-|   |       |   |   |   \---static
-|   |       |   |   |           darkmetal.png
-|   |       |   |   |           headerbg.png
-|   |       |   |   |           logo.png
-|   |       |   |   |           metal.png
-|   |       |   |   |           navigation.png
-|   |       |   |   |           print.css
-|   |       |   |   |           scrolls.css.jinja
-|   |       |   |   |           theme_extras.js
-|   |       |   |   |           watermark.png
-|   |       |   |   |           watermark_blur.png
-|   |       |   |   |           
-|   |       |   |   +---sphinxdoc
-|   |       |   |   |   |   theme.toml
-|   |       |   |   |   |   
-|   |       |   |   |   \---static
-|   |       |   |   |           contents.png
-|   |       |   |   |           navigation.png
-|   |       |   |   |           sphinxdoc.css.jinja
-|   |       |   |   |           
-|   |       |   |   \---traditional
-|   |       |   |       |   theme.toml
-|   |       |   |       |   
-|   |       |   |       \---static
-|   |       |   |               traditional.css.jinja
-|   |       |   |               
-|   |       |   +---transforms
-|   |       |   |   |   compact_bullet_list.py
-|   |       |   |   |   i18n.py
-|   |       |   |   |   references.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---post_transforms
-|   |       |   |   |   |   code.py
-|   |       |   |   |   |   images.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           code.cpython-313.pyc
-|   |       |   |   |           images.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           compact_bullet_list.cpython-313.pyc
-|   |       |   |           i18n.cpython-313.pyc
-|   |       |   |           references.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---util
-|   |       |   |   |   build_phase.py
-|   |       |   |   |   cfamily.py
-|   |       |   |   |   console.py
-|   |       |   |   |   display.py
-|   |       |   |   |   docfields.py
-|   |       |   |   |   docstrings.py
-|   |       |   |   |   docutils.py
-|   |       |   |   |   fileutil.py
-|   |       |   |   |   http_date.py
-|   |       |   |   |   i18n.py
-|   |       |   |   |   images.py
-|   |       |   |   |   index_entries.py
-|   |       |   |   |   inspect.py
-|   |       |   |   |   inventory.py
-|   |       |   |   |   logging.py
-|   |       |   |   |   matching.py
-|   |       |   |   |   math.py
-|   |       |   |   |   nodes.py
-|   |       |   |   |   osutil.py
-|   |       |   |   |   parallel.py
-|   |       |   |   |   parsing.py
-|   |       |   |   |   png.py
-|   |       |   |   |   requests.py
-|   |       |   |   |   rst.py
-|   |       |   |   |   tags.py
-|   |       |   |   |   template.py
-|   |       |   |   |   texescape.py
-|   |       |   |   |   typing.py
-|   |       |   |   |   _files.py
-|   |       |   |   |   _importer.py
-|   |       |   |   |   _inventory_file_reader.py
-|   |       |   |   |   _io.py
-|   |       |   |   |   _lines.py
-|   |       |   |   |   _pathlib.py
-|   |       |   |   |   _serialise.py
-|   |       |   |   |   _timestamps.py
-|   |       |   |   |   _uri.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           build_phase.cpython-313.pyc
-|   |       |   |           cfamily.cpython-313.pyc
-|   |       |   |           console.cpython-313.pyc
-|   |       |   |           display.cpython-313.pyc
-|   |       |   |           docfields.cpython-313.pyc
-|   |       |   |           docstrings.cpython-313.pyc
-|   |       |   |           docutils.cpython-313.pyc
-|   |       |   |           fileutil.cpython-313.pyc
-|   |       |   |           http_date.cpython-313.pyc
-|   |       |   |           i18n.cpython-313.pyc
-|   |       |   |           images.cpython-313.pyc
-|   |       |   |           index_entries.cpython-313.pyc
-|   |       |   |           inspect.cpython-313.pyc
-|   |       |   |           inventory.cpython-313.pyc
-|   |       |   |           logging.cpython-313.pyc
-|   |       |   |           matching.cpython-313.pyc
-|   |       |   |           math.cpython-313.pyc
-|   |       |   |           nodes.cpython-313.pyc
-|   |       |   |           osutil.cpython-313.pyc
-|   |       |   |           parallel.cpython-313.pyc
-|   |       |   |           parsing.cpython-313.pyc
-|   |       |   |           png.cpython-313.pyc
-|   |       |   |           requests.cpython-313.pyc
-|   |       |   |           rst.cpython-313.pyc
-|   |       |   |           tags.cpython-313.pyc
-|   |       |   |           template.cpython-313.pyc
-|   |       |   |           texescape.cpython-313.pyc
-|   |       |   |           typing.cpython-313.pyc
-|   |       |   |           _files.cpython-313.pyc
-|   |       |   |           _importer.cpython-313.pyc
-|   |       |   |           _inventory_file_reader.cpython-313.pyc
-|   |       |   |           _io.cpython-313.pyc
-|   |       |   |           _lines.cpython-313.pyc
-|   |       |   |           _pathlib.cpython-313.pyc
-|   |       |   |           _serialise.cpython-313.pyc
-|   |       |   |           _timestamps.cpython-313.pyc
-|   |       |   |           _uri.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---writers
-|   |       |   |   |   html.py
-|   |       |   |   |   html5.py
-|   |       |   |   |   latex.py
-|   |       |   |   |   manpage.py
-|   |       |   |   |   texinfo.py
-|   |       |   |   |   text.py
-|   |       |   |   |   xml.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           html.cpython-313.pyc
-|   |       |   |           html5.cpython-313.pyc
-|   |       |   |           latex.cpython-313.pyc
-|   |       |   |           manpage.cpython-313.pyc
-|   |       |   |           texinfo.cpython-313.pyc
-|   |       |   |           text.cpython-313.pyc
-|   |       |   |           xml.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---_cli
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---util
-|   |       |   |   |   |   colour.py
-|   |       |   |   |   |   errors.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           colour.cpython-313.pyc
-|   |       |   |   |           errors.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           addnodes.cpython-313.pyc
-|   |       |           application.cpython-313.pyc
-|   |       |           config.cpython-313.pyc
-|   |       |           deprecation.cpython-313.pyc
-|   |       |           errors.cpython-313.pyc
-|   |       |           events.cpython-313.pyc
-|   |       |           extension.cpython-313.pyc
-|   |       |           highlighting.cpython-313.pyc
-|   |       |           io.cpython-313.pyc
-|   |       |           jinja2glue.cpython-313.pyc
-|   |       |           parsers.cpython-313.pyc
-|   |       |           project.cpython-313.pyc
-|   |       |           pygments_styles.cpython-313.pyc
-|   |       |           registry.cpython-313.pyc
-|   |       |           roles.cpython-313.pyc
-|   |       |           theming.cpython-313.pyc
-|   |       |           versioning.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           __main__.cpython-313.pyc
-|   |       |           
-|   |       +---sphinx-9.0.4.dist-info
-|   |       |   |   entry_points.txt
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE.rst
-|   |       |           
-|   |       +---sphinxcontrib
-|   |       |   +---applehelp
-|   |       |   |   |   py.typed
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---locales
-|   |       |   |   |   |   sphinxcontrib.applehelp.pot
-|   |       |   |   |   |   
-|   |       |   |   |   +---.tx
-|   |       |   |   |   |       config
-|   |       |   |   |   |       
-|   |       |   |   |   +---ar
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---bn
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ca
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---cak
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---cs
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---cy
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---da
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---de
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---el
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---eo
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---es
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---et
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---eu
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---fa
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---fi
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---fr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---he
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hi
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hi_IN
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hu
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---id
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---it
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ja
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ko
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---lt
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---lv
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---mk
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---nb_NO
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ne
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---nl
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pl
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pt
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pt_BR
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pt_PT
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ro
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ru
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---si
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sk
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sl
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sr@latin
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sv
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ta
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---tr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---uk_UA
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ur
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---vi
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---zh_CN
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.applehelp.mo
-|   |       |   |   |   |           sphinxcontrib.applehelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   \---zh_TW
-|   |       |   |   |       \---LC_MESSAGES
-|   |       |   |   |               sphinxcontrib.applehelp.mo
-|   |       |   |   |               sphinxcontrib.applehelp.po
-|   |       |   |   |               
-|   |       |   |   +---templates
-|   |       |   |   |       _access.html_t
-|   |       |   |   |       
-|   |       |   |   \---__pycache__
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---devhelp
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---locales
-|   |       |   |   |   |   sphinxcontrib.devhelp.pot
-|   |       |   |   |   |   
-|   |       |   |   |   +---.tx
-|   |       |   |   |   |       config
-|   |       |   |   |   |       
-|   |       |   |   |   +---ar
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---bn
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ca
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---cs
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---cy
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---da
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---de
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---el
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---eo
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---es
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---et
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---eu
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---fa
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---fi
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---fr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---he
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hi
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hi_IN
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hu
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---id
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---it
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ja
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ko
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---lt
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---lv
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---mk
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---nb_NO
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ne
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---nl
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pl
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pt
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pt_BR
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pt_PT
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ro
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ru
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---si
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sk
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sl
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sr@latin
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sv
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ta
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---tr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---uk_UA
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---vi
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---zh_CN
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.devhelp.mo
-|   |       |   |   |   |           sphinxcontrib.devhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   \---zh_TW
-|   |       |   |   |       \---LC_MESSAGES
-|   |       |   |   |               sphinxcontrib.devhelp.mo
-|   |       |   |   |               sphinxcontrib.devhelp.po
-|   |       |   |   |               
-|   |       |   |   \---__pycache__
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---htmlhelp
-|   |       |   |   |   py.typed
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---locales
-|   |       |   |   |   |   sphinxcontrib.htmlhelp.pot
-|   |       |   |   |   |   
-|   |       |   |   |   +---.tx
-|   |       |   |   |   |       config
-|   |       |   |   |   |       
-|   |       |   |   |   +---ar
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---bg
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---bn
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ca
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---cak
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---cs
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---cy
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---da
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---de
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---el
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---eo
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---es
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---et
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---eu
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---fa
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---fi
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---fr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---he
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hi
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hi_IN
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hu
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---id
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---it
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ja
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ko
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---lt
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---lv
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---mk
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---nb_NO
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ne
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---nl
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pl
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pt
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pt_BR
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pt_PT
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ro
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ru
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---si
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sk
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sl
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sq
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sr@latin
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sr_RS
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sv
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ta
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---te
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---tr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---uk_UA
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ur
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---vi
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---zh_CN
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.mo
-|   |       |   |   |   |           sphinxcontrib.htmlhelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   \---zh_TW
-|   |       |   |   |       \---LC_MESSAGES
-|   |       |   |   |               sphinxcontrib.htmlhelp.mo
-|   |       |   |   |               sphinxcontrib.htmlhelp.po
-|   |       |   |   |               
-|   |       |   |   +---templates
-|   |       |   |   |       project.hhc
-|   |       |   |   |       project.hhp
-|   |       |   |   |       project.stp
-|   |       |   |   |       
-|   |       |   |   \---__pycache__
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---jsmath
-|   |       |   |   |   version.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           version.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---qthelp
-|   |       |   |   |   py.typed
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---locales
-|   |       |   |   |   |   sphinxcontrib.qthelp.pot
-|   |       |   |   |   |   
-|   |       |   |   |   +---.tx
-|   |       |   |   |   |       config
-|   |       |   |   |   |       
-|   |       |   |   |   +---ar
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---bn
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ca
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---cs
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---cy
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---da
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---de
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---el
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---eo
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---es
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---et
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---eu
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---fa
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---fi
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---fr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---he
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hi
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hi_IN
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---hu
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---id
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---it
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ja
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ko
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---lt
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---lv
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---mk
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---nb_NO
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ne
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---nl
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pl
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pt
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pt_BR
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---pt_PT
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ro
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ru
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---si
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sk
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sl
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sr@latin
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---sv
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---ta
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---tr
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---uk_UA
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---vi
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   +---zh_CN
-|   |       |   |   |   |   \---LC_MESSAGES
-|   |       |   |   |   |           sphinxcontrib.qthelp.mo
-|   |       |   |   |   |           sphinxcontrib.qthelp.po
-|   |       |   |   |   |           
-|   |       |   |   |   \---zh_TW
-|   |       |   |   |       \---LC_MESSAGES
-|   |       |   |   |               sphinxcontrib.qthelp.mo
-|   |       |   |   |               sphinxcontrib.qthelp.po
-|   |       |   |   |               
-|   |       |   |   +---templates
-|   |       |   |   |       project.qhcp
-|   |       |   |   |       project.qhp
-|   |       |   |   |       
-|   |       |   |   \---__pycache__
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---serializinghtml
-|   |       |       |   jsonimpl.py
-|   |       |       |   py.typed
-|   |       |       |   __init__.py
-|   |       |       |   
-|   |       |       +---locales
-|   |       |       |   |   sphinxcontrib.serializinghtml.pot
-|   |       |       |   |   
-|   |       |       |   +---.tx
-|   |       |       |   |       config
-|   |       |       |   |       
-|   |       |       |   +---ar
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---bg
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---bn
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---ca
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---cak
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---cs
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---cy
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---da
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---de
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---el
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---eo
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---es
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---et
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---eu
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---fa
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---fi
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---fr
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---he
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---hi
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---hi_IN
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---hr
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---hu
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---id
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---it
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---ja
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---ko
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---lt
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---lv
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---mk
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---nb_NO
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---ne
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---nl
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---pl
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---pt
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---pt_BR
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---pt_PT
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---ro
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---ru
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---si
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---sk
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---sl
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---sq
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---sr
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---sr@latin
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---sr_RS
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---sv
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---ta
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---te
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---tr
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---uk_UA
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---ur
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---vi
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   +---zh_CN
-|   |       |       |   |   \---LC_MESSAGES
-|   |       |       |   |           sphinxcontrib.serializinghtml.mo
-|   |       |       |   |           sphinxcontrib.serializinghtml.po
-|   |       |       |   |           
-|   |       |       |   \---zh_TW
-|   |       |       |       \---LC_MESSAGES
-|   |       |       |               sphinxcontrib.serializinghtml.mo
-|   |       |       |               sphinxcontrib.serializinghtml.po
-|   |       |       |               
-|   |       |       \---__pycache__
-|   |       |               jsonimpl.cpython-313.pyc
-|   |       |               __init__.cpython-313.pyc
-|   |       |               
-|   |       +---sphinxcontrib_applehelp-2.0.0.dist-info
-|   |       |       INSTALLER
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       WHEEL
-|   |       |       
-|   |       +---sphinxcontrib_devhelp-2.0.0.dist-info
-|   |       |       INSTALLER
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       WHEEL
-|   |       |       
-|   |       +---sphinxcontrib_htmlhelp-2.1.0.dist-info
-|   |       |       INSTALLER
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       WHEEL
-|   |       |       
-|   |       +---sphinxcontrib_jsmath-1.0.1.dist-info
-|   |       |       INSTALLER
-|   |       |       LICENSE
-|   |       |       METADATA
-|   |       |       namespace_packages.txt
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       top_level.txt
-|   |       |       WHEEL
-|   |       |       
-|   |       +---sphinxcontrib_qthelp-2.0.0.dist-info
-|   |       |       INSTALLER
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       WHEEL
-|   |       |       
-|   |       +---sphinxcontrib_serializinghtml-2.0.0.dist-info
-|   |       |       INSTALLER
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       WHEEL
-|   |       |       
-|   |       +---urllib3
-|   |       |   |   connection.py
-|   |       |   |   connectionpool.py
-|   |       |   |   exceptions.py
-|   |       |   |   fields.py
-|   |       |   |   filepost.py
-|   |       |   |   poolmanager.py
-|   |       |   |   py.typed
-|   |       |   |   response.py
-|   |       |   |   _base_connection.py
-|   |       |   |   _collections.py
-|   |       |   |   _request_methods.py
-|   |       |   |   _version.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   +---contrib
-|   |       |   |   |   pyopenssl.py
-|   |       |   |   |   socks.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---emscripten
-|   |       |   |   |   |   connection.py
-|   |       |   |   |   |   emscripten_fetch_worker.js
-|   |       |   |   |   |   fetch.py
-|   |       |   |   |   |   request.py
-|   |       |   |   |   |   response.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           connection.cpython-313.pyc
-|   |       |   |   |           fetch.cpython-313.pyc
-|   |       |   |   |           request.cpython-313.pyc
-|   |       |   |   |           response.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           pyopenssl.cpython-313.pyc
-|   |       |   |           socks.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---http2
-|   |       |   |   |   connection.py
-|   |       |   |   |   probe.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           connection.cpython-313.pyc
-|   |       |   |           probe.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---util
-|   |       |   |   |   connection.py
-|   |       |   |   |   proxy.py
-|   |       |   |   |   request.py
-|   |       |   |   |   response.py
-|   |       |   |   |   retry.py
-|   |       |   |   |   ssltransport.py
-|   |       |   |   |   ssl_.py
-|   |       |   |   |   ssl_match_hostname.py
-|   |       |   |   |   timeout.py
-|   |       |   |   |   url.py
-|   |       |   |   |   util.py
-|   |       |   |   |   wait.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           connection.cpython-313.pyc
-|   |       |   |           proxy.cpython-313.pyc
-|   |       |   |           request.cpython-313.pyc
-|   |       |   |           response.cpython-313.pyc
-|   |       |   |           retry.cpython-313.pyc
-|   |       |   |           ssltransport.cpython-313.pyc
-|   |       |   |           ssl_.cpython-313.pyc
-|   |       |   |           ssl_match_hostname.cpython-313.pyc
-|   |       |   |           timeout.cpython-313.pyc
-|   |       |   |           url.cpython-313.pyc
-|   |       |   |           util.cpython-313.pyc
-|   |       |   |           wait.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           connection.cpython-313.pyc
-|   |       |           connectionpool.cpython-313.pyc
-|   |       |           exceptions.cpython-313.pyc
-|   |       |           fields.cpython-313.pyc
-|   |       |           filepost.cpython-313.pyc
-|   |       |           poolmanager.cpython-313.pyc
-|   |       |           response.cpython-313.pyc
-|   |       |           _base_connection.cpython-313.pyc
-|   |       |           _collections.cpython-313.pyc
-|   |       |           _request_methods.cpython-313.pyc
-|   |       |           _version.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---urllib3-2.5.0.dist-info
-|   |       |   |   INSTALLER
-|   |       |   |   METADATA
-|   |       |   |   RECORD
-|   |       |   |   REQUESTED
-|   |       |   |   WHEEL
-|   |       |   |   
-|   |       |   \---licenses
-|   |       |           LICENSE.txt
-|   |       |           
-|   |       +---win32ctypes
-|   |       |   |   pywintypes.py
-|   |       |   |   version.py
-|   |       |   |   win32api.py
-|   |       |   |   win32cred.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   +---core
-|   |       |   |   |   compat.py
-|   |       |   |   |   _winerrors.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   +---cffi
-|   |       |   |   |   |   _authentication.py
-|   |       |   |   |   |   _common.py
-|   |       |   |   |   |   _dll.py
-|   |       |   |   |   |   _nl_support.py
-|   |       |   |   |   |   _resource.py
-|   |       |   |   |   |   _system_information.py
-|   |       |   |   |   |   _time.py
-|   |       |   |   |   |   _util.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           _authentication.cpython-313.pyc
-|   |       |   |   |           _common.cpython-313.pyc
-|   |       |   |   |           _dll.cpython-313.pyc
-|   |       |   |   |           _nl_support.cpython-313.pyc
-|   |       |   |   |           _resource.cpython-313.pyc
-|   |       |   |   |           _system_information.cpython-313.pyc
-|   |       |   |   |           _time.cpython-313.pyc
-|   |       |   |   |           _util.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   +---ctypes
-|   |       |   |   |   |   _authentication.py
-|   |       |   |   |   |   _common.py
-|   |       |   |   |   |   _dll.py
-|   |       |   |   |   |   _nl_support.py
-|   |       |   |   |   |   _resource.py
-|   |       |   |   |   |   _system_information.py
-|   |       |   |   |   |   _time.py
-|   |       |   |   |   |   _util.py
-|   |       |   |   |   |   __init__.py
-|   |       |   |   |   |   
-|   |       |   |   |   \---__pycache__
-|   |       |   |   |           _authentication.cpython-313.pyc
-|   |       |   |   |           _common.cpython-313.pyc
-|   |       |   |   |           _dll.cpython-313.pyc
-|   |       |   |   |           _nl_support.cpython-313.pyc
-|   |       |   |   |           _resource.cpython-313.pyc
-|   |       |   |   |           _system_information.cpython-313.pyc
-|   |       |   |   |           _time.cpython-313.pyc
-|   |       |   |   |           _util.cpython-313.pyc
-|   |       |   |   |           __init__.cpython-313.pyc
-|   |       |   |   |           
-|   |       |   |   \---__pycache__
-|   |       |   |           compat.cpython-313.pyc
-|   |       |   |           _winerrors.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---pywin32
-|   |       |   |   |   pywintypes.py
-|   |       |   |   |   win32api.py
-|   |       |   |   |   win32cred.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           pywintypes.cpython-313.pyc
-|   |       |   |           win32api.cpython-313.pyc
-|   |       |   |           win32cred.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---tests
-|   |       |   |   |   test_backends.py
-|   |       |   |   |   test_win32api.py
-|   |       |   |   |   test_win32cred.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           test_backends.cpython-313.pyc
-|   |       |   |           test_win32api.cpython-313.pyc
-|   |       |   |           test_win32cred.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           pywintypes.cpython-313.pyc
-|   |       |           version.cpython-313.pyc
-|   |       |           win32api.cpython-313.pyc
-|   |       |           win32cred.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---xlrd
-|   |       |   |   biffh.py
-|   |       |   |   book.py
-|   |       |   |   compdoc.py
-|   |       |   |   formatting.py
-|   |       |   |   formula.py
-|   |       |   |   info.py
-|   |       |   |   sheet.py
-|   |       |   |   timemachine.py
-|   |       |   |   xldate.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   \---__pycache__
-|   |       |           biffh.cpython-313.pyc
-|   |       |           book.cpython-313.pyc
-|   |       |           compdoc.cpython-313.pyc
-|   |       |           formatting.cpython-313.pyc
-|   |       |           formula.cpython-313.pyc
-|   |       |           info.cpython-313.pyc
-|   |       |           sheet.cpython-313.pyc
-|   |       |           timemachine.cpython-313.pyc
-|   |       |           xldate.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---xlrd-2.0.2.dist-info
-|   |       |       INSTALLER
-|   |       |       LICENSE
-|   |       |       METADATA
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       top_level.txt
-|   |       |       WHEEL
-|   |       |       
-|   |       +---xlwt
-|   |       |   |   antlr.py
-|   |       |   |   BIFFRecords.py
-|   |       |   |   Bitmap.py
-|   |       |   |   Cell.py
-|   |       |   |   Column.py
-|   |       |   |   compat.py
-|   |       |   |   CompoundDoc.py
-|   |       |   |   excel-formula.g
-|   |       |   |   ExcelFormula.py
-|   |       |   |   ExcelFormulaLexer.py
-|   |       |   |   ExcelFormulaParser.py
-|   |       |   |   ExcelMagic.py
-|   |       |   |   Formatting.py
-|   |       |   |   Row.py
-|   |       |   |   Style.py
-|   |       |   |   UnicodeUtils.py
-|   |       |   |   Utils.py
-|   |       |   |   Workbook.py
-|   |       |   |   Worksheet.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   \---__pycache__
-|   |       |           antlr.cpython-313.pyc
-|   |       |           BIFFRecords.cpython-313.pyc
-|   |       |           Bitmap.cpython-313.pyc
-|   |       |           Cell.cpython-313.pyc
-|   |       |           Column.cpython-313.pyc
-|   |       |           compat.cpython-313.pyc
-|   |       |           CompoundDoc.cpython-313.pyc
-|   |       |           ExcelFormula.cpython-313.pyc
-|   |       |           ExcelFormulaLexer.cpython-313.pyc
-|   |       |           ExcelFormulaParser.cpython-313.pyc
-|   |       |           ExcelMagic.cpython-313.pyc
-|   |       |           Formatting.cpython-313.pyc
-|   |       |           Row.cpython-313.pyc
-|   |       |           Style.cpython-313.pyc
-|   |       |           UnicodeUtils.cpython-313.pyc
-|   |       |           Utils.cpython-313.pyc
-|   |       |           Workbook.cpython-313.pyc
-|   |       |           Worksheet.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---xlwt-1.3.0.dist-info
-|   |       |       DESCRIPTION.rst
-|   |       |       INSTALLER
-|   |       |       METADATA
-|   |       |       metadata.json
-|   |       |       RECORD
-|   |       |       REQUESTED
-|   |       |       top_level.txt
-|   |       |       WHEEL
-|   |       |       
-|   |       +---_distutils_hack
-|   |       |   |   override.py
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   \---__pycache__
-|   |       |           override.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           
-|   |       +---_pyinstaller_hooks_contrib
-|   |       |   |   compat.py
-|   |       |   |   rthooks.dat
-|   |       |   |   __init__.py
-|   |       |   |   
-|   |       |   +---pre_find_module_path
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---pre_safe_import_module
-|   |       |   |   |   hook-tensorflow.py
-|   |       |   |   |   hook-win32com.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           hook-tensorflow.cpython-313.pyc
-|   |       |   |           hook-win32com.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---rthooks
-|   |       |   |   |   pyi_rth_cryptography_openssl.py
-|   |       |   |   |   pyi_rth_enchant.py
-|   |       |   |   |   pyi_rth_ffpyplayer.py
-|   |       |   |   |   pyi_rth_findlibs.py
-|   |       |   |   |   pyi_rth_nltk.py
-|   |       |   |   |   pyi_rth_osgeo.py
-|   |       |   |   |   pyi_rth_pygraphviz.py
-|   |       |   |   |   pyi_rth_pyproj.py
-|   |       |   |   |   pyi_rth_pyqtgraph_multiprocess.py
-|   |       |   |   |   pyi_rth_pythoncom.py
-|   |       |   |   |   pyi_rth_pywintypes.py
-|   |       |   |   |   pyi_rth_tensorflow.py
-|   |       |   |   |   pyi_rth_traitlets.py
-|   |       |   |   |   pyi_rth_usb.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           pyi_rth_cryptography_openssl.cpython-313.pyc
-|   |       |   |           pyi_rth_enchant.cpython-313.pyc
-|   |       |   |           pyi_rth_ffpyplayer.cpython-313.pyc
-|   |       |   |           pyi_rth_findlibs.cpython-313.pyc
-|   |       |   |           pyi_rth_nltk.cpython-313.pyc
-|   |       |   |           pyi_rth_osgeo.cpython-313.pyc
-|   |       |   |           pyi_rth_pygraphviz.cpython-313.pyc
-|   |       |   |           pyi_rth_pyproj.cpython-313.pyc
-|   |       |   |           pyi_rth_pyqtgraph_multiprocess.cpython-313.pyc
-|   |       |   |           pyi_rth_pythoncom.cpython-313.pyc
-|   |       |   |           pyi_rth_pywintypes.cpython-313.pyc
-|   |       |   |           pyi_rth_tensorflow.cpython-313.pyc
-|   |       |   |           pyi_rth_traitlets.cpython-313.pyc
-|   |       |   |           pyi_rth_usb.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---stdhooks
-|   |       |   |   |   hook-accessible_output2.py
-|   |       |   |   |   hook-adbutils.py
-|   |       |   |   |   hook-adios.py
-|   |       |   |   |   hook-afmformats.py
-|   |       |   |   |   hook-aliyunsdkcore.py
-|   |       |   |   |   hook-altair.py
-|   |       |   |   |   hook-amazonproduct.py
-|   |       |   |   |   hook-anyio.py
-|   |       |   |   |   hook-apkutils.py
-|   |       |   |   |   hook-appdirs.py
-|   |       |   |   |   hook-appy.pod.py
-|   |       |   |   |   hook-apscheduler.py
-|   |       |   |   |   hook-argon2.py
-|   |       |   |   |   hook-astor.py
-|   |       |   |   |   hook-astroid.py
-|   |       |   |   |   hook-astropy.py
-|   |       |   |   |   hook-astropy_iers_data.py
-|   |       |   |   |   hook-av.py
-|   |       |   |   |   hook-avro.py
-|   |       |   |   |   hook-azurerm.py
-|   |       |   |   |   hook-backports.py
-|   |       |   |   |   hook-backports.zoneinfo.py
-|   |       |   |   |   hook-bacon.py
-|   |       |   |   |   hook-bcrypt.py
-|   |       |   |   |   hook-bitsandbytes.py
-|   |       |   |   |   hook-black.py
-|   |       |   |   |   hook-bleak.py
-|   |       |   |   |   hook-blib2to3.py
-|   |       |   |   |   hook-blspy.py
-|   |       |   |   |   hook-bokeh.py
-|   |       |   |   |   hook-boto.py
-|   |       |   |   |   hook-boto3.py
-|   |       |   |   |   hook-botocore.py
-|   |       |   |   |   hook-branca.py
-|   |       |   |   |   hook-BTrees.py
-|   |       |   |   |   hook-cairocffi.py
-|   |       |   |   |   hook-cairosvg.py
-|   |       |   |   |   hook-capstone.py
-|   |       |   |   |   hook-cassandra.py
-|   |       |   |   |   hook-celpy.py
-|   |       |   |   |   hook-certifi.py
-|   |       |   |   |   hook-cftime.py
-|   |       |   |   |   hook-cf_units.py
-|   |       |   |   |   hook-charset_normalizer.py
-|   |       |   |   |   hook-cloudpickle.py
-|   |       |   |   |   hook-cloudscraper.py
-|   |       |   |   |   hook-clr.py
-|   |       |   |   |   hook-clr_loader.py
-|   |       |   |   |   hook-cmocean.py
-|   |       |   |   |   hook-compliance_checker.py
-|   |       |   |   |   hook-comtypes.client.py
-|   |       |   |   |   hook-countrycode.py
-|   |       |   |   |   hook-countryinfo.py
-|   |       |   |   |   hook-Crypto.py
-|   |       |   |   |   hook-Cryptodome.py
-|   |       |   |   |   hook-cryptography.py
-|   |       |   |   |   hook-CTkMessagebox.py
-|   |       |   |   |   hook-cumm.py
-|   |       |   |   |   hook-customtkinter.py
-|   |       |   |   |   hook-cv2.py
-|   |       |   |   |   hook-cx_Oracle.py
-|   |       |   |   |   hook-cytoolz.itertoolz.py
-|   |       |   |   |   hook-dash.py
-|   |       |   |   |   hook-dash_bootstrap_components.py
-|   |       |   |   |   hook-dash_core_components.py
-|   |       |   |   |   hook-dash_html_components.py
-|   |       |   |   |   hook-dash_renderer.py
-|   |       |   |   |   hook-dash_table.py
-|   |       |   |   |   hook-dash_uploader.py
-|   |       |   |   |   hook-dask.py
-|   |       |   |   |   hook-datasets.py
-|   |       |   |   |   hook-dateparser.py
-|   |       |   |   |   hook-dateparser.utils.strptime.py
-|   |       |   |   |   hook-dateutil.py
-|   |       |   |   |   hook-dbus_fast.py
-|   |       |   |   |   hook-dclab.py
-|   |       |   |   |   hook-detectron2.py
-|   |       |   |   |   hook-discid.py
-|   |       |   |   |   hook-distorm3.py
-|   |       |   |   |   hook-distributed.py
-|   |       |   |   |   hook-dns.rdata.py
-|   |       |   |   |   hook-docutils.py
-|   |       |   |   |   hook-docx.py
-|   |       |   |   |   hook-docx2pdf.py
-|   |       |   |   |   hook-duckdb.py
-|   |       |   |   |   hook-dynaconf.py
-|   |       |   |   |   hook-easyocr.py
-|   |       |   |   |   hook-eccodeslib.py
-|   |       |   |   |   hook-eckitlib.py
-|   |       |   |   |   hook-eel.py
-|   |       |   |   |   hook-emoji.py
-|   |       |   |   |   hook-enchant.py
-|   |       |   |   |   hook-eng_to_ipa.py
-|   |       |   |   |   hook-ens.py
-|   |       |   |   |   hook-enzyme.parsers.ebml.core.py
-|   |       |   |   |   hook-eth_abi.py
-|   |       |   |   |   hook-eth_account.py
-|   |       |   |   |   hook-eth_hash.py
-|   |       |   |   |   hook-eth_keyfile.py
-|   |       |   |   |   hook-eth_keys.py
-|   |       |   |   |   hook-eth_rlp.py
-|   |       |   |   |   hook-eth_typing.py
-|   |       |   |   |   hook-eth_utils.network.py
-|   |       |   |   |   hook-eth_utils.py
-|   |       |   |   |   hook-exchangelib.py
-|   |       |   |   |   hook-fabric.py
-|   |       |   |   |   hook-fairscale.py
-|   |       |   |   |   hook-faker.py
-|   |       |   |   |   hook-falcon.py
-|   |       |   |   |   hook-fastai.py
-|   |       |   |   |   hook-fastparquet.py
-|   |       |   |   |   hook-fckitlib.py
-|   |       |   |   |   hook-ffpyplayer.py
-|   |       |   |   |   hook-fiona.py
-|   |       |   |   |   hook-flask_compress.py
-|   |       |   |   |   hook-flask_restx.py
-|   |       |   |   |   hook-flex.py
-|   |       |   |   |   hook-flirpy.py
-|   |       |   |   |   hook-fmpy.py
-|   |       |   |   |   hook-folium.py
-|   |       |   |   |   hook-freetype.py
-|   |       |   |   |   hook-frictionless.py
-|   |       |   |   |   hook-fsspec.py
-|   |       |   |   |   hook-fvcore.nn.py
-|   |       |   |   |   hook-gadfly.py
-|   |       |   |   |   hook-gbulb.py
-|   |       |   |   |   hook-gcloud.py
-|   |       |   |   |   hook-geopandas.py
-|   |       |   |   |   hook-gitlab.py
-|   |       |   |   |   hook-globus_sdk.py
-|   |       |   |   |   hook-gmplot.py
-|   |       |   |   |   hook-gmsh.py
-|   |       |   |   |   hook-gooey.py
-|   |       |   |   |   hook-google.api_core.py
-|   |       |   |   |   hook-google.cloud.bigquery.py
-|   |       |   |   |   hook-google.cloud.core.py
-|   |       |   |   |   hook-google.cloud.kms_v1.py
-|   |       |   |   |   hook-google.cloud.pubsub_v1.py
-|   |       |   |   |   hook-google.cloud.speech.py
-|   |       |   |   |   hook-google.cloud.storage.py
-|   |       |   |   |   hook-google.cloud.translate.py
-|   |       |   |   |   hook-googleapiclient.model.py
-|   |       |   |   |   hook-grapheme.py
-|   |       |   |   |   hook-graphql_query.py
-|   |       |   |   |   hook-great_expectations.py
-|   |       |   |   |   hook-gribapi.py
-|   |       |   |   |   hook-grpc.py
-|   |       |   |   |   hook-gtk.py
-|   |       |   |   |   hook-h3.py
-|   |       |   |   |   hook-h5py.py
-|   |       |   |   |   hook-hdf5plugin.py
-|   |       |   |   |   hook-hexbytes.py
-|   |       |   |   |   hook-HtmlTestRunner.py
-|   |       |   |   |   hook-httplib2.py
-|   |       |   |   |   hook-humanize.py
-|   |       |   |   |   hook-hydra.py
-|   |       |   |   |   hook-ijson.py
-|   |       |   |   |   hook-imageio.py
-|   |       |   |   |   hook-imageio_ffmpeg.py
-|   |       |   |   |   hook-iminuit.py
-|   |       |   |   |   hook-intake.py
-|   |       |   |   |   hook-IPython.py
-|   |       |   |   |   hook-iso639.py
-|   |       |   |   |   hook-itk.py
-|   |       |   |   |   hook-jaraco.text.py
-|   |       |   |   |   hook-jedi.py
-|   |       |   |   |   hook-jieba.py
-|   |       |   |   |   hook-jinja2.py
-|   |       |   |   |   hook-jinxed.py
-|   |       |   |   |   hook-jira.py
-|   |       |   |   |   hook-jsonpath_rw_ext.py
-|   |       |   |   |   hook-jsonrpcserver.py
-|   |       |   |   |   hook-jsonschema.py
-|   |       |   |   |   hook-jsonschema_specifications.py
-|   |       |   |   |   hook-jupyterlab.py
-|   |       |   |   |   hook-kaleido.py
-|   |       |   |   |   hook-khmernltk.py
-|   |       |   |   |   hook-kinterbasdb.py
-|   |       |   |   |   hook-langchain.py
-|   |       |   |   |   hook-langchain_classic.py
-|   |       |   |   |   hook-langcodes.py
-|   |       |   |   |   hook-langdetect.py
-|   |       |   |   |   hook-laonlp.py
-|   |       |   |   |   hook-lark.py
-|   |       |   |   |   hook-ldfparser.py
-|   |       |   |   |   hook-lensfunpy.py
-|   |       |   |   |   hook-libaudioverse.py
-|   |       |   |   |   hook-librosa.py
-|   |       |   |   |   hook-lightgbm.py
-|   |       |   |   |   hook-lightning.py
-|   |       |   |   |   hook-limits.py
-|   |       |   |   |   hook-linear_operator.py
-|   |       |   |   |   hook-lingua.py
-|   |       |   |   |   hook-litestar.py
-|   |       |   |   |   hook-llvmlite.py
-|   |       |   |   |   hook-logilab.py
-|   |       |   |   |   hook-lxml.etree.py
-|   |       |   |   |   hook-lxml.isoschematron.py
-|   |       |   |   |   hook-lxml.objectify.py
-|   |       |   |   |   hook-lxml.py
-|   |       |   |   |   hook-lz4.py
-|   |       |   |   |   hook-magic.py
-|   |       |   |   |   hook-mako.codegen.py
-|   |       |   |   |   hook-mariadb.py
-|   |       |   |   |   hook-markdown.py
-|   |       |   |   |   hook-mecab.py
-|   |       |   |   |   hook-metpy.py
-|   |       |   |   |   hook-migrate.py
-|   |       |   |   |   hook-mimesis.py
-|   |       |   |   |   hook-minecraft_launcher_lib.py
-|   |       |   |   |   hook-mistune.py
-|   |       |   |   |   hook-mnemonic.py
-|   |       |   |   |   hook-monai.py
-|   |       |   |   |   hook-moviepy.audio.fx.all.py
-|   |       |   |   |   hook-moviepy.video.fx.all.py
-|   |       |   |   |   hook-mpl_toolkits.basemap.py
-|   |       |   |   |   hook-msoffcrypto.py
-|   |       |   |   |   hook-nacl.py
-|   |       |   |   |   hook-names.py
-|   |       |   |   |   hook-nanite.py
-|   |       |   |   |   hook-narwhals.py
-|   |       |   |   |   hook-nbconvert.py
-|   |       |   |   |   hook-nbdime.py
-|   |       |   |   |   hook-nbformat.py
-|   |       |   |   |   hook-nbt.py
-|   |       |   |   |   hook-ncclient.py
-|   |       |   |   |   hook-netCDF4.py
-|   |       |   |   |   hook-nicegui.py
-|   |       |   |   |   hook-niquests.py
-|   |       |   |   |   hook-nltk.py
-|   |       |   |   |   hook-nnpy.py
-|   |       |   |   |   hook-notebook.py
-|   |       |   |   |   hook-numba.py
-|   |       |   |   |   hook-numbers_parser.py
-|   |       |   |   |   hook-numcodecs.py
-|   |       |   |   |   hook-nvidia.cublas.py
-|   |       |   |   |   hook-nvidia.cuda_cupti.py
-|   |       |   |   |   hook-nvidia.cuda_nvcc.py
-|   |       |   |   |   hook-nvidia.cuda_nvrtc.py
-|   |       |   |   |   hook-nvidia.cuda_runtime.py
-|   |       |   |   |   hook-nvidia.cudnn.py
-|   |       |   |   |   hook-nvidia.cufft.py
-|   |       |   |   |   hook-nvidia.curand.py
-|   |       |   |   |   hook-nvidia.cusolver.py
-|   |       |   |   |   hook-nvidia.cusparse.py
-|   |       |   |   |   hook-nvidia.nccl.py
-|   |       |   |   |   hook-nvidia.nvjitlink.py
-|   |       |   |   |   hook-nvidia.nvtx.py
-|   |       |   |   |   hook-office365.py
-|   |       |   |   |   hook-onnxruntime.py
-|   |       |   |   |   hook-opencc.py
-|   |       |   |   |   hook-OpenGL.py
-|   |       |   |   |   hook-OpenGL_accelerate.py
-|   |       |   |   |   hook-openpyxl.py
-|   |       |   |   |   hook-opentelemetry.py
-|   |       |   |   |   hook-orjson.py
-|   |       |   |   |   hook-osgeo.py
-|   |       |   |   |   hook-pandas_flavor.py
-|   |       |   |   |   hook-panel.py
-|   |       |   |   |   hook-parsedatetime.py
-|   |       |   |   |   hook-parso.py
-|   |       |   |   |   hook-passlib.py
-|   |       |   |   |   hook-paste.exceptions.reporter.py
-|   |       |   |   |   hook-patoolib.py
-|   |       |   |   |   hook-patsy.py
-|   |       |   |   |   hook-pdfminer.py
-|   |       |   |   |   hook-pendulum.py
-|   |       |   |   |   hook-phonenumbers.py
-|   |       |   |   |   hook-pingouin.py
-|   |       |   |   |   hook-pint.py
-|   |       |   |   |   hook-pinyin.py
-|   |       |   |   |   hook-platformdirs.py
-|   |       |   |   |   hook-plotly.py
-|   |       |   |   |   hook-pointcept.py
-|   |       |   |   |   hook-pptx.py
-|   |       |   |   |   hook-prettytable.py
-|   |       |   |   |   hook-psutil.py
-|   |       |   |   |   hook-psychopy.py
-|   |       |   |   |   hook-psycopg2.py
-|   |       |   |   |   hook-psycopg_binary.py
-|   |       |   |   |   hook-publicsuffix2.py
-|   |       |   |   |   hook-pubsub.core.py
-|   |       |   |   |   hook-puremagic.py
-|   |       |   |   |   hook-py.py
-|   |       |   |   |   hook-pyarrow.py
-|   |       |   |   |   hook-pycountry.py
-|   |       |   |   |   hook-pycparser.py
-|   |       |   |   |   hook-pycrfsuite.py
-|   |       |   |   |   hook-pydantic.py
-|   |       |   |   |   hook-pydicom.py
-|   |       |   |   |   hook-pydivert.py
-|   |       |   |   |   hook-pyecharts.py
-|   |       |   |   |   hook-pyexcel-io.py
-|   |       |   |   |   hook-pyexcel-ods.py
-|   |       |   |   |   hook-pyexcel-ods3.py
-|   |       |   |   |   hook-pyexcel-odsr.py
-|   |       |   |   |   hook-pyexcel-xls.py
-|   |       |   |   |   hook-pyexcel-xlsx.py
-|   |       |   |   |   hook-pyexcel-xlsxw.py
-|   |       |   |   |   hook-pyexcel.py
-|   |       |   |   |   hook-pyexcelerate.Writer.py
-|   |       |   |   |   hook-pyexcel_io.py
-|   |       |   |   |   hook-pyexcel_ods.py
-|   |       |   |   |   hook-pyexcel_ods3.py
-|   |       |   |   |   hook-pyexcel_odsr.py
-|   |       |   |   |   hook-pyexcel_xls.py
-|   |       |   |   |   hook-pyexcel_xlsx.py
-|   |       |   |   |   hook-pyexcel_xlsxw.py
-|   |       |   |   |   hook-pygraphviz.py
-|   |       |   |   |   hook-pygwalker.py
-|   |       |   |   |   hook-pylibmagic.py
-|   |       |   |   |   hook-pylint.py
-|   |       |   |   |   hook-pylsl.py
-|   |       |   |   |   hook-pymediainfo.py
-|   |       |   |   |   hook-pymeshlab.py
-|   |       |   |   |   hook-pymorphy3.py
-|   |       |   |   |   hook-pymssql.py
-|   |       |   |   |   hook-pynng.py
-|   |       |   |   |   hook-pynput.py
-|   |       |   |   |   hook-pyodbc.py
-|   |       |   |   |   hook-pyopencl.py
-|   |       |   |   |   hook-pypdfium2.py
-|   |       |   |   |   hook-pypdfium2_raw.py
-|   |       |   |   |   hook-pypemicro.py
-|   |       |   |   |   hook-pyphen.py
-|   |       |   |   |   hook-pyppeteer.py
-|   |       |   |   |   hook-pyproj.py
-|   |       |   |   |   hook-pypsexec.py
-|   |       |   |   |   hook-pypylon.py
-|   |       |   |   |   hook-pyqtgraph.py
-|   |       |   |   |   hook-pyshark.py
-|   |       |   |   |   hook-pysnmp.py
-|   |       |   |   |   hook-pystray.py
-|   |       |   |   |   hook-PyTaskbar.py
-|   |       |   |   |   hook-pytest.py
-|   |       |   |   |   hook-pythainlp.py
-|   |       |   |   |   hook-pythoncom.py
-|   |       |   |   |   hook-pyttsx.py
-|   |       |   |   |   hook-pyttsx3.py
-|   |       |   |   |   hook-pyviz_comms.py
-|   |       |   |   |   hook-pyvjoy.py
-|   |       |   |   |   hook-pywintypes.py
-|   |       |   |   |   hook-pywt.py
-|   |       |   |   |   hook-qtmodern.py
-|   |       |   |   |   hook-radicale.py
-|   |       |   |   |   hook-raven.py
-|   |       |   |   |   hook-rawpy.py
-|   |       |   |   |   hook-rdflib.py
-|   |       |   |   |   hook-redmine.py
-|   |       |   |   |   hook-regex.py
-|   |       |   |   |   hook-reportlab.lib.utils.py
-|   |       |   |   |   hook-reportlab.pdfbase._fontdata.py
-|   |       |   |   |   hook-resampy.py
-|   |       |   |   |   hook-rlp.py
-|   |       |   |   |   hook-rpy2.py
-|   |       |   |   |   hook-rtree.py
-|   |       |   |   |   hook-ruamel.yaml.py
-|   |       |   |   |   hook-rubicon.py
-|   |       |   |   |   hook-sacremoses.py
-|   |       |   |   |   hook-sam2.py
-|   |       |   |   |   hook-saml2.py
-|   |       |   |   |   hook-schwifty.py
-|   |       |   |   |   hook-seedir.py
-|   |       |   |   |   hook-selectolax.py
-|   |       |   |   |   hook-selenium.py
-|   |       |   |   |   hook-sentry_sdk.py
-|   |       |   |   |   hook-setuptools_scm.py
-|   |       |   |   |   hook-shapely.py
-|   |       |   |   |   hook-shotgun_api3.py
-|   |       |   |   |   hook-simplemma.py
-|   |       |   |   |   hook-skimage.color.py
-|   |       |   |   |   hook-skimage.data.py
-|   |       |   |   |   hook-skimage.draw.py
-|   |       |   |   |   hook-skimage.exposure.py
-|   |       |   |   |   hook-skimage.feature.py
-|   |       |   |   |   hook-skimage.filters.py
-|   |       |   |   |   hook-skimage.future.py
-|   |       |   |   |   hook-skimage.graph.py
-|   |       |   |   |   hook-skimage.io.py
-|   |       |   |   |   hook-skimage.measure.py
-|   |       |   |   |   hook-skimage.metrics.py
-|   |       |   |   |   hook-skimage.morphology.py
-|   |       |   |   |   hook-skimage.py
-|   |       |   |   |   hook-skimage.registration.py
-|   |       |   |   |   hook-skimage.restoration.py
-|   |       |   |   |   hook-skimage.segmentation.py
-|   |       |   |   |   hook-skimage.transform.py
-|   |       |   |   |   hook-sklearn.cluster.py
-|   |       |   |   |   hook-sklearn.externals.array_api_compat.cupy.py
-|   |       |   |   |   hook-sklearn.externals.array_api_compat.dask.array.py
-|   |       |   |   |   hook-sklearn.externals.array_api_compat.numpy.py
-|   |       |   |   |   hook-sklearn.externals.array_api_compat.torch.py
-|   |       |   |   |   hook-sklearn.linear_model.py
-|   |       |   |   |   hook-sklearn.metrics.cluster.py
-|   |       |   |   |   hook-sklearn.metrics.pairwise.py
-|   |       |   |   |   hook-sklearn.metrics.py
-|   |       |   |   |   hook-sklearn.neighbors.py
-|   |       |   |   |   hook-sklearn.py
-|   |       |   |   |   hook-sklearn.tree.py
-|   |       |   |   |   hook-sklearn.utils.py
-|   |       |   |   |   hook-skyfield.py
-|   |       |   |   |   hook-slixmpp.py
-|   |       |   |   |   hook-sounddevice.py
-|   |       |   |   |   hook-soundfile.py
-|   |       |   |   |   hook-sound_lib.py
-|   |       |   |   |   hook-spacy.py
-|   |       |   |   |   hook-speech_recognition.py
-|   |       |   |   |   hook-spiceypy.py
-|   |       |   |   |   hook-spnego.py
-|   |       |   |   |   hook-srsly.msgpack._packer.py
-|   |       |   |   |   hook-sspilib.raw.py
-|   |       |   |   |   hook-statsmodels.tsa.statespace.py
-|   |       |   |   |   hook-stdnum.py
-|   |       |   |   |   hook-storm.database.py
-|   |       |   |   |   hook-sudachipy.py
-|   |       |   |   |   hook-sunpy.py
-|   |       |   |   |   hook-sv_ttk.py
-|   |       |   |   |   hook-swagger_spec_validator.py
-|   |       |   |   |   hook-tableauhyperapi.py
-|   |       |   |   |   hook-tables.py
-|   |       |   |   |   hook-tcod.py
-|   |       |   |   |   hook-tensorflow.py
-|   |       |   |   |   hook-textdistance.py
-|   |       |   |   |   hook-text_unidecode.py
-|   |       |   |   |   hook-thinc.backends.numpy_ops.py
-|   |       |   |   |   hook-thinc.py
-|   |       |   |   |   hook-timezonefinder.py
-|   |       |   |   |   hook-timm.py
-|   |       |   |   |   hook-tinycss2.py
-|   |       |   |   |   hook-tkinterdnd2.py
-|   |       |   |   |   hook-tkinterweb.py
-|   |       |   |   |   hook-tkinterweb_tkhtml.py
-|   |       |   |   |   hook-tkinterweb_tkhtml_extras.py
-|   |       |   |   |   hook-toga.py
-|   |       |   |   |   hook-toga_cocoa.py
-|   |       |   |   |   hook-toga_gtk.py
-|   |       |   |   |   hook-toga_winforms.py
-|   |       |   |   |   hook-torch.py
-|   |       |   |   |   hook-torchao.py
-|   |       |   |   |   hook-torchaudio.py
-|   |       |   |   |   hook-torchtext.py
-|   |       |   |   |   hook-torchvision.io.image.py
-|   |       |   |   |   hook-torchvision.py
-|   |       |   |   |   hook-trame.py
-|   |       |   |   |   hook-trame_client.py
-|   |       |   |   |   hook-trame_code.py
-|   |       |   |   |   hook-trame_components.py
-|   |       |   |   |   hook-trame_datagrid.py
-|   |       |   |   |   hook-trame_deckgl.py
-|   |       |   |   |   hook-trame_formkit.py
-|   |       |   |   |   hook-trame_grid.py
-|   |       |   |   |   hook-trame_iframe.py
-|   |       |   |   |   hook-trame_keycloak.py
-|   |       |   |   |   hook-trame_leaflet.py
-|   |       |   |   |   hook-trame_markdown.py
-|   |       |   |   |   hook-trame_matplotlib.py
-|   |       |   |   |   hook-trame_mesh_streamer.py
-|   |       |   |   |   hook-trame_plotly.py
-|   |       |   |   |   hook-trame_pvui.py
-|   |       |   |   |   hook-trame_quasar.py
-|   |       |   |   |   hook-trame_rca.py
-|   |       |   |   |   hook-trame_router.py
-|   |       |   |   |   hook-trame_simput.py
-|   |       |   |   |   hook-trame_tauri.py
-|   |       |   |   |   hook-trame_tweakpane.py
-|   |       |   |   |   hook-trame_vega.py
-|   |       |   |   |   hook-trame_vtk.py
-|   |       |   |   |   hook-trame_vtk3d.py
-|   |       |   |   |   hook-trame_vtklocal.py
-|   |       |   |   |   hook-trame_vuetify.py
-|   |       |   |   |   hook-trame_xterm.py
-|   |       |   |   |   hook-transformers.py
-|   |       |   |   |   hook-travertino.py
-|   |       |   |   |   hook-trimesh.py
-|   |       |   |   |   hook-triton.py
-|   |       |   |   |   hook-ttkthemes.py
-|   |       |   |   |   hook-ttkwidgets.py
-|   |       |   |   |   hook-tzdata.py
-|   |       |   |   |   hook-tzwhere.py
-|   |       |   |   |   hook-u1db.py
-|   |       |   |   |   hook-ultralytics.py
-|   |       |   |   |   hook-umap.py
-|   |       |   |   |   hook-unidecode.py
-|   |       |   |   |   hook-uniseg.py
-|   |       |   |   |   hook-urllib3.py
-|   |       |   |   |   hook-urllib3_future.py
-|   |       |   |   |   hook-usb.py
-|   |       |   |   |   hook-uuid6.py
-|   |       |   |   |   hook-uvicorn.py
-|   |       |   |   |   hook-uvloop.py
-|   |       |   |   |   hook-vaderSentiment.py
-|   |       |   |   |   hook-vtkmodules.vtkAcceleratorsVTKmCore.py
-|   |       |   |   |   hook-vtkmodules.vtkAcceleratorsVTKmDataModel.py
-|   |       |   |   |   hook-vtkmodules.vtkAcceleratorsVTKmFilters.py
-|   |       |   |   |   hook-vtkmodules.vtkChartsCore.py
-|   |       |   |   |   hook-vtkmodules.vtkCommonColor.py
-|   |       |   |   |   hook-vtkmodules.vtkCommonComputationalGeometry.py
-|   |       |   |   |   hook-vtkmodules.vtkCommonDataModel.py
-|   |       |   |   |   hook-vtkmodules.vtkCommonExecutionModel.py
-|   |       |   |   |   hook-vtkmodules.vtkCommonMath.py
-|   |       |   |   |   hook-vtkmodules.vtkCommonMisc.py
-|   |       |   |   |   hook-vtkmodules.vtkCommonPython.py
-|   |       |   |   |   hook-vtkmodules.vtkCommonSystem.py
-|   |       |   |   |   hook-vtkmodules.vtkCommonTransforms.py
-|   |       |   |   |   hook-vtkmodules.vtkDomainsChemistry.py
-|   |       |   |   |   hook-vtkmodules.vtkDomainsChemistryOpenGL2.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersAMR.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersCellGrid.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersCore.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersExtraction.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersFlowPaths.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersGeneral.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersGeneric.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersGeometry.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersGeometryPreview.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersHybrid.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersHyperTree.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersImaging.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersModeling.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersParallel.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersParallelDIY2.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersParallelImaging.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersParallelStatistics.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersPoints.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersProgrammable.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersPython.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersReduction.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersSelection.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersSMP.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersSources.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersStatistics.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersTemporal.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersTensor.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersTexture.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersTopology.py
-|   |       |   |   |   hook-vtkmodules.vtkFiltersVerdict.py
-|   |       |   |   |   hook-vtkmodules.vtkGeovisCore.py
-|   |       |   |   |   hook-vtkmodules.vtkImagingColor.py
-|   |       |   |   |   hook-vtkmodules.vtkImagingCore.py
-|   |       |   |   |   hook-vtkmodules.vtkImagingFourier.py
-|   |       |   |   |   hook-vtkmodules.vtkImagingGeneral.py
-|   |       |   |   |   hook-vtkmodules.vtkImagingHybrid.py
-|   |       |   |   |   hook-vtkmodules.vtkImagingMath.py
-|   |       |   |   |   hook-vtkmodules.vtkImagingMorphological.py
-|   |       |   |   |   hook-vtkmodules.vtkImagingOpenGL2.py
-|   |       |   |   |   hook-vtkmodules.vtkImagingSources.py
-|   |       |   |   |   hook-vtkmodules.vtkImagingStatistics.py
-|   |       |   |   |   hook-vtkmodules.vtkImagingStencil.py
-|   |       |   |   |   hook-vtkmodules.vtkInfovisCore.py
-|   |       |   |   |   hook-vtkmodules.vtkInfovisLayout.py
-|   |       |   |   |   hook-vtkmodules.vtkInteractionImage.py
-|   |       |   |   |   hook-vtkmodules.vtkInteractionStyle.py
-|   |       |   |   |   hook-vtkmodules.vtkInteractionWidgets.py
-|   |       |   |   |   hook-vtkmodules.vtkIOAMR.py
-|   |       |   |   |   hook-vtkmodules.vtkIOAsynchronous.py
-|   |       |   |   |   hook-vtkmodules.vtkIOAvmesh.py
-|   |       |   |   |   hook-vtkmodules.vtkIOCellGrid.py
-|   |       |   |   |   hook-vtkmodules.vtkIOCesium3DTiles.py
-|   |       |   |   |   hook-vtkmodules.vtkIOCGNSReader.py
-|   |       |   |   |   hook-vtkmodules.vtkIOChemistry.py
-|   |       |   |   |   hook-vtkmodules.vtkIOCityGML.py
-|   |       |   |   |   hook-vtkmodules.vtkIOCONVERGECFD.py
-|   |       |   |   |   hook-vtkmodules.vtkIOCore.py
-|   |       |   |   |   hook-vtkmodules.vtkIOEngys.py
-|   |       |   |   |   hook-vtkmodules.vtkIOEnSight.py
-|   |       |   |   |   hook-vtkmodules.vtkIOERF.py
-|   |       |   |   |   hook-vtkmodules.vtkIOExodus.py
-|   |       |   |   |   hook-vtkmodules.vtkIOExport.py
-|   |       |   |   |   hook-vtkmodules.vtkIOExportGL2PS.py
-|   |       |   |   |   hook-vtkmodules.vtkIOExportPDF.py
-|   |       |   |   |   hook-vtkmodules.vtkIOFDS.py
-|   |       |   |   |   hook-vtkmodules.vtkIOFLUENTCFF.py
-|   |       |   |   |   hook-vtkmodules.vtkIOGeoJSON.py
-|   |       |   |   |   hook-vtkmodules.vtkIOGeometry.py
-|   |       |   |   |   hook-vtkmodules.vtkIOH5part.py
-|   |       |   |   |   hook-vtkmodules.vtkIOH5Rage.py
-|   |       |   |   |   hook-vtkmodules.vtkIOHDF.py
-|   |       |   |   |   hook-vtkmodules.vtkIOImage.py
-|   |       |   |   |   hook-vtkmodules.vtkIOImport.py
-|   |       |   |   |   hook-vtkmodules.vtkIOInfovis.py
-|   |       |   |   |   hook-vtkmodules.vtkIOIOSS.py
-|   |       |   |   |   hook-vtkmodules.vtkIOLANLX3D.py
-|   |       |   |   |   hook-vtkmodules.vtkIOLegacy.py
-|   |       |   |   |   hook-vtkmodules.vtkIOLSDyna.py
-|   |       |   |   |   hook-vtkmodules.vtkIOMINC.py
-|   |       |   |   |   hook-vtkmodules.vtkIOMotionFX.py
-|   |       |   |   |   hook-vtkmodules.vtkIOMovie.py
-|   |       |   |   |   hook-vtkmodules.vtkIONetCDF.py
-|   |       |   |   |   hook-vtkmodules.vtkIOOggTheora.py
-|   |       |   |   |   hook-vtkmodules.vtkIOOMF.py
-|   |       |   |   |   hook-vtkmodules.vtkIOParallel.py
-|   |       |   |   |   hook-vtkmodules.vtkIOParallelExodus.py
-|   |       |   |   |   hook-vtkmodules.vtkIOParallelLSDyna.py
-|   |       |   |   |   hook-vtkmodules.vtkIOParallelXML.py
-|   |       |   |   |   hook-vtkmodules.vtkIOPIO.py
-|   |       |   |   |   hook-vtkmodules.vtkIOPLY.py
-|   |       |   |   |   hook-vtkmodules.vtkIOSegY.py
-|   |       |   |   |   hook-vtkmodules.vtkIOSQL.py
-|   |       |   |   |   hook-vtkmodules.vtkIOTecplotTable.py
-|   |       |   |   |   hook-vtkmodules.vtkIOTRUCHAS.py
-|   |       |   |   |   hook-vtkmodules.vtkIOVeraOut.py
-|   |       |   |   |   hook-vtkmodules.vtkIOVideo.py
-|   |       |   |   |   hook-vtkmodules.vtkIOVPIC.py
-|   |       |   |   |   hook-vtkmodules.vtkIOXdmf2.py
-|   |       |   |   |   hook-vtkmodules.vtkIOXML.py
-|   |       |   |   |   hook-vtkmodules.vtkIOXMLParser.py
-|   |       |   |   |   hook-vtkmodules.vtkParallelCore.py
-|   |       |   |   |   hook-vtkmodules.vtkPythonContext2D.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingAnnotation.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingCellGrid.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingContext2D.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingContextOpenGL2.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingCore.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingExternal.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingFreeType.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingGL2PSOpenGL2.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingGridAxes.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingHyperTreeGrid.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingImage.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingLabel.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingLICOpenGL2.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingLOD.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingMatplotlib.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingOpenGL2.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingParallel.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingSceneGraph.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingUI.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingVolume.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingVolumeAMR.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingVolumeOpenGL2.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingVR.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingVRModels.py
-|   |       |   |   |   hook-vtkmodules.vtkRenderingVtkJS.py
-|   |       |   |   |   hook-vtkmodules.vtkSerializationManager.py
-|   |       |   |   |   hook-vtkmodules.vtkTestingRendering.py
-|   |       |   |   |   hook-vtkmodules.vtkTestingSerialization.py
-|   |       |   |   |   hook-vtkmodules.vtkViewsContext2D.py
-|   |       |   |   |   hook-vtkmodules.vtkViewsCore.py
-|   |       |   |   |   hook-vtkmodules.vtkViewsInfovis.py
-|   |       |   |   |   hook-vtkmodules.vtkWebCore.py
-|   |       |   |   |   hook-vtkmodules.vtkWebGLExporter.py
-|   |       |   |   |   hook-vtkpython.py
-|   |       |   |   |   hook-wavefile.py
-|   |       |   |   |   hook-weasyprint.py
-|   |       |   |   |   hook-web3.py
-|   |       |   |   |   hook-webassets.py
-|   |       |   |   |   hook-webrtcvad.py
-|   |       |   |   |   hook-websockets.py
-|   |       |   |   |   hook-webview.py
-|   |       |   |   |   hook-win32com.py
-|   |       |   |   |   hook-wordcloud.py
-|   |       |   |   |   hook-workflow.py
-|   |       |   |   |   hook-wx.lib.activex.py
-|   |       |   |   |   hook-wx.lib.pubsub.py
-|   |       |   |   |   hook-wx.xrc.py
-|   |       |   |   |   hook-xarray.py
-|   |       |   |   |   hook-Xlib.py
-|   |       |   |   |   hook-xml.dom.html.HTMLDocument.py
-|   |       |   |   |   hook-xml.sax.saxexts.py
-|   |       |   |   |   hook-xmldiff.py
-|   |       |   |   |   hook-xmlschema.py
-|   |       |   |   |   hook-xsge_gui.py
-|   |       |   |   |   hook-xyzservices.py
-|   |       |   |   |   hook-yapf_third_party.py
-|   |       |   |   |   hook-z3c.rml.py
-|   |       |   |   |   hook-zarr.py
-|   |       |   |   |   hook-zeep.py
-|   |       |   |   |   hook-zmq.py
-|   |       |   |   |   hook-zoneinfo.py
-|   |       |   |   |   hook-_mssql.py
-|   |       |   |   |   hook-_mysql.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           hook-accessible_output2.cpython-313.pyc
-|   |       |   |           hook-adbutils.cpython-313.pyc
-|   |       |   |           hook-adios.cpython-313.pyc
-|   |       |   |           hook-afmformats.cpython-313.pyc
-|   |       |   |           hook-aliyunsdkcore.cpython-313.pyc
-|   |       |   |           hook-altair.cpython-313.pyc
-|   |       |   |           hook-amazonproduct.cpython-313.pyc
-|   |       |   |           hook-anyio.cpython-313.pyc
-|   |       |   |           hook-apkutils.cpython-313.pyc
-|   |       |   |           hook-appdirs.cpython-313.pyc
-|   |       |   |           hook-appy.pod.cpython-313.pyc
-|   |       |   |           hook-apscheduler.cpython-313.pyc
-|   |       |   |           hook-argon2.cpython-313.pyc
-|   |       |   |           hook-astor.cpython-313.pyc
-|   |       |   |           hook-astroid.cpython-313.pyc
-|   |       |   |           hook-astropy.cpython-313.pyc
-|   |       |   |           hook-astropy_iers_data.cpython-313.pyc
-|   |       |   |           hook-av.cpython-313.pyc
-|   |       |   |           hook-avro.cpython-313.pyc
-|   |       |   |           hook-azurerm.cpython-313.pyc
-|   |       |   |           hook-backports.cpython-313.pyc
-|   |       |   |           hook-backports.zoneinfo.cpython-313.pyc
-|   |       |   |           hook-bacon.cpython-313.pyc
-|   |       |   |           hook-bcrypt.cpython-313.pyc
-|   |       |   |           hook-bitsandbytes.cpython-313.pyc
-|   |       |   |           hook-black.cpython-313.pyc
-|   |       |   |           hook-bleak.cpython-313.pyc
-|   |       |   |           hook-blib2to3.cpython-313.pyc
-|   |       |   |           hook-blspy.cpython-313.pyc
-|   |       |   |           hook-bokeh.cpython-313.pyc
-|   |       |   |           hook-boto.cpython-313.pyc
-|   |       |   |           hook-boto3.cpython-313.pyc
-|   |       |   |           hook-botocore.cpython-313.pyc
-|   |       |   |           hook-branca.cpython-313.pyc
-|   |       |   |           hook-BTrees.cpython-313.pyc
-|   |       |   |           hook-cairocffi.cpython-313.pyc
-|   |       |   |           hook-cairosvg.cpython-313.pyc
-|   |       |   |           hook-capstone.cpython-313.pyc
-|   |       |   |           hook-cassandra.cpython-313.pyc
-|   |       |   |           hook-celpy.cpython-313.pyc
-|   |       |   |           hook-certifi.cpython-313.pyc
-|   |       |   |           hook-cftime.cpython-313.pyc
-|   |       |   |           hook-cf_units.cpython-313.pyc
-|   |       |   |           hook-charset_normalizer.cpython-313.pyc
-|   |       |   |           hook-cloudpickle.cpython-313.pyc
-|   |       |   |           hook-cloudscraper.cpython-313.pyc
-|   |       |   |           hook-clr.cpython-313.pyc
-|   |       |   |           hook-clr_loader.cpython-313.pyc
-|   |       |   |           hook-cmocean.cpython-313.pyc
-|   |       |   |           hook-compliance_checker.cpython-313.pyc
-|   |       |   |           hook-comtypes.client.cpython-313.pyc
-|   |       |   |           hook-countrycode.cpython-313.pyc
-|   |       |   |           hook-countryinfo.cpython-313.pyc
-|   |       |   |           hook-Crypto.cpython-313.pyc
-|   |       |   |           hook-Cryptodome.cpython-313.pyc
-|   |       |   |           hook-cryptography.cpython-313.pyc
-|   |       |   |           hook-CTkMessagebox.cpython-313.pyc
-|   |       |   |           hook-cumm.cpython-313.pyc
-|   |       |   |           hook-customtkinter.cpython-313.pyc
-|   |       |   |           hook-cv2.cpython-313.pyc
-|   |       |   |           hook-cx_Oracle.cpython-313.pyc
-|   |       |   |           hook-cytoolz.itertoolz.cpython-313.pyc
-|   |       |   |           hook-dash.cpython-313.pyc
-|   |       |   |           hook-dash_bootstrap_components.cpython-313.pyc
-|   |       |   |           hook-dash_core_components.cpython-313.pyc
-|   |       |   |           hook-dash_html_components.cpython-313.pyc
-|   |       |   |           hook-dash_renderer.cpython-313.pyc
-|   |       |   |           hook-dash_table.cpython-313.pyc
-|   |       |   |           hook-dash_uploader.cpython-313.pyc
-|   |       |   |           hook-dask.cpython-313.pyc
-|   |       |   |           hook-datasets.cpython-313.pyc
-|   |       |   |           hook-dateparser.cpython-313.pyc
-|   |       |   |           hook-dateparser.utils.strptime.cpython-313.pyc
-|   |       |   |           hook-dateutil.cpython-313.pyc
-|   |       |   |           hook-dbus_fast.cpython-313.pyc
-|   |       |   |           hook-dclab.cpython-313.pyc
-|   |       |   |           hook-detectron2.cpython-313.pyc
-|   |       |   |           hook-discid.cpython-313.pyc
-|   |       |   |           hook-distorm3.cpython-313.pyc
-|   |       |   |           hook-distributed.cpython-313.pyc
-|   |       |   |           hook-dns.rdata.cpython-313.pyc
-|   |       |   |           hook-docutils.cpython-313.pyc
-|   |       |   |           hook-docx.cpython-313.pyc
-|   |       |   |           hook-docx2pdf.cpython-313.pyc
-|   |       |   |           hook-duckdb.cpython-313.pyc
-|   |       |   |           hook-dynaconf.cpython-313.pyc
-|   |       |   |           hook-easyocr.cpython-313.pyc
-|   |       |   |           hook-eccodeslib.cpython-313.pyc
-|   |       |   |           hook-eckitlib.cpython-313.pyc
-|   |       |   |           hook-eel.cpython-313.pyc
-|   |       |   |           hook-emoji.cpython-313.pyc
-|   |       |   |           hook-enchant.cpython-313.pyc
-|   |       |   |           hook-eng_to_ipa.cpython-313.pyc
-|   |       |   |           hook-ens.cpython-313.pyc
-|   |       |   |           hook-enzyme.parsers.ebml.core.cpython-313.pyc
-|   |       |   |           hook-eth_abi.cpython-313.pyc
-|   |       |   |           hook-eth_account.cpython-313.pyc
-|   |       |   |           hook-eth_hash.cpython-313.pyc
-|   |       |   |           hook-eth_keyfile.cpython-313.pyc
-|   |       |   |           hook-eth_keys.cpython-313.pyc
-|   |       |   |           hook-eth_rlp.cpython-313.pyc
-|   |       |   |           hook-eth_typing.cpython-313.pyc
-|   |       |   |           hook-eth_utils.cpython-313.pyc
-|   |       |   |           hook-eth_utils.network.cpython-313.pyc
-|   |       |   |           hook-exchangelib.cpython-313.pyc
-|   |       |   |           hook-fabric.cpython-313.pyc
-|   |       |   |           hook-fairscale.cpython-313.pyc
-|   |       |   |           hook-faker.cpython-313.pyc
-|   |       |   |           hook-falcon.cpython-313.pyc
-|   |       |   |           hook-fastai.cpython-313.pyc
-|   |       |   |           hook-fastparquet.cpython-313.pyc
-|   |       |   |           hook-fckitlib.cpython-313.pyc
-|   |       |   |           hook-ffpyplayer.cpython-313.pyc
-|   |       |   |           hook-fiona.cpython-313.pyc
-|   |       |   |           hook-flask_compress.cpython-313.pyc
-|   |       |   |           hook-flask_restx.cpython-313.pyc
-|   |       |   |           hook-flex.cpython-313.pyc
-|   |       |   |           hook-flirpy.cpython-313.pyc
-|   |       |   |           hook-fmpy.cpython-313.pyc
-|   |       |   |           hook-folium.cpython-313.pyc
-|   |       |   |           hook-freetype.cpython-313.pyc
-|   |       |   |           hook-frictionless.cpython-313.pyc
-|   |       |   |           hook-fsspec.cpython-313.pyc
-|   |       |   |           hook-fvcore.nn.cpython-313.pyc
-|   |       |   |           hook-gadfly.cpython-313.pyc
-|   |       |   |           hook-gbulb.cpython-313.pyc
-|   |       |   |           hook-gcloud.cpython-313.pyc
-|   |       |   |           hook-geopandas.cpython-313.pyc
-|   |       |   |           hook-gitlab.cpython-313.pyc
-|   |       |   |           hook-globus_sdk.cpython-313.pyc
-|   |       |   |           hook-gmplot.cpython-313.pyc
-|   |       |   |           hook-gmsh.cpython-313.pyc
-|   |       |   |           hook-gooey.cpython-313.pyc
-|   |       |   |           hook-google.api_core.cpython-313.pyc
-|   |       |   |           hook-google.cloud.bigquery.cpython-313.pyc
-|   |       |   |           hook-google.cloud.core.cpython-313.pyc
-|   |       |   |           hook-google.cloud.kms_v1.cpython-313.pyc
-|   |       |   |           hook-google.cloud.pubsub_v1.cpython-313.pyc
-|   |       |   |           hook-google.cloud.speech.cpython-313.pyc
-|   |       |   |           hook-google.cloud.storage.cpython-313.pyc
-|   |       |   |           hook-google.cloud.translate.cpython-313.pyc
-|   |       |   |           hook-googleapiclient.model.cpython-313.pyc
-|   |       |   |           hook-grapheme.cpython-313.pyc
-|   |       |   |           hook-graphql_query.cpython-313.pyc
-|   |       |   |           hook-great_expectations.cpython-313.pyc
-|   |       |   |           hook-gribapi.cpython-313.pyc
-|   |       |   |           hook-grpc.cpython-313.pyc
-|   |       |   |           hook-gtk.cpython-313.pyc
-|   |       |   |           hook-h3.cpython-313.pyc
-|   |       |   |           hook-h5py.cpython-313.pyc
-|   |       |   |           hook-hdf5plugin.cpython-313.pyc
-|   |       |   |           hook-hexbytes.cpython-313.pyc
-|   |       |   |           hook-HtmlTestRunner.cpython-313.pyc
-|   |       |   |           hook-httplib2.cpython-313.pyc
-|   |       |   |           hook-humanize.cpython-313.pyc
-|   |       |   |           hook-hydra.cpython-313.pyc
-|   |       |   |           hook-ijson.cpython-313.pyc
-|   |       |   |           hook-imageio.cpython-313.pyc
-|   |       |   |           hook-imageio_ffmpeg.cpython-313.pyc
-|   |       |   |           hook-iminuit.cpython-313.pyc
-|   |       |   |           hook-intake.cpython-313.pyc
-|   |       |   |           hook-IPython.cpython-313.pyc
-|   |       |   |           hook-iso639.cpython-313.pyc
-|   |       |   |           hook-itk.cpython-313.pyc
-|   |       |   |           hook-jaraco.text.cpython-313.pyc
-|   |       |   |           hook-jedi.cpython-313.pyc
-|   |       |   |           hook-jieba.cpython-313.pyc
-|   |       |   |           hook-jinja2.cpython-313.pyc
-|   |       |   |           hook-jinxed.cpython-313.pyc
-|   |       |   |           hook-jira.cpython-313.pyc
-|   |       |   |           hook-jsonpath_rw_ext.cpython-313.pyc
-|   |       |   |           hook-jsonrpcserver.cpython-313.pyc
-|   |       |   |           hook-jsonschema.cpython-313.pyc
-|   |       |   |           hook-jsonschema_specifications.cpython-313.pyc
-|   |       |   |           hook-jupyterlab.cpython-313.pyc
-|   |       |   |           hook-kaleido.cpython-313.pyc
-|   |       |   |           hook-khmernltk.cpython-313.pyc
-|   |       |   |           hook-kinterbasdb.cpython-313.pyc
-|   |       |   |           hook-langchain.cpython-313.pyc
-|   |       |   |           hook-langchain_classic.cpython-313.pyc
-|   |       |   |           hook-langcodes.cpython-313.pyc
-|   |       |   |           hook-langdetect.cpython-313.pyc
-|   |       |   |           hook-laonlp.cpython-313.pyc
-|   |       |   |           hook-lark.cpython-313.pyc
-|   |       |   |           hook-ldfparser.cpython-313.pyc
-|   |       |   |           hook-lensfunpy.cpython-313.pyc
-|   |       |   |           hook-libaudioverse.cpython-313.pyc
-|   |       |   |           hook-librosa.cpython-313.pyc
-|   |       |   |           hook-lightgbm.cpython-313.pyc
-|   |       |   |           hook-lightning.cpython-313.pyc
-|   |       |   |           hook-limits.cpython-313.pyc
-|   |       |   |           hook-linear_operator.cpython-313.pyc
-|   |       |   |           hook-lingua.cpython-313.pyc
-|   |       |   |           hook-litestar.cpython-313.pyc
-|   |       |   |           hook-llvmlite.cpython-313.pyc
-|   |       |   |           hook-logilab.cpython-313.pyc
-|   |       |   |           hook-lxml.cpython-313.pyc
-|   |       |   |           hook-lxml.etree.cpython-313.pyc
-|   |       |   |           hook-lxml.isoschematron.cpython-313.pyc
-|   |       |   |           hook-lxml.objectify.cpython-313.pyc
-|   |       |   |           hook-lz4.cpython-313.pyc
-|   |       |   |           hook-magic.cpython-313.pyc
-|   |       |   |           hook-mako.codegen.cpython-313.pyc
-|   |       |   |           hook-mariadb.cpython-313.pyc
-|   |       |   |           hook-markdown.cpython-313.pyc
-|   |       |   |           hook-mecab.cpython-313.pyc
-|   |       |   |           hook-metpy.cpython-313.pyc
-|   |       |   |           hook-migrate.cpython-313.pyc
-|   |       |   |           hook-mimesis.cpython-313.pyc
-|   |       |   |           hook-minecraft_launcher_lib.cpython-313.pyc
-|   |       |   |           hook-mistune.cpython-313.pyc
-|   |       |   |           hook-mnemonic.cpython-313.pyc
-|   |       |   |           hook-monai.cpython-313.pyc
-|   |       |   |           hook-moviepy.audio.fx.all.cpython-313.pyc
-|   |       |   |           hook-moviepy.video.fx.all.cpython-313.pyc
-|   |       |   |           hook-mpl_toolkits.basemap.cpython-313.pyc
-|   |       |   |           hook-msoffcrypto.cpython-313.pyc
-|   |       |   |           hook-nacl.cpython-313.pyc
-|   |       |   |           hook-names.cpython-313.pyc
-|   |       |   |           hook-nanite.cpython-313.pyc
-|   |       |   |           hook-narwhals.cpython-313.pyc
-|   |       |   |           hook-nbconvert.cpython-313.pyc
-|   |       |   |           hook-nbdime.cpython-313.pyc
-|   |       |   |           hook-nbformat.cpython-313.pyc
-|   |       |   |           hook-nbt.cpython-313.pyc
-|   |       |   |           hook-ncclient.cpython-313.pyc
-|   |       |   |           hook-netCDF4.cpython-313.pyc
-|   |       |   |           hook-nicegui.cpython-313.pyc
-|   |       |   |           hook-niquests.cpython-313.pyc
-|   |       |   |           hook-nltk.cpython-313.pyc
-|   |       |   |           hook-nnpy.cpython-313.pyc
-|   |       |   |           hook-notebook.cpython-313.pyc
-|   |       |   |           hook-numba.cpython-313.pyc
-|   |       |   |           hook-numbers_parser.cpython-313.pyc
-|   |       |   |           hook-numcodecs.cpython-313.pyc
-|   |       |   |           hook-nvidia.cublas.cpython-313.pyc
-|   |       |   |           hook-nvidia.cuda_cupti.cpython-313.pyc
-|   |       |   |           hook-nvidia.cuda_nvcc.cpython-313.pyc
-|   |       |   |           hook-nvidia.cuda_nvrtc.cpython-313.pyc
-|   |       |   |           hook-nvidia.cuda_runtime.cpython-313.pyc
-|   |       |   |           hook-nvidia.cudnn.cpython-313.pyc
-|   |       |   |           hook-nvidia.cufft.cpython-313.pyc
-|   |       |   |           hook-nvidia.curand.cpython-313.pyc
-|   |       |   |           hook-nvidia.cusolver.cpython-313.pyc
-|   |       |   |           hook-nvidia.cusparse.cpython-313.pyc
-|   |       |   |           hook-nvidia.nccl.cpython-313.pyc
-|   |       |   |           hook-nvidia.nvjitlink.cpython-313.pyc
-|   |       |   |           hook-nvidia.nvtx.cpython-313.pyc
-|   |       |   |           hook-office365.cpython-313.pyc
-|   |       |   |           hook-onnxruntime.cpython-313.pyc
-|   |       |   |           hook-opencc.cpython-313.pyc
-|   |       |   |           hook-OpenGL.cpython-313.pyc
-|   |       |   |           hook-OpenGL_accelerate.cpython-313.pyc
-|   |       |   |           hook-openpyxl.cpython-313.pyc
-|   |       |   |           hook-opentelemetry.cpython-313.pyc
-|   |       |   |           hook-orjson.cpython-313.pyc
-|   |       |   |           hook-osgeo.cpython-313.pyc
-|   |       |   |           hook-pandas_flavor.cpython-313.pyc
-|   |       |   |           hook-panel.cpython-313.pyc
-|   |       |   |           hook-parsedatetime.cpython-313.pyc
-|   |       |   |           hook-parso.cpython-313.pyc
-|   |       |   |           hook-passlib.cpython-313.pyc
-|   |       |   |           hook-paste.exceptions.reporter.cpython-313.pyc
-|   |       |   |           hook-patoolib.cpython-313.pyc
-|   |       |   |           hook-patsy.cpython-313.pyc
-|   |       |   |           hook-pdfminer.cpython-313.pyc
-|   |       |   |           hook-pendulum.cpython-313.pyc
-|   |       |   |           hook-phonenumbers.cpython-313.pyc
-|   |       |   |           hook-pingouin.cpython-313.pyc
-|   |       |   |           hook-pint.cpython-313.pyc
-|   |       |   |           hook-pinyin.cpython-313.pyc
-|   |       |   |           hook-platformdirs.cpython-313.pyc
-|   |       |   |           hook-plotly.cpython-313.pyc
-|   |       |   |           hook-pointcept.cpython-313.pyc
-|   |       |   |           hook-pptx.cpython-313.pyc
-|   |       |   |           hook-prettytable.cpython-313.pyc
-|   |       |   |           hook-psutil.cpython-313.pyc
-|   |       |   |           hook-psychopy.cpython-313.pyc
-|   |       |   |           hook-psycopg2.cpython-313.pyc
-|   |       |   |           hook-psycopg_binary.cpython-313.pyc
-|   |       |   |           hook-publicsuffix2.cpython-313.pyc
-|   |       |   |           hook-pubsub.core.cpython-313.pyc
-|   |       |   |           hook-puremagic.cpython-313.pyc
-|   |       |   |           hook-py.cpython-313.pyc
-|   |       |   |           hook-pyarrow.cpython-313.pyc
-|   |       |   |           hook-pycountry.cpython-313.pyc
-|   |       |   |           hook-pycparser.cpython-313.pyc
-|   |       |   |           hook-pycrfsuite.cpython-313.pyc
-|   |       |   |           hook-pydantic.cpython-313.pyc
-|   |       |   |           hook-pydicom.cpython-313.pyc
-|   |       |   |           hook-pydivert.cpython-313.pyc
-|   |       |   |           hook-pyecharts.cpython-313.pyc
-|   |       |   |           hook-pyexcel-io.cpython-313.pyc
-|   |       |   |           hook-pyexcel-ods.cpython-313.pyc
-|   |       |   |           hook-pyexcel-ods3.cpython-313.pyc
-|   |       |   |           hook-pyexcel-odsr.cpython-313.pyc
-|   |       |   |           hook-pyexcel-xls.cpython-313.pyc
-|   |       |   |           hook-pyexcel-xlsx.cpython-313.pyc
-|   |       |   |           hook-pyexcel-xlsxw.cpython-313.pyc
-|   |       |   |           hook-pyexcel.cpython-313.pyc
-|   |       |   |           hook-pyexcelerate.Writer.cpython-313.pyc
-|   |       |   |           hook-pyexcel_io.cpython-313.pyc
-|   |       |   |           hook-pyexcel_ods.cpython-313.pyc
-|   |       |   |           hook-pyexcel_ods3.cpython-313.pyc
-|   |       |   |           hook-pyexcel_odsr.cpython-313.pyc
-|   |       |   |           hook-pyexcel_xls.cpython-313.pyc
-|   |       |   |           hook-pyexcel_xlsx.cpython-313.pyc
-|   |       |   |           hook-pyexcel_xlsxw.cpython-313.pyc
-|   |       |   |           hook-pygraphviz.cpython-313.pyc
-|   |       |   |           hook-pygwalker.cpython-313.pyc
-|   |       |   |           hook-pylibmagic.cpython-313.pyc
-|   |       |   |           hook-pylint.cpython-313.pyc
-|   |       |   |           hook-pylsl.cpython-313.pyc
-|   |       |   |           hook-pymediainfo.cpython-313.pyc
-|   |       |   |           hook-pymeshlab.cpython-313.pyc
-|   |       |   |           hook-pymorphy3.cpython-313.pyc
-|   |       |   |           hook-pymssql.cpython-313.pyc
-|   |       |   |           hook-pynng.cpython-313.pyc
-|   |       |   |           hook-pynput.cpython-313.pyc
-|   |       |   |           hook-pyodbc.cpython-313.pyc
-|   |       |   |           hook-pyopencl.cpython-313.pyc
-|   |       |   |           hook-pypdfium2.cpython-313.pyc
-|   |       |   |           hook-pypdfium2_raw.cpython-313.pyc
-|   |       |   |           hook-pypemicro.cpython-313.pyc
-|   |       |   |           hook-pyphen.cpython-313.pyc
-|   |       |   |           hook-pyppeteer.cpython-313.pyc
-|   |       |   |           hook-pyproj.cpython-313.pyc
-|   |       |   |           hook-pypsexec.cpython-313.pyc
-|   |       |   |           hook-pypylon.cpython-313.pyc
-|   |       |   |           hook-pyqtgraph.cpython-313.pyc
-|   |       |   |           hook-pyshark.cpython-313.pyc
-|   |       |   |           hook-pysnmp.cpython-313.pyc
-|   |       |   |           hook-pystray.cpython-313.pyc
-|   |       |   |           hook-PyTaskbar.cpython-313.pyc
-|   |       |   |           hook-pytest.cpython-313.pyc
-|   |       |   |           hook-pythainlp.cpython-313.pyc
-|   |       |   |           hook-pythoncom.cpython-313.pyc
-|   |       |   |           hook-pyttsx.cpython-313.pyc
-|   |       |   |           hook-pyttsx3.cpython-313.pyc
-|   |       |   |           hook-pyviz_comms.cpython-313.pyc
-|   |       |   |           hook-pyvjoy.cpython-313.pyc
-|   |       |   |           hook-pywintypes.cpython-313.pyc
-|   |       |   |           hook-pywt.cpython-313.pyc
-|   |       |   |           hook-qtmodern.cpython-313.pyc
-|   |       |   |           hook-radicale.cpython-313.pyc
-|   |       |   |           hook-raven.cpython-313.pyc
-|   |       |   |           hook-rawpy.cpython-313.pyc
-|   |       |   |           hook-rdflib.cpython-313.pyc
-|   |       |   |           hook-redmine.cpython-313.pyc
-|   |       |   |           hook-regex.cpython-313.pyc
-|   |       |   |           hook-reportlab.lib.utils.cpython-313.pyc
-|   |       |   |           hook-reportlab.pdfbase._fontdata.cpython-313.pyc
-|   |       |   |           hook-resampy.cpython-313.pyc
-|   |       |   |           hook-rlp.cpython-313.pyc
-|   |       |   |           hook-rpy2.cpython-313.pyc
-|   |       |   |           hook-rtree.cpython-313.pyc
-|   |       |   |           hook-ruamel.yaml.cpython-313.pyc
-|   |       |   |           hook-rubicon.cpython-313.pyc
-|   |       |   |           hook-sacremoses.cpython-313.pyc
-|   |       |   |           hook-sam2.cpython-313.pyc
-|   |       |   |           hook-saml2.cpython-313.pyc
-|   |       |   |           hook-schwifty.cpython-313.pyc
-|   |       |   |           hook-seedir.cpython-313.pyc
-|   |       |   |           hook-selectolax.cpython-313.pyc
-|   |       |   |           hook-selenium.cpython-313.pyc
-|   |       |   |           hook-sentry_sdk.cpython-313.pyc
-|   |       |   |           hook-setuptools_scm.cpython-313.pyc
-|   |       |   |           hook-shapely.cpython-313.pyc
-|   |       |   |           hook-shotgun_api3.cpython-313.pyc
-|   |       |   |           hook-simplemma.cpython-313.pyc
-|   |       |   |           hook-skimage.color.cpython-313.pyc
-|   |       |   |           hook-skimage.cpython-313.pyc
-|   |       |   |           hook-skimage.data.cpython-313.pyc
-|   |       |   |           hook-skimage.draw.cpython-313.pyc
-|   |       |   |           hook-skimage.exposure.cpython-313.pyc
-|   |       |   |           hook-skimage.feature.cpython-313.pyc
-|   |       |   |           hook-skimage.filters.cpython-313.pyc
-|   |       |   |           hook-skimage.future.cpython-313.pyc
-|   |       |   |           hook-skimage.graph.cpython-313.pyc
-|   |       |   |           hook-skimage.io.cpython-313.pyc
-|   |       |   |           hook-skimage.measure.cpython-313.pyc
-|   |       |   |           hook-skimage.metrics.cpython-313.pyc
-|   |       |   |           hook-skimage.morphology.cpython-313.pyc
-|   |       |   |           hook-skimage.registration.cpython-313.pyc
-|   |       |   |           hook-skimage.restoration.cpython-313.pyc
-|   |       |   |           hook-skimage.segmentation.cpython-313.pyc
-|   |       |   |           hook-skimage.transform.cpython-313.pyc
-|   |       |   |           hook-sklearn.cluster.cpython-313.pyc
-|   |       |   |           hook-sklearn.cpython-313.pyc
-|   |       |   |           hook-sklearn.externals.array_api_compat.cupy.cpython-313.pyc
-|   |       |   |           hook-sklearn.externals.array_api_compat.dask.array.cpython-313.pyc
-|   |       |   |           hook-sklearn.externals.array_api_compat.numpy.cpython-313.pyc
-|   |       |   |           hook-sklearn.externals.array_api_compat.torch.cpython-313.pyc
-|   |       |   |           hook-sklearn.linear_model.cpython-313.pyc
-|   |       |   |           hook-sklearn.metrics.cluster.cpython-313.pyc
-|   |       |   |           hook-sklearn.metrics.cpython-313.pyc
-|   |       |   |           hook-sklearn.metrics.pairwise.cpython-313.pyc
-|   |       |   |           hook-sklearn.neighbors.cpython-313.pyc
-|   |       |   |           hook-sklearn.tree.cpython-313.pyc
-|   |       |   |           hook-sklearn.utils.cpython-313.pyc
-|   |       |   |           hook-skyfield.cpython-313.pyc
-|   |       |   |           hook-slixmpp.cpython-313.pyc
-|   |       |   |           hook-sounddevice.cpython-313.pyc
-|   |       |   |           hook-soundfile.cpython-313.pyc
-|   |       |   |           hook-sound_lib.cpython-313.pyc
-|   |       |   |           hook-spacy.cpython-313.pyc
-|   |       |   |           hook-speech_recognition.cpython-313.pyc
-|   |       |   |           hook-spiceypy.cpython-313.pyc
-|   |       |   |           hook-spnego.cpython-313.pyc
-|   |       |   |           hook-srsly.msgpack._packer.cpython-313.pyc
-|   |       |   |           hook-sspilib.raw.cpython-313.pyc
-|   |       |   |           hook-statsmodels.tsa.statespace.cpython-313.pyc
-|   |       |   |           hook-stdnum.cpython-313.pyc
-|   |       |   |           hook-storm.database.cpython-313.pyc
-|   |       |   |           hook-sudachipy.cpython-313.pyc
-|   |       |   |           hook-sunpy.cpython-313.pyc
-|   |       |   |           hook-sv_ttk.cpython-313.pyc
-|   |       |   |           hook-swagger_spec_validator.cpython-313.pyc
-|   |       |   |           hook-tableauhyperapi.cpython-313.pyc
-|   |       |   |           hook-tables.cpython-313.pyc
-|   |       |   |           hook-tcod.cpython-313.pyc
-|   |       |   |           hook-tensorflow.cpython-313.pyc
-|   |       |   |           hook-textdistance.cpython-313.pyc
-|   |       |   |           hook-text_unidecode.cpython-313.pyc
-|   |       |   |           hook-thinc.backends.numpy_ops.cpython-313.pyc
-|   |       |   |           hook-thinc.cpython-313.pyc
-|   |       |   |           hook-timezonefinder.cpython-313.pyc
-|   |       |   |           hook-timm.cpython-313.pyc
-|   |       |   |           hook-tinycss2.cpython-313.pyc
-|   |       |   |           hook-tkinterdnd2.cpython-313.pyc
-|   |       |   |           hook-tkinterweb.cpython-313.pyc
-|   |       |   |           hook-tkinterweb_tkhtml.cpython-313.pyc
-|   |       |   |           hook-tkinterweb_tkhtml_extras.cpython-313.pyc
-|   |       |   |           hook-toga.cpython-313.pyc
-|   |       |   |           hook-toga_cocoa.cpython-313.pyc
-|   |       |   |           hook-toga_gtk.cpython-313.pyc
-|   |       |   |           hook-toga_winforms.cpython-313.pyc
-|   |       |   |           hook-torch.cpython-313.pyc
-|   |       |   |           hook-torchao.cpython-313.pyc
-|   |       |   |           hook-torchaudio.cpython-313.pyc
-|   |       |   |           hook-torchtext.cpython-313.pyc
-|   |       |   |           hook-torchvision.cpython-313.pyc
-|   |       |   |           hook-torchvision.io.image.cpython-313.pyc
-|   |       |   |           hook-trame.cpython-313.pyc
-|   |       |   |           hook-trame_client.cpython-313.pyc
-|   |       |   |           hook-trame_code.cpython-313.pyc
-|   |       |   |           hook-trame_components.cpython-313.pyc
-|   |       |   |           hook-trame_datagrid.cpython-313.pyc
-|   |       |   |           hook-trame_deckgl.cpython-313.pyc
-|   |       |   |           hook-trame_formkit.cpython-313.pyc
-|   |       |   |           hook-trame_grid.cpython-313.pyc
-|   |       |   |           hook-trame_iframe.cpython-313.pyc
-|   |       |   |           hook-trame_keycloak.cpython-313.pyc
-|   |       |   |           hook-trame_leaflet.cpython-313.pyc
-|   |       |   |           hook-trame_markdown.cpython-313.pyc
-|   |       |   |           hook-trame_matplotlib.cpython-313.pyc
-|   |       |   |           hook-trame_mesh_streamer.cpython-313.pyc
-|   |       |   |           hook-trame_plotly.cpython-313.pyc
-|   |       |   |           hook-trame_pvui.cpython-313.pyc
-|   |       |   |           hook-trame_quasar.cpython-313.pyc
-|   |       |   |           hook-trame_rca.cpython-313.pyc
-|   |       |   |           hook-trame_router.cpython-313.pyc
-|   |       |   |           hook-trame_simput.cpython-313.pyc
-|   |       |   |           hook-trame_tauri.cpython-313.pyc
-|   |       |   |           hook-trame_tweakpane.cpython-313.pyc
-|   |       |   |           hook-trame_vega.cpython-313.pyc
-|   |       |   |           hook-trame_vtk.cpython-313.pyc
-|   |       |   |           hook-trame_vtk3d.cpython-313.pyc
-|   |       |   |           hook-trame_vtklocal.cpython-313.pyc
-|   |       |   |           hook-trame_vuetify.cpython-313.pyc
-|   |       |   |           hook-trame_xterm.cpython-313.pyc
-|   |       |   |           hook-transformers.cpython-313.pyc
-|   |       |   |           hook-travertino.cpython-313.pyc
-|   |       |   |           hook-trimesh.cpython-313.pyc
-|   |       |   |           hook-triton.cpython-313.pyc
-|   |       |   |           hook-ttkthemes.cpython-313.pyc
-|   |       |   |           hook-ttkwidgets.cpython-313.pyc
-|   |       |   |           hook-tzdata.cpython-313.pyc
-|   |       |   |           hook-tzwhere.cpython-313.pyc
-|   |       |   |           hook-u1db.cpython-313.pyc
-|   |       |   |           hook-ultralytics.cpython-313.pyc
-|   |       |   |           hook-umap.cpython-313.pyc
-|   |       |   |           hook-unidecode.cpython-313.pyc
-|   |       |   |           hook-uniseg.cpython-313.pyc
-|   |       |   |           hook-urllib3.cpython-313.pyc
-|   |       |   |           hook-urllib3_future.cpython-313.pyc
-|   |       |   |           hook-usb.cpython-313.pyc
-|   |       |   |           hook-uuid6.cpython-313.pyc
-|   |       |   |           hook-uvicorn.cpython-313.pyc
-|   |       |   |           hook-uvloop.cpython-313.pyc
-|   |       |   |           hook-vaderSentiment.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkAcceleratorsVTKmCore.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkAcceleratorsVTKmDataModel.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkAcceleratorsVTKmFilters.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkChartsCore.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkCommonColor.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkCommonComputationalGeometry.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkCommonDataModel.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkCommonExecutionModel.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkCommonMath.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkCommonMisc.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkCommonPython.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkCommonSystem.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkCommonTransforms.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkDomainsChemistry.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkDomainsChemistryOpenGL2.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersAMR.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersCellGrid.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersCore.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersExtraction.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersFlowPaths.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersGeneral.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersGeneric.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersGeometry.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersGeometryPreview.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersHybrid.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersHyperTree.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersImaging.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersModeling.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersParallel.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersParallelDIY2.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersParallelImaging.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersParallelStatistics.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersPoints.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersProgrammable.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersPython.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersReduction.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersSelection.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersSMP.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersSources.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersStatistics.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersTemporal.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersTensor.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersTexture.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersTopology.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkFiltersVerdict.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkGeovisCore.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkImagingColor.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkImagingCore.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkImagingFourier.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkImagingGeneral.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkImagingHybrid.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkImagingMath.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkImagingMorphological.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkImagingOpenGL2.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkImagingSources.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkImagingStatistics.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkImagingStencil.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkInfovisCore.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkInfovisLayout.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkInteractionImage.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkInteractionStyle.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkInteractionWidgets.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOAMR.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOAsynchronous.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOAvmesh.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOCellGrid.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOCesium3DTiles.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOCGNSReader.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOChemistry.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOCityGML.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOCONVERGECFD.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOCore.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOEngys.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOEnSight.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOERF.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOExodus.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOExport.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOExportGL2PS.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOExportPDF.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOFDS.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOFLUENTCFF.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOGeoJSON.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOGeometry.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOH5part.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOH5Rage.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOHDF.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOImage.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOImport.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOInfovis.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOIOSS.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOLANLX3D.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOLegacy.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOLSDyna.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOMINC.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOMotionFX.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOMovie.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIONetCDF.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOOggTheora.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOOMF.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOParallel.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOParallelExodus.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOParallelLSDyna.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOParallelXML.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOPIO.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOPLY.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOSegY.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOSQL.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOTecplotTable.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOTRUCHAS.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOVeraOut.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOVideo.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOVPIC.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOXdmf2.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOXML.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkIOXMLParser.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkParallelCore.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkPythonContext2D.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingAnnotation.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingCellGrid.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingContext2D.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingContextOpenGL2.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingCore.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingExternal.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingFreeType.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingGL2PSOpenGL2.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingGridAxes.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingHyperTreeGrid.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingImage.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingLabel.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingLICOpenGL2.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingLOD.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingMatplotlib.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingOpenGL2.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingParallel.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingSceneGraph.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingUI.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingVolume.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingVolumeAMR.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingVolumeOpenGL2.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingVR.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingVRModels.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkRenderingVtkJS.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkSerializationManager.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkTestingRendering.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkTestingSerialization.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkViewsContext2D.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkViewsCore.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkViewsInfovis.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkWebCore.cpython-313.pyc
-|   |       |   |           hook-vtkmodules.vtkWebGLExporter.cpython-313.pyc
-|   |       |   |           hook-vtkpython.cpython-313.pyc
-|   |       |   |           hook-wavefile.cpython-313.pyc
-|   |       |   |           hook-weasyprint.cpython-313.pyc
-|   |       |   |           hook-web3.cpython-313.pyc
-|   |       |   |           hook-webassets.cpython-313.pyc
-|   |       |   |           hook-webrtcvad.cpython-313.pyc
-|   |       |   |           hook-websockets.cpython-313.pyc
-|   |       |   |           hook-webview.cpython-313.pyc
-|   |       |   |           hook-win32com.cpython-313.pyc
-|   |       |   |           hook-wordcloud.cpython-313.pyc
-|   |       |   |           hook-workflow.cpython-313.pyc
-|   |       |   |           hook-wx.lib.activex.cpython-313.pyc
-|   |       |   |           hook-wx.lib.pubsub.cpython-313.pyc
-|   |       |   |           hook-wx.xrc.cpython-313.pyc
-|   |       |   |           hook-xarray.cpython-313.pyc
-|   |       |   |           hook-Xlib.cpython-313.pyc
-|   |       |   |           hook-xml.dom.html.HTMLDocument.cpython-313.pyc
-|   |       |   |           hook-xml.sax.saxexts.cpython-313.pyc
-|   |       |   |           hook-xmldiff.cpython-313.pyc
-|   |       |   |           hook-xmlschema.cpython-313.pyc
-|   |       |   |           hook-xsge_gui.cpython-313.pyc
-|   |       |   |           hook-xyzservices.cpython-313.pyc
-|   |       |   |           hook-yapf_third_party.cpython-313.pyc
-|   |       |   |           hook-z3c.rml.cpython-313.pyc
-|   |       |   |           hook-zarr.cpython-313.pyc
-|   |       |   |           hook-zeep.cpython-313.pyc
-|   |       |   |           hook-zmq.cpython-313.pyc
-|   |       |   |           hook-zoneinfo.cpython-313.pyc
-|   |       |   |           hook-_mssql.cpython-313.pyc
-|   |       |   |           hook-_mysql.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   +---utils
-|   |       |   |   |   nvidia_cuda.py
-|   |       |   |   |   vtkmodules.py
-|   |       |   |   |   __init__.py
-|   |       |   |   |   
-|   |       |   |   \---__pycache__
-|   |       |   |           nvidia_cuda.cpython-313.pyc
-|   |       |   |           vtkmodules.cpython-313.pyc
-|   |       |   |           __init__.cpython-313.pyc
-|   |       |   |           
-|   |       |   \---__pycache__
-|   |       |           compat.cpython-313.pyc
-|   |       |           __init__.cpython-313.pyc
-|   |       |           __init__.cpython-39.pyc
-|   |       |           
-|   |       \---__pycache__
-|   |               imagesize.cpython-313.pyc
-|   |               pefile.cpython-313.pyc
-|   |               peutils.cpython-313.pyc
-|   |               _virtualenv.cpython-313.pyc
-|   |               
-|   \---Scripts
-|       |   activate
-|       |   activate.bat
-|       |   activate.fish
-|       |   activate.nu
-|       |   activate.ps1
-|       |   activate_this.py
-|       |   chardetect.exe
-|       |   deactivate.bat
-|       |   docutils.exe
-|       |   libcrypto-3.dll
-|       |   libffi-8.dll
-|       |   libssl-3.dll
-|       |   normalizer.exe
-|       |   pip-3.13.exe
-|       |   pip.exe
-|       |   pip3.13.exe
-|       |   pip3.exe
-|       |   pybabel.exe
-|       |   pydoc.bat
-|       |   pyexpat.pyd
-|       |   pygmentize.exe
-|       |   pyi-archive_viewer.exe
-|       |   pyi-bindepend.exe
-|       |   pyi-grab_version.exe
-|       |   pyi-makespec.exe
-|       |   pyi-set_version.exe
-|       |   pyinstaller.exe
-|       |   pylupdate6.exe
-|       |   python.exe
-|       |   python3.dll
-|       |   python313.dll
-|       |   pythonw.exe
-|       |   pyuic6.exe
-|       |   rst2html.exe
-|       |   rst2html4.exe
-|       |   rst2html5.exe
-|       |   rst2latex.exe
-|       |   rst2man.exe
-|       |   rst2odt.exe
-|       |   rst2pseudoxml.exe
-|       |   rst2s5.exe
-|       |   rst2xetex.exe
-|       |   rst2xml.exe
-|       |   runxlrd.py
-|       |   select.pyd
-|       |   sphinx-apidoc.exe
-|       |   sphinx-autogen.exe
-|       |   sphinx-build.exe
-|       |   sphinx-quickstart.exe
-|       |   sqlite3.dll
-|       |   tcl86t.dll
-|       |   tk86t.dll
-|       |   unicodedata.pyd
-|       |   vcruntime140.dll
-|       |   vcruntime140_1.dll
-|       |   winsound.pyd
-|       |   zlib1.dll
-|       |   _asyncio.pyd
-|       |   _bz2.pyd
-|       |   _ctypes.pyd
-|       |   _ctypes_test.pyd
-|       |   _decimal.pyd
-|       |   _elementtree.pyd
-|       |   _hashlib.pyd
-|       |   _lzma.pyd
-|       |   _multiprocessing.pyd
-|       |   _overlapped.pyd
-|       |   _queue.pyd
-|       |   _socket.pyd
-|       |   _sqlite3.pyd
-|       |   _ssl.pyd
-|       |   _testbuffer.pyd
-|       |   _testcapi.pyd
-|       |   _testclinic.pyd
-|       |   _testclinic_limited.pyd
-|       |   _testconsole.pyd
-|       |   _testimportmultiple.pyd
-|       |   _testinternalcapi.pyd
-|       |   _testlimitedcapi.pyd
-|       |   _testmultiphase.pyd
-|       |   _testsinglephase.pyd
-|       |   _tkinter.pyd
-|       |   _uuid.pyd
-|       |   _wmi.pyd
-|       |   _zoneinfo.pyd
-|       |   
-|       \---__pycache__
-|               runxlrd.cpython-313.pyc
-|               
 +---data
-|       bbdd.sqlite
-|       instrucciones
-|       
+|   |   bbdd.sqlite
+|   |   instrucciones
+|   |   
+|   \---antonrubinan2510
+|       |   .gitignore
+|       |   antonrubinan2510.py
+|       |   conexion.py
+|       |   customers.py
+|       |   dlgAbout.py
+|       |   dlgCalendar.py
+|       |   events.py
+|       |   globals.py
+|       |   invoice.py
+|       |   main.py
+|       |   main.spec
+|       |   MiProject.txt
+|       |   Products.py
+|       |   reports.py
+|       |   styles.py
+|       |   styles.qss
+|       |   txt_Clases.ps1
+|       |   venAux.py
+|       |   window.py
+|       |   
+|       +---.git
+|       |   |   .COMMIT_EDITMSG.swp
+|       |   |   COMMIT_EDITMSG
+|       |   |   config
+|       |   |   description
+|       |   |   FETCH_HEAD
+|       |   |   HEAD
+|       |   |   index
+|       |   |   ORIG_HEAD
+|       |   |   
+|       |   +---hooks
+|       |   |       applypatch-msg.sample
+|       |   |       commit-msg.sample
+|       |   |       fsmonitor-watchman.sample
+|       |   |       post-update.sample
+|       |   |       pre-applypatch.sample
+|       |   |       pre-commit.sample
+|       |   |       pre-merge-commit.sample
+|       |   |       pre-push.sample
+|       |   |       pre-rebase.sample
+|       |   |       pre-receive.sample
+|       |   |       prepare-commit-msg.sample
+|       |   |       push-to-checkout.sample
+|       |   |       sendemail-validate.sample
+|       |   |       update.sample
+|       |   |       
+|       |   +---info
+|       |   |       exclude
+|       |   |       
+|       |   +---logs
+|       |   |   |   HEAD
+|       |   |   |   
+|       |   |   \---refs
+|       |   |       +---heads
+|       |   |       |       main
+|       |   |       |       
+|       |   |       \---remotes
+|       |   |           \---origin
+|       |   |                   main
+|       |   |                   
+|       |   +---objects
+|       |   |   +---00
+|       |   |   |       28826d4004f596d8d7d0dc771b840c56ae5d11
+|       |   |   |       
+|       |   |   +---01
+|       |   |   |       1b718b2752863b871fe2966ff1bd546204e748
+|       |   |   |       5c2929559dac410904ec66286aac9a950cb691
+|       |   |   |       
+|       |   |   +---02
+|       |   |   |       efdf8edee254e8e7ba10d9063c61e1b5a9fc28
+|       |   |   |       
+|       |   |   +---03
+|       |   |   |       7ecbbf6e0f2dbb4aaa9a41fe73ccdb795a03c8
+|       |   |   |       f96904160871672548f249ec74ad7eb280d30c
+|       |   |   |       
+|       |   |   +---04
+|       |   |   |       631bffd1a481cb3d8b964f76d950c62d82f32c
+|       |   |   |       b321a3cddac9a5daf292554710c5c302d0f7fc
+|       |   |   |       
+|       |   |   +---05
+|       |   |   |       6760ee8aa51c108ce204a42929f9fa06f8bd22
+|       |   |   |       
+|       |   |   +---06
+|       |   |   |       dd11cc580fd4a698145671bd3ef8880b7c6826
+|       |   |   |       
+|       |   |   +---09
+|       |   |   |       45fa163fa5096f8877afd8122d0a101b445b34
+|       |   |   |       8d6aad21c59012bf3d58ebd959cd78eacb9571
+|       |   |   |       afac627f7d6ccd8c7e374d937bd2b6df8fb425
+|       |   |   |       
+|       |   |   +---0a
+|       |   |   |       1adfacb00db8c597d526fb3fb183a3aa187483
+|       |   |   |       4a4b9b6db4571467e5b52b140a3b1af9303f12
+|       |   |   |       
+|       |   |   +---0c
+|       |   |   |       0f4a0f197bd21c8cf80b4ef3406e463f261186
+|       |   |   |       de575a22c5d6f394ac5888e8c05332e5c33df8
+|       |   |   |       
+|       |   |   +---0d
+|       |   |   |       ec9912f7c205c52bc033db5e831e31ad1a9522
+|       |   |   |       
+|       |   |   +---10
+|       |   |   |       5ce2da2d6447d11dfe32bfb846c3d5b199fc99
+|       |   |   |       86e14461261af4e41c002d881f7c972a073cab
+|       |   |   |       
+|       |   |   +---11
+|       |   |   |       5ac1a3f88ce03d48cd9e1fdcf742b2b28a0120
+|       |   |   |       
+|       |   |   +---12
+|       |   |   |       047e47e83417002fcf590f155c630f1390b3b3
+|       |   |   |       b42cc4bee4583aefc738fff20178071693f6fa
+|       |   |   |       
+|       |   |   +---13
+|       |   |   |       62d7cbb78ff6dae43bf18d22a5ac3f44ff73de
+|       |   |   |       
+|       |   |   +---15
+|       |   |   |       0396da2c5b654c4daa68c703d47ff4c47515f3
+|       |   |   |       1a5adcee58591bcb6c250ca0472a43a3f216ba
+|       |   |   |       
+|       |   |   +---16
+|       |   |   |       328ea01314eaf4cb9b136c883944da1114e627
+|       |   |   |       
+|       |   |   +---17
+|       |   |   |       1bb48421ca625e13ac3dee1e274e57faedd4b4
+|       |   |   |       
+|       |   |   +---19
+|       |   |   |       1bd22c2299a8ded6271a95ed061b75f4b5daeb
+|       |   |   |       71c634befc956f106f6f8c418b949d4a16a6f1
+|       |   |   |       
+|       |   |   +---1b
+|       |   |   |       75798879197a09978760eed8528be16d5c8601
+|       |   |   |       
+|       |   |   +---1d
+|       |   |   |       3ce46ba0d13183e3244cba5b930b5e27be4c6b
+|       |   |   |       76dd8916bbddb349053b37e5ae70b01a3474be
+|       |   |   |       
+|       |   |   +---1e
+|       |   |   |       e49c3baa7e26f43ffc6a5ab81ef3eba5f60977
+|       |   |   |       
+|       |   |   +---1f
+|       |   |   |       aa48477b4fbf366fc1f76fba7701f96d025656
+|       |   |   |       
+|       |   |   +---21
+|       |   |   |       30cfa9916f22b27b8d30ad5b5b36de69df2134
+|       |   |   |       
+|       |   |   +---22
+|       |   |   |       1b188d1a6180cb2670a73218d3507f169aa021
+|       |   |   |       
+|       |   |   +---23
+|       |   |   |       231ce59d39f6bf94c41d32d86d36e2a543dad0
+|       |   |   |       7c19c2593f7b576c5a0a0db4acbc8ffc9c13c2
+|       |   |   |       
+|       |   |   +---24
+|       |   |   |       342742d4db0cc1f5fd75d1015b0055219859d7
+|       |   |   |       b7fe7f17c847965f0c1bc390befe10b7f6c186
+|       |   |   |       
+|       |   |   +---27
+|       |   |   |       3ff9eed6149485adca42537c20973fa76fd31b
+|       |   |   |       
+|       |   |   +---28
+|       |   |   |       ba78312f86bb031569da5f281aea9c2ed823de
+|       |   |   |       
+|       |   |   +---29
+|       |   |   |       c5cecc4e530438ff96e097b9253ba3c898b8bf
+|       |   |   |       
+|       |   |   +---2a
+|       |   |   |       3a1bee82ab114ebd20e136149b93991d23bcfe
+|       |   |   |       924f1d6a8bc930c5296bdb2d5c2d3e39b04a1c
+|       |   |   |       c32faecf191968a02dccb8ec97926ce4cd4009
+|       |   |   |       
+|       |   |   +---2b
+|       |   |   |       c641061d130b4c8fe16f9830b1cc4ead8d4136
+|       |   |   |       d6a0b62a12593a5cbb1a7b404c5df8321aa537
+|       |   |   |       
+|       |   |   +---2c
+|       |   |   |       dbf9c7230556a6b88464efa9d886ffa94fb0c3
+|       |   |   |       
+|       |   |   +---30
+|       |   |   |       77a6b7519c0ac03fa0142fc42eb9ef938c43e5
+|       |   |   |       dd93a9caf9a62b052ceba27e402122ed17804a
+|       |   |   |       
+|       |   |   +---32
+|       |   |   |       0923dce910eec320e1951ba60bf520078f024f
+|       |   |   |       2a7a611acfaafeebad9330aa7f94b6ba8adc69
+|       |   |   |       
+|       |   |   +---33
+|       |   |   |       35d5c13d592996804b27729877664af1f88ecc
+|       |   |   |       6192d4b9751bb3f527ad558de9ed2eeeace8df
+|       |   |   |       68597a3b8ad769d428b44f4fa4faf5d115d056
+|       |   |   |       
+|       |   |   +---34
+|       |   |   |       ce77549004ecb55a86b925fb813416696cdf15
+|       |   |   |       
+|       |   |   +---35
+|       |   |   |       218664d3034f1d6db55c27126ac849b31b844e
+|       |   |   |       
+|       |   |   +---38
+|       |   |   |       f92b8ae3759fb7c0d573d8456aaa9f3b4b1ce5
+|       |   |   |       
+|       |   |   +---39
+|       |   |   |       2b642906b814e7950f150bf7306606ca81578f
+|       |   |   |       639f278ca894a3908019f96509904d97b9a5b4
+|       |   |   |       7751d76fa00bf5a14dd6a71eb9a1f58282524c
+|       |   |   |       c842ebd8490bab32d3e42fc5b6f6ec6f1adc19
+|       |   |   |       e2b71b438d29c4000b889ca37cd1f389d72b80
+|       |   |   |       
+|       |   |   +---3c
+|       |   |   |       12da584a488c2b0947a72a1d7194814718363e
+|       |   |   |       
+|       |   |   +---3f
+|       |   |   |       74034db58f5b48a6f6331ab8a1f5a5c09b7772
+|       |   |   |       
+|       |   |   +---41
+|       |   |   |       51484975efdc719159b9e3b151481522362a65
+|       |   |   |       e2f796cef80d55ec2b6dd0d544d10b4d5480d7
+|       |   |   |       
+|       |   |   +---43
+|       |   |   |       1f7b6966f6de523c60ba659e2077d56fbfabad
+|       |   |   |       be2c8846e921a5ba33b7da483ababbc0684699
+|       |   |   |       f5a8111aa6d63e7c8780e2bab160dd9c2b6efa
+|       |   |   |       
+|       |   |   +---44
+|       |   |   |       0b10895d8cfa14172fcb9d2625b254cff62710
+|       |   |   |       
+|       |   |   +---48
+|       |   |   |       4940949acf61946982c344520a0d1dcda914b2
+|       |   |   |       bcff38858d794c39e90f70319c1bccfaf7cf47
+|       |   |   |       
+|       |   |   +---4c
+|       |   |   |       0ce7a384d55e20a3b2a76391037ef97360cd70
+|       |   |   |       69b56eaf9161187829f1875204d4719a2917b3
+|       |   |   |       
+|       |   |   +---50
+|       |   |   |       3360fefe5c607ed5ac32888b94dff5c2174a9e
+|       |   |   |       5a08cdc45b42337f52619fd6d6db947f24cffc
+|       |   |   |       
+|       |   |   +---51
+|       |   |   |       27e17abbfcec952c36ae964215b83bd71269c3
+|       |   |   |       93eb5259139d531399c25b95e3a961941c5b10
+|       |   |   |       
+|       |   |   +---52
+|       |   |   |       296638d76788e80b59fe5573b0f0b8196a2de4
+|       |   |   |       7716ddf23145cec77f31017174856e1a001fad
+|       |   |   |       
+|       |   |   +---53
+|       |   |   |       2762299c65c1d48232847f1e677613a30c6859
+|       |   |   |       
+|       |   |   +---54
+|       |   |   |       722e062199fe58e12ed999412ea915bb7c348b
+|       |   |   |       
+|       |   |   +---57
+|       |   |   |       24febb25c7ac5381d38f151a3daac029dd6505
+|       |   |   |       767864227c56d2a5903a4a731e0817ef09d335
+|       |   |   |       99b1b0f76e39b99a245ade35de26d119d4732b
+|       |   |   |       9cc5b86d3f5275d3712fe9993b3bee01e8c876
+|       |   |   |       
+|       |   |   +---5a
+|       |   |   |       a1ca1b5eef175855eae12c4cebd8230eb7f8e4
+|       |   |   |       d74371a3e523add6e6921b39cc7d631fbc7a1d
+|       |   |   |       
+|       |   |   +---5b
+|       |   |   |       0c840784f400929b1d0553f46f3ce923b626ec
+|       |   |   |       
+|       |   |   +---5c
+|       |   |   |       dd42cba778236cd20d744ccf5a207f83e18a63
+|       |   |   |       
+|       |   |   +---5d
+|       |   |   |       014e8f7e6702774cf1401c2cbd93ea457b721e
+|       |   |   |       eb02d5d8573db56733295bd482594bfcc8d78d
+|       |   |   |       
+|       |   |   +---5e
+|       |   |   |       89eb8e7de3febb064a5696e1941c7c65946f73
+|       |   |   |       
+|       |   |   +---60
+|       |   |   |       8e2cf08774d0e01ac594478783234a4bb972fd
+|       |   |   |       
+|       |   |   +---61
+|       |   |   |       0ca027f5f1841f946d036562d0928ccf5d97ce
+|       |   |   |       536abd8235010660c30d60fc50d0eddff713d2
+|       |   |   |       a4257ba4d5e02062d8e050da7ee5a0da04096f
+|       |   |   |       
+|       |   |   +---63
+|       |   |   |       4c129120bbd774650e3322eaf9ef025f274b12
+|       |   |   |       
+|       |   |   +---64
+|       |   |   |       6e6d266e25c9a378b80309e31adf693c990ce0
+|       |   |   |       83988e4421a3ef993f2bdb7a518ea50b1f2e46
+|       |   |   |       
+|       |   |   +---66
+|       |   |   |       d91c04a615a83edc7d969c0ee451d6d427d297
+|       |   |   |       
+|       |   |   +---67
+|       |   |   |       60a11c27ba75663e9a744f0c1d99f3f90d766b
+|       |   |   |       
+|       |   |   +---68
+|       |   |   |       ae4137015325ad088cb998eafe13b0bebe3ff1
+|       |   |   |       
+|       |   |   +---69
+|       |   |   |       998d2653b44d0c3b6476ccd679ebeb878d6fd2
+|       |   |   |       e821dafe5f05195e5bc04adb11b7ed4ce90ec2
+|       |   |   |       
+|       |   |   +---6a
+|       |   |   |       cbcba80aab6e78bb0f6885c950b41c8a6b58b6
+|       |   |   |       e326d85e65ffe7a065f4f300413c32bf3e64b2
+|       |   |   |       
+|       |   |   +---6b
+|       |   |   |       ed981982643c4ce7f5776875ab6c6c26f4ff62
+|       |   |   |       f49192fe651147696126c68074151a1c974e0e
+|       |   |   |       
+|       |   |   +---6f
+|       |   |   |       c6a81725433002298793b1da95a09c7d630a79
+|       |   |   |       
+|       |   |   +---70
+|       |   |   |       00b560b3dd38b4383ee4401990719662276629
+|       |   |   |       05d8c51dda0de527d74c4a3cd9694bf51c77fd
+|       |   |   |       
+|       |   |   +---71
+|       |   |   |       07cec93a979b9a5f64843235a16651d563ce2d
+|       |   |   |       761efe708cb2f463af187a9f1f4bc889afbf7e
+|       |   |   |       
+|       |   |   +---74
+|       |   |   |       49796759dd561e0c0d986de0a4a560a96a68e3
+|       |   |   |       6830dc3ed153b157bc81cbdf732da9df6722e2
+|       |   |   |       916e423334843d92c63c9154cf36e09daf1fc9
+|       |   |   |       
+|       |   |   +---75
+|       |   |   |       39f445b5f8b949613645a38fa360528be46380
+|       |   |   |       
+|       |   |   +---77
+|       |   |   |       5ee877414833d5d6651e52d293e3012686cf8a
+|       |   |   |       
+|       |   |   +---78
+|       |   |   |       74bd9da5c2603d06efb800a0490f897ea5dd60
+|       |   |   |       994fb3e72bd403f6aba0437b3c96bef840a3d4
+|       |   |   |       e32ed102ba0e2b763e9c11b8dff85144721583
+|       |   |   |       
+|       |   |   +---7a
+|       |   |   |       d6b1636daf3cd770806b97190834c114eefd51
+|       |   |   |       
+|       |   |   +---7c
+|       |   |   |       2016584cf8717fbe17896bf0de90149f0c061f
+|       |   |   |       a2ce1f267d4a5b0b3b53d156fc18d2222a609e
+|       |   |   |       ac291b010d229a143c9b2b460af1de1e2e0f1a
+|       |   |   |       c96e35dfc81b91ba9e66db38d44d4d4b39c18a
+|       |   |   |       
+|       |   |   +---7d
+|       |   |   |       10ceb25ce09e8a5c6f14e6a4897895b9a96887
+|       |   |   |       e931b88cda79dc7ef9be16c5f2626e8cfc1088
+|       |   |   |       
+|       |   |   +---7e
+|       |   |   |       75bf8f9ccee1fac23706da6a74b86d54eae9a8
+|       |   |   |       
+|       |   |   +---7f
+|       |   |   |       3955cc285269b4cb1e91e8dc995778575864f1
+|       |   |   |       
+|       |   |   +---80
+|       |   |   |       7cdb176c003a8a1c747195e96bf1f76e638294
+|       |   |   |       
+|       |   |   +---81
+|       |   |   |       74ae76373d5a6134099b70064e2a49a838992f
+|       |   |   |       
+|       |   |   +---84
+|       |   |   |       974b9939e8d8d2d236dbda9880ff3e56bd5691
+|       |   |   |       f94673f707a4a8a28a431651163558b610f0d6
+|       |   |   |       
+|       |   |   +---85
+|       |   |   |       05a32b3a1ace3fa40cc59f39fb8374b727ecf0
+|       |   |   |       
+|       |   |   +---86
+|       |   |   |       842bc93b3c3208249b71a6c89300f741a88cc4
+|       |   |   |       8e488db212ab7dd02ad353d6c763f050d8c5da
+|       |   |   |       
+|       |   |   +---89
+|       |   |   |       edac75b233691ae10a53b0e911de76fb3fd708
+|       |   |   |       
+|       |   |   +---8b
+|       |   |   |       2c82a44dafaba5006eee7344e5bbd9e801215b
+|       |   |   |       
+|       |   |   +---8f
+|       |   |   |       c654b6110b4d95a26d86b2c92c43dead22e9f2
+|       |   |   |       
+|       |   |   +---90
+|       |   |   |       10eadb48c248ee4dbf2becf3ff041745931e54
+|       |   |   |       
+|       |   |   +---91
+|       |   |   |       3ca82cbdc94e109d4b987bbb17d28feb8d36cf
+|       |   |   |       
+|       |   |   +---92
+|       |   |   |       ff943fb257f081e3a060fa1db16aecaf7cf06b
+|       |   |   |       
+|       |   |   +---93
+|       |   |   |       3b529bab54feb90eb661400a050eaedb783dd1
+|       |   |   |       92ddcb46058ce1d7bb9f93a62080d46f06ca40
+|       |   |   |       
+|       |   |   +---94
+|       |   |   |       39ba0f2f35944d120cc89829f5e6caca8f6dd0
+|       |   |   |       68a6442b8af74d4067f29f4f8b6b22114c3ca5
+|       |   |   |       a25f7f4cb416c083d265558da75d457237d671
+|       |   |   |       b517b709f4c492a5d67bf5d21574843a4a3a4b
+|       |   |   |       
+|       |   |   +---95
+|       |   |   |       4237b9b9f2b248bb1397a15c055c0af1cad03e
+|       |   |   |       bdbca19494b8f2a6a887689e55fba17fef3491
+|       |   |   |       e8a293d0a7218c90be7b87de205edf37959b38
+|       |   |   |       
+|       |   |   +---96
+|       |   |   |       436b96e8d07987a2db6f795ae7b307cce608ab
+|       |   |   |       7cb36849c23dc16d4e96903f0967555d4ab85b
+|       |   |   |       89434371a20375d9b34a7252b0227ca590c631
+|       |   |   |       
+|       |   |   +---97
+|       |   |   |       2f307b61143fc02498ee445b4c8467ad6ef1a5
+|       |   |   |       4483124f8c36c8fd9a54d683fbd0f2619dc2d9
+|       |   |   |       824ec9b0149e48c91dce4fee530335b327c686
+|       |   |   |       
+|       |   |   +---98
+|       |   |   |       7e4dd3ed3e148d22b629ea4f8a751984de944d
+|       |   |   |       
+|       |   |   +---99
+|       |   |   |       01a00264a8be1f44639a8924a08e364d9b614b
+|       |   |   |       
+|       |   |   +---9a
+|       |   |   |       a49b8e30cd62da3090f8bebb02ccfa4c1a5b29
+|       |   |   |       
+|       |   |   +---9b
+|       |   |   |       15a5e6c24cba1a5cd2149af6aecc06cc4358c4
+|       |   |   |       6ee9913b721d3d92cef3c2e351471e061c338e
+|       |   |   |       8ebc1a25e8105fbb22b5d2b727953704f8a5d9
+|       |   |   |       
+|       |   |   +---9c
+|       |   |   |       4d3e79619c603231f1378cae46084c89fc318c
+|       |   |   |       8f3558fa6bf8a966089b1ddbd6cd491270d496
+|       |   |   |       
+|       |   |   +---9d
+|       |   |   |       3962076870d643cb6adbe317870b0f2ee7cef9
+|       |   |   |       6b55bedf2b9393586c01b58cdc0b7cc7f29456
+|       |   |   |       acb6e357ebf2de36f0045a5ffa3ff708635da7
+|       |   |   |       daeaf98809c340eccaaf13cf0f71a776590bd0
+|       |   |   |       fb6c34e33555c744b0443feba5291d7a73720b
+|       |   |   |       
+|       |   |   +---9e
+|       |   |   |       80394570949d35394732f8328f7fd8bff1310d
+|       |   |   |       
+|       |   |   +---a1
+|       |   |   |       4ec6fb40ed25e9bc45fff278c20e5ebb1e2bf6
+|       |   |   |       55d0125f507d3c598a0e67661dd3e2be31e3c8
+|       |   |   |       65e8bd3ef0168f3fe05e853f7069466a8bd8f8
+|       |   |   |       
+|       |   |   +---a2
+|       |   |   |       0c6d44ffd738b9dec5c895e079e1db120de545
+|       |   |   |       
+|       |   |   +---a3
+|       |   |   |       49cd5c692ab3c4d36597ea9631cedd4d21d12f
+|       |   |   |       f097011043e361a724f237cff98fbb804c9e39
+|       |   |   |       
+|       |   |   +---a6
+|       |   |   |       c453cba22b7b7e38920ea025a5ea602b0d9d26
+|       |   |   |       
+|       |   |   +---a7
+|       |   |   |       4e103a8311f978c415a35cd852a7f4b9b7f770
+|       |   |   |       97258ad5564f6376284aa854ad380ebac59519
+|       |   |   |       a5df4cb63eb3a42b6d330c19339746734d8d8a
+|       |   |   |       
+|       |   |   +---a8
+|       |   |   |       58a410e4faa62ce324d814e4b816fff83a6fb3
+|       |   |   |       
+|       |   |   +---ad
+|       |   |   |       5c99a566c9a5a939c7b6749e356944921f3e57
+|       |   |   |       8fe2683cd0761ee8deef829f7f18693082c3d5
+|       |   |   |       
+|       |   |   +---ae
+|       |   |   |       83993d1e60ed50fc9521ceb2dc7326b7868bcf
+|       |   |   |       
+|       |   |   +---af
+|       |   |   |       45489149b6a7400f2d38509d47c254f6b9d7b5
+|       |   |   |       
+|       |   |   +---b1
+|       |   |   |       a9dd670fc9ffbe811ebd010c6cd88439fe1c9e
+|       |   |   |       
+|       |   |   +---b2
+|       |   |   |       11c470704941518eef7b461dd8b9b873d1276d
+|       |   |   |       
+|       |   |   +---b3
+|       |   |   |       cc35624bb3093af9c70705736968e5b0b4337d
+|       |   |   |       
+|       |   |   +---b5
+|       |   |   |       53fb717e711f63af4adb3c658162e84a1c0415
+|       |   |   |       8b603fea78041071d125a30db58d79b3d49217
+|       |   |   |       
+|       |   |   +---b6
+|       |   |   |       8f489f5bfebcf22a83f7358a36c27c76c0dc34
+|       |   |   |       
+|       |   |   +---b7
+|       |   |   |       61292a156dbe297706faf74f1125bbfd90f041
+|       |   |   |       
+|       |   |   +---b9
+|       |   |   |       120c7cae60ad57c31aeec8561e5df16fb9efc6
+|       |   |   |       
+|       |   |   +---ba
+|       |   |   |       4a0fdec46a1f487f8c96ab67366eae89311b93
+|       |   |   |       
+|       |   |   +---bb
+|       |   |   |       38add76f5f2e9b3c36f60ddaff4a6776c646c6
+|       |   |   |       
+|       |   |   +---bd
+|       |   |   |       3706f0c3f67cad9dade31718aec54fb5a675f0
+|       |   |   |       
+|       |   |   +---c1
+|       |   |   |       30d090797e0bcf9b4906a1c1a624bbc8de2602
+|       |   |   |       
+|       |   |   +---c3
+|       |   |   |       5f491757170be2b23e9db8d12979d11878e4b0
+|       |   |   |       
+|       |   |   +---c4
+|       |   |   |       7d9dc0cdc8e7b73b7274b07ac70e79437455ca
+|       |   |   |       
+|       |   |   +---c5
+|       |   |   |       5615ee499e6b1c9fb4a074105ed404aef61b1e
+|       |   |   |       d22768262d90d4678c71da537c264f6ecc2d4f
+|       |   |   |       
+|       |   |   +---c7
+|       |   |   |       15040ce17c27d1ab6130aab447c173d781570f
+|       |   |   |       8250b66e9eaf5ff2836acb048c884aa3040b97
+|       |   |   |       
+|       |   |   +---c8
+|       |   |   |       23c3424118fe2f5b774ee48c05c440fdc588ff
+|       |   |   |       
+|       |   |   +---c9
+|       |   |   |       aed517ed4af86cb52a6bf8e58e3b3f2332b6a8
+|       |   |   |       
+|       |   |   +---cb
+|       |   |   |       225cabc135713cb73b730ab19ba295fcbd9efd
+|       |   |   |       
+|       |   |   +---cc
+|       |   |   |       1a3c1f38adf1e8bafa3eaa2eb1785d36c6737a
+|       |   |   |       
+|       |   |   +---cd
+|       |   |   |       ba3775e81d0ba1742a801b55ee1066577533dc
+|       |   |   |       
+|       |   |   +---ce
+|       |   |   |       182240007cd399ec4c764dd442fb565572797f
+|       |   |   |       57b808c7a1d7c82410f25a1e97890204724a13
+|       |   |   |       95dea5b4bd2fc015610efe08ec4fe83c3a08e0
+|       |   |   |       c6ee678266f8e942b07537a0d3f0d619c127dc
+|       |   |   |       
+|       |   |   +---cf
+|       |   |   |       9d9c0611d87a463cdc16bdde4bd462f35a8e17
+|       |   |   |       
+|       |   |   +---d0
+|       |   |   |       27ddb4e0d68428b1986c61e003faa57e158264
+|       |   |   |       
+|       |   |   +---d1
+|       |   |   |       3455a7ff3d930c377c3a8a2de3a2e539805a32
+|       |   |   |       4aa0c5ad3f4d873057cc01c337691344812bf4
+|       |   |   |       
+|       |   |   +---d4
+|       |   |   |       6099ee35dc6529aa206e0e37c18c27ed93fe48
+|       |   |   |       b347233185b7aa7162ab6bb557f8e07f00d8f5
+|       |   |   |       bb2cbb9eddb1bb1b4f366623044af8e4830919
+|       |   |   |       
+|       |   |   +---d6
+|       |   |   |       1c51bad6b620f9ef8b03f283b569e06002d540
+|       |   |   |       414fc5422bf8ca7aa7799ff5d927b3497c5bb3
+|       |   |   |       e9c9aba29c0086ef2ed14dc70b19cda81e3040
+|       |   |   |       ed46734914410a9ecce48d55a4710d6d0bdbda
+|       |   |   |       
+|       |   |   +---d7
+|       |   |   |       17b8edfce83067ed6aaced426de35a57111c1d
+|       |   |   |       
+|       |   |   +---d9
+|       |   |   |       1493f46302850b2aef3fc4546aface66757090
+|       |   |   |       6755fdaf8bb2214971e0db9c1fd3077d7c419d
+|       |   |   |       83ccc9334c9af5a40d156a5e9f59c5c4ce0cab
+|       |   |   |       
+|       |   |   +---da
+|       |   |   |       0cc8403dc050eadff5a3727c8cecc6b6ffdd4a
+|       |   |   |       b68ca2dc2e4cf9313ae9cfc44bf6511884dfe0
+|       |   |   |       
+|       |   |   +---db
+|       |   |   |       01e3616d2a7540323b832f9eb32033d6aea6a3
+|       |   |   |       08f74a7e74ec8c56458a1db7b4242f4c836c77
+|       |   |   |       6ef3a2bca2dd8e3dcce9bc37b4a10f714a0b59
+|       |   |   |       
+|       |   |   +---dc
+|       |   |   |       9bea819f675bad95dea38c00b17a02a25867d4
+|       |   |   |       e7b8d051f225e6609202699dfa674b86a71a1b
+|       |   |   |       
+|       |   |   +---dd
+|       |   |   |       723f92fb1a4e7fa015a7de524afbbf85becf55
+|       |   |   |       d2a7f391d6228f0031a219837ea93ba50f20ed
+|       |   |   |       
+|       |   |   +---df
+|       |   |   |       291195206d83546989b738e8377c621cbf0138
+|       |   |   |       
+|       |   |   +---e0
+|       |   |   |       bd15848a0be16ce176094c8a47db00f51c5418
+|       |   |   |       
+|       |   |   +---e1
+|       |   |   |       7d2a9119196f9162049e11ed0d99d7364a0b15
+|       |   |   |       f97397bc250c0296bb6a8286b76e47f0ad4804
+|       |   |   |       
+|       |   |   +---e2
+|       |   |   |       294b92a9df5f00315c99c6245b85548f5198ec
+|       |   |   |       451d11d02de12f2ac384ede132c44bcd1b8722
+|       |   |   |       9b1c754bae03bf3b1fb8e796ff91c90f3f0adc
+|       |   |   |       
+|       |   |   +---e3
+|       |   |   |       1da8f6d38e833ba8942038afc94b13a61da176
+|       |   |   |       7967a40105c55674f62a3e70e1c0426b03cd22
+|       |   |   |       cb3376657092edcfc1399dc47592e59c7a37ba
+|       |   |   |       e0dc764bacf70cf176ee9b064f22e1d600834e
+|       |   |   |       
+|       |   |   +---e4
+|       |   |   |       2b2a439acab0fb91f16addd6da290a6ef5e89d
+|       |   |   |       cb89958f8c905e29de909100bd35e532e34a98
+|       |   |   |       
+|       |   |   +---e5
+|       |   |   |       8e5ef1c5f56bbdaa7e38487a2868b497911a29
+|       |   |   |       
+|       |   |   +---e6
+|       |   |   |       4e291f3020c66d2f4d2101be521499b264e1b2
+|       |   |   |       8e468a075b4f0330b25fd48304080c9c2cfe90
+|       |   |   |       9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+|       |   |   |       fa0c492606870865463b0045343b2f10a1c26c
+|       |   |   |       
+|       |   |   +---e7
+|       |   |   |       f8cda805ed44c83b3748a8a885d4328639cef6
+|       |   |   |       
+|       |   |   +---ec
+|       |   |   |       ea78bb8301ad2ee91d053926a44d0f146d2562
+|       |   |   |       
+|       |   |   +---f0
+|       |   |   |       943c9601e7427b8e0b59ae2f3669a752b958f1
+|       |   |   |       b6569eb1d1ffeeb16851471faa0a5eb0864bea
+|       |   |   |       
+|       |   |   +---f1
+|       |   |   |       373f77a412554cef055637d429cdce53a952ad
+|       |   |   |       dfbc44c98dfea717265d737f05d3c36fab35b7
+|       |   |   |       
+|       |   |   +---f2
+|       |   |   |       5e3e3a90b0a06be2da92f4fc72b0113698d5e4
+|       |   |   |       954b6cea60cf9dee43219814cdcd179352e3e5
+|       |   |   |       
+|       |   |   +---f4
+|       |   |   |       a88b9bc5186fe20f00440421eec529397ee91c
+|       |   |   |       eb7bf6fdad0b4cf6f42bdeada1e8cd54606136
+|       |   |   |       
+|       |   |   +---f7
+|       |   |   |       b948c87ba4c55155ae8841a87395f6478c3b9d
+|       |   |   |       
+|       |   |   +---f8
+|       |   |   |       5d9dcf15ad9129c512037082f40d5a5c7ca9b2
+|       |   |   |       
+|       |   |   +---f9
+|       |   |   |       484e6971ed6565aa8c4bcdb0f47341f0f75e8a
+|       |   |   |       8467acee1862061f84ef7943b926d4575d4f1c
+|       |   |   |       a11da3eae42299b0488acd840230312abdb069
+|       |   |   |       
+|       |   |   +---fa
+|       |   |   |       79230a7b5bcd21a10cd2904ce2dd88e5195fce
+|       |   |   |       
+|       |   |   +---fd
+|       |   |   |       d53577447b36f2e05da59e410fe50662317ed5
+|       |   |   |       
+|       |   |   +---fe
+|       |   |   |       96077ae0b816d9009d7251179489d873e473a1
+|       |   |   |       ffe062428cf032249eef3fa50959b2adc17f21
+|       |   |   |       
+|       |   |   +---ff
+|       |   |   |       4f48565fcb7ca2e65ba60242e9e8899f7de765
+|       |   |   |       
+|       |   |   +---info
+|       |   |   \---pack
+|       |   \---refs
+|       |       +---heads
+|       |       |       main
+|       |       |       
+|       |       +---remotes
+|       |       |   \---origin
+|       |       |           main
+|       |       |           
+|       |       \---tags
+|       +---.idea
+|       |   |   .gitignore
+|       |   |   .name
+|       |   |   misc.xml
+|       |   |   modules.xml
+|       |   |   perezgonzalez.iml
+|       |   |   perezgonzalez2526.iml
+|       |   |   vcs.xml
+|       |   |   workspace.xml
+|       |   |   
+|       |   +---.git
+|       |   |   |   COMMIT_EDITMSG
+|       |   |   |   config
+|       |   |   |   description
+|       |   |   |   HEAD
+|       |   |   |   index
+|       |   |   |   
+|       |   |   +---hooks
+|       |   |   |       applypatch-msg.sample
+|       |   |   |       commit-msg.sample
+|       |   |   |       fsmonitor-watchman.sample
+|       |   |   |       post-update.sample
+|       |   |   |       pre-applypatch.sample
+|       |   |   |       pre-commit.sample
+|       |   |   |       pre-merge-commit.sample
+|       |   |   |       pre-push.sample
+|       |   |   |       pre-rebase.sample
+|       |   |   |       pre-receive.sample
+|       |   |   |       prepare-commit-msg.sample
+|       |   |   |       push-to-checkout.sample
+|       |   |   |       sendemail-validate.sample
+|       |   |   |       update.sample
+|       |   |   |       
+|       |   |   +---info
+|       |   |   |       exclude
+|       |   |   |       
+|       |   |   +---logs
+|       |   |   |   |   HEAD
+|       |   |   |   |   
+|       |   |   |   \---refs
+|       |   |   |       +---heads
+|       |   |   |       |       main
+|       |   |   |       |       
+|       |   |   |       \---remotes
+|       |   |   |           \---origin
+|       |   |   |                   main
+|       |   |   |                   
+|       |   |   +---objects
+|       |   |   |   +---10
+|       |   |   |   |       5ce2da2d6447d11dfe32bfb846c3d5b199fc99
+|       |   |   |   |       
+|       |   |   |   +---1d
+|       |   |   |   |       3ce46ba0d13183e3244cba5b930b5e27be4c6b
+|       |   |   |   |       
+|       |   |   |   +---43
+|       |   |   |   |       1f7b6966f6de523c60ba659e2077d56fbfabad
+|       |   |   |   |       
+|       |   |   |   +---7c
+|       |   |   |   |       2016584cf8717fbe17896bf0de90149f0c061f
+|       |   |   |   |       
+|       |   |   |   +---94
+|       |   |   |   |       a25f7f4cb416c083d265558da75d457237d671
+|       |   |   |   |       
+|       |   |   |   +---96
+|       |   |   |   |       7cb36849c23dc16d4e96903f0967555d4ab85b
+|       |   |   |   |       
+|       |   |   |   +---97
+|       |   |   |   |       824ec9b0149e48c91dce4fee530335b327c686
+|       |   |   |   |       
+|       |   |   |   +---9e
+|       |   |   |   |       80394570949d35394732f8328f7fd8bff1310d
+|       |   |   |   |       
+|       |   |   |   +---a3
+|       |   |   |   |       f097011043e361a724f237cff98fbb804c9e39
+|       |   |   |   |       
+|       |   |   |   +---b5
+|       |   |   |   |       8b603fea78041071d125a30db58d79b3d49217
+|       |   |   |   |       
+|       |   |   |   +---ca
+|       |   |   |   |       44d4e3136c95fde36258c5969c62f9adfe60ee
+|       |   |   |   |       
+|       |   |   |   +---info
+|       |   |   |   \---pack
+|       |   |   \---refs
+|       |   |       +---heads
+|       |   |       |       main
+|       |   |       |       
+|       |   |       +---remotes
+|       |   |       |   \---origin
+|       |   |       |           main
+|       |   |       |           
+|       |   |       \---tags
+|       |   \---inspectionProfiles
+|       |           profiles_settings.xml
+|       |           
+|       +---build
+|       |   \---main
+|       |       |   Analysis-00.toc
+|       |       |   base_library.zip
+|       |       |   EXE-00.toc
+|       |       |   main.pkg
+|       |       |   PKG-00.toc
+|       |       |   PYZ-00.pyz
+|       |       |   PYZ-00.toc
+|       |       |   warn-main.txt
+|       |       |   xref-main.html
+|       |       |   
+|       |       \---localpycs
+|       |               pyimod01_archive.pyc
+|       |               pyimod02_importers.pyc
+|       |               pyimod03_ctypes.pyc
+|       |               pyimod04_pywin32.pyc
+|       |               struct.pyc
+|       |               
+|       +---data
+|       |       bbdd.sqlite
+|       |       instrucciones
+|       |       
+|       +---dist
+|       |       main.exe
+|       |       
+|       +---docs
+|       |   |   conf.py
+|       |   |   index.rst
+|       |   |   make.bat
+|       |   |   Makefile
+|       |   |   
+|       |   +---src
+|       |   |       antonrubinan2510.rst
+|       |   |       conexion.rst
+|       |   |       customers.rst
+|       |   |       dlgAbout.rst
+|       |   |       dlgCalendar.rst
+|       |   |       events.rst
+|       |   |       globals.rst
+|       |   |       invoice.rst
+|       |   |       main.rst
+|       |   |       modules.rst
+|       |   |       Products.rst
+|       |   |       reports.rst
+|       |   |       styles.rst
+|       |   |       venAux.rst
+|       |   |       window.rst
+|       |   |       
+|       |   +---_build
+|       |   |   +---doctrees
+|       |   |   |   |   environment.pickle
+|       |   |   |   |   index.doctree
+|       |   |   |   |   
+|       |   |   |   \---src
+|       |   |   |           antonrubinan2510.doctree
+|       |   |   |           conexion.doctree
+|       |   |   |           customers.doctree
+|       |   |   |           dlgAbout.doctree
+|       |   |   |           dlgCalendar.doctree
+|       |   |   |           events.doctree
+|       |   |   |           globals.doctree
+|       |   |   |           invoice.doctree
+|       |   |   |           main.doctree
+|       |   |   |           modules.doctree
+|       |   |   |           Products.doctree
+|       |   |   |           reports.doctree
+|       |   |   |           styles.doctree
+|       |   |   |           venAux.doctree
+|       |   |   |           window.doctree
+|       |   |   |           
+|       |   |   \---html
+|       |   |       |   .buildinfo
+|       |   |       |   .nojekyll
+|       |   |       |   genindex.html
+|       |   |       |   index.html
+|       |   |       |   objects.inv
+|       |   |       |   py-modindex.html
+|       |   |       |   search.html
+|       |   |       |   searchindex.js
+|       |   |       |   
+|       |   |       +---src
+|       |   |       |       antonrubinan2510.html
+|       |   |       |       conexion.html
+|       |   |       |       customers.html
+|       |   |       |       dlgAbout.html
+|       |   |       |       dlgCalendar.html
+|       |   |       |       events.html
+|       |   |       |       globals.html
+|       |   |       |       invoice.html
+|       |   |       |       main.html
+|       |   |       |       modules.html
+|       |   |       |       Products.html
+|       |   |       |       reports.html
+|       |   |       |       styles.html
+|       |   |       |       venAux.html
+|       |   |       |       window.html
+|       |   |       |       
+|       |   |       +---_modules
+|       |   |       |       conexion.html
+|       |   |       |       customers.html
+|       |   |       |       dlgAbout.html
+|       |   |       |       dlgCalendar.html
+|       |   |       |       events.html
+|       |   |       |       index.html
+|       |   |       |       invoice.html
+|       |   |       |       main.html
+|       |   |       |       Products.html
+|       |   |       |       reports.html
+|       |   |       |       styles.html
+|       |   |       |       venAux.html
+|       |   |       |       window.html
+|       |   |       |       
+|       |   |       +---_sources
+|       |   |       |   |   index.rst.txt
+|       |   |       |   |   
+|       |   |       |   \---src
+|       |   |       |           antonrubinan2510.rst.txt
+|       |   |       |           conexion.rst.txt
+|       |   |       |           customers.rst.txt
+|       |   |       |           dlgAbout.rst.txt
+|       |   |       |           dlgCalendar.rst.txt
+|       |   |       |           events.rst.txt
+|       |   |       |           globals.rst.txt
+|       |   |       |           invoice.rst.txt
+|       |   |       |           main.rst.txt
+|       |   |       |           modules.rst.txt
+|       |   |       |           Products.rst.txt
+|       |   |       |           reports.rst.txt
+|       |   |       |           styles.rst.txt
+|       |   |       |           venAux.rst.txt
+|       |   |       |           window.rst.txt
+|       |   |       |           
+|       |   |       \---_static
+|       |   |               alabaster.css
+|       |   |               base-stemmer.js
+|       |   |               basic.css
+|       |   |               custom.css
+|       |   |               doctools.js
+|       |   |               documentation_options.js
+|       |   |               english-stemmer.js
+|       |   |               file.png
+|       |   |               github-banner.svg
+|       |   |               language_data.js
+|       |   |               minus.png
+|       |   |               plus.png
+|       |   |               pygments.css
+|       |   |               searchtools.js
+|       |   |               sphinx_highlight.js
+|       |   |               translations.js
+|       |   |               
+|       |   +---_static
+|       |   \---_templates
+|       +---img
+|       |       backup.png
+|       |       basura.png
+|       |       calendario.png
+|       |       exit.jpg
+|       |       logo.ico
+|       |       logo.png
+|       |       lupa.png
+|       |       Ok.jpg
+|       |       Ok.png
+|       |       reload.png
+|       |       restore_backup.png
+|       |       
+|       +---reports
+|       +---script
+|       +---templates
+|       |       dlgAbout.ui
+|       |       dlgCalendar.ui
+|       |       window.ui
+|       |       
+|       \---__pycache__
+|               antonrubinan2510.cpython-313.pyc
+|               conexion.cpython-313.pyc
+|               customers.cpython-313.pyc
+|               customers.cpython-314.pyc
+|               dlgAbout.cpython-313.pyc
+|               dlgCalendar.cpython-313.pyc
+|               events.cpython-313.pyc
+|               events.cpython-314.pyc
+|               globals.cpython-313.pyc
+|               globals.cpython-314.pyc
+|               invoice.cpython-313.pyc
+|               main.cpython-313.pyc
+|               Products.cpython-313.pyc
+|               reports.cpython-313.pyc
+|               styles.cpython-313.pyc
+|               venAux.cpython-313.pyc
+|               window.cpython-313.pyc
+|               
++---docs
+|   |   conf.py
+|   |   index.rst
+|   |   make.bat
+|   |   Makefile
+|   |   
+|   +---src
+|   |       antonrubinan2510.rst
+|   |       conexion.rst
+|   |       customers.rst
+|   |       dlgAbout.rst
+|   |       dlgCalendar.rst
+|   |       events.rst
+|   |       full_project_context.rst
+|   |       globals.rst
+|   |       invoice.rst
+|   |       main.rst
+|   |       modules.rst
+|   |       Products.rst
+|   |       reports.rst
+|   |       styles.rst
+|   |       venAux.rst
+|   |       window.rst
+|   |       
+|   +---_build
+|   |   +---doctrees
+|   |   |   |   environment.pickle
+|   |   |   |   index.doctree
+|   |   |   |   
+|   |   |   \---src
+|   |   |           antonrubinan2510.doctree
+|   |   |           conexion.doctree
+|   |   |           customers.doctree
+|   |   |           dlgAbout.doctree
+|   |   |           dlgCalendar.doctree
+|   |   |           events.doctree
+|   |   |           full_project_context.doctree
+|   |   |           globals.doctree
+|   |   |           invoice.doctree
+|   |   |           main.doctree
+|   |   |           modules.doctree
+|   |   |           Products.doctree
+|   |   |           reports.doctree
+|   |   |           styles.doctree
+|   |   |           venAux.doctree
+|   |   |           window.doctree
+|   |   |           
+|   |   \---html
+|   |       |   .buildinfo
+|   |       |   .nojekyll
+|   |       |   genindex.html
+|   |       |   index.html
+|   |       |   objects.inv
+|   |       |   py-modindex.html
+|   |       |   search.html
+|   |       |   searchindex.js
+|   |       |   
+|   |       +---src
+|   |       |       antonrubinan2510.html
+|   |       |       conexion.html
+|   |       |       customers.html
+|   |       |       dlgAbout.html
+|   |       |       dlgCalendar.html
+|   |       |       events.html
+|   |       |       full_project_context.html
+|   |       |       globals.html
+|   |       |       invoice.html
+|   |       |       main.html
+|   |       |       modules.html
+|   |       |       Products.html
+|   |       |       reports.html
+|   |       |       styles.html
+|   |       |       venAux.html
+|   |       |       window.html
+|   |       |       
+|   |       +---_modules
+|   |       |       conexion.html
+|   |       |       customers.html
+|   |       |       dlgAbout.html
+|   |       |       dlgCalendar.html
+|   |       |       events.html
+|   |       |       index.html
+|   |       |       invoice.html
+|   |       |       main.html
+|   |       |       Products.html
+|   |       |       reports.html
+|   |       |       styles.html
+|   |       |       venAux.html
+|   |       |       window.html
+|   |       |       
+|   |       +---_sources
+|   |       |   |   index.rst.txt
+|   |       |   |   
+|   |       |   \---src
+|   |       |           antonrubinan2510.rst.txt
+|   |       |           conexion.rst.txt
+|   |       |           customers.rst.txt
+|   |       |           dlgAbout.rst.txt
+|   |       |           dlgCalendar.rst.txt
+|   |       |           events.rst.txt
+|   |       |           full_project_context.rst.txt
+|   |       |           globals.rst.txt
+|   |       |           invoice.rst.txt
+|   |       |           main.rst.txt
+|   |       |           modules.rst.txt
+|   |       |           Products.rst.txt
+|   |       |           reports.rst.txt
+|   |       |           styles.rst.txt
+|   |       |           venAux.rst.txt
+|   |       |           window.rst.txt
+|   |       |           
+|   |       \---_static
+|   |               alabaster.css
+|   |               base-stemmer.js
+|   |               basic.css
+|   |               custom.css
+|   |               doctools.js
+|   |               documentation_options.js
+|   |               file.png
+|   |               github-banner.svg
+|   |               language_data.js
+|   |               minus.png
+|   |               plus.png
+|   |               pygments.css
+|   |               searchtools.js
+|   |               spanish-stemmer.js
+|   |               sphinx_highlight.js
+|   |               translations.js
+|   |               
+|   +---_static
+|   \---_templates
 +---img
 |       backup.png
 |       basura.png
@@ -16022,9 +1160,26 @@ C:.
 |       restore_backup.png
 |       
 +---reports
-|       2026_02_03_16_53_58_reportcustomers.pdf
-|       2026_02_03_17_07_16_reportcustomers.pdf
-|       2026_02_03_17_07_25_reportproducts.pdf
+|       2026_02_04_09_49_06_ticket.pdf
+|       2026_02_04_09_51_26_ticket.pdf
+|       2026_02_04_09_51_40_ticket.pdf
+|       2026_02_04_09_52_16_ticket.pdf
+|       2026_02_04_10_09_21_ticket.pdf
+|       2026_02_04_10_09_46_ticket.pdf
+|       2026_02_04_10_13_44_ticket.pdf
+|       2026_02_04_10_18_02_ticket.pdf
+|       2026_02_04_10_18_46_ticket.pdf
+|       2026_02_04_10_34_03_ticket.pdf
+|       2026_02_04_10_34_19_ticket.pdf
+|       2026_02_04_10_34_29_ticket.pdf
+|       2026_02_04_10_34_47_reportcustomers.pdf
+|       2026_02_04_12_07_44_ticket.pdf
+|       2026_02_04_12_07_53_ticket.pdf
+|       2026_02_05_09_14_34_ticket.pdf
+|       2026_02_05_09_57_20_ticket.pdf
+|       2026_02_05_10_05_16_ticket.pdf
+|       2026_02_05_10_25_50_ticket.pdf
+|       2026_02_10_10_53_02_ticket.pdf
 |       
 +---templates
 |       dlgAbout.ui
@@ -16032,13 +1187,16 @@ C:.
 |       window.ui
 |       
 \---__pycache__
+        antonrubinan2510.cpython-313.pyc
         conexion.cpython-313.pyc
         customers.cpython-313.pyc
         dlgAbout.cpython-313.pyc
         dlgCalendar.cpython-313.pyc
         events.cpython-313.pyc
+        full_project_context.cpython-313.pyc
         globals.cpython-313.pyc
         invoice.cpython-313.pyc
+        main.cpython-313.pyc
         Products.cpython-313.pyc
         reports.cpython-313.pyc
         styles.cpython-313.pyc
@@ -18997,40 +4155,27 @@ class Products :
     @staticmethod
     def loadTablePro(self=None):
         try:
-            # 1. Obtener los datos mÃ¡s recientes de la base de datos
             listTabProducts = Conexion.listProducts()
-
-            # 2. LIMPIEZA TOTAL: Si no haces esto, los datos viejos se quedan debajo
             globals.ui.tableProducts.setRowCount(0)
-
-            # 3. Rellenar fila a fila con los datos nuevos
             for index, record in enumerate(listTabProducts):
-                # record segÃºn la query de conexion.py: [0:Code, 1:Name, 2:Family, 3:Stock, 4:Price]
                 globals.ui.tableProducts.insertRow(index)
 
-                # Nombre (Columna 0 de tu tabla UI)
+                # Nombre
                 globals.ui.tableProducts.setItem(index, 0, QtWidgets.QTableWidgetItem(str(record[1])))
 
-                # Stock (Columna 1 de tu tabla UI)
-                stock_valor = str(record[3])
-                stock_item = QtWidgets.QTableWidgetItem(stock_valor)
-                if stock_valor.isdigit() and int(stock_valor) <= 5:
-                    stock_item.setBackground(QtGui.QColor(255, 200, 200))  # Color rojo si hay poco
-                globals.ui.tableProducts.setItem(index, 1, stock_item)
+                # STOCK CON COLOR
+                stock = int(record[3])
+                item_stock = QtWidgets.QTableWidgetItem(str(stock))
 
-                # Familia (Columna 2 de tu tabla UI)
+                if stock <= 5:
+                    item_stock.setBackground(QtGui.QColor("#FF3B30"))  # Rojo Apple
+                    item_stock.setForeground(QtGui.QColor("white"))  # Texto blanco para que se lea bien
+
+                globals.ui.tableProducts.setItem(index, 1, item_stock)
                 globals.ui.tableProducts.setItem(index, 2, QtWidgets.QTableWidgetItem(str(record[2])))
-
-                # Precio (Columna 3 de tu tabla UI)
                 globals.ui.tableProducts.setItem(index, 3, QtWidgets.QTableWidgetItem(str(record[4]) + " â‚¬"))
-
-                # AlineaciÃ³n estÃ©tica
-                globals.ui.tableProducts.item(index, 1).setTextAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-                globals.ui.tableProducts.item(index, 3).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignRight | QtCore.Qt.AlignmentFlag.AlignVCenter)
-
         except Exception as error:
-            print("Error en loadTablePro visual:", error)
+            print(error)
 
     @staticmethod
     def selectProduct(self=None):
@@ -22051,27 +7196,25 @@ class Conexion:
         query.bindValue(":id", id_factura)
         query.exec()
 
-
     @staticmethod
     def getVentas(id_factura):
         lista = []
-        try:
-            query = QtSql.QSqlQuery()
-            # Como tu tabla sales no tiene precio ni nombre, los traemos de Products con un JOIN
-            query.prepare("""
-                        SELECT s.idv, s.idpro, p.Name, p."Unit Price", s.amount, (s.amount * p."Unit Price") 
-                        FROM sales as s 
-                        INNER JOIN Products as p ON s.idpro = p.Code 
-                        WHERE s.idfac = :id
-                    """)
-            query.bindValue(":id", id_factura)
-            if query.exec():
-                while query.next():
-                    lista.append([query.value(i) for i in range(6)])
-            return lista
-        except Exception as e:
-            print("Error getVentas:", e)
-            return []
+        query = QtSql.QSqlQuery()
+        # El JOIN es vital para traer el Nombre y el Precio que no estÃ¡n en la tabla 'sales'
+        query.prepare("""
+                SELECT s.idv, s.idpro, p.Name, p."Unit Price", s.amount, (s.amount * p."Unit Price") 
+                FROM sales as s 
+                INNER JOIN Products as p ON s.idpro = p.Code 
+                WHERE s.idfac = :id
+            """)
+        query.bindValue(":id", id_factura)
+        if query.exec():
+            while query.next():
+                # Guardamos: [id_venta, id_prod, nombre, precio, cantidad, total_linea]
+                row = [query.value(0), query.value(1), query.value(2),
+                       float(query.value(3)), int(query.value(4)), float(query.value(5))]
+                lista.append(row)
+        return lista
 
     @staticmethod
     def modifcli(dni, modifcli):
@@ -22114,24 +7257,44 @@ class Conexion:
     @staticmethod
     def deleteInvoice(id_factura):
         try:
-            # 1. Borramos primero las ventas asociadas a esa factura
-            queryVentas = QtSql.QSqlQuery()
-            queryVentas.prepare("DELETE FROM sales WHERE idfac = :id")
-            queryVentas.bindValue(":id", id_factura)
-            queryVentas.exec()
+            # 1. Borramos los productos de esa factura primero
+            query1 = QtSql.QSqlQuery()
+            query1.prepare("DELETE FROM sales WHERE idfac = :id")
+            query1.bindValue(":id", int(id_factura))
+            query1.exec()
 
-            # 2. Borramos la factura
-            queryFac = QtSql.QSqlQuery()
-            queryFac.prepare("DELETE FROM invoices WHERE idfac = :id")
-            queryFac.bindValue(":id", id_factura)
-
-            return queryFac.exec()
+            # 2. Borramos la cabecera de la factura
+            query2 = QtSql.QSqlQuery()
+            query2.prepare("DELETE FROM invoices WHERE idfac = :id")
+            query2.bindValue(":id", int(id_factura))
+            return query2.exec()
         except Exception as e:
-            print("Error en deleteInvoice:", e)
+            print("Error deleteInvoice:", e)
             return False
+
+    @staticmethod
+    def deleteVenta(id_venta):
+        try:
+            query = QtSql.QSqlQuery()
+            query.prepare("DELETE FROM sales WHERE idv = :idv")
+            query.bindValue(":idv", int(id_venta))
+            return query.exec()
+        except Exception as e:
+            print("Error deleteVenta:", e)
+            return False
+
+    @staticmethod
+    def dataOneProduct_by_Code(codigo):
+        query = QtSql.QSqlQuery()
+        query.prepare("SELECT Code, Name, Family, Stock, \"Unit Price\" FROM Products WHERE Code = :code")
+        query.bindValue(":code", str(codigo))
+        if query.exec() and query.next():
+            return [query.value(i) for i in range(5)]
+        return None
 --- END OF FILE: conexion.py ---
 
 --- START OF FILE: customers.py ---
+import re
 
 import globals
 from PyQt6 import QtCore, QtWidgets, QtGui
@@ -22188,19 +7351,24 @@ class Customers:
         :type widget:
         """
         try:
+            # Intentamos desconectar, si no estÃ¡ conectado, capturamos el error
+            try:
+                widget.editingFinished.disconnect()
+            except Exception:
+                pass
+
             patron = r'^[\w\.-]+@[\w\.-]+\.\w+$'
-            widget.editingFinished.disconnect(Customers.checkMail)
             if re.match(patron, email):
-                widget.setStyleSheet('background-color: rgb(255, 255, 220);')
+                widget.setStyleSheet('background-color: white;')
             else:
                 widget.setStyleSheet('background-color: #FFC0CB;')
                 widget.setText("")
                 widget.setPlaceholderText("Invalid email")
-            #globals.ui.txtEmailcli.setFocus()
         except Exception as error:
             print(error)
         finally:
-            widget.editingFinished.connect(Customers.checkMail)
+            # Volvemos a conectar (asegÃºrate de que Main lo conecte de nuevo si es necesario)
+            pass
 
 
     @staticmethod
@@ -22213,28 +7381,25 @@ class Customers:
         :type widget:
         """
         try:
-            widget.editingFinished.disconnect(Customers.checkMobil)
+            try:
+                widget.editingFinished.disconnect()
+            except Exception:
+                pass
+
             patron = r'^[67]\d{8}$'
             if re.match(patron, numero):
-                widget.setStyleSheet('background-color: rgb(255, 255, 220);')
+                widget.setStyleSheet('background-color: white;')
             else:
                 widget.setStyleSheet('background-color: #FFC0CB;')
                 widget.setText("")
                 widget.setPlaceholderText("Invalid mobile number")
-        #globals.ui.txtMobilecli.setFocus()
         except Exception as error:
             print(error)
-        finally:
-            widget.editingFinished.connect(Customers.checkMobil)
 
     @staticmethod
-    def cleanCli(self = None):
-        """
-
-        :param self: None
-        :type self: None
-        """
+    def cleanCli(self=None):
         try:
+            # 1. Lista de campos a vaciar
             formcli = [
                 globals.ui.txtDnicli, globals.ui.txtEmailcli, globals.ui.txtMobilecli,
                 globals.ui.txtAltacli, globals.ui.txtApelcli, globals.ui.txtNamecli,
@@ -22244,60 +7409,68 @@ class Customers:
             for dato in formcli:
                 dato.setText("")
 
-            Events.loadProv(self=None)
+            # 2. DESBLOQUEAR EL DNI (Muy importante para tu problema)
             globals.ui.txtDnicli.setEnabled(True)
+            globals.ui.txtDnicli.setReadOnly(False)
+            # Quitamos el color de "bloqueado" o error
+            globals.ui.txtDnicli.setStyleSheet('background-color: rgb(255, 255, 255);')
+
+            # 3. Limpiar otros elementos
             globals.ui.cmbMunicli.clear()
             globals.ui.rbtFacmail.setChecked(True)
-            globals.ui.txtEmailcli.setStyleSheet('background-color: rgb(255, 255, 220);')
-            globals.ui.txtDnicli.setStyleSheet('background-color: rgb(255, 255, 220);')
-            globals.ui.txtMobilecli.setStyleSheet('background-color: rgb(255, 255, 220);')
             globals.ui.lblWarning.setText("")
-            globals.ui.lblWarning.setStyleSheet('background-color: rgb(255, 255, 200);')
+            globals.ui.lblWarning.setStyleSheet('background-color: transparent;')
+
+            # 4. SOLUCIÃ“N AL ERROR 'Events' is not defined:
+            # Importamos Events justo aquÃ­ dentro para evitar la importaciÃ³n circular
+            from events import Events
+            Events.loadProv(None)
 
         except Exception as error:
             print("error en cleanCli ", error)
 
+
     @staticmethod
     def loadTablecli(varcli):
-        """
-        Modulo para cargar la tabla clientes
-        :param varcli:
-        :type varcli:
-        """
-        try:
-            listTabCustomers = Conexion.listCustomers(varcli)
-            # print(listTabCustomers)
-            index = 0
-            for record in listTabCustomers:
-                globals.ui.tableCustomerlist.setRowCount(index + 1)
-                globals.ui.tableCustomerlist.setItem(index, 0, QtWidgets.QTableWidgetItem(str(record[2])))
-                globals.ui.tableCustomerlist.setItem(index, 1, QtWidgets.QTableWidgetItem(str(record[3])))
-                globals.ui.tableCustomerlist.setItem(index, 2, QtWidgets.QTableWidgetItem(str(record[5])))
-                globals.ui.tableCustomerlist.setItem(index, 3,
-                                                     QtWidgets.QTableWidgetItem("   " + str(record[7] + "   ")))
-                globals.ui.tableCustomerlist.setItem(index, 4, QtWidgets.QTableWidgetItem(str(record[8])))
-                globals.ui.tableCustomerlist.setItem(index, 5, QtWidgets.QTableWidgetItem(str(record[9])))
-                if record[10] == "True":
-                    globals.ui.tableCustomerlist.setItem(index, 6, QtWidgets.QTableWidgetItem(str("Alta")))
-                else:
-                    globals.ui.tableCustomerlist.setItem(index, 6, QtWidgets.QTableWidgetItem(str("Baja")))
-                globals.ui.tableCustomerlist.item(index, 0).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignLeft.AlignVCenter)
-                globals.ui.tableCustomerlist.item(index, 1).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignLeft.AlignVCenter)
-                globals.ui.tableCustomerlist.item(index, 2).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
-                globals.ui.tableCustomerlist.item(index, 3).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
-                globals.ui.tableCustomerlist.item(index, 4).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
-                globals.ui.tableCustomerlist.item(index, 5).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
-                globals.ui.tableCustomerlist.item(index, 6).setTextAlignment(
-                    QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
-                index += 1
-        except Exception as error:
-            print("error en loadTablecli ", error)
+            """
+            Modulo para cargar la tabla clientes
+            :param varcli:
+            :type varcli:
+            """
+            try:
+                listTabCustomers = Conexion.listCustomers(varcli)
+                # print(listTabCustomers)
+                index = 0
+                for record in listTabCustomers:
+                    globals.ui.tableCustomerlist.setRowCount(index + 1)
+                    globals.ui.tableCustomerlist.setItem(index, 0, QtWidgets.QTableWidgetItem(str(record[2])))
+                    globals.ui.tableCustomerlist.setItem(index, 1, QtWidgets.QTableWidgetItem(str(record[3])))
+                    globals.ui.tableCustomerlist.setItem(index, 2, QtWidgets.QTableWidgetItem(str(record[5])))
+                    globals.ui.tableCustomerlist.setItem(index, 3,
+                                                         QtWidgets.QTableWidgetItem("   " + str(record[7] + "   ")))
+                    globals.ui.tableCustomerlist.setItem(index, 4, QtWidgets.QTableWidgetItem(str(record[8])))
+                    globals.ui.tableCustomerlist.setItem(index, 5, QtWidgets.QTableWidgetItem(str(record[9])))
+                    if record[10] == "True":
+                        globals.ui.tableCustomerlist.setItem(index, 6, QtWidgets.QTableWidgetItem(str("Alta")))
+                    else:
+                        globals.ui.tableCustomerlist.setItem(index, 6, QtWidgets.QTableWidgetItem(str("Baja")))
+                    globals.ui.tableCustomerlist.item(index, 0).setTextAlignment(
+                        QtCore.Qt.AlignmentFlag.AlignLeft.AlignVCenter)
+                    globals.ui.tableCustomerlist.item(index, 1).setTextAlignment(
+                        QtCore.Qt.AlignmentFlag.AlignLeft.AlignVCenter)
+                    globals.ui.tableCustomerlist.item(index, 2).setTextAlignment(
+                        QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
+                    globals.ui.tableCustomerlist.item(index, 3).setTextAlignment(
+                        QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
+                    globals.ui.tableCustomerlist.item(index, 4).setTextAlignment(
+                        QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
+                    globals.ui.tableCustomerlist.item(index, 5).setTextAlignment(
+                        QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
+                    globals.ui.tableCustomerlist.item(index, 6).setTextAlignment(
+                        QtCore.Qt.AlignmentFlag.AlignCenter.AlignCenter)
+                    index += 1
+            except Exception as error:
+                print("error en loadTablecli ", error)
 
     @staticmethod
     def selectCustomer(self=None):
@@ -22776,6 +7949,7 @@ class Events:
 
     def resizeTabCustomer(self):
         try:
+
             header = globals.ui.tableCustomerlist.horizontalHeader()
             for i in range(header.count()):
                 if i == 3:
@@ -22793,20 +7967,18 @@ class Events:
     def resizetableSales(self):
         try:
             header = globals.ui.tableSales.horizontalHeader()
-            for i in range(header.count()):
-                if i == 1:
-                    header.setSectionResizeMode(i, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)
-                else:
-                    header.setSectionResizeMode(i, QtWidgets.QHeaderView.ResizeMode.Stretch)
-
-                header_items = globals.ui.tableSales.horizontalHeaderItem(i)
-                font = header_items.font()
-                font.setBold(True)
-                header_items.setFont(font)
+            # Ajustamos las 6 columnas
+            header.setSectionResizeMode(0, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)  # ID
+            header.setSectionResizeMode(1, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)  # Cant
+            header.setSectionResizeMode(2, QtWidgets.QHeaderView.ResizeMode.Stretch)  # Nombre
+            header.setSectionResizeMode(3, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)  # Precio
+            header.setSectionResizeMode(4, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)  # Total
+            header.setSectionResizeMode(5, QtWidgets.QHeaderView.ResizeMode.Fixed)  # Papelera
+            globals.ui.tableSales.setColumnWidth(5, 35)
 
             globals.ui.tableSales.setRowCount(1)
         except Exception as e:
-            print("error en resize la tabla", e)
+            print("error en resize table sales", e)
 
     def resizeTabProducts(self):
         try:
@@ -22927,6 +8099,18 @@ class Events:
         except Exception as e:
             print("error in status bar", e)
 --- END OF FILE: events.py ---
+
+--- START OF FILE: full_project_context.py ---
+# Form implementation generated from reading ui file '.\templates\full_project_context.md'
+#
+# Created by: PyQt6 UI code generator 6.9.1
+#
+# WARNING: Any manual changes made to this file will be lost when pyuic6 is
+# run again.  Do not edit this file unless you know what you are doing.
+
+
+
+--- END OF FILE: full_project_context.py ---
 
 --- START OF FILE: globals.py ---
 ui = None
@@ -23052,59 +8236,47 @@ class Invoice():
         try:
             dni = globals.ui.txtDnifac.text().upper().strip()
             fecha = datetime.now().strftime("%d/%m/%Y")
-
             if dni == "":
-                QtWidgets.QMessageBox.warning(None, "Aviso", "Debe introducir un DNI")
+                QtWidgets.QMessageBox.warning(None, "Aviso", "Falta el DNI del cliente")
                 return
 
             if conexion.Conexion.insertInvoice(dni, fecha):
-                Invoice.loadTablefac()
-                QtWidgets.QMessageBox.information(None, "Ã‰xito", "Factura guardada")
+                Invoice.loadTablefac()  # Recarga la tabla de la izquierda
+                QtWidgets.QMessageBox.information(None, "Ã‰xito", "Factura registrada. AÃ±ade los productos abajo.")
             else:
-                QtWidgets.QMessageBox.critical(None, "Error", "No se pudo guardar la factura.")
+                QtWidgets.QMessageBox.critical(None, "Error", "No se pudo crear la factura")
         except Exception as e:
-            print("Error en saveInvoice:", e)
+            print("Error saveInvoice:", e)
 
     @staticmethod
     def loadTablefac():
         try:
+            # Configurar anchos para que la papelera se vea siempre
             header = globals.ui.tableFac.horizontalHeader()
-            header.setSectionResizeMode(0, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)
-            header.setSectionResizeMode(1, QtWidgets.QHeaderView.ResizeMode.Stretch)
-            header.setSectionResizeMode(2, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)
             header.setSectionResizeMode(3, QtWidgets.QHeaderView.ResizeMode.Fixed)
-            globals.ui.tableFac.setColumnWidth(3, 30)
+            globals.ui.tableFac.setColumnWidth(3, 45)
 
             records = conexion.Conexion.allInvoices()
             globals.ui.tableFac.setRowCount(0)
-
             for index, record in enumerate(records):
                 globals.ui.tableFac.insertRow(index)
                 globals.ui.tableFac.setItem(index, 0, QtWidgets.QTableWidgetItem(str(record[0])))
                 globals.ui.tableFac.setItem(index, 1, QtWidgets.QTableWidgetItem(str(record[1])))
                 globals.ui.tableFac.setItem(index, 2, QtWidgets.QTableWidgetItem(str(record[2])))
 
+                # BOTÃ“N PAPELERA FACTURA (FUNCIONAL)
                 btn_del = QtWidgets.QPushButton()
                 btn_del.setIcon(QtGui.QIcon("./img/basura.png"))
-                btn_del.setFixedSize(24, 24)
-                btn_del.setStyleSheet("background-color: transparent; border: none;")
+                btn_del.setFixedSize(30, 28)
+                btn_del.setStyleSheet("background-color: #FF3B30; border-radius: 4px;")
 
-                id_factura = record[0]
-                btn_del.clicked.connect(lambda checked, idf=id_factura: Invoice.borrarFactura(idf))
+                # Conectamos al mÃ©todo de borrar factura pasÃ¡ndole el ID
+                id_fac = record[0]
+                btn_del.clicked.connect(lambda checked, idf=id_fac: Invoice.borrarFactura(idf))
+
                 globals.ui.tableFac.setCellWidget(index, 3, btn_del)
-
-                for j in range(3):
-                    globals.ui.tableFac.item(index, j).setTextAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-
-            if records:
-                datos = records[0]
-                globals.ui.lblNumFac.setText(str(datos[0]))
-                globals.ui.txtDnifac.setText(str(datos[1]))
-                globals.ui.lblFechaFac.setText(str(datos[2]))
-                Invoice.buscaCli()
-        except Exception as error:
-            print("error load tablafac", error)
-
+        except Exception as e:
+            print(e)
     @staticmethod
     def selectInvoice():
         try:
@@ -23144,38 +8316,37 @@ class Invoice():
     def cellChangedSales(item):
         row = item.row()
         col = item.column()
-        value = item.text().strip()
+        # Si el cambio es en una fila vieja (no la Ãºltima), no hacemos nada
+        if row < globals.ui.tableSales.rowCount() - 1 and col == 0:
+            return
 
+        value = item.text().strip()
         if value == "": return
 
         globals.ui.tableSales.blockSignals(True)
         try:
-            # Col 0: CÃ³digo Producto
-            if col == 0:
+            if col == 0:  # CÃ³digo Producto
                 datos = conexion.Conexion.selectProduct(value)
                 if datos:
-                    # En tu tabla: 2 es Product Name, 3 es Unit Price
                     globals.ui.tableSales.setItem(row, 2, QtWidgets.QTableWidgetItem(str(datos[0])))
                     globals.ui.tableSales.setItem(row, 3, QtWidgets.QTableWidgetItem(f"{datos[1]:.2f}"))
                 else:
-                    QtWidgets.QMessageBox.warning(None, "Error", "Producto no existe")
                     item.setText("")
 
-            # Col 1: Cantidad (Amount)
-            elif col == 1:
+            elif col == 1:  # Cantidad
                 try:
-                    cantidad = float(value)
-                    precio_texto = globals.ui.tableSales.item(row, 3).text()
-                    if precio_texto:
-                        precio = float(precio_texto)
-                        total_linea = round(cantidad * precio, 2)
-                        globals.ui.tableSales.setItem(row, 4, QtWidgets.QTableWidgetItem(str(total_linea)))
+                    cant = float(value)
+                    precio = float(globals.ui.tableSales.item(row, 3).text())
+                    total = round(cant * precio, 2)
+                    globals.ui.tableSales.setItem(row, 4, QtWidgets.QTableWidgetItem(str(total)))
 
-                        # Si es la Ãºltima fila, aÃ±adir nueva
-                        if row == globals.ui.tableSales.rowCount() - 1:
-                            Invoice.activeSales(row + 1)
-                        Invoice.calculateTotals()
-                except ValueError:
+                    # LOGICA UNO POR UNO: Solo si la fila actual estÃ¡ completa, abrimos la siguiente
+                    id_pro = globals.ui.tableSales.item(row, 0).text()
+                    if id_pro != "":
+                        Invoice.activeSales(row + 1)
+
+                    Invoice.calculateTotals()
+                except:
                     item.setText("")
         finally:
             globals.ui.tableSales.blockSignals(False)
@@ -23183,19 +8354,36 @@ class Invoice():
     @staticmethod
     def loadTablasales(records):
         try:
+            # Configurar anchos para que la papelera se vea siempre
+            header = globals.ui.tableSales.horizontalHeader()
+            header.setSectionResizeMode(5, QtWidgets.QHeaderView.ResizeMode.Fixed)
+            globals.ui.tableSales.setColumnWidth(5, 45)
+
             globals.ui.tableSales.setRowCount(0)
             for index, row in enumerate(records):
                 globals.ui.tableSales.insertRow(index)
-                # record JOIN: [idv, idpro, nombre, precio, cantidad, total]
-                globals.ui.tableSales.setItem(index, 0, QtWidgets.QTableWidgetItem(str(row[1])))  # ID
-                globals.ui.tableSales.setItem(index, 1, QtWidgets.QTableWidgetItem(str(row[4])))  # Cantidad
+                globals.ui.tableSales.setItem(index, 0, QtWidgets.QTableWidgetItem(str(row[1])))  # ID Prod
+                globals.ui.tableSales.setItem(index, 1, QtWidgets.QTableWidgetItem(str(row[4])))  # Cant
                 globals.ui.tableSales.setItem(index, 2, QtWidgets.QTableWidgetItem(str(row[2])))  # Nombre
                 globals.ui.tableSales.setItem(index, 3, QtWidgets.QTableWidgetItem(str(row[3])))  # Precio
                 globals.ui.tableSales.setItem(index, 4, QtWidgets.QTableWidgetItem(str(row[5])))  # Total
+
+                # BOTÃ“N PAPELERA PRODUCTO (FUNCIONAL)
+                btn_del = QtWidgets.QPushButton()
+                btn_del.setIcon(QtGui.QIcon("./img/basura.png"))
+                btn_del.setFixedSize(28, 24)
+                btn_del.setStyleSheet("background-color: #FF3B30; border-radius: 4px;")
+
+                # idv es el ID Ãºnico de esa lÃ­nea de venta
+                id_venta = row[0]
+                btn_del.clicked.connect(lambda checked, idv=id_venta: Invoice.borrarLineaVenta(idv))
+
+                globals.ui.tableSales.setCellWidget(index, 5, btn_del)
+
             Invoice.calculateTotals()
             Invoice.activeSales(globals.ui.tableSales.rowCount())
         except Exception as e:
-            print("Error loadTablasales:", e)
+            print(e)
 
     @staticmethod
     def calculateTotals():
@@ -23219,35 +8407,74 @@ class Invoice():
     def saveSales():
         try:
             id_fac = globals.ui.lblNumFac.text()
-            if not id_fac:
-                QtWidgets.QMessageBox.warning(None, "Error", "Selecciona una factura")
-                return
+            if id_fac == "": return
 
             for i in range(globals.ui.tableSales.rowCount()):
                 item_id = globals.ui.tableSales.item(i, 0)
                 item_qty = globals.ui.tableSales.item(i, 1)
-                item_total = globals.ui.tableSales.item(i, 4)
 
                 if item_id and item_id.text() != "" and item_qty and item_qty.text() != "":
-                    venta = [id_fac, item_id.text(), item_qty.text(), item_total.text()]
-                    if conexion.Conexion.insertVenta(venta):
-                        conexion.Conexion.updateStock(item_id.text(), item_qty.text())
+                    # Ignorar si ya estÃ¡ guardado
+                    btn = globals.ui.tableSales.cellWidget(i, 5)
+                    # (LÃ³gica para saber si es nuevo: si el botÃ³n no tiene la alerta de "ya guardado")
 
-            QtWidgets.QMessageBox.information(None, "Ã‰xito", "Venta guardada correctamente")
+                    codigo = item_id.text()
+                    cantidad_pedida = int(item_qty.text())
+
+                    # CONSULTAR STOCK REAL
+                    prod = conexion.Conexion.dataOneProduct_by_Code(codigo)
+                    if prod:
+                        stock_actual = int(prod[3])
+                        if cantidad_pedida > stock_actual:
+                            # LA ALERTA QUE PIDES:
+                            QtWidgets.QMessageBox.warning(None, "Stock Insuficiente",
+                                                          f"Solo quedan {stock_actual} unidades de {prod[1]}. No puedes pedir {cantidad_pedida}.")
+                            return
+
+                            # GUARDAR SI TODO OK
+                    if conexion.Conexion.insertVenta([id_fac, codigo, cantidad_pedida]):
+                        conexion.Conexion.updateStock(codigo, cantidad_pedida)
+
+            Invoice.loadTablasales(conexion.Conexion.getVentas(id_fac))
             from Products import Products
             Products.loadTablePro()
         except Exception as e:
-            print("Error saveSales:", e)
+            print(e)
 
     @staticmethod
     def borrarFactura(id_factura):
-        try:
+        mbox = QtWidgets.QMessageBox()
+        mbox.setWindowTitle("Eliminar Factura")
+        mbox.setText(f"Â¿EstÃ¡s seguro de eliminar la factura NÂº {id_factura}?")
+        mbox.setInformativeText("Se borrarÃ¡n tambiÃ©n todos los productos asociados.")
+        mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Yes | QtWidgets.QMessageBox.StandardButton.No)
+
+        if mbox.exec() == QtWidgets.QMessageBox.StandardButton.Yes:
             if conexion.Conexion.deleteInvoice(id_factura):
                 Invoice.loadTablefac()
-                if globals.ui.lblNumFac.text() == str(id_factura):
-                    Invoice.cleanFac()
-        except Exception as e:
-            print("Error borrarFactura:", e)
+                Invoice.cleanFac()  # Limpiamos la pantalla
+                QtWidgets.QMessageBox.information(None, "Ã‰xito", "Factura eliminada")
+
+
+    @staticmethod
+    def borrarLineaVenta(id_venta):
+        # Borrar un producto suelto de la factura
+        if conexion.Conexion.deleteVenta(id_venta):
+            id_fac = globals.ui.lblNumFac.text()
+            # Recargamos las ventas para que desaparezca la fila y se actualice el total
+            ventas = conexion.Conexion.getVentas(id_fac)
+            Invoice.loadTablasales(ventas)
+
+    @staticmethod
+    def reportFactura():
+        """Este mÃ©tod se llama al pulsar el nuevo botÃ³n btnPrintFac"""
+        id_fac = globals.ui.lblNumFac.text()
+        if id_fac != "":
+            from reports import Reports
+            reporte = Reports()
+            reporte.ticket()  # Genera el PDF con los datos de la factura actual
+        else:
+            QtWidgets.QMessageBox.warning(None, "Aviso", "Selecciona una factura para imprimir")
 --- END OF FILE: invoice.py ---
 
 --- START OF FILE: main.py ---
@@ -23348,9 +8575,16 @@ class Main(QtWidgets.QMainWindow):
         # BotÃ³n para limpiar (el de la flecha circular)
         globals.ui.btnCleancli_4.clicked.connect(self.invoice.cleanFac)
 
+        globals.ui.btnPrintFac.clicked.connect(Invoice.reportFactura)
+
         # Eventos FacturaciÃ³n en main.py
        #globals.ui.btnSaveFac.clicked.connect(Invoice.saveInvoice)  # Conecta el botÃ³n de guardar factura
         globals.ui.tableFac.clicked.connect(Invoice.selectInvoice)  # Conecta el click en la tabla
+
+        # Mejoramos el aspecto de la barra de estado
+        self.labelstatus = QtWidgets.QLabel("Listo")
+        globals.ui.statusbar.addPermanentWidget(self.labelstatus)
+        globals.ui.statusbar.setStyleSheet("background-color: white; border-top: 1px solid #D2D2D7;")
 
 
         #functions status bar
@@ -23501,30 +8735,81 @@ class Reports():
 
     def ticket(self):
         try:
-            # Mantengo tu lÃ³gica de ticket actual pero asegurando que abra el archivo
+            # 1. Preparar el archivo
             data = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
             ticket_name = data + "_ticket.pdf"
             pdf_path = os.path.join(self.rootPath, ticket_name)
             globals.report = canvas.Canvas(pdf_path)
 
+            # 2. Obtener IDs
+            id_fac = globals.ui.lblNumFac.text()
             dni = globals.ui.txtDnifac.text()
-            titulo = "FACTURA SIMPLIFICADA" if dni == "00000000T" else "FACTURA"
-            records = Conexion.dataOneCustomer(dni)
 
-            self.topreport(titulo)
+            self.topreport("FACTURA")
+
+            # 3. Datos del Cliente
+            records = Conexion.dataOneCustomer(dni)
             if records:
                 globals.report.setFont("Helvetica-Bold", 10)
-                globals.report.drawString(220, 700, "DNI: " + str(records[0]))
-                globals.report.drawString(220, 685, "APELLIDOS: " + str(records[2]))
-                globals.report.drawString(220, 670, "NOMBRE: " + str(records[3]))
-                globals.report.drawString(220, 655, "DIRECCIÃ“N: " + str(records[6]))
-                globals.report.drawString(220, 640, "LOCALIDAD: " + str(records[8]) + "  PROVINCIA: " + str(records[7]))
+                y = 640
+                globals.report.drawString(55, y, "DATOS CLIENTE:")
+                globals.report.setFont("Helvetica", 9)
+                globals.report.drawString(55, y - 15, f"DNI: {records[0]}")
+                globals.report.drawString(55, y - 30, f"CLIENTE: {records[2]}, {records[3]}")
+                globals.report.drawString(300, y - 15, f"DIRECCIÃ“N: {records[6]}")
+                globals.report.drawString(300, y - 30, f"LOCALIDAD: {records[8]}")
 
-            self.footer(titulo)
+            # 4. Cabecera de Tabla
+            y_tabla = 570
+            globals.report.line(35, y_tabla, 525, y_tabla)
+            globals.report.setFont("Helvetica-Bold", 9)
+            globals.report.drawString(55, y_tabla - 15, "COD.")
+            globals.report.drawString(110, y_tabla - 15, "PRODUCTO")
+            globals.report.drawString(310, y_tabla - 15, "CANT.")
+            globals.report.drawString(380, y_tabla - 15, "PRECIO")
+            globals.report.drawString(470, y_tabla - 15, "TOTAL")
+            globals.report.line(35, y_tabla - 20, 525, y_tabla - 20)
+
+            # 5. Cargar VENTAS Reales de la BD
+            # Importante: id_fac debe ser el que aparece en el label
+            ventas = Conexion.getVentas(id_fac)
+            y = y_tabla - 35
+            suma_subtotal = 0.0
+
+            globals.report.setFont("Helvetica", 9)
+            for v in ventas:
+                # v = [idv, idpro, nombre, precio, cantidad, total_linea]
+                globals.report.drawString(55, y, str(v[1]))
+                globals.report.drawString(110, y, str(v[2]))
+                globals.report.drawCentredString(325, y, str(v[4]))
+                globals.report.drawRightString(420, y, f"{float(v[3]):.2f} â‚¬")
+                globals.report.drawRightString(515, y, f"{float(v[5]):.2f} â‚¬")
+                suma_subtotal += float(v[5])
+                y -= 20
+
+            # 6. Cuadro de Totales
+            y_final = y - 20
+            globals.report.line(350, y_final + 10, 525, y_final + 10)
+
+            iva = suma_subtotal * 0.21
+            total = suma_subtotal + iva
+
+            globals.report.setFont("Helvetica-Bold", 10)
+            globals.report.drawString(360, y_final, "SUBTOTAL:")
+            globals.report.drawRightString(515, y_final, f"{suma_subtotal:.2f} â‚¬")
+            globals.report.drawString(360, y_final - 15, "IVA (21%):")
+            globals.report.drawRightString(515, y_final - 15, f"{iva:.2f} â‚¬")
+
+            globals.report.setFont("Helvetica-Bold", 11)
+            globals.report.setFillColorRGB(0, 0.3, 0.8)  # Azul para el total
+            globals.report.drawString(360, y_final - 35, "TOTAL FACTURA:")
+            globals.report.drawRightString(515, y_final - 35, f"{total:.2f} â‚¬")
+
+            self.footer("FACTURA")
             globals.report.save()
             os.startfile(pdf_path)
         except Exception as error:
-            print("Error en ticket:", error)
+            print("Error ticket PDF:", error)
 --- END OF FILE: reports.py ---
 
 --- START OF FILE: requirements.txt ---
@@ -23577,76 +8862,116 @@ def load_stylesheet():
 --- END OF FILE: styles.py ---
 
 --- START OF FILE: styles.qss ---
-/* ----- VENTANA PRINCIPAL ----- */
+/* --- FONDO GENERAL (Degradado Apple Pro) --- */
 QMainWindow {
-    background-color: #ffe6e0;  /* Fondo salmÃ³n muy claro */
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #F5F5F7, stop:1 #E2E2E7);
 }
 
-/* ==========================================================
-   ðŸ”¹ BOTONES NORMALES (Guardar / Modificar / Eliminar)
-   ==========================================================*/
-#btnSavecli, #btnModifcli, #btnDelcli ,#btnSavePro , #btnModifPro , #btnDelPro{
-    background-color: #ffccbb;   /* SalmÃ³n claro */
-    border: 1px solid #ff9966;   /* Borde salmÃ³n medio */
-    padding: 4px 8px;
-    border-radius: 4px;
-    color: #662b00;              /* Texto marrÃ³n oscuro */
+/* --- TARJETAS / PANELES --- */
+QTabWidget::pane {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- PESTAÃ‘AS MÃS PEQUEÃ‘AS --- */
+QTabBar::tab {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 6px 15px; /* Reducido */
+    margin: 2px;
+    border-radius: 8px;
+    color: #555;
+    font-size: 12px;
+}
+
+QTabBar::tab:selected {
+    background-color: #007AFF;
+    color: white;
     font-weight: bold;
 }
 
-#btnSavecli:hover, #btnModifcli:hover, #btnDelcli:hover {
-    background-color: #ffb38a;   /* SalmÃ³n mÃ¡s intenso al pasar el ratÃ³n */
+/* --- BOTONES COMPACTOS (Azul y Rojo) --- */
+/* Botones Azules: Save, Modify, Ok, Print */
+#btnSavecli, #btnModifcli, #btnSavePro, #btnModifPro, #btnSaveFac, #btnOk, #btnCleancli_4, #btnPrintFac {
+    background-color: #007AFF;
+    color: white;
+    border-radius: 6px;
+    padding: 0px 10px;  /* Padding vertical a 0 */
+    font-weight: bold;
+    font-size: 12px;
+    height: 24px;       /* Altura fija pequeÃ±a */
+    min-width: 60px;
 }
 
-/* ==========================================================
-   ðŸ”¸ BOTONES DE ICONO (Transparente)
-   ==========================================================*/
-#btnCleancli, #btnFechaltacli, #btnBuscacli  {
-    background-color: transparent;
-    border: none;
-    padding: 0px;
-    color: transparent;  /* oculta texto si hubiera */
+#btnSavecli:hover, #btnSavePro:hover, #btnOk:hover {
+    background-color: #0056b3;
 }
 
-#btnCleancli:hover, #btnFechaltacli:hover, #btnBuscacli:hover {
-    background-color: rgba(255, 200, 180, 0.25);
-    border-radius: 4px;
+/* Botones Rojos: Delete */
+#btnDelcli, #btnDelPro {
+    background-color: #FF3B30;
+    color: white;
+    border-radius: 6px;
+    padding: 0px 10px;
+    font-weight: bold;
+    font-size: 12px;
+    height: 24px;       /* Altura fija pequeÃ±a */
+    min-width: 60px;
 }
 
-/* ----- LINE EDIT ----- */
-QLineEdit {
-    background-color: #ffe0d1;   /* Fondo salmÃ³n suave */
-    border: 1px solid #ff9966;
-    padding: 3px;
-    color: #000;
+#btnDelcli:hover, #btnDelPro:hover {
+    background-color: #D70015;
 }
 
-/* ----- COMBOBOX ----- */
-QComboBox {
-    background-color: #ffe0d1;
-    border: 1px solid #ff9966;
-    padding: 3px;
-    color: #000;
+/* BotÃ³n Limpiar (Icono circular) */
+#btnCleancli {
+    background-color: #E8E8ED;
+    border-radius: 12px; /* PequeÃ±o y redondo */
+    width: 24px;
+    height: 24px;
 }
 
-QComboBox QAbstractItemView {
-    background-color: #ffe0d1;
-    selection-background-color: #ff9966;
+/* --- ENTRADAS DE TEXTO (Compactas y sin cortes) --- */
+QLineEdit, QComboBox {
+    background-color: white;
+    border: 1px solid #D2D2D7;
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px; /* Crucial: 0 padding vertical para que no se corte */
+    height: 24px;             /* Altura reducida */
+    color: #1D1D1F;
+    font-size: 12px;
 }
 
-/* ----- TABLAS ----- */
+QLineEdit:focus {
+    border: 1.5px solid #007AFF;
+}
+
+/* --- TABLAS --- */
 QTableWidget {
-    background-color: #ffe6d9;
-    gridline-color: #ffb38a;
-    color: #000;
+    background-color: white;
+    border-radius: 8px;
+    gridline-color: #F5F5F7;
+    selection-background-color: #E8F2FF;
+    selection-color: #007AFF;
+    font-size: 11px;
 }
 
 QHeaderView::section {
-    background-color: #ffb38a;
+    background-color: #F9F9FB;
     padding: 4px;
-    border: 1px solid #ff9966;
+    border: none;
+    font-weight: bold;
+    color: #86868B;
+    border-bottom: 1px solid #007AFF;
 }
 
+/* --- TÃTULOS --- */
+#lblListcli, #lblListcli_4 {
+    font-size: 16px;
+    color: #007AFF;
+    font-weight: bold;
+}
 --- END OF FILE: styles.qss ---
 
 --- START OF FILE: templates/dlgAbout.ui ---
@@ -24454,19 +9779,6 @@ QHeaderView::section {
           </property>
          </widget>
         </item>
-        <item row="0" column="3">
-         <widget class="QLabel" name="lblWarning">
-          <property name="minimumSize">
-           <size>
-            <width>120</width>
-            <height>20</height>
-           </size>
-          </property>
-          <property name="text">
-           <string>TextLabel</string>
-          </property>
-         </widget>
-        </item>
         <item row="0" column="10">
          <widget class="QPushButton" name="btnFechaltacli">
           <property name="minimumSize">
@@ -24522,7 +9834,7 @@ QHeaderView::section {
           <rect>
            <x>21</x>
            <y>31</y>
-           <width>227</width>
+           <width>244</width>
            <height>781</height>
           </rect>
          </property>
@@ -24731,6 +10043,25 @@ QPushButton:hover{
               <string>New Column</string>
              </property>
             </column>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="btnPrintFac">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Print</string>
+            </property>
            </widget>
           </item>
          </layout>
@@ -26162,10 +11493,6 @@ class Ui_MainWindow(object):
         self.lblMunicli.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight|QtCore.Qt.AlignmentFlag.AlignTrailing|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.lblMunicli.setObjectName("lblMunicli")
         self.gridLayout.addWidget(self.lblMunicli, 6, 10, 1, 1)
-        self.lblWarning = QtWidgets.QLabel(parent=self.tabCli)
-        self.lblWarning.setMinimumSize(QtCore.QSize(120, 20))
-        self.lblWarning.setObjectName("lblWarning")
-        self.gridLayout.addWidget(self.lblWarning, 0, 3, 1, 1)
         self.btnFechaltacli = QtWidgets.QPushButton(parent=self.tabCli)
         self.btnFechaltacli.setMinimumSize(QtCore.QSize(30, 30))
         self.btnFechaltacli.setMaximumSize(QtCore.QSize(30, 30))
@@ -26185,7 +11512,7 @@ class Ui_MainWindow(object):
         self.frmFac.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.frmFac.setObjectName("frmFac")
         self.layoutWidget = QtWidgets.QWidget(parent=self.frmFac)
-        self.layoutWidget.setGeometry(QtCore.QRect(21, 31, 227, 781))
+        self.layoutWidget.setGeometry(QtCore.QRect(21, 31, 244, 781))
         self.layoutWidget.setObjectName("layoutWidget")
         self.gridLayout_7 = QtWidgets.QGridLayout(self.layoutWidget)
         self.gridLayout_7.setContentsMargins(0, 0, 0, 0)
@@ -26261,6 +11588,11 @@ class Ui_MainWindow(object):
         self.tableFac.setHorizontalHeaderItem(3, item)
         self.tableFac.horizontalHeader().setDefaultSectionSize(70)
         self.gridLayout_7.addWidget(self.tableFac, 4, 0, 1, 4)
+        self.btnPrintFac = QtWidgets.QPushButton(parent=self.layoutWidget)
+        self.btnPrintFac.setMinimumSize(QtCore.QSize(100, 25))
+        self.btnPrintFac.setMaximumSize(QtCore.QSize(100, 25))
+        self.btnPrintFac.setObjectName("btnPrintFac")
+        self.gridLayout_7.addWidget(self.btnPrintFac, 3, 0, 1, 1)
         self.layoutWidget_3 = QtWidgets.QWidget(parent=self.tab)
         self.layoutWidget_3.setGeometry(QtCore.QRect(270, 30, 761, 141))
         self.layoutWidget_3.setObjectName("layoutWidget_3")
@@ -26643,7 +11975,7 @@ class Ui_MainWindow(object):
         self.toolBar.addAction(self.actionRestore_Backup)
 
         self.retranslateUi(MainWindow)
-        self.panPrincipal.setCurrentIndex(1)
+        self.panPrincipal.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         MainWindow.setTabOrder(self.txtDnicli, self.txtApelcli)
         MainWindow.setTabOrder(self.txtApelcli, self.txtNamecli)
@@ -26694,7 +12026,6 @@ class Ui_MainWindow(object):
         self.lblMovilcli.setText(_translate("MainWindow", "   Mobile: "))
         self.lblAltacli.setText(_translate("MainWindow", "Start Date:"))
         self.lblMunicli.setText(_translate("MainWindow", "City:"))
-        self.lblWarning.setText(_translate("MainWindow", "TextLabel"))
         self.panPrincipal.setTabText(self.panPrincipal.indexOf(self.tabCli), _translate("MainWindow", "Customers"))
         self.label.setText(_translate("MainWindow", "NÂº Factura:"))
         self.label_2.setText(_translate("MainWindow", "DNI Customer:"))
@@ -26708,6 +12039,7 @@ class Ui_MainWindow(object):
         item.setText(_translate("MainWindow", "Date"))
         item = self.tableFac.horizontalHeaderItem(3)
         item.setText(_translate("MainWindow", "New Column"))
+        self.btnPrintFac.setText(_translate("MainWindow", "Print"))
         self.label_12.setText(_translate("MainWindow", "Status:"))
         self.label_4.setText(_translate("MainWindow", "Name:"))
         self.label_11.setText(_translate("MainWindow", "Invoice Type:"))
