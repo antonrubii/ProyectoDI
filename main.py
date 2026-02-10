@@ -89,6 +89,9 @@ class Main(QtWidgets.QMainWindow):
         # Botón Save de la IZQUIERDA (Crea la factura)
         globals.ui.btnSaveFac.clicked.connect(self.invoice.saveInvoice)
 
+        # Conecta el botón de la lupa con el mét0do de búsqueda
+        globals.ui.btnBuscacli.clicked.connect(Customers.buscaCli)
+
         # Botón del CHECK AZUL (Guarda los productos de la tabla)
         globals.ui.btnOk.clicked.connect(self.invoice.saveSales)
 

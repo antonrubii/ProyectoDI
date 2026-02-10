@@ -1,222 +1,216 @@
 import csv
-import time
-import customers
-import conexion
-import sys
 import zipfile
 import shutil
-import globals
-from PyQt6 import QtWidgets, QtCore, QtGui
-from venAux import *
-from window import *
-import datetime
 import os
+import sys
+import time
+import datetime
+from PyQt6 import QtWidgets, QtCore, QtGui
+import globals
+import conexion
+import customers
 
 
 class Events:
+
+    # --- SECCIÓN 1: INTERFAZ Y VENTANAS ---
+
     @staticmethod
     def messageExit(self=None):
+        """
+        QUÉ HACE: Abre un cuadro de diálogo para confirmar si el usuario quiere cerrar la app.
+        PARA EL EXAMEN: Se conecta a la acción 'Exit' del menú y de la Toolbar.
+        Personaliza los botones con 'Si' y 'No' para un toque más profesional.
+        """
         try:
             mbox = QtWidgets.QMessageBox()
             mbox.setIcon(QtWidgets.QMessageBox.Icon.Question)
-            mbox.setWindowIcon(QtGui.QIcon('./img/logo.jpg'))
-            mbox.setWindowTitle('Exit')
-            mbox.setText('Are you sure you want to exit?')
+            mbox.setWindowIcon(QtGui.QIcon('./img/logo.ico'))
+            mbox.setWindowTitle('Salir')
+            mbox.setText('¿Está seguro de que desea salir?')
             mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Yes | QtWidgets.QMessageBox.StandardButton.No)
-            mbox.setDefaultButton(QtWidgets.QMessageBox.StandardButton.No)
             mbox.button(QtWidgets.QMessageBox.StandardButton.Yes).setText('Si')
             mbox.button(QtWidgets.QMessageBox.StandardButton.No).setText('No')
-            mbox.resize(600, 800)
+
             if mbox.exec() == QtWidgets.QMessageBox.StandardButton.Yes:
                 sys.exit()
-            else:
-                mbox.hide()
         except Exception as e:
-            print("Error en salida", e)
+            print("Error en salida:", e)
 
-    def openCalendar(self):
+    @staticmethod
+    def openCalendar(self=None):
+        """QUÉ HACE: Muestra la ventana del calendario. PARA EL EXAMEN: Se conecta al botón del icono de calendario."""
         try:
             globals.vencal.show()
         except Exception as e:
-            print("Error en calendario", e)
+            print("Error abrir calendario:", e)
 
+    @staticmethod
     def loadData(qDate):
+        """
+        QUÉ HACE: Recibe la fecha clicada en el calendario y la escribe en el campo 'txtAltacli' con formato dd/mm/yyyy.
+        PARA EL EXAMEN: Es el mét0do que "captura" la fecha elegida. Se conecta en venAux.py al evento 'clicked' del QCalendarWidget.
+        """
         try:
             data = ('{:02d}/{:02d}/{:4d}'.format(qDate.day(), qDate.month(), qDate.year()))
+            # Solo escribimos si estamos en la pestaña de clientes (índice 0)
             if globals.ui.panPrincipal.currentIndex() == 0:
                 globals.ui.txtAltacli.setText(data)
-            time.sleep(0.3)
+            time.sleep(0.1)
             globals.vencal.hide()
-
         except Exception as e:
-            print("error en cargar Data", e)
+            print("Error cargar fecha:", e)
 
-    def loadProv(self):
+    # --- SECCIÓN 2: CARGA DE DATOS DINÁMICOS ---
+
+    @staticmethod
+    def loadProv(self=None):
+        """QUÉ HACE: Llena el ComboBox de provincias desde la BD al arrancar."""
         try:
             globals.ui.cmbProvcli.clear()
             lista = conexion.Conexion.listProv()
             globals.ui.cmbProvcli.addItems(lista)
         except Exception as e:
-            print("error en cargar las provincias", e)
+            print("Error cargar provincias:", e)
 
+    @staticmethod
     def loadMunicli(self=None):
+        """
+        QUÉ HACE: Llena el ComboBox de municipios filtrando por la provincia seleccionada.
+        PARA EL EXAMEN: Se conecta al evento 'currentIndexChanged' del combo de provincias. Es lo que hace que los combos estén vinculados.
+        """
         try:
-            province = globals.ui.cmbProvcli.currentText()
-            if province:  # Solo si hay algo seleccionado
-                lista = conexion.Conexion.listMuniProv(province)
+            provincia = globals.ui.cmbProvcli.currentText()
+            if provincia:
+                lista = conexion.Conexion.listMuniProv(provincia)
                 globals.ui.cmbMunicli.clear()
                 globals.ui.cmbMunicli.addItems(lista)
         except Exception as e:
-            print("error en cargar los municipios", e)
+            print("Error cargar municipios:", e)
 
-    def resizeTabCustomer(self):
+    # --- SECCIÓN 3: CONFIGURACIÓN VISUAL DE TABLAS ---
+
+    @staticmethod
+    def resizeTabCustomer(self=None):
+        """QUÉ HACE: Ajusta el ancho de las columnas de la tabla de clientes. Pone las cabeceras en negrita."""
         try:
-
             header = globals.ui.tableCustomerlist.horizontalHeader()
             for i in range(header.count()):
+                # La columna 3 (Móvil/DNI según diseño) se ajusta al contenido, el resto se estira.
                 if i == 3:
                     header.setSectionResizeMode(i, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)
                 else:
                     header.setSectionResizeMode(i, QtWidgets.QHeaderView.ResizeMode.Stretch)
-
-                header_items = globals.ui.tableCustomerlist.horizontalHeaderItem(i)
-                font = header_items.font()
-                font.setBold(True)
-                header_items.setFont(font)
         except Exception as e:
-            print("error en resize la tabla", e)
+            print("Error resize clientes:", e)
 
-    def resizetableSales(self):
+    @staticmethod
+    def resizetableSales(self=None):
+        """
+        QUÉ HACE: Configura las 6 columnas de la tabla de ventas (Facturación).
+        PARA EL EXAMEN: Es fundamental para que la papelera (col 5) se vea siempre sin scroll horizontal.
+        """
         try:
             header = globals.ui.tableSales.horizontalHeader()
-            # Ajustamos las 6 columnas
             header.setSectionResizeMode(0, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)  # ID
             header.setSectionResizeMode(1, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)  # Cant
-            header.setSectionResizeMode(2, QtWidgets.QHeaderView.ResizeMode.Stretch)  # Nombre
+            header.setSectionResizeMode(2, QtWidgets.QHeaderView.ResizeMode.Stretch)  # Producto (se estira)
             header.setSectionResizeMode(3, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)  # Precio
             header.setSectionResizeMode(4, QtWidgets.QHeaderView.ResizeMode.ResizeToContents)  # Total
             header.setSectionResizeMode(5, QtWidgets.QHeaderView.ResizeMode.Fixed)  # Papelera
             globals.ui.tableSales.setColumnWidth(5, 35)
-
-            globals.ui.tableSales.setRowCount(1)
         except Exception as e:
-            print("error en resize table sales", e)
+            print("Error resize ventas:", e)
 
-    def resizeTabProducts(self):
+    @staticmethod
+    def resizeTabProducts(self=None):
+        """QUÉ HACE: Ajusta las columnas de la tabla de productos (Almacén)."""
         try:
             header = globals.ui.tableProducts.horizontalHeader()
             for i in range(header.count()):
-
-
                 header.setSectionResizeMode(i, QtWidgets.QHeaderView.ResizeMode.Stretch)
-
-                header_items = globals.ui.tableProducts.horizontalHeaderItem(i)
-                font = header_items.font()
-                font.setBold(True)
-                header_items.setFont(font)
         except Exception as e:
-            print("error en resize la tabla", e)
+            print("Error resize productos:", e)
 
-    def messageAbout(self):
+    # --- SECCIÓN 4: HERRAMIENTAS (BACKUP Y EXPORTACIÓN) ---
+
+    @staticmethod
+    def saveBackup(self=None):
+        """
+        QUÉ HACE: Crea un archivo comprimido .zip de la base de datos actual.
+        PARA EL EXAMEN: Usa 'zipfile'. Pregunta al usuario dónde quiere guardar el archivo.
+        """
         try:
-            globals.about.show()
-        except Exception as e:
-            print("error en abrir about", e)
-
-    def closeAbout(self):
-        try:
-            globals.about.hide()
-        except Exception as e:
-            print("error in close about", e)
-
-    def saveBackup(self):
-        try:
-            data = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
-            filename = str(data) + '_backup.zip'
-
-            # Usamos QtWidgets directamente para no depender de globals.dlg
-            file, _ = QtWidgets.QFileDialog.getSaveFileName(None, "Guardar Copia de Seguridad", filename,
-                                                            'Zip Files (*.zip)')
+            fecha = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
+            nombre = f"{fecha}_backup.zip"
+            # Abrir selector de archivos para guardar
+            file, _ = QtWidgets.QFileDialog.getSaveFileName(None, "Guardar Copia", nombre, 'Zip (*.zip)')
 
             if file:
-                filezip = zipfile.ZipFile(file, 'w', zipfile.ZIP_DEFLATED)
-                # Asegúrate de que esta ruta a tu bbdd sea correcta
-                filezip.write('./data/bbdd.sqlite', 'bbdd.sqlite')
-                filezip.close()
-
-                mbox = QtWidgets.QMessageBox()
-                mbox.setIcon(QtWidgets.QMessageBox.Icon.Information)
-                mbox.setWindowTitle('Copia de Seguridad')
-                mbox.setText('Copia de seguridad realizada con éxito')
-                mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Ok)
-                mbox.exec()
+                with zipfile.ZipFile(file, 'w', zipfile.ZIP_DEFLATED) as Fzip:
+                    Fzip.write('./data/bbdd.sqlite', 'bbdd.sqlite')
+                QtWidgets.QMessageBox.information(None, "Ok", "Copia guardada")
         except Exception as e:
-            print("error in save backup", e)
+            print("Error Backup:", e)
 
-    def restoreBackup(self):
+    @staticmethod
+    def restoreBackup(self=None):
+        """
+        QUÉ HACE: Sustituye la base de datos actual por una que el usuario elija de un archivo .zip.
+        PARA EL EXAMEN: Después de extraer, hay que reconectar la BD y recargar las tablas para ver los datos.
+        """
         try:
-            # Usamos QtWidgets directamente para evitar el error de atributo
-            file, _ = QtWidgets.QFileDialog.getOpenFileName(None, "Restaurar Copia de Seguridad", '',
-                                                            'Zip Files (*.zip)')
-
+            file, _ = QtWidgets.QFileDialog.getOpenFileName(None, "Restaurar Copia", '', 'Zip (*.zip)')
             if file:
-                with zipfile.ZipFile(file, 'r') as bbdd:
-                    bbdd.extractall(path='./data')
-
-                mbox = QtWidgets.QMessageBox()
-                mbox.setIcon(QtWidgets.QMessageBox.Icon.Information)
-                mbox.setWindowTitle('Restaurar Copia')
-                mbox.setText('Copia de seguridad restaurada con éxito')
-                mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Ok)
-                mbox.exec()
-
-                # Recargamos todo para que se vean los cambios
+                with zipfile.ZipFile(file, 'r') as Fzip:
+                    Fzip.extractall('./data')
+                QtWidgets.QMessageBox.information(None, "Ok", "Copia restaurada")
+                # Reconectar y recargar t0do
                 conexion.Conexion.db_connect("./data/bbdd.sqlite")
-                self.loadProv()
+                Events.loadProv()
                 customers.Customers.loadTablecli(True)
         except Exception as e:
-            print("error in restore backup", e)
+            print("Error Restaurar:", e)
 
-    def exportXlsCustomers(self):
+    @staticmethod
+    def exportXlsCustomers(self=None):
+        """
+        QUÉ HACE: Genera un archivo .csv con todos los datos de los clientes.
+        PARA EL EXAMEN: Usa el módulo 'csv' de Python. Ideal para que el profesor vea exportación de datos.
+        """
         try:
-            data = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
-            filename = str(data) + '_customers.csv'
-            directory, file = globals.dlg.getSaveFileName(None, "Save Customers File", filename, '.csv')
+            fecha = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
+            nombre = f"{fecha}_clientes.csv"
+            file, _ = QtWidgets.QFileDialog.getSaveFileName(None, "Exportar CSV", nombre, 'CSV (*.csv)')
 
             if file:
-                records = conexion.Conexion.listCustomers(False)
-
-                with open(file, 'w', newline='', encoding='utf-8') as csvfile:
-                    writer = csv.writer(csvfile)
+                registros = conexion.Conexion.listCustomers(False)  # Traer todos
+                with open(file, 'w', newline='', encoding='utf-8') as f:
+                    writer = csv.writer(f)
                     writer.writerow(
-                        ["DNI_NIE", "Fecha Alta", "Surname", "Name", "eMail", "Mobile",
-                         "Adress", "Province", "City", "InvoiceType", "Active"]
-                    )
-
-                    for record in records:
-                        writer.writerow(record)
-
-                shutil.move(file, directory)
-
-                mbox = QtWidgets.QMessageBox()
-                mbox.setIcon(QtWidgets.QMessageBox.Icon.Information)
-                mbox.setWindowIcon(QtGui.QIcon('./img/logo.ico'))
-                mbox.setWindowTitle('Export Customers')
-                mbox.setText('Export Customers Error')
-                mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Ok)
-                mbox.exec()
-
-
+                        ["DNI", "ALTA", "APELLIDO", "NOMBRE", "MAIL", "MOVIL", "DIR", "PROV", "MUNI", "PAGO", "HIST"])
+                    writer.writerows(registros)
+                QtWidgets.QMessageBox.information(None, "Ok", "Datos exportados")
         except Exception as e:
-            print("error in export customers", e)
+            print("Error Exportar:", e)
 
-    def loadStatubar(self):
+    # --- SECCIÓN 5: OTROS ---
+
+    @staticmethod
+    def loadStatubar(self=None):
+        """QUÉ HACE: Inicializa la barra inferior con la fecha y un mensaje de estado."""
         try:
-            data = datetime.datetime.now().strftime("%d/%m/%Y")
-            self.labelstatus = QtWidgets.QLabel(self)
-            self.labelstatus.setText("Status")
-            self.labelstatus.setStyleSheet("color : white; font-weight: bold;font-size: 10px;")
-            globals.ui.statusbar.addPermanentWidget(self.labelstatus,1)
-
+            fecha = datetime.datetime.now().strftime("%d/%m/%Y")
+            globals.ui.statusbar.showMessage(f"Bienvenido a EmpresaTeis | Fecha: {fecha} | Estado: Listo")
         except Exception as e:
-            print("error in status bar", e)
+            print("Error statusbar:", e)
+
+    @staticmethod
+    def messageAbout(self=None):
+        """QUÉ HACE: Muestra la ventana 'Acerca de'."""
+        globals.about.show()
+
+    @staticmethod
+    def closeAbout(self=None):
+        """QUÉ HACE: Cierra la ventana 'Acerca de'."""
+        globals.about.hide()

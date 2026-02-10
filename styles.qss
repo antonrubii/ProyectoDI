@@ -108,3 +108,12 @@ QHeaderView::section {
     color: #007AFF;
     font-weight: bold;
 }
+/* Quitar scroll horizontal en la tabla de facturas */
+#tableFac {
+    border: none;
+    background-color: white;
+}
+
+#tableFac QScrollBar:horizontal {
+    height: 0px; /* Esconde la barra de scroll si llegara a salir */
+}

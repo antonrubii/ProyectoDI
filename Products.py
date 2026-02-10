@@ -1,142 +1,169 @@
-
 import globals
 from PyQt6 import QtCore, QtWidgets, QtGui
-from conexion import *
-from events import *
+from conexion import Conexion
 
-class Products :
+
+class Products:
+
     @staticmethod
     def loadTablePro(self=None):
+        """
+        MÉT0DO: Cargar Tabla de Productos.
+        QUÉ HACE: Lee los productos de la BD y los muestra en el QTableWidget. 
+        Aplica color ROJO (#FF3B30) a las celdas cuyo stock sea 5 o menos.
+        PARA EL EXAMEN: Es la función de "Refrescar". Se llama al iniciar el programa y tras cada cambio (Alta/Baja/Modif).
+        """
         try:
-            listTabProducts = Conexion.listProducts()
-            globals.ui.tableProducts.setRowCount(0)
-            for index, record in enumerate(listTabProducts):
+            listado = Conexion.listProducts()
+            globals.ui.tableProducts.setRowCount(0)  # Limpiar tabla antes de rellenar
+
+            for index, registro in enumerate(listado):
                 globals.ui.tableProducts.insertRow(index)
+                # Registro BD: [0:Code, 1:Name, 2:Family, 3:Stock, 4:Price]
 
-                # Nombre
-                globals.ui.tableProducts.setItem(index, 0, QtWidgets.QTableWidgetItem(str(record[1])))
+                # Nombre (Columna 0)
+                globals.ui.tableProducts.setItem(index, 0, QtWidgets.QTableWidgetItem(str(registro[1])))
 
-                # STOCK CON COLOR
-                stock = int(record[3])
+                # Stock con Lógica de Color (Columna 1)
+                stock = int(registro[3])
                 item_stock = QtWidgets.QTableWidgetItem(str(stock))
-
                 if stock <= 5:
                     item_stock.setBackground(QtGui.QColor("#FF3B30"))  # Rojo Apple
-                    item_stock.setForeground(QtGui.QColor("white"))  # Texto blanco para que se lea bien
+                    item_stock.setForeground(QtGui.QColor("white"))  # Texto blanco para contraste
+                    font = QtGui.QFont()
+                    font.setBold(True)
+                    item_stock.setFont(font)
 
                 globals.ui.tableProducts.setItem(index, 1, item_stock)
-                globals.ui.tableProducts.setItem(index, 2, QtWidgets.QTableWidgetItem(str(record[2])))
-                globals.ui.tableProducts.setItem(index, 3, QtWidgets.QTableWidgetItem(str(record[4]) + " €"))
+
+                # Familia y Precio (Columnas 2 y 3)
+                globals.ui.tableProducts.setItem(index, 2, QtWidgets.QTableWidgetItem(str(registro[2])))
+                globals.ui.tableProducts.setItem(index, 3, QtWidgets.QTableWidgetItem(f"{float(registro[4]):.2f} €"))
+
+                # Alineaciones estéticas
+                item_stock.setTextAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+                globals.ui.tableProducts.item(index, 3).setTextAlignment(
+                    QtCore.Qt.AlignmentFlag.AlignRight | QtCore.Qt.AlignmentFlag.AlignVCenter)
+
         except Exception as error:
-            print(error)
+            print("Error en loadTablePro:", error)
 
     @staticmethod
     def selectProduct(self=None):
+        """
+        MÉT0DO: Seleccionar Producto.
+        QUÉ HACE: Al hacer clic en la tabla, carga los datos en los LineEdit y guarda el código original en una variable global.
+        PARA EL EXAMEN: Guardar el 'old_pro_code' es vital para poder modificar el Código (ID) sin que SQL se pierda.
+        """
         try:
             row = globals.ui.tableProducts.selectedItems()
             if not row: return
 
-            # En tu tabla la columna 0 es el nombre
+            # Buscamos el producto por el nombre (que está en la columna 0 de tu tabla)
             nombre_pro = row[0].text()
-            record = Conexion.dataOneProduct(nombre_pro)
+            registro = Conexion.dataOneProduct(nombre_pro)
 
-            if record:
-                # record es: [0:Code, 1:Name, 2:Family, 3:Stock, 4:Price]
-                globals.ui.txtCode.setText(str(record[0]))
-                globals.ui.txtName.setText(str(record[1]))
-                globals.ui.cmbFamily.setCurrentText(str(record[2]))
-                globals.ui.txtStock.setText(str(record[3]))
-                globals.ui.txtPrice.setText(str(record[4]))
+            if registro:
+                # GUARDAMOS EL CÓDIGO ORIGINAL (Para el WHERE del Update)
+                globals.old_pro_code = str(registro[0])
+
+                globals.ui.txtCode.setText(str(registro[0]))
+                globals.ui.txtName.setText(str(registro[1]))
+                globals.ui.cmbFamily.setCurrentText(str(registro[2]))
+                globals.ui.txtStock.setText(str(registro[3]))
+                globals.ui.txtPrice.setText(str(registro[4]))
 
         except Exception as error:
-            print("Error en selectProduct ", error)
+            print("Error en selectProduct:", error)
 
     @staticmethod
-    def delPro():
+    def savePro(self=None):
+        """
+        MÉT0DO: Guardar Nuevo Producto.
+        QUÉ HACE: Recoge los datos de las cajas y los inserta en la BD.
+        PARA EL EXAMEN: Verifica que no haya campos vacíos con 'all()' antes de guardar.
+        """
         try:
-            codigo = globals.ui.txtCode.text()
-            if not codigo:
-                QtWidgets.QMessageBox.warning(None, "Aviso", "Selecciona un producto de la tabla")
-                return
-
-            mbox = QtWidgets.QMessageBox()
-            mbox.setWindowTitle("Aviso")
-            mbox.setText(f"¿Desea eliminar el producto con código {codigo}?")
-            mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Yes | QtWidgets.QMessageBox.StandardButton.No)
-
-            if mbox.exec() == QtWidgets.QMessageBox.StandardButton.Yes:
-                if Conexion.deletePro(codigo):
-                    QtWidgets.QMessageBox.information(None, "Éxito", "Producto eliminado")
-                    # CORRECCIÓN: Llamamos a Products, no a Customers
-                    Products.loadTablePro(True)
-                    # Limpiar campos
-                    for w in [globals.ui.txtCode, globals.ui.txtName, globals.ui.txtStock, globals.ui.txtPrice]:
-                        w.setText("")
-                else:
-                    QtWidgets.QMessageBox.critical(None, "Error", "No se pudo eliminar")
-        except Exception as error:
-            print("error delete Product ", error)
-
-    @staticmethod
-    def savePro(self):
-        try:
-            # CORRECCIÓN: cmbFamily usa currentText()
-            newpro = [
+            nuevo_pro = [
                 globals.ui.txtCode.text(),
                 globals.ui.txtName.text(),
-                globals.ui.cmbFamily.currentText(),  # Antes era .text()
+                globals.ui.cmbFamily.currentText(),
                 globals.ui.txtStock.text(),
                 globals.ui.txtPrice.text()
             ]
 
-            # Validar que los campos no estén vacíos
-            if all(newpro):
-                if Conexion.addPro(newpro):
-                    mbox = QtWidgets.QMessageBox()
-                    mbox.setWindowTitle("Información")
-                    mbox.setIcon(QtWidgets.QMessageBox.Icon.Information)
-                    mbox.setText("Producto añadido correctamente")
-                    mbox.exec()
-                    Products.loadTablePro(True)  # Recargar tabla
+            if all(nuevo_pro):  # Si todos los campos tienen texto
+                if Conexion.addPro(nuevo_pro):
+                    QtWidgets.QMessageBox.information(None, "Éxito", "Producto guardado")
+                    Products.loadTablePro()
                 else:
-                    QtWidgets.QMessageBox.warning(None, "Aviso", "El código ya existe o error en base de datos")
+                    QtWidgets.QMessageBox.warning(None, "Error", "El código ya existe")
             else:
                 QtWidgets.QMessageBox.warning(None, "Aviso", "Faltan datos por rellenar")
 
         except Exception as error:
-            print("error en savePro ", error)
+            print("Error en savePro:", error)
 
     @staticmethod
-    def modifPro():
+    def modifPro(self=None):
+        """
+        MÉT0DO: Modificar Producto.
+        QUÉ HACE: Envía los datos nuevos y el código antiguo a la BD para actualizar el registro.
+        PARA EL EXAMEN: Usa el 'globals.old_pro_code' que guardamos en selectProduct para localizar el registro en SQL.
+        """
         try:
-            # 1. Recogemos los datos de la interfaz
-            codigo = globals.ui.txtCode.text()
-            nombre = globals.ui.txtName.text()
-            familia = globals.ui.cmbFamily.currentText()
-            stock = globals.ui.txtStock.text()
-            precio = globals.ui.txtPrice.text()
+            codigo_nuevo = globals.ui.txtCode.text()
+            datos_mod = [
+                codigo_nuevo,
+                globals.ui.txtName.text(),
+                globals.ui.cmbFamily.currentText(),
+                globals.ui.txtStock.text(),
+                globals.ui.txtPrice.text(),
+                globals.old_pro_code  # El código que tenía antes de editar
+            ]
 
-            # 2. Verificamos que haya un código (que se haya seleccionado algo)
-            if codigo == "":
-                QtWidgets.QMessageBox.warning(None, "Aviso", "Seleccione un producto de la tabla")
-                return
-
-            datosPro = [codigo, nombre, familia, stock, precio]
-
-            # 3. Llamada a la base de datos
-            if Conexion.modifPro(datosPro):
-                QtWidgets.QMessageBox.information(None, "Éxito", "Producto modificado correctamente")
-                # 4. Refrescamos la tabla para que se vea el cambio
+            if Conexion.modifPro(datos_mod):
+                QtWidgets.QMessageBox.information(None, "Éxito", "Producto actualizado")
                 Products.loadTablePro()
             else:
-                QtWidgets.QMessageBox.warning(None, "Error", "No se pudo modificar el producto")
+                QtWidgets.QMessageBox.warning(None, "Error", "No se pudo modificar")
 
         except Exception as error:
-            print("Error en modifPro (Products.py):", error)
+            print("Error en modifPro:", error)
+
+    @staticmethod
+    def delPro(self=None):
+        """
+        MÉT0DO: Eliminar Producto.
+        QUÉ HACE: Borrado físico (DELETE) del producto tras confirmar con el usuario.
+        PARA EL EXAMEN: El borrado de productos suele ser físico (DELETE), a diferencia de clientes que suele ser lógico.
+        """
+        try:
+            codigo = globals.ui.txtCode.text()
+            if not codigo: return
+
+            mbox = QtWidgets.QMessageBox.question(None, "Eliminar", f"¿Borrar producto {codigo}?",
+                                                  QtWidgets.QMessageBox.StandardButton.Yes |
+                                                  QtWidgets.QMessageBox.StandardButton.No)
+
+            if mbox == QtWidgets.QMessageBox.StandardButton.Yes:
+                if Conexion.deletePro(codigo):
+                    QtWidgets.QMessageBox.information(None, "Éxito", "Eliminado")
+                    Products.loadTablePro()
+                    # Limpiar campos tras borrar
+                    for w in [globals.ui.txtCode, globals.ui.txtName, globals.ui.txtStock, globals.ui.txtPrice]:
+                        w.setText("")
+
+        except Exception as error:
+            print("Error en delPro:", error)
 
     @staticmethod
     def checkPrice():
-        """ Valida que el precio sea numérico y positivo """
+        """
+        MÉT0DO: Validar Precio.
+        QUÉ HACE: Convierte comas en puntos, asegura que sea un número y lo formatea a 2 decimales.
+        PARA EL EXAMEN: Úsalo en el evento 'editingFinished' para que los precios siempre luzcan profesionales (ej: 2.99).
+        """
         try:
             precio = globals.ui.txtPrice.text().replace(',', '.')
             if float(precio) > 0:
@@ -148,4 +175,3 @@ class Products :
             globals.ui.txtPrice.setText("")
             globals.ui.txtPrice.setPlaceholderText("0.00")
             globals.ui.txtPrice.setStyleSheet("background-color: #FFC0CB;")
-
