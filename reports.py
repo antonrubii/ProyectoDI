@@ -1,3 +1,4 @@
+from PyQt6 import QtWidgets
 from reportlab.pdfgen import canvas
 import os
 import datetime
@@ -234,3 +235,117 @@ class Reports():
             os.startfile(pdf_path)
         except Exception as error:
             print("Error en ticket PDF:", error)
+
+    def reportVentasPorCliente(self):
+        try:
+            # 1. Obtener DNI del cliente seleccionado en la pantalla
+            dni = globals.ui.txtDnicli.text()
+            if dni == "":
+                QtWidgets.QMessageBox.warning(None, "Aviso", "Seleccione un cliente para el informe")
+                return
+
+            # 2. Obtener datos del cliente para la cabecera
+            cliente = Conexion.dataOneCustomer(dni)
+            if not cliente: return
+
+            # 3. Configurar PDF
+            fecha_archivo = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
+            nombre_pdf = f"{fecha_archivo}_compras_{dni}.pdf"
+            pdf_path = os.path.join(self.rootPath, nombre_pdf)
+            globals.report = canvas.Canvas(pdf_path)
+
+            titulo = "HISTORIAL DE COMPRAS"
+            self.topreport(titulo)
+            self.footer(titulo)
+
+            # 4. Datos del Cliente en el informe
+            globals.report.setFont("Helvetica-Bold", 10)
+            globals.report.drawString(55, 640, f"CLIENTE: {cliente[2]}, {cliente[3]}")
+            globals.report.drawString(55, 625, f"DNI: {cliente[0]}")
+            globals.report.line(35, 620, 525, 620)
+
+            # 5. Cabecera de la tabla de compras
+            globals.report.setFont("Helvetica-Bold", 9)
+            globals.report.drawString(55, 600, "FECHA")
+            globals.report.drawString(130, 600, "PRODUCTO")
+            globals.report.drawCentredString(320, 600, "CANT.")
+            globals.report.drawRightString(420, 600, "PRECIO U.")
+            globals.report.drawRightString(515, 600, "SUBTOTAL")
+            globals.report.line(35, 595, 525, 595)
+
+            # 6. Cargar datos de la BD (El triple JOIN)
+            compras = Conexion.getVentasPorCliente(dni)
+            y = 580
+            total_gastado = 0.0
+
+            for c in compras:
+                if y <= 90:
+                    globals.report.showPage()
+                    self.topreport(titulo);
+                    self.footer(titulo)
+                    y = 630
+
+                globals.report.setFont("Helvetica", 9)
+                globals.report.drawString(55, y, str(c[0]))  # Fecha
+                globals.report.drawString(130, y, str(c[1]))  # Producto
+                globals.report.drawCentredString(325, y, str(c[2]))  # Cantidad
+                globals.report.drawRightString(420, y, f"{float(c[3]):.2f} €")  # Precio U
+                globals.report.drawRightString(515, y, f"{float(c[4]):.2f} €")  # Subtotal
+
+                total_gastado += float(c[4])
+                y -= 20
+
+            # 7. Resumen Final
+            y -= 20
+            globals.report.line(350, y + 15, 525, y + 15)
+            globals.report.setFont("Helvetica-Bold", 11)
+            globals.report.drawString(300, y, "INVERSIÓN TOTAL DEL CLIENTE:")
+            globals.report.drawRightString(515, y, f"{total_gastado:.2f} €")
+
+            globals.report.save()
+            os.startfile(pdf_path)
+
+        except Exception as error:
+            print("Error reportVentasPorCliente:", error)
+
+    def reportCliProv(self, provincia):
+        try:
+            fecha = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
+            nombre_pdf = f"{fecha}_reporte_{provincia}.pdf"
+            pdf_path = os.path.join(self.rootPath, nombre_pdf)
+            globals.report = canvas.Canvas(pdf_path)
+
+            titulo = f"CLIENTES DE LA PROVINCIA DE {provincia.upper()}"
+            self.topreport(titulo)
+            self.footer(titulo)
+
+            # Traemos solo los de esa provincia
+            records = Conexion.listClientesProv(provincia)
+
+            items = ["DNI", "APELLIDOS", "NOMBRE", "MÓVIL", "CIUDAD", "ESTADO"]
+            globals.report.setFont("Helvetica-Bold", 10)
+            x_coords = [45, 125, 215, 305, 395, 485]
+            for i, text in enumerate(items):
+                globals.report.drawString(x_coords[i], 650, text)
+            globals.report.line(35, 645, 525, 645)
+
+            y = 630
+            for r in records:
+                if y <= 90:
+                    globals.report.showPage()
+                    self.topreport(titulo);
+                    self.footer(titulo)
+                    y = 630
+                globals.report.setFont("Helvetica", 8)
+                globals.report.drawString(45, y, str(r[0]))
+                globals.report.drawString(125, y, str(r[2]))
+                globals.report.drawString(215, y, str(r[3]))
+                globals.report.drawString(305, y, str(r[5]))
+                globals.report.drawString(395, y, str(r[8]))
+                globals.report.drawString(485, y, "Alta")
+                y -= 25
+
+            globals.report.save()
+            os.startfile(pdf_path)
+        except Exception as error:
+            print("Error reportCliProv:", error)

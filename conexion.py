@@ -27,6 +27,7 @@ class Conexion:
             while query.next(): listado.append([query.value(i) for i in range(query.record().count())])
         return listado
 
+
     @staticmethod
     def dataOneCustomer(dni):
         """QUÉ HACE: Busca un cliente por DNI para rellenar el formulario al hacer click en la tabla."""
@@ -34,6 +35,14 @@ class Conexion:
         query.prepare("SELECT * FROM customers WHERE dni_nie = :d")
         query.bindValue(":d", dni)
         if query.exec() and query.next(): return [query.value(i) for i in range(query.record().count())]
+        return None
+
+    @staticmethod
+    def dataOneFac(dni):
+        query = QtSql.QSqlQuery()
+        query.prepare("SELECT * FROM invoices WHERE dninie = :d")
+        query.bindValue(":d", dni)
+        if query.exec() and query.next(): return [query.value(i)for i in range(query.record().count())]
         return None
 
     @staticmethod
@@ -97,6 +106,14 @@ class Conexion:
         return None
 
     @staticmethod
+    def dataOneFac(dni):
+        query = QtSql.QSqlQuery()
+        query.prepare("SELECT * FROM sales WHERE dninie = ?")
+        query.addBindValue(dni)
+        if query.exec() and query.next(): return query.value(0)
+        return None
+
+    @staticmethod
     def dataOneProduct_by_Code(codigo):
         """QUÉ HACE: Busca producto por CÓDIGO. VITAL para el aviso de 'Solo quedan X peras'."""
         query = QtSql.QSqlQuery()
@@ -139,11 +156,24 @@ class Conexion:
         return query.exec()
 
     @staticmethod
-    def allInvoices():
-        """QUÉ HACE: Carga la tabla de facturas de la izquierda."""
+    def allInvoices(dni=None):
+        """
+        QUÉ HACE: Obtiene facturas. Si recibe un DNI, filtra solo las de ese cliente.
+        PARA EL EXAMEN: Si 'dni' es None, devuelve todo (comportamiento normal).
+        """
         lista = []
-        query = QtSql.QSqlQuery("SELECT idfac, dninie, data FROM invoices ORDER BY idfac DESC")
-        while query.next(): lista.append([str(query.value(i)) for i in range(3)])
+        query = QtSql.QSqlQuery()
+        if dni:
+            # Filtramos por el DNI seleccionado
+            query.prepare("SELECT idfac, dninie, data FROM invoices WHERE dninie = :dni ORDER BY idfac DESC")
+            query.bindValue(":dni", str(dni))
+        else:
+            # Sin filtro: todas las facturas
+            query.prepare("SELECT idfac, dninie, data FROM invoices ORDER BY idfac DESC")
+
+        if query.exec():
+            while query.next():
+                lista.append([str(query.value(i)) for i in range(3)])
         return lista
 
     @staticmethod
@@ -207,3 +237,41 @@ class Conexion:
         if query.exec():
             while query.next(): lista.append(query.value(0))
         return lista
+
+    @staticmethod
+    def getVentasPorCliente(dni):
+        """
+        MÉT0DO: Obtener historial de compras de un cliente.
+        QUÉ HACE: Une Invoices, Sales y Products para saber qué ha comprado un DNI.
+        PARA EL EXAMEN: Es un triple JOIN. Vital para informes personalizados.
+        """
+        listado = []
+        query = QtSql.QSqlQuery()
+        query.prepare("""
+                SELECT i.data, p.Name, s.amount, p."Unit Price", (s.amount * p."Unit Price")
+                FROM invoices AS i
+                INNER JOIN sales AS s ON i.idfac = s.idfac
+                INNER JOIN Products AS p ON s.idpro = p.Code
+                WHERE i.dninie = :dni
+                ORDER BY i.data DESC
+            """)
+        query.bindValue(":dni", str(dni))
+
+        if query.exec():
+            while query.next():
+                # [0:Fecha, 1:Producto, 2:Cantidad, 3:PrecioU, 4:Subtotal]
+                row = [query.value(i) for i in range(5)]
+                listado.append(row)
+        return listado
+
+    @staticmethod
+    def listClientesProv(provincia):
+        """QUÉ HACE: Obtiene los clientes activos de una provincia específica."""
+        listado = []
+        query = QtSql.QSqlQuery()
+        query.prepare("SELECT * FROM customers WHERE province = :prov AND historical = 'True' ORDER BY surname")
+        query.bindValue(":prov", provincia)
+        if query.exec():
+            while query.next():
+                listado.append([query.value(i) for i in range(query.record().count())])
+        return listado

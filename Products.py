@@ -10,7 +10,7 @@ class Products:
         """
         MÉT0DO: Cargar Tabla de Productos.
         QUÉ HACE: Lee los productos de la BD y los muestra en el QTableWidget. 
-        Aplica color ROJO (#FF3B30) a las celdas cuyo stock sea 5 o menos.
+        Aplica color ROJO (#FF3B30) a las celdas cuyo stock sea 6 o menos.
         PARA EL EXAMEN: Es la función de "Refrescar". Se llama al iniciar el programa y tras cada cambio (Alta/Baja/Modif).
         """
         try:
@@ -27,9 +27,10 @@ class Products:
                 # Stock con Lógica de Color (Columna 1)
                 stock = int(registro[3])
                 item_stock = QtWidgets.QTableWidgetItem(str(stock))
-                if stock <= 5:
+                if stock <= 6:
                     item_stock.setBackground(QtGui.QColor("#FF3B30"))  # Rojo Apple
                     item_stock.setForeground(QtGui.QColor("white"))  # Texto blanco para contraste
+
                     font = QtGui.QFont()
                     font.setBold(True)
                     item_stock.setFont(font)
@@ -100,6 +101,7 @@ class Products:
                     QtWidgets.QMessageBox.warning(None, "Error", "El código ya existe")
             else:
                 QtWidgets.QMessageBox.warning(None, "Aviso", "Faltan datos por rellenar")
+
 
         except Exception as error:
             print("Error en savePro:", error)

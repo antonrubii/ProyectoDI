@@ -17,25 +17,33 @@ class Events:
 
     @staticmethod
     def messageExit(self=None):
-        """
-        QUÉ HACE: Abre un cuadro de diálogo para confirmar si el usuario quiere cerrar la app.
-        PARA EL EXAMEN: Se conecta a la acción 'Exit' del menú y de la Toolbar.
-        Personaliza los botones con 'Si' y 'No' para un toque más profesional.
-        """
         try:
             mbox = QtWidgets.QMessageBox()
             mbox.setIcon(QtWidgets.QMessageBox.Icon.Question)
             mbox.setWindowIcon(QtGui.QIcon('./img/logo.ico'))
-            mbox.setWindowTitle('Salir')
-            mbox.setText('¿Está seguro de que desea salir?')
+            mbox.setWindowTitle('Confirmar Salida')
+
+            # Mensaje profesional estilo Apple
+            mbox.setText('¿Desea salir de la aplicación?')
+            mbox.setInformativeText('Asegúrese de haber guardado todos los cambios antes de salir.')
+
+            # Configuramos los botones
             mbox.setStandardButtons(QtWidgets.QMessageBox.StandardButton.Yes | QtWidgets.QMessageBox.StandardButton.No)
-            mbox.button(QtWidgets.QMessageBox.StandardButton.Yes).setText('Si')
-            mbox.button(QtWidgets.QMessageBox.StandardButton.No).setText('No')
+            mbox.button(QtWidgets.QMessageBox.StandardButton.Yes).setText('Salir')
+            mbox.button(QtWidgets.QMessageBox.StandardButton.No).setText('Cancelar')
+            mbox.setDefaultButton(QtWidgets.QMessageBox.StandardButton.No)
 
             if mbox.exec() == QtWidgets.QMessageBox.StandardButton.Yes:
-                sys.exit()
+                # Si se llamó desde el menú (triggered), cerramos a mano
+                # Si se llamó desde la X (closeEvent), el return True hará que Main lo cierre
+                if self is not None and not isinstance(self, bool):
+                    sys.exit()
+                return True
+            else:
+                return False
         except Exception as e:
-            print("Error en salida:", e)
+            print("Error en mensaje de salida:", e)
+            return False
 
     @staticmethod
     def openCalendar(self=None):
